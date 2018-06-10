@@ -3,7 +3,7 @@ id: 1701
 title: How I updated the R formula in Homebrew
 date: 2018-03-19T15:35:21+00:00
 author: Luis Puerto
-layout: post
+layout: 
 guid: http://luisspuerto.net/?p=1701
 permalink: /2018/03/how-i-updated-the-r-formula-in-homebrew/
 wtr-disable-reading-progress:

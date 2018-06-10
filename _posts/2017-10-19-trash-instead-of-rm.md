@@ -3,7 +3,7 @@ id: 483
 title: trash instead of rm
 date: 2017-10-19T17:33:24+00:00
 author: Luis Puerto
-layout: post
+layout: 
 guid: http://luisspuerto.net/?p=483
 permalink: /2017/10/trash-instead-of-rm/
 image: /wp-content/uploads/2017/10/mac-1.jpg

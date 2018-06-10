@@ -3,7 +3,7 @@ id: 1836
 title: Installing R with Homebrew with all the capabilities
 date: 2018-05-11T11:57:06+00:00
 author: Luis Puerto
-layout: post
+layout: 
 guid: http://luisspuerto.net/?p=1836
 permalink: /2018/05/installing-r-with-homebrew-with-all-the-capabilities/
 wtr-disable-reading-progress:

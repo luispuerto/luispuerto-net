@@ -3,7 +3,7 @@ id: 900
 title: My bread recipe
 date: 2017-11-17T15:39:29+00:00
 author: Luis Puerto
-layout: post
+layout: 
 guid: http://luisspuerto.net/?p=900
 permalink: /2017/11/my-bread-recipe/
 image: /wp-content/uploads/2017/11/IMG_4384.jpg

@@ -3,7 +3,7 @@ id: 1287
 title: iTerm2 + Oh My Zsh + Powerlevel9k + Monaco Nerd Complete Font
 date: 2018-01-09T19:15:18+00:00
 author: Luis Puerto
-layout: post
+layout: 
 guid: http://luisspuerto.net/?p=1287
 permalink: /2018/01/iterm2-oh-my-zsh-powerlevel9k-monaco-nerd-complete-font/
 image: /wp-content/uploads/2017/12/Screen-Shot-2017-12-19-at-11.20.07.png

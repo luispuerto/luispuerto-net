@@ -3,7 +3,7 @@ id: 496
 title: 'Backing up your Pi&#8217;s SD card'
 date: 2017-10-19T19:24:16+00:00
 author: Luis Puerto
-layout: post
+layout: 
 guid: http://luisspuerto.net/?p=496
 permalink: /2017/10/backing-up-your-pis-sd-card/
 categories:

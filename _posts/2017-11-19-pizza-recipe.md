@@ -3,7 +3,7 @@ id: 926
 title: Pizza recipe
 date: 2017-11-19T16:27:01+00:00
 author: Luis Puerto
-layout: post
+layout: 
 guid: http://luisspuerto.net/?p=926
 permalink: /2017/11/pizza-recipe/
 image: /wp-content/uploads/2017/11/IMG_4377.jpg

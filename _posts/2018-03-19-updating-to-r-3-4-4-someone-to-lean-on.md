@@ -3,7 +3,7 @@ id: 1624
 title: 'Updating to R 3.4.4 &#8220;Someone to Lean On&#8221;'
 date: 2018-03-19T11:56:02+00:00
 author: Luis Puerto
-layout: post
+layout: 
 guid: http://luisspuerto.net/?p=1624
 permalink: /2018/03/updating-to-r-3-4-4-someone-to-lean-on/
 image: /wp-content/uploads/2018/03/someoonetoleanon.jpg

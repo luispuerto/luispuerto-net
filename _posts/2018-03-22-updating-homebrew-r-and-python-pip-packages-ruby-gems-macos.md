@@ -3,7 +3,7 @@ id: 1744
 title: Updating Homebrew, R and Python pip packages + Ruby Gems + macOS
 date: 2018-03-22T13:16:47+00:00
 author: Luis Puerto
-layout: post
+layout: 
 guid: http://luisspuerto.net/?p=1744
 permalink: /2018/03/updating-homebrew-r-and-python-pip-packages-ruby-gems-macos/
 wtr-disable-reading-progress:

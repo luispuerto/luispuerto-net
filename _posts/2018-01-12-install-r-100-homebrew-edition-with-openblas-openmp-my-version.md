@@ -3,7 +3,7 @@ id: 1402
 title: 'Install R 100% Homebrew Edition With OpenBlas &#038; OpenMP &#8211; My Version'
 date: 2018-01-12T20:16:56+00:00
 author: Luis Puerto
-layout: post
+layout: 
 guid: http://luisspuerto.net/?p=1402
 permalink: /2018/01/install-r-100-homebrew-edition-with-openblas-openmp-my-version/
 wtr-disable-reading-progress:

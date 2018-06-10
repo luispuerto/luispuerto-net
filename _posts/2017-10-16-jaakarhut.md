@@ -3,7 +3,7 @@ id: 427
 title: Jääkarhut
 date: 2017-10-16T07:20:24+00:00
 author: Luis Puerto
-layout: post
+layout: 
 guid: http://luisspuerto.net/?p=427
 permalink: /2017/10/jaakarhut/
 image: /wp-content/uploads/2017/10/IMG_4290-e1508086408810.jpg

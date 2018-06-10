@@ -3,7 +3,7 @@ id: 754
 title: Media Buttons Behavior Has Changed In macOS High Sierra
 date: 2017-11-10T16:52:53+00:00
 author: Luis Puerto
-layout: post
+layout: 
 guid: http://luisspuerto.net/?p=754
 permalink: /2017/11/media-buttons-behavior-changed-high-sierra/
 image: /wp-content/uploads/2017/11/File-Oct-17-10-34-21-1024x536.jpeg

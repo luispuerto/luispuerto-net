@@ -3,7 +3,7 @@ id: 1819
 title: 'MBP wakes up from sleep to back screen &#8211;  Solution'
 date: 2018-05-02T09:23:04+00:00
 author: Luis Puerto
-layout: post
+layout: 
 guid: http://luisspuerto.net/?p=1819
 permalink: /2018/05/mbp-wakes-up-from-sleep-to-back-screen-solution/
 wtr-disable-reading-progress:

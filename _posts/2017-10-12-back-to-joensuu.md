@@ -3,7 +3,7 @@ id: 352
 title: Back to Joensuu
 date: 2017-10-12T18:35:03+00:00
 author: Luis Puerto
-layout: post
+layout: 
 guid: http://luisspuerto.net/?p=352
 permalink: /2017/10/back-to-joensuu/
 image: /wp-content/uploads/2017/10/IMG_0736.jpg

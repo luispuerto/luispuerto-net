@@ -3,7 +3,7 @@ id: 1661
 title: 'Why don&#8217;t I like Facebook anymore?'
 date: 2018-03-21T17:01:12+00:00
 author: Luis Puerto
-layout: post
+layout: 
 guid: http://luisspuerto.net/?p=1661
 permalink: /2018/03/why-dont-i-like-facebook-anymore/
 image: /wp-content/uploads/2018/03/Facebook-dislike.jpg

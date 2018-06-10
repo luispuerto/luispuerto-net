@@ -3,7 +3,7 @@ id: 366
 title: Blade Runner
 date: 2017-10-13T07:38:58+00:00
 author: Luis Puerto
-layout: post
+layout: 
 guid: http://luisspuerto.net/?p=366
 permalink: /2017/10/blade-runner/
 image: /wp-content/uploads/2017/10/blade-runner.jpg

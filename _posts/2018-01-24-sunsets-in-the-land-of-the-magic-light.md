@@ -3,7 +3,7 @@ id: 1455
 title: Sunsets in the land of the magic light
 date: 2018-01-24T12:56:16+00:00
 author: Luis Puerto
-layout: post
+layout: 
 guid: http://luisspuerto.net/?p=1455
 permalink: /2018/01/sunsets-in-the-land-of-the-magic-light/
 image: /wp-content/uploads/2018/01/IMG_4707.jpg

@@ -3,7 +3,7 @@ id: 735
 title: Updated to High Sierra
 date: 2017-11-08T12:25:52+00:00
 author: Luis Puerto
-layout: post
+layout: 
 guid: http://luisspuerto.net/?p=735
 permalink: /2017/11/updated-to-high-sierra/
 image: /wp-content/uploads/2017/11/macos_high_sierra_alternative_wallpaper_by_kakoten-dbfgc6m.png

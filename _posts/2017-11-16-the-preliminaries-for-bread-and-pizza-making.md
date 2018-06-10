@@ -3,7 +3,7 @@ id: 846
 title: The preliminaries for bread and pizza making
 date: 2017-11-16T21:08:39+00:00
 author: Luis Puerto
-layout: post
+layout: 
 guid: http://luisspuerto.net/?p=846
 permalink: /2017/11/the-preliminaries-for-bread-and-pizza-making/
 image: /wp-content/uploads/2017/11/IMG_4380.jpg

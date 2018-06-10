@@ -3,7 +3,7 @@ id: 1433
 title: Convert your Pi in an AirPlay receiver
 date: 2018-01-18T14:50:50+00:00
 author: Luis Puerto
-layout: post
+layout: 
 guid: http://luisspuerto.net/?p=1433
 permalink: /2018/01/convert-you-pi-in-an-airplay-receiver/
 image: /wp-content/uploads/2018/01/speakers-raspberry.jpg

@@ -3,7 +3,7 @@ id: 771
 title: The bread story
 date: 2017-11-12T23:33:14+00:00
 author: Luis Puerto
-layout: post
+layout: 
 guid: http://luisspuerto.net/?p=771
 permalink: /2017/11/the-bread-story/
 image: /wp-content/uploads/2017/11/IMG_0631.jpg

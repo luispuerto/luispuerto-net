@@ -3,7 +3,7 @@ id: 700
 title: Installing PGP signing for Git on macOS
 date: 2017-11-04T23:16:39+00:00
 author: Luis Puerto
-layout: post
+layout: 
 guid: http://luisspuerto.net/?p=700
 permalink: /2017/11/installing-pgp-signing-for-git-on-macos/
 image: /wp-content/uploads/2017/11/11407107023_b52fa108f7_b.jpg

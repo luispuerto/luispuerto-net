@@ -3,7 +3,7 @@ id: 1800
 title: 'R 3.5 &#8220;Joy in Playing&#8221;'
 date: 2018-04-28T18:52:30+00:00
 author: Luis Puerto
-layout: post
+layout: 
 guid: http://luisspuerto.net/?p=1800
 permalink: /2018/04/r-3-5-joy-in-playing/
 wtr-disable-reading-progress:

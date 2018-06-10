@@ -3,7 +3,7 @@ id: 1830
 title: 'Homebrew&#8217;s R doesn&#8217;t have all the capabilities'
 date: 2018-05-11T10:35:32+00:00
 author: Luis Puerto
-layout: post
+layout: 
 guid: http://luisspuerto.net/?p=1830
 permalink: /2018/05/homebrews-r-doesnt-have-all-the-capabilities/
 wtr-disable-reading-progress:

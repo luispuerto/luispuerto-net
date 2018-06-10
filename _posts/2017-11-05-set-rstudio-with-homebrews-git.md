@@ -3,7 +3,7 @@ id: 717
 title: 'Set rStudio with Homebrew&#8217;s Git'
 date: 2017-11-05T14:05:53+00:00
 author: Luis Puerto
-layout: post
+layout: 
 guid: http://luisspuerto.net/?p=717
 permalink: /2017/11/set-rstudio-with-homebrews-git/
 image: /wp-content/uploads/2017/11/rstudiobrewgit-1.jpg

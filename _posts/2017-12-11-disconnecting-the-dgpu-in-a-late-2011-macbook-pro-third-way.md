@@ -3,7 +3,7 @@ id: 1247
 title: Disconnecting the dGPU in a late 2011 MacBook Pro –third way
 date: 2017-12-11T15:03:16+00:00
 author: Luis Puerto
-layout: post
+layout: 
 guid: http://luisspuerto.net/?p=1247
 permalink: /2017/12/disconnecting-the-dgpu-in-a-late-2011-macbook-pro-third-way/
 wtr-disable-reading-progress:

@@ -3,7 +3,7 @@ id: 1571
 title: QGIS on macOS with Homebrew
 date: 2018-03-12T14:31:26+00:00
 author: Luis Puerto
-layout: post
+layout: 
 guid: http://luisspuerto.net/?p=1571
 permalink: /2018/03/qgis-on-macos-with-homebrew/
 image: /wp-content/uploads/2018/03/QGIS_logo_2017.svg.png

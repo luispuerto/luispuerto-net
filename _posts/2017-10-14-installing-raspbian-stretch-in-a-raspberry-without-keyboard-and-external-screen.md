@@ -3,7 +3,7 @@ id: 391
 title: Installing Raspbian in a Raspberry without keyboard and external screen
 date: 2017-10-14T18:47:55+00:00
 author: Luis Puerto
-layout: post
+layout: 
 guid: http://luisspuerto.net/?p=391
 permalink: /2017/10/installing-raspbian-stretch-in-a-raspberry-without-keyboard-and-external-screen/
 image: /wp-content/uploads/2017/10/Screen-Shot-2017-10-15-at-13.25.03.png

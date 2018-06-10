@@ -3,7 +3,7 @@ id: 1798
 title: The ciabatta recipe
 date: 2018-04-29T12:49:50+00:00
 author: Luis Puerto
-layout: post
+layout: 
 guid: http://luisspuerto.net/?p=1798
 permalink: /2018/04/the-ciabatta-recipe/
 wtr-disable-reading-progress:

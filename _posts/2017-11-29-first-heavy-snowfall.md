@@ -3,7 +3,7 @@ id: 1004
 title: First Heavy Snowfall
 date: 2017-11-29T18:25:39+00:00
 author: Luis Puerto
-layout: post
+layout: 
 guid: http://luisspuerto.net/?p=1004
 permalink: /2017/11/first-heavy-snowfall/
 image: /wp-content/uploads/2017/11/DSC8753.jpg

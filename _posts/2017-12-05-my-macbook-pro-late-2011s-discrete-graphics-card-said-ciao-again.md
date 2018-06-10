@@ -3,7 +3,7 @@ id: 1070
 title: 'My MacBook Pro late 2011&#8217;s discrete graphics card said &#8220;ciao&#8221; &#x1f44b;&#x1f3fb; –again'
 date: 2017-12-05T11:51:30+00:00
 author: Luis Puerto
-layout: post
+layout: 
 guid: http://luisspuerto.net/?p=1070
 permalink: /2017/12/my-macbook-pro-late-2011s-discrete-graphics-card-said-ciao-again/
 image: /wp-content/uploads/2017/12/maxresdefault.jpg
