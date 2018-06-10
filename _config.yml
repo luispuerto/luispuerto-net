@@ -21,7 +21,7 @@ title_separator          : "-"
 name                     : "Luis Puerto"
 description              : "A Forest Engineer ingerested in science and technology"
 url                      : "jekyll.luisspuerto.net"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+baseurl                  : "/blog"
 repository               : "luisspuerto/jekyll.luisspuerto.net"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
@@ -110,16 +110,16 @@ author:
   bitbucket        :
   codepen          :
   dribbble         :
-  flickr           :
+  flickr           : "lpuerto"
   facebook         : "lpuerto"
   foursquare       :
   github           : "luisspuerto"
-  gitlab           :
+  gitlab           : "luisspuerto"
   google_plus      :
   keybase          :
   instagram        : "lpuerto"
   lastfm           :
-  linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
+  linkedin         : "lpuerto"
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
