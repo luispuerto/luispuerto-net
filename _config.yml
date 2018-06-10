@@ -196,10 +196,10 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:title/
+permalink: /blog/:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: UTC # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
@@ -260,7 +260,7 @@ compress_html:
 defaults:
   # _posts
   - scope:
-      path: "/blog/"
+      path: ""
       type: posts
     values:
       layout: single
