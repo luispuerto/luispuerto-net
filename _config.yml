@@ -103,7 +103,7 @@ author:
   name             : "Luis Puerto"
   avatar           : "/assets/images/20121231-035-ol.jpg"
   bio              : "I am an amazing person."
-  location         : ":european_union::es::sweden::finland::us: { .width: 10%; }"
+  location         : ":european_union::es::sweden::finland::us: {: .width: 10%}"
   email            : "luis@luisspuerto.net"
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
