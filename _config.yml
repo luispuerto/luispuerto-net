@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 # Site Settings
 locale                   : "en-US"
 title                    : "Luis Puerto"
-title_separator          : "-"
+title_separator          : "|"
 name                     : "Luis Puerto"
 description              : "A Forest Engineer ingerested in science and technology"
 url                      : "jekyll.luisspuerto.net"
