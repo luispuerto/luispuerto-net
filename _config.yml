@@ -21,7 +21,7 @@ title_separator          : "-"
 name                     : "Luis Puerto"
 description              : "A Forest Engineer ingerested in science and technology"
 url                      : "jekyll.luisspuerto.net"
-baseurl                  : "/blog"
+baseurl                  : # "/blog"
 repository               : "luisspuerto/jekyll.luisspuerto.net"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
