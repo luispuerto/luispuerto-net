@@ -102,7 +102,7 @@ analytics:
 author:
   name             : "Luis Puerto"
   avatar           : "/assets/images/20121231-035-ol.jpg"
-  bio              : "I am an amazing person."
+  bio              : "A Forest Engineer ingerested in science and technology."
   location         : "🇪🇺🇪🇸🇸🇪🇫🇮🇺🇸"
   email            : "luis@luisspuerto.net"
   uri              :
@@ -260,7 +260,7 @@ compress_html:
 defaults:
   # _posts
   - scope:
-      path: ""
+      path: "/blog/"
       type: posts
     values:
       layout: single
