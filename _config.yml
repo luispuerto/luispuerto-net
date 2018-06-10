@@ -158,8 +158,9 @@ exclude:
   - node_modules
   - package.json
   - Rakefile
-  - README
+  - README.*
   - tmp
+  - TO-DO.*
   - /docs # ignore Minimal Mistakes /docs
   - /test # ignore Minimal Mistakes /test
 keep_files:
