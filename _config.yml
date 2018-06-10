@@ -20,9 +20,9 @@ title                    : "Luis Puerto"
 title_separator          : "-"
 name                     : "Luis Puerto"
 description              : "A Forest Engineer ingerested in science and technology"
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "jekyll.luisspuerto.net"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "luisspuerto/jekyll.luisspuerto.net"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
