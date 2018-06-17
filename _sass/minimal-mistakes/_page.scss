@@ -136,6 +136,7 @@
   &--overlay {
     position: relative;
     margin-bottom: 2em;
+    height: 950px;
     padding: 3em 0;
     @include clearfix;
     background-size: cover;
@@ -153,6 +154,7 @@
     .wrapper {
       padding-left: 1em;
       padding-right: 1em;
+      padding-top: 16em;
 
       @include breakpoint($x-large) {
         max-width: $x-large;
