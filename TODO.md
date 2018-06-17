@@ -2,12 +2,11 @@
 
 - [ ] Read Jekyll [documentation](https://jekyllrb.com/docs/home/) thoroughly. 
 - [ ] Check [this tutorial](https://www.youtube.com/watch?v=oiNVQ9Zjy4o&list=PLWjCJDeWfDdfVEcLGAfdJn_HXyM4Y7_k-) about Jekyll. 
-- [ ] Understand how the `include _pages` option works in the `yaml` so it doesn't create a folder `_pages` in the url to pages. 
 - [ ] Check how can I change things and still receive updates of the theme. 
 
 ## Tweaks
 
-- [ ] Fix the second excerpt in the splash page, it's not showing. 
+- [ ] Understand how the `include _pages` option works in the `yaml` so it doesn't create a folder `_pages` in the url to pages. 
 - [ ] Add the following pages: 
   - [ ] Blog
   - [ ] About me 
@@ -17,7 +16,7 @@
 ## Splash page
 
 - [ ] Fix the second excerpt in the splash page, it's not showing. 
-- [ ] Change the font of my name. 
+- [ ] Change the font of my name. ➜ `Mr Dafoe`
 
 ### Navbar
 
@@ -56,9 +55,8 @@
 
 ## Domain and Hosting
 
-* [ ]  Transfer our domains to dondominio.es 
+* [ ] Transfer our domains to dondominio.es 
 
 * [ ] Get an email plan.
 
-  
 
