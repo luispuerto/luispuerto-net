@@ -2,7 +2,6 @@
 title: About Me
 permalink: /aboutme/
 date: 2017-04-20T03:21:43+00:00
-author: Luis Puerto
 layout: single
 classes: wide
 header:
