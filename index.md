@@ -3,11 +3,10 @@ title: Luis Puerto
 layout: splash
 classes:
   - landing
-  - dark-theme 
 header:
   overlay_color: "#000"
-  overlay_filter: "0.5"
-  overlay_image: /assets/images/20121231-037-ol2.jpg
+  overlay_filter: "0.0"
+  overlay_image: /assets/images/header-splash.jpg
 excerpt: | 
   #Forestry 🌲 #Research 🔬 #GIS 🌍 #Remote Sensing 🛰       
   #LiDAR 🔦 #RStats 📈 #Biomass 🌱 #Cartography 🗺       
