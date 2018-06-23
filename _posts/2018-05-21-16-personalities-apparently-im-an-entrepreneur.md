@@ -1,15 +1,9 @@
 ---
-id: 1821
 title: "16 Personalities: Apparently I'm an Entrepreneur"
 date: 2018-05-21T18:05:16+00:00
 layout:
-guid: http://luisspuerto.net/?p=1821
-permalink: /2018/05/16-personalities-apparently-im-an-entrepreneur/
-wtr-disable-reading-progress:
-  - ""
-wtr-disable-time-commitment:
-  - ""
-image: /wp-content/uploads/2018/05/Luis-Puerto-The-Entreprenour2.jpg
+header: 
+  overlay_image: /wp-content/uploads/2018/05/Luis-Puerto-The-Entreprenour2.jpg
 categories:
   - Personal
   - Professional
