@@ -4,6 +4,7 @@ permalink: /aboutme/
 date: 2017-04-20T03:21:43+00:00
 layout: single
 classes: wide
+author_profile: true
 header:
   overlay_image: /assets/images/header-aboutme.jpg
   caption: "*Me in Norway*"
