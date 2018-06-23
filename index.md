@@ -23,8 +23,8 @@ feature_row:
     btn_label: "Read More"
     btn_class: "btn--primary"
   - image_path: /assets/images/splash-featurerow-resume.png
-    alt: "Resumé"
-    title: "Resumé"
+    alt: "Résumé"
+    title: "Résumé"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
     url: "/resume"
     btn_label: "Read More"
