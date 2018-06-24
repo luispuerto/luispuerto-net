@@ -2,8 +2,6 @@
 id: 1800
 title: 'R 3.5 &#8220;Joy in Playing&#8221;'
 date: 2018-04-28T18:52:30+00:00
-author: Luis Puerto
-layout: 
 guid: http://luisspuerto.net/?p=1800
 permalink: /2018/04/r-3-5-joy-in-playing/
 wtr-disable-reading-progress:
@@ -23,7 +21,7 @@ tags:
 ---
 <div id="attachment_1801" style="width: 510px" class="wp-caption aligncenter">
   <a href="http://luisspuerto.net/wp-content/uploads/2018/04/4421de17ce2dc4cd3843ba00b224fbe0.jpg"><img class="wp-image-1801 size-full" src="http://luisspuerto.net/wp-content/uploads/2018/04/4421de17ce2dc4cd3843ba00b224fbe0.jpg" alt="" width="500" height="448" srcset="http://luisspuerto.net/wp-content/uploads/2018/04/4421de17ce2dc4cd3843ba00b224fbe0.jpg 500w, http://luisspuerto.net/wp-content/uploads/2018/04/4421de17ce2dc4cd3843ba00b224fbe0-300x269.jpg 300w, http://luisspuerto.net/wp-content/uploads/2018/04/4421de17ce2dc4cd3843ba00b224fbe0-279x250.jpg 279w" sizes="(max-width: 500px) 100vw, 500px" /></a>
-  
+
   <p class="wp-caption-text">
     The joy is (in the) playing
   </p>

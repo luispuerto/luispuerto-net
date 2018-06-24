@@ -2,8 +2,6 @@
 id: 427
 title: Jääkarhut
 date: 2017-10-16T07:20:24+00:00
-author: Luis Puerto
-layout: 
 guid: http://luisspuerto.net/?p=427
 permalink: /2017/10/jaakarhut/
 image: /wp-content/uploads/2017/10/IMG_4290-e1508086408810.jpg
@@ -19,7 +17,7 @@ Yesterday was the first time in while I’ve been in <a href="http://www.joensuu
 
 <div id="attachment_441" style="width: 2058px" class="wp-caption alignnone">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/10/IMG_4291.jpg"><img class="wp-image-441 size-full" src="http://luisspuerto.net/wp-content/uploads/2017/10/IMG_4291.jpg" alt="" width="2048" height="903" srcset="http://luisspuerto.net/wp-content/uploads/2017/10/IMG_4291.jpg 2048w, http://luisspuerto.net/wp-content/uploads/2017/10/IMG_4291-300x132.jpg 300w, http://luisspuerto.net/wp-content/uploads/2017/10/IMG_4291-768x339.jpg 768w, http://luisspuerto.net/wp-content/uploads/2017/10/IMG_4291-1024x452.jpg 1024w, http://luisspuerto.net/wp-content/uploads/2017/10/IMG_4291-1216x536.jpg 1216w, http://luisspuerto.net/wp-content/uploads/2017/10/IMG_4291-567x250.jpg 567w" sizes="(max-width: 2048px) 100vw, 2048px" /></a>
-  
+
   <p class="wp-caption-text">
     Sunset from Jääkarhut bay yesterday.
   </p>
@@ -31,7 +29,7 @@ Yesterday was the first time in while I’ve been in <a href="http://www.joensuu
 
 <div id="attachment_443" style="width: 331px" class="wp-caption alignleft">
   <a style="font-weight: bold;" href="http://luisspuerto.net/wp-content/uploads/2017/10/20150215-003-Jääkarhut.jpg"><img class="wp-image-443" src="http://luisspuerto.net/wp-content/uploads/2017/10/20150215-003-Jääkarhut.jpg" alt="" width="321" height="428" srcset="http://luisspuerto.net/wp-content/uploads/2017/10/20150215-003-Jääkarhut.jpg 1224w, http://luisspuerto.net/wp-content/uploads/2017/10/20150215-003-Jääkarhut-225x300.jpg 225w, http://luisspuerto.net/wp-content/uploads/2017/10/20150215-003-Jääkarhut-768x1024.jpg 768w, http://luisspuerto.net/wp-content/uploads/2017/10/20150215-003-Jääkarhut-1024x1365.jpg 1024w, http://luisspuerto.net/wp-content/uploads/2017/10/20150215-003-Jääkarhut-480x640.jpg 480w, http://luisspuerto.net/wp-content/uploads/2017/10/20150215-003-Jääkarhut-1216x1621.jpg 1216w, http://luisspuerto.net/wp-content/uploads/2017/10/20150215-003-Jääkarhut-188x250.jpg 188w" sizes="(max-width: 321px) 100vw, 321px" /></a>
-  
+
   <p class="wp-caption-text">
     Staircase to the avanto in winter.
   </p>
@@ -51,7 +49,7 @@ Yesterday was the first time in while I’ve been in <a href="http://www.joensuu
 
 <div id="attachment_445" style="width: 433px" class="wp-caption alignright">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/10/20111231-028-Finland.-New-Year-Eve..jpg"><img class=" wp-image-445" src="http://luisspuerto.net/wp-content/uploads/2017/10/20111231-028-Finland.-New-Year-Eve..jpg" alt="" width="423" height="316" srcset="http://luisspuerto.net/wp-content/uploads/2017/10/20111231-028-Finland.-New-Year-Eve..jpg 2048w, http://luisspuerto.net/wp-content/uploads/2017/10/20111231-028-Finland.-New-Year-Eve.-300x224.jpg 300w, http://luisspuerto.net/wp-content/uploads/2017/10/20111231-028-Finland.-New-Year-Eve.-768x574.jpg 768w, http://luisspuerto.net/wp-content/uploads/2017/10/20111231-028-Finland.-New-Year-Eve.-1024x765.jpg 1024w, http://luisspuerto.net/wp-content/uploads/2017/10/20111231-028-Finland.-New-Year-Eve.-480x360.jpg 480w, http://luisspuerto.net/wp-content/uploads/2017/10/20111231-028-Finland.-New-Year-Eve.-1216x908.jpg 1216w, http://luisspuerto.net/wp-content/uploads/2017/10/20111231-028-Finland.-New-Year-Eve.-335x250.jpg 335w" sizes="(max-width: 423px) 100vw, 423px" /></a>
-  
+
   <p class="wp-caption-text">
     The entrance to Jääkarhut in winter.
   </p>
@@ -65,7 +63,7 @@ Returning to Jääkarhut, it&#8217;s not special only for all what I&#8217;ve al
 
 <div id="attachment_446" style="width: 302px" class="wp-caption alignleft">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/10/20111231-040-Finland.-New-Year-Eve..jpg"><img class=" wp-image-446" src="http://luisspuerto.net/wp-content/uploads/2017/10/20111231-040-Finland.-New-Year-Eve..jpg" alt="" width="292" height="389" srcset="http://luisspuerto.net/wp-content/uploads/2017/10/20111231-040-Finland.-New-Year-Eve..jpg 1536w, http://luisspuerto.net/wp-content/uploads/2017/10/20111231-040-Finland.-New-Year-Eve.-225x300.jpg 225w, http://luisspuerto.net/wp-content/uploads/2017/10/20111231-040-Finland.-New-Year-Eve.-768x1024.jpg 768w, http://luisspuerto.net/wp-content/uploads/2017/10/20111231-040-Finland.-New-Year-Eve.-1024x1365.jpg 1024w, http://luisspuerto.net/wp-content/uploads/2017/10/20111231-040-Finland.-New-Year-Eve.-480x640.jpg 480w, http://luisspuerto.net/wp-content/uploads/2017/10/20111231-040-Finland.-New-Year-Eve.-1216x1621.jpg 1216w, http://luisspuerto.net/wp-content/uploads/2017/10/20111231-040-Finland.-New-Year-Eve.-188x250.jpg 188w" sizes="(max-width: 292px) 100vw, 292px" /></a>
-  
+
   <p class="wp-caption-text">
     Me swimming in the &#8220;fresh&#8221; water.
   </p>

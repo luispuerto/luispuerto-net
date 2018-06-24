@@ -2,8 +2,6 @@
 id: 483
 title: trash instead of rm
 date: 2017-10-19T17:33:24+00:00
-author: Luis Puerto
-layout: 
 guid: http://luisspuerto.net/?p=483
 permalink: /2017/10/trash-instead-of-rm/
 image: /wp-content/uploads/2017/10/mac-1.jpg
@@ -39,7 +37,7 @@ PS/ You have to be aware that the shell trash is not the same you can see in you
 
 <div id="attachment_519" style="width: 972px" class="wp-caption alignnone">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-17-at-11.10.12.png"><img class="size-full wp-image-519" src="http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-17-at-11.10.12.png" alt="" width="962" height="757" srcset="http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-17-at-11.10.12.png 962w, http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-17-at-11.10.12-300x236.png 300w, http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-17-at-11.10.12-768x604.png 768w, http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-17-at-11.10.12-318x250.png 318w" sizes="(max-width: 962px) 100vw, 962px" /></a>
-  
+
   <p class="wp-caption-text">
     Trashing files.
   </p>

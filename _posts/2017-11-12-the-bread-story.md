@@ -2,8 +2,6 @@
 id: 771
 title: The bread story
 date: 2017-11-12T23:33:14+00:00
-author: Luis Puerto
-layout: 
 guid: http://luisspuerto.net/?p=771
 permalink: /2017/11/the-bread-story/
 image: /wp-content/uploads/2017/11/IMG_0631.jpg
@@ -22,7 +20,7 @@ Anyone close to me, or that&#8217;s been hanging out with me for a while, knows 
 
 <div id="attachment_782" style="width: 319px" class="wp-caption alignright">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/11/Bread_machine_with_bread.jpg"><img class=" wp-image-782" src="http://luisspuerto.net/wp-content/uploads/2017/11/Bread_machine_with_bread.jpg" alt="" width="309" height="189" srcset="http://luisspuerto.net/wp-content/uploads/2017/11/Bread_machine_with_bread.jpg 2048w, http://luisspuerto.net/wp-content/uploads/2017/11/Bread_machine_with_bread-300x184.jpg 300w, http://luisspuerto.net/wp-content/uploads/2017/11/Bread_machine_with_bread-768x470.jpg 768w, http://luisspuerto.net/wp-content/uploads/2017/11/Bread_machine_with_bread-1024x626.jpg 1024w, http://luisspuerto.net/wp-content/uploads/2017/11/Bread_machine_with_bread-1216x744.jpg 1216w, http://luisspuerto.net/wp-content/uploads/2017/11/Bread_machine_with_bread-409x250.jpg 409w" sizes="(max-width: 309px) 100vw, 309px" /></a>
-  
+
   <p class="wp-caption-text">
     Lild&#8217;s bread machine, quite similar to the one we inherited. Source: <a href="https://commons.wikimedia.org/wiki/File:Bread_machine_with_bread.jpg">Wikimedia</a>.
   </p>
@@ -32,7 +30,7 @@ Anyhow, when we arrived to Finland was really hard for us to find bread with sim
 
 <div id="attachment_779" style="width: 225px" class="wp-caption alignleft">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2017-11-12-at-14.12.47.png"><img class="wp-image-779" src="http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2017-11-12-at-14.12.47.png" alt="" width="215" height="268" srcset="http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2017-11-12-at-14.12.47.png 596w, http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2017-11-12-at-14.12.47-241x300.png 241w, http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2017-11-12-at-14.12.47-201x250.png 201w" sizes="(max-width: 215px) 100vw, 215px" /></a>
-  
+
   <p class="wp-caption-text">
     Ken&#8217;s Book. Source: <a href="https://www.amazon.com/Flour-Water-Salt-Yeast-Fundamentals/dp/160774273X/ref=sr_1_1?ie=UTF8&qid=1510486477&sr=8-1&keywords=flour+water+salt+and+yeast">Amazon</a>.
   </p>
@@ -46,7 +44,7 @@ Anyway, I really recommend Ken&#8217;s book to begin to bake and learn about the
 
 <div id="attachment_777" style="width: 284px" class="wp-caption alignleft">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/11/IMG_0633.jpg"><img class="wp-image-777" src="http://luisspuerto.net/wp-content/uploads/2017/11/IMG_0633.jpg" alt="" width="274" height="274" srcset="http://luisspuerto.net/wp-content/uploads/2017/11/IMG_0633.jpg 1224w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_0633-150x150.jpg 150w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_0633-300x300.jpg 300w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_0633-768x768.jpg 768w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_0633-1024x1024.jpg 1024w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_0633-480x480.jpg 480w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_0633-1216x1216.jpg 1216w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_0633-250x250.jpg 250w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_0633-50x50.jpg 50w" sizes="(max-width: 274px) 100vw, 274px" /></a>
-  
+
   <p class="wp-caption-text">
     Ken&#8217;s sandwiches. <strong>D E L I C I O U S !</strong>
   </p>
@@ -56,7 +54,7 @@ When I started to use Ken&#8217;s book, four years ago, I couldn&#8217;t imagine
 
 <div id="attachment_839" style="width: 4906px" class="wp-caption alignnone">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/11/At-Kens.jpg"><img class="size-full wp-image-839" src="http://luisspuerto.net/wp-content/uploads/2017/11/At-Kens.jpg" alt="" width="4896" height="3264" srcset="http://luisspuerto.net/wp-content/uploads/2017/11/At-Kens.jpg 2048w, http://luisspuerto.net/wp-content/uploads/2017/11/At-Kens-300x200.jpg 300w, http://luisspuerto.net/wp-content/uploads/2017/11/At-Kens-768x512.jpg 768w, http://luisspuerto.net/wp-content/uploads/2017/11/At-Kens-1024x683.jpg 1024w, http://luisspuerto.net/wp-content/uploads/2017/11/At-Kens-1216x811.jpg 1216w, http://luisspuerto.net/wp-content/uploads/2017/11/At-Kens-375x250.jpg 375w" sizes="(max-width: 4896px) 100vw, 4896px" /></a>
-  
+
   <p class="wp-caption-text">
     Me at Ken&#8217;s. On the left after we bought a couple of loaves and in the right at the door of the venue.
   </p>

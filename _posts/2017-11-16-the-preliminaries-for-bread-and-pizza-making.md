@@ -2,8 +2,6 @@
 id: 846
 title: The preliminaries for bread and pizza making
 date: 2017-11-16T21:08:39+00:00
-author: Luis Puerto
-layout: 
 guid: http://luisspuerto.net/?p=846
 permalink: /2017/11/the-preliminaries-for-bread-and-pizza-making/
 image: /wp-content/uploads/2017/11/IMG_4380.jpg
@@ -22,7 +20,7 @@ What are we going to need to bake bread? Ok, let&#8217;s start with the basic to
 
 <div id="attachment_890" style="width: 3274px" class="wp-caption alignnone">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4387.jpg"><img class="size-full wp-image-890" src="http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4387.jpg" alt="" width="3264" height="2448" srcset="http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4387.jpg 2048w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4387-300x225.jpg 300w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4387-768x576.jpg 768w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4387-1024x768.jpg 1024w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4387-480x360.jpg 480w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4387-1216x912.jpg 1216w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4387-333x250.jpg 333w" sizes="(max-width: 3264px) 100vw, 3264px" /></a>
-  
+
   <p class="wp-caption-text">
     Tools for baking
   </p>
@@ -61,7 +59,7 @@ Ok, as you see the ingredients aren&#8217;t really complicated and they are basi
 
 <div id="attachment_884" style="width: 3274px" class="wp-caption alignnone">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4362.jpg"><img class="size-full wp-image-884" src="http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4362.jpg" alt="" width="3264" height="2448" srcset="http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4362.jpg 2048w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4362-300x225.jpg 300w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4362-768x576.jpg 768w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4362-1024x768.jpg 1024w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4362-480x360.jpg 480w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4362-1216x912.jpg 1216w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4362-333x250.jpg 333w" sizes="(max-width: 3264px) 100vw, 3264px" /></a>
-  
+
   <p class="wp-caption-text">
     Measuring for a pizza
   </p>
@@ -95,7 +93,7 @@ As you see percentages makes your life a little bit easier, and gives you flexib
 
 Sometimes you are going to want to mix flours to give different flavors and consistency to your bread. Usually those recipes state the amount of flour of each type also in percentages For example. 60% white flour and 40% whole wheat. Then, if you want a 700 gr. loaf you have to proceed as following:
 
-  * 100% of flour: 700 gr. x 100% = 700 gr. 
+  * 100% of flour: 700 gr. x 100% = 700 gr.
       * 60% white flour: 700 gr. x 60% = 420 gr.
       * 40% whole wheat flour: 700 gr. x 40% = 280 gr.
   * 72% of water: 700 gr. x 72% = 504 gr.
@@ -108,7 +106,7 @@ Easy, isn&#8217;t it? Anyhow, if you want to learn a little bit more about the b
 
 <div id="attachment_889" style="width: 332px" class="wp-caption alignleft">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4388.jpg"><img class=" wp-image-889" src="http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4388.jpg" alt="" width="322" height="429" srcset="http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4388.jpg 1536w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4388-225x300.jpg 225w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4388-768x1024.jpg 768w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4388-1024x1365.jpg 1024w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4388-480x640.jpg 480w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4388-1216x1621.jpg 1216w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4388-188x250.jpg 188w" sizes="(max-width: 322px) 100vw, 322px" /></a>
-  
+
   <p class="wp-caption-text">
     Finnish flour
   </p>
@@ -132,7 +130,7 @@ Since I use fresh yeast, I dissolve it in the water although you can mix the yea
 
 <div id="attachment_891" style="width: 1930px" class="wp-caption alignnone">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/11/Compressed_fresh_yeast_-_1.jpg"><img class="wp-image-891 size-full" src="http://luisspuerto.net/wp-content/uploads/2017/11/Compressed_fresh_yeast_-_1.jpg" alt="" width="1920" height="1277" srcset="http://luisspuerto.net/wp-content/uploads/2017/11/Compressed_fresh_yeast_-_1.jpg 1920w, http://luisspuerto.net/wp-content/uploads/2017/11/Compressed_fresh_yeast_-_1-300x200.jpg 300w, http://luisspuerto.net/wp-content/uploads/2017/11/Compressed_fresh_yeast_-_1-768x511.jpg 768w, http://luisspuerto.net/wp-content/uploads/2017/11/Compressed_fresh_yeast_-_1-1024x681.jpg 1024w, http://luisspuerto.net/wp-content/uploads/2017/11/Compressed_fresh_yeast_-_1-1216x809.jpg 1216w, http://luisspuerto.net/wp-content/uploads/2017/11/Compressed_fresh_yeast_-_1-376x250.jpg 376w" sizes="(max-width: 1920px) 100vw, 1920px" /></a>
-  
+
   <p class="wp-caption-text">
     Finnish fresh yeast. Source <a href="https://commons.wikimedia.org/wiki/File:Compressed_fresh_yeast_-_1.jpg">Wikimedia</a>.
   </p>
@@ -163,7 +161,7 @@ For that reason I developed the below tables. Bear in mind that they are really 
 <div class="ead-preview">
   <div class="ead-document" style="position:relative;padding-top:90%;">
   </div>
-  
+
   <p class="embed_download">
     <a href="http://luisspuerto.net/wp-content/uploads/2017/11/Pizza-Bread-FWSY.pdf" download >Download [41.96 KB] </a>
   </p>
@@ -202,32 +200,32 @@ There isn&#8217;t a lot to say here, but just that in the time when the yeast is
     <dt class='gallery-icon landscape'>
       <a href='http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4322.jpg'><img width="150" height="150" src="http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4322-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="" aria-describedby="gallery-2-893" srcset="http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4322-150x150.jpg 150w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4322-480x480.jpg 480w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4322-50x50.jpg 50w" sizes="(max-width: 150px) 100vw, 150px" /></a>
     </dt>
-    
+
     <dd class='wp-caption-text gallery-caption' id='gallery-2-893'>
       The dough fully risen
     </dd>
   </dl>
-  
+
   <dl class='gallery-item'>
     <dt class='gallery-icon landscape'>
       <a href='http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4081.jpg'><img width="150" height="150" src="http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4081-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="" aria-describedby="gallery-2-894" srcset="http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4081-150x150.jpg 150w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4081-480x480.jpg 480w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4081-50x50.jpg 50w" sizes="(max-width: 150px) 100vw, 150px" /></a>
     </dt>
-    
+
     <dd class='wp-caption-text gallery-caption' id='gallery-2-894'>
       Creating the ball
     </dd>
   </dl>
-  
+
   <dl class='gallery-item'>
     <dt class='gallery-icon landscape'>
       <a href='http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4083.jpg'><img width="150" height="150" src="http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4083-150x150.jpg" class="attachment-thumbnail size-thumbnail" alt="" aria-describedby="gallery-2-886" srcset="http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4083-150x150.jpg 150w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4083-480x480.jpg 480w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4083-50x50.jpg 50w" sizes="(max-width: 150px) 100vw, 150px" /></a>
     </dt>
-    
+
     <dd class='wp-caption-text gallery-caption' id='gallery-2-886'>
       Shaping the final loaf
     </dd>
   </dl>
-  
+
   <br style="clear: both" />
 </div>
 
@@ -239,7 +237,7 @@ I usually don&#8217;t proof the bread too much and perhaps it&#8217;s something 
 
 <div id="attachment_897" style="width: 2058px" class="wp-caption alignnone">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4378.jpg"><img class="size-full wp-image-897" src="http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4378.jpg" alt="" width="2048" height="1536" srcset="http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4378.jpg 2048w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4378-300x225.jpg 300w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4378-768x576.jpg 768w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4378-1024x768.jpg 1024w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4378-480x360.jpg 480w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4378-1216x912.jpg 1216w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4378-333x250.jpg 333w" sizes="(max-width: 2048px) 100vw, 2048px" /></a>
-  
+
   <p class="wp-caption-text">
     Proofing in the banneton.
   </p>
@@ -255,7 +253,7 @@ It&#8217;s up to you so score or not your bread before you bake it.
 
 <div id="attachment_885" style="width: 3274px" class="wp-caption alignnone">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4379.jpg"><img class="size-full wp-image-885" src="http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4379.jpg" alt="" width="3264" height="2448" srcset="http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4379.jpg 2048w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4379-300x225.jpg 300w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4379-768x576.jpg 768w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4379-1024x768.jpg 1024w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4379-480x360.jpg 480w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4379-1216x912.jpg 1216w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4379-333x250.jpg 333w" sizes="(max-width: 3264px) 100vw, 3264px" /></a>
-  
+
   <p class="wp-caption-text">
     Water in a container inside the oven.
   </p>
@@ -271,7 +269,7 @@ However, I think that the optimal approach has to be something closer to what yo
 
 <div id="attachment_887" style="width: 3274px" class="wp-caption alignnone">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4382.jpg"><img class="size-full wp-image-887" src="http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4382.jpg" alt="" width="3264" height="2448" srcset="http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4382.jpg 2048w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4382-300x225.jpg 300w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4382-768x576.jpg 768w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4382-1024x768.jpg 1024w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4382-480x360.jpg 480w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4382-1216x912.jpg 1216w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4382-333x250.jpg 333w" sizes="(max-width: 3264px) 100vw, 3264px" /></a>
-  
+
   <p class="wp-caption-text">
     Maillard reaction in my bread
   </p>

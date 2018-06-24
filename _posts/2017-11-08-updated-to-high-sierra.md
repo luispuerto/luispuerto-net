@@ -2,8 +2,6 @@
 id: 735
 title: Updated to High Sierra
 date: 2017-11-08T12:25:52+00:00
-author: Luis Puerto
-layout: 
 guid: http://luisspuerto.net/?p=735
 permalink: /2017/11/updated-to-high-sierra/
 image: /wp-content/uploads/2017/11/macos_high_sierra_alternative_wallpaper_by_kakoten-dbfgc6m.png
@@ -15,7 +13,7 @@ tags:
 ---
 <div id="attachment_741" style="width: 708px" class="wp-caption alignnone">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2017-11-08-at-11.29.44.png"><img class="size-full wp-image-741" src="http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2017-11-08-at-11.29.44.png" alt="" width="698" height="480" srcset="http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2017-11-08-at-11.29.44.png 698w, http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2017-11-08-at-11.29.44-300x206.png 300w, http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2017-11-08-at-11.29.44-364x250.png 364w" sizes="(max-width: 698px) 100vw, 698px" /></a>
-  
+
   <p class="wp-caption-text">
     High Sierra update on my machine.
   </p>

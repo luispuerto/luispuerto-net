@@ -2,8 +2,6 @@
 id: 1571
 title: QGIS on macOS with Homebrew
 date: 2018-03-12T14:31:26+00:00
-author: Luis Puerto
-layout: 
 guid: http://luisspuerto.net/?p=1571
 permalink: /2018/03/qgis-on-macos-with-homebrew/
 image: /wp-content/uploads/2018/03/QGIS_logo_2017.svg.png
@@ -80,7 +78,7 @@ $ ln -s /Applications/QGIS.app /usr/local/Cellar/qgis2/2.18.17/QGIS.app</pre>
 
 <div id="attachment_1599" style="width: 494px" class="wp-caption aligncenter">
   <a href="http://luisspuerto.net/wp-content/uploads/2018/03/Screen-Shot-2018-03-12-at-10.27.28.png"><img class="size-full wp-image-1599" src="http://luisspuerto.net/wp-content/uploads/2018/03/Screen-Shot-2018-03-12-at-10.27.28.png" alt="" width="484" height="249" srcset="http://luisspuerto.net/wp-content/uploads/2018/03/Screen-Shot-2018-03-12-at-10.27.28.png 484w, http://luisspuerto.net/wp-content/uploads/2018/03/Screen-Shot-2018-03-12-at-10.27.28-300x154.png 300w" sizes="(max-width: 484px) 100vw, 484px" /></a>
-  
+
   <p class="wp-caption-text">
     QGIS 2.18.17 splash screen
   </p>
@@ -88,7 +86,7 @@ $ ln -s /Applications/QGIS.app /usr/local/Cellar/qgis2/2.18.17/QGIS.app</pre>
 
 <div id="attachment_1600" style="width: 1690px" class="wp-caption aligncenter">
   <a href="http://luisspuerto.net/wp-content/uploads/2018/03/Screen-Shot-2018-03-12-at-10.27.49.png"><img class="size-full wp-image-1600" src="http://luisspuerto.net/wp-content/uploads/2018/03/Screen-Shot-2018-03-12-at-10.27.49.png" alt="" width="1680" height="1050" srcset="http://luisspuerto.net/wp-content/uploads/2018/03/Screen-Shot-2018-03-12-at-10.27.49.png 1680w, http://luisspuerto.net/wp-content/uploads/2018/03/Screen-Shot-2018-03-12-at-10.27.49-300x188.png 300w, http://luisspuerto.net/wp-content/uploads/2018/03/Screen-Shot-2018-03-12-at-10.27.49-768x480.png 768w, http://luisspuerto.net/wp-content/uploads/2018/03/Screen-Shot-2018-03-12-at-10.27.49-1024x640.png 1024w, http://luisspuerto.net/wp-content/uploads/2018/03/Screen-Shot-2018-03-12-at-10.27.49-1216x760.png 1216w, http://luisspuerto.net/wp-content/uploads/2018/03/Screen-Shot-2018-03-12-at-10.27.49-400x250.png 400w" sizes="(max-width: 1680px) 100vw, 1680px" /></a>
-  
+
   <p class="wp-caption-text">
     QGIS 2.18.17 interface
   </p>
@@ -192,7 +190,7 @@ Now I could build QGIS 3 developer edition:
 
 <div id="attachment_1596" style="width: 494px" class="wp-caption aligncenter">
   <a href="http://luisspuerto.net/wp-content/uploads/2018/03/Screen-Shot-2018-03-12-at-10.27.58.png"><img class="wp-image-1596 size-full" src="http://luisspuerto.net/wp-content/uploads/2018/03/Screen-Shot-2018-03-12-at-10.27.58.png" alt="" width="484" height="249" srcset="http://luisspuerto.net/wp-content/uploads/2018/03/Screen-Shot-2018-03-12-at-10.27.58.png 484w, http://luisspuerto.net/wp-content/uploads/2018/03/Screen-Shot-2018-03-12-at-10.27.58-300x154.png 300w" sizes="(max-width: 484px) 100vw, 484px" /></a>
-  
+
   <p class="wp-caption-text">
     QGIS 3 dev splash screen
   </p>
@@ -200,7 +198,7 @@ Now I could build QGIS 3 developer edition:
 
 <div id="attachment_1597" style="width: 1690px" class="wp-caption aligncenter">
   <a href="http://luisspuerto.net/wp-content/uploads/2018/03/Screen-Shot-2018-03-12-at-10.28.22.png"><img class="wp-image-1597 size-full" src="http://luisspuerto.net/wp-content/uploads/2018/03/Screen-Shot-2018-03-12-at-10.28.22.png" alt="" width="1680" height="1050" srcset="http://luisspuerto.net/wp-content/uploads/2018/03/Screen-Shot-2018-03-12-at-10.28.22.png 1680w, http://luisspuerto.net/wp-content/uploads/2018/03/Screen-Shot-2018-03-12-at-10.28.22-300x188.png 300w, http://luisspuerto.net/wp-content/uploads/2018/03/Screen-Shot-2018-03-12-at-10.28.22-768x480.png 768w, http://luisspuerto.net/wp-content/uploads/2018/03/Screen-Shot-2018-03-12-at-10.28.22-1024x640.png 1024w, http://luisspuerto.net/wp-content/uploads/2018/03/Screen-Shot-2018-03-12-at-10.28.22-1216x760.png 1216w, http://luisspuerto.net/wp-content/uploads/2018/03/Screen-Shot-2018-03-12-at-10.28.22-400x250.png 400w" sizes="(max-width: 1680px) 100vw, 1680px" /></a>
-  
+
   <p class="wp-caption-text">
     QGIS 3 interface
   </p>

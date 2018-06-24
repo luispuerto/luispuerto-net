@@ -2,8 +2,6 @@
 id: 1535
 title: Delete all the snapshots from the local time machine
 date: 2018-03-04T13:53:42+00:00
-author: Luis Puerto
-layout: 
 guid: http://luisspuerto.net/?p=1535
 permalink: /2018/03/delete-all-the-snapshots-from-the-local-time-machine/
 image: /wp-content/uploads/2018/03/240086966_1f04572a86_z.jpg

@@ -2,8 +2,6 @@
 id: 1836
 title: Installing R with Homebrew with all the capabilities
 date: 2018-05-11T11:57:06+00:00
-author: Luis Puerto
-layout: 
 guid: http://luisspuerto.net/?p=1836
 permalink: /2018/05/installing-r-with-homebrew-with-all-the-capabilities/
 wtr-disable-reading-progress:
@@ -23,7 +21,7 @@ tags:
 ---
 As I explained in my [previous post](http://luisspuerto.net/2018/05/homebrews-r-doesnt-have-all-the-capabilities/) if you installed R with Homebrew you have less capabilities than with a R installed from CRAN&#8217;s binary. But, **can you have all the capabilities while you still use Homebrew to install R? Yes!** However&#8230; why you bother to install it with Homebrew at all instead of installing it from CRAN. Well, it&#8217;s true that CRAN install it&#8217;s easier. You just have to download the binary and that&#8217;s it. You can even use Homebrew Cask to install R that way
 
-```sh 
+```sh
 $ brew cask install r-app
 ```
 
@@ -38,7 +36,7 @@ You also have to remember that this instructions are just aimed to reinstall R i
 The first thing you have to do is uninstall R and Cairo if you have them installed:
 
 ```sh
-$ brew uninstall R 
+$ brew uninstall R
 $ brew uninstall --ignore-dependencies cairo
 ```
 
@@ -78,7 +76,7 @@ When it end to build, you can use use `capabilities()` in R console and you have
 
 ```r
 >capabilities()
-       jpeg         png        tiff       tcltk         X11        aqua   
+       jpeg         png        tiff       tcltk         X11        aqua
        TRUE        TRUE        TRUE        TRUE        TRUE        TRUE
    http/ftp     sockets      libxml        fifo      cledit       iconv
        TRUE        TRUE        TRUE        TRUE        TRUE        TRUE

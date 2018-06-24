@@ -2,8 +2,6 @@
 id: 1701
 title: How I updated the R formula in Homebrew
 date: 2018-03-19T15:35:21+00:00
-author: Luis Puerto
-layout: 
 guid: http://luisspuerto.net/?p=1701
 permalink: /2018/03/how-i-updated-the-r-formula-in-homebrew/
 wtr-disable-reading-progress:
@@ -59,7 +57,7 @@ If you want to test your version of the formula this is easy, you just stay in 
 
 <div id="attachment_1712" style="width: 856px" class="wp-caption alignnone">
   <a href="http://luisspuerto.net/wp-content/uploads/2018/03/Screen-Shot-2018-03-15-at-17.33.09.png"><img class="size-full wp-image-1712" src="http://luisspuerto.net/wp-content/uploads/2018/03/Screen-Shot-2018-03-15-at-17.33.09.png" alt="" width="846" height="241" srcset="http://luisspuerto.net/wp-content/uploads/2018/03/Screen-Shot-2018-03-15-at-17.33.09.png 846w, http://luisspuerto.net/wp-content/uploads/2018/03/Screen-Shot-2018-03-15-at-17.33.09-300x85.png 300w, http://luisspuerto.net/wp-content/uploads/2018/03/Screen-Shot-2018-03-15-at-17.33.09-768x219.png 768w" sizes="(max-width: 846px) 100vw, 846px" /></a>
-  
+
   <p class="wp-caption-text">
     Updating R with Homebrew
   </p>

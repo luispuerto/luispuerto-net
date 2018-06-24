@@ -2,8 +2,6 @@
 id: 1744
 title: Updating Homebrew, R and Python pip packages + Ruby Gems + macOS
 date: 2018-03-22T13:16:47+00:00
-author: Luis Puerto
-layout: 
 guid: http://luisspuerto.net/?p=1744
 permalink: /2018/03/updating-homebrew-r-and-python-pip-packages-ruby-gems-macos/
 wtr-disable-reading-progress:
@@ -86,7 +84,7 @@ To update the RubyGems you run the following command:
 Although these ones are really easy and you can update them just using the Mac App Store app in your Mac, it&#8217;s possible to trigger the update checking and the update itself through CLI. macOS has a command that allow you to make this happen `softwareupdate`. You can run it like this:
 
 <pre class="lang:default decode:true">$ softwareupdate -l # to list all the updates
-$ softwareupdate -i # to install updates 
+$ softwareupdate -i # to install updates
 $ softwareupdate -ia # to install all updates
 $ softwareupdate -iR # to automatically restart if necessary by the update
 $ softwareupdate -ir # install only the recommended updates
@@ -101,7 +99,7 @@ If you want something more complex you can install [mas-cli](https://github.com/
 Then, you can run in your command line the following to update:
 
 <pre class="lang:default decode:true ">$ mas list # List your Mac App Store apps
-$ mas search &lt;app&gt; # Search for an app 
+$ mas search &lt;app&gt; # Search for an app
 $ mas install &lt;app-number&gt; # Install an specific app
 $ mas outdated # shows the outdated apps
 $ mas upgrade # Upgrade all your apps

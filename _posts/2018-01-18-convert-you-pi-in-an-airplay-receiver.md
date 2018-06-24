@@ -2,8 +2,6 @@
 id: 1433
 title: Convert your Pi in an AirPlay receiver
 date: 2018-01-18T14:50:50+00:00
-author: Luis Puerto
-layout: 
 guid: http://luisspuerto.net/?p=1433
 permalink: /2018/01/convert-you-pi-in-an-airplay-receiver/
 image: /wp-content/uploads/2018/01/speakers-raspberry.jpg
@@ -70,7 +68,7 @@ You are going to be able to find the Pi among the devices that offer AirPlay fro
 
 <div id="attachment_1443" style="width: 1034px" class="wp-caption alignnone">
   <a href="http://luisspuerto.net/wp-content/uploads/2018/01/SSF_WMD_Modules_-_2014_NAMM_Show.jpg"><img class="size-full wp-image-1443" src="http://luisspuerto.net/wp-content/uploads/2018/01/SSF_WMD_Modules_-_2014_NAMM_Show.jpg" alt="" width="1024" height="682" srcset="http://luisspuerto.net/wp-content/uploads/2018/01/SSF_WMD_Modules_-_2014_NAMM_Show.jpg 1024w, http://luisspuerto.net/wp-content/uploads/2018/01/SSF_WMD_Modules_-_2014_NAMM_Show-300x200.jpg 300w, http://luisspuerto.net/wp-content/uploads/2018/01/SSF_WMD_Modules_-_2014_NAMM_Show-768x512.jpg 768w, http://luisspuerto.net/wp-content/uploads/2018/01/SSF_WMD_Modules_-_2014_NAMM_Show-375x250.jpg 375w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>
-  
+
   <p class="wp-caption-text">
     Tuning-up audio. Source: <a href="https://commons.wikimedia.org/wiki/File:SSF_WMD_Modules_-_2014_NAMM_Show.jpg">Wikimedia Commons</a>
   </p>
@@ -124,7 +122,7 @@ If you wand to use your Raspberry for to play audio there are other options out 
 
 <div id="attachment_1441" style="width: 730px" class="wp-caption alignnone">
   <a href="http://luisspuerto.net/wp-content/uploads/2018/01/Enable-Airplay-Kodi-Featured.jpg"><img class="size-full wp-image-1441" src="http://luisspuerto.net/wp-content/uploads/2018/01/Enable-Airplay-Kodi-Featured.jpg" alt="" width="720" height="405" srcset="http://luisspuerto.net/wp-content/uploads/2018/01/Enable-Airplay-Kodi-Featured.jpg 720w, http://luisspuerto.net/wp-content/uploads/2018/01/Enable-Airplay-Kodi-Featured-300x169.jpg 300w, http://luisspuerto.net/wp-content/uploads/2018/01/Enable-Airplay-Kodi-Featured-444x250.jpg 444w" sizes="(max-width: 720px) 100vw, 720px" /></a>
-  
+
   <p class="wp-caption-text">
     Activating Airplay in Kodi
   </p>

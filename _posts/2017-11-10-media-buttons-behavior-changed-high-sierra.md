@@ -2,8 +2,6 @@
 id: 754
 title: Media Buttons Behavior Has Changed In macOS High Sierra
 date: 2017-11-10T16:52:53+00:00
-author: Luis Puerto
-layout: 
 guid: http://luisspuerto.net/?p=754
 permalink: /2017/11/media-buttons-behavior-changed-high-sierra/
 image: /wp-content/uploads/2017/11/File-Oct-17-10-34-21-1024x536.jpeg
@@ -24,7 +22,7 @@ Now, Safari has stolen that preference, and if a video or some kind of media is 
 
 <div id="attachment_768" style="width: 306px" class="wp-caption alignleft">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2017-11-10-at-16.42.50.png"><img class="size-full wp-image-768" src="http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2017-11-10-at-16.42.50.png" alt="" width="296" height="156" /></a>
-  
+
   <p class="wp-caption-text">
     High Sierra Media Key Enabler for iTunes
   </p>

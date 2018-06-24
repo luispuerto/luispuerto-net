@@ -2,8 +2,6 @@
 id: 1830
 title: 'Homebrew&#8217;s R doesn&#8217;t have all the capabilities'
 date: 2018-05-11T10:35:32+00:00
-author: Luis Puerto
-layout: 
 guid: http://luisspuerto.net/?p=1830
 permalink: /2018/05/homebrews-r-doesnt-have-all-the-capabilities/
 wtr-disable-reading-progress:
@@ -31,7 +29,7 @@ A couple of days ago I just found out that when you install R with Homebrew you 
        TRUE        TRUE       FALSE        TRUE        TRUE        TRUE</pre>
 
 <pre class="lang:r decode:true" title="Capabilities on R CRAN">&gt; capabilities()
-       jpeg         png        tiff       tcltk         X11        aqua    
+       jpeg         png        tiff       tcltk         X11        aqua
        TRUE        TRUE        TRUE        TRUE        TRUE        TRUE
    http/ftp     sockets      libxml        fifo      cledit       iconv
        TRUE        TRUE        TRUE        TRUE        TRUE        TRUE

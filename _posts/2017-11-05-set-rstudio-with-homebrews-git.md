@@ -2,8 +2,6 @@
 id: 717
 title: 'Set rStudio with Homebrew&#8217;s Git'
 date: 2017-11-05T14:05:53+00:00
-author: Luis Puerto
-layout: 
 guid: http://luisspuerto.net/?p=717
 permalink: /2017/11/set-rstudio-with-homebrews-git/
 image: /wp-content/uploads/2017/11/rstudiobrewgit-1.jpg
@@ -22,7 +20,7 @@ As I&#8217;ll try to explain in the future, I have a full [Homebrew](https://bre
 
 <div id="attachment_722" style="width: 258px" class="wp-caption alignleft">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2017-11-05-at-12.08.19.png"><img class="size-full wp-image-722" src="http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2017-11-05-at-12.08.19.png" alt="" width="248" height="93" /></a>
-  
+
   <p class="wp-caption-text">
     Apple vs Homebrew&#8217;s Git version
   </p>
@@ -52,7 +50,7 @@ If you are user of [rStudio](https://www.rstudio.com), you&#8217;ll probably kno
 
 <div id="attachment_723" style="width: 672px" class="wp-caption alignnone">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2015-11-09-at-4.59.40-PM.png"><img class=" wp-image-723" src="http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2015-11-09-at-4.59.40-PM.png" alt="" width="662" height="668" srcset="http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2015-11-09-at-4.59.40-PM.png 1152w, http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2015-11-09-at-4.59.40-PM-150x150.png 150w, http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2015-11-09-at-4.59.40-PM-297x300.png 297w, http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2015-11-09-at-4.59.40-PM-768x775.png 768w, http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2015-11-09-at-4.59.40-PM-1015x1024.png 1015w, http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2015-11-09-at-4.59.40-PM-1024x1033.png 1024w, http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2015-11-09-at-4.59.40-PM-248x250.png 248w, http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2015-11-09-at-4.59.40-PM-50x50.png 50w" sizes="(max-width: 662px) 100vw, 662px" /></a>
-  
+
   <p class="wp-caption-text">
     rStudio&#8217;s version control options
   </p>
@@ -78,7 +76,7 @@ Then&#8230; What we should do? You need to open the user setting&#8217;s file of
 
 <div id="attachment_725" style="width: 1349px" class="wp-caption alignnone">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2017-11-02-at-17.24.00.png"><img class="size-full wp-image-725" src="http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2017-11-02-at-17.24.00.png" alt="" width="1339" height="777" srcset="http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2017-11-02-at-17.24.00.png 1339w, http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2017-11-02-at-17.24.00-300x174.png 300w, http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2017-11-02-at-17.24.00-768x446.png 768w, http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2017-11-02-at-17.24.00-1024x594.png 1024w, http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2017-11-02-at-17.24.00-1216x706.png 1216w, http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2017-11-02-at-17.24.00-431x250.png 431w" sizes="(max-width: 1339px) 100vw, 1339px" /></a>
-  
+
   <p class="wp-caption-text">
     rStudio user setting&#8217;s file.
   </p>
@@ -95,7 +93,7 @@ If you open again rStudio and go to your user settings, the version control sett
 
 <div id="attachment_727" style="width: 724px" class="wp-caption alignnone">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2017-11-05-at-13.47.17-1.png"><img class=" wp-image-727" src="http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2017-11-05-at-13.47.17-1.png" alt="" width="714" height="704" srcset="http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2017-11-05-at-13.47.17-1.png 587w, http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2017-11-05-at-13.47.17-1-300x296.png 300w, http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2017-11-05-at-13.47.17-1-253x250.png 253w, http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2017-11-05-at-13.47.17-1-50x50.png 50w" sizes="(max-width: 714px) 100vw, 714px" /></a>
-  
+
   <p class="wp-caption-text">
     Version Control Settings on rStudio.
   </p>
@@ -105,7 +103,7 @@ Now you can update without any problem your Git using Homebrew and it will keep 
 
 <div id="attachment_752" style="width: 272px" class="wp-caption alignright">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2017-11-09-at-18.00.27.png"><img class="size-full wp-image-752" src="http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2017-11-09-at-18.00.27.png" alt="" width="262" height="72" /></a>
-  
+
   <p class="wp-caption-text">
     Git&#8217;s version in High Sierra
   </p>

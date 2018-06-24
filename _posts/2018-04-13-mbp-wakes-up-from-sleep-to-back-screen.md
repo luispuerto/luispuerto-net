@@ -2,8 +2,6 @@
 id: 1772
 title: MBP wakes up from sleep to back screen
 date: 2018-04-13T17:37:52+00:00
-author: Luis Puerto
-layout: 
 guid: http://luisspuerto.net/?p=1772
 permalink: /2018/04/mbp-wakes-up-from-sleep-to-back-screen/
 wtr-disable-reading-progress:
@@ -48,7 +46,7 @@ Then, you can type your password, log in and after that push the power button fo
 
 <div id="attachment_1777" style="width: 578px" class="wp-caption aligncenter">
   <a href="http://luisspuerto.net/wp-content/uploads/2018/04/Screen-Shot-2018-04-13-at-13.16.22.png"><img class="size-full wp-image-1777" src="http://luisspuerto.net/wp-content/uploads/2018/04/Screen-Shot-2018-04-13-at-13.16.22.png" alt="" width="568" height="279" srcset="http://luisspuerto.net/wp-content/uploads/2018/04/Screen-Shot-2018-04-13-at-13.16.22.png 568w, http://luisspuerto.net/wp-content/uploads/2018/04/Screen-Shot-2018-04-13-at-13.16.22-300x147.png 300w, http://luisspuerto.net/wp-content/uploads/2018/04/Screen-Shot-2018-04-13-at-13.16.22-509x250.png 509w" sizes="(max-width: 568px) 100vw, 568px" /></a>
-  
+
   <p class="wp-caption-text">
     macOS power / shut down menu
   </p>
@@ -112,7 +110,7 @@ There is more info about the sleep modes [here](https://support.apple.com/en-us/
 
 <div id="attachment_1782" style="width: 1570px" class="wp-caption alignleft">
   <a href="http://luisspuerto.net/wp-content/uploads/2018/04/macos-sierra-mbp-progress-bar-after-deep-sleep.png"><img class="size-full wp-image-1782" src="http://luisspuerto.net/wp-content/uploads/2018/04/macos-sierra-mbp-progress-bar-after-deep-sleep.png" alt="" width="1560" height="1004" srcset="http://luisspuerto.net/wp-content/uploads/2018/04/macos-sierra-mbp-progress-bar-after-deep-sleep.png 1560w, http://luisspuerto.net/wp-content/uploads/2018/04/macos-sierra-mbp-progress-bar-after-deep-sleep-300x193.png 300w, http://luisspuerto.net/wp-content/uploads/2018/04/macos-sierra-mbp-progress-bar-after-deep-sleep-768x494.png 768w, http://luisspuerto.net/wp-content/uploads/2018/04/macos-sierra-mbp-progress-bar-after-deep-sleep-1024x659.png 1024w, http://luisspuerto.net/wp-content/uploads/2018/04/macos-sierra-mbp-progress-bar-after-deep-sleep-1216x783.png 1216w, http://luisspuerto.net/wp-content/uploads/2018/04/macos-sierra-mbp-progress-bar-after-deep-sleep-388x250.png 388w" sizes="(max-width: 1560px) 100vw, 1560px" /></a>
-  
+
   <p class="wp-caption-text">
     Waking up from safe sleep
   </p>
@@ -124,7 +122,7 @@ To change the sleep behavior you can run the following commands
 
 <pre class="lang:sh decode:true"># Just sleep mode
 $ sudo pmset -a hibernationmode 0
-# Sleep mode + safe sleep 
+# Sleep mode + safe sleep
 $ sudo pmset -a hibernationmode 3
 # Just safe sleep
 $ sudo pmset -a hibernationmode 25</pre>

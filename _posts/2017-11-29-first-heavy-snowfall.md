@@ -2,8 +2,6 @@
 id: 1004
 title: First Heavy Snowfall
 date: 2017-11-29T18:25:39+00:00
-author: Luis Puerto
-layout: 
 guid: http://luisspuerto.net/?p=1004
 permalink: /2017/11/first-heavy-snowfall/
 image: /wp-content/uploads/2017/11/DSC8753.jpg
@@ -29,7 +27,7 @@ Let&#8217;s hope that the temperatures decrease a little bit and stabilize aroun
 
 <div id="attachment_1029" style="width: 739px" class="wp-caption alignnone">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2017-11-29-at-18.17.23.png"><img class="size-full wp-image-1029" src="http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2017-11-29-at-18.17.23.png" alt="" width="729" height="394" srcset="http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2017-11-29-at-18.17.23.png 729w, http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2017-11-29-at-18.17.23-300x162.png 300w, http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2017-11-29-at-18.17.23-463x250.png 463w" sizes="(max-width: 729px) 100vw, 729px" /></a>
-  
+
   <p class="wp-caption-text">
     Joensuu&#8217;s weather forecast for the following days. Source <a href="http://en.ilmatieteenlaitos.fi/weather/joensuu?forecast=long">FMI</a>.
   </p>
@@ -39,7 +37,7 @@ PS/ Meanwhile we&#8217;ll try to enjoy the views.
 
 <div id="attachment_1033" style="width: 2058px" class="wp-caption alignnone">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4413.jpg"><img class="size-full wp-image-1033" src="http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4413.jpg" alt="" width="2048" height="1536" srcset="http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4413.jpg 2048w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4413-300x225.jpg 300w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4413-768x576.jpg 768w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4413-1024x768.jpg 1024w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4413-480x360.jpg 480w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4413-1216x912.jpg 1216w, http://luisspuerto.net/wp-content/uploads/2017/11/IMG_4413-333x250.jpg 333w" sizes="(max-width: 2048px) 100vw, 2048px" /></a>
-  
+
   <p class="wp-caption-text">
     View from my window&#8230; only on the light hours, of course. Then is like <a href="https://i.redd.it/z5el42p5rc001.jpg">this</a>.
   </p>

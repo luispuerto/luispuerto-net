@@ -2,8 +2,6 @@
 id: 1402
 title: 'Install R 100% Homebrew Edition With OpenBlas &#038; OpenMP &#8211; My Version'
 date: 2018-01-12T20:16:56+00:00
-author: Luis Puerto
-layout: 
 guid: http://luisspuerto.net/?p=1402
 permalink: /2018/01/install-r-100-homebrew-edition-with-openblas-openmp-my-version/
 wtr-disable-reading-progress:
@@ -118,11 +116,11 @@ As you probably you&#8217;ve noticed, I don&#8217;t tap a lot of repos that Bhas
 
 I recommend to add the following lines in your Zsh and/or Bash profiles running the following:
 
-<pre class="lang:sh decode:true" title="Language and Localization Variables"># For zsh 
+<pre class="lang:sh decode:true" title="Language and Localization Variables"># For zsh
 echo '# Setting language and localization variables
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8' &gt;&gt; ~/.zshrc
- 
+
 # For bash
 echo '# Setting language and localization variables
 export LC_ALL=en_US.UTF-8
@@ -180,13 +178,13 @@ $ cd ~</pre>
 
 You can ask fo the versions to check if everything is correctly installed. You have to get something similar to this:
 
-<pre class="lang:sh decode:true" title="Asking for versions">$ gcc --version                                                              
+<pre class="lang:sh decode:true" title="Asking for versions">$ gcc --version
 gcc (Homebrew GCC 7.2.0) 7.2.0
 Copyright (C) 2017 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-$ gfortran -v                                                                
+$ gfortran -v
 Using built-in specs.
 COLLECT_GCC=gfortran
 COLLECT_LTO_WRAPPER=/usr/local/Cellar/gcc/7.2.0/libexec/gcc/x86_64-apple-darwin17.2.0/7.2.0/lto-wrapper
@@ -195,7 +193,7 @@ Configured with: ../configure --build=x86_64-apple-darwin17.2.0 --prefix=/usr/lo
 Thread model: posix
 gcc version 7.2.0 (Homebrew GCC 7.2.0)
 
-$ ccache --v                                                                 
+$ ccache --v
 ccache version 3.3.4</pre>
 
 You can check also if the OpenMP from GCC is working running the following on terminal:
@@ -234,10 +232,10 @@ If you already have Git you probably have OpenSSL, the other two are optional.
 
 <pre class="lang:sh decode:true">$ brew install openssl libressl libssh2</pre>
 
-<pre class="lang:sh decode:true" title="Checking versions">$ /usr/local/opt/openssl/bin/openssl version                                
+<pre class="lang:sh decode:true" title="Checking versions">$ /usr/local/opt/openssl/bin/openssl version
 OpenSSL 1.0.2n  7 Dec 2017
 
-$ /usr/local/opt/libressl/bin/openssl version 
+$ /usr/local/opt/libressl/bin/openssl version
 LibreSSL 2.2.7
 </pre>
 
@@ -409,59 +407,59 @@ using namespace std;
 int main(int argc, char** argv)
   {
   cout &lt;&lt; "Armadillo version: " &lt;&lt; arma_version::as_string() &lt;&lt; endl;
-  
+
   // directly specify the matrix size (elements are uninitialised)
   mat A(2,3);
-  
+
   // .n_rows = number of rows    (read only)
   // .n_cols = number of columns (read only)
   cout &lt;&lt; "A.n_rows = " &lt;&lt; A.n_rows &lt;&lt; endl;
   cout &lt;&lt; "A.n_cols = " &lt;&lt; A.n_cols &lt;&lt; endl;
-  
+
   // directly access an element (indexing starts at 0)
   A(1,2) = 456.0;
-  
+
   A.print("A:");
-  
+
   // scalars are treated as a 1x1 matrix,
   // hence the code below will set A to have a size of 1x1
   A = 5.0;
   A.print("A:");
-  
+
   // if you want a matrix with all elements set to a particular value
   // the .fill() member function can be used
   A.set_size(3,3);
   A.fill(5.0);
   A.print("A:");
-  
-  
+
+
   mat B;
-  
+
   // endr indicates "end of row"
   B &lt;&lt; 0.555950 &lt;&lt; 0.274690 &lt;&lt; 0.540605 &lt;&lt; 0.798938 &lt;&lt; endr
     &lt;&lt; 0.108929 &lt;&lt; 0.830123 &lt;&lt; 0.891726 &lt;&lt; 0.895283 &lt;&lt; endr
     &lt;&lt; 0.948014 &lt;&lt; 0.973234 &lt;&lt; 0.216504 &lt;&lt; 0.883152 &lt;&lt; endr
     &lt;&lt; 0.023787 &lt;&lt; 0.675382 &lt;&lt; 0.231751 &lt;&lt; 0.450332 &lt;&lt; endr;
-  
+
   // print to the cout stream
   // with an optional string before the contents of the matrix
   B.print("B:");
-  
+
   // the &lt;&lt; operator can also be used to print the matrix
-  // to an arbitrary stream (cout in this case) 
+  // to an arbitrary stream (cout in this case)
   cout &lt;&lt; "B:" &lt;&lt; endl &lt;&lt; B &lt;&lt; endl;
-  
+
   // save to disk
   B.save("B.txt", raw_ascii);
-  
+
   // load from disk
   mat C;
   C.load("B.txt");
-  
+
   C += 2.0 * B;
   C.print("C:");
-  
-  
+
+
   // submatrix types:
   //
   // .submat(first_row, first_column, last_row, last_column)
@@ -469,115 +467,115 @@ int main(int argc, char** argv)
   // .col(column_number)
   // .cols(first_column, last_column)
   // .rows(first_row, last_row)
-  
+
   cout &lt;&lt; "C.submat(0,0,3,1) =" &lt;&lt; endl;
   cout &lt;&lt; C.submat(0,0,3,1) &lt;&lt; endl;
-  
+
   // generate the identity matrix
   mat D = eye&lt;mat&gt;(4,4);
-  
+
   D.submat(0,0,3,1) = C.cols(1,2);
   D.print("D:");
-  
+
   // transpose
   cout &lt;&lt; "trans(B) =" &lt;&lt; endl;
   cout &lt;&lt; trans(B) &lt;&lt; endl;
-  
+
   // maximum from each column (traverse along rows)
   cout &lt;&lt; "max(B) =" &lt;&lt; endl;
   cout &lt;&lt; max(B) &lt;&lt; endl;
-  
+
   // maximum from each row (traverse along columns)
   cout &lt;&lt; "max(B,1) =" &lt;&lt; endl;
   cout &lt;&lt; max(B,1) &lt;&lt; endl;
-  
+
   // maximum value in B
   cout &lt;&lt; "max(max(B)) = " &lt;&lt; max(max(B)) &lt;&lt; endl;
-  
+
   // sum of each column (traverse along rows)
   cout &lt;&lt; "sum(B) =" &lt;&lt; endl;
   cout &lt;&lt; sum(B) &lt;&lt; endl;
-  
+
   // sum of each row (traverse along columns)
   cout &lt;&lt; "sum(B,1) =" &lt;&lt; endl;
   cout &lt;&lt; sum(B,1) &lt;&lt; endl;
-  
+
   // sum of all elements
   cout &lt;&lt; "sum(sum(B)) = " &lt;&lt; sum(sum(B)) &lt;&lt; endl;
   cout &lt;&lt; "accu(B)     = " &lt;&lt; accu(B) &lt;&lt; endl;
-  
+
   // trace = sum along diagonal
   cout &lt;&lt; "trace(B)    = " &lt;&lt; trace(B) &lt;&lt; endl;
-  
+
   // random matrix -- values are uniformly distributed in the [0,1] interval
   mat E = randu&lt;mat&gt;(4,4);
   E.print("E:");
-  
+
   cout &lt;&lt; endl;
-  
+
   // row vectors are treated like a matrix with one row
   rowvec r;
   r &lt;&lt; 0.59499 &lt;&lt; 0.88807 &lt;&lt; 0.88532 &lt;&lt; 0.19968;
   r.print("r:");
-  
+
   // column vectors are treated like a matrix with one column
   colvec q;
   q &lt;&lt; 0.81114 &lt;&lt; 0.06256 &lt;&lt; 0.95989 &lt;&lt; 0.73628;
   q.print("q:");
-  
+
   // dot or inner product
   cout &lt;&lt; "as_scalar(r*q) = " &lt;&lt; as_scalar(r*q) &lt;&lt; endl;
-  
-  
+
+
   // outer product
   cout &lt;&lt; "q*r =" &lt;&lt; endl;
   cout &lt;&lt; q*r &lt;&lt; endl;
-  
+
   // multiply-and-accumulate operation
   // (no temporary matrices are created)
   cout &lt;&lt; "accu(B % C) = " &lt;&lt; accu(B % C) &lt;&lt; endl;
-  
+
   // sum of three matrices (no temporary matrices are created)
   mat F = B + C + D;
   F.print("F:");
-  
+
   // imat specifies an integer matrix
   imat AA;
   imat BB;
-  
+
   AA &lt;&lt; 1 &lt;&lt; 2 &lt;&lt; 3 &lt;&lt; endr &lt;&lt; 4 &lt;&lt; 5 &lt;&lt; 6 &lt;&lt; endr &lt;&lt; 7 &lt;&lt; 8 &lt;&lt; 9;
   BB &lt;&lt; 3 &lt;&lt; 2 &lt;&lt; 1 &lt;&lt; endr &lt;&lt; 6 &lt;&lt; 5 &lt;&lt; 4 &lt;&lt; endr &lt;&lt; 9 &lt;&lt; 8 &lt;&lt; 7;
-  
+
   // comparison of matrices (element-wise)
   // output of a relational operator is a umat
   umat ZZ = (AA &gt;= BB);
   ZZ.print("ZZ =");
-  
-  
+
+
   // 2D field of arbitrary length row vectors
   // (fields can also store abitrary objects, e.g. instances of std::string)
   field&lt;rowvec&gt; xyz(3,2);
-  
+
   xyz(0,0) = randu(1,2);
   xyz(1,0) = randu(1,3);
   xyz(2,0) = randu(1,4);
   xyz(0,1) = randu(1,5);
   xyz(1,1) = randu(1,6);
   xyz(2,1) = randu(1,7);
-  
+
   cout &lt;&lt; "xyz:" &lt;&lt; endl;
   cout &lt;&lt; xyz &lt;&lt; endl;
-  
-  
+
+
   // cubes ("3D matrices")
   cube Q( B.n_rows, B.n_cols, 2 );
-  
+
   Q.slice(0) = B;
   Q.slice(1) = 2.0 * B;
-  
+
   Q.print("Q:");
-  
-  
+
+
   return 0;
   }
 
@@ -738,7 +736,7 @@ Then if you are using english (american english) as your main language I recomme
 
 First you have to insert the following line in your Zsh and/or Bash profiles.
 
-<pre class="lang:sh decode:true" title="Set Java Home"># For zsh 
+<pre class="lang:sh decode:true" title="Set Java Home"># For zsh
 echo '# Setting $JAVA_HOME
 export JAVA_HOME="$(/usr/libexec/java_home)"' &gt;&gt; ~/.zshrc
 
@@ -791,13 +789,13 @@ Done.</pre>
 Let&#8217;s create our own folder to store the installed packages for R. This way R, or us, doesn&#8217;t have to move all the packages every time we install a new R version. Run the following in terminal.
 
 <pre class="lang:sh decode:true" title="R Packages Folder">$ mkdir -p $HOME/Library/R/3.x/library
-$ cat &gt; $HOME/.Renviron &lt;&lt;END 
+$ cat &gt; $HOME/.Renviron &lt;&lt;END
 R_LIBS_USER=$HOME/Library/R/3.x/library
 END</pre>
 
 You should also add this variable to your zsh and/or bash profiles.
 
-<pre class="lang:sh decode:true"># For zsh 
+<pre class="lang:sh decode:true"># For zsh
 echo 'export R_LIBS_USER=$HOME/Library/R/3.x/library' &gt;&gt; ~/.zshrc
 
 # For bash
@@ -813,7 +811,7 @@ echo 'export R_LIBS_USER=$HOME/Library/R/3.x/library' &gt;&gt; ~/.bash_profile
 
 Then insert the LLVM location to your path in your Zsh and/or Bash profiles:
 
-<pre class="lang:sh decode:true"># For zsh 
+<pre class="lang:sh decode:true"># For zsh
 echo 'export PATH=/usr/local/opt/llvm/bin:$PATH' &gt;&gt; ~/.zshrc
 
 # For bash
@@ -892,7 +890,7 @@ From Wikipedia: _[Go](https://en.wikipedia.org/wiki/Go_(programming_language)) 
 
 You need to modify your zsh and/or bash profile like the following
 
-<pre class="lang:sh decode:true" title="Path for golang"># For zsh 
+<pre class="lang:sh decode:true" title="Path for golang"># For zsh
 echo '## Path for Golang
 export GOPATH=$HOME/golang
 export GOROOT=/usr/local/opt/go/libexec
@@ -946,14 +944,14 @@ export R_LIBS_USER=$HOME/Library/R/3.x/library</pre>
 
 You can see those files running the following:
 
-<pre class="lang:sh decode:true " title="Open zsh or bash profile"># If you have atom. 
-# zsh 
+<pre class="lang:sh decode:true " title="Open zsh or bash profile"># If you have atom.
+# zsh
 $ atom ~/.zshrc
 # bash
 $ atom ~/.bash_profile
 
 # If you don't have atom
-#zsh 
+#zsh
 $ open -a TextEdit ~/.zshrc
 #bash
 $ open -a TextEdit ~/.bash_profile</pre>

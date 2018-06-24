@@ -2,8 +2,6 @@
 id: 1247
 title: Disconnecting the dGPU in a late 2011 MacBook Pro –third way
 date: 2017-12-11T15:03:16+00:00
-author: Luis Puerto
-layout: 
 guid: http://luisspuerto.net/?p=1247
 permalink: /2017/12/disconnecting-the-dgpu-in-a-late-2011-macbook-pro-third-way/
 wtr-disable-reading-progress:
@@ -48,12 +46,12 @@ We all have to thank to [MacRumors community](https://forums.macrumors.com/threa
 Let&#8217;s explain how it&#8217;s done:
 
   1. As always you have to reset [SMC](https://support.apple.com/en-us/HT201295) and [PRAM/NVRAM](https://support.apple.com/en-us/HT204063) before you do anything else.
-  
+
     **SMC**: shutdown, unplug everything except power, now hold <span class="lang:sh highlight:0 decode:true crayon-inline">leftShift + Ctrl + Opt/Alt + Power</span> for about 10&#8243; and release at the same time.
-  
+
     **PRAM/NVRAM**: with the power cord on, power on and immediately later and before the chime hold <span class="lang:sh highlight:0 decode:true crayon-inline ">cmd + Opt/Alt + P + R</span> at the same time until you hear the chime for the second time. Try to do the following step just right after, so you don&#8217;t let the computer to load –and fail.
   2. Now, boot into recovery single user mode by holding: <span class="lang:sh highlight:0 decode:true crayon-inline">cmd + R + S</span> . When finish to load, you run: <pre class="lang:sh decode:true">$ csrutil disable # to disable SIP
-$ nvram fa4ce28d-b62f-4c99-9cc3-6815686e30f9:gpu-power-prefs=%01%00%00%00 # to disable the dGPU on boot. 
+$ nvram fa4ce28d-b62f-4c99-9cc3-6815686e30f9:gpu-power-prefs=%01%00%00%00 # to disable the dGPU on boot.
 $ nvram boot-args="-v" # Load in verbose mode
 reboot</pre>
 
@@ -67,114 +65,114 @@ $ reboot
 
   5. Now you&#8217;re going to be able to load your desktop normally, but with an accelerated iGPU display. However, the system doesn&#8217;t know how to power-management the failed AMD-chip, so you are going to need to load it manually. <pre class="lang:sh decode:true">$ sudo kextload /System/Library/Extensions-off/AMDRadeonX3000.kext</pre>
 
-  6. You can automate the loading with the doing the following: <pre class="lang:sh decode:true">$ sudo mkdir -p /Library/LoginHook # Creating a folder to store the script. 
-$ sudo nano /Library/LoginHook/LoadX3000.sh # Creating the script. 
+  6. You can automate the loading with the doing the following: <pre class="lang:sh decode:true">$ sudo mkdir -p /Library/LoginHook # Creating a folder to store the script.
+$ sudo nano /Library/LoginHook/LoadX3000.sh # Creating the script.
 </pre>
 
   7. On nano you type/paste: <pre class="lang:sh decode:true" title="LoadX3000.sh">#!/bin/bash
 kextload /System/Library/Extensions-off/AMDRadeonX3000.kext
-# pmset -a gpuswitch 0 # to prevent to switch to the dGPU 
+# pmset -a gpuswitch 0 # to prevent to switch to the dGPU
 exit 0</pre>
-    
-    * I&#8217;ve decided to comment the line 3 since I&#8217;m not sure that 0 is the correct value. Besides, in the step 12 I set \`gpuswitch 2\`.</li> 
-    
+
+    * I&#8217;ve decided to comment the line 3 since I&#8217;m not sure that 0 is the correct value. Besides, in the step 12 I set \`gpuswitch 2\`.</li>
+
       * You make it executable active: <pre class="lang:sh decode:true">$ sudo chmod a+x /Library/LoginHook/LoadX3000.sh
 $ sudo defaults write com.apple.loginwindow LoginHook /Library/LoginHook/LoadX3000.sh</pre>
-    
+
       * This is what I like the most. You create a script in the root of your hard drive to automate the process in case of an update. <pre class="lang:sh decode:true">$ sudo nano /force-iGPU-boot.sh # Creates the script in the root</pre>
-        
+
         With the following content.
-        
+
         <pre class="lang:sh decode:true" title="force-iGPU-boot.sh">#/bin/sh
 sudo nvram boot-args="-v"
 sudo nvram fa4ce28d-b62f-4c99-9cc3-6815686e30f9:gpu-power-prefs=%01%00%00%00
 exit 0</pre>
-    
+
       * Now you make it executable and I hide to avoid delete it: <pre class="lang:sh decode:true">$ sudo chmod a+x /force-iGPU-boot.sh # make ir executable
 $ sudo chflags hidden /force-iGPU-boot.sh # hide the file.</pre>
-        
+
         In the future if you reset SMC and PRAM/NVRAM you just have to load in single user mode holding <span class="lang:sh highlight:0 decode:true crayon-inline">cmd + S</span>  and run:
-        
+
         <pre class="lang:sh decode:true">$ sh /force-iGPU-boot.sh</pre>
-    
+
       * <del>Then, you can copy the <a href="https://github.com/blackgate/AMDGPUWakeHandler">AMDGPUWakeHandler</a>, or the one I created <a href="http://luisspuerto.net/wp-content/uploads/2017/12/AMDGPUWakeHandler.kext_.zip">AMDGPUWakeHandler.kext</a>, to <span class="lang:sh highlight:0 decode:true crayon-inline ">/Library/Extensions</span>  and run the following commands:</del> <pre class="lang:sh decode:true">$ # sudo chmod -R 755 /Library/Extensions/AMDGPUWakeHandler.kext
 $ # sudo chown -R root:wheel /Library/Extensions/AMDGPUWakeHandler.kext
 $ # sudo touch /Library/Extensions</pre>
-    
+
       * <del>This time you don&#8217;t need to change the way the machine sleeps. And you can reboot.<br /> </del>I recommend you the way the machine sleeps to hibernate, but I haven&#8217;t tested if it can sleeps normally after we apply the following step</p> <pre class="lang:sh decode:true">$ sudo pmset -a hibernatemode 25</pre>
-        
+
         All the fuss about the wake up after sleep / hibernate is related to when the computer wake ups checks the GPUs and somehow it gets stuck to dGPU. For that reason some people has changed the variable gpuswitch in pmset. Nevertheless, this variable is really undocumented and you find explanations to what the values to that variable (0, 1 and 2) do on internet. <del>At this moment I have it set as default 2</del> I&#8217;ve decided to change to 1.
-        
+
         <pre class="lang:sh decode:true">$ sudo pmset -a gpuswitch 1</pre>
-        
+
         <del>Which I thing it&#8217;s the default value.</del> The default value is 2.
-  
+
         You can try the different values, reboot and then close the lid and wake up and see the results.
-  
-        What has worked for me is leave it in <span class="lang:sh highlight:0 decode:true crayon-inline">1</span>  <del>and install <a href="https://gfx.io">gfxCardStatus</a>, and every time I boot change to <span class="lang:sh highlight:0 decode:true crayon-inline ">integrated only</span> . But still testing. I&#8217;ve tried to wake up from hibernation without gfxCardStatus and it also worked, so I guess it&#8217;s optional.</del> [gfxCardStatus](https://gfx.io) can help, but at least I&#8217;m not using it right now. I wake up from hibernation without it perfectly.</li> 
-        
-          * After you reboot and if everything goes smoothly, perhaps you wan to return to the normal boot mode. You can room in terminal: <pre class="lang:sh decode:true">$ sudo nvram boot-args=""</pre></ol> 
-        
+
+        What has worked for me is leave it in <span class="lang:sh highlight:0 decode:true crayon-inline">1</span>  <del>and install <a href="https://gfx.io">gfxCardStatus</a>, and every time I boot change to <span class="lang:sh highlight:0 decode:true crayon-inline ">integrated only</span> . But still testing. I&#8217;ve tried to wake up from hibernation without gfxCardStatus and it also worked, so I guess it&#8217;s optional.</del> [gfxCardStatus](https://gfx.io) can help, but at least I&#8217;m not using it right now. I wake up from hibernation without it perfectly.</li>
+
+          * After you reboot and if everything goes smoothly, perhaps you wan to return to the normal boot mode. You can room in terminal: <pre class="lang:sh decode:true">$ sudo nvram boot-args=""</pre></ol>
+
         Now I just going to copy paste from <a class="username" dir="auto" href="https://forums.macrumors.com/members/mikeyn.1088105/">MikeyN</a>&#8216;s [post](https://forums.macrumors.com/threads/force-2011-macbook-pro-8-2-with-failed-amd-gpu-to-always-use-intel-integrated-gpu-efi-variable-fix.2037591/page-35#post-24956091)
-        
+
         > <p style="text-align: left;">
         >   <span style="color: #000000;"><em><span style="font-size: 12pt;">This setup has now one kext in a place Apple&#8217;s installers do not expect. That is why in this guide <span style="background-color: #ffff00;">SIP has not been reenabled. If an update that contains changes to the AMD drivers is about to take place it is advisable to move back the AMDRadeonX3000.kext to its default location before the update process. Otherwise the updater writes at least another kext of a different version to its default location or at worst you end up with an undefined state of partially non-matching drivers.</span></span></em></span>
         > </p>
-        > 
+        >
         > <p style="text-align: left;">
         >   <span style="color: #000000;"><em><span style="font-size: 12pt;"><span style="background-color: #ffff00;">After any system update the folder /System/Library/Extensions has to be checked for the offending kext.</span> Its presence there will lead to e.g. a boot hang on Yosemite and Sierra, an overheating boot-loop in High Sierra.</span></em></span>
         > </p>
-        > 
+        >
         > <p style="text-align: left;">
         >   <span style="color: #000000;"><em><span style="font-size: 12pt;">Further: this laptop is overheating, no matter what you do. The cooling system is inadequate and the huge number of failing AMD chips are just proof of that.</span></em></span>
         > </p>
-        
+
         ## In case you have to update
-        
+
         So, before you update the system, please remember to run:
-        
+
         <pre class="lang:sh decode:true">$ sudo cp -r /System/Library/Extensions-off/AMDRadeonX3000.kext /System/Library/Extensions/</pre>
-        
+
         Then you update. If you can&#8217;t normally load your computer, you can hold <span class="lang:sh highlight:0 decode:true crayon-inline ">cmd + S</span>  and run:
-        
+
         <pre class="lang:sh decode:true">$ sh /force-iGPU-boot.sh</pre>
-        
+
         Then you can reboot again on single user mode holding <span class="lang:sh highlight:0 decode:true crayon-inline ">cmd + S</span> and then run
-        
+
         <pre class="lang:sh decode:true">$ sudo mv /System/Library/Extensions/AMDRadeonX3000.kext /System/Library/Extensions-off/</pre>
-        
+
         To move again the kext. Keep in mid that the other one still there do you are going to probably rename it in this fashion:
-        
+
         <pre class="lang:sh decode:true">$ sudo mv /System/Library/Extensions/AMDRadeonX3000.kext /System/Library/Extensions-off/AMDRadeonX3000-1.kext</pre>
-        
+
         ## Checking that everything is OK
-        
+
         If you run in terminal
-        
+
         <pre class="lang:sh decode:true">$ kextstat | grep AMD</pre>
-        
+
         You have to get something similar to this:
-        
+
         <pre class="lang:sh decode:true ">111    2 0xffffff7f82da8000 0x122000   0x122000   com.apple.kext.AMDLegacySupport (1.6.0) 3BE3756A-6D69-3CD0-B18A-BC844EE2A4DF &lt;105 12 11 7 5 4 3 1&gt;
   130    0 0xffffff7f83631000 0x12e000   0x12e000   com.apple.kext.AMD6000Controller (1.6.0) DC45A18B-6F81-38D5-85CB-06BFBD74B524 &lt;111 105 12 11 5 4 3 1&gt;
   146    0 0xffffff7f83126000 0x22000    0x22000    com.apple.kext.AMDLegacyFramebuffer (1.6.0) 5F948DD4-8D1E-31BD-A7EE-C44254CBA506 &lt;111 105 12 11 7 5 4 3 1&gt;
   174    0 0xffffff7f83ab3000 0x56c000   0x56c000   com.apple.kext.AMDRadeonX3000 (1.6.0) 7E721EBE-AD4B-3C53-A70A-1FFF3C231968 &lt;173 147 105 12 7 5 4 3 1&gt;</pre>
-        
+
         In the beginning I wasn&#8217;t getting any of these and the system just loaded AMDRadeonX3000. That resulting in a little bit of overheating in the dGPU and I wasn&#8217;t able to sleep the computer. The reason for the system to not load the kext was I moved them that much that I changed the ownership of the files. If that is your case you can run in terminal:
-        
+
         <pre class="lang:sh decode:true">$ sudo chown -R root:wheel /System/Library/Extensions/AMD*.*
 $ sudo chown -R root:wheel /System/Library/Extensions-off/AMD*.*</pre>
-        
+
         to return the ownership to the System / Root.
-        
+
         Let&#8217;s hope that everything goes smoothly from now on. You have to see the bright side of life, now you have a quite cold running Mac since the dGPU is totally deactivated. After a while your temps have to be something similar to this:
-        
+
         <div id="attachment_1255" style="width: 943px" class="wp-caption alignnone">
           <a href="http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-11-at-14.46.20.png"><img class="wp-image-1255 size-full" src="http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-11-at-14.46.20.png" alt="" width="933" height="509" srcset="http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-11-at-14.46.20.png 933w, http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-11-at-14.46.20-300x164.png 300w, http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-11-at-14.46.20-768x419.png 768w, http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-11-at-14.46.20-458x250.png 458w" sizes="(max-width: 933px) 100vw, 933px" /></a>
-          
+
           <p class="wp-caption-text">
             GPU diode and GPU proximity are the dGPU sensors. GPU PECI is the iGPU sensor.
           </p>
         </div>
-        
+
         &nbsp;

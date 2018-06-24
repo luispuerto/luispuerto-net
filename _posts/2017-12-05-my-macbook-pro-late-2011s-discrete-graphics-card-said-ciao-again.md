@@ -2,8 +2,6 @@
 id: 1070
 title: 'My MacBook Pro late 2011&#8217;s discrete graphics card said &#8220;ciao&#8221; &#x1f44b;&#x1f3fb; –again'
 date: 2017-12-05T11:51:30+00:00
-author: Luis Puerto
-layout: 
 guid: http://luisspuerto.net/?p=1070
 permalink: /2017/12/my-macbook-pro-late-2011s-discrete-graphics-card-said-ciao-again/
 image: /wp-content/uploads/2017/12/maxresdefault.jpg
@@ -26,7 +24,7 @@ So, in Sunday morning, after I slept on the issue and I had a proper coffee and 
 
 <div id="attachment_1072" style="width: 3274px" class="wp-caption alignnone">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4420.jpg"><img class="wp-image-1072 size-full" src="http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4420.jpg" alt="" width="3264" height="2448" srcset="http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4420.jpg 2048w, http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4420-300x225.jpg 300w, http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4420-768x576.jpg 768w, http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4420-1024x768.jpg 1024w, http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4420-480x360.jpg 480w, http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4420-1216x912.jpg 1216w, http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4420-333x250.jpg 333w" sizes="(max-width: 3264px) 100vw, 3264px" /></a>
-  
+
   <p class="wp-caption-text">
     Error 4MEM/66/40000000: 0x846b3798
   </p>
@@ -49,7 +47,7 @@ This step isn&#8217;t really necessary, and you can jump to the [next step](http
 You need to boot on single user mode (press and hold <span class="lang:sh highlight:0 decode:true crayon-inline ">Cmd + S + R</span> ) and run the following commands.
 
 <pre class="lang:sh decode:true" title="Deleting the kext for the discrete graphic card on my mac">$ fsck -fy # to check a disk
-$ mount -uw / # mount a root filesystem with read/write permissions 
+$ mount -uw / # mount a root filesystem with read/write permissions
 $ sudo mkdir /AMD_Kexts/ # make a directory to store the AMD drivers in case you'll need them in future
 $ sudo mv /System/Library/Extensions/AMD*.* /AMD_Kexts/ # move the AMD drivers
 $ sudo rm -rf /System/Library/Caches/com.apple.kext.caches/ # remove the AMD drivers cache
@@ -73,7 +71,7 @@ Now, you can take your disk, reinstall it in your Mac and begin from there. I bo
 
 <div id="attachment_1075" style="width: 1090px" class="wp-caption alignnone">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4422.jpg"><img class="size-full wp-image-1075" src="http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4422.jpg" alt="" width="1080" height="805" srcset="http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4422.jpg 1080w, http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4422-300x224.jpg 300w, http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4422-768x572.jpg 768w, http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4422-1024x763.jpg 1024w, http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4422-335x250.jpg 335w" sizes="(max-width: 1080px) 100vw, 1080px" /></a>
-  
+
   <p class="wp-caption-text">
     Booting without kexts.
   </p>
@@ -91,7 +89,7 @@ Now, and since you moved the GPU kext from their original location you are going
 
 <div id="attachment_1076" style="width: 1088px" class="wp-caption alignnone">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4423.jpg"><img class="size-full wp-image-1076" src="http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4423.jpg" alt="" width="1078" height="777" srcset="http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4423.jpg 1078w, http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4423-300x216.jpg 300w, http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4423-768x554.jpg 768w, http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4423-1024x738.jpg 1024w, http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4423-347x250.jpg 347w" sizes="(max-width: 1078px) 100vw, 1078px" /></a>
-  
+
   <p class="wp-caption-text">
     Booting normally.
   </p>
@@ -103,7 +101,7 @@ At this point, I recommend to move the kexts to the original location <span clas
 
 <div id="attachment_1093" style="width: 892px" class="wp-caption alignnone">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-04-at-12.43.04.png"><img class="size-full wp-image-1093" src="http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-04-at-12.43.04.png" alt="" width="882" height="548" srcset="http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-04-at-12.43.04.png 882w, http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-04-at-12.43.04-300x186.png 300w, http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-04-at-12.43.04-768x477.png 768w, http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-04-at-12.43.04-402x250.png 402w" sizes="(max-width: 882px) 100vw, 882px" /></a>
-  
+
   <p class="wp-caption-text">
     Moved kexts
   </p>
@@ -122,15 +120,15 @@ Now, to implement the complete solution you have to [download ubuntu](https://ww
 
 Which probably turns something like this:
 
-<pre class="lang:sh decode:true">/dev/disk2              Apple_partition_scheme             
-/dev/disk2s1            Apple_partition_map             
+<pre class="lang:sh decode:true">/dev/disk2              Apple_partition_scheme
+/dev/disk2s1            Apple_partition_map
 /dev/disk2s2            Apple_HFS</pre>
 
 The disk number could be different, for example in my case the first time was disk3, but mounted a second time and was disk2. Depends on how many disks have you mounted before.
 
 Now you can finally mount the ISO with the following commands:
 
-<pre class="lang:sh decode:true" title="mounting the ubuntu disk. ">$ mkdir /tmp/ubuntu 
+<pre class="lang:sh decode:true" title="mounting the ubuntu disk. ">$ mkdir /tmp/ubuntu
 $ mount -t cd9660 /dev/disk2 /tmp/ubuntu/
 $ open /tmp/ubuntu/shell</pre>
 
@@ -140,7 +138,7 @@ You have to [format you USB stick to FAT32](https://support.apple.com/kb/PH22241
 
 <div id="attachment_1079" style="width: 892px" class="wp-caption alignnone">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-04-at-13.38.12.png"><img class="size-full wp-image-1079" src="http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-04-at-13.38.12.png" alt="" width="882" height="548" srcset="http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-04-at-13.38.12.png 882w, http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-04-at-13.38.12-300x186.png 300w, http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-04-at-13.38.12-768x477.png 768w, http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-04-at-13.38.12-402x250.png 402w" sizes="(max-width: 882px) 100vw, 882px" /></a>
-  
+
   <p class="wp-caption-text">
     Folders you have to copy
   </p>
@@ -259,11 +257,11 @@ In the same way&#8230; An almost month ago I installed High Sierra and I notic
 
 <div id="attachment_1090" style="width: 1147px" class="wp-caption alignnone">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-04-at-00.23.58.png"><img class="size-full wp-image-1090" src="http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-04-at-00.23.58.png" alt="" width="1137" height="792" srcset="http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-04-at-00.23.58.png 1137w, http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-04-at-00.23.58-300x209.png 300w, http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-04-at-00.23.58-768x535.png 768w, http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-04-at-00.23.58-1024x713.png 1024w, http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-04-at-00.23.58-359x250.png 359w" sizes="(max-width: 1137px) 100vw, 1137px" /></a>
-  
+
   <p class="wp-caption-text">
     [ERROR] – Unknown CGXDisplayDevice: 0x41dcd00
   </p>
-</div>The error is still there right now, and I told Apple about it 
+</div>The error is still there right now, and I told Apple about it
 
 [when I noticed](https://twitter.com/lpuerto/status/928885729916342272). They contacted me and collected some data. They never return to me about this issue. Now, I wondering if this two issues are connected and High Sierra accelerated the degradation process of the Nvidia / AMD chip.
 

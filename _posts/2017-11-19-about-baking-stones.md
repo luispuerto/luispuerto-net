@@ -2,8 +2,6 @@
 id: 940
 title: About baking stones
 date: 2017-11-19T19:44:33+00:00
-author: Luis Puerto
-layout: 
 guid: http://luisspuerto.net/?p=940
 permalink: /2017/11/about-baking-stones/
 image: /wp-content/uploads/2017/11/Pizza_on_stone.jpg

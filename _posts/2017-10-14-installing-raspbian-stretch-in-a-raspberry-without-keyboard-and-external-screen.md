@@ -2,8 +2,6 @@
 id: 391
 title: Installing Raspbian in a Raspberry without keyboard and external screen
 date: 2017-10-14T18:47:55+00:00
-author: Luis Puerto
-layout: 
 guid: http://luisspuerto.net/?p=391
 permalink: /2017/10/installing-raspbian-stretch-in-a-raspberry-without-keyboard-and-external-screen/
 image: /wp-content/uploads/2017/10/Screen-Shot-2017-10-15-at-13.25.03.png
@@ -34,7 +32,7 @@ To flash the OS in the memory card you can just use [Etcher](https://etcher.io),
 
 <div id="attachment_464" style="width: 892px" class="wp-caption alignnone">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-17-at-07.52.26.png"><img class="size-full wp-image-464" src="http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-17-at-07.52.26.png" alt="" width="882" height="548" srcset="http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-17-at-07.52.26.png 882w, http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-17-at-07.52.26-300x186.png 300w, http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-17-at-07.52.26-768x477.png 768w, http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-17-at-07.52.26-402x250.png 402w" sizes="(max-width: 882px) 100vw, 882px" /></a>
-  
+
   <p class="wp-caption-text">
     File named ssh with extension on the FAT partition.
   </p>
@@ -58,7 +56,7 @@ Then you&#8217;ll be faced with a screen similar to this one.
 
 <div id="attachment_417" style="width: 692px" class="wp-caption alignnone">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-15-at-13.44.34-1.png"><img class="wp-image-417 size-full" src="http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-15-at-13.44.34-1.png" alt="" width="682" height="478" srcset="http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-15-at-13.44.34-1.png 682w, http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-15-at-13.44.34-1-300x210.png 300w, http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-15-at-13.44.34-1-357x250.png 357w" sizes="(max-width: 682px) 100vw, 682px" /></a>
-  
+
   <p class="wp-caption-text">
     Login into the Pi using the SSH connection
   </p>
@@ -75,7 +73,7 @@ $ sudo raspi-config</pre>
 
 <div id="attachment_415" style="width: 692px" class="wp-caption alignnone">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-15-at-13.44.54.png"><img class="wp-image-415 size-full" src="http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-15-at-13.44.54.png" alt="" width="682" height="478" srcset="http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-15-at-13.44.54.png 682w, http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-15-at-13.44.54-300x210.png 300w, http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-15-at-13.44.54-357x250.png 357w" sizes="(max-width: 682px) 100vw, 682px" /></a>
-  
+
   <p class="wp-caption-text">
     Raspberry config tool
   </p>
@@ -121,7 +119,7 @@ You also have to install the [VNC client](https://www.realvnc.com/download/viewe
 
 <div id="attachment_412" style="width: 1690px" class="wp-caption alignnone">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-15-at-13.25.03.png"><img class="wp-image-412 size-full" src="http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-15-at-13.25.03.png" alt="" width="1680" height="1050" srcset="http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-15-at-13.25.03.png 1680w, http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-15-at-13.25.03-300x188.png 300w, http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-15-at-13.25.03-768x480.png 768w, http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-15-at-13.25.03-1024x640.png 1024w, http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-15-at-13.25.03-1216x760.png 1216w, http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-15-at-13.25.03-400x250.png 400w" sizes="(max-width: 1680px) 100vw, 1680px" /></a>
-  
+
   <p class="wp-caption-text">
     Remote desktop of Raspberry Pi.
   </p>
@@ -129,7 +127,7 @@ You also have to install the [VNC client](https://www.realvnc.com/download/viewe
 
 <div id="attachment_422" style="width: 276px" class="wp-caption alignleft">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-15-at-15.14.10.png"><img class="size-full wp-image-422" src="http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-15-at-15.14.10.png" alt="" width="266" height="110" /></a>
-  
+
   <p class="wp-caption-text">
     VNC server dialog.
   </p>
@@ -139,7 +137,7 @@ There are further configuration you can do in the server-side of the VNC connect
 
 <div id="attachment_423" style="width: 825px" class="wp-caption alignnone">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-15-at-15.18.32.png"><img class="size-full wp-image-423" src="http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-15-at-15.18.32.png" alt="" width="815" height="493" srcset="http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-15-at-15.18.32.png 815w, http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-15-at-15.18.32-300x181.png 300w, http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-15-at-15.18.32-768x465.png 768w, http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-15-at-15.18.32-413x250.png 413w" sizes="(max-width: 815px) 100vw, 815px" /></a>
-  
+
   <p class="wp-caption-text">
     Menu in the VNC server on Pi
   </p>
@@ -160,7 +158,7 @@ $ sudo apt-get install exfat-fuse</pre>
 
 <div id="attachment_454" style="width: 263px" class="wp-caption alignleft">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-16-at-17.59.20.png"><img class="wp-image-454" src="http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-16-at-17.59.20.png" alt="" width="253" height="436" srcset="http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-16-at-17.59.20.png 396w, http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-16-at-17.59.20-174x300.png 174w, http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-16-at-17.59.20-145x250.png 145w" sizes="(max-width: 253px) 100vw, 253px" /></a>
-  
+
   <p class="wp-caption-text">
     Mounting a usb stick on the Pi.
   </p>
@@ -179,7 +177,7 @@ If you wanted to do the same in the terminal or in the SSH console you have to u
 <pre class="lang:sh decode:true" title="mounting and unmount volumes">sudo fdisk -f # this is to list all the volumes available
 mkdir /mnt/usb # directory where you are going to mount
 sudo mount /dev/sda1 /mnt/usb # mounting the unit
-sudo ntfs-3g /dev/sda1 /mnt/usb # alternative way of mounting if it's NTFS 
+sudo ntfs-3g /dev/sda1 /mnt/usb # alternative way of mounting if it's NTFS
 sudo umount /mnt/usb # to unmount the volume</pre>
 
 Now, if you want to mount some samba shares you have connected in your network, like in your router or in the Time Capsule, like it&#8217;s my case you have to proceed as follows, being aware that you have to create the mounting (point) directory before.

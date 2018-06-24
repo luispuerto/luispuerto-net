@@ -2,8 +2,6 @@
 id: 1287
 title: iTerm2 + Oh My Zsh + Powerlevel9k + Monaco Nerd Complete Font
 date: 2018-01-09T19:15:18+00:00
-author: Luis Puerto
-layout: 
 guid: http://luisspuerto.net/?p=1287
 permalink: /2018/01/iterm2-oh-my-zsh-powerlevel9k-monaco-nerd-complete-font/
 image: /wp-content/uploads/2017/12/Screen-Shot-2017-12-19-at-11.20.07.png
@@ -75,7 +73,7 @@ Finally, you have to configure iTerm2 to use your patched font if you want the g
 
 <div id="attachment_1354" style="width: 1040px" class="wp-caption alignnone">
   <a href="http://luisspuerto.net/wp-content/uploads/2018/01/Screen-Shot-2018-01-02-at-13.05.13.png"><img class="size-full wp-image-1354" src="http://luisspuerto.net/wp-content/uploads/2018/01/Screen-Shot-2018-01-02-at-13.05.13.png" alt="" width="1030" height="569" srcset="http://luisspuerto.net/wp-content/uploads/2018/01/Screen-Shot-2018-01-02-at-13.05.13.png 1030w, http://luisspuerto.net/wp-content/uploads/2018/01/Screen-Shot-2018-01-02-at-13.05.13-300x166.png 300w, http://luisspuerto.net/wp-content/uploads/2018/01/Screen-Shot-2018-01-02-at-13.05.13-768x424.png 768w, http://luisspuerto.net/wp-content/uploads/2018/01/Screen-Shot-2018-01-02-at-13.05.13-1024x566.png 1024w, http://luisspuerto.net/wp-content/uploads/2018/01/Screen-Shot-2018-01-02-at-13.05.13-453x250.png 453w" sizes="(max-width: 1030px) 100vw, 1030px" /></a>
-  
+
   <p class="wp-caption-text">
     iTerm2 font configuration.
   </p>
@@ -88,7 +86,7 @@ $ brew cask install font-meslo-nerd-font #if you want to install Meslo font</pre
 
 <div id="attachment_1355" style="width: 1012px" class="wp-caption alignnone">
   <a href="http://luisspuerto.net/wp-content/uploads/2018/01/Screen-Shot-2018-01-02-at-13.11.31.png"><img class="size-full wp-image-1355" src="http://luisspuerto.net/wp-content/uploads/2018/01/Screen-Shot-2018-01-02-at-13.11.31.png" alt="" width="1002" height="521" srcset="http://luisspuerto.net/wp-content/uploads/2018/01/Screen-Shot-2018-01-02-at-13.11.31.png 1002w, http://luisspuerto.net/wp-content/uploads/2018/01/Screen-Shot-2018-01-02-at-13.11.31-300x156.png 300w, http://luisspuerto.net/wp-content/uploads/2018/01/Screen-Shot-2018-01-02-at-13.11.31-768x399.png 768w, http://luisspuerto.net/wp-content/uploads/2018/01/Screen-Shot-2018-01-02-at-13.11.31-481x250.png 481w" sizes="(max-width: 1002px) 100vw, 1002px" /></a>
-  
+
   <p class="wp-caption-text">
     Color configuration in iTerm2
   </p>
@@ -138,7 +136,7 @@ Open Terminal and launch the options screen `Cmd + ;`. In the General tap you ca
 
 <div id="attachment_1360" style="width: 1305px" class="wp-caption alignnone">
   <a href="http://luisspuerto.net/wp-content/uploads/2018/01/Screen-Shot-2018-01-09-at-18.11.54.png"><img class="size-full wp-image-1360" src="http://luisspuerto.net/wp-content/uploads/2018/01/Screen-Shot-2018-01-09-at-18.11.54.png" alt="" width="1295" height="648" srcset="http://luisspuerto.net/wp-content/uploads/2018/01/Screen-Shot-2018-01-09-at-18.11.54.png 1295w, http://luisspuerto.net/wp-content/uploads/2018/01/Screen-Shot-2018-01-09-at-18.11.54-300x150.png 300w, http://luisspuerto.net/wp-content/uploads/2018/01/Screen-Shot-2018-01-09-at-18.11.54-768x384.png 768w, http://luisspuerto.net/wp-content/uploads/2018/01/Screen-Shot-2018-01-09-at-18.11.54-1024x512.png 1024w, http://luisspuerto.net/wp-content/uploads/2018/01/Screen-Shot-2018-01-09-at-18.11.54-1216x608.png 1216w, http://luisspuerto.net/wp-content/uploads/2018/01/Screen-Shot-2018-01-09-at-18.11.54-500x250.png 500w" sizes="(max-width: 1295px) 100vw, 1295px" /></a>
-  
+
   <p class="wp-caption-text">
     Terminal with Bash
   </p>

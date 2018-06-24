@@ -2,8 +2,6 @@
 id: 1798
 title: The ciabatta recipe
 date: 2018-04-29T12:49:50+00:00
-author: Luis Puerto
-layout: 
 guid: http://luisspuerto.net/?p=1798
 permalink: /2018/04/the-ciabatta-recipe/
 wtr-disable-reading-progress:
@@ -28,7 +26,7 @@ For the poolish
 
   * **Flour**: 450 gr (60%).
   * **Water**: 450 gr (60%).
-  * **Yeast**: 1 to 7 gr of fresh yeast (see below) depending on how much we want to leave the poolish resting &#8211; fermenting. 
+  * **Yeast**: 1 to 7 gr of fresh yeast (see below) depending on how much we want to leave the poolish resting &#8211; fermenting.
       * 0.9 gr for 12 hour fermentation (0.12%).
       * 3 gr for 8 hour fermentation (0.4%).
       * 7 gr for 3 hours fermentation (0.93%).
@@ -51,29 +49,29 @@ As you probably have noted the proportions are a little bit weir, this is becaus
   5. After you&#8217;ve developed the gluten you take out the dough from the bowl and set in on a tray where you&#8217;ve spread olive oil so the dough doesn&#8217;t stick to it. There you fold it like a small package using the 4 sides and turn it over with the seam downwards for 30&#8242;.
   6. After 30&#8242; you repeat the operation, fold again like a small package using the 4 sides and turn it over, but this time let it rest for an hour. <div id="attachment_1812" style="width: 2058px" class="wp-caption alignleft">
       <a href="http://luisspuerto.net/wp-content/uploads/2018/04/IMG_5421.jpg"><img class="size-full wp-image-1812" src="http://luisspuerto.net/wp-content/uploads/2018/04/IMG_5421.jpg" alt="" width="2048" height="1536" srcset="http://luisspuerto.net/wp-content/uploads/2018/04/IMG_5421.jpg 2048w, http://luisspuerto.net/wp-content/uploads/2018/04/IMG_5421-300x225.jpg 300w, http://luisspuerto.net/wp-content/uploads/2018/04/IMG_5421-768x576.jpg 768w, http://luisspuerto.net/wp-content/uploads/2018/04/IMG_5421-1024x768.jpg 1024w, http://luisspuerto.net/wp-content/uploads/2018/04/IMG_5421-480x360.jpg 480w, http://luisspuerto.net/wp-content/uploads/2018/04/IMG_5421-1216x912.jpg 1216w, http://luisspuerto.net/wp-content/uploads/2018/04/IMG_5421-333x250.jpg 333w" sizes="(max-width: 2048px) 100vw, 2048px" /></a>
-      
+
       <p class="wp-caption-text">
         Poolish fermenting and dough resting / proofing in the tray
       </p>
     </div>
-    
-    At this point you could think to preheat the oven to 250 ºC so it&#8217;s ready after an hour. Remember to put a container with water inside so there is humidity when you introduce the bread. Preheat the oven tray too.</li> 
-    
+
+    At this point you could think to preheat the oven to 250 ºC so it&#8217;s ready after an hour. Remember to put a container with water inside so there is humidity when you introduce the bread. Preheat the oven tray too.</li>
+
       * After an hour you take the dough out of the tray / container –genteelly so you don&#8217;t ruin the air pockets– and put in the counter where you have sprinkle some flour. You can cut the dough in half longwise so you end up with a couple of strips of dough that are like a small mattresses.
       * Now, you take the tray out of the oven and put parchment paper over it –without burn yourself– and after that you put the two stripes of dough.
       * Bake them in the oven for about 20&#8242; and remove the water.
-      * You can reduce a little bit the temperature now to around 230 ºC and bake for another 10&#8242;. 
+      * You can reduce a little bit the temperature now to around 230 ºC and bake for another 10&#8242;.
         <div id="attachment_1814" style="width: 2058px" class="wp-caption alignnone">
           <a href="http://luisspuerto.net/wp-content/uploads/2018/04/IMG_5299.jpg"><img class="size-full wp-image-1814" src="http://luisspuerto.net/wp-content/uploads/2018/04/IMG_5299.jpg" alt="" width="2048" height="1536" srcset="http://luisspuerto.net/wp-content/uploads/2018/04/IMG_5299.jpg 2048w, http://luisspuerto.net/wp-content/uploads/2018/04/IMG_5299-300x225.jpg 300w, http://luisspuerto.net/wp-content/uploads/2018/04/IMG_5299-768x576.jpg 768w, http://luisspuerto.net/wp-content/uploads/2018/04/IMG_5299-1024x768.jpg 1024w, http://luisspuerto.net/wp-content/uploads/2018/04/IMG_5299-480x360.jpg 480w, http://luisspuerto.net/wp-content/uploads/2018/04/IMG_5299-1216x912.jpg 1216w, http://luisspuerto.net/wp-content/uploads/2018/04/IMG_5299-333x250.jpg 333w" sizes="(max-width: 2048px) 100vw, 2048px" /></a>
-          
+
           <p class="wp-caption-text">
             Loaves in the oven
           </p>
-        </div></li> 
-        
+        </div></li>
+
           * After 10&#8242; I usually turn around the loaves so they get well baked on the bottom and bake for another 10&#8242;.
           * Finally, turn off the oven and open the door a little bit leaving the bread there for an additional 10&#8242;.
           * Take the loaves out and let them rest over the rack for at least half an hour.
-          * Enjoy your ciabatta.</ol> 
-        
+          * Enjoy your ciabatta.</ol>
+
         &nbsp;

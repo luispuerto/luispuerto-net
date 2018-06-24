@@ -2,8 +2,6 @@
 id: 496
 title: 'Backing up your Pi&#8217;s SD card'
 date: 2017-10-19T19:24:16+00:00
-author: Luis Puerto
-layout: 
 guid: http://luisspuerto.net/?p=496
 permalink: /2017/10/backing-up-your-pis-sd-card/
 categories:
@@ -33,7 +31,7 @@ When you executes the dd utility you only have two options: backup or restore a 
 
 <div id="attachment_510" style="width: 542px" class="wp-caption alignnone">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-19-at-19.12.08.png"><img class="size-full wp-image-510" src="http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-19-at-19.12.08.png" alt="" width="532" height="351" srcset="http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-19-at-19.12.08.png 532w, http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-19-at-19.12.08-300x198.png 300w, http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-19-at-19.12.08-379x250.png 379w" sizes="(max-width: 532px) 100vw, 532px" /></a>
-  
+
   <p class="wp-caption-text">
     dd utility, backup or restore
   </p>
@@ -51,7 +49,7 @@ First we use <span class="lang:sh highlight:0 decode:true crayon-inline ">diskut
 
 <div id="attachment_503" style="width: 972px" class="wp-caption alignnone">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-19-at-18.17.45.png"><img class="size-full wp-image-503" src="http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-19-at-18.17.45.png" alt="" width="962" height="757" srcset="http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-19-at-18.17.45.png 962w, http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-19-at-18.17.45-300x236.png 300w, http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-19-at-18.17.45-768x604.png 768w, http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-19-at-18.17.45-318x250.png 318w" sizes="(max-width: 962px) 100vw, 962px" /></a>
-  
+
   <p class="wp-caption-text">
     List of volumes
   </p>

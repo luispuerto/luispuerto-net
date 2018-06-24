@@ -2,8 +2,6 @@
 id: 700
 title: Installing PGP signing for Git on macOS
 date: 2017-11-04T23:16:39+00:00
-author: Luis Puerto
-layout: 
 guid: http://luisspuerto.net/?p=700
 permalink: /2017/11/installing-pgp-signing-for-git-on-macos/
 image: /wp-content/uploads/2017/11/11407107023_b52fa108f7_b.jpg
@@ -17,7 +15,7 @@ tags:
 ---
 <div id="attachment_701" style="width: 264px" class="wp-caption alignleft">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/11/commits.png"><img class=" wp-image-701" src="http://luisspuerto.net/wp-content/uploads/2017/11/commits.png" alt="" width="254" height="298" srcset="http://luisspuerto.net/wp-content/uploads/2017/11/commits.png 594w, http://luisspuerto.net/wp-content/uploads/2017/11/commits-256x300.png 256w, http://luisspuerto.net/wp-content/uploads/2017/11/commits-214x250.png 214w" sizes="(max-width: 254px) 100vw, 254px" /></a>
-  
+
   <p class="wp-caption-text">
     Only some commits were &#8220;verified&#8221;
   </p>
@@ -32,7 +30,7 @@ fatal: failed to write commit object</pre>
 
 <div id="attachment_702" style="width: 282px" class="wp-caption alignright">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2017-11-04-at-19.33.59.png"><img class="wp-image-702 size-full" src="http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2017-11-04-at-19.33.59.png" alt="" width="272" height="177" /></a>
-  
+
   <p class="wp-caption-text">
     Verified Signature in GitHub
   </p>
@@ -114,7 +112,7 @@ I recommend you to test it doing a test commit. First time it should to prompt y
 
 <div id="attachment_710" style="width: 1053px" class="wp-caption alignnone">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/11/pinentry-mac.png"><img class="size-full wp-image-710" src="http://luisspuerto.net/wp-content/uploads/2017/11/pinentry-mac.png" alt="" width="1043" height="501" srcset="http://luisspuerto.net/wp-content/uploads/2017/11/pinentry-mac.png 1043w, http://luisspuerto.net/wp-content/uploads/2017/11/pinentry-mac-300x144.png 300w, http://luisspuerto.net/wp-content/uploads/2017/11/pinentry-mac-768x369.png 768w, http://luisspuerto.net/wp-content/uploads/2017/11/pinentry-mac-1024x492.png 1024w, http://luisspuerto.net/wp-content/uploads/2017/11/pinentry-mac-520x250.png 520w" sizes="(max-width: 1043px) 100vw, 1043px" /></a>
-  
+
   <p class="wp-caption-text">
     pinentry prompt
   </p>

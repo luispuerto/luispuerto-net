@@ -2,8 +2,6 @@
 id: 263
 title: First blog post
 date: 2017-05-15T04:08:07+00:00
-author: Luis Puerto
-layout: 
 guid: https://lpuerto.wordpress.com/?p=263
 permalink: /2017/05/first-blog-post/
 image: /wp-content/uploads/2017/04/hwijjf7rwopgej1nb4zb_img_3773.jpg

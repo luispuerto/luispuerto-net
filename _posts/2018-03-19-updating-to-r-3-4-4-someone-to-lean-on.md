@@ -2,8 +2,6 @@
 id: 1624
 title: 'Updating to R 3.4.4 &#8220;Someone to Lean On&#8221;'
 date: 2018-03-19T11:56:02+00:00
-author: Luis Puerto
-layout: 
 guid: http://luisspuerto.net/?p=1624
 permalink: /2018/03/updating-to-r-3-4-4-someone-to-lean-on/
 image: /wp-content/uploads/2018/03/someoonetoleanon.jpg
@@ -19,17 +17,17 @@ tags:
 <del>Just today yesterday</del> Last Thursday –took me more that I expected to have a moment to <del>write</del> finish this post– R was updated to 3.4.4 and this new released is called &#8220;Someone to Lean On&#8221;, which is –[as all the rest are](http://livefreeordichotomize.com/2017/09/28/r-release-names/)– a reference to Peanuts comic. These are the released notes:
 
 > NEW FEATURES:
-> 
+>
 >   * \`Sys.timezone()\` tries more heuristics on Unix-alikes and so is more likely to succeed (especially on Linux).  For the slowest method, a warning is given recommending that TZ is set to avoid the search.
 >   * The version of LAPACK included in the sources has been updated to 3.8.0 (for the routines used by R, a very minor bug-fix change).
 >   * \`parallel::detectCores(logical = FALSE)\` is ignored on Linux systems, since the information is not available with virtualized OSes.
-> 
+>
 > INSTALLATION on a UNIX-ALIKE:
-> 
+>
 >   * Configure will use pkg-config to find the flags to link to jpeg if available (as it should be for the recently-released jpeg-9c and libjpeg-turbo).  (This amends the code added in R 3.3.0 as the module name in jpeg-9c is not what that tested for.)
-> 
+>
 > DEPRECATED AND DEFUNCT:
-> 
+>
 >   * \`Sys.timezone(location = FALSE)\` (which was a stop-gap measure for Windows long ago) is deprecated.  It no longer returns the value of environment variable TZ (usually a location).
 >   * Legacy support of make macros such as CXX1X is formally deprecated: use the CXX11 forms instead.
 >   * BUG FIXES:

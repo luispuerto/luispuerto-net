@@ -2,7 +2,7 @@
 id: 534
 title: Trash location in macOS vs Linux
 date: 2017-10-26T19:37:42+00:00
-author: Luis Puerto
+
 layout: 
 guid: http://luisspuerto.net/?p=534
 permalink: /2017/10/trash-location-in-macos-vs-linux/

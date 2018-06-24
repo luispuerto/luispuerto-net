@@ -2,8 +2,6 @@
 id: 1661
 title: 'Why don&#8217;t I like Facebook anymore?'
 date: 2018-03-21T17:01:12+00:00
-author: Luis Puerto
-layout: 
 guid: http://luisspuerto.net/?p=1661
 permalink: /2018/03/why-dont-i-like-facebook-anymore/
 image: /wp-content/uploads/2018/03/Facebook-dislike.jpg
@@ -19,7 +17,7 @@ tags:
 ---
 <div id="attachment_1723" style="width: 345px" class="wp-caption alignleft">
   <a href="http://luisspuerto.net/wp-content/uploads/2018/03/delete-facebook.png"><img class="wp-image-1723" src="http://luisspuerto.net/wp-content/uploads/2018/03/delete-facebook.png" alt="" width="335" height="178" srcset="http://luisspuerto.net/wp-content/uploads/2018/03/delete-facebook.png 1390w, http://luisspuerto.net/wp-content/uploads/2018/03/delete-facebook-300x159.png 300w, http://luisspuerto.net/wp-content/uploads/2018/03/delete-facebook-768x408.png 768w, http://luisspuerto.net/wp-content/uploads/2018/03/delete-facebook-1024x544.png 1024w, http://luisspuerto.net/wp-content/uploads/2018/03/delete-facebook-1216x646.png 1216w, http://luisspuerto.net/wp-content/uploads/2018/03/delete-facebook-471x250.png 471w" sizes="(max-width: 335px) 100vw, 335px" /></a>
-  
+
   <p class="wp-caption-text">
     #deletefacebook from <a href="https://techcrunch.com/2018/03/19/deletefacebook/">TechCrunch post</a>.
   </p>
@@ -31,7 +29,7 @@ All of this touches me a little bit closer, since I really believe that [Data Sc
 
 <div id="attachment_1716" style="width: 354px" class="wp-caption alignright">
   <a href="http://luisspuerto.net/wp-content/uploads/2018/03/957ca3a8c332c99c6732f298c426a305.jpg"><img class=" wp-image-1716" src="http://luisspuerto.net/wp-content/uploads/2018/03/957ca3a8c332c99c6732f298c426a305.jpg" alt="" width="344" height="258" srcset="http://luisspuerto.net/wp-content/uploads/2018/03/957ca3a8c332c99c6732f298c426a305.jpg 600w, http://luisspuerto.net/wp-content/uploads/2018/03/957ca3a8c332c99c6732f298c426a305-300x225.jpg 300w, http://luisspuerto.net/wp-content/uploads/2018/03/957ca3a8c332c99c6732f298c426a305-480x360.jpg 480w, http://luisspuerto.net/wp-content/uploads/2018/03/957ca3a8c332c99c6732f298c426a305-333x250.jpg 333w" sizes="(max-width: 344px) 100vw, 344px" /></a>
-  
+
   <p class="wp-caption-text">
     I bet these two don&#8217;t have a Facebook account
   </p>
@@ -53,7 +51,7 @@ It&#8217;s true that you can share other content and not only photos in Facebook
 
 <div id="attachment_1733" style="width: 523px" class="wp-caption aligncenter">
   <a href="http://luisspuerto.net/wp-content/uploads/2018/03/Screen-Shot-2018-03-20-at-15.49.51.png"><img class="wp-image-1733 size-full" src="http://luisspuerto.net/wp-content/uploads/2018/03/Screen-Shot-2018-03-20-at-15.49.51.png" alt="" width="513" height="337" srcset="http://luisspuerto.net/wp-content/uploads/2018/03/Screen-Shot-2018-03-20-at-15.49.51.png 513w, http://luisspuerto.net/wp-content/uploads/2018/03/Screen-Shot-2018-03-20-at-15.49.51-300x197.png 300w, http://luisspuerto.net/wp-content/uploads/2018/03/Screen-Shot-2018-03-20-at-15.49.51-381x250.png 381w" sizes="(max-width: 513px) 100vw, 513px" /></a>
-  
+
   <p class="wp-caption-text">
     Facebook update box
   </p>
