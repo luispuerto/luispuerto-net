@@ -4,6 +4,8 @@ date: 2018-05-21T18:05:16+00:00
 layout:
 header: 
   overlay_image: /wp-content/uploads/2018/05/Luis-Puerto-The-Entreprenour2.jpg
+  teaser: /wp-content/uploads/2018/05/Luis-Puerto-The-Entreprenour2.jpg
+  image: /wp-content/uploads/2018/05/Luis-Puerto-The-Entreprenour2.jpg
 categories:
   - Personal
   - Professional
