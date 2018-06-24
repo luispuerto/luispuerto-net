@@ -271,3 +271,5 @@ defaults:
       share: true
       related: true
       classes: wide
+      header:
+        show_overlay_excerpt: false
