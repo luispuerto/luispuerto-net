@@ -7,7 +7,7 @@ classes: wide
 author_profile: true
 header:
   overlay_image: /assets/images/header-aboutme.jpg
-  caption: "*Me in Norway*"
+  caption: '*Me in Norway*'
 excerpt: 'A little bit about me'
 ---
 ![image-left](../assets/images/20121231-031-ol-version-21-480x480.jpg){: .align-left}
