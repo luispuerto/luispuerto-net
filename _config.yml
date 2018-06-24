@@ -23,7 +23,7 @@ description              : "A Forest Engineer interested in Science and Technolo
 url                      : # "jekyll.luisspuerto.net"
 baseurl                  : # "/blog"
 repository               : "luisspuerto/jekyll.luisspuerto.net"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : "/assets/images/teaser-default.jpg"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
