@@ -76,7 +76,7 @@
   p,
   li,
   dl {
-    font-size: 1em;
+    font-size: $type-size-6;
   }
 
   /* paragraph indents */
@@ -115,7 +115,7 @@
   }
 
   .small {
-    font-size: $type-size-6;
+    font-size: $type-size-7;
   }
 
   /* blockquote citations */
@@ -175,10 +175,10 @@
     }
 
     .page__title {
-      font-size: $type-size-2;
+      font-size: $type-size-1;
 
       @include breakpoint($small) {
-        font-size: $type-size-1;
+        font-size: $type-size-0;
       }
     }
   }
