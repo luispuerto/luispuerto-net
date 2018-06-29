@@ -117,5 +117,5 @@ Thesis / Senior project: ***"El Pajariel"  Stand Management Plan.***
 
 Additionally you can see and download the [most recent version of my résumé in pdf](http://resume.luisspuerto.net).
 
-<iframe width="100%" height="700" 
+<iframe width="100%" height="650em" 
 src="https://www.dropbox.com/s/tba5d4eeja4vt2i/Luis%20Puerto%20Resume.pdf?raw=1&autoplay=1" frameborder="0" allowfullscreen></iframe>
