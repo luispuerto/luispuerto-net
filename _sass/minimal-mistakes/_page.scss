@@ -147,7 +147,7 @@
     @include clearfix;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     -webkit-animation: $intro-transition;
     animation: $intro-transition;
     -webkit-animation-delay: 0.25s;
@@ -160,7 +160,7 @@
     .wrapper {
       padding-left: 1em;
       padding-right: 1em;
-      padding-top: 40%;
+      padding-top: 20%;
       padding-bottom: 10%;
 
       @include breakpoint($x-large) {
@@ -173,7 +173,10 @@
     .page__lead,
     .btn {
       color: #fff;
-      text-shadow: 1px 1px 4px rgba(#000, 0.5);
+      text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3),
+                  -3px -3px 5px rgba(0, 0, 0, 0.3),
+                  -3px 3px 5px rgba(0, 0, 0, 0.3),
+                  3px -3px 5px rgba(0, 0, 0, 0.3);
     }
 
     .page__lead {
@@ -181,7 +184,7 @@
     }
 
     .page__title {
-      font-size: $type-size-1;
+      font-size: $type-size-0;
 
       @include breakpoint($small) {
         font-size: $type-size-0;
@@ -218,6 +221,114 @@
   a {
     color: #fff;
     text-decoration: none;
+  }
+}
+
+/*
+   Landing page
+   ========================================================================== */
+
+.landing {
+  .page__hero {
+    position: relative;
+    margin-bottom: 2em;
+    @include clearfix;
+    -webkit-animation: $intro-transition;
+    animation: $intro-transition;
+    -webkit-animation-delay: 0.25s;
+    animation-delay: 0.25s;
+
+    &--overlay {
+      position: relative;
+      margin-bottom: 2em;
+      padding: 3em 0;
+      @include clearfix;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top;
+      -webkit-animation: $intro-transition;
+      animation: $intro-transition;
+      -webkit-animation-delay: 0.25s;
+      animation-delay: 0.25s;
+
+      a {
+        color: #fff;
+      }
+
+      .wrapper {
+        padding-left: 2em;
+        padding-right: 1em;
+        padding-top: 40%;
+        padding-bottom: 5%;
+
+        @include breakpoint($large) {
+          max-width: $large;
+          padding-left: 5em;
+          padding-top: 30%;
+          padding-bottom: 10%;
+        }
+        @include breakpoint($x-large) {
+          max-width: $x-large;
+        }
+      }
+
+      .page__title,
+      .page__meta,
+      .page__lead,
+      .btn {
+        color: #fff;
+        text-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+        font-weight: normal;
+      }
+
+      .page__lead {
+        max-width: $medium;
+      }
+
+      .page__title {
+        font-size: 3.5em;
+        font-family: Mr Dafoe;
+        margin-bottom: 0em;
+
+        @include breakpoint($small) {
+          font-size: 7em;
+        }
+        @include breakpoint($large) {
+          font-size: 10em;
+        }
+      }
+    }
+  }
+
+  .page__hero-image {
+    width: 100%;
+    height: auto;
+    -ms-interpolation-mode: bicubic;
+  }
+
+  .page__hero-caption {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 2px 5px;
+    color: #fff;
+    font-family: $caption-font-family;
+    font-size: $type-size-7;
+    background: #000;
+    text-align: right;
+    z-index: 5;
+    opacity: 0.5;
+    border-radius: $border-radius 0 0 0;
+
+    @include breakpoint($large) {
+      padding: 5px 10px;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
   }
 }
 
