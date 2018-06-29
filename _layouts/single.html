@@ -42,7 +42,9 @@ layout: default
             </nav>
           </aside>
         {% endif %}
-        {{ content }}
+        <div class="post__content">
+          {{ content }}
+        </div>
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
 
