@@ -2,56 +2,43 @@
 
 - [ ] Read Jekyll [documentation](https://jekyllrb.com/docs/home/) thoroughly. 
 - [ ] Check [this tutorial](https://www.youtube.com/watch?v=oiNVQ9Zjy4o&list=PLWjCJDeWfDdfVEcLGAfdJn_HXyM4Y7_k-) about Jekyll. 
-- [ ] Check how can I change things and still receive updates of the theme. 
-
-## Tweaks
-
-- [ ] Understand how the `include _pages` option works in the `yaml` so it doesn't create a folder `_pages` in the url to pages. 
-- [ ] Add the following pages: 
-  - [ ] Blog
-  - [ ] About me 
-  - [ ] Resume 
-- [ ] Change font size
-
-## Splash page
-
-- [ ] Fix the second excerpt in the splash page, it's not showing. 
-- [ ] Change the font of my name. ➜ `Mr Dafoe`
-
-### Navbar
-
-- [ ] Make the superior nav-bar smaller. 
-  - [ ] Investigate how to size of the text is affected for the mobile version. 
-- [ ] Make the navbar sticky. 
-- [ ] Make it black 
+- [ ] Update the readme with the license. 
+- [x] Write the readme for the repo. 
+- [x] Check how can I change things and still receive updates of the theme. 
 
 ## Footer
 
-* [ ] Smaller or thinner
+* [x] Smaller or thinner
+* [ ] Add the license CC and GPL3
 * [ ] Edit the links
-  * [ ] Twitter
-  * [ ] Linkedin 
-* [ ] Perhaps delete it, since I don't know if it's really necessary. 
-
-## Sidebar
-
-- [ ] Specific content for specific pages
-- [ ] How to add more content... 
-  - [ ] Twitter feed? 
-  - [ ] Archive
-  - [ ] Tags 
-  - [ ] Categories 
-  - [ ] Text 
-
-## Blog page
-
-- [ ] Image heather instead of a title? 
-- [ ] List of post with featured image? 
+  * [x] Add Twitter
+  * [ ] Remove Gitlab
+  * [ ] Add LinkedIn 
+* [x] ~~Perhaps delete it, since I don't know if it's really necessary~~ . 
 
 ## Single Post page
 
 * [ ] Updated date at the beginning? 
-* [ ] Sticky table of contents? 
+* [x] Sticky table of contents? 
+
+## Splash page
+
+* [x] Fix the second excerpt in the splash page, it's not showing. 
+* [x] Change the font of my name. ➜ `Mr Dafoe`
+
+## Sidebar
+
+* [ ] Specific content for specific pages
+* [ ] Add more content
+  * [ ] Twitter feed? 
+  * [ ] Archive
+  * [ ] Tags 
+  * [ ] Categories 
+  * [ ] Text 
+
+# Posts 
+
+* [ ] Update the post for Jekyll. 
 
 ## Domain and Hosting
 
