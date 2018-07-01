@@ -7,6 +7,8 @@ classes: wide
 author_profile: true
 header:
   overlay_image: /assets/images/header-contact.jpg
+  cta_label: "More Info"
+  cta_url: "/contact/#main"
 ---
 Right now I'm living in the incredible <a style="color: #000000;" href="https://en.wikipedia.org/wiki/Joensuu">Joensuu</a>, in <a style="color: #000000;" href="https://en.wikipedia.org/wiki/North_Karelia">North Karelia</a>, <a style="color: #000000;" href="https://en.wikipedia.org/wiki/Finland">Finland</a> :finland:
 
