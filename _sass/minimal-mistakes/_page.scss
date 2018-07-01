@@ -5,9 +5,9 @@
 #main {
   @include clearfix;
   margin-left: auto;
-  margin-top: -$masthead-height;
+  margin-top: calc(-#{$masthead-height} + 2em);
   margin-right: auto;
-  padding-top: calc(#{$masthead-height} + 2em);
+  padding-top: $masthead-height;
   padding-left: 1em;
   padding-right: 1em;
   -webkit-animation: $intro-transition;
