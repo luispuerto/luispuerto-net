@@ -5,7 +5,8 @@
 #main {
   @include clearfix;
   margin-left: auto;
-  margin-top: calc(-#{$masthead-height} + 2em);
+//  margin-top: calc(-#{$masthead-height} + 2em);
+  margin-top: -$masthead-height;
   margin-right: auto;
   padding-top: $masthead-height;
   padding-left: 1em;
@@ -148,7 +149,7 @@
     @include clearfix;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
     -webkit-animation: $intro-transition;
     animation: $intro-transition;
     -webkit-animation-delay: 0.25s;
