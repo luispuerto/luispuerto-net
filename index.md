@@ -6,7 +6,7 @@ classes:
 header:
   overlay_color: "#000"
   overlay_filter: "0.0"
-  overlay_image: /assets/images/header-splash.jpg
+  overlay_image: /assets/images/pages/header-splash.jpg
 excerpt: | 
   #Forestry 🌲 #Research 🔬 #GIS 🌍 #Remote Sensing 🛰       
   #LiDAR 🔦 #RStats 📈 #Biomass 🌱 #Cartography 🗺       
@@ -15,21 +15,21 @@ intro:
   - excerpt: Nullam suscipit et nam, tellus velit pellentesque at malesuada, enim eaque. Quis nulla, netus tempor in diam gravida tincidunt, *proin faucibus* voluptate felis id sollicitudin. Centered with `type="center"`
 
 feature_row:
-  - image_path: assets/images/splash-featurerow-aboutme.jpg
+  - image_path: assets/images/pages/splash-featurerow-aboutme.jpg
     alt: "About me"
     title: "About me"
     excerpt: "Meet me and know what is my story"
     url: "/aboutme"
     btn_label: "Read More"
     btn_class: "btn--primary"
-  - image_path: /assets/images/splash-featurerow-resume.png
+  - image_path: /assets/images/pages/splash-featurerow-resume.png
     alt: "Résumé"
     title: "Résumé"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
     url: "/resume"
     btn_label: "Read More"
     btn_class: "btn--primary"
-  - image_path: /assets/images/splash-featurerow-blog.jpg
+  - image_path: /assets/images/pages/splash-featurerow-blog.jpg
     title: "My Blog"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
     url: "/blog"

@@ -6,7 +6,7 @@ layout: single
 classes: wide
 author_profile: true
 header:
-  overlay_image: /assets/images/header-resume.png
+  overlay_image: /assets/images/pages/header-resume.png
   caption: '*Rendering of LiDAR from Norway*'
 ---
 *If you prefer you can download the most recent version of my résumé in pdf in [http://resume.luisspuerto.net](http://resume.luisspuerto.net)*{: style="color: grey"}

@@ -6,11 +6,10 @@ layout: single
 classes: wide
 author_profile: true
 header:
-  overlay_image: /assets/images/header-aboutme.jpg
+  overlay_image: /assets/images/pages/header-aboutme.jpg
   caption: '*Me in Norway*'
-excerpt: 'A little bit about me'
 ---
-{% include figure image_path="/assets/images/20121231-031-ol-version-21-480x480.jpg" alt="Me siting comfortably in a chair" caption="Me siting comfortably in a chair" %}{: .align-left}
+{% include figure image_path="/assets/images/pages/20121231-031-ol-version-21-480x480.jpg" alt="Me siting comfortably in a chair" caption="Me siting comfortably in a chair" %}{: .align-left}
 
 My name is Luis Puerto and I'm from **[Ponferrada](https://en.wikipedia.org/wiki/Ponferrada)**, a medium size town in the [Green Spain](https://en.wikipedia.org/wiki/Green_Spain) :es:, in **[Northwest of the country](https://www.google.com/maps/place/Ponferrada,+Le%C3%B3n,+Spain/@41.9308893,-7.7021,7.93z/data=!4m5!3m4!1s0xd30ba8c4ef7b633:0xdc636ce1ab239060!8m2!3d42.5499958!4d-6.598259?hl=en)** and the main city of [El Bierzo](https://en.wikipedia.org/wiki/El_Bierzo) county. El Bierzo, is a [small region](http://elpais.com/elpais/2016/10/07/inenglish/1475851411_631393.html) formed basically for a valley ending in Galicia and surrounded by Asturias and León.
 
@@ -22,7 +21,7 @@ After that, I decided look for an international career and moved to Umeå, Swede
 
 My main areas of interest are, as you could guess for my background, **forestry** and **engineering** although I'm also interested in **science** and **technology** in general. I'm a really curious person and I'm usually interested in everything. While I was in Finland, I have the opportunity to learn and explore about **remote sensing, LiDAR, biomass and research**, and my current ongoing projects are related to those areas, while I finish my master. Recently, I also discover my interesest about **statistics** (I always hate them) and more specific about the **[RStats](https://www.r-project.org)**, **[data science](https://en.wikipedia.org/wiki/Data_science)** and **[data visualization](https://en.wikipedia.org/wiki/Data_visualization)** fields (long life to [Tufte](https://www.edwardtufte.com/)). Perhaps, for the influence of the people I have around (thanks!) and my fair-good relation with computers. Also, perhaps, because for me is a way to squeeze data and see the "hidden truth". Finally, I interested in **[big data analysis](https://en.wikipedia.org/wiki/Big_data)**, **[nanocomputing](https://en.wikipedia.org/wiki/Nanocomputer)** and new ways to get data.
 
-{% include figure image_path="http://luisspuerto.net/wp-content/uploads/2017/05/img_1493-1024x768.jpg" alt="Me somewhere in the middle of Lapland" caption="Me somewhere in the middle of Lapland"  %}{: caption="Me somewhere in the middle of Lapland" style="width: 60%" .align-right}
+{% include figure image_path="/assets/images/pages/aboutme-melapland.jpg" alt="Me somewhere in the middle of Lapland" caption="Me somewhere in the middle of Lapland"  %}{: caption="Me somewhere in the middle of Lapland"  .align-right}
 
 Above all of that and in more personal setting, I really like the **outdoors** and I'm always ready to **explore** and **camp in the wilderness**. I'm interested in wide spectrum of **music**, **photography** and **[movies](http://www.imdb.com/user/ur19338098/ratings?sort=ratings_date%3Adesc&view=detail&start=1)** too. For a while, I was doing a little bit of **horseback riding** and **archery**. During my stay in Finland, I developed an acute interest in **baking bread and pizza**, mainly because for us was difficult to find Spanish style (hard crust) bread there and I learned using [Ken's book](http://kensartisan.com) (I was recently in his bakery [recently in his bakery](https://www.instagram.com/p/BS6vNqLgML3/) and I have to say it was a delicious experience).
 

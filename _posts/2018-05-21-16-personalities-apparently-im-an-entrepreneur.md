@@ -2,8 +2,8 @@
 title: "16 Personalities: Apparently I'm an Entrepreneur"
 date: 2018-05-21T18:05:16+00:00
 header:
-  overlay_image: /assets/images/Luis-Puerto-The-Entreprenour2.jpg
-  teaser: /assets/images/Luis-Puerto-The-Entreprenour2.jpg
+  overlay_image: /assets/images/blog/Luis-Puerto-The-Entreprenour2.jpg
+  teaser: /assets/images/blog/Luis-Puerto-The-Entreprenour2.jpg
 categories:
   - Personal
   - Professional
