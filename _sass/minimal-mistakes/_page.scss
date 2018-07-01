@@ -162,8 +162,8 @@
     .wrapper {
       padding-left: 1em;
       padding-right: 1em;
-      padding-top: 30%;
-      padding-bottom: 20%;
+      padding-top: 7%;
+      padding-bottom: 7%;
 
       @include breakpoint($x-large) {
         max-width: $x-large;
@@ -261,13 +261,13 @@
         padding-left: 2em;
         padding-right: 1em;
         padding-top: 40%;
-        padding-bottom: 5%;
+        padding-bottom: 0%;
 
         @include breakpoint($large) {
           max-width: $large;
           padding-left: 5em;
-          padding-top: 30%;
-          padding-bottom: 10%;
+          padding-top: 25%;
+          padding-bottom: 20%;
         }
         @include breakpoint($x-large) {
           max-width: $x-large;
@@ -279,12 +279,17 @@
       .page__lead,
       .btn {
         color: #fff;
-        text-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+        text-shadow: 5px 5px 10px rgba(0,0,0,0.7);
         font-weight: normal;
       }
 
       .page__lead {
         max-width: $medium;
+        font-size: $type-size-5;
+
+        @include breakpoint($small){
+          font-size: $type-size-4;
+        }
       }
 
       .page__title {
