@@ -18,8 +18,8 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 locale                   : "en-US"
 title                    : "Luis Puerto"
 title_separator          : "|"
-name                     : "Luis Puerto | Forestry | Research | GIS | Remote Sensing"
-description              : "A Forest Engineer interested in Science and Technology"
+name                     : "Luis Puerto"
+description              : "Forestry | Research | GIS | Remote Sensing"
 url                      : # "jekyll.luisspuerto.net"
 baseurl                  : # "/blog"
 repository               : "luisspuerto/jekyll.luisspuerto.net"
@@ -82,6 +82,8 @@ facebook:
   username               :
   app_id                 :
   publisher              :
+linkedin:
+  username               : "lpuerto"
 og_image                 : /assets/images/pages/header-splash.jpg
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
