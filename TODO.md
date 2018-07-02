@@ -10,11 +10,20 @@
 
 * [x] Smaller or thinner
 * [ ] Add the license CC and GPL3
-* [ ] Edit the links
+* [x] Edit the links
   * [x] Add Twitter
-  * [ ] Remove Gitlab
-  * [ ] Add LinkedIn 
+  * [x] Remove Gitlab
+  * [x] Add LinkedIn 
 * [x] ~~Perhaps delete it, since I don't know if it's really necessary~~ . 
+
+## Tweaks
+
+* [x] Set time zone to UTC 
+* [ ] Set up the search engine
+* [ ] Set up the comments in disqus
+* [ ] Add social buttons
+  * [ ] ~~Whatsapp~~
+  * [ ] Telegram
 
 ## Single Post page
 
