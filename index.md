@@ -1,13 +1,14 @@
 ---
 title: Luis Puerto
-browser_title: Luis Puerto \| Forestry \| Research \| GIS \| Remote Sensing
+browser_title: Luis Puerto \| Forestry \| Research \| GIS \| Remote Sensing
 layout: splash
 classes:
   - landing
 header:
-  overlay_color: "#000"
-  overlay_filter: "0.0"
   overlay_image: /assets/images/pages/header-splash.jpg
+  overlay_filter1: "0.0"
+  overlay_filter2: "0.7"
+  overlay_perc: "42" 
 excerpt: | 
   #Forestry 🌲 #Research 🔬 #GIS 🌍 #Remote Sensing 🛰       
   #LiDAR 🔦 #RStats 📈 #Biomass 🌱 #Cartography 🗺       
