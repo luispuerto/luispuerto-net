@@ -1,6 +1,6 @@
 ---
 id: 717
-title: 'Set rStudio with Homebrew's Git'
+title: Set rStudio with Homebrew's Git
 date: 2017-11-05T14:05:53+00:00
 guid: http://luisspuerto.net/?p=717
 permalink: /2017/11/set-rstudio-with-homebrews-git/
@@ -30,23 +30,23 @@ Apple ships with their systems a really to use version of Git, but it's usually 
 
 First of all, you need to install the last Git using Homebrew:
 
-<pre class="lang:sh decode:true">$ brew install git 
+<pre class="lang:sh decode:true">$ brew install git 
 </pre>
 
-You are probably going to need to relink by force <span class="lang:sh highlight:0 decode:true crayon-inline ">-f</span>  your new Git to make the system to use it.
+You are probably going to need to relink by force <span class="lang:sh highlight:0 decode:true crayon-inline ">-f</span>  your new Git to make the system to use it.
 
 <pre class="lang:sh decode:true">$ brew link -f git</pre>
 
-Know if you ask the system, your version of Git have to be different –superior–  to the one Apple provides. In my case and under El Capitan is like this:
+Know if you ask the system, your version of Git have to be different –superior–  to the one Apple provides. In my case and under El Capitan is like this:
 
-<pre class="lang:sh decode:true">$ usr/bin/git --version 
-git version 2.10.1 (Apple Git-78) # Apple's version 
-$ /usr/local/Cellar/git/2.15.0/bin/git --version 
+<pre class="lang:sh decode:true">$ usr/bin/git --version 
+git version 2.10.1 (Apple Git-78) # Apple's version 
+$ /usr/local/Cellar/git/2.15.0/bin/git --version 
 git version 2.15.0 # Homebrew's version
-$ git --version 
+$ git --version 
 git version 2.15.0 # System's version, now linked to Homebrew's one.</pre>
 
-If you are user of [rStudio](https://www.rstudio.com), you'll probably know that you can use Git in your rStudio projects, as you should, as in any coding project. rStudio developers, to save us with the fuss of installing and configuring Git –and to save them to explain us how, set up rStudio to use the Apple's Git by default, pointing to <span class="lang:sh highlight:0 decode:true crayon-inline ">/usr/bin/git</span>  in the user settings
+If you are user of [rStudio](https://www.rstudio.com), you'll probably know that you can use Git in your rStudio projects, as you should, as in any coding project. rStudio developers, to save us with the fuss of installing and configuring Git –and to save them to explain us how, set up rStudio to use the Apple's Git by default, pointing to <span class="lang:sh highlight:0 decode:true crayon-inline ">/usr/bin/git</span>  in the user settings
 
 <div id="attachment_723" style="width: 672px" class="wp-caption alignnone">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2015-11-09-at-4.59.40-PM.png"><img class=" wp-image-723" src="http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2015-11-09-at-4.59.40-PM.png" alt="" width="662" height="668" srcset="http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2015-11-09-at-4.59.40-PM.png 1152w, http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2015-11-09-at-4.59.40-PM-150x150.png 150w, http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2015-11-09-at-4.59.40-PM-297x300.png 297w, http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2015-11-09-at-4.59.40-PM-768x775.png 768w, http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2015-11-09-at-4.59.40-PM-1015x1024.png 1015w, http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2015-11-09-at-4.59.40-PM-1024x1033.png 1024w, http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2015-11-09-at-4.59.40-PM-248x250.png 248w, http://luisspuerto.net/wp-content/uploads/2017/11/Screen-Shot-2015-11-09-at-4.59.40-PM-50x50.png 50w" sizes="(max-width: 662px) 100vw, 662px" /></a>
@@ -56,7 +56,7 @@ If you are user of [rStudio](https://www.rstudio.com), you'll probably know that
   </p>
 </div>
 
-If you want to use your own downloaded Git you just have to change that value in the settings and that's it. However, it's a little bit more complicated than that in practice. Since we're using Homebrew to manage our apps the directory of the app changes every time you update it to show the version it's storing, just in case you wanted to have more than one version. The path to the directory of Homebrew's Git looks something like this, as you saw before in a code chuck:
+If you want to use your own downloaded Git you just have to change that value in the settings and that's it. However, it's a little bit more complicated than that in practice. Since we're using Homebrew to manage our apps the directory of the app changes every time you update it to show the version it's storing, just in case you wanted to have more than one version. The path to the directory of Homebrew's Git looks something like this, as you saw before in a code chuck:
 
 <pre class="lang:sh decode:true ">/usr/local/Cellar/git/2.15.0/bin/git</pre>
 
@@ -64,13 +64,13 @@ If you updated Git using Homebrew, the new path would look something like this.
 
 <pre class="lang:sh decode:true">/usr/local/Cellar/git/2.XX.X/bin/git</pre>
 
-Where the <span class="lang:sh highlight:0 decode:true crayon-inline ">X</span>  are the new version numbers.
+Where the <span class="lang:sh highlight:0 decode:true crayon-inline ">X</span>  are the new version numbers.
 
-To make things easier, Homebrew just create [symbolic links](https://en.wikipedia.org/wiki/Symbolic_link) to the directory <span class="lang:sh highlight:0 decode:true crayon-inline">/usr/local/bin/</span>  to make the system find the app files. That is what you did when you used the command <span class="lang:sh highlight:0 decode:true crayon-inline ">brew link</span>  and you had to use the flag <span class="lang:sh highlight:0 decode:true crayon-inline ">-f</span>  –force– to overwrite the already existent links to Apple's Git in <span class="lang:sh highlight:0 decode:true crayon-inline ">usr/bin/git</span> .
+To make things easier, Homebrew just create [symbolic links](https://en.wikipedia.org/wiki/Symbolic_link) to the directory <span class="lang:sh highlight:0 decode:true crayon-inline">/usr/local/bin/</span>  to make the system find the app files. That is what you did when you used the command <span class="lang:sh highlight:0 decode:true crayon-inline ">brew link</span>  and you had to use the flag <span class="lang:sh highlight:0 decode:true crayon-inline ">-f</span>  –force– to overwrite the already existent links to Apple's Git in <span class="lang:sh highlight:0 decode:true crayon-inline ">usr/bin/git</span> .
 
-So, you're probably thinking that you just have to set the path to Git executable in rStudio to <span class="lang:sh highlight:0 decode:true crayon-inline ">/usr/local/bin/git</span>  and problem fixed. Yes and not. Yes because that is the path you need to end up in settings, but is something you can't make to happen using rStudio interface. Every time you change the path to <span class="lang:sh highlight:0 decode:true crayon-inline ">/usr/local/bin/git</span>  using the browse button in the settings you are going to end up with <span class="lang:sh highlight:0 decode:true crayon-inline ">/usr/local/Cellar/git/2.XX.X/bin/git</span>  and in consequence when you update Git using Homebrew rStudio isn't going to be able to find the Git executable. In consequence, you will end up without Git support in rStudio. This happens because rStudio interface follows the symbolic link instead of stuck with the route you set with the browse button.
+So, you're probably thinking that you just have to set the path to Git executable in rStudio to <span class="lang:sh highlight:0 decode:true crayon-inline ">/usr/local/bin/git</span>  and problem fixed. Yes and not. Yes because that is the path you need to end up in settings, but is something you can't make to happen using rStudio interface. Every time you change the path to <span class="lang:sh highlight:0 decode:true crayon-inline ">/usr/local/bin/git</span>  using the browse button in the settings you are going to end up with <span class="lang:sh highlight:0 decode:true crayon-inline ">/usr/local/Cellar/git/2.XX.X/bin/git</span>  and in consequence when you update Git using Homebrew rStudio isn't going to be able to find the Git executable. In consequence, you will end up without Git support in rStudio. This happens because rStudio interface follows the symbolic link instead of stuck with the route you set with the browse button.
 
-Then… What we should do? You need to open the user setting's file of rStudio located in a hidden directory in your user folder <span class="lang:sh highlight:0 decode:true crayon-inline ">~/.rstudio/monitored/user-settings/user-settings</span>  with the following command.
+Then… What we should do? You need to open the user setting's file of rStudio located in a hidden directory in your user folder <span class="lang:sh highlight:0 decode:true crayon-inline ">~/.rstudio/monitored/user-settings/user-settings</span>  with the following command.
 
 <pre class="lang:sh decode:true">$ open ~/.rstudio/monitored/user-settings/user-settings</pre>
 
@@ -82,7 +82,7 @@ Then… What we should do? You need to open the user setting's file of rStudio l
   </p>
 </div>
 
-Towards the end of the file, there is a variable called <span class="lang:sh highlight:0 decode:true crayon-inline ">vcsGitExePath</span>  that set your personalized options for the path of Git executable. With your rStudio closed, you can change it in the file to this:
+Towards the end of the file, there is a variable called <span class="lang:sh highlight:0 decode:true crayon-inline ">vcsGitExePath</span>  that set your personalized options for the path of Git executable. With your rStudio closed, you can change it in the file to this:
 
 <pre class="lang:sh highlight:0 decode:true">vcsGitExePath=“/usr/local/bin/git"
 </pre>
@@ -110,4 +110,4 @@ Now you can update without any problem your Git using Homebrew and it will keep 
 </div>
 
 <li id="fn-717-1">
-  I just updated to High Sierra, and I can confirm that the Git's version is a little bit more up to to day, but it isn't the latest. <a href="#fnref-717-1">&#x21a9;</a></fn></footnotes>
+  I just updated to High Sierra, and I can confirm that the Git's version is a little bit more up to to day, but it isn't the latest. <a href="#fnref-717-1">&#x21a9;</a></fn></footnotes>

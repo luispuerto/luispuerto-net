@@ -1,6 +1,6 @@
 ---
 id: 496
-title: 'Backing up your Pi's SD card'
+title: Backing up your Pi's SD card
 date: 2017-10-19T19:24:16+00:00
 guid: http://luisspuerto.net/?p=496
 permalink: /2017/10/backing-up-your-pis-sd-card/
@@ -14,14 +14,14 @@ tags:
   - raspberry pi
   - raspbian
 ---
-I've been trying make something work in my Pi, but so far I've just messing things up and I had to install Raspbian a couple of times from scratch. For that reason I've decided to make a copy of the SD card before I repeat the process and try to figure out what is going on.
+I've been trying make something work in my Pi, but so far I've just messing things up and I had to install Raspbian a couple of times from scratch. For that reason I've decided to make a copy of the SD card before I repeat the process and try to figure out what is going on.
 
 To make a back up of your SD card using macOS I've found two options.
 
-  * On one hand, you can install [dd utility](https://github.com/thefanclub/dd-utility) and use a graphical interface to make the backup to happen.
-  * On the other, you can use the <span class="lang:sh highlight:0 decode:true crayon-inline ">dd</span>   command [[ref.](https://ss64.com/osx/dd.html)] on the shell to create the backup.
+  * On one hand, you can install [dd utility](https://github.com/thefanclub/dd-utility) and use a graphical interface to make the backup to happen.
+  * On the other, you can use the <span class="lang:sh highlight:0 decode:true crayon-inline ">dd</span>   command [[ref.](https://ss64.com/osx/dd.html)] on the shell to create the backup.
 
-If want to try the dd utility you can download it from the site and normally installing it on macOS or you can install it using [Homebrew](https://brew.sh) [Cask](https://caskroom.github.io) and the following command.
+If want to try the dd utility you can download it from the site and normally installing it on macOS or you can install it using [Homebrew](https://brew.sh) [Cask](https://caskroom.github.io) and the following command.
 
 <pre class="lang:sh decode:true" title="installing the dd utility">$ brew cask install dd-utility</pre>
 
@@ -43,7 +43,7 @@ To be sure that everything is OK and I I'm not less without a back up, I decided
 
 The commands are the following ones:
 
-First we use <span class="lang:sh highlight:0 decode:true crayon-inline ">diskutil</span>  [[ref.](https://ss64.com/osx/diskutil.html)] to see all the volumes connected.
+First we use <span class="lang:sh highlight:0 decode:true crayon-inline ">diskutil</span>  [[ref.](https://ss64.com/osx/diskutil.html)] to see all the volumes connected.
 
 <pre class="lang:sh decode:true" title="listing volumes">$ diskutil list</pre>
 
@@ -55,13 +55,13 @@ First we use <span class="lang:sh highlight:0 decode:true crayon-inline ">diskut
   </p>
 </div>
 
-Now you just need to choose what are you going to back up and where using the <span class="lang:sh highlight:0 decode:true crayon-inline ">dd</span>  command.
+Now you just need to choose what are you going to back up and where using the <span class="lang:sh highlight:0 decode:true crayon-inline ">dd</span>  command.
 
 <pre class="lang:r decode:true" title="making the backup with dd command">$ sudo dd if=/dev/diskX of=users/YOURUSERNAME/Downloads/SDCardBackup.dmg</pre>
 
-You can see that I haven't used the same path that they use in the linked instructions because using the <span class="lang:sh highlight:0 decode:true crayon-inline ">~</span>  tilde symbol, denoting my home folder, gave me an error <span class="lang:sh highlight:0 decode:true crayon-inline ">dd: ~/SDCardBackup.dmg: No such file or directory</span>  so I use the full path. You have to change also the <span class="lang:sh highlight:0 decode:true crayon-inline ">/dev/diskX</span>  path for the <span class="lang:sh highlight:0 decode:true crayon-inline ">diskX</span>  that represent your SD card. In my case was the number 4, but in your case could be different.
+You can see that I haven't used the same path that they use in the linked instructions because using the <span class="lang:sh highlight:0 decode:true crayon-inline ">~</span>  tilde symbol, denoting my home folder, gave me an error <span class="lang:sh highlight:0 decode:true crayon-inline ">dd: ~/SDCardBackup.dmg: No such file or directory</span>  so I use the full path. You have to change also the <span class="lang:sh highlight:0 decode:true crayon-inline ">/dev/diskX</span>  path for the <span class="lang:sh highlight:0 decode:true crayon-inline ">diskX</span>  that represent your SD card. In my case was the number 4, but in your case could be different.
 
-<span class="lang:sh highlight:0 decode:true crayon-inline">dd</span> command doesn't produce any feedback of how much of the process is left. The only indication that is running is that the prompt hasn't returned to be the normal terminal prompt. Wait until the process finish and don't close the window or kill he process. It probably going to take time, much more time that with the previous method. At least in my case it started at 17.48 and it's 19.22 and it hasn't finished yet for a 32GB SD card. I think that it check all the sectors of the card and copy them to the backup.
+<span class="lang:sh highlight:0 decode:true crayon-inline">dd</span> command doesn't produce any feedback of how much of the process is left. The only indication that is running is that the prompt hasn't returned to be the normal terminal prompt. Wait until the process finish and don't close the window or kill he process. It probably going to take time, much more time that with the previous method. At least in my case it started at 17.48 and it's 19.22 and it hasn't finished yet for a 32GB SD card. I think that it check all the sectors of the card and copy them to the backup.
 
 **EDIT**: I got bored of the slowness of the process and I cancel it after a while and try to implement [this suggestion](http://daoyuan.li/solution-dd-too-slow-on-mac-os-x/) about raw volumes. So the code would be like this now:
 
@@ -75,7 +75,7 @@ To restore you first have to unmount your SD card.
 
 To following write the image in the SD card with this command.
 
-<pre class="lang:sh decode:true" title="Restoring the SD card">$ sudo dd if=~/SDCardBackup.dmg of=/dev/diskX
+<pre class="lang:sh decode:true" title="Restoring the SD card">$ sudo dd if=~/SDCardBackup.dmg of=/dev/diskX
 </pre>
 
 And finally you eject the card with using this.
