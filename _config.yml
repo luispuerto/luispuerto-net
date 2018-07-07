@@ -58,8 +58,8 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
+search                   : true # true, false (default)
+search_full_content      : true # true, false (default)
 search_provider          : # lunr (default), algolia, google
 algolia:
   application_id         : # YOUR_APPLICATION_ID
@@ -91,6 +91,10 @@ social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
+    - https://twitter.com/lpuerto
+    - https://www.linkedin.com/in/lpuerto
+    - https://github.com/luisspuerto
+    - https://www.flickr.com/photos/luisspuerto
 
 # Analytics
 analytics:
@@ -206,7 +210,7 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:title/
+permalink: /blog/:year/:month/:day/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /blog/page:num/
 timezone: UTC # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
