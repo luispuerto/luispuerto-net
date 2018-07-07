@@ -12,11 +12,11 @@ tags:
   - macOS
   - raspberry pi
 ---
-I recently needed to convert my Raspberry Pi 3 into a AirPlay receiver because I didn&#8217;t have any of my [AirPort Express](https://www.apple.com/lae/airport-express/) at hand and I wanted to play just music –not the entire collection of sounds my computer produce– on one of my old [Hi-Fi Self Stereo System](https://en.wikipedia.org/wiki/Shelf_stereo). So I searched on the internet and saw that it was totally possible to do it and I try it. I used as a source this [article](https://pimylifeup.com/raspberry-pi-airplay-receiver/) and I want share with you what steps I specifically followed.
+I recently needed to convert my Raspberry Pi 3 into a AirPlay receiver because I didn't have any of my [AirPort Express](https://www.apple.com/lae/airport-express/) at hand and I wanted to play just music –not the entire collection of sounds my computer produce– on one of my old [Hi-Fi Self Stereo System](https://en.wikipedia.org/wiki/Shelf_stereo). So I searched on the internet and saw that it was totally possible to do it and I try it. I used as a source this [article](https://pimylifeup.com/raspberry-pi-airplay-receiver/) and I want share with you what steps I specifically followed.
 
 # Preliminaries
 
-Let&#8217;s download some packages we are going to need as dependencies.
+Let's download some packages we are going to need as dependencies.
 
 <pre class="lang:sh decode:true" title="Update the system and download some dependencies">$ sudo apt-get update && upgrade</pre>
 
@@ -24,7 +24,7 @@ Let&#8217;s download some packages we are going to need as dependencies.
 
 # Shairport sync
 
-To convert our Pi in a AirPlay device we need a software that is call <a href="https://github.com/mikebrady/shairport-sync" target="_blank" rel="noopener">Shairport Sync</a>. We are going to need to compile it for our system, so we need to download the source code and then compile. To download it just run on the Pi&#8217;s terminal:
+To convert our Pi in a AirPlay device we need a software that is call <a href="https://github.com/mikebrady/shairport-sync" target="_blank" rel="noopener">Shairport Sync</a>. We are going to need to compile it for our system, so we need to download the source code and then compile. To download it just run on the Pi's terminal:
 
 <pre class="lang:sh decode:true" title="Download Shairport sync">$ cd ~/Downloads # I like to download my soft in Downloads folder.</pre>
 
@@ -62,7 +62,7 @@ If we want to start right away to using it we can manually start it with the fol
 
 <pre class="lang:sh decode:true" title="Starting Shairport Sync">$ sudo service shairport-sync start</pre>
 
-You are going to be able to find the Pi among the devices that offer AirPlay from your iOS device or your Mac. The name of the device is going to be the hostname you set up for your Pi using the [raspi-config interface](https://pimylifeup.com/raspi-config-tool/), if you haven&#8217;t changed it, it&#8217;s going to be `RaspberryPi`.
+You are going to be able to find the Pi among the devices that offer AirPlay from your iOS device or your Mac. The name of the device is going to be the hostname you set up for your Pi using the [raspi-config interface](https://pimylifeup.com/raspi-config-tool/), if you haven't changed it, it's going to be `RaspberryPi`.
 
 # Tune up
 
@@ -74,7 +74,7 @@ You are going to be able to find the Pi among the devices that offer AirPlay fro
   </p>
 </div>
 
-If you try to use your Pi as a AirPort Express right away you probably going find out that the sound quality leaves a lot to be desired –very low and quite distorted. However, you can do some tune-ups in the settings to improve this, but don&#8217;t thing we are going to be able to make it sound like a real AirPort Express.
+If you try to use your Pi as a AirPort Express right away you probably going find out that the sound quality leaves a lot to be desired –very low and quite distorted. However, you can do some tune-ups in the settings to improve this, but don't thing we are going to be able to make it sound like a real AirPort Express.
 
 ## Update Raspberry Pi Firmware
 
@@ -82,7 +82,7 @@ One of the first things we can do to improve the quality of the sound is to upda
 
 <pre class="lang:sh decode:true" title="Updating Pi's firmware">$ sudo rpi-update</pre>
 
-Once the update process finish you need to turn off the Raspberry and take the SD card out of it and insert the card in a computer card reader. We are going to modify the boot config file of the Pi and and to do it we are going to open with a text editor the config file that it&#8217;s located on `/boot/config.txt`. Then you need to add the following variable to the end of the file:
+Once the update process finish you need to turn off the Raspberry and take the SD card out of it and insert the card in a computer card reader. We are going to modify the boot config file of the Pi and and to do it we are going to open with a text editor the config file that it's located on `/boot/config.txt`. Then you need to add the following variable to the end of the file:
 
 <pre class="lang:sh decode:true" title="Booting audio variable">audio_pwm_mode=2</pre>
 
@@ -96,7 +96,7 @@ Now, we also need to set up the audio jack as the main audio output. Just run th
 
 ## Shairport Sync db range
 
-There is a final setting we need to configure and it&#8217;s related to the audio range in which Shairport Sync operates. To do it we need to open the config file of Shariport Sync, therefore run the following command on the Pi&#8217;s terminal to open it with [Nano](https://en.wikipedia.org/wiki/GNU_nano).
+There is a final setting we need to configure and it's related to the audio range in which Shairport Sync operates. To do it we need to open the config file of Shariport Sync, therefore run the following command on the Pi's terminal to open it with [Nano](https://en.wikipedia.org/wiki/GNU_nano).
 
 <pre class="lang:sh decode:true" title="Open Shairport Sync config file">$ sudo nano /usr/local/etc/shairport-sync.conf</pre>
 
@@ -116,7 +116,7 @@ You need to reboot the Pi to make sure that new configuration is properly loaded
 
 # Bottom line
 
-As you are going to soon find out the quality of sound isn&#8217;t exactly the same as with an AirPort Express, but this tweak allow you to use your Pi as one. It can be handy if you are traveling, you have your Pi with you, and you want to plug your music into some audio device or speakers.
+As you are going to soon find out the quality of sound isn't exactly the same as with an AirPort Express, but this tweak allow you to use your Pi as one. It can be handy if you are traveling, you have your Pi with you, and you want to plug your music into some audio device or speakers.
 
 If you wand to use your Raspberry for to play audio there are other options out there. One is [RuneAudio](http://www.runeaudio.com) which is a dedicated OS to play music on the Pi and the other is to install [Kodi](https://kodi.tv) since [Kodi can play AirPlay](http://kodi.wiki/view/AirPlay).
 

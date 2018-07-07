@@ -19,13 +19,13 @@ tags:
   - RSoft
   - RStats
 ---
-As I explained in my [previous post](http://luisspuerto.net/2018/05/homebrews-r-doesnt-have-all-the-capabilities/) if you installed R with Homebrew you have less capabilities than with a R installed from CRAN&#8217;s binary. But, **can you have all the capabilities while you still use Homebrew to install R? Yes!** However&#8230; why you bother to install it with Homebrew at all instead of installing it from CRAN. Well, it&#8217;s true that CRAN install it&#8217;s easier. You just have to download the binary and that&#8217;s it. You can even use Homebrew Cask to install R that way
+As I explained in my [previous post](http://luisspuerto.net/2018/05/homebrews-r-doesnt-have-all-the-capabilities/) if you installed R with Homebrew you have less capabilities than with a R installed from CRAN's binary. But, **can you have all the capabilities while you still use Homebrew to install R? Yes!** However… why you bother to install it with Homebrew at all instead of installing it from CRAN. Well, it's true that CRAN install it's easier. You just have to download the binary and that's it. You can even use Homebrew Cask to install R that way
 
 ```sh
 $ brew cask install r-app
 ```
 
-However, if you install that way you can&#8217;t take advantage of [OpenBlas and OpenMP](http://luisspuerto.net/2018/01/install-r-100-homebrew-edition-with-openblas-openmp-my-version/#openblas-openmp) which really enhance the speed of R processing. Well, you can take advantage of OpenMP with CRAN install if you use the [coatless professor method](http://luisspuerto.net/2018/01/install-r-100-homebrew-edition-with-openblas-openmp-my-version/#openblas-openmp).
+However, if you install that way you can't take advantage of [OpenBlas and OpenMP](http://luisspuerto.net/2018/01/install-r-100-homebrew-edition-with-openblas-openmp-my-version/#openblas-openmp) which really enhance the speed of R processing. Well, you can take advantage of OpenMP with CRAN install if you use the [coatless professor method](http://luisspuerto.net/2018/01/install-r-100-homebrew-edition-with-openblas-openmp-my-version/#openblas-openmp).
 
 # Getting all the capabilities
 
@@ -40,19 +40,19 @@ $ brew uninstall R
 $ brew uninstall --ignore-dependencies cairo
 ```
 
-If you have [Cairo](https://cairographics.org) installed, it&#8217;s going to protest about dependencies, but don&#8217;t worry and we are just going to reinstall it in a minute.
+If you have [Cairo](https://cairographics.org) installed, it's going to protest about dependencies, but don't worry and we are just going to reinstall it in a minute.
 
-When you don&#8217;t have R and Cairo in your system you can go ahead.
+When you don't have R and Cairo in your system you can go ahead.
 
-You begin tapping Seth&#8217;s tap.
+You begin tapping Seth's tap.
 
 ```sh
 $ brew tap sethrfore/r-srf
 ```
 
-Actually, you can avoid this step since Seth&#8217;s formulae have the same name as Homebrew Core ones we are forced to install them using the full name of the tap in combination with the formula name.
+Actually, you can avoid this step since Seth's formulae have the same name as Homebrew Core ones we are forced to install them using the full name of the tap in combination with the formula name.
 
-If you don&#8217;t have [Xquartz](https://www.xquartz.org) already installed in your system you can install with:
+If you don't have [Xquartz](https://www.xquartz.org) already installed in your system you can install with:
 
 ```sh
 $ brew cask install xquartz

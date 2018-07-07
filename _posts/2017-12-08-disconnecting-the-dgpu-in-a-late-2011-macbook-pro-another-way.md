@@ -15,13 +15,13 @@ tags:
   - how to
   - macOS
 ---
-As I&#8217;ve told in the [previous post](http://luisspuerto.net/2017/12/my-macbook-pro-late-2011s-discrete-graphics-card-said-ciao-again/), the discrete graphic car of my MacBook Pro late 2011 is faulty and can be trusted any more. So I decided to disconnect it.
+As I've told in the [previous post](http://luisspuerto.net/2017/12/my-macbook-pro-late-2011s-discrete-graphics-card-said-ciao-again/), the discrete graphic car of my MacBook Pro late 2011 is faulty and can be trusted any more. So I decided to disconnect it.
 
-Yesterday, I updated the system to 10.13.2 and although in the beginning everything was working fine without enforcing the dGPU disconnection, the graphic card later failed and I had to apply the fix again. For some reason the fix didn&#8217;t working as well as it was working before so after too much booting and trying I decided to take the middle way. Besides, the GRUB soliton was nice, but it made the booting much more slower.
+Yesterday, I updated the system to 10.13.2 and although in the beginning everything was working fine without enforcing the dGPU disconnection, the graphic card later failed and I had to apply the fix again. For some reason the fix didn't working as well as it was working before so after too much booting and trying I decided to take the middle way. Besides, the GRUB soliton was nice, but it made the booting much more slower.
 
-What I&#8217;ve done basically is move the kexts from the extensions folder to other place and apply the wake up handle.
+What I've done basically is move the kexts from the extensions folder to other place and apply the wake up handle.
 
-In other words this are the steps. Please keep in mind that I&#8217;m running High Sierra in my machine.
+In other words this are the steps. Please keep in mind that I'm running High Sierra in my machine.
 
   1. Reset the [SMC](https://support.apple.com/en-us/HT201295) and the [NVRAM](https://support.apple.com/en-us/HT204063).
   2. Boot your Mac on recovery single user mode (pressing and holding <span class="lang:sh highlight:0 decode:true crayon-inline">Cmd + S + R</span> ) and run the following commands. <pre class="lang:sh decode:true">$ nvram fa4ce28d-b62f-4c99-9cc3-6815686e30f9:gpu-power-prefs=%01%00%00%00
@@ -41,9 +41,9 @@ $ sudo touch /Library/Extensions</pre>
   5. Make sure to have change the way the system sleeps: <pre class="lang:sh decode:true" title="Making the system hibernate by default">$ sudo pmset -a hibernatemode 25</pre>
 
   6. Now you can reboot.
-  7. Perhaps it&#8217;s recomendable to re-enable the SIP. To do that just boot your Mac on recovery single user mode (pressing and holding <span class="lang:sh highlight:0 decode:true crayon-inline">Cmd + S + R</span> ) and run: <pre class="lang:sh decode:true " title="Reenabling SIP">$ csrutil enable
+  7. Perhaps it's recomendable to re-enable the SIP. To do that just boot your Mac on recovery single user mode (pressing and holding <span class="lang:sh highlight:0 decode:true crayon-inline">Cmd + S + R</span> ) and run: <pre class="lang:sh decode:true " title="Reenabling SIP">$ csrutil enable
 $ reboot</pre>
 
-This solution perhaps it&#8217;s a little bit easier, but has the disadvantage that you need to apply it all every time you update the system.
+This solution perhaps it's a little bit easier, but has the disadvantage that you need to apply it all every time you update the system.
 
 Anyway, I recommend to read the [previous post](http://luisspuerto.net/2017/12/my-macbook-pro-late-2011s-discrete-graphics-card-said-ciao-again/) to understand fully what is going on.

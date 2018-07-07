@@ -17,13 +17,13 @@ tags:
   - homebrew
   - RStats
 ---
-As I just explained in my [last post](http://luisspuerto.net/2018/03/updating-to-r-3-4-4-someone-to-lean-on/), the last version of R –3.4.4 &#8220;Someone to Lean on&#8221;– was rolled out las Thursday and this time I was the one that updated the Homebrew&#8217;s formula to reflect the new version. I just decided to give it a try and update for first time a Homebrew&#8217;s formula since no one had updated it yet on Thursday afternoon and this way I would be able to install the new version with [Homebrew](http://brew.sh).
+As I just explained in my [last post](http://luisspuerto.net/2018/03/updating-to-r-3-4-4-someone-to-lean-on/), the last version of R –3.4.4 "Someone to Lean on"– was rolled out las Thursday and this time I was the one that updated the Homebrew's formula to reflect the new version. I just decided to give it a try and update for first time a Homebrew's formula since no one had updated it yet on Thursday afternoon and this way I would be able to install the new version with [Homebrew](http://brew.sh).
 
-As I&#8217;ve already mentioned, I really encourage anyone to contribute to Homebrew&#8217;s community and try to keep the formulae update. Homebrew also encourage this, since as more people keep an eye on formula and update them, the better for the community.
+As I've already mentioned, I really encourage anyone to contribute to Homebrew's community and try to keep the formulae update. Homebrew also encourage this, since as more people keep an eye on formula and update them, the better for the community.
 
 # How can you update a Homebrew formula?
 
-The first and foremost important thing is to check if someone already filed a [pull request](https://github.com/Homebrew/homebrew-core/pulls) for that same formulae, or in other words, if that formula is in the process of being updated. If no one is updating that formula, it&#8217;s opportunity to contribute and update it for the benefit of the community.
+The first and foremost important thing is to check if someone already filed a [pull request](https://github.com/Homebrew/homebrew-core/pulls) for that same formulae, or in other words, if that formula is in the process of being updated. If no one is updating that formula, it's opportunity to contribute and update it for the benefit of the community.
 
 Before you begin, you need to update Homebrew to get the last version:
 
@@ -35,11 +35,11 @@ When you have the last version of Homebrew, you can edit your formula. If you ju
 
 In this case, the URL and the sha256 was provided by Peter Dalgaard in the [R 3.4.4 announcement](https://stat.ethz.ch/pipermail/r-announce/2018/000626.html). However, you have to take into account that [https urls are preferred](https://docs.brew.sh/Formula-Cookbook), so I had to [recommit](https://github.com/Homebrew/homebrew-core/pull/25321/commits/3c5e5438e79ccd655b0c5ee1bb4adbae1ddd6702) to follow that guidelines.
 
-If you don&#8217;t have the sha256, you can calculate it yourself downloading the file and then running the following command that for me was as follows:
+If you don't have the sha256, you can calculate it yourself downloading the file and then running the following command that for me was as follows:
 
 <pre class="lang:sh decode:true">$ openssl sha -sha256 ~/Downloads/R-3.4.4.tar.gz</pre>
 
-When you have those two parameters, you are ready to run the command. What the command does is basically create a fork of Homebrew in your account of Github, and then create a branch where it&#8217;s going to upload the modified formula. Then, it just makes a pull request to <span class="author"><a class="url fn" href="https://github.com/Homebrew" rel="author">Homebrew</a></span><span class="path-divider">/</span><a href="https://github.com/Homebrew/homebrew-core" data-pjax="#js-repo-pjax-container">homebrew-core</a>.  If everything is ok, they&#8217;ll accept your changes and the new formula will be accessible to everyone after they run `$ brew update`. On the other hand, if you have to make modifications in the formula you are submitting in your pull request –as I needed to make– you just do them using [Git](https://git-scm.com/book/en/v2/Git-Branching-Branch-Management).
+When you have those two parameters, you are ready to run the command. What the command does is basically create a fork of Homebrew in your account of Github, and then create a branch where it's going to upload the modified formula. Then, it just makes a pull request to <span class="author"><a class="url fn" href="https://github.com/Homebrew" rel="author">Homebrew</a></span><span class="path-divider">/</span><a href="https://github.com/Homebrew/homebrew-core" data-pjax="#js-repo-pjax-container">homebrew-core</a>.  If everything is ok, they'll accept your changes and the new formula will be accessible to everyone after they run `$ brew update`. On the other hand, if you have to make modifications in the formula you are submitting in your pull request –as I needed to make– you just do them using [Git](https://git-scm.com/book/en/v2/Git-Branching-Branch-Management).
 
 <pre class="lang:sh decode:true ">$ cd /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core # go to your local repo for Homebrew
 $ git branch # here you select the branch with the name of the update you are creating
@@ -63,7 +63,7 @@ If you want to test your version of the formula this is easy, you just stay in 
   </p>
 </div>
 
-# Use someone else&#8217;s formula
+# Use someone else's formula
 
 You can even use this updated formula to [update the R of someone computer](https://docs.brew.sh/FAQ) while they accept your pull request –if you are in a hurry or you are antsy guy. To do so you can use [hub](https://hub.github.com).
 
@@ -90,4 +90,4 @@ In my case:
 <pre class="lang:sh decode:true ">$ brew pull https://github.com/Homebrew/homebrew-core/pull/25321
 </pre>
 
-However, I don&#8217;t recommend you to do something like this and install the someone&#8217;s formula unless you really know the person. You never know what it&#8217;s in the install script. Usually, pull request are resolved within hours and it&#8217;s much better practice to wait until the Homebrew maintainers review the updated formula and approve it.
+However, I don't recommend you to do something like this and install the someone's formula unless you really know the person. You never know what it's in the install script. Usually, pull request are resolved within hours and it's much better practice to wait until the Homebrew maintainers review the updated formula and approve it.

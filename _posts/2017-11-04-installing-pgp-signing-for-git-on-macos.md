@@ -17,11 +17,11 @@ tags:
   <a href="http://luisspuerto.net/wp-content/uploads/2017/11/commits.png"><img class=" wp-image-701" src="http://luisspuerto.net/wp-content/uploads/2017/11/commits.png" alt="" width="254" height="298" srcset="http://luisspuerto.net/wp-content/uploads/2017/11/commits.png 594w, http://luisspuerto.net/wp-content/uploads/2017/11/commits-256x300.png 256w, http://luisspuerto.net/wp-content/uploads/2017/11/commits-214x250.png 214w" sizes="(max-width: 254px) 100vw, 254px" /></a>
 
   <p class="wp-caption-text">
-    Only some commits were &#8220;verified&#8221;
+    Only some commits were "verified"
   </p>
 </div>
 
-I&#8217;ve been committing on [Git](https://git-scm.com) a lot lately and I&#8217;ve been uploading those commits to [GitHub](https://github.com). At the same time, I&#8217;ve been doing some changes in the repository directly on GitHub and I noticed that the commits that I&#8217;ve done in GitHub itself were verified, but the ones that I was uploading from my computer were not. So, I decided to investigated how to &#8220;verify&#8221; the commits I upload from my computer. Turns out, that GitHub –and I suppose the rest of the online repositories– and Git are able to sign with a PGP key the commits you make to verify your identity against other people. It&#8217;s a way to be sure you, and only you, are the one that are committing, thus responsible for the things are doing.
+I've been committing on [Git](https://git-scm.com) a lot lately and I've been uploading those commits to [GitHub](https://github.com). At the same time, I've been doing some changes in the repository directly on GitHub and I noticed that the commits that I've done in GitHub itself were verified, but the ones that I was uploading from my computer were not. So, I decided to investigated how to "verify" the commits I upload from my computer. Turns out, that GitHub –and I suppose the rest of the online repositories– and Git are able to sign with a PGP key the commits you make to verify your identity against other people. It's a way to be sure you, and only you, are the one that are committing, thus responsible for the things are doing.
 
 If you what to set up the PGP signing is pretty easy in principle, but could have some caveats. To be honest, I struggled with it on the beginning and every time I committed after I set if up in the beginning I got the following message:
 
@@ -36,17 +36,17 @@ fatal: failed to write commit object</pre>
   </p>
 </div>
 
-You can check the knowledge base that GitHub has about the topic [here](https://help.github.com/articles/signing-commits-with-gpg/). However, I found that some of the topics are perhaps a little bit outdated and doesn&#8217;t give you clear directions about how you can really do it. I also checked this sources to get my solution post:
+You can check the knowledge base that GitHub has about the topic [here](https://help.github.com/articles/signing-commits-with-gpg/). However, I found that some of the topics are perhaps a little bit outdated and doesn't give you clear directions about how you can really do it. I also checked this sources to get my solution post:
 
   * [Github : Signing commits using GPG (Ubuntu/Mac)](https://gist.github.com/ankurk91/c4f0e23d76ef868b139f3c28bde057fc)
-  * [Git error &#8211; gpg failed to sign data](https://stackoverflow.com/questions/41052538/git-error-gpg-failed-to-sign-data)
+  * [Git error – gpg failed to sign data](https://stackoverflow.com/questions/41052538/git-error-gpg-failed-to-sign-data)
   * [Github GPG + Keybase PGP](https://www.ahmadnassri.com/blog/github-gpg-keybase-pgp/)
   * [Automatic Git commit signing with GPG on OSX](https://gist.github.com/bmhatfield/cc21ec0a3a2df963bffa3c1f884b676b)
-  * [Git Tools &#8211; Signing Your Work](https://git-scm.com/book/tr/v2/Git-Tools-Signing-Your-Work)
+  * [Git Tools – Signing Your Work](https://git-scm.com/book/tr/v2/Git-Tools-Signing-Your-Work)
 
-### How I&#8217;ve done it
+### How I've done it
 
-First of all, you need to install <span class="lang:sh highlight:0 decode:true crayon-inline">GPG (GNU PGP)</span>  –if you don&#8217;t already have it–, the <span class="lang:sh highlight:0 decode:true crayon-inline ">gpg agent</span> , and probably you are going to need to install <span class="lang:sh highlight:0 decode:true crayon-inline ">pinentry</span>  for mac. I&#8217;ve installed all of them using [homebrew](https://brew.sh).
+First of all, you need to install <span class="lang:sh highlight:0 decode:true crayon-inline">GPG (GNU PGP)</span>  –if you don't already have it–, the <span class="lang:sh highlight:0 decode:true crayon-inline ">gpg agent</span> , and probably you are going to need to install <span class="lang:sh highlight:0 decode:true crayon-inline ">pinentry</span>  for mac. I've installed all of them using [homebrew](https://brew.sh).
 
 <pre class="lang:sh decode:true" title="Installing the basics">$ brew install gpg gpg-agent pinentry-mac 
 </pre>
@@ -85,13 +85,13 @@ You can certainly not pass the command
 
 <pre class="lang:sh decode:1 inline:1">$ git config --global commit.gpgsign true</pre>
 
-that configures your Git to always sign your commits with your signature and sign just certain commits with adding the flag <span class="lang:sh highlight:0 decode:true crayon-inline ">-S</span>  to the <span class="lang:sh highlight:0 decode:true crayon-inline ">git commit</span>  [command](https://help.github.com/articles/signing-commits-using-gpg/). It&#8217;s an option that some people for security matters and to not be prompted every time you commit to enter your passphrase. However, as you can are going to see latter, you can keep your passphrase in your keychain using <span class="lang:sh highlight:0 decode:true crayon-inline ">pinentry</span> .
+that configures your Git to always sign your commits with your signature and sign just certain commits with adding the flag <span class="lang:sh highlight:0 decode:true crayon-inline ">-S</span>  to the <span class="lang:sh highlight:0 decode:true crayon-inline ">git commit</span>  [command](https://help.github.com/articles/signing-commits-using-gpg/). It's an option that some people for security matters and to not be prompted every time you commit to enter your passphrase. However, as you can are going to see latter, you can keep your passphrase in your keychain using <span class="lang:sh highlight:0 decode:true crayon-inline ">pinentry</span> .
 
 You also need to copy your long key id again to get your PGP key with the following command.
 
 <pre class="lang:sh decode:true" title="Getting your PGP key">$ gpg --armor --export &lt;YOUR_LONG_KEY&gt;</pre>
 
-Which print you full GPG key, beginning with <span class="lang:sh highlight:0 decode:true crayon-inline ">&#8212;&#8211;BEGIN PGP PUBLIC KEY BLOCK&#8212;&#8211;</span>  and ending with <span class="lang:sh highlight:0 decode:true crayon-inline">&#8212;&#8211;END PGP PUBLIC KEY BLOCK&#8212;&#8211;</span> . Copy it and now you can paste it on your GitHub following [this instructions](https://help.github.com/articles/adding-a-new-gpg-key-to-your-github-account/).
+Which print you full GPG key, beginning with <span class="lang:sh highlight:0 decode:true crayon-inline ">—–BEGIN PGP PUBLIC KEY BLOCK—–</span>  and ending with <span class="lang:sh highlight:0 decode:true crayon-inline">—–END PGP PUBLIC KEY BLOCK—–</span> . Copy it and now you can paste it on your GitHub following [this instructions](https://help.github.com/articles/adding-a-new-gpg-key-to-your-github-account/).
 
 Now, to make it work you need to config pinentry for mac as your dialog to enter your passphrase. To do that you have to use the following command to write <span class="lang:sh highlight:0 decode:true crayon-inline ">pinentry-program /usr/local/bin/pinentry-mac</span> in <span class="lang:sh highlight:0 decode:true crayon-inline ">gpg agent</span> config file.
 
@@ -102,11 +102,11 @@ You can also do it manually.
 
 <pre class="lang:sh decode:true" title="Configuring manually">$ open ~/.gnupg/gpg-agent.conf</pre>
 
-Finally, you need to restart the <span class="lang:sh highlight:0 decode:true crayon-inline ">gpg agent</span>  doing the following. This is really important and it&#8217;s was one of the reason because I took me so long to finally configure Git with the PGP. Since I haven&#8217;t restarted the gpg-agent it hasn&#8217;t pick up the configuration.
+Finally, you need to restart the <span class="lang:sh highlight:0 decode:true crayon-inline ">gpg agent</span>  doing the following. This is really important and it's was one of the reason because I took me so long to finally configure Git with the PGP. Since I haven't restarted the gpg-agent it hasn't pick up the configuration.
 
 <pre class="lang:sh decode:true" title="Restarting the gpg agent">$ gpgconf --kill gpg-agent</pre>
 
-It&#8217;s done!
+It's done!
 
 I recommend you to test it doing a test commit. First time it should to prompt you with a dialog like this
 
@@ -118,13 +118,13 @@ I recommend you to test it doing a test commit. First time it should to prompt y
   </p>
 </div>
 
-Where, if you tick <span class="lang:sh highlight:0 decode:true crayon-inline ">save in keychain</span> , it isn&#8217;t going to prompt you again.
+Where, if you tick <span class="lang:sh highlight:0 decode:true crayon-inline ">save in keychain</span> , it isn't going to prompt you again.
 
-Note that if you want to sign commits outside of the shell, not all the apps can sign commits. With my setup I&#8217;ve tried Tower and GitHub Desktop and they are able to sign without any problem. Keep  in mind that I&#8217;ve committed first in the shell and then I&#8217;ve clicked <span class="lang:sh highlight:0 decode:true crayon-inline ">save in keychain</span>  so I don&#8217;t know how is going to behave the first time you commit and you haven&#8217;t ticked that option or if it&#8217;s the first time you sign a commit. In case you had problems with Tower, there are a couple of tutorials out there including Tower:
+Note that if you want to sign commits outside of the shell, not all the apps can sign commits. With my setup I've tried Tower and GitHub Desktop and they are able to sign without any problem. Keep  in mind that I've committed first in the shell and then I've clicked <span class="lang:sh highlight:0 decode:true crayon-inline ">save in keychain</span>  so I don't know how is going to behave the first time you commit and you haven't ticked that option or if it's the first time you sign a commit. In case you had problems with Tower, there are a couple of tutorials out there including Tower:
 
   * [Signing GitHub Commits](https://www.fabianehlert.com/post/signingcommits/)
   * [Signed git commits with Tower](https://aaronparecki.com/2016/07/29/10/git-tower)
 
 Enjoy your Git!
 
-Note: I&#8217;ve follow this setup in Mac OS X El Capitan 10.11.6 and with Git 2.15.
+Note: I've follow this setup in Mac OS X El Capitan 10.11.6 and with Git 2.15.

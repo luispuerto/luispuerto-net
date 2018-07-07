@@ -26,7 +26,7 @@ tags:
 
 * * *
 
-In the [post about Homebrew](http://luisspuerto.net/2017/11/homebrew/) I think I&#8217;ve already posted how I update Homebrew packages with a single comment in the terminal. However these days I update more software via terminal, mainly packages, because it&#8217;s really handy run just a couple of commands and then see how the software it&#8217;s updated automatically and easily.
+In the [post about Homebrew](http://luisspuerto.net/2017/11/homebrew/) I think I've already posted how I update Homebrew packages with a single comment in the terminal. However these days I update more software via terminal, mainly packages, because it's really handy run just a couple of commands and then see how the software it's updated automatically and easily.
 
 # Homebrew packages
 
@@ -41,7 +41,7 @@ To update Homebrew packages I run:
   * `brew cu -ay` uses <a class="url fn" href="https://github.com/buo" rel="author"><span class="author">buo</span></a><span class="path-divider">/</span><a href="https://github.com/buo/homebrew-cask-upgrade" data-pjax="#js-repo-pjax-container">homebrew-cask-upgrade</a> to update casks. `-ay` flag is all and yes update all outdated apps.
   * `brew cask cleanup` clean the old caches of the updated apps.
 
-If for some reason you don&#8217;t want to update an specific package in Homebrew, you can _pin _in to an specific version or the current version.
+If for some reason you don't want to update an specific package in Homebrew, you can _pin _in to an specific version or the current version.
 
 <pre class="lang:sh decode:true ">$ brew pin &lt;formulae&gt;</pre>
 
@@ -55,9 +55,9 @@ To update R packages I run:
 
 Update R packages on terminal is done using the command `Rscript` that allows us to send commands to R using the shell. I use the flag `--vanilla` that combine `--no-save`, `--no-restore`, `--no-site-file` `--no-init-file` and `--no-environ`. In other words a way to load R faster and with a standard configuration.
 
-I like to run `old.packages` first because I like to see a list first of the packages I&#8217;m going to update and then update. I do this because some packages –data.table– need a different `makevars` than the rest of the packages so just in case I needed to [change](http://luisspuerto.net/2018/01/install-r-100-homebrew-edition-with-openblas-openmp-my-version/#data-table-package) the `makevars` and rebuild that package.
+I like to run `old.packages` first because I like to see a list first of the packages I'm going to update and then update. I do this because some packages –data.table– need a different `makevars` than the rest of the packages so just in case I needed to [change](http://luisspuerto.net/2018/01/install-r-100-homebrew-edition-with-openblas-openmp-my-version/#data-table-package) the `makevars` and rebuild that package.
 
-I really think it would be cool to be able also _pin _packages in R, but I haven&#8217;t found any way to do so at system wide level. You can do easily at project level with the package [Packrat](https://rstudio.github.io/packrat/). However, I really think it would be really nice to have email notifications when new versions of packages hit CRAN repository and some function to pin packages to the current version.
+I really think it would be cool to be able also _pin _packages in R, but I haven't found any way to do so at system wide level. You can do easily at project level with the package [Packrat](https://rstudio.github.io/packrat/). However, I really think it would be really nice to have email notifications when new versions of packages hit CRAN repository and some function to pin packages to the current version.
 
 # Python pip
 
@@ -81,7 +81,7 @@ To update the RubyGems you run the following command:
 
 # App Store and macOS software updates
 
-Although these ones are really easy and you can update them just using the Mac App Store app in your Mac, it&#8217;s possible to trigger the update checking and the update itself through CLI. macOS has a command that allow you to make this happen `softwareupdate`. You can run it like this:
+Although these ones are really easy and you can update them just using the Mac App Store app in your Mac, it's possible to trigger the update checking and the update itself through CLI. macOS has a command that allow you to make this happen `softwareupdate`. You can run it like this:
 
 <pre class="lang:default decode:true">$ softwareupdate -l # to list all the updates
 $ softwareupdate -i # to install updates
@@ -90,7 +90,7 @@ $ softwareupdate -iR # to automatically restart if necessary by the update
 $ softwareupdate -ir # install only the recommended updates
 $ softwareupdate -d # only download the updates</pre>
 
-As you see it&#8217;s quite thorough and you can see more options with running `man softwareupdate`.
+As you see it's quite thorough and you can see more options with running `man softwareupdate`.
 
 If you want something more complex you can install [mas-cli](https://github.com/mas-cli/mas), which is a Mac App Store command line interface. Install you just run:
 

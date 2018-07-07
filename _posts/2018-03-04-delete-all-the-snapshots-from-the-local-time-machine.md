@@ -24,7 +24,7 @@ com.apple.TimeMachine.2018-03-04-094245
 com.apple.TimeMachine.2018-03-04-110835
 com.apple.TimeMachine.2018-03-04-121348</pre>
 
-You probably end up with a similar list as mine, or perhaps even longer. If you waned to free some space, you need to use the command <span class="lang:default highlight:0 decode:true  crayon-inline ">tmutil deletelocalsnapshots <date></span>  and introduce the date os each of the snapshot one by one to delete them, which it&#8217;s quite a pain in the \***.
+You probably end up with a similar list as mine, or perhaps even longer. If you waned to free some space, you need to use the command <span class="lang:default highlight:0 decode:true  crayon-inline ">tmutil deletelocalsnapshots <date></span>  and introduce the date os each of the snapshot one by one to delete them, which it's quite a pain in the \***.
 
 Lucky, [someone in the MacRumors](https://forums.macrumors.com/threads/how-to-delete-time-machine-local-backups-on-high-sierra.2073998/#post-25673423) forum came with a clever idea of using the terminal and the grep command. If you run:
 
@@ -39,4 +39,4 @@ Deleted local snapshot '2018-03-04-121348'</pre>
 
 You are going to get rid of all those snapshots in no time.
 
-Learn how to use the terminal commands kids&#8230; it&#8217;s going to sae
+Learn how to use the terminal commands kids… it's going to sae

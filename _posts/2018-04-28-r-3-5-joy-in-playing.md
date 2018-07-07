@@ -1,6 +1,6 @@
 ---
 id: 1800
-title: 'R 3.5 &#8220;Joy in Playing&#8221;'
+title: 'R 3.5 "Joy in Playing"'
 date: 2018-04-28T18:52:30+00:00
 guid: http://luisspuerto.net/?p=1800
 permalink: /2018/04/r-3-5-joy-in-playing/
@@ -27,21 +27,21 @@ tags:
   </p>
 </div>
 
-Last Monday, 23rd of April, [R was updated](https://stat.ethz.ch/pipermail/r-announce/2018/000628.html) to its version 3.5, codenamed The _Joy in Playing_, which as the rest of the releases, make reference to a Peanuts&#8217; cartoon.
+Last Monday, 23rd of April, [R was updated](https://stat.ethz.ch/pipermail/r-announce/2018/000628.html) to its version 3.5, codenamed The _Joy in Playing_, which as the rest of the releases, make reference to a Peanuts' cartoon.
 
-Since it&#8217;s a [minor release](https://semver.org) (3.x) and not just a patch, it&#8217;s advisable to reinstall all your packages, in some cases, to make then work properly. For example, and in my case, since I&#8217;ve built all of them as a consequence of my [Homebrew install](http://luisspuerto.net/2018/01/install-r-100-homebrew-edition-with-openblas-openmp-my-version/), some of them where throwing me the following message
+Since it's a [minor release](https://semver.org) (3.x) and not just a patch, it's advisable to reinstall all your packages, in some cases, to make then work properly. For example, and in my case, since I've built all of them as a consequence of my [Homebrew install](http://luisspuerto.net/2018/01/install-r-100-homebrew-edition-with-openblas-openmp-my-version/), some of them where throwing me the following message
 
 <pre class="wrap:true lang:r decode:true">Error: package ‘XXXXXXXXXXX’ was installed by an R version with different internals; it needs to be reinstalled for use with this R version</pre>
 
-So, to reinstall all the packages that haven&#8217;t been build for your current R build, you can run the following command. (Be careful, rebuild all your packages could take time and resources, so it&#8217;s recommendable to do it at some moment that you aren&#8217;t using your machine)
+So, to reinstall all the packages that haven't been build for your current R build, you can run the following command. (Be careful, rebuild all your packages could take time and resources, so it's recommendable to do it at some moment that you aren't using your machine)
 
 <pre class="lang:r decode:true ">update.packages(ask = F, repos = 'cloud.r-project.org', checkBuild = T)</pre>
 
-I would recommend to run it twice, since some packages have dependencies and they need to be installed first and I don&#8217;t know if the command follows a specific installation order to avoid this errors like this –in other words, if the dependencies aren&#8217;t installed first to this specific release, the installation is going to fail. It doesn&#8217;t hurt to run the command again since if all the packages were rebuilt with the current R version they aren&#8217;t going to be reinstalled.
+I would recommend to run it twice, since some packages have dependencies and they need to be installed first and I don't know if the command follows a specific installation order to avoid this errors like this –in other words, if the dependencies aren't installed first to this specific release, the installation is going to fail. It doesn't hurt to run the command again since if all the packages were rebuilt with the current R version they aren't going to be reinstalled.
 
 # Java and rJava configuration
 
-In some of my machines I hadn&#8217;t configured the new Java 10 with the prerelease rJava so [Java 10 can be run properly in R](http://luisspuerto.net/2018/03/r-and-java-10/). If this is your case remember to run:
+In some of my machines I hadn't configured the new Java 10 with the prerelease rJava so [Java 10 can be run properly in R](http://luisspuerto.net/2018/03/r-and-java-10/). If this is your case remember to run:
 
 <pre class="lang:default decode:true">$ R CMD javareconf</pre>
 
@@ -74,9 +74,9 @@ So you can install / build rJava prerelease with the following command
 
 # devEMF
 
-In another machine I wasn&#8217;t being able to install devEMF package. You can see the specific error I was getting in this Stack Overflow [question](https://stackoverflow.com/questions/50075549/devemf-package-in-r-3-5-on-macos-doesnt-build/50076667#50076667).
+In another machine I wasn't being able to install devEMF package. You can see the specific error I was getting in this Stack Overflow [question](https://stackoverflow.com/questions/50075549/devemf-package-in-r-3-5-on-macos-doesnt-build/50076667#50076667).
 
-The problem was the [makevars](http://luisspuerto.net/2018/01/install-r-100-homebrew-edition-with-openblas-openmp-my-version/#setting-the-final-makevars) file, which is crafted to use the [LLVM](https://llvm.org). I commented all of the lines to build the package and all set. Seems that for some reason LLVM isn&#8217;t supported to build this package in this version of R (or it isn&#8217;t supported at all).
+The problem was the [makevars](http://luisspuerto.net/2018/01/install-r-100-homebrew-edition-with-openblas-openmp-my-version/#setting-the-final-makevars) file, which is crafted to use the [LLVM](https://llvm.org). I commented all of the lines to build the package and all set. Seems that for some reason LLVM isn't supported to build this package in this version of R (or it isn't supported at all).
 
 <pre class="lang:default decode:true" title="makevars"># Remove the comment on -fopenmp for compiling data.table package
 # CC=/usr/local/opt/llvm/bin/clang #-fopenmp
@@ -100,7 +100,7 @@ CPPFLAGS=-I/usr/local/opt/gettext/include -I/usr/local/opt/llvm/include</pre>
 
 # data.table
 
-Don&#8217;t forget that data.table package has also specific [makevars](http://luisspuerto.net/2018/01/install-r-100-homebrew-edition-with-openblas-openmp-my-version/#setting-the-final-makevars) necessities if you are building it, as you should, with LLVM. Remember that the flag `-fopenmp` has to be present / uncommented in the lines related to C and C++ compilers.
+Don't forget that data.table package has also specific [makevars](http://luisspuerto.net/2018/01/install-r-100-homebrew-edition-with-openblas-openmp-my-version/#setting-the-final-makevars) necessities if you are building it, as you should, with LLVM. Remember that the flag `-fopenmp` has to be present / uncommented in the lines related to C and C++ compilers.
 
 <pre class="lang:default decode:true ">CC=/usr/local/opt/llvm/bin/clang -fopenmp
 CXX=/usr/local/opt/llvm/bin/clang++ -fopenmp</pre>

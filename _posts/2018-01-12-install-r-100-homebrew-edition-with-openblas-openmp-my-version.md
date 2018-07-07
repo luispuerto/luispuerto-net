@@ -1,6 +1,6 @@
 ---
 id: 1402
-title: 'Install R 100% Homebrew Edition With OpenBlas &#038; OpenMP &#8211; My Version'
+title: 'Install R 100% Homebrew Edition With OpenBlas &#038; OpenMP – My Version'
 date: 2018-01-12T20:16:56+00:00
 guid: http://luisspuerto.net/?p=1402
 permalink: /2018/01/install-r-100-homebrew-edition-with-openblas-openmp-my-version/
@@ -22,25 +22,25 @@ tags:
 ---
 **Update Friday, 10th of May 2018**: If you want to install R with all the capabilities you need to read this [post](http://luisspuerto.net/2018/05/installing-r-with-homebrew-with-all-the-capabilities/) too, and perhaps this [one](http://luisspuerto.net/2018/05/homebrews-r-doesnt-have-all-the-capabilities/) too.
 
-**Update Tuesday, 27th of March 2018:** I just found out that seems you don&#8217;t just need to run `sudo R CMD javareconf` to configure Java an R, at least with the versions of Java 9.0.4 and R 3.4.4.
+**Update Tuesday, 27th of March 2018:** I just found out that seems you don't just need to run `sudo R CMD javareconf` to configure Java an R, at least with the versions of Java 9.0.4 and R 3.4.4.
 
 **Update Thursday, 22nd of March 2018:** I have to add `-fopenmp` to both `clang` and `clang++` variables in my `makevars` to be able to build data.table package correctly. This is not exactly what the [Data Table wiki](https://github.com/Rdatatable/data.table/wiki/Installation#openmp-enabled-compiler-for-mac) recommends. I update the [section about the Data Table Package](http://luisspuerto.net/2018/01/install-r-100-homebrew-edition-with-openblas-openmp-my-version/#data-table-package) accordingly.
 
 * * *
 
-As you know I&#8217;m a big fan of [Homebrew](http://luisspuerto.net/tag/homebrew/) as a manager of part of the software of my Mac, since it make things easier. There are a lot of guides out there about [how to have a R installation 100% Homebrew](https://www.google.com/search?client=safari&rls=en&q=r+homebrew&ie=UTF-8&oe=UTF-8) and some people, like me, like to have this kind of setup because it&#8217;s convenient and for the sake of lear a little bit more about how R works in more detail. However, Homebrew setup isn&#8217;t officially supported by the [R Core Team](https://scholar.google.com/citations?user=yvS1QUEAAAAJ), so if you find problems with your R installation you aren&#8217;t going to get support from them. Nevertheless, you are going to be able to get support from [Homebrew](https://github.com/Homebrew/homebrew-core) and of course, from the [regular channels to get help for R](https://www.r-project.org/help.html), like the [mail list](https://www.r-project.org/mail.html).
+As you know I'm a big fan of [Homebrew](http://luisspuerto.net/tag/homebrew/) as a manager of part of the software of my Mac, since it make things easier. There are a lot of guides out there about [how to have a R installation 100% Homebrew](https://www.google.com/search?client=safari&rls=en&q=r+homebrew&ie=UTF-8&oe=UTF-8) and some people, like me, like to have this kind of setup because it's convenient and for the sake of lear a little bit more about how R works in more detail. However, Homebrew setup isn't officially supported by the [R Core Team](https://scholar.google.com/citations?user=yvS1QUEAAAAJ), so if you find problems with your R installation you aren't going to get support from them. Nevertheless, you are going to be able to get support from [Homebrew](https://github.com/Homebrew/homebrew-core) and of course, from the [regular channels to get help for R](https://www.r-project.org/help.html), like the [mail list](https://www.r-project.org/mail.html).
 
 The biggest advantage, besides of the regular advantages of installing something with HomeBrew, is you can create your own version of R, you can compile it, therefore you can compile it with steroids, so you can take advantage of the OpenBlas and OpenMP libraries.
 
 # OpenBLAS & OpenMP
 
-[OpenBLAS](https://en.wikipedia.org/wiki/OpenBLAS) is a open implementation of the BLAS (Basic Linear Algebra Subprograms) API. Basically, it optimizes your processor when you are doing mathematical operations, like when you are using R. It&#8217;s usually a huge leap in performance when you begin to make complex mathematical operations.
+[OpenBLAS](https://en.wikipedia.org/wiki/OpenBLAS) is a open implementation of the BLAS (Basic Linear Algebra Subprograms) API. Basically, it optimizes your processor when you are doing mathematical operations, like when you are using R. It's usually a huge leap in performance when you begin to make complex mathematical operations.
 
 [OpenMP](https://en.wikipedia.org/wiki/OpenMP) is a library for Open Multi-Processing, or in other words, be able to use all the cores of your processor when you are compiling C, C++, and Fortran. If also make R to process faster since some packages are able to use all the cores of your computer after you compile them with OpenMP.
 
 In other words, you are going to increase your performance a lot with this setup, as Mauricio Vargas demonstrate in his last two post ([Why is R slow? some explanations and MKL/OpenBLAS setup to try to fix this](http://pacha.hk/2017-12-02_why_is_r_slow.html) and Is [Microsoft R Open faster than CRAN R?](http://pacha.hk/2017-12-02_is-mro-faster-than-r.html)).
 
-We also did a small test since we wanted to get this setup in one of our computers, a MacBook Air from 2013. So, we used the [MicroBenchmarks](https://cran.r-project.org/web/packages/microbenchmark/index.html) package with the below script (from [Alexej Gossmann&#8217;s Blog](http://www.alexejgossmann.com/benchmarking_r/)) and we got the following results.
+We also did a small test since we wanted to get this setup in one of our computers, a MacBook Air from 2013. So, we used the [MicroBenchmarks](https://cran.r-project.org/web/packages/microbenchmark/index.html) package with the below script (from [Alexej Gossmann's Blog](http://www.alexejgossmann.com/benchmarking_r/)) and we got the following results.
 
 <pre class="lang:r decode:true" title="Testing Script">library(microbenchmark)
 
@@ -94,25 +94,25 @@ I really think the results speak for themselves.
 
 # Caveats
 
-Of course there are some problems when you have this kind of install. The first one is the complication of the install process. If it were as simple as install R binaries from CRAN I wouldn&#8217;t be doing this guide. The second one and more important, **you are going to need to compile the packages you install from now o****n**, without exception. You aren&#8217;t going to be able to install the binaries of the packages anymore. This has advantages and disadvantages. The main advantage is that they are going to make use of the libraries you have installed in your your system like OpenBLAS, OpenMP or LLVM, to mention some. However, this means that you are going to need some other libraries to compile and you have to have them correctly linked, like Java or libxml2 or some of the packages aren&#8217;t going to compile and you aren&#8217;t going to be able to have it on your system.
+Of course there are some problems when you have this kind of install. The first one is the complication of the install process. If it were as simple as install R binaries from CRAN I wouldn't be doing this guide. The second one and more important, **you are going to need to compile the packages you install from now o****n**, without exception. You aren't going to be able to install the binaries of the packages anymore. This has advantages and disadvantages. The main advantage is that they are going to make use of the libraries you have installed in your your system like OpenBLAS, OpenMP or LLVM, to mention some. However, this means that you are going to need some other libraries to compile and you have to have them correctly linked, like Java or libxml2 or some of the packages aren't going to compile and you aren't going to be able to have it on your system.
 
 In case you get any problem internet is your friend. You can look for the error R is returning when it tries to compile. If you are the first one to get that error you can ask in communities like [Stackoverflow](https://stackoverflow.com) or the mail list for [R help](https://www.r-project.org/mail.html). All of these is going to make you understand R much better and your are going to be a better R user. So take it with patience and consider it like an advance course for R.
 
-Take into account that sometimes even the CRAN install binaries pose problems, mostly with it&#8217;s link to Java. Before I decided to have this kind of install with R I had in the past multiple problems with Java and rJava package. So nothing is perfect, but you didn&#8217;t decided to use R because it was simple, did you?
+Take into account that sometimes even the CRAN install binaries pose problems, mostly with it's link to Java. Before I decided to have this kind of install with R I had in the past multiple problems with Java and rJava package. So nothing is perfect, but you didn't decided to use R because it was simple, did you?
 
 # How to install?
 
-I&#8217;ve used as inspiration for this guide mainly two main sources. On one hand, [Bhaskar Karambelar&#8217;s installation guide](https://www.karambelkar.info/2017/01/setup-osx-for-r/), and on the other [Mauricio Vargas&#8217; one](http://pacha.hk/2017-07-12_r_and_python_via_homebrew.html). Bhaskar&#8217;s one was the first I used, more than 6 months ago, while we were in the United Stated, and really worked well in that moment. Problem with it is, it installs a lot or libraries to program in C/C++ what unless you are a C/C++ programmer you aren&#8217;t going to use, although you never know. At that moment, I installed everything due to lack of knowledge, but probably right now I wouldn&#8217;t. It&#8217;s up to you if you want to install those libraries and programing languages. However, I have more than enough space in my hard drive and I don&#8217;t mind to have then, perhaps they are going to to be useful in the future. Besides, this has been a way to discover then and know more about C/C++ programing. Mauricio&#8217;s guide goes more to the point and it just helps you to install a really fast and quick version of R that use OpenMP and OpenBlas.
+I've used as inspiration for this guide mainly two main sources. On one hand, [Bhaskar Karambelar's installation guide](https://www.karambelkar.info/2017/01/setup-osx-for-r/), and on the other [Mauricio Vargas' one](http://pacha.hk/2017-07-12_r_and_python_via_homebrew.html). Bhaskar's one was the first I used, more than 6 months ago, while we were in the United Stated, and really worked well in that moment. Problem with it is, it installs a lot or libraries to program in C/C++ what unless you are a C/C++ programmer you aren't going to use, although you never know. At that moment, I installed everything due to lack of knowledge, but probably right now I wouldn't. It's up to you if you want to install those libraries and programing languages. However, I have more than enough space in my hard drive and I don't mind to have then, perhaps they are going to to be useful in the future. Besides, this has been a way to discover then and know more about C/C++ programing. Mauricio's guide goes more to the point and it just helps you to install a really fast and quick version of R that use OpenMP and OpenBlas.
 
 Through this guide I just want to try to show you how I ended with my installation, that is an updated mixture of both guides.  However, take into account that mine guide is going to be a little bit different, even more taking into account that [I use Zsh](http://luisspuerto.net/2018/01/iterm2-oh-my-zsh-powerlevel9k-monaco-nerd-complete-font/) as my shell.
 
 ## Homebrew
 
-You probably have Homebrew already installed, if you don&#8217;t, please, [install it](http://luisspuerto.net/2017/11/homebrew/). Then, I recommend you to connect to the cask tap if you haven&#8217;t done it already:
+You probably have Homebrew already installed, if you don't, please, [install it](http://luisspuerto.net/2017/11/homebrew/). Then, I recommend you to connect to the cask tap if you haven't done it already:
 
 <pre class="lang:sh decode:true" title="Homebrew taps to connect">$ brew tap caskroom/cask # Tap to install regular app with user interface (GUI)</pre>
 
-As you probably you&#8217;ve noticed, I don&#8217;t tap a lot of repos that Bhaskar taped. This is mainly because those taps are deprecated and its formulae are now included in the Homebrew Core. I decided not to tap other repos because I&#8217;m not going to use them.
+As you probably you've noticed, I don't tap a lot of repos that Bhaskar taped. This is mainly because those taps are deprecated and its formulae are now included in the Homebrew Core. I decided not to tap other repos because I'm not going to use them.
 
 I recommend to add the following lines in your Zsh and/or Bash profiles running the following:
 
@@ -224,7 +224,7 @@ Hello from thread 7, nthreads 8</pre>
 
 <pre class="lang:sh decode:true" title="Miscellaneous graphical libraries">$ brew install freetype fontconfig pixman gettext</pre>
 
-Some of these libraries aren&#8217;t strictly necessary for R, but they are to install other related apps like QGIS, GRASS or PostGIS. I think that if you don&#8217;t want to install then you don&#8217;t need to do it right now, since that software install its on dependencies
+Some of these libraries aren't strictly necessary for R, but they are to install other related apps like QGIS, GRASS or PostGIS. I think that if you don't want to install then you don't need to do it right now, since that software install its on dependencies
 
 ## SSL/SSH Libraries -optional {#ssl-ssh-libs}
 
@@ -241,7 +241,7 @@ LibreSSL 2.2.7
 
 ## Libxml2
 
-It&#8217;s highly recomendable to install this library since it&#8217;s somehow necessary to install some packages depending on the version of your macOS system. It&#8217;s really small (10 mb) so you are losing nothing installing it.
+It's highly recomendable to install this library since it's somehow necessary to install some packages depending on the version of your macOS system. It's really small (10 mb) so you are losing nothing installing it.
 
 <pre class="lang:sh decode:true" title="Installing LibXML2">$ brew install libxml2
 $ brew link libxml2 --force</pre>
@@ -253,7 +253,7 @@ $ brew link libxml2 --force</pre>
 <pre class="lang:sh decode:true" title="Install Boost">$ brew install icu4c libiconv libxslt
 $ brew install boost --with-icu4c --without-single</pre>
 
-Then you can test if it&#8217;s correctly installed
+Then you can test if it's correctly installed
 
 <pre class="lang:sh decode:true" title="Test Boost 1">$ cat &gt; first.cpp &lt;&lt;END
 #include&lt;iostream&gt;
@@ -293,7 +293,7 @@ clang++ -I/usr/local/include -L/usr/local/lib  -o second second.cpp \
 
 ## GPG & Git
 
-I&#8217;ve already explained how to install [GPG in a previous post](http://luisspuerto.net/2017/11/installing-pgp-signing-for-git-on-macos/) to use it with [Git](http://luisspuerto.net/2017/11/set-rstudio-with-homebrews-git/). How to install Git was also [explained](http://luisspuerto.net/2017/11/set-rstudio-with-homebrews-git/).
+I've already explained how to install [GPG in a previous post](http://luisspuerto.net/2017/11/installing-pgp-signing-for-git-on-macos/) to use it with [Git](http://luisspuerto.net/2017/11/set-rstudio-with-homebrews-git/). How to install Git was also [explained](http://luisspuerto.net/2017/11/set-rstudio-with-homebrews-git/).
 
 ## X-Server
 
@@ -311,7 +311,7 @@ You are going to probably need X-Server down the road.
 
 ## Java
 
-If you don&#8217;t have [Java](https://en.wikipedia.org/wiki/Java_(programming_language)) installed it&#8217;s a good moment to do so and to do it with Homebrew.
+If you don't have [Java](https://en.wikipedia.org/wiki/Java_(programming_language)) installed it's a good moment to do so and to do it with Homebrew.
 
 <pre class="lang:sh decode:true" title="Install Java">$ brew cask install java
 </pre>
@@ -323,7 +323,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 9.0.1+11, mixed mode)</pre>
 
 ## Python
 
-It&#8217;s recommended to install [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) 2 and 3 as a complement to R although R itself doesn&#8217;t use it.
+It's recommended to install [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) 2 and 3 as a complement to R although R itself doesn't use it.
 
 <pre class="lang:sh decode:true" title="Python 2 install ">$ brew install python
 $ sudo easy_install pip
@@ -342,7 +342,7 @@ Python 3.6.4
 
 ## R & related
 
-We are going to install some things before we install R itself. [Pandoc](https://en.wikipedia.org/wiki/Pandoc) is really useful when you have R to convert documents in different formats. [Cairo](https://en.wikipedia.org/wiki/Cairo_(graphics)) is a graphical library that can be use for in R and it&#8217;s need for [QGIS](https://en.wikipedia.org/wiki/QGIS). Libsvg and librsvg are optional
+We are going to install some things before we install R itself. [Pandoc](https://en.wikipedia.org/wiki/Pandoc) is really useful when you have R to convert documents in different formats. [Cairo](https://en.wikipedia.org/wiki/Cairo_(graphics)) is a graphical library that can be use for in R and it's need for [QGIS](https://en.wikipedia.org/wiki/QGIS). Libsvg and librsvg are optional
 
 **Important!**: If you want to have R with all the capabilities you need to install Cairo with the instructions in this [post](http://luisspuerto.net/2018/05/installing-r-with-homebrew-with-all-the-capabilities/).
 
@@ -351,7 +351,7 @@ We are going to install some things before we install R itself. [Pandoc](https:/
 
 ### OpenBLAS
 
-Let&#8217;s install OpenBLAS, this is one of the key pieces of this installation.
+Let's install OpenBLAS, this is one of the key pieces of this installation.
 
 <pre class="lang:sh decode:true" title="Install OpenBlas">$ brew install openblas --with-openmp
 </pre>
@@ -388,12 +388,12 @@ clang -L/usr/local/opt/openblas/lib \
 
 ### Armadillo and other libraries -optional
 
-Now, you can also install, if you want, [Armadillo](https://en.wikipedia.org/wiki/Armadillo_(C%2B%2B_library)), which is other library that it&#8217;s useful if you program in C/C++ and take advantage of OpenBLAS.
+Now, you can also install, if you want, [Armadillo](https://en.wikipedia.org/wiki/Armadillo_(C%2B%2B_library)), which is other library that it's useful if you program in C/C++ and take advantage of OpenBLAS.
 
 <pre class="lang:sh decode:true">$ brew install eigen armadillo v8-315
 $ brew link v8-315 --force</pre>
 
-You can test Armadillo with the following code (click to expand, the file is long) since the new Armadillo doesn&#8217;t provide examples, or at least I haven&#8217;t found them.
+You can test Armadillo with the following code (click to expand, the file is long) since the new Armadillo doesn't provide examples, or at least I haven't found them.
 
 <pre class="minimize:true lang:sh decode:true" title="Test code for Armadillo">$ cat &gt; example1.cpp &lt;&lt;END
 #include &lt;iostream&gt;
@@ -724,7 +724,7 @@ V8 version 3.15.11.18 [sample shell]
 
 Important!: If you want to have R with all the capabilities you have to follow the instructions in this [post](http://luisspuerto.net/2018/05/installing-r-with-homebrew-with-all-the-capabilities/), then you can continue.
 
-Let&#8217;s finally install R.
+Let's finally install R.
 
 <pre class="lang:sh decode:true" title="Install R">$ brew install R --with-openblas --with-java</pre>
 
@@ -786,7 +786,7 @@ Done.</pre>
 
 ### Folder for R Packages
 
-Let&#8217;s create our own folder to store the installed packages for R. This way R, or us, doesn&#8217;t have to move all the packages every time we install a new R version. Run the following in terminal.
+Let's create our own folder to store the installed packages for R. This way R, or us, doesn't have to move all the packages every time we install a new R version. Run the following in terminal.
 
 <pre class="lang:sh decode:true" title="R Packages Folder">$ mkdir -p $HOME/Library/R/3.x/library
 $ cat &gt; $HOME/.Renviron &lt;&lt;END
@@ -859,11 +859,11 @@ As you probably have noticed the change is just the `-fopenmp` flag on the secon
 
 ## RStudio
 
-When you install R from Homebrew and you compile it, you don&#8217;t have anymore the R shell as an application on your Applications folder. But you can install any other graphical interface like [RStudio](https://www.rstudio.com). To do it you just run in your terminal:
+When you install R from Homebrew and you compile it, you don't have anymore the R shell as an application on your Applications folder. But you can install any other graphical interface like [RStudio](https://www.rstudio.com). To do it you just run in your terminal:
 
 <pre class="lang:sh decode:true" title="Installing RStudio">$ brew cask install rstudio</pre>
 
-Usually RStudio is able to recognize R install and you don&#8217;t need to do anything else.
+Usually RStudio is able to recognize R install and you don't need to do anything else.
 
 ## Additional related languages -optional
 
@@ -915,7 +915,7 @@ $ brew install postgis --with-gui</pre>
 
 ## Shell Profiles
 
-You&#8217;ve been adding things to your Zsh and/or Bash profiles. I recommend you to make those profiles tidy, it&#8217;s going to be easier to modify things in the future.
+You've been adding things to your Zsh and/or Bash profiles. I recommend you to make those profiles tidy, it's going to be easier to modify things in the future.
 
 This is how I have then:
 

@@ -18,15 +18,15 @@ tags:
 
 * * *
 
-Just a couple days ago I was about to write a post about how difficult, or almost impossible, is to install the last versions of QGIS on macOS right now. Everything started, I believe, when [gdal](http://www.gdal.org) package got update at the beginning of the week and that broke my install of QGIS 2 even thought, and to be honest, I really don&#8217;t know if all this mess was caused for that update, or by the update of the python formulae in Homebrew. Anyhow, usually these problems are solved just rebuilding the app from source using the new packages, but in this occasion that solution wasn&#8217;t working.
+Just a couple days ago I was about to write a post about how difficult, or almost impossible, is to install the last versions of QGIS on macOS right now. Everything started, I believe, when [gdal](http://www.gdal.org) package got update at the beginning of the week and that broke my install of QGIS 2 even thought, and to be honest, I really don't know if all this mess was caused for that update, or by the update of the python formulae in Homebrew. Anyhow, usually these problems are solved just rebuilding the app from source using the new packages, but in this occasion that solution wasn't working.
 
-Homebrew decided that on the first of March the behavior of the Python formulae and the name, and I believe the name of the formulae, was going to change to be more consistent. To sum a little bit up, after the change `python` was going to point to `python3` in your shell and `python2` is going point to so `python2` –or something like that. However, the change in the command in the CLI  broke a truckload of third party software, and seems that also wasn&#8217;t compliant with [Python&#8217;s policy](https://www.python.org/dev/peps/pep-0394/). So&#8230; they decided [to change some things back](https://discourse.brew.sh/t/python-and-pep-394/1813) –CLI commands, no formulae names– and now seems that `python` ➜ `python2` and `python3` ➜ `python3`. If you are confused, don&#8217;t worry, am I also. Besides, since I&#8217;m not an expert in the matter and I&#8217;ve perhaps missed something in all this chaos. In consequence&#8230; **[I really don&#8217;t know!](https://media1.tenor.com/images/499592e35e9cdf56bfdcb11eaf9d891d/tenor.gif?itemid=5607416)**.
+Homebrew decided that on the first of March the behavior of the Python formulae and the name, and I believe the name of the formulae, was going to change to be more consistent. To sum a little bit up, after the change `python` was going to point to `python3` in your shell and `python2` is going point to so `python2` –or something like that. However, the change in the command in the CLI  broke a truckload of third party software, and seems that also wasn't compliant with [Python's policy](https://www.python.org/dev/peps/pep-0394/). So… they decided [to change some things back](https://discourse.brew.sh/t/python-and-pep-394/1813) –CLI commands, no formulae names– and now seems that `python` ➜ `python2` and `python3` ➜ `python3`. If you are confused, don't worry, am I also. Besides, since I'm not an expert in the matter and I've perhaps missed something in all this chaos. In consequence… **[I really don't know!](https://media1.tenor.com/images/499592e35e9cdf56bfdcb11eaf9d891d/tenor.gif?itemid=5607416)**.
 
-Anyhow and right now, with the current state of Homebrew and the [OSGeo/homebrew-osgeo4mac](https://github.com/OSGeo/homebrew-osgeo4mac) tap, it&#8217;s quite difficult to install the last versions of QGIS in macOS. A few weeks ago, QGIS released QGIS 3 Girona, however it&#8217;s only possible to install it right now in Windows and Linux. Usually on macOS the releases has been a little bit slower than in other platforms basically because QGIS has really few developers able to work on macOS and seems that things aren&#8217;t as easy as in other platforms. Traditionally, Homebrew has come to the rescue with [OSGeo/homebrew-osgeo4mac](https://github.com/OSGeo/homebrew-osgeo4mac) tap, which you can build your own version of QGIS, but that repo hasn&#8217;t been update almost since the beginning of December. This time the delay not only mean that the macOS users not only can&#8217;t install the last small incremental change version, but that for more than 3 weeks we aren&#8217;t able to install the last version, which means a big leap from version 2 to 3.
+Anyhow and right now, with the current state of Homebrew and the [OSGeo/homebrew-osgeo4mac](https://github.com/OSGeo/homebrew-osgeo4mac) tap, it's quite difficult to install the last versions of QGIS in macOS. A few weeks ago, QGIS released QGIS 3 Girona, however it's only possible to install it right now in Windows and Linux. Usually on macOS the releases has been a little bit slower than in other platforms basically because QGIS has really few developers able to work on macOS and seems that things aren't as easy as in other platforms. Traditionally, Homebrew has come to the rescue with [OSGeo/homebrew-osgeo4mac](https://github.com/OSGeo/homebrew-osgeo4mac) tap, which you can build your own version of QGIS, but that repo hasn't been update almost since the beginning of December. This time the delay not only mean that the macOS users not only can't install the last small incremental change version, but that for more than 3 weeks we aren't able to install the last version, which means a big leap from version 2 to 3.
 
-This left the macOS users a little bit hanging although we still can download the _official_ build for macOS in the [KyngChaos](http://www.kyngchaos.com/software/qgis){.reference.external} download page, where you can find the 2.18.14 version. The problem is that version isn&#8217;t even the last version of the [long-term repository release](https://en.wikipedia.org/wiki/Long-term_support), which is 2.18.17.
+This left the macOS users a little bit hanging although we still can download the _official_ build for macOS in the [KyngChaos](http://www.kyngchaos.com/software/qgis){.reference.external} download page, where you can find the 2.18.14 version. The problem is that version isn't even the last version of the [long-term repository release](https://en.wikipedia.org/wiki/Long-term_support), which is 2.18.17.
 
-Nevertheless, this weekend I was able to rebuild the last version of the LTR of QGIS 2 and the developer version of QGIS3. I really don&#8217;t know how stable is the QGIS 3 developer version, but at least at first sight everything works and the app even open faster than the QGIS 2.
+Nevertheless, this weekend I was able to rebuild the last version of the LTR of QGIS 2 and the developer version of QGIS3. I really don't know how stable is the QGIS 3 developer version, but at least at first sight everything works and the app even open faster than the QGIS 2.
 
 # How to install the last version of QGIS 2?
 
@@ -49,11 +49,11 @@ However, I prefer to move the actual app to the `/Applications` folder and crea
 <pre class="lang:sh decode:true" title="Moving an symbolic linking QGIS 2">$ mv -f /usr/local/Cellar/qgis2/2.18.14/QGIS.app /Applications
 $ ln -s /Applications/QGIS.app /usr/local/Cellar/qgis2/2.18.14/QGIS.app</pre>
 
-Yet, weren&#8217;t we going to install the last version of QGIS? This isn&#8217;t the last version. OK&#8230;
+Yet, weren't we going to install the last version of QGIS? This isn't the last version. OK…
 
 ## QGIS 2.18.17
 
-To install the last version you need to change the the QGIS formulae to make it to download the last version from the LTR. Since Homebrew isn&#8217;t anything more than a git with Ruby scripts I recommend you to make a branch in the repository and change the formula. You aren&#8217;t going to change anything in Homebrew, but in a branch of tap, in the [OSGeo/homebrew-osgeo4mac](https://github.com/OSGeo/homebrew-osgeo4mac) tap. I did the following.
+To install the last version you need to change the the QGIS formulae to make it to download the last version from the LTR. Since Homebrew isn't anything more than a git with Ruby scripts I recommend you to make a branch in the repository and change the formula. You aren't going to change anything in Homebrew, but in a branch of tap, in the [OSGeo/homebrew-osgeo4mac](https://github.com/OSGeo/homebrew-osgeo4mac) tap. I did the following.
 
 First, I create a branch and checked out on it.
 
@@ -61,7 +61,7 @@ First, I create a branch and checked out on it.
 $ git checkout -b QGIS2.18.17
 $ brew edit qgis2</pre>
 
-Now you can edit the formula to be able to install QGIS 2.18.17. You can see how I modify [mine](https://github.com/luisspuerto/homebrew-osgeo4mac/blob/QGIS2.18.17/Formula/qgis2.rb) below that has highlighted the lines I&#8217;ve changed.
+Now you can edit the formula to be able to install QGIS 2.18.17. You can see how I modify [mine](https://github.com/luisspuerto/homebrew-osgeo4mac/blob/QGIS2.18.17/Formula/qgis2.rb) below that has highlighted the lines I've changed.
 
 <pre class="nums:true lang:ruby mark:12-13 decode:true" title="qgis2.rb" data-url="https://raw.githubusercontent.com/luisspuerto/homebrew-osgeo4mac/QGIS2.18.17/Formula/qgis2.rb"></pre>
 
@@ -94,7 +94,7 @@ $ ln -s /Applications/QGIS.app /usr/local/Cellar/qgis2/2.18.17/QGIS.app</pre>
 
 ## <span class="js-issue-title">Matplotlib</span> {.gh-header-title}
 
-Since <span class="author"><a class="url fn" href="https://github.com/Homebrew" rel="author">Homebrew</a></span><span class="path-divider">/</span><a href="https://github.com/Homebrew/homebrew-science" data-pjax="#js-repo-pjax-container">homebrew-science</a>** **has been deprecated and some of the formulae wasn&#8217;t migrated to the <span class="author"><a class="url fn" href="https://github.com/Homebrew" rel="author">Homebrew</a></span><span class="path-divider">/</span><a href="https://github.com/Homebrew/homebrew-core" data-pjax="#js-repo-pjax-container">homebrew-core</a> this left us with a message at the end of the QGIS&#8217; compilation asking us to install [matplotlib](https://matplotlib.org) via pip.
+Since <span class="author"><a class="url fn" href="https://github.com/Homebrew" rel="author">Homebrew</a></span><span class="path-divider">/</span><a href="https://github.com/Homebrew/homebrew-science" data-pjax="#js-repo-pjax-container">homebrew-science</a>** **has been deprecated and some of the formulae wasn't migrated to the <span class="author"><a class="url fn" href="https://github.com/Homebrew" rel="author">Homebrew</a></span><span class="path-divider">/</span><a href="https://github.com/Homebrew/homebrew-core" data-pjax="#js-repo-pjax-container">homebrew-core</a> this left us with a message at the end of the QGIS' compilation asking us to install [matplotlib](https://matplotlib.org) via pip.
 
 <pre class="lang:sh decode:true ">The following Python modules are needed by QGIS during run-time:
 
@@ -155,7 +155,7 @@ Well, this is a little bit more challenging, but just a little bit. The only ver
 
 <pre class="lang:sh decode:true ">$ brew tap qgis/homebrew-qgisdev</pre>
 
-However, I needed to make changes in the formula to be able to install because it has a dependency on Matplotlib on <span class="author"><a class="url fn" href="https://github.com/Homebrew" rel="author">Homebrew</a></span><span class="path-divider">/</span><a href="https://github.com/Homebrew/homebrew-science" data-pjax="#js-repo-pjax-container">homebrew-science</a> and as we learned before that formula doesn&#8217;t exist anymore. In this case, it isn&#8217;t like in the QGIS 2, that it builds anyway and then ask you to install Matplotlib. It just doesn&#8217;t build and throws an [error](https://github.com/qgis/homebrew-qgisdev/issues/50).
+However, I needed to make changes in the formula to be able to install because it has a dependency on Matplotlib on <span class="author"><a class="url fn" href="https://github.com/Homebrew" rel="author">Homebrew</a></span><span class="path-divider">/</span><a href="https://github.com/Homebrew/homebrew-science" data-pjax="#js-repo-pjax-container">homebrew-science</a> and as we learned before that formula doesn't exist anymore. In this case, it isn't like in the QGIS 2, that it builds anyway and then ask you to install Matplotlib. It just doesn't build and throws an [error](https://github.com/qgis/homebrew-qgisdev/issues/50).
 
 I have two options here. I can just delete or comment the line where the dependency is called, or I can replace it for the legacy formula, which is located in the <span class="author"><a class="url fn" href="https://github.com/brewsci" rel="author">brewsci</a></span><span class="path-divider">/</span><a href="https://github.com/brewsci/homebrew-science" data-pjax="#js-repo-pjax-container">homebrew-science</a> tap. Either way I proceeded in the same way as I did previously.
 
@@ -166,7 +166,7 @@ $ git checkout -b matplotlib-fix
 $ brew edit qgis3-dev
 </pre>
 
-You can check how I&#8217;ve edited mine below. The important part is in the highlighted 86-87 lines.
+You can check how I've edited mine below. The important part is in the highlighted 86-87 lines.
 
 <pre class="nums:true lang:ruby mark:86-87 decode:true" title="qgis3-dev.rb" data-url="v/blob/f8c5058e533424228ff26c1dabaf69c4cef00ad5/Formula/qgis3-dev.rb"></pre>
 
@@ -211,13 +211,13 @@ $ ln -s /Applications/QGIS\ 3.app /usr/local/opt/qgis3-dev/QGIS.app</pre>
 
 # Final thoughts
 
-I hope that in the near future the situation improve and we can enjoy the last version of QGIS on macOS in a easier way. Perhaps even without needed to compile. However, in this very moment isn&#8217;t the case.
+I hope that in the near future the situation improve and we can enjoy the last version of QGIS on macOS in a easier way. Perhaps even without needed to compile. However, in this very moment isn't the case.
 
-You have to take into account that with this method you are installing the QGIS 3 developer version, so probably isn&#8217;t going to be really stable, or perhaps you are going to have no problem. I guess that you can install the stable version using the QGIS3-dev formulae, you just have to change the values <span class="lang:default highlight:0 decode:true crayon-inline ">branch =></span>  to `"release-3_0"` in line 37 and `version` to `"3.0"` on line 38.
+You have to take into account that with this method you are installing the QGIS 3 developer version, so probably isn't going to be really stable, or perhaps you are going to have no problem. I guess that you can install the stable version using the QGIS3-dev formulae, you just have to change the values <span class="lang:default highlight:0 decode:true crayon-inline ">branch =></span>  to `"release-3_0"` in line 37 and `version` to `"3.0"` on line 38.
 
 <pre class="nums:true lang:ruby mark:37-38 decode:true" title="qgis3-dev.rb" data-url="https://raw.githubusercontent.com/luisspuerto/homebrew-qgisdev/085a83ed859f2cba87b76245f031664f21523e60/Formula/qgis3-dev.rb"></pre>
 
-Anyhow, I think I&#8217;m going to keep the 3.1 version for a while.
+Anyhow, I think I'm going to keep the 3.1 version for a while.
 
 &nbsp;
 
