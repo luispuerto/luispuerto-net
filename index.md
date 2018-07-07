@@ -14,7 +14,7 @@ excerpt: |
   #LiDAR 🔦 #RStats 📈 #Biomass 🌱 #Cartography 🗺       
   #Europe 🇪🇺 #Spain 🇪🇸 #Sweden 🇸🇪 #Finland 🇫🇮 #Oregon US 🇺🇸
 intro:
-  - excerpt: Nullam suscipit et nam, tellus velit pellentesque at malesuada, enim eaque. Quis nulla, netus tempor in diam gravida tincidunt, *proin faucibus* voluptate felis id sollicitudin. Centered with `type="center"`
+  - excerpt: A Spanish Forest Engineer interested in science and technology.  
 
 feature_row:
   - image_path: assets/images/pages/splash-featurerow-aboutme.jpg
@@ -27,13 +27,13 @@ feature_row:
   - image_path: /assets/images/pages/splash-featurerow-resume.png
     alt: "Résumé"
     title: "Résumé"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    excerpt: "What I've done and what is my professional background"
     url: "/resume"
     btn_label: "Read More"
     btn_class: "btn--primary"
   - image_path: /assets/images/pages/splash-featurerow-blog.jpg
     title: "My Blog"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    excerpt: "Things I like to talk about"
     url: "/blog"
     btn_label: "Read More"
     btn_class: "btn--primary"
