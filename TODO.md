@@ -19,11 +19,13 @@
 ## Tweaks
 
 * [x] Set time zone to UTC 
-* [ ] Set up the search engine
+* [x] Set up the search engine
+* [ ] Perhaps try to improve the search engine and put google. 
 * [ ] Set up the comments in disqus
 * [ ] Add social buttons
   * [ ] ~~Whatsapp~~
   * [ ] Telegram
+* [ ] Read time in a image overlay post? 
 
 ## Single Post page
 
