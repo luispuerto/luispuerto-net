@@ -26,6 +26,8 @@
   * [ ] ~~Whatsapp~~
   * [ ] Telegram
 * [ ] Read time in a image overlay post? 
+* [ ] Build the site with travis
+* [ ] How to wrap code and disable line numbers.
 
 ## Single Post page
 
