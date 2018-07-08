@@ -22,12 +22,14 @@ You can read a little bit more about it [here](https://unix.stackexchange.com/qu
 
 For that reason you can install other commands like [trash-cli](https://github.com/andreafrancia/trash-cli), and in macOS you can also install [rmtrash](https://github.com/PhrozenByte/rmtrash). On macOS you can install both things using [homebrew](https://brew.sh) and in Linux with <span class="lang:sh highlight:0 decode:true crayon-inline ">apt-get</span>  .
 
-<pre class="lang:sh decode:true" title="trash-cli and rmtrash install"># On Mac you can install with Brew
+```sh 
+# On Mac you can install with Brew
 $ brew install trash-cli
 $ brew install rmtrash
 
 # On linux you can install with apt-get
-$ sudo apt-get install trash-cli</pre>
+$ sudo apt-get install trash-cli
+```
 
 On the previous links about the commands you have all the options you can implement in both commands.
 

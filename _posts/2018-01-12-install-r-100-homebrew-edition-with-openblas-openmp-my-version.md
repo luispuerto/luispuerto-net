@@ -1,6 +1,6 @@
 ---
 id: 1402
-title: 'Install R 100% Homebrew Edition With OpenBlas &#038; OpenMP – My Version'
+title: 'Install R 100% Homebrew Edition With OpenBlas &#038; OpenMP — My Version'
 date: 2018-01-12T20:16:56+00:00
 guid: http://luisspuerto.net/?p=1402
 permalink: /2018/01/install-r-100-homebrew-edition-with-openblas-openmp-my-version/
@@ -42,7 +42,8 @@ In other words, you are going to increase your performance a lot with this setup
 
 We also did a small test since we wanted to get this setup in one of our computers, a MacBook Air from 2013. So, we used the [MicroBenchmarks](https://cran.r-project.org/web/packages/microbenchmark/index.html) package with the below script (from [Alexej Gossmann's Blog](http://www.alexejgossmann.com/benchmarking_r/)) and we got the following results.
 
-<pre class="lang:r decode:true" title="Testing Script">library(microbenchmark)
+```R
+library(microbenchmark)
 
 set.seed(2017)
 n &lt;- 10000
@@ -67,28 +68,33 @@ mbm &lt;- microbenchmark("lm" = { b &lt;- lm(y ~ X + 0)$coef },
                },
                check = check_for_equal_coefs)
 
-mbm</pre>
+mbm
+```
 
 We got this results on a Macbook Pro 2010:
 
 [<img class="size-full wp-image-1849 aligncenter" src="http://luisspuerto.net/wp-content/uploads/2018/01/Screen-Shot-2018-05-11-at-10.42.09.png" alt="" width="698" height="466" srcset="http://luisspuerto.net/wp-content/uploads/2018/01/Screen-Shot-2018-05-11-at-10.42.09.png 698w, http://luisspuerto.net/wp-content/uploads/2018/01/Screen-Shot-2018-05-11-at-10.42.09-300x200.png 300w, http://luisspuerto.net/wp-content/uploads/2018/01/Screen-Shot-2018-05-11-at-10.42.09-374x250.png 374w" sizes="(max-width: 698px) 100vw, 698px" />](http://luisspuerto.net/wp-content/uploads/2018/01/Screen-Shot-2018-05-11-at-10.42.09.png)
 
-<pre class="lang:default decode:true " title="Base R benchmarks results"># Base R benchmarks results
+```R
+# Base R benchmarks results
 
 Unit: milliseconds
           expr      min       lq     mean   median       uq      max neval
             lm 299.5747 319.5861 339.4531 324.8694 331.7090 521.0330   100
  pseudoinverse 326.1059 344.3830 358.1566 351.7829 359.7690 508.8802   100
- linear system 199.0780 206.6064 218.7704 210.2198 218.2907 327.6886   100</pre>
+ linear system 199.0780 206.6064 218.7704 210.2198 218.2907 327.6886   100
+```
 
-<pre class="lang:default decode:true " title="R with openblas and LLVM"># R with openblas and LLVM
+```R
+# R with openblas and LLVM
 
 Unit: milliseconds
           expr       min        lq      mean    median        uq      max neval
             lm 262.22400 272.39873 287.72378 277.65483 286.07772 361.0826   100
  pseudoinverse  60.50899  62.65356  82.10815  70.40881  75.11090 169.7922   100
  linear system  38.01025  39.48672  52.82579  45.81922  49.36025 121.0351   100
-</pre>
+
+```
 
 I really think the results speak for themselves.
 
@@ -110,13 +116,16 @@ Through this guide I just want to try to show you how I ended with my installati
 
 You probably have Homebrew already installed, if you don't, please, [install it](http://luisspuerto.net/2017/11/homebrew/). Then, I recommend you to connect to the cask tap if you haven't done it already:
 
-<pre class="lang:sh decode:true" title="Homebrew taps to connect">$ brew tap caskroom/cask # Tap to install regular app with user interface (GUI)</pre>
+```sh
+$ brew tap caskroom/cask # Tap to install regular app with user interface (GUI)
+```
 
 As you probably you've noticed, I don't tap a lot of repos that Bhaskar taped. This is mainly because those taps are deprecated and its formulae are now included in the Homebrew Core. I decided not to tap other repos because I'm not going to use them.
 
 I recommend to add the following lines in your Zsh and/or Bash profiles running the following:
 
-<pre class="lang:sh decode:true" title="Language and Localization Variables"># For zsh
+```sh
+# For zsh
 echo '# Setting language and localization variables
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8' &gt;&gt; ~/.zshrc
@@ -124,13 +133,15 @@ export LANG=en_US.UTF-8' &gt;&gt; ~/.zshrc
 # For bash
 echo '# Setting language and localization variables
 export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8' &gt;&gt; ~/.bash_profile</pre>
+export LANG=en_US.UTF-8' &gt;&gt; ~/.bash_profile
+```
 
 ## Uninstalling previous R install
 
 If you already have R installed I recommend you to uninstall R completely. Before you do it, you perhaps want to do a copy of your installed packages, just make a list because you are going to need to compile all of them with this homebrew install. You can run the following code in R to make a copy of your packages.
 
-<pre class="lang:r decode:true" title="Make a list of your packages"># How to list installed packajes
+```R
+# How to list installed packajes
 
 package_matrix &lt;- installed.packages()
 
@@ -142,43 +153,55 @@ packages &lt;- as.character(package_list)
 
 write(packages, file = "packages")
 
-save(packages, file = "packages.RData")</pre>
+save(packages, file = "packages.RData")
+```
 
 Now you are going to have a file in your working folder packages.RData that is going to store a variable with a list of all your packages. To reinstall all the packages you just need to load that file in R and run:
 
-<pre class="lang:r decode:true" title="Installing packages">install.packages(packages)</pre>
+```R
+install.packages(packages)
+```
 
 Now that you have a list of your installed packages you can [delete R from your system](https://cran.r-project.org/doc/manuals/r-release/R-admin.html#Uninstalling-under-macOS). Run the following on terminal:
 
-<pre class="lang:sh decode:true" title="Uninstall R on macOS">$ sudo rm -rf /Library/Frameworks/R.framework /Applications/R.app /usr/local/bin/R /usr/local/bin/Rscript</pre>
+```sh
+$ sudo rm -rf /Library/Frameworks/R.framework /Applications/R.app /usr/local/bin/R /usr/local/bin/Rscript
+```
 
 ## XCode Command Line Tools
 
 You need to have installed the [Command Line Tools for XCode](https://developer.apple.com/download/more/). Please be aware that if you already has installed, XCode you probably still need to install the CLT. The best way to know is running the following command in terminal:
 
-<pre class="lang:sh decode:true" title="Installing XCode CLT">$ xcode-select --install
-</pre>
+```sh
+$ xcode-select --install
+
+```
 
 ## C/C++ Compilers and Libraries
 
 Now, you need to install the C/C++ necessary compilers and other useful libraries.
 
-<pre class="lang:sh decode:true">$ brew install gcc ccache cmake pkg-config autoconf automake
-</pre>
+```sh
+  $ brew install gcc ccache cmake pkg-config autoconf automake
+
+```
 
 You can
 
-<pre class="lang:sh decode:true" title="Setup aliases for homebrew’s gcc">$ cd /usr/local/bin
+```sh
+$ cd /usr/local/bin
 $ ln -s gcov-7 gcov
 $ ln -s gcc-7 gcc
 $ ln -s g++-7 g++
 $ ln -s cpp-7 cpp
 $ ln -s c++-7 c++
-$ cd ~</pre>
+$ cd ~
+```
 
 You can ask fo the versions to check if everything is correctly installed. You have to get something similar to this:
 
-<pre class="lang:sh decode:true" title="Asking for versions">$ gcc --version
+```sh
+$ gcc --version
 gcc (Homebrew GCC 7.2.0) 7.2.0
 Copyright (C) 2017 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
@@ -194,11 +217,13 @@ Thread model: posix
 gcc version 7.2.0 (Homebrew GCC 7.2.0)
 
 $ ccache --v
-ccache version 3.3.4</pre>
+ccache version 3.3.4
+```
 
 You can check also if the OpenMP from GCC is working running the following on terminal:
 
-<pre class="lang:sh decode:true" title="Checking if OpenMP is working">$ cat &gt; omp-test.c &lt;&lt;"END"
+```sh
+$ cat &gt; omp-test.c &lt;&lt;"END"
 #include &lt;omp.h&gt;
 #include &lt;stdio.h&gt;
 int main() {
@@ -207,22 +232,27 @@ int main() {
 }
 END
 gcc -fopenmp -o omp-test omp-test.c
-./omp-test</pre>
+./omp-test
+```
 
 And you should get something similar to:
 
-<pre class="lang:sh decode:true " title="Results from OpenMP test">Hello from thread 1, nthreads 8
+```sh
+Hello from thread 1, nthreads 8
 Hello from thread 6, nthreads 8
 Hello from thread 4, nthreads 8
 Hello from thread 2, nthreads 8
 Hello from thread 5, nthreads 8
 Hello from thread 0, nthreads 8
 Hello from thread 3, nthreads 8
-Hello from thread 7, nthreads 8</pre>
+Hello from thread 7, nthreads 8
+```
 
 ## Miscellaneous graphical libraries -optional
 
-<pre class="lang:sh decode:true" title="Miscellaneous graphical libraries">$ brew install freetype fontconfig pixman gettext</pre>
+```sh
+$ brew install freetype fontconfig pixman gettext
+```
 
 Some of these libraries aren't strictly necessary for R, but they are to install other related apps like QGIS, GRASS or PostGIS. I think that if you don't want to install then you don't need to do it right now, since that software install its on dependencies
 
@@ -230,32 +260,41 @@ Some of these libraries aren't strictly necessary for R, but they are to install
 
 If you already have Git you probably have OpenSSL, the other two are optional.
 
-<pre class="lang:sh decode:true">$ brew install openssl libressl libssh2</pre>
+```sh
+  $ brew install openssl libressl libssh2
+```
 
-<pre class="lang:sh decode:true" title="Checking versions">$ /usr/local/opt/openssl/bin/openssl version
+```sh
+$ /usr/local/opt/openssl/bin/openssl version
 OpenSSL 1.0.2n  7 Dec 2017
 
 $ /usr/local/opt/libressl/bin/openssl version
 LibreSSL 2.2.7
-</pre>
+
+```
 
 ## Libxml2
 
 It's highly recomendable to install this library since it's somehow necessary to install some packages depending on the version of your macOS system. It's really small (10 mb) so you are losing nothing installing it.
 
-<pre class="lang:sh decode:true" title="Installing LibXML2">$ brew install libxml2
-$ brew link libxml2 --force</pre>
+```sh
+$ brew install libxml2
+$ brew link libxml2 --force
+```
 
 ## Boost -optional
 
 [Boost](http://www.boost.org) is one of those libraries that you only install if you program in C/C++. If you want to install it you need to have Libxml2 installed and then proceed as following:
 
-<pre class="lang:sh decode:true" title="Install Boost">$ brew install icu4c libiconv libxslt
-$ brew install boost --with-icu4c --without-single</pre>
+```sh
+$ brew install icu4c libiconv libxslt
+$ brew install boost --with-icu4c --without-single
+```
 
 Then you can test if it's correctly installed
 
-<pre class="lang:sh decode:true" title="Test Boost 1">$ cat &gt; first.cpp &lt;&lt;END
+```sh
+$ cat &gt; first.cpp &lt;&lt;END
 #include&lt;iostream&gt;
 #include&lt;boost/any.hpp&gt;
 int main()
@@ -266,11 +305,15 @@ int main()
 }
 END
 clang++ -I/usr/local/include -L/usr/local/lib  -o first first.cpp
-./first</pre>
+./first
+```
 
-<pre class="lang:sh decode:true " title="Result Test Boost 1">1.61803</pre>
+```sh
+1.61803
+```
 
-<pre class="lang:sh decode:true" title="Test Boost 2">$ cat &gt; second.cpp &lt;&lt;END
+```sh
+$ cat &gt; second.cpp &lt;&lt;END
 #include&lt;iostream&gt;
 #include &lt;boost/filesystem.hpp&gt;
 int main()
@@ -287,9 +330,12 @@ int main()
 END
 clang++ -I/usr/local/include -L/usr/local/lib  -o second second.cpp \
     -lboost_filesystem-mt -lboost_system-mt
-./second</pre>
+./second
+```
 
-<pre class="lang:sh decode:true" title="Result Test Boost 2">Found second.cpp file in "/Users/brewmaster"</pre>
+```sh
+Found second.cpp file in "/Users/brewmaster"
+```
 
 ## GPG & Git
 
@@ -299,46 +345,58 @@ I've already explained how to install [GPG in a previous post](http://luisspuert
 
 You are going to probably need X-Server down the road.
 
-<pre class="lang:sh decode:true" title="Install X-Server">$ brew cask install xquartz
-</pre>
+```sh
+$ brew cask install xquartz
+
+```
 
 ## Latex
 
 [Latex](https://en.wikipedia.org/wiki/LaTeX) is a set of applications and libraries to be able to write beautiful mathematical formulas and documents, mainly. But can be use to write any kind of documents.
 
-<pre class="lang:sh decode:true" title="Install MacTex">$ brew cask install mactex
-</pre>
+```sh
+$ brew cask install mactex
+
+```
 
 ## Java
 
 If you don't have [Java](https://en.wikipedia.org/wiki/Java_(programming_language)) installed it's a good moment to do so and to do it with Homebrew.
 
-<pre class="lang:sh decode:true" title="Install Java">$ brew cask install java
-</pre>
+```sh
+$ brew cask install java
 
-<pre class="lang:sh decode:true" title="Java version">$ java -version 
+```
+
+```sh
+$ java -version 
 java version "9.0.1"
 Java(TM) SE Runtime Environment (build 9.0.1+11)
-Java HotSpot(TM) 64-Bit Server VM (build 9.0.1+11, mixed mode)</pre>
+Java HotSpot(TM) 64-Bit Server VM (build 9.0.1+11, mixed mode)
+```
 
 ## Python
 
 It's recommended to install [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) 2 and 3 as a complement to R although R itself doesn't use it.
 
-<pre class="lang:sh decode:true" title="Python 2 install ">$ brew install python
+```sh
+$ brew install python
 $ sudo easy_install pip
 $ pip install --upgrade pip setuptools
 $ pip install markdown rpy2
 $ python -V # checking the version
-Python 2.7.10</pre>
+Python 2.7.10
+```
 
 rply2 is probably to give you an error untill you install R. You can try to install it right now and if it give you the error install again lately.
 
-<pre class="lang:sh decode:true" title="Installing Python 3">$ brew install python3
+```sh
+$ brew install python3
 $ pip3 install --upgrade pip setuptools wheel
 $ python3 -V # Checking the version
 Python 3.6.4
-</pre>
+
+```
 
 ## R & related
 
@@ -346,19 +404,24 @@ We are going to install some things before we install R itself. [Pandoc](https:/
 
 **Important!**: If you want to have R with all the capabilities you need to install Cairo with the instructions in this [post](http://luisspuerto.net/2018/05/installing-r-with-homebrew-with-all-the-capabilities/).
 
-<pre class="lang:sh decode:true">$ brew install pandoc cairo libsvg librsvg
-</pre>
+```sh
+  $ brew install pandoc cairo libsvg librsvg
+
+```
 
 ### OpenBLAS
 
 Let's install OpenBLAS, this is one of the key pieces of this installation.
 
-<pre class="lang:sh decode:true" title="Install OpenBlas">$ brew install openblas --with-openmp
-</pre>
+```sh
+$ brew install openblas --with-openmp
+
+```
 
 Now you can test if OpenBlas has been correctly installed.
 
-<pre class="lang:sh decode:true" title="Testing OpenBlas">$ cat &gt; test-openblas.c &lt;&lt;"END"
+```sh
+$ cat &gt; test-openblas.c &lt;&lt;"END"
 #include &lt;cblas.h&gt;
 #include &lt;stdio.h&gt;
 
@@ -382,16 +445,21 @@ clang -L/usr/local/opt/openblas/lib \
     -lopenblas -lpthread \
     -o test-openblas test-openblas.c
 
-./test-openblas</pre>
+./test-openblas
+```
 
-<pre class="lang:sh decode:true " title="OpenBlas Test Result">11.000000 -9.000000 5.000000 -9.000000 21.000000 -1.000000 5.000000 -1.000000 3.000000</pre>
+```sh
+11.000000 -9.000000 5.000000 -9.000000 21.000000 -1.000000 5.000000 -1.000000 3.000000
+```
 
 ### Armadillo and other libraries -optional
 
 Now, you can also install, if you want, [Armadillo](https://en.wikipedia.org/wiki/Armadillo_(C%2B%2B_library)), which is other library that it's useful if you program in C/C++ and take advantage of OpenBLAS.
 
-<pre class="lang:sh decode:true">$ brew install eigen armadillo v8-315
-$ brew link v8-315 --force</pre>
+```sh
+  $ brew install eigen armadillo v8-315
+$ brew link v8-315 --force
+```
 
 You can test Armadillo with the following code (click to expand, the file is long) since the new Armadillo doesn't provide examples, or at least I haven't found them.
 
@@ -582,11 +650,13 @@ int main(int argc, char** argv)
 END
 
 clang++   -O2   -o example1  example1.cpp  -larmadillo -framework Accelerate
-./example1</pre>
+./example1
+```
 
 You are going to get something like:
 
-<pre class="lang:sh decode:true" title="Armadillo test result">Armadillo version: 8.300.3 (Tropical Shenanigans)
+```sh
+Armadillo version: 8.300.3 (Tropical Shenanigans)
 A.n_rows = 2
 A.n_cols = 3
 A:
@@ -712,13 +782,16 @@ Q:
    1.1119   0.5494   1.0812   1.5979
    0.2179   1.6602   1.7835   1.7906
    1.8960   1.9465   0.4330   1.7663
-   0.0476   1.3508   0.4635   0.9007</pre>
+   0.0476   1.3508   0.4635   0.9007
+```
 
 You can also test V8
 
-<pre class="lang:sh decode:true" title="Testing V8">$ echo 'quit()' | v8
+```sh
+$ echo 'quit()' | v8
 V8 version 3.15.11.18 [sample shell]
-</pre>
+
+```
 
 ### R
 
@@ -726,42 +799,55 @@ Important!: If you want to have R with all the capabilities you have to follow t
 
 Let's finally install R.
 
-<pre class="lang:sh decode:true" title="Install R">$ brew install R --with-openblas --with-java</pre>
+```sh
+$ brew install R --with-openblas --with-java
+```
 
 Then if you are using english (american english) as your main language I recommend you to run the following:
 
-<pre class="lang:sh decode:true" title="Set default language in R">$ defaults write org.R-project.R force.LANG en_US.UTF-8</pre>
+```sh
+$ defaults write org.R-project.R force.LANG en_US.UTF-8
+```
 
 ### Java9+R
 
 First you have to insert the following line in your Zsh and/or Bash profiles.
 
-<pre class="lang:sh decode:true" title="Set Java Home"># For zsh
+```sh
+# For zsh
 echo '# Setting $JAVA_HOME
 export JAVA_HOME="$(/usr/libexec/java_home)"' &gt;&gt; ~/.zshrc
 
 # For bash
 echo '# Setting $JAVA_HOME
-export JAVA_HOME="$(/usr/libexec/java_home)"' &gt;&gt; ~/.bash_profile</pre>
+export JAVA_HOME="$(/usr/libexec/java_home)"' &gt;&gt; ~/.bash_profile
+```
 
 And then run the following command in the terminal:
 
-<pre class="lang:sh decode:true" title="Java Config with R">$ sudo R CMD javareconf JAVA_CPPFLAGS='-I/System/Library/Frameworks/JavaVM.framework/Headers -I/Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/' # this is a specific command for Java 9.0.1
-</pre>
+```sh
+$ sudo R CMD javareconf JAVA_CPPFLAGS='-I/System/Library/Frameworks/JavaVM.framework/Headers -I/Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/' # this is a specific command for Java 9.0.1
+
+```
 
 It seems that with Java 9.0.4 and R 3.4.4 you can run instead just:
 
-<pre class="lang:sh decode:true" title="Java Config with R">$ sudo R CMD javareconf
-</pre>
+```sh
+$ sudo R CMD javareconf
+
+```
 
 or perhaps:
 
-<pre class="lang:sh decode:true" title="Java Config with R">$ sudo R CMD javareconf JAVA_CPPFLAGS='-I/$JAVA_HOME'
-</pre>
+```sh
+$ sudo R CMD javareconf JAVA_CPPFLAGS='-I/$JAVA_HOME'
+
+```
 
 You have to get something similar to this:
 
-<pre class="lang:sh decode:true " title="R Java Config Result">/usr/local/Cellar/r/3.4.3/lib/R/bin/javareconf: line 66: -I/Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/: No such file or directory
+```sh
+/usr/local/Cellar/r/3.4.3/lib/R/bin/javareconf: line 66: -I/Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/: No such file or directory
 Java interpreter : /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/bin/java
 Java version     : 9.0.1
 Java home path   : /Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home
@@ -782,78 +868,95 @@ Java library path: $(JAVA_HOME)/lib/server
 JNI cpp flags    : -I$(JAVA_HOME)/include -I$(JAVA_HOME)/include/darwin
 JNI linker flags : -L$(JAVA_HOME)/lib/server -ljvm
 Updating Java configuration in /usr/local/Cellar/r/3.4.3/lib/R
-Done.</pre>
+Done.
+```
 
 ### Folder for R Packages
 
 Let's create our own folder to store the installed packages for R. This way R, or us, doesn't have to move all the packages every time we install a new R version. Run the following in terminal.
 
-<pre class="lang:sh decode:true" title="R Packages Folder">$ mkdir -p $HOME/Library/R/3.x/library
+```sh
+$ mkdir -p $HOME/Library/R/3.x/library
 $ cat &gt; $HOME/.Renviron &lt;&lt;END
 R_LIBS_USER=$HOME/Library/R/3.x/library
-END</pre>
+END
+```
 
 You should also add this variable to your zsh and/or bash profiles.
 
-<pre class="lang:sh decode:true"># For zsh
+```sh
+  # For zsh
 echo 'export R_LIBS_USER=$HOME/Library/R/3.x/library' &gt;&gt; ~/.zshrc
 
 # For bash
 echo 'export R_LIBS_USER=$HOME/Library/R/3.x/library' &gt;&gt; ~/.bash_profile
-</pre>
+
+```
 
 ### LLVM
 
 [LLVM](https://en.wikipedia.org/wiki/LLVM) or _Low Level Virtual Machine _is a library that allow us to compile faster some R packages using OpenMP and also make that those packages use OpenMP when we are normally using R. To install it you run on your terminal the following:
 
-<pre class="lang:sh decode:true" title="Install LLVM">$ brew install llvm 
-</pre>
+```sh
+$ brew install llvm 
+
+```
 
 Then insert the LLVM location to your path in your Zsh and/or Bash profiles:
 
-<pre class="lang:sh decode:true"># For zsh
+```sh
+  # For zsh
 echo 'export PATH=/usr/local/opt/llvm/bin:$PATH' &gt;&gt; ~/.zshrc
 
 # For bash
 echo 'export PATH=/usr/local/opt/llvm/bin:$PATH' &gt;&gt; ~/.bash_profile
-</pre>
+
+```
 
 ### Data Table Package
 
 The package [Data Table](https://github.com/Rdatatable/data.table/wiki) need a [specific](https://github.com/Rdatatable/data.table/wiki/Installation#openmp-enabled-compiler-for-mac) [makevars](https://www.rdocumentation.org/packages/tools/versions/3.4.3/topics/makevars) file. Makevars file is the file that tells R how and with what libraries it has to compile the packages we download from source. So we are going to install Data Table first, with that specific configuration and then set the final makevars file.
 
-<pre class="lang:sh decode:true" title="Makevars for Data Table">$ mkdir ~/.R
+```sh
+$ mkdir ~/.R
 $ echo "CC=/usr/local/opt/llvm/bin/clang -fopenmp
 CXX=/usr/local/opt/llvm/bin/clang++ -fopenmp
 # -O3 should be faster than -O2 (default) level optimisation ..
 CFLAGS=-g -O3 -Wall -pedantic -std=gnu99 -mtune=native -pipe
 CXXFLAGS=-g -O3 -Wall -pedantic -std=c++11 -mtune=native -pipe
 LDFLAGS=-L/usr/local/opt/gettext/lib -L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib
-CPPFLAGS=-I/usr/local/opt/gettext/include -I/usr/local/opt/llvm/include" &gt;&gt; ~/.R/Makevars</pre>
+CPPFLAGS=-I/usr/local/opt/gettext/include -I/usr/local/opt/llvm/include" &gt;&gt; ~/.R/Makevars
+```
 
 Now we can install Data Table package on terminal. To do so just run on terminal:
 
-<pre class="lang:sh decode:true" title="Install Data Table Package">$ R --vanilla &lt;&lt; EOF
+```sh
+$ R --vanilla &lt;&lt; EOF
 install.packages('data.table', repos='http://cran.us.r-project.org')
 q()
-EOF</pre>
+EOF
+```
 
 ### Setting the final Makevars
 
 First, we delete the previous makevars file.
 
-<pre class="lang:sh decode:true" title="Delete Makevars">$ rm ~/.R/Makevars</pre>
+```sh
+$ rm ~/.R/Makevars
+```
 
 Set the final Makevars file.
 
-<pre class="lang:sh decode:true" title="Setting Makevars">$ echo "CC=/usr/local/opt/llvm/bin/clang
+```sh
+$ echo "CC=/usr/local/opt/llvm/bin/clang
 CXX=/usr/local/opt/llvm/bin/clang++
 # -O3 should be faster than -O2 (default) level optimisation ..
 CFLAGS=-g -O3 -Wall -pedantic -std=gnu99 -mtune=native -pipe
 CXXFLAGS=-g -O3 -Wall -pedantic -std=c++11 -mtune=native -pipe
 LDFLAGS=-L/usr/local/opt/gettext/lib -L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib
 CPPFLAGS=-I/usr/local/opt/gettext/include -I/usr/local/opt/llvm/include" &gt;&gt; ~/.R/Makevars
-</pre>
+
+```
 
 As you probably have noticed the change is just the `-fopenmp` flag on the second line. In case you have to reinstall, or update Data Table, you just have to add that flag and then delete it. Really easy and you can even do it from RStudio.
 
@@ -861,7 +964,9 @@ As you probably have noticed the change is just the `-fopenmp` flag on the secon
 
 When you install R from Homebrew and you compile it, you don't have anymore the R shell as an application on your Applications folder. But you can install any other graphical interface like [RStudio](https://www.rstudio.com). To do it you just run in your terminal:
 
-<pre class="lang:sh decode:true" title="Installing RStudio">$ brew cask install rstudio</pre>
+```sh
+$ brew cask install rstudio
+```
 
 Usually RStudio is able to recognize R install and you don't need to do anything else.
 
@@ -873,24 +978,31 @@ You can also install some additional related languages like:
 
 From Wikipedia: _[Node.js](https://en.wikipedia.org/wiki/Node.js) is an [open-source](https://en.wikipedia.org/wiki/Open-source_software "Open-source software"), [cross-platform](https://en.wikipedia.org/wiki/Cross-platform "Cross-platform") [JavaScript](https://en.wikipedia.org/wiki/JavaScript "JavaScript") [run-time environment](https://en.wikipedia.org/wiki/Runtime_system "Runtime system") for executing JavaScript code [server-side](https://en.wikipedia.org/wiki/Server-side "Server-side")._ To install it just run:
 
-<pre class="lang:sh decode:true" title="Installing Node.js.">$ brew install node phantomjs casperjs</pre>
+```sh
+$ brew install node phantomjs casperjs
+```
 
 ### Scala
 
 From Wikipedia: _[Scala](https://en.wikipedia.org/wiki/Scala_(programming_language)) is a [general-purpose](https://en.wikipedia.org/wiki/General-purpose_programming_language "General-purpose programming language") [programming language](https://en.wikipedia.org/wiki/Programming_language "Programming language") providing support for [functional programming](https://en.wikipedia.org/wiki/Functional_programming "Functional programming") and a strong [static](https://en.wikipedia.org/wiki/Static_typing "Static typing"){.mw-redirect} [type system](https://en.wikipedia.org/wiki/Type_system "Type system")_. To install it just run in your terminal:
 
-<pre class="lang:sh decode:true" title="Installing Scala">$ brew install scala
-</pre>
+```sh
+$ brew install scala
+
+```
 
 ### golang
 
 From Wikipedia: _[Go](https://en.wikipedia.org/wiki/Go_(programming_language)) (often referred to as golang) is a [programming language](https://en.wikipedia.org/wiki/Programming_language "Programming language") created at [Google](https://en.wikipedia.org/wiki/Google "Google")<sup id="cite_ref-12" class="reference"><a href="https://en.wikipedia.org/wiki/Go_(programming_language)#cite_note-12">[12]</a></sup> in 2009 by Robert Griesemer, [Rob Pike](https://en.wikipedia.org/wiki/Rob_Pike "Rob Pike"), and [Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson "Ken Thompson").<sup id="cite_ref-langfaq_10-1" class="reference"><a href="https://en.wikipedia.org/wiki/Go_(programming_language)#cite_note-langfaq-10">[10]</a></sup> It is a [compiled](https://en.wikipedia.org/wiki/Compiler "Compiler"), [statically typed](https://en.wikipedia.org/wiki/Static_typing "Static typing"){.mw-redirect} language in the tradition of [Algol](https://en.wikipedia.org/wiki/ALGOL "ALGOL") and [C](https://en.wikipedia.org/wiki/C_(programming_language) "C (programming language)"), with [garbage collection](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science) "Garbage collection (computer science)"), limited [structural typing](https://en.wikipedia.org/wiki/Structural_type_system "Structural type system"),<sup id="cite_ref-structural_typing_3-1" class="reference"><a href="https://en.wikipedia.org/wiki/Go_(programming_language)#cite_note-structural_typing-3">[3]</a></sup> [memory safety](https://en.wikipedia.org/wiki/Memory_safety "Memory safety") features and [CSP](https://en.wikipedia.org/wiki/Communicating_sequential_processes "Communicating sequential processes")-style [concurrent programming](https://en.wikipedia.org/wiki/Concurrent_programming "Concurrent programming"){.mw-redirect} features added._ To install it just run in your terminal:
 
-<pre class="lang:sh decode:true" title="Installing golang">$ brew install golang</pre>
+```sh
+$ brew install golang
+```
 
 You need to modify your zsh and/or bash profile like the following
 
-<pre class="lang:sh decode:true" title="Path for golang"># For zsh
+```sh
+# For zsh
 echo '## Path for Golang
 export GOPATH=$HOME/golang
 export GOROOT=/usr/local/opt/go/libexec
@@ -902,16 +1014,19 @@ echo '## Path for Golang
 export GOPATH=$HOME/golang
 export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin
-export PATH=$PATH:$GOROOT/bin' &gt;&gt; ~/.bash_profile</pre>
+export PATH=$PATH:$GOROOT/bin' &gt;&gt; ~/.bash_profile
+```
 
 ## Some GIS Libraries & Soft -optional
 
 You can also install some GIS libraries. This libraries could be mandatory if you are going to install geographical packages:
 
-<pre class="lang:sh decode:true" title="Some GIS libraries and soft">$ brew tap osgeo/osgeo4mac # Tap for geospatial software
+```sh
+$ brew tap osgeo/osgeo4mac # Tap for geospatial software
 $ brew install postgresql geos proj
 $ brew install gdal2 --with-complete --with-opencl --with-armadillo --with-unsupported --with-libkml --with-postgresql
-$ brew install postgis --with-gui</pre>
+$ brew install postgis --with-gui
+```
 
 ## Shell Profiles
 
@@ -919,7 +1034,8 @@ You've been adding things to your Zsh and/or Bash profiles. I recommend you to m
 
 This is how I have then:
 
-<pre class="lang:sh decode:true " title="zsh and/or bash profiles"># Setting language and localization variables
+```sh
+# Setting language and localization variables
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
@@ -940,11 +1056,13 @@ export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
 
 # Setting R variables
-export R_LIBS_USER=$HOME/Library/R/3.x/library</pre>
+export R_LIBS_USER=$HOME/Library/R/3.x/library
+```
 
 You can see those files running the following:
 
-<pre class="lang:sh decode:true " title="Open zsh or bash profile"># If you have atom.
+```sh
+# If you have atom.
 # zsh
 $ atom ~/.zshrc
 # bash
@@ -954,7 +1072,8 @@ $ atom ~/.bash_profile
 #zsh
 $ open -a TextEdit ~/.zshrc
 #bash
-$ open -a TextEdit ~/.bash_profile</pre>
+$ open -a TextEdit ~/.bash_profile
+```
 
 # The End
 

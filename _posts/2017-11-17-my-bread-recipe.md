@@ -14,7 +14,7 @@ tags:
 ---
 Ok… as I promised in my [previous post](http://luisspuerto.net/2017/11/the-preliminaries-for-bread-and-pizza-making/), here it's my bread recipe for straight dough. I'm not going to fully explain the techniques, since they are already explained in the earlier post. There, you can also find what tools you need and, in case you want to change the ingredients quantities, the [tables for bread and pizza](http://luisspuerto.net/2017/11/the-preliminaries-for-bread-and-pizza-making/#the-tables-of-bread-pizza).
 
-For this recipe, I'm going to make a **4 hours rise / fermentation** bread, but as you know, you can change the proportion of yeast in your dough to change the rise time. The proofing time is **around 40 minutes** and the total baking time is around **40 minutes**. This gives us around **6 hours** in total of preparation, if we take into account the mixing and handling of the dough. The temperature of baking is 250-270 ºC –depending on the oven and how brown you want to your bread.
+For this recipe, I'm going to make a **4 hours rise / fermentation** bread, but as you know, you can change the proportion of yeast in your dough to change the rise time. The proofing time is **around 40 minutes** and the total baking time is around **40 minutes**. This gives us around **6 hours** in total of preparation, if we take into account the mixing and handling of the dough. The temperature of baking is 250-270 ºC —depending on the oven and how brown you want to your bread.
 
 ### Ingredients
 
@@ -40,7 +40,7 @@ For this recipe, I'm going to make a **4 hours rise / fermentation** bread, but
   5. Leave the dough fully rise for 4 hours in a covered container.
   6. When the dough is fully risen, you can use the scraper to remove it from the container and drop it over the counter where you previously have sprinkled some flour.
   7. Shape the dough as explained in the [previous post](http://luisspuerto.net/2017/11/the-preliminaries-for-bread-and-pizza-making/#shaping-and-proofing).
-  8. Leave for proofing for at least 20 – 30 minutes, but remember that the recommended time is about an hour. Don't forget to put into a plastic bag or cover it if you are going to leave it for an hour.
+  8. Leave for proofing for at least 20 — 30 minutes, but remember that the recommended time is about an hour. Don't forget to put into a plastic bag or cover it if you are going to leave it for an hour.
   9. Remember to preheat the oven with the water container inside it before your loaf if fully proofed.
  10. When the dough has finally proofed you can drop the loaf over the oven tray with the parchment paper and introduce it in the oven.
     <div id="attachment_893" style="width: 2058px" class="wp-caption alignnone">
@@ -54,7 +54,7 @@ For this recipe, I'm going to make a **4 hours rise / fermentation** bread, but
       * Keep the water container inside of the oven the next 20 minutes.
       * After 20 minutes, remove the water container if there is any water left in it and bake for another 10 min.
       * I usually at this point take the loaf out of the oven and flip it over quickly down side up and reintroduce it in the over for at least another 20 min. I want the bottom my loaves really well-baked. This way to get a really uniform dark brown color across all the loaf. Remember to pick up your loaf with the kitchen mittens if you don't want to burn your hands. The loaf is really hot.
-      * After 10 min. –or when you have reached the desired dark brown color– take out of the oven and put over a rack, if you have one, or something that allow the heat and the humidity to disperse. If you haven't bake the loaf with the rack of the oven inside, that rack is usually fine.
+      * After 10 min. —or when you have reached the desired dark brown color— take out of the oven and put over a rack, if you have one, or something that allow the heat and the humidity to disperse. If you haven't bake the loaf with the rack of the oven inside, that rack is usually fine.
       * After 30-40 min you can enjoy your bread.</ol>
 
     <div id="attachment_907" style="width: 2058px" class="wp-caption alignnone">

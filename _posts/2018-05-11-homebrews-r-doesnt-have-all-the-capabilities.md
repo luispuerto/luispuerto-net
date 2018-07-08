@@ -1,14 +1,9 @@
 ---
-id: 1830
 title: Homebrew's R doesn't have all the capabilities
-date: 2018-05-11T10:35:32+00:00
-guid: http://luisspuerto.net/?p=1830
-permalink: /2018/05/homebrews-r-doesnt-have-all-the-capabilities/
-wtr-disable-reading-progress:
-  - ""
-wtr-disable-time-commitment:
-  - ""
-image: /wp-content/uploads/2018/01/R-Homebrew.jpg
+date: 2018-05-11 10:35:32
+header: 
+  overlay_image: assets/images/blog/R-Homebrew.jpg
+  teaser: assets/images/blog/R-Homebrew.jpg
 categories:
   - Professional
   - RStats
@@ -20,30 +15,37 @@ tags:
 ---
 A couple of days ago I just found out that when you install R with Homebrew you don't get all the capabilities that the binary from CRAN have. In other words, you have a kind of _second class install_, in some regards, and depending on how you do install and for what you are going to use R.
 
-<pre class="lang:r decode:true" title="Capabilities on R Homebrew:">&gt; capabilities()
+```R
+ >capabilities()
+
        jpeg         png        tiff       tcltk         X11        aqua
       FALSE       FALSE       FALSE       FALSE       FALSE        TRUE
    http/ftp     sockets      libxml        fifo      cledit       iconv
        TRUE        TRUE        TRUE        TRUE        TRUE        TRUE
         NLS     profmem       cairo         ICU long.double     libcurl
-       TRUE        TRUE       FALSE        TRUE        TRUE        TRUE</pre>
-
-<pre class="lang:r decode:true" title="Capabilities on R CRAN">&gt; capabilities()
+       TRUE        TRUE       FALSE        TRUE        TRUE        TRUE
+```
+```R
+>capabilities()
        jpeg         png        tiff       tcltk         X11        aqua
        TRUE        TRUE        TRUE        TRUE        TRUE        TRUE
    http/ftp     sockets      libxml        fifo      cledit       iconv
        TRUE        TRUE        TRUE        TRUE        TRUE        TRUE
         NLS     profmem       cairo         ICU long.double     libcurl
-       TRUE        TRUE        TRUE        TRUE        TRUE        TRUE</pre>
+       TRUE        TRUE        TRUE        TRUE        TRUE        TRUE
+```
 
 How did I notice? Well basically I was about to update the [sm package](https://cran.r-project.org/web/packages/sm/) in one of my computers and R yield an error similar to this one (sorry I didn't copy the original one):
 
-<pre class="wrap:true lang:r mark:4 decode:true" title="tcltk error">Error: package or namespace load failed for ‘tcltk’:
+<!-- this code was wrapped-->
+```R 
+Error: package or namespace load failed for ‘tcltk’:
  .onLoad failed in loadNamespace() for 'tcltk', details:
   call: fun(libname, pkgname)
   error: Tcl/Tk support is not available on this system
 In addition: Warning message:
-S3 methods ‘as.character.tclObj’, ‘as.character.tclVar’, ‘as.double.tclObj’, ‘as.integer.tclObj’, ‘as.logical.tclObj’, ‘as.raw.tclObj’, ‘print.tclObj’, ‘[[.tclArray’, ‘[[&lt;-.tclArray’, ‘$.tclArray’, ‘$&lt;-.tclArray’, ‘names.tclArray’, ‘names&lt;-.tclArray’, ‘length.tclArray’, ‘length&lt;-.tclArray’, ‘tclObj.tclVar’, ‘tclObj&lt;-.tclVar’, ‘tclvalue.default’, ‘tclvalue.tclObj’, ‘tclvalue.tclVar’, ‘tclvalue&lt;-.default’, ‘tclvalue&lt;-.tclVar’, ‘close.tkProgressBar’ were declared in NAMESPACE but not found</pre>
+S3 methods ‘as.character.tclObj’, ‘as.character.tclVar’, ‘as.double.tclObj’, ‘as.integer.tclObj’, ‘as.logical.tclObj’, ‘as.raw.tclObj’, ‘print.tclObj’, ‘[[.tclArray’, ‘[[&lt;-.tclArray’, ‘$.tclArray’, ‘$&lt;-.tclArray’, ‘names.tclArray’, ‘names&lt;-.tclArray’, ‘length.tclArray’, ‘length&lt;-.tclArray’, ‘tclObj.tclVar’, ‘tclObj&lt;-.tclVar’, ‘tclvalue.default’, ‘tclvalue.tclObj’, ‘tclvalue.tclVar’, ‘tclvalue&lt;-.default’, ‘tclvalue&lt;-.tclVar’, ‘close.tkProgressBar’ were declared in NAMESPACE but not found
+```
 
 As you can see I've highlighted the key line, R doesn't have [tcltk](https://en.wikipedia.org/wiki/Tcl) available and running in that system and if you run `capabilities()` in the R console you'll probably get something similar to the first code-block. After researching a little bit about the problem [[1](https://discourse.brew.sh/t/r-installs-on-high-sierra-without-tcl-tk-support/1190) & [2](https://discourse.brew.sh/t/r-bottle-options-graphics-capabilities/1785/10)], I found out what I've already said, Homebrew R isn't build with those capabilities. Why? Well…
 
@@ -57,5 +59,3 @@ Whether you agree or not, you have to understand that the maintainers of Homebre
 Lucky for us users, there is a solution to the problem. You can always create your own tap of Homebrew and tweak the formula to fit your needs, as maintainers suggest. As a result [someone already did that](https://discourse.brew.sh/t/r-installs-on-high-sierra-without-tcl-tk-support/1190/16?u=luisspuerto) and there is already a tap which you can install R with the same formula we installed R when it was in Homebrew Science, but up to day.
 
 I'll explain in [my next post](https://wp.me/p8vFcV-tC) how to install R using that tap.
-
-&nbsp;

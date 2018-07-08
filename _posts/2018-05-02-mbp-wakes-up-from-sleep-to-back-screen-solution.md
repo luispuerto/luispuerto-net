@@ -1,14 +1,9 @@
 ---
-id: 1819
-title: 'MBP wakes up from sleep to back screen –  Solution'
-date: 2018-05-02T09:23:04+00:00
-guid: http://luisspuerto.net/?p=1819
-permalink: /2018/05/mbp-wakes-up-from-sleep-to-back-screen-solution/
-wtr-disable-reading-progress:
-  - ""
-wtr-disable-time-commitment:
-  - ""
-image: /wp-content/uploads/2018/04/apple-wake-up.jpg
+title: 'MBP wakes up from sleep to back screen —  Solution'
+date: 2018-05-02 09:23:04
+header: 
+  overlay_image: assets/images/blog/apple-wake-up.jpg
+  teaser: assets/images/blog/apple-wake-up.jpg
 categories:
   - Technology
 tags:
@@ -20,17 +15,21 @@ A couple of weeks ago I [wrote about the problem I have with my old MacBook Pro 
 
 I'm doing two things to prevent the black screen behavior. First I'm sleeping the computer using the command line:
 
-<pre class="lang:sh decode:true">$ sudo shutdown -s now</pre>
+```sh
+$ sudo shutdown -s now
+```
 
 I've also change the hibernation mode of the machine to zero, in other words, it doesn't save the state in a file in the hard drive. I've also deleted that file from my hard drive.
 
-<pre class="lang:sh decode:true">$ sudo pmset -a hibernatemode 0
-$ sudo rm -f /var/vm/sleepimage</pre>
+```sh
+$ sudo rm -f /var/vm/sleepimage
+```
 
 Finally I've disable the options to wake up the computer when you connect to power source and when you open the lid.
 
-<pre class="lang:sh decode:true ">$ sudo pmset -a acwake 0
-$ sudo pmset -a lidwake 0</pre>
+```sh
+$ sudo pmset -a lidwake 0
+```
 
 So, now to wake up the computer I have to hit any key on the computer keyboard or the trackpad after I've open the lid.
 

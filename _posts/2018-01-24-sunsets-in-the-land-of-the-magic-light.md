@@ -45,7 +45,7 @@ It's incredible how a sunset can make our mind fly away and dream with a close f
 <p style="text-align: center;">
 </p>
 
-[Wanderers – a short film by Erik Wernquist](https://vimeo.com/108650530) from [Erik Wernquist](https://vimeo.com/erikwernquist) on [Vimeo](https://vimeo.com).
+[Wanderers — a short film by Erik Wernquist](https://vimeo.com/108650530) from [Erik Wernquist](https://vimeo.com/erikwernquist) on [Vimeo](https://vimeo.com).
 
 > <p style="text-align: left;">
 >   For all its material advantages, the sedentary life has left us edgy, unfulfilled. Even after 400 generations in villages and cities, we haven’t forgotten. The open road still softly calls, like a nearly forgotten song of childhood. We invest far-off places with a certain romance. This appeal, I suspect, has been meticulously crafted by natural selection as an essential element in our survival. Long summers, mild winters, rich harvests, plentiful game—none of them lasts forever. It is beyond our powers to predict the future

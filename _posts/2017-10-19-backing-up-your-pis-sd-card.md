@@ -23,7 +23,9 @@ To make a back up of your SD card using macOS I've found two options.
 
 If want to try the dd utility you can download it from the site and normally installing it on macOS or you can install it using [Homebrew](https://brew.sh) [Cask](https://caskroom.github.io) and the following command.
 
-<pre class="lang:sh decode:true" title="installing the dd utility">$ brew cask install dd-utility</pre>
+```sh 
+$ brew cask install dd-utility
+```
 
 ### Backing up
 
@@ -45,7 +47,9 @@ The commands are the following ones:
 
 First we use <span class="lang:sh highlight:0 decode:true crayon-inline ">diskutil</span>  [[ref.](https://ss64.com/osx/diskutil.html)] to see all the volumes connected.
 
-<pre class="lang:sh decode:true" title="listing volumes">$ diskutil list</pre>
+```sh 
+$ diskutil list
+```
 
 <div id="attachment_503" style="width: 972px" class="wp-caption alignnone">
   <a href="http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-19-at-18.17.45.png"><img class="size-full wp-image-503" src="http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-19-at-18.17.45.png" alt="" width="962" height="757" srcset="http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-19-at-18.17.45.png 962w, http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-19-at-18.17.45-300x236.png 300w, http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-19-at-18.17.45-768x604.png 768w, http://luisspuerto.net/wp-content/uploads/2017/10/Screen-Shot-2017-10-19-at-18.17.45-318x250.png 318w" sizes="(max-width: 962px) 100vw, 962px" /></a>
@@ -57,7 +61,9 @@ First we use <span class="lang:sh highlight:0 decode:true crayon-inline ">diskut
 
 Now you just need to choose what are you going to back up and where using the <span class="lang:sh highlight:0 decode:true crayon-inline ">dd</span>  command.
 
-<pre class="lang:r decode:true" title="making the backup with dd command">$ sudo dd if=/dev/diskX of=users/YOURUSERNAME/Downloads/SDCardBackup.dmg</pre>
+```R 
+$ sudo dd if=/dev/diskX of=users/YOURUSERNAME/Downloads/SDCardBackup.dmg
+```
 
 You can see that I haven't used the same path that they use in the linked instructions because using the <span class="lang:sh highlight:0 decode:true crayon-inline ">~</span>  tilde symbol, denoting my home folder, gave me an error <span class="lang:sh highlight:0 decode:true crayon-inline ">dd: ~/SDCardBackup.dmg: No such file or directory</span>  so I use the full path. You have to change also the <span class="lang:sh highlight:0 decode:true crayon-inline ">/dev/diskX</span>  path for the <span class="lang:sh highlight:0 decode:true crayon-inline ">diskX</span>  that represent your SD card. In my case was the number 4, but in your case could be different.
 
@@ -65,23 +71,31 @@ You can see that I haven't used the same path that they use in the linked instru
 
 **EDIT**: I got bored of the slowness of the process and I cancel it after a while and try to implement [this suggestion](http://daoyuan.li/solution-dd-too-slow-on-mac-os-x/) about raw volumes. So the code would be like this now:
 
-<pre class="lang:sh decode:true" title="improvement on speed. ">$ sudo dd if=/dev/rdiskX of=users/YOURUSERNAME/Downloads/SDCardBackup.dmg</pre>
+```sh 
+$ sudo dd if=/dev/rdiskX of=users/YOURUSERNAME/Downloads/SDCardBackup.dmg
+```
 
 ### Restoring
 
 To restore you first have to unmount your SD card.
 
-<pre class="lang:sh decode:true" title="unmounting the SD card">$ diskutil unmountDisk /dev/diskX</pre>
+```sh 
+$ diskutil unmountDisk /dev/diskX
+```
 
 To following write the image in the SD card with this command.
 
-<pre class="lang:sh decode:true" title="Restoring the SD card">$ sudo dd if=~/SDCardBackup.dmg of=/dev/diskX
-</pre>
+```sh 
+$ sudo dd if=~/SDCardBackup.dmg of=/dev/diskX
+
+```
 
 And finally you eject the card with using this.
 
 Once it has finished writing the image to the SD card, you can remove it from your Mac using:
 
-<pre class="lang:sh decode:true " title="eject the SD card">$ sudo diskutil eject /dev/rdisk3</pre>
+```sh 
+$ sudo diskutil eject /dev/rdisk3
+```
 
 So… you are ready now to mess up with your Raspberry Pi without worrying.

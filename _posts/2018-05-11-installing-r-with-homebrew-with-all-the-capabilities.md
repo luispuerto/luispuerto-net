@@ -1,14 +1,9 @@
 ---
-id: 1836
 title: Installing R with Homebrew with all the capabilities
-date: 2018-05-11T11:57:06+00:00
-guid: http://luisspuerto.net/?p=1836
-permalink: /2018/05/installing-r-with-homebrew-with-all-the-capabilities/
-wtr-disable-reading-progress:
-  - ""
-wtr-disable-time-commitment:
-  - ""
-image: /wp-content/uploads/2018/01/R-Homebrew.jpg
+date: 2018-05-11 11:57:06 
+header: 
+  overlay_image: assets/images/blog/R-Homebrew.jpg
+  teaser: assets/images/blog/R-Homebrew.jpg
 categories:
   - Professional
   - RStats
@@ -87,7 +82,7 @@ When it end to build, you can use use `capabilities()` in R console and you have
 To finish I would run:
 
 ```sh
-$ R CMD javarecon`
+$ R CMD javareconf
 ```
 
 To reconfigure Java on R, just in case.

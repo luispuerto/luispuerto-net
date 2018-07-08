@@ -23,8 +23,10 @@ I would begin installing iTerm2. iTerm2 is just an app similar to Terminal, but 
 
 To install iTerm we are going to use [Homebrew](http://luisspuerto.net/2017/11/homebrew/):
 
-<pre class="lang:sh decode:true">$ brew cask install iterm2
-</pre>
+```sh 
+  $ brew cask install iterm2
+
+```
 
 Now that you have iTerm2 you have to install Oh My Zsh.
 
@@ -34,12 +36,16 @@ To install Oh My Zsh you need to have installed in your system [Git](http://luis
 
 However, you can't install Oh My Zsh itself using Homebrew, but you can use [cURL](https://en.wikipedia.org/wiki/CURL) or [Wget](https://en.wikipedia.org/wiki/Wget), which probably you have already installed in your system. If you don't have any of those, you can install them through Homebrew. To install Oh My Zsh you can run the following commands:
 
-<pre class="lang:sh decode:true" title="Installing Oh My Zsh with curl">$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"</pre>
+```sh 
+$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
 
 or
 
-<pre class="lang:sh decode:true" title="Installing Oh My Zsh with wget">$ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-</pre>
+```sh 
+$ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+
+```
 
 Oh My Zsh has a autoupdate feature, so don't worry about update. From time to time, it's going to ask you to check the repo where it's stored for updates.
 
@@ -47,7 +53,9 @@ Oh My Zsh has a autoupdate feature, so don't worry about update. From time to ti
 
 [Powerlevel9K](https://github.com/bhilburn/powerlevel9k) is a Oh My Zsh external theme that gives it that awesome look and the capacity to configure the prompt, yet keep it light. There are literally dozens of themes, whether [included in the Oh My Zsh repo](https://github.com/robbyrussell/oh-my-zsh/wiki/Themes) or [external](https://github.com/robbyrussell/oh-my-zsh/wiki/External-themes) ones, and Powerlevel9K is one of the external ones, so you have to download (clone the repo) and store it on the custom part for the Oh My Zsh configuration folders. To do so, just run the following command in your terminal.
 
-<pre class="lang:sh decode:true" title="Installing Powerlevel9K theme">$ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k</pre>
+```sh 
+$ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+```
 
 &nbsp;
 
@@ -55,17 +63,20 @@ Oh My Zsh has a autoupdate feature, so don't worry about update. From time to ti
 
 When you have Oh My Zsh installed you can begin to configure. In order to do that you have to open the configuration file, which is located in your user folder, with your favorite text editor. In my case I like to use Atom, so I run the following command in the terminal.
 
-<pre class="lang:sh decode:true">$ atom ~/.zshrc</pre>
+```sh 
+  $ atom ~/.zshrc
+```
 
 Bellow you can see my configuration file. The important lines are highlighted.
 
-<pre class="nums:true lang:sh mark:28-73,118-122,151 highlight:0 decode:true " title="My Zsh configuration" data-url="https://gist.githubusercontent.com/luisspuerto/e61e7dd0b6584d02430b71f5dec4185c/raw/8b94e42ca601e112d4708e7f84a8a7b43ba70b04/.zshrc"></pre>
+<pre class="nums:true lang:sh mark:28-73,118-122,151 highlight:0 decode:true " title="My Zsh configuration" data-url="https://gist.githubusercontent.com/luisspuerto/e61e7dd0b6584d02430b71f5dec4185c/raw/8b94e42ca601e112d4708e7f84a8a7b43ba70b04/.zshrc">
+```
 
 As you can see I have a lot the lines commented with `#` , since I don't want to use that config, but I didn't lose them. From line 28 to 73, it's basically the configuration of the prompt. There are literally dozens of ways to configure the prompt, and you can see some of them [here](https://github.com/bhilburn/powerlevel9k/wiki/Show-Off-Your-Config). Mine is quite similar to [Falkor's one](https://github.com/bhilburn/powerlevel9k/wiki/Show-Off-Your-Config#falkors-configuration), but I've edited it a little bit. You can find out more about how to stylizing your prompt and how the configuration variables work [here](https://github.com/bhilburn/powerlevel9k#prompt-customization) and [here](https://github.com/bhilburn/powerlevel9k/wiki/Stylizing-Your-Prompt). 
 
-Don't forget to set your theme as Powerlevel9k –line 33 `ZSH_THEME="powerlevel9k/powerlevel9k"`– and also the Powerlevel mode –line 35. The Powerlevel Mode define the type –or the style– of glyphs than are shown. 
+Don't forget to set your theme as Powerlevel9k —line 33 `ZSH_THEME="powerlevel9k/powerlevel9k"`— and also the Powerlevel mode —line 35. The Powerlevel Mode define the type —or the style— of glyphs than are shown. 
 
-You can see also that in the lines 118 – 122 are the plugins I'm using and that in the the line 151 I establish a shortcut to access to the configuration through atom just typing `zshconfig`.
+You can see also that in the lines 118 — 122 are the plugins I'm using and that in the the line 151 I establish a shortcut to access to the configuration through atom just typing `zshconfig`.
 
 # Configuring iTerm2
 
@@ -81,8 +92,10 @@ Finally, you have to configure iTerm2 to use your patched font if you want the g
 
 If you don't want to patch any font, you can download any of the prepatched fonts, and I recommend do it [using Hombrew](https://github.com/ryanoasis/nerd-fonts#option-4-homebrew-fonts). 
 
-<pre class="lang:sh decode:true" title="Installing fonts with Homebrew">$ brew tap caskroom/fonts
-$ brew cask install font-meslo-nerd-font #if you want to install Meslo font</pre>
+```sh 
+$ brew tap caskroom/fonts
+$ brew cask install font-meslo-nerd-font #if you want to install Meslo font
+```
 
 <div id="attachment_1355" style="width: 1012px" class="wp-caption alignnone">
   <a href="http://luisspuerto.net/wp-content/uploads/2018/01/Screen-Shot-2018-01-02-at-13.11.31.png"><img class="size-full wp-image-1355" src="http://luisspuerto.net/wp-content/uploads/2018/01/Screen-Shot-2018-01-02-at-13.11.31.png" alt="" width="1002" height="521" srcset="http://luisspuerto.net/wp-content/uploads/2018/01/Screen-Shot-2018-01-02-at-13.11.31.png 1002w, http://luisspuerto.net/wp-content/uploads/2018/01/Screen-Shot-2018-01-02-at-13.11.31-300x156.png 300w, http://luisspuerto.net/wp-content/uploads/2018/01/Screen-Shot-2018-01-02-at-13.11.31-768x399.png 768w, http://luisspuerto.net/wp-content/uploads/2018/01/Screen-Shot-2018-01-02-at-13.11.31-481x250.png 481w" sizes="(max-width: 1002px) 100vw, 1002px" /></a>
@@ -100,17 +113,22 @@ Now you are ready to use iTerm2 with your new configuration.
 
 First you need to check what version, if any, of Zsh you have installed.
 
-<pre class="lang:sh decode:true">$ zsh --version</pre>
+```sh 
+  $ zsh --version
+```
 
 in my case and right now my version is 5.4.2, but you can check which is the last version in the [wikipedia page](https://en.wikipedia.org/wiki/Z_shell).
 
 Now you have to check that you have Zsh in your list of authorized shells. You have check running opening the file `/etc/shells` with atom:
 
-<pre class="lang:sh decode:true">$ atom /etc/shells</pre>
+```sh 
+  $ atom /etc/shells
+```
 
 You have to see something similar to this.
 
-<pre class="lang:sh mark:10 highlight:0 decode:true" title="/etc/shells"># List of acceptable shells for chpass(1).
+```sh 
+# List of acceptable shells for chpass(1).
 # Ftpd will not allow users to connect who are not using
 # one of these shells.
 
@@ -120,13 +138,16 @@ You have to see something similar to this.
 /bin/sh
 /bin/tcsh
 /bin/zsh
-/usr/local/bin/bash</pre>
+/usr/local/bin/bash
+```
 
 If you don't have the line 10, add it and save the file.
 
 Now you run the following command to make Zsh your default shell:
 
-<pre class="lang:sh decode:true " title="Zsh as default shell">$ chsh -s $(which zsh)</pre>
+```sh 
+$ chsh -s $(which zsh)
+```
 
 # Keeping Terminal with the previous config
 
@@ -149,4 +170,4 @@ Done, now you can enjoy the best of the two worlds. Enjoying a new, more flexibl
 &nbsp;
 
 <li id="fn-1287-1">
-  I was about to upload my patched Monaco font, but then I realize that I can't post any modification of the Monaco font since it's copyrighted by Apple. However, you can easily patch your copy of the font for your personal use with the <a href="https://github.com/ryanoasis/nerd-fonts#font-patcher">script provided by Nerd Fonts</a>. I faced some problems when I tried to patch it myself, basically related to the height of the patched font, which ended up different than the original font. If this is your case, you can just download <a href="https://en.wikipedia.org/wiki/FontForge">FontForge</a> –<code>brew cask install fontforge</code>– and modify those parameters to be equal to the original ones.&#160;<a href="#fnref-1287-1">&#8617;</a> </fn></footnotes>
+  I was about to upload my patched Monaco font, but then I realize that I can't post any modification of the Monaco font since it's copyrighted by Apple. However, you can easily patch your copy of the font for your personal use with the <a href="https://github.com/ryanoasis/nerd-fonts#font-patcher">script provided by Nerd Fonts</a>. I faced some problems when I tried to patch it myself, basically related to the height of the patched font, which ended up different than the original font. If this is your case, you can just download <a href="https://en.wikipedia.org/wiki/FontForge">FontForge</a> —`brew cask install fontforge`— and modify those parameters to be equal to the original ones.&#160;<a href="#fnref-1287-1">&#8617;</a> </fn></footnotes>

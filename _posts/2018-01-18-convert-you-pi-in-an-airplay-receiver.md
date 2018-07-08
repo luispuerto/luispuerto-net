@@ -12,55 +12,81 @@ tags:
   - macOS
   - raspberry pi
 ---
-I recently needed to convert my Raspberry Pi 3 into a AirPlay receiver because I didn't have any of my [AirPort Express](https://www.apple.com/lae/airport-express/) at hand and I wanted to play just music –not the entire collection of sounds my computer produce– on one of my old [Hi-Fi Self Stereo System](https://en.wikipedia.org/wiki/Shelf_stereo). So I searched on the internet and saw that it was totally possible to do it and I try it. I used as a source this [article](https://pimylifeup.com/raspberry-pi-airplay-receiver/) and I want share with you what steps I specifically followed.
+I recently needed to convert my Raspberry Pi 3 into a AirPlay receiver because I didn't have any of my [AirPort Express](https://www.apple.com/lae/airport-express/) at hand and I wanted to play just music —not the entire collection of sounds my computer produce— on one of my old [Hi-Fi Self Stereo System](https://en.wikipedia.org/wiki/Shelf_stereo). So I searched on the internet and saw that it was totally possible to do it and I try it. I used as a source this [article](https://pimylifeup.com/raspberry-pi-airplay-receiver/) and I want share with you what steps I specifically followed.
 
 # Preliminaries
 
 Let's download some packages we are going to need as dependencies.
 
-<pre class="lang:sh decode:true" title="Update the system and download some dependencies">$ sudo apt-get update && upgrade</pre>
+```sh 
+$ sudo apt-get update && upgrade
+```
 
-<pre class="lang:sh decode:true" title="Update the system and download some dependencies">$ sudo apt-get install autoconf libtool libdaemon-dev libasound2-dev libpopt-dev libconfig-dev avahi-daemon libavahi-client-dev libssl-dev</pre>
+```sh 
+$ sudo apt-get install autoconf libtool libdaemon-dev libasound2-dev libpopt-dev libconfig-dev avahi-daemon libavahi-client-dev libssl-dev
+```
 
 # Shairport sync
 
 To convert our Pi in a AirPlay device we need a software that is call <a href="https://github.com/mikebrady/shairport-sync" target="_blank" rel="noopener">Shairport Sync</a>. We are going to need to compile it for our system, so we need to download the source code and then compile. To download it just run on the Pi's terminal:
 
-<pre class="lang:sh decode:true" title="Download Shairport sync">$ cd ~/Downloads # I like to download my soft in Downloads folder.</pre>
+```sh 
+$ cd ~/Downloads # I like to download my soft in Downloads folder.
+```
 
-<pre class="lang:sh decode:true" title="Download Shairport sync">$ git clone https://github.com/mikebrady/shairport-sync.git</pre>
+```sh 
+$ git clone https://github.com/mikebrady/shairport-sync.git
+```
 
 ## Compile
 
 Now that we have download the shairport-sync repository to our Pi, we can proceeded to compile it. First or all we need to move to the Shairport Sync folder and then we can proceed to configure the compilation process.
 
-<pre class="lang:sh decode:true" title="Configure compilation of Sharirport Sync">$ cd ~/Downloads/shairport-sync</pre>
+```sh 
+$ cd ~/Downloads/shairport-sync
+```
 
-<pre class="lang:sh decode:true" title="Configure compilation of Sharirport Sync">$ autoreconf -i -f</pre>
+```sh 
+$ autoreconf -i -f
+```
 
-<pre class="lang:sh decode:true" title="Configure compilation of Sharirport Sync">$ ./configure --with-alsa --with-avahi --with-ssl=openssl --with-systemd --with-metadata</pre>
+```sh 
+$ ./configure --with-alsa --with-avahi --with-ssl=openssl --with-systemd --with-metadata
+```
 
 Now that we have configured it, we can proceded to compile and install it.
 
-<pre class="lang:sh decode:true" title="Compile and install">$ make</pre>
+```sh 
+$ make
+```
 
-<pre class="lang:sh decode:true" title="Compile and install">$ sudo make install</pre>
+```sh 
+$ sudo make install
+```
 
 ## Final config
 
 When the config and installing process finish we can proceed to configure the software to use it. The main thing we need to do is create a group of users that can access to the hardware and then create a user on that group that will use the software.
 
-<pre class="lang:sh decode:true" title="Creating a group and adding a user">$ sudo groupadd -r shairport-sync &gt;/dev/null</pre>
+```sh 
+$ sudo groupadd -r shairport-sync &gt;/dev/null
+```
 
-<pre class="lang:sh decode:true" title="Creating a group and adding a user">$ sudo useradd -r -M -g shairport-sync -s /usr/bin/nologin -G audio shairport-sync &gt;/dev/null</pre>
+```sh 
+$ sudo useradd -r -M -g shairport-sync -s /usr/bin/nologin -G audio shairport-sync &gt;/dev/null
+```
 
 We also need to set up shairport sync to start on startup.
 
-<pre class="lang:sh decode:true" title="Set to start on boot">$ sudo systemctl enable shairport-sync</pre>
+```sh 
+$ sudo systemctl enable shairport-sync
+```
 
 If we want to start right away to using it we can manually start it with the following command.
 
-<pre class="lang:sh decode:true" title="Starting Shairport Sync">$ sudo service shairport-sync start</pre>
+```sh 
+$ sudo service shairport-sync start
+```
 
 You are going to be able to find the Pi among the devices that offer AirPlay from your iOS device or your Mac. The name of the device is going to be the hostname you set up for your Pi using the [raspi-config interface](https://pimylifeup.com/raspi-config-tool/), if you haven't changed it, it's going to be `RaspberryPi`.
 
@@ -74,17 +100,21 @@ You are going to be able to find the Pi among the devices that offer AirPlay fro
   </p>
 </div>
 
-If you try to use your Pi as a AirPort Express right away you probably going find out that the sound quality leaves a lot to be desired –very low and quite distorted. However, you can do some tune-ups in the settings to improve this, but don't thing we are going to be able to make it sound like a real AirPort Express.
+If you try to use your Pi as a AirPort Express right away you probably going find out that the sound quality leaves a lot to be desired —very low and quite distorted. However, you can do some tune-ups in the settings to improve this, but don't thing we are going to be able to make it sound like a real AirPort Express.
 
 ## Update Raspberry Pi Firmware
 
 One of the first things we can do to improve the quality of the sound is to update the sound driver of the Pi. To do it, you need to update the firmware of the Pi. You can read more about this in [this forum thread](https://www.raspberrypi.org/forums/viewtopic.php?t=136445). Please, keep in mind that while you are updating the firmware you must not lose power in the Pi. To update the firmware you run the following command:
 
-<pre class="lang:sh decode:true" title="Updating Pi's firmware">$ sudo rpi-update</pre>
+```sh 
+$ sudo rpi-update
+```
 
 Once the update process finish you need to turn off the Raspberry and take the SD card out of it and insert the card in a computer card reader. We are going to modify the boot config file of the Pi and and to do it we are going to open with a text editor the config file that it's located on `/boot/config.txt`. Then you need to add the following variable to the end of the file:
 
-<pre class="lang:sh decode:true" title="Booting audio variable">audio_pwm_mode=2</pre>
+```sh 
+audio_pwm_mode=2
+```
 
 Save the file, put the card back on the Pi and turn it on.
 
@@ -92,27 +122,35 @@ Save the file, put the card back on the Pi and turn it on.
 
 Now, we also need to set up the audio jack as the main audio output. Just run the following command:
 
-<pre class="lang:sh decode:true" title="Jack audio as main output">$ amixer cset numid=3 1</pre>
+```sh 
+$ amixer cset numid=3 1
+```
 
 ## Shairport Sync db range
 
 There is a final setting we need to configure and it's related to the audio range in which Shairport Sync operates. To do it we need to open the config file of Shariport Sync, therefore run the following command on the Pi's terminal to open it with [Nano](https://en.wikipedia.org/wiki/GNU_nano).
 
-<pre class="lang:sh decode:true" title="Open Shairport Sync config file">$ sudo nano /usr/local/etc/shairport-sync.conf</pre>
+```sh 
+$ sudo nano /usr/local/etc/shairport-sync.conf
+```
 
 Then we need to look for the following variable:
 
-<pre class="highlight:0 decode:true ">//      volume_range_db = 60 ;</pre>
+<pre class="highlight:0 decode:true ">//      volume_range_db = 60 ;
+```
 
 and change it to
 
-<pre class="highlight:0 decode:true">volume_range_db = 30;</pre>
+<pre class="highlight:0 decode:true">volume_range_db = 30;
+```
 
 Save and close Nano, `Ctrl + X` then `Y` and finally press `return`.
 
 You need to reboot the Pi to make sure that new configuration is properly loaded.
 
-<pre class="lang:sh decode:true " title="Rebooting the Pi">$ sudo reboot</pre>
+```sh 
+$ sudo reboot
+```
 
 # Bottom line
 
