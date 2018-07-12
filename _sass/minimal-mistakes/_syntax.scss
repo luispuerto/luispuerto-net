@@ -17,6 +17,8 @@ figure.highlight {
   pre.highlight {
     margin: 0;
     padding: 1em;
+    max-height: 35em;
+    overflow-y: scroll;
   }
 }
 
