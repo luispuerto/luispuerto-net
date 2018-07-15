@@ -1,10 +1,10 @@
 ---
-id: 1070
-title: My MacBook Pro late 2011's discrete graphics card said "ciao" 👋🏻 —again
-date: 2017-12-05T11:51:30+00:00
-guid: http://luisspuerto.net/?p=1070
-permalink: /2017/12/my-macbook-pro-late-2011s-discrete-graphics-card-said-ciao-again/
-image: /wp-content/uploads/2017/12/maxresdefault.jpg
+title: "My MacBook Pro late 2011's discrete graphics card said \"ciao\" \U0001F44B\U0001F3FB —again"
+date: 2017-12-05T11:51:30.000Z
+header:
+  overlay_image: assets/images/blog/2018/grey_screen.jpg
+  teaser: assets/images/blog/2018/grey_screen.jpg
+toc: true
 categories:
   - Personal
   - Professional
@@ -16,19 +16,14 @@ tags:
   - how to
   - macOS
 ---
-Last Sunday wasn't really a pleasant day. On Saturday late night, or rather around Sunday 00.30 am, my MacBook Pro late 2011's discrete graphic card begin to fail to in the end not being able to boot it properly. The computer was working just fine, it wasn't even using the discrete card, connected to the external screen as I've been doing lately, or any doing any other intensive task. I just rebooted it and 5' after loading the desktop a **solid gray screen** appear that allowed to do nothing. After I forced reboot pushing the on/off button, the normal loading **gray screen** had glitches as thin-horizontal-weird lines. After 3 or 4 boots into the desktop and then the **_gray screen of dead_** the computer begin to load directly just to the **_gray screen of death_**. Nothing could be done to load the computer normally. I tried safe mode, pressing <span class="lang:sh highlight:0 decode:true crayon-inline">shift</span> key on boot, and nothing, just the same **_gray screen of death_**. Restore mode, <span class="lang:sh highlight:0 decode:true crayon-inline">alt + R</span> on boot, also the **_gray screen of death_**. So, I decided to left the issue to sleep —it was around 1.30 am in the morning, and led the computer to make a hardware test, pressing <span class="lang:sh highlight:0 decode:true crayon-inline">D</span> key on startup.
+
+Last Sunday wasn't really a pleasant day. On Saturday late night, or rather around Sunday 00.30 am, my MacBook Pro late 2011's discrete graphic card begin to fail to in the end not being able to boot it properly. The computer was working just fine, it wasn't even using the discrete card, connected to the external screen as I've been doing lately, or any doing any other intensive task. I just rebooted it and 5' after loading the desktop a **solid gray screen** appear that allowed to do nothing. After I forced reboot pushing the on/off button, the normal loading **gray screen** had glitches as thin-horizontal-weird lines. After 3 or 4 boots into the desktop and then the **_gray screen of dead_** the computer begin to load directly just to the **_gray screen of death_**. Nothing could be done to load the computer normally. I tried safe mode, pressing `shift` key on boot, and nothing, just the same **_gray screen of death_**. Restore mode, `alt + R` on boot, also the **_gray screen of death_**. So, I decided to left the issue to sleep —it was around 1.30 am in the morning, and led the computer to make a hardware test, pressing `D` key on startup.
 
 It's not the first time that the discrete graphic card fails in my laptop. It's a malaise that occurs to almost any 2011 Macbook Pro's computer. I think there is two kind of machines out there, the ones where the issue already happened and the ones where it's going to happen. My entire logic board was changed on July 2014 and 3 years and a half down the road it failed again last Sunday. Again, [**the same faulty chip**](http://appleinsider.com/articles/15/01/15/2011-macbook-pro-graphics-class-action-suit-expands-accuses-apple-of-concealing-defects). This is not proper quality Apple (AMD / Nvidia are also culprits here), and I don't know whose idea was to mount those logic board / chips on this Mac model, but I think it wasn't the brightest idea ever.
 
 So, in Sunday morning, after I slept on the issue and I had a proper coffee and breakfast, I got my hands on to try to fix the problem. I begun with searching on internet about the problem and some people suggested that it was a RAM problem. Well, it could have been. The last time I did a hardware test, when I changed my hard drive in the US, it yielded a RAM problem, and this time threw me the same error.
 
-<div id="attachment_1072" style="width: 3274px" class="wp-caption alignnone">
-  <a href="http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4420.jpg"><img class="wp-image-1072 size-full" src="http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4420.jpg" alt="" width="3264" height="2448" srcset="http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4420.jpg 2048w, http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4420-300x225.jpg 300w, http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4420-768x576.jpg 768w, http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4420-1024x768.jpg 1024w, http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4420-480x360.jpg 480w, http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4420-1216x912.jpg 1216w, http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4420-333x250.jpg 333w" sizes="(max-width: 3264px) 100vw, 3264px" /></a>
-
-  <p class="wp-caption-text">
-    Error 4MEM/66/40000000: 0x846b3798
-  </p>
-</div>
+{% include figure image_path="assets/images/blog/2018/IMG_4420.jpg" alt="Error 4MEM/66/40000000: 0x846b3798" caption="Error 4MEM/66/40000000: 0x846b3798" %}
 
 So I decided to give it a try to this [guy's ](https://www.ifixit.com/Answers/View/142544/My+MBP+won%27t+boot%2C+with+horizontal+line+at+apple+logo#answer181366)suggestion and I even switched the RAM for the original ones, since I upgraded 4 years ago to two 8 GB modules. However, the result was always the very exact one. So I decided to ditch the idea that the RAM was the cause of the **_grey screen of death_,** reinstalled the RAM and looked for another solution.
 
@@ -44,9 +39,9 @@ First of all, I have to say that I begun with the solution number [1](https://fo
 
 This step isn't really necessary, and you can jump to the [next step](http://luisspuerto.net/2017/12/my-macbook-pro-late-2011s-discrete-graphics-card-said-chao-again/#using-solutions-2-3-and-4). However, this is the exactly how I did things, since first I found one solution and then the others. Also, if you have trouble booting with the other solutions, perhaps this part is going to help you.
 
-You need to boot on single user mode (press and hold <span class="lang:sh highlight:0 decode:true crayon-inline ">Cmd + S + R</span> ) and run the following commands.
+You need to boot on single user mode (press and hold `Cmd + S + R ) and run the following commands.
 
-```sh 
+```sh
 $ fsck -fy # to check a disk
 $ mount -uw / # mount a root filesystem with read/write permissions
 $ sudo mkdir /AMD_Kexts/ # make a directory to store the AMD drivers in case you'll need them in future
@@ -58,34 +53,28 @@ $ sudo umount / # umount a partition to guarantee that your changes are flushed 
 $ sudo reboot
 ```
 
-However, in the same way as the solution's poster, when I tried to delete the kext the Mac was throwing me the error <span class="lang:sh highlight:0 decode:true crayon-inline ">operation not allowed</span>  or something similar. Probably because in the same way as s/he, I have my disk locked as "read-only" after too many attempt of booting. Lucky, I didn't need to mount my disk on Linux, as s/he did. I just took my disk out of my Mac and put it in a USB enclosure that I connected to another Mac with High Sierra. I have High Sierra installed in my machine with the new APFS, so that means that my disk in only readable by other Macs with High Sierra installed. Dangerous, yes, but I wanted to take advantage of the new features. Backups were invented for some reason.
+However, in the same way as the solution's poster, when I tried to delete the kext the Mac was throwing me the error `operation not allowed` or something similar. Probably because in the same way as s/he, I have my disk locked as "read-only" after too many attempt of booting. Lucky, I didn't need to mount my disk on Linux, as s/he did. I just took my disk out of my Mac and put it in a USB enclosure that I connected to another Mac with High Sierra. I have High Sierra installed in my machine with the new APFS, so that means that my disk in only readable by other Macs with High Sierra installed. Dangerous, yes, but I wanted to take advantage of the new features. Backups were invented for some reason.
 
-From there, I just needed to performed the same commands but a little bit different. You have to take into account that in macOS your hard drive is going to mount automatically, so it wasn't necessary to mount it like before, and you just have to run the rest of the commands with the proper path and the name of your drive. In my case my hard drive name is <span class="lang:sh highlight:0 decode:true crayon-inline ">Macintosh SSD</span> , and in this Mac there is also a <span class="lang:sh highlight:0 decode:true crayon-inline ">Macintosh SSD</span> , so when it mounted my hard drive macOS renamed it to to <span class="lang:sh highlight:0 decode:true crayon-inline ">Macintosh SSD 1</span> , In the shell you have to proper indecate the blank spaces on name and paths using the backslash symbol <span class="lang:sh highlight:0 decode:true crayon-inline ">\</span> , therefore I could access to my hard drive using the name <span class="lang:sh highlight:0 decode:true crayon-inline ">Macintosh\ SSD\ 1</span> . Mind the name of your hard drive (usually <span class="lang:sh highlight:0 decode:true crayon-inline ">Macintosh HD</span> ) and change the path in the commands in consequence.
+From there, I just needed to performed the same commands but a little bit different. You have to take into account that in macOS your hard drive is going to mount automatically, so it wasn't necessary to mount it like before, and you just have to run the rest of the commands with the proper path and the name of your drive. In my case my hard drive name is `Macintosh SSD`, and in this Mac there is also a `Macintosh SSD`, so when it mounted my hard drive macOS renamed it to to `Macintosh SSD 1`, In the shell you have to proper indecate the blank spaces on name and paths using the backslash symbol `\`, therefore I could access to my hard drive using the name `Macintosh\ SSD\ 1`. Mind the name of your hard drive (usually `Macintosh HD`) and change the path in the commands in consequence.
 
-```sh 
+```sh
 $ sudo mkdir /Volumes/Macintosh\ SSD\ 1/AMD_Kexts/ # make a directory to store the AMD drivers in case you'll need them in future
 $ sudo mv /Volumes/Macintosh\ SSD\ 1/System/Library/Extensions/AMD*.* /AMD_Kexts/ # move the AMD drivers
 $ sudo rm -rf /Volumes/Macintosh\ SSD\ 1/System/Library/Caches/com.apple.kext.caches/ # remove the AMD drivers cache
 $ sudo mkdir /Volumes/Macintosh\ SSD\ 1/System/Library/Caches/com.apple.kext.caches/ # just in case OS X will be dumb and will not recreate this directory, I am creating it for OS X
 $ sudo touch /Volumes/Macintosh\ SSD\ 1/System/Library/Extensions/ # to update the timestamps so that new driver caches - without AMD drivers - will be definitely rebuilt
-$ sudo umount /Volumes/Macintosh\ SSD\ 1/ # umount a partition to guarantee that your changes are flushed to it&lt;br&gt;
+$ sudo umount /Volumes/Macintosh\ SSD\ 1/ # umount a partition to guarantee that your changes are flushed to it<br>
 ```
 
-Now, you can take your disk, reinstall it in your Mac and begin from there. I booted to something like this<sup id="fnref-1070-1"><a class="jetpack-footnote" href="#fn-1070-1">1</a></sup>:
+Now, you can take your disk, reinstall it in your Mac and begin from there. I booted to something like this[^1]:
 
-<div id="attachment_1075" style="width: 1090px" class="wp-caption alignnone">
-  <a href="http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4422.jpg"><img class="size-full wp-image-1075" src="http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4422.jpg" alt="" width="1080" height="805" srcset="http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4422.jpg 1080w, http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4422-300x224.jpg 300w, http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4422-768x572.jpg 768w, http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4422-1024x763.jpg 1024w, http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4422-335x250.jpg 335w" sizes="(max-width: 1080px) 100vw, 1080px" /></a>
-
-  <p class="wp-caption-text">
-    Booting without kexts.
-  </p>
-</div>
+{% include figure image_path="assets/images/blog/2018/IMG_4422.jpg" alt="Booting without kexts." caption="Booting without kexts." %}
 
 ### Using solutions 2, 3 and 4
 
-That's beginning… at least now I knew that my computer can be booted. Then, I decided to switch solutions and continue with the fix explained in [2,](https://forums.macrumors.com/threads/disable-a-failed-amd-gpu-on-a-2011-macbook-pro-grub-solution.2087527/) which is fully explained in [3](https://gist.github.com/blackgate/17ac402e35d2f7e0f1c9708db3dc7a44). The reason… because seemed more recent and better explained, and more stable in the long term. So, as it's detailed in that solutions, first reset the [SMC](https://support.apple.com/en-us/HT201295) and the [NVRAM](https://support.apple.com/en-us/HT204063). Then, boot your Mac on recovery single user mode (pressing and holding <span class="lang:sh highlight:0 decode:true crayon-inline ">Cmd + S + R</span> ) and run the following commands.
+That's beginning… at least now I knew that my computer can be booted. Then, I decided to switch solutions and continue with the fix explained in [2,](https://forums.macrumors.com/threads/disable-a-failed-amd-gpu-on-a-2011-macbook-pro-grub-solution.2087527/) which is fully explained in [3](https://gist.github.com/blackgate/17ac402e35d2f7e0f1c9708db3dc7a44). The reason… because seemed more recent and better explained, and more stable in the long term. So, as it's detailed in that solutions, first reset the [SMC](https://support.apple.com/en-us/HT201295) and the [NVRAM](https://support.apple.com/en-us/HT204063). Then, boot your Mac on recovery single user mode (pressing and holding `Cmd + S + R`) and run the following commands.
 
-```sh 
+```sh
 $ nvram fa4ce28d-b62f-4c99-9cc3-6815686e30f9:gpu-power-prefs=%01%00%00%00
 $ csrutil disable
 $ reboot
@@ -93,29 +82,17 @@ $ reboot
 
 Now, and since you moved the GPU kext from their original location you are going to boot to something like this.
 
-<div id="attachment_1076" style="width: 1088px" class="wp-caption alignnone">
-  <a href="http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4423.jpg"><img class="size-full wp-image-1076" src="http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4423.jpg" alt="" width="1078" height="777" srcset="http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4423.jpg 1078w, http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4423-300x216.jpg 300w, http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4423-768x554.jpg 768w, http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4423-1024x738.jpg 1024w, http://luisspuerto.net/wp-content/uploads/2017/12/IMG_4423-347x250.jpg 347w" sizes="(max-width: 1078px) 100vw, 1078px" /></a>
-
-  <p class="wp-caption-text">
-    Booting normally.
-  </p>
-</div>
+{% include figure image_path="assets/images/blog/2018/IMG_4423.jpg"  alt="Booting normally" caption="Booting normally" %}
 
 Hey!! you probably are thinking… I've done it, I've fixed. it. Yes & not. Since you've moved the kexts from their original place things are working more or less correctly, however, if you updated the system, you are going to probably have to move your kext and apply the solution again. For that reason, they decided to created a nicer solution implementing [GRUB](https://en.wikipedia.org/wiki/GNU_GRUB) on your start up disk and blocking the loading of those kexts on booting. GRUB is the same system you put in place when you are installing Linux in a computer and you want to have more than one OS in the machine. This solution allow us to keep the kexts in place and boot without loading them. The solution isn't perfect, but at least is easy to implement and in case you install a system update you can easily reimplement.
 
-At this point, I recommend to move the kexts to the original location <span class="lang:sh highlight:0 decode:true crayon-inline ">/System/Library/Extensions/</span> .
+At this point, I recommend to move the kexts to the original location `/System/Library/Extensions/`.
 
-<div id="attachment_1093" style="width: 892px" class="wp-caption alignnone">
-  <a href="http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-04-at-12.43.04.png"><img class="size-full wp-image-1093" src="http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-04-at-12.43.04.png" alt="" width="882" height="548" srcset="http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-04-at-12.43.04.png 882w, http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-04-at-12.43.04-300x186.png 300w, http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-04-at-12.43.04-768x477.png 768w, http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-04-at-12.43.04-402x250.png 402w" sizes="(max-width: 882px) 100vw, 882px" /></a>
+{% include figure image_path="assets/images/blog/2018/Screen-Shot-2017-12-04-at-12.43.04.png" alt="Moved kexts" caption="Moved kexts" %}
 
-  <p class="wp-caption-text">
-    Moved kexts
-  </p>
-</div>
+  You can do it dragging and dropping those back to its original location (it's going to ask for your password), or you just can move then with terminal:
 
-You can do it dragging and dropping those back to its original location (it's going to ask for your password), or you just can move then with terminal:
-
-```sh 
+```sh
 $ sudo mv /AMD_Kexts/*.* /System/Library/Extensions/
 ```
 
@@ -123,15 +100,14 @@ $ sudo mv /AMD_Kexts/*.* /System/Library/Extensions/
 
 Now, to implement the complete solution you have to [download ubuntu](https://www.ubuntu.com/download/desktop) to take the GRUB from there. I've downloaded [Ubuntu 17.10](http://www.nic.funet.fi/pub/mirrors/releases.ubuntu.com/17.10/ubuntu-17.10-desktop-amd64.iso), as it's specified in the fix. When you've downloaded the .ISO, you have to attach and mount it, so assuming that you have the ISO in downloads:
 
-```sh 
+```sh
 $ hdiutil attach -nomount ~/Downloads/ubuntu-17.10-desktop-amd64.iso
-
 ```
 
 Which probably turns something like this:
 
-```sh 
-  /dev/disk2              Apple_partition_scheme
+```sh
+/dev/disk2              Apple_partition_scheme
 /dev/disk2s1            Apple_partition_map
 /dev/disk2s2            Apple_HFS
 ```
@@ -140,7 +116,7 @@ The disk number could be different, for example in my case the first time was di
 
 Now you can finally mount the ISO with the following commands:
 
-```sh 
+```sh
 $ mkdir /tmp/ubuntu
 $ mount -t cd9660 /dev/disk2 /tmp/ubuntu/
 $ open /tmp/ubuntu/shell
@@ -148,31 +124,26 @@ $ open /tmp/ubuntu/shell
 
 #### Preparing the USB stick and editing GRUB file
 
-You have to [format you USB stick to FAT32](https://support.apple.com/kb/PH22241?locale=en_GB) and it's recomendable to name it <span class="lang:sh highlight:0 decode:true crayon-inline ">RESCUE</span>  to easy things using this guide, then copy the <span class="lang:sh highlight:0 decode:true crayon-inline ">EFI</span>  and <span class="lang:sh highlight:0 decode:true crayon-inline ">boot</span>  folders from the ISO to your USB stick root.
+You have to [format you USB stick to FAT32](https://support.apple.com/kb/PH22241?locale=en_GB) and it's recomendable to name it `boot` folders from the ISO to your USB stick root.
 
-<div id="attachment_1079" style="width: 892px" class="wp-caption alignnone">
-  <a href="http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-04-at-13.38.12.png"><img class="size-full wp-image-1079" src="http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-04-at-13.38.12.png" alt="" width="882" height="548" srcset="http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-04-at-13.38.12.png 882w, http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-04-at-13.38.12-300x186.png 300w, http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-04-at-13.38.12-768x477.png 768w, http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-04-at-13.38.12-402x250.png 402w" sizes="(max-width: 882px) 100vw, 882px" /></a>
+{% include figure image_path="assets/images/blog/2018/Screen-Shot-2017-12-04-at-13.38.12.png" alt="Folders you have to copy" caption="Folders you have to copy" %}
 
-  <p class="wp-caption-text">
-    Folders you have to copy
-  </p>
-</div>
+When you have those folders on your USB stick, you have to edit the file `/RESCUE/boot/grub/grub.cfg`. I like Atom to edit, but perhaps you don't have it installed so if you type:
 
-When you have those folders on your USB stick, you have to edit the file <span class="lang:sh highlight:0 decode:true crayon-inline ">/RESCUE/boot/grub/grub.cfg</span> . I like Atom to edit, but perhaps you don't have it installed so if you type:
-
-```sh 
-  $ open /Volumes/RESCUE/boot/grub/grub.cfg
+```sh
+$ open /Volumes/RESCUE/boot/grub/grub.cfg
 ```
 
 Your default text editor will open. In case you want to be sure and open with Text Edit:
 
-```sh 
-  $ open -a TextEdit /Volumes/RESCUE/boot/grub/grub.cfg
+```sh
+$ open -a TextEdit /Volumes/RESCUE/boot/grub/grub.cfg
 ```
 
 Then you have to delete all the file content and paste the following.
 
-<pre class="toolbar:1 toolbar-overlay:false lang:sh highlight:0 decode:true" title="grub.cfg">if loadfont /boot/grub/font.pf2 ; then
+```sh
+if loadfont /boot/grub/font.pf2 ; then
     set gfxmode=auto
     insmod efi_gop
     insmod efi_uga
@@ -192,7 +163,6 @@ menuentry "macOS" {
     outb 0x714 0xFF
     exit
 }
-
 ```
 
 Take into account that is a specific GRUB configuration for High Sierra and with a single OS installed. If you have more that one OS or you are under other OS check [this](https://gist.github.com/blackgate/17ac402e35d2f7e0f1c9708db3dc7a44#34-edit-the-grubcfg-file). Note that I've added a line to the original proposed GRUP file at almost at the end. This is because someone suggest that line on this [thread](https://forums.macrumors.com/threads/disable-a-failed-amd-gpu-on-a-2011-macbook-pro-grub-solution.2087527/page-4#post-25518184). I've also set the `timeout` variable to zero, since I don't want to push enter to continue or wait 10 seconds. I don't have anything to chose from.
@@ -201,9 +171,9 @@ Save the file and let's copy now to you Mac. Or perhaps, you can test if this wo
 
 #### Making it permanent
 
-Now you can make this permanent and without need the USB. You run on terminal the following commands with your USB still plugged and assuming that you named it <span class="lang:sh highlight:0 decode:true crayon-inline">RESCUE</span> .
+Now you can make this permanent and without need the USB. You run on terminal the following commands with your USB still plugged and assuming that you named it `RESCUE`.
 
-```sh 
+```sh
 $ cd /Volumes
 $ sudo mkdir efi
 $ sudo mount -t msdos /dev/disk0s1 /Volumes/efi
@@ -221,21 +191,20 @@ Now… you can unmount the USB and boot without it.
 
 When you are under High Sierra, the next step doesn't really work, and even installing this kext is going to return to a black screen when you return form sleep. To prevent this, you can just change the way your Mac sleep and make it hibernate. If you have a SSD in place, like I have, the difference on time between waking up from a normal sleep than from hibernation is going to be neglectable.  The only real difference is, your computer isn't going to wake up when you lift the lid and you have to push the on/off button to wake your Mac up. To set this up you have to run on terminal:
 
-```sh 
-  $ sudo pmset -a hibernatemode 25
-
+```sh
+$ sudo pmset -a hibernatemode 25
 ```
 
 If you want to return to the normal sleep mode you set in the following way:
 
-```sh 
-  $ sudo pmset -a hibernatemode 3
+```sh
+$ sudo pmset -a hibernatemode 3
 ```
 
-Anyhow, I decided to apply the solution as it's explained [here](https://github.com/blackgate/AMDGPUWakeHandler) and I even [created a kext myself for High Sierra](http://luisspuerto.net/wp-content/uploads/2017/12/AMDGPUWakeHandler.kext_.zip). Just in hopes that in a close future things improve I can normally sleep. If you download the kext you just have to unzip it and then copy to <span class="lang:sh highlight:0 decode:true crayon-inline ">/Library/Extensions</span>  and run the following commands.
+Anyhow, I decided to apply the solution as it's explained [here](https://github.com/blackgate/AMDGPUWakeHandler) and I even [created a kext myself for High Sierra](http://luisspuerto.net/wp-content/uploads/2017/12/AMDGPUWakeHandler.kext_.zip). Just in hopes that in a close future things improve I can normally sleep. If you download the kext you just have to unzip it and then copy to `/Library/Extensions` and run the following commands.
 
-```sh 
-  $ sudo chmod -R 755 /Library/Extensions/AMDGPUWakeHandler.kext
+```sh
+$ sudo chmod -R 755 /Library/Extensions/AMDGPUWakeHandler.kext
 $ sudo chown -R root:wheel /Library/Extensions/AMDGPUWakeHandler.kext
 $ sudo touch /Library/Extensions
 ```
@@ -246,9 +215,9 @@ Now, you are done.
 
 #### Reimplementing the fix
 
-If you need to reimplement the solution because you updated the system you are going to need to just bless GRUB disk again —make it a bootable disk. You just boot from the rescue USB stick and run the following commands on terminal<sup id="fnref-1070-2"><a class="jetpack-footnote" href="#fn-1070-2">2</a></sup>.
+If you need to reimplement the solution because you updated the system you are going to need to just bless GRUB disk again —make it a bootable disk. You just boot from the rescue USB stick and run the following commands on terminal[^2]
 
-```sh 
+```sh
 $ cd /Volumes
 $ sudo mkdir efi
 $ sudo mount -t msdos /dev/disk0s1 /Volumes/efi
@@ -266,9 +235,7 @@ Anyhow, the weir way that High Sierra manages the bright isn't something new. An
 
 You're probably wondering yourself why this is happening to your computer although if you have researched a little bit about the problem you probably already know what is the problem. Really bad quality graphic chips that due to heat in the computer finally fails. You can learn a little bit in this video.
 
-<div class="jetpack-video-wrapper">
-  <span class="embed-youtube" style="text-align:center; display: block;"></span>
-</div>
+{% include video id="1AcEt073Uds" provider="youtube" %}
 
 To sum it up… AMD / Nvidia chips mounted in logic board of this model are really bad and I guess most of them are faulty. The lack of proper ventilation on Macs, specially in this models, doesn't improve things and make then even more prone to this kind of issues. There is a technique called reballing, which basically consist repair the littles balls that the chip uses to connect to the logic board. However, this is just a temporal solution since the problem is in the chip itself. Reballing works just because when you heat up the chip to reball it you mess with some of the internal parts of the chip —I think they call this [reflow](https://en.wikipedia.org/wiki/Reflow_soldering)— and that makes it to work properly again, but after a while the problem is going to return. I've read that some people just put the board in the oven at around 200ºc to fix the issue, but I guess doesn't last a lot either.
 
@@ -284,18 +251,15 @@ While I was in the US we got a beautiful 24" cinema display that I connected to 
 
 In the same way… An almost month ago I installed High Sierra and I noticed a weird error related to graphics on the console:
 
-<div id="attachment_1090" style="width: 1147px" class="wp-caption alignnone">
-  <a href="http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-04-at-00.23.58.png"><img class="size-full wp-image-1090" src="http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-04-at-00.23.58.png" alt="" width="1137" height="792" srcset="http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-04-at-00.23.58.png 1137w, http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-04-at-00.23.58-300x209.png 300w, http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-04-at-00.23.58-768x535.png 768w, http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-04-at-00.23.58-1024x713.png 1024w, http://luisspuerto.net/wp-content/uploads/2017/12/Screen-Shot-2017-12-04-at-00.23.58-359x250.png 359w" sizes="(max-width: 1137px) 100vw, 1137px" /></a>
+{% include figure image_path="assets/images/blog/2018/Screen-Shot-2017-12-04-at-00.23.58.png" alt="[ERROR] — Unknown CGXDisplayDevice: 0x41dcd00" caption="[ERROR] — Unknown CGXDisplayDevice: 0x41dcd00" %}
 
-  <p class="wp-caption-text">
-    [ERROR] — Unknown CGXDisplayDevice: 0x41dcd00
-  </p>
-</div>The error is still there right now, and I told Apple about it
+The error is still there right now, and I told Apple about it [when I noticed](https://twitter.com/lpuerto/status/928885729916342272). They contacted me and collected some data. They never return to me about this issue. Now, I wondering if this two issues are connected and High Sierra accelerated the degradation process of the Nvidia / AMD chip.
 
-[when I noticed](https://twitter.com/lpuerto/status/928885729916342272). They contacted me and collected some data. They never return to me about this issue. Now, I wondering if this two issues are connected and High Sierra accelerated the degradation process of the Nvidia / AMD chip.
 
-<li id="fn-1070-1">
-  To be entirely honest I don't remember if after deleting the kexts I was able to boot directly to <a href="#attachment_1075">the striped desktop</a> or I needed to run the commands in the beginning of solution <a href="http://luisspuerto.net/2017/12/my-macbook-pro-late-2011s-discrete-graphics-card-said-chao-again/#using-solutions-2-3-and-4">2</a>. <a href="#fnref-1070-1">&#x21a9;</a>
-</li>
-<li id="fn-1070-2">
-  Today, 8th of December 2017, I decided to install the update to 10.13.2. It worked really well, and even booted without needed to apply the fix again. In other words, the discrete GPU was working. However, after a while fail, and took me more than what I wanted to reestablish everything. So my recommendation is, if you update, apply the fix as soon as possible, but cause sooner or later things are going to go south and it's going to take you even more time to fix it. In my case I needed to apply the solution almost from the very beginning and a NVRAM reset was necessary to be able to operate again the computer. Good luck! <a href="#fnref-1070-2">&#x21a9;</a></fn></footnotes>
+
+-----
+
+**Footnotes:**
+
+[^1]: To be entirely honest I don't remember if after deleting the kexts I was able to boot directly to the striped desktop or I needed to run the commands in the beginning of solution [2](/blog/2017/12/my-macbook-pro-late-2011s-discrete-graphics-card-said-chao-again/#using-solutions-2-3-and-4).
+[^2]: Today, 8th of December 2017, I decided to install the update to 10.13.2. It worked really well, and even booted without needed to apply the fix again. In other words, the discrete GPU was working. However, after a while fail, and took me more than what I wanted to reestablish everything. So my recommendation is, if you update, apply the fix as soon as possible, but cause sooner or later things are going to go south and it's going to take you even more time to fix it. In my case I needed to apply the solution almost from the very beginning and a NVRAM reset was necessary to be able to operate again the computer. Good luck!

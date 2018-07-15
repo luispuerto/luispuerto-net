@@ -1,14 +1,11 @@
 ---
-id: 1402
-title: 'Install R 100% Homebrew Edition With OpenBlas &#038; OpenMP — My Version'
+title: Install R 100% Homebrew Edition With OpenBlas & OpenMP — My Version
 date: 2018-01-12T20:16:56+00:00
-guid: http://luisspuerto.net/?p=1402
-permalink: /2018/01/install-r-100-homebrew-edition-with-openblas-openmp-my-version/
-wtr-disable-reading-progress:
-  - ""
-wtr-disable-time-commitment:
-  - ""
-image: /wp-content/uploads/2018/01/R-Homebrew.jpg
+header:
+  overlay_image: assets/images/blog/2018/R-Homebrew.jpg
+  teaser: assets/images/blog/2018/R-Homebrew.jpg
+toc: true
+toc_icon: chart-line
 categories:
   - Professional
   - RStats
@@ -20,19 +17,20 @@ tags:
   - RSoft
   - RStats
 ---
+
 **Update Friday, 10th of May 2018**: If you want to install R with all the capabilities you need to read this [post](http://luisspuerto.net/2018/05/installing-r-with-homebrew-with-all-the-capabilities/) too, and perhaps this [one](http://luisspuerto.net/2018/05/homebrews-r-doesnt-have-all-the-capabilities/) too.
 
 **Update Tuesday, 27th of March 2018:** I just found out that seems you don't just need to run `sudo R CMD javareconf` to configure Java an R, at least with the versions of Java 9.0.4 and R 3.4.4.
 
-**Update Thursday, 22nd of March 2018:** I have to add `-fopenmp` to both `clang` and `clang++` variables in my `makevars` to be able to build data.table package correctly. This is not exactly what the [Data Table wiki](https://github.com/Rdatatable/data.table/wiki/Installation#openmp-enabled-compiler-for-mac) recommends. I update the [section about the Data Table Package](http://luisspuerto.net/2018/01/install-r-100-homebrew-edition-with-openblas-openmp-my-version/#data-table-package) accordingly.
+**Update Thursday, 22nd of March 2018:** I have to add `-fopenmp` to both `clang` and `clang++` variables in my `makevars` to be able to build data.table package correctly. This is not exactly what the [Data Table wiki](https://github.com/Rdatatable/data.table/wiki/Installation#openmp-enabled-compiler-for-mac) recommends. I update the [section about the Data Table Package](http://luisspuerto.net/2018/01/install-r-100-homebrew-edition-with-openblas-openmp-my-version/#data-table-package) accordingly.
 
 * * *
 
-As you know I'm a big fan of [Homebrew](http://luisspuerto.net/tag/homebrew/) as a manager of part of the software of my Mac, since it make things easier. There are a lot of guides out there about [how to have a R installation 100% Homebrew](https://www.google.com/search?client=safari&rls=en&q=r+homebrew&ie=UTF-8&oe=UTF-8) and some people, like me, like to have this kind of setup because it's convenient and for the sake of lear a little bit more about how R works in more detail. However, Homebrew setup isn't officially supported by the [R Core Team](https://scholar.google.com/citations?user=yvS1QUEAAAAJ), so if you find problems with your R installation you aren't going to get support from them. Nevertheless, you are going to be able to get support from [Homebrew](https://github.com/Homebrew/homebrew-core) and of course, from the [regular channels to get help for R](https://www.r-project.org/help.html), like the [mail list](https://www.r-project.org/mail.html).
+As you know I'm a big fan of [Homebrew](http://luisspuerto.net/tag/homebrew/) as a manager of part of the software of my Mac, since it make things easier. There are a lot of guides out there about [how to have a R installation 100% Homebrew](https://www.google.com/search?client=safari&rls=en&q=r+homebrew&ie=UTF-8&oe=UTF-8) and some people, like me, like to have this kind of setup because it's convenient and for the sake of lear a little bit more about how R works in more detail. However, Homebrew setup isn't officially supported by the [R Core Team](https://scholar.google.com/citations?user=yvS1QUEAAAAJ), so if you find problems with your R installation you aren't going to get support from them. Nevertheless, you are going to be able to get support from [Homebrew](https://github.com/Homebrew/homebrew-core) and of course, from the [regular channels to get help for R](https://www.r-project.org/help.html), like the [mail list](https://www.r-project.org/mail.html).
 
 The biggest advantage, besides of the regular advantages of installing something with HomeBrew, is you can create your own version of R, you can compile it, therefore you can compile it with steroids, so you can take advantage of the OpenBlas and OpenMP libraries.
 
-# OpenBLAS & OpenMP
+## OpenBLAS & OpenMP
 
 [OpenBLAS](https://en.wikipedia.org/wiki/OpenBLAS) is a open implementation of the BLAS (Basic Linear Algebra Subprograms) API. Basically, it optimizes your processor when you are doing mathematical operations, like when you are using R. It's usually a huge leap in performance when you begin to make complex mathematical operations.
 
@@ -46,25 +44,25 @@ We also did a small test since we wanted to get this setup in one of our compute
 library(microbenchmark)
 
 set.seed(2017)
-n &lt;- 10000
-p &lt;- 100
-X &lt;- matrix(rnorm(n*p), n, p)
-y &lt;- X %*% rnorm(p) + rnorm(100)
+n <- 10000
+p <- 100
+X <- matrix(rnorm(n*p), n, p)
+y <- X %*% rnorm(p) + rnorm(100)
 
-check_for_equal_coefs &lt;- function(values) {
-  tol &lt;- 1e-12
-  max_error &lt;- max(c(abs(values[[1]] - values[[2]]),
+check_for_equal_coefs <- function(values) {
+  tol <- 1e-12
+  max_error <- max(c(abs(values[[1]] - values[[2]]),
                      abs(values[[2]] - values[[3]]),
                      abs(values[[1]] - values[[3]])))
-  max_error &lt; tol
+  max_error < tol
 }
 
-mbm &lt;- microbenchmark("lm" = { b &lt;- lm(y ~ X + 0)$coef },
+mbm <- microbenchmark("lm" = { b <- lm(y ~ X + 0)$coef },
                "pseudoinverse" = {
-                 b &lt;- solve(t(X) %*% X) %*% t(X) %*% y
+                 b <- solve(t(X) %*% X) %*% t(X) %*% y
                },
                "linear system" = {
-                 b &lt;- solve(t(X) %*% X, t(X) %*% y)
+                 b <- solve(t(X) %*% X, t(X) %*% y)
                },
                check = check_for_equal_coefs)
 
@@ -73,7 +71,7 @@ mbm
 
 We got this results on a Macbook Pro 2010:
 
-[<img class="size-full wp-image-1849 aligncenter" src="http://luisspuerto.net/wp-content/uploads/2018/01/Screen-Shot-2018-05-11-at-10.42.09.png" alt="" width="698" height="466" srcset="http://luisspuerto.net/wp-content/uploads/2018/01/Screen-Shot-2018-05-11-at-10.42.09.png 698w, http://luisspuerto.net/wp-content/uploads/2018/01/Screen-Shot-2018-05-11-at-10.42.09-300x200.png 300w, http://luisspuerto.net/wp-content/uploads/2018/01/Screen-Shot-2018-05-11-at-10.42.09-374x250.png 374w" sizes="(max-width: 698px) 100vw, 698px" />](http://luisspuerto.net/wp-content/uploads/2018/01/Screen-Shot-2018-05-11-at-10.42.09.png)
+{% include figure image_path="assets/images/blog/2018/Screen-Shot-2018-05-11-at-10.42.09.png" %}{: .align-center }
 
 ```R
 # Base R benchmarks results
@@ -93,26 +91,25 @@ Unit: milliseconds
             lm 262.22400 272.39873 287.72378 277.65483 286.07772 361.0826   100
  pseudoinverse  60.50899  62.65356  82.10815  70.40881  75.11090 169.7922   100
  linear system  38.01025  39.48672  52.82579  45.81922  49.36025 121.0351   100
-
 ```
 
 I really think the results speak for themselves.
 
-# Caveats
+## Caveats
 
-Of course there are some problems when you have this kind of install. The first one is the complication of the install process. If it were as simple as install R binaries from CRAN I wouldn't be doing this guide. The second one and more important, **you are going to need to compile the packages you install from now o****n**, without exception. You aren't going to be able to install the binaries of the packages anymore. This has advantages and disadvantages. The main advantage is that they are going to make use of the libraries you have installed in your your system like OpenBLAS, OpenMP or LLVM, to mention some. However, this means that you are going to need some other libraries to compile and you have to have them correctly linked, like Java or libxml2 or some of the packages aren't going to compile and you aren't going to be able to have it on your system.
+Of course there are some problems when you have this kind of install. The first one is the complication of the install process. If it were as simple as install R binaries from CRAN I wouldn't be doing this guide. The second one and more important, **you are going to need to compile the packages you install from now on**, without exception. You aren't going to be able to install the binaries of the packages anymore. This has advantages and disadvantages. The main advantage is that they are going to make use of the libraries you have installed in your your system like OpenBLAS, OpenMP or LLVM, to mention some. However, this means that you are going to need some other libraries to compile and you have to have them correctly linked, like Java or libxml2 or some of the packages aren't going to compile and you aren't going to be able to have it on your system.
 
-In case you get any problem internet is your friend. You can look for the error R is returning when it tries to compile. If you are the first one to get that error you can ask in communities like [Stackoverflow](https://stackoverflow.com) or the mail list for [R help](https://www.r-project.org/mail.html). All of these is going to make you understand R much better and your are going to be a better R user. So take it with patience and consider it like an advance course for R.
+In case you get any problem internet is your friend. You can look for the error R is returning when it tries to compile. If you are the first one to get that error you can ask in communities like [Stackoverflow](https://stackoverflow.com) or the mail list for [R help](https://www.r-project.org/mail.html). All of these is going to make you understand R much better and your are going to be a better R user. So take it with patience and consider it like an advance course for R.
 
 Take into account that sometimes even the CRAN install binaries pose problems, mostly with it's link to Java. Before I decided to have this kind of install with R I had in the past multiple problems with Java and rJava package. So nothing is perfect, but you didn't decided to use R because it was simple, did you?
 
-# How to install?
+## How to install?
 
-I've used as inspiration for this guide mainly two main sources. On one hand, [Bhaskar Karambelar's installation guide](https://www.karambelkar.info/2017/01/setup-osx-for-r/), and on the other [Mauricio Vargas' one](http://pacha.hk/2017-07-12_r_and_python_via_homebrew.html). Bhaskar's one was the first I used, more than 6 months ago, while we were in the United Stated, and really worked well in that moment. Problem with it is, it installs a lot or libraries to program in C/C++ what unless you are a C/C++ programmer you aren't going to use, although you never know. At that moment, I installed everything due to lack of knowledge, but probably right now I wouldn't. It's up to you if you want to install those libraries and programing languages. However, I have more than enough space in my hard drive and I don't mind to have then, perhaps they are going to to be useful in the future. Besides, this has been a way to discover then and know more about C/C++ programing. Mauricio's guide goes more to the point and it just helps you to install a really fast and quick version of R that use OpenMP and OpenBlas.
+I've used as inspiration for this guide mainly two main sources. On one hand, [Bhaskar Karambelar's installation guide](https://www.karambelkar.info/2017/01/setup-osx-for-r/), and on the other [Mauricio Vargas' one](http://pacha.hk/2017-07-12_r_and_python_via_homebrew.html). Bhaskar's one was the first I used, more than 6 months ago, while we were in the United Stated, and really worked well in that moment. Problem with it is, it installs a lot or libraries to program in C/C++ what unless you are a C/C++ programmer you aren't going to use, although you never know. At that moment, I installed everything due to lack of knowledge, but probably right now I wouldn't. It's up to you if you want to install those libraries and programing languages. However, I have more than enough space in my hard drive and I don't mind to have then, perhaps they are going to to be useful in the future. Besides, this has been a way to discover then and know more about C/C++ programing. Mauricio's guide goes more to the point and it just helps you to install a really fast and quick version of R that use OpenMP and OpenBlas.
 
-Through this guide I just want to try to show you how I ended with my installation, that is an updated mixture of both guides.  However, take into account that mine guide is going to be a little bit different, even more taking into account that [I use Zsh](http://luisspuerto.net/2018/01/iterm2-oh-my-zsh-powerlevel9k-monaco-nerd-complete-font/) as my shell.
+Through this guide I just want to try to show you how I ended with my installation, that is an updated mixture of both guides.  However, take into account that mine guide is going to be a little bit different, even more taking into account that [I use Zsh](http://luisspuerto.net/2018/01/iterm2-oh-my-zsh-powerlevel9k-monaco-nerd-complete-font/) as my shell.
 
-## Homebrew
+### Homebrew
 
 You probably have Homebrew already installed, if you don't, please, [install it](http://luisspuerto.net/2017/11/homebrew/). Then, I recommend you to connect to the cask tap if you haven't done it already:
 
@@ -128,28 +125,28 @@ I recommend to add the following lines in your Zsh and/or Bash profiles running 
 # For zsh
 echo '# Setting language and localization variables
 export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8' &gt;&gt; ~/.zshrc
+export LANG=en_US.UTF-8' >> ~/.zshrc
 
 # For bash
 echo '# Setting language and localization variables
 export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8' &gt;&gt; ~/.bash_profile
+export LANG=en_US.UTF-8' >> ~/.bash_profile
 ```
 
-## Uninstalling previous R install
+### Uninstalling previous R install
 
 If you already have R installed I recommend you to uninstall R completely. Before you do it, you perhaps want to do a copy of your installed packages, just make a list because you are going to need to compile all of them with this homebrew install. You can run the following code in R to make a copy of your packages.
 
 ```R
 # How to list installed packajes
 
-package_matrix &lt;- installed.packages()
+package_matrix <- installed.packages()
 
-package_df &lt;- data.frame(package_matrix)
+package_df <- data.frame(package_matrix)
 
-package_list &lt;- package_df[is.na(package_df$Priority), "Package"]
+package_list <- package_df[is.na(package_df$Priority), "Package"]
 
-packages &lt;- as.character(package_list)
+packages <- as.character(package_list)
 
 write(packages, file = "packages")
 
@@ -168,22 +165,20 @@ Now that you have a list of your installed packages you can [delete R from your 
 $ sudo rm -rf /Library/Frameworks/R.framework /Applications/R.app /usr/local/bin/R /usr/local/bin/Rscript
 ```
 
-## XCode Command Line Tools
+### XCode Command Line Tools
 
 You need to have installed the [Command Line Tools for XCode](https://developer.apple.com/download/more/). Please be aware that if you already has installed, XCode you probably still need to install the CLT. The best way to know is running the following command in terminal:
 
 ```sh
 $ xcode-select --install
-
 ```
 
-## C/C++ Compilers and Libraries
+### C/C++ Compilers and Libraries
 
 Now, you need to install the C/C++ necessary compilers and other useful libraries.
 
 ```sh
-  $ brew install gcc ccache cmake pkg-config autoconf automake
-
+$ brew install gcc ccache cmake pkg-config autoconf automake
 ```
 
 You can
@@ -223,9 +218,9 @@ ccache version 3.3.4
 You can check also if the OpenMP from GCC is working running the following on terminal:
 
 ```sh
-$ cat &gt; omp-test.c &lt;&lt;"END"
-#include &lt;omp.h&gt;
-#include &lt;stdio.h&gt;
+$ cat > omp-test.c <<"END"
+#include <omp.h>
+#include <stdio.h>
 int main() {
     #pragma omp parallel
     printf("Hello from thread %d, nthreads %d\n", omp_get_thread_num(), omp_get_num_threads());
@@ -248,7 +243,7 @@ Hello from thread 3, nthreads 8
 Hello from thread 7, nthreads 8
 ```
 
-## Miscellaneous graphical libraries -optional
+### Miscellaneous graphical libraries -optional
 
 ```sh
 $ brew install freetype fontconfig pixman gettext
@@ -256,12 +251,12 @@ $ brew install freetype fontconfig pixman gettext
 
 Some of these libraries aren't strictly necessary for R, but they are to install other related apps like QGIS, GRASS or PostGIS. I think that if you don't want to install then you don't need to do it right now, since that software install its on dependencies
 
-## SSL/SSH Libraries -optional {#ssl-ssh-libs}
+### SSL/SSH Libraries -optional {#ssl-ssh-libs}
 
 If you already have Git you probably have OpenSSL, the other two are optional.
 
 ```sh
-  $ brew install openssl libressl libssh2
+$ brew install openssl libressl libssh2
 ```
 
 ```sh
@@ -270,10 +265,9 @@ OpenSSL 1.0.2n  7 Dec 2017
 
 $ /usr/local/opt/libressl/bin/openssl version
 LibreSSL 2.2.7
-
 ```
 
-## Libxml2
+### Libxml2
 
 It's highly recomendable to install this library since it's somehow necessary to install some packages depending on the version of your macOS system. It's really small (10 mb) so you are losing nothing installing it.
 
@@ -282,7 +276,7 @@ $ brew install libxml2
 $ brew link libxml2 --force
 ```
 
-## Boost -optional
+### Boost -optional
 
 [Boost](http://www.boost.org) is one of those libraries that you only install if you program in C/C++. If you want to install it you need to have Libxml2 installed and then proceed as following:
 
@@ -294,14 +288,14 @@ $ brew install boost --with-icu4c --without-single
 Then you can test if it's correctly installed
 
 ```sh
-$ cat &gt; first.cpp &lt;&lt;END
-#include&lt;iostream&gt;
-#include&lt;boost/any.hpp&gt;
+$ cat > first.cpp <<END
+#include<iostream>
+#include<boost/any.hpp>
 int main()
 {
     boost::any a(5);
     a = 1.61803;
-    std::cout &lt;&lt; boost::any_cast&lt;double&gt;(a) &lt;&lt; std::endl;
+    std::cout << boost::any_cast<double>(a) << std::endl;
 }
 END
 clang++ -I/usr/local/include -L/usr/local/lib  -o first first.cpp
@@ -313,17 +307,17 @@ clang++ -I/usr/local/include -L/usr/local/lib  -o first first.cpp
 ```
 
 ```sh
-$ cat &gt; second.cpp &lt;&lt;END
-#include&lt;iostream&gt;
-#include &lt;boost/filesystem.hpp&gt;
+$ cat > second.cpp <<END
+#include<iostream>
+#include <boost/filesystem.hpp>
 int main()
 {
     boost::filesystem::path full_path( boost::filesystem::current_path() );
     if ( boost::filesystem::exists( "second.cpp" ) )
     {
-        std::cout &lt;&lt; "Found second.cpp file in " &lt;&lt; full_path &lt;&lt; std::endl;
+        std::cout << "Found second.cpp file in " << full_path << std::endl;
     } else {
-        std::cerr &lt;&lt; "Argh!, Something not working" &lt;&lt; std::endl;
+        std::cerr << "Argh!, Something not working" << std::endl;
         return 1;
     }
 }
@@ -337,45 +331,42 @@ clang++ -I/usr/local/include -L/usr/local/lib  -o second second.cpp \
 Found second.cpp file in "/Users/brewmaster"
 ```
 
-## GPG & Git
+### GPG & Git
 
-I've already explained how to install [GPG in a previous post](http://luisspuerto.net/2017/11/installing-pgp-signing-for-git-on-macos/) to use it with [Git](http://luisspuerto.net/2017/11/set-rstudio-with-homebrews-git/). How to install Git was also [explained](http://luisspuerto.net/2017/11/set-rstudio-with-homebrews-git/).
+I've already explained how to install [GPG in a previous post](http://luisspuerto.net/2017/11/installing-pgp-signing-for-git-on-macos/) to use it with [Git](http://luisspuerto.net/2017/11/set-rstudio-with-homebrews-git/). How to install Git was also [explained](http://luisspuerto.net/2017/11/set-rstudio-with-homebrews-git/).
 
-## X-Server
+### X-Server
 
 You are going to probably need X-Server down the road.
 
 ```sh
-$ brew cask install xquartz
-
+$ brew cask install xquartz
 ```
 
-## Latex
+### Latex
 
 [Latex](https://en.wikipedia.org/wiki/LaTeX) is a set of applications and libraries to be able to write beautiful mathematical formulas and documents, mainly. But can be use to write any kind of documents.
 
 ```sh
 $ brew cask install mactex
-
 ```
 
-## Java
+### Java
 
 If you don't have [Java](https://en.wikipedia.org/wiki/Java_(programming_language)) installed it's a good moment to do so and to do it with Homebrew.
 
 ```sh
 $ brew cask install java
-
 ```
 
 ```sh
-$ java -version 
+$ java -version
 java version "9.0.1"
 Java(TM) SE Runtime Environment (build 9.0.1+11)
 Java HotSpot(TM) 64-Bit Server VM (build 9.0.1+11, mixed mode)
 ```
 
-## Python
+### Python
 
 It's recommended to install [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) 2 and 3 as a complement to R although R itself doesn't use it.
 
@@ -391,39 +382,36 @@ Python 2.7.10
 rply2 is probably to give you an error untill you install R. You can try to install it right now and if it give you the error install again lately.
 
 ```sh
-$ brew install python3
+$ brew install python3
 $ pip3 install --upgrade pip setuptools wheel
 $ python3 -V # Checking the version
 Python 3.6.4
-
 ```
 
-## R & related
+### R & related
 
 We are going to install some things before we install R itself. [Pandoc](https://en.wikipedia.org/wiki/Pandoc) is really useful when you have R to convert documents in different formats. [Cairo](https://en.wikipedia.org/wiki/Cairo_(graphics)) is a graphical library that can be use for in R and it's need for [QGIS](https://en.wikipedia.org/wiki/QGIS). Libsvg and librsvg are optional
 
 **Important!**: If you want to have R with all the capabilities you need to install Cairo with the instructions in this [post](http://luisspuerto.net/2018/05/installing-r-with-homebrew-with-all-the-capabilities/).
 
 ```sh
-  $ brew install pandoc cairo libsvg librsvg
-
+$ brew install pandoc cairo libsvg librsvg
 ```
 
-### OpenBLAS
+#### OpenBLAS
 
 Let's install OpenBLAS, this is one of the key pieces of this installation.
 
 ```sh
-$ brew install openblas --with-openmp
-
+$ brew install openblas --with-openmp
 ```
 
 Now you can test if OpenBlas has been correctly installed.
 
 ```sh
-$ cat &gt; test-openblas.c &lt;&lt;"END"
-#include &lt;cblas.h&gt;
-#include &lt;stdio.h&gt;
+$ cat > test-openblas.c <<"END"
+#include <cblas.h>
+#include <stdio.h>
 
 void main()
 {
@@ -434,7 +422,7 @@ void main()
   cblas_dgemm(CblasColMajor, CblasNoTrans, CblasTrans,
       3,3,2,1,A, 3, B, 3,2,C,3);
 
-  for(i=0; i&lt;9; i++)
+  for(i=0; i<9; i++)
     printf("%lf ", C[i]);
   printf("\n");
 }
@@ -452,204 +440,282 @@ clang -L/usr/local/opt/openblas/lib \
 11.000000 -9.000000 5.000000 -9.000000 21.000000 -1.000000 5.000000 -1.000000 3.000000
 ```
 
-### Armadillo and other libraries -optional
+#### Armadillo and other libraries -optional
 
-Now, you can also install, if you want, [Armadillo](https://en.wikipedia.org/wiki/Armadillo_(C%2B%2B_library)), which is other library that it's useful if you program in C/C++ and take advantage of OpenBLAS.
+Now, you can also install, if you want, [Armadillo](https://en.wikipedia.org/wiki/Armadillo_(C%2B%2B_library)), which is other library that it's useful if you program in C/C++ and take advantage of OpenBLAS.
 
 ```sh
-  $ brew install eigen armadillo v8-315
+$ brew install eigen armadillo v8-315
 $ brew link v8-315 --force
 ```
 
-You can test Armadillo with the following code (click to expand, the file is long) since the new Armadillo doesn't provide examples, or at least I haven't found them.
+You can test Armadillo with the following code since the new Armadillo doesn't provide examples, or at least I haven't found them.
 
-<pre class="minimize:true lang:sh decode:true" title="Test code for Armadillo">$ cat &gt; example1.cpp &lt;&lt;END
-#include &lt;iostream&gt;
+```sh
+$ cat > example1.cpp <<END
+
+#include
 
 #include "armadillo"
 
 using namespace arma;
+
 using namespace std;
 
-
 int main(int argc, char** argv)
+
   {
-  cout &lt;&lt; "Armadillo version: " &lt;&lt; arma_version::as_string() &lt;&lt; endl;
+
+  cout << "Armadillo version: " << arma_version::as_string() << endl;
 
   // directly specify the matrix size (elements are uninitialised)
+
   mat A(2,3);
 
   // .n_rows = number of rows    (read only)
+
   // .n_cols = number of columns (read only)
-  cout &lt;&lt; "A.n_rows = " &lt;&lt; A.n_rows &lt;&lt; endl;
-  cout &lt;&lt; "A.n_cols = " &lt;&lt; A.n_cols &lt;&lt; endl;
+
+  cout << "A.n_rows = " << A.n_rows << endl;
+
+  cout << "A.n_cols = " << A.n_cols << endl;
 
   // directly access an element (indexing starts at 0)
+
   A(1,2) = 456.0;
 
   A.print("A:");
 
   // scalars are treated as a 1x1 matrix,
+
   // hence the code below will set A to have a size of 1x1
+
   A = 5.0;
+
   A.print("A:");
 
   // if you want a matrix with all elements set to a particular value
-  // the .fill() member function can be used
-  A.set_size(3,3);
-  A.fill(5.0);
-  A.print("A:");
 
+  // the .fill() member function can be used
+
+  A.set_size(3,3);
+
+  A.fill(5.0);
+
+  A.print("A:");
 
   mat B;
 
   // endr indicates "end of row"
-  B &lt;&lt; 0.555950 &lt;&lt; 0.274690 &lt;&lt; 0.540605 &lt;&lt; 0.798938 &lt;&lt; endr
-    &lt;&lt; 0.108929 &lt;&lt; 0.830123 &lt;&lt; 0.891726 &lt;&lt; 0.895283 &lt;&lt; endr
-    &lt;&lt; 0.948014 &lt;&lt; 0.973234 &lt;&lt; 0.216504 &lt;&lt; 0.883152 &lt;&lt; endr
-    &lt;&lt; 0.023787 &lt;&lt; 0.675382 &lt;&lt; 0.231751 &lt;&lt; 0.450332 &lt;&lt; endr;
+
+  B << 0.555950 << 0.274690 << 0.540605 << 0.798938 << endr
+
+    << 0.108929 << 0.830123 << 0.891726 << 0.895283 << endr
+
+    << 0.948014 << 0.973234 << 0.216504 << 0.883152 << endr
+
+    << 0.023787 << 0.675382 << 0.231751 << 0.450332 << endr;
 
   // print to the cout stream
+
   // with an optional string before the contents of the matrix
+
   B.print("B:");
 
-  // the &lt;&lt; operator can also be used to print the matrix
+  // the << operator can also be used to print the matrix
+
   // to an arbitrary stream (cout in this case)
-  cout &lt;&lt; "B:" &lt;&lt; endl &lt;&lt; B &lt;&lt; endl;
+
+  cout << "B:" << endl << B << endl;
 
   // save to disk
+
   B.save("B.txt", raw_ascii);
 
   // load from disk
+
   mat C;
+
   C.load("B.txt");
 
   C += 2.0 * B;
+
   C.print("C:");
 
-
   // submatrix types:
+
   //
+
   // .submat(first_row, first_column, last_row, last_column)
+
   // .row(row_number)
+
   // .col(column_number)
+
   // .cols(first_column, last_column)
+
   // .rows(first_row, last_row)
 
-  cout &lt;&lt; "C.submat(0,0,3,1) =" &lt;&lt; endl;
-  cout &lt;&lt; C.submat(0,0,3,1) &lt;&lt; endl;
+  cout << "C.submat(0,0,3,1) =" << endl;
+
+  cout << C.submat(0,0,3,1) << endl;
 
   // generate the identity matrix
-  mat D = eye&lt;mat&gt;(4,4);
+
+  mat D = eye<mat>(4,4);
 
   D.submat(0,0,3,1) = C.cols(1,2);
+
   D.print("D:");
 
   // transpose
-  cout &lt;&lt; "trans(B) =" &lt;&lt; endl;
-  cout &lt;&lt; trans(B) &lt;&lt; endl;
+
+  cout << "trans(B) =" << endl;
+
+  cout << trans(B) << endl;
 
   // maximum from each column (traverse along rows)
-  cout &lt;&lt; "max(B) =" &lt;&lt; endl;
-  cout &lt;&lt; max(B) &lt;&lt; endl;
+
+  cout << "max(B) =" << endl;
+
+  cout << max(B) << endl;
 
   // maximum from each row (traverse along columns)
-  cout &lt;&lt; "max(B,1) =" &lt;&lt; endl;
-  cout &lt;&lt; max(B,1) &lt;&lt; endl;
+
+  cout << "max(B,1) =" << endl;
+
+  cout << max(B,1) << endl;
 
   // maximum value in B
-  cout &lt;&lt; "max(max(B)) = " &lt;&lt; max(max(B)) &lt;&lt; endl;
+
+  cout << "max(max(B)) = " << max(max(B)) << endl;
 
   // sum of each column (traverse along rows)
-  cout &lt;&lt; "sum(B) =" &lt;&lt; endl;
-  cout &lt;&lt; sum(B) &lt;&lt; endl;
+
+  cout << "sum(B) =" << endl;
+
+  cout << sum(B) << endl;
 
   // sum of each row (traverse along columns)
-  cout &lt;&lt; "sum(B,1) =" &lt;&lt; endl;
-  cout &lt;&lt; sum(B,1) &lt;&lt; endl;
+
+  cout << "sum(B,1) =" << endl;
+
+  cout << sum(B,1) << endl;
 
   // sum of all elements
-  cout &lt;&lt; "sum(sum(B)) = " &lt;&lt; sum(sum(B)) &lt;&lt; endl;
-  cout &lt;&lt; "accu(B)     = " &lt;&lt; accu(B) &lt;&lt; endl;
+
+  cout << "sum(sum(B)) = " << sum(sum(B)) << endl;
+
+  cout << "accu(B)     = " << accu(B) << endl;
 
   // trace = sum along diagonal
-  cout &lt;&lt; "trace(B)    = " &lt;&lt; trace(B) &lt;&lt; endl;
+
+  cout << "trace(B)    = " << trace(B) << endl;
 
   // random matrix -- values are uniformly distributed in the [0,1] interval
-  mat E = randu&lt;mat&gt;(4,4);
+
+  mat E = randu<mat>(4,4);
+
   E.print("E:");
 
-  cout &lt;&lt; endl;
+  cout << endl;
 
   // row vectors are treated like a matrix with one row
+
   rowvec r;
-  r &lt;&lt; 0.59499 &lt;&lt; 0.88807 &lt;&lt; 0.88532 &lt;&lt; 0.19968;
+
+  r << 0.59499 << 0.88807 << 0.88532 << 0.19968;
+
   r.print("r:");
 
   // column vectors are treated like a matrix with one column
+
   colvec q;
-  q &lt;&lt; 0.81114 &lt;&lt; 0.06256 &lt;&lt; 0.95989 &lt;&lt; 0.73628;
+
+  q << 0.81114 << 0.06256 << 0.95989 << 0.73628;
+
   q.print("q:");
 
   // dot or inner product
-  cout &lt;&lt; "as_scalar(r*q) = " &lt;&lt; as_scalar(r*q) &lt;&lt; endl;
 
+  cout << "as_scalar(rq) = " << as_scalar(rq) << endl;
 
   // outer product
-  cout &lt;&lt; "q*r =" &lt;&lt; endl;
-  cout &lt;&lt; q*r &lt;&lt; endl;
+
+  cout << "q*r =" << endl;
+
+  cout << q*r << endl;
 
   // multiply-and-accumulate operation
+
   // (no temporary matrices are created)
-  cout &lt;&lt; "accu(B % C) = " &lt;&lt; accu(B % C) &lt;&lt; endl;
+
+  cout << "accu(B % C) = " << accu(B % C) << endl;
 
   // sum of three matrices (no temporary matrices are created)
+
   mat F = B + C + D;
+
   F.print("F:");
 
   // imat specifies an integer matrix
+
   imat AA;
+
   imat BB;
 
-  AA &lt;&lt; 1 &lt;&lt; 2 &lt;&lt; 3 &lt;&lt; endr &lt;&lt; 4 &lt;&lt; 5 &lt;&lt; 6 &lt;&lt; endr &lt;&lt; 7 &lt;&lt; 8 &lt;&lt; 9;
-  BB &lt;&lt; 3 &lt;&lt; 2 &lt;&lt; 1 &lt;&lt; endr &lt;&lt; 6 &lt;&lt; 5 &lt;&lt; 4 &lt;&lt; endr &lt;&lt; 9 &lt;&lt; 8 &lt;&lt; 7;
+  AA << 1 << 2 << 3 << endr << 4 << 5 << 6 << endr << 7 << 8 << 9;
+
+  BB << 3 << 2 << 1 << endr << 6 << 5 << 4 << endr << 9 << 8 << 7;
 
   // comparison of matrices (element-wise)
+
   // output of a relational operator is a umat
-  umat ZZ = (AA &gt;= BB);
+
+  umat ZZ = (AA >= BB);
+
   ZZ.print("ZZ =");
 
-
   // 2D field of arbitrary length row vectors
+
   // (fields can also store abitrary objects, e.g. instances of std::string)
-  field&lt;rowvec&gt; xyz(3,2);
+
+  field<rowvec> xyz(3,2);
 
   xyz(0,0) = randu(1,2);
+
   xyz(1,0) = randu(1,3);
+
   xyz(2,0) = randu(1,4);
+
   xyz(0,1) = randu(1,5);
+
   xyz(1,1) = randu(1,6);
+
   xyz(2,1) = randu(1,7);
 
-  cout &lt;&lt; "xyz:" &lt;&lt; endl;
-  cout &lt;&lt; xyz &lt;&lt; endl;
+  cout << "xyz:" << endl;
 
+  cout << xyz << endl;
 
   // cubes ("3D matrices")
+
   cube Q( B.n_rows, B.n_cols, 2 );
 
   Q.slice(0) = B;
+
   Q.slice(1) = 2.0 * B;
 
   Q.print("Q:");
 
-
   return 0;
+
   }
 
 END
 
 clang++   -O2   -o example1  example1.cpp  -larmadillo -framework Accelerate
+
 ./example1
 ```
 
@@ -790,17 +856,16 @@ You can also test V8
 ```sh
 $ echo 'quit()' | v8
 V8 version 3.15.11.18 [sample shell]
-
 ```
 
-### R
+#### R
 
 Important!: If you want to have R with all the capabilities you have to follow the instructions in this [post](http://luisspuerto.net/2018/05/installing-r-with-homebrew-with-all-the-capabilities/), then you can continue.
 
 Let's finally install R.
 
 ```sh
-$ brew install R --with-openblas --with-java
+$ brew install R --with-openblas --with-java
 ```
 
 Then if you are using english (american english) as your main language I recommend you to run the following:
@@ -809,39 +874,36 @@ Then if you are using english (american english) as your main language I recomme
 $ defaults write org.R-project.R force.LANG en_US.UTF-8
 ```
 
-### Java9+R
+#### Java9+R
 
 First you have to insert the following line in your Zsh and/or Bash profiles.
 
 ```sh
 # For zsh
 echo '# Setting $JAVA_HOME
-export JAVA_HOME="$(/usr/libexec/java_home)"' &gt;&gt; ~/.zshrc
+export JAVA_HOME="$(/usr/libexec/java_home)"' >> ~/.zshrc
 
 # For bash
 echo '# Setting $JAVA_HOME
-export JAVA_HOME="$(/usr/libexec/java_home)"' &gt;&gt; ~/.bash_profile
+export JAVA_HOME="$(/usr/libexec/java_home)"' >> ~/.bash_profile
 ```
 
 And then run the following command in the terminal:
 
 ```sh
 $ sudo R CMD javareconf JAVA_CPPFLAGS='-I/System/Library/Frameworks/JavaVM.framework/Headers -I/Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/' # this is a specific command for Java 9.0.1
-
 ```
 
 It seems that with Java 9.0.4 and R 3.4.4 you can run instead just:
 
 ```sh
 $ sudo R CMD javareconf
-
 ```
 
 or perhaps:
 
 ```sh
 $ sudo R CMD javareconf JAVA_CPPFLAGS='-I/$JAVA_HOME'
-
 ```
 
 You have to get something similar to this:
@@ -871,13 +933,13 @@ Updating Java configuration in /usr/local/Cellar/r/3.4.3/lib/R
 Done.
 ```
 
-### Folder for R Packages
+#### Folder for R Packages
 
 Let's create our own folder to store the installed packages for R. This way R, or us, doesn't have to move all the packages every time we install a new R version. Run the following in terminal.
 
 ```sh
 $ mkdir -p $HOME/Library/R/3.x/library
-$ cat &gt; $HOME/.Renviron &lt;&lt;END
+$ cat > $HOME/.Renviron <<END
 R_LIBS_USER=$HOME/Library/R/3.x/library
 END
 ```
@@ -886,36 +948,33 @@ You should also add this variable to your zsh and/or bash profiles.
 
 ```sh
   # For zsh
-echo 'export R_LIBS_USER=$HOME/Library/R/3.x/library' &gt;&gt; ~/.zshrc
+echo 'export R_LIBS_USER=$HOME/Library/R/3.x/library' >> ~/.zshrc
 
 # For bash
-echo 'export R_LIBS_USER=$HOME/Library/R/3.x/library' &gt;&gt; ~/.bash_profile
-
+echo 'export R_LIBS_USER=$HOME/Library/R/3.x/library' >> ~/.bash_profile
 ```
 
-### LLVM
+#### LLVM
 
-[LLVM](https://en.wikipedia.org/wiki/LLVM) or _Low Level Virtual Machine _is a library that allow us to compile faster some R packages using OpenMP and also make that those packages use OpenMP when we are normally using R. To install it you run on your terminal the following:
+[LLVM](https://en.wikipedia.org/wiki/LLVM) or _Low Level Virtual Machine _is a library that allow us to compile faster some R packages using OpenMP and also make that those packages use OpenMP when we are normally using R. To install it you run on your terminal the following:
 
 ```sh
-$ brew install llvm 
-
+$ brew install llvm
 ```
 
 Then insert the LLVM location to your path in your Zsh and/or Bash profiles:
 
 ```sh
-  # For zsh
-echo 'export PATH=/usr/local/opt/llvm/bin:$PATH' &gt;&gt; ~/.zshrc
+# For zsh
+echo 'export PATH=/usr/local/opt/llvm/bin:$PATH' >> ~/.zshrc
 
 # For bash
-echo 'export PATH=/usr/local/opt/llvm/bin:$PATH' &gt;&gt; ~/.bash_profile
-
+echo 'export PATH=/usr/local/opt/llvm/bin:$PATH' >> ~/.bash_profile
 ```
 
-### Data Table Package
+#### Data Table Package
 
-The package [Data Table](https://github.com/Rdatatable/data.table/wiki) need a [specific](https://github.com/Rdatatable/data.table/wiki/Installation#openmp-enabled-compiler-for-mac) [makevars](https://www.rdocumentation.org/packages/tools/versions/3.4.3/topics/makevars) file. Makevars file is the file that tells R how and with what libraries it has to compile the packages we download from source. So we are going to install Data Table first, with that specific configuration and then set the final makevars file.
+The package [Data Table](https://github.com/Rdatatable/data.table/wiki) need a [specific](https://github.com/Rdatatable/data.table/wiki/Installation#openmp-enabled-compiler-for-mac) [makevars](https://www.rdocumentation.org/packages/tools/versions/3.4.3/topics/makevars) file. Makevars file is the file that tells R how and with what libraries it has to compile the packages we download from source. So we are going to install Data Table first, with that specific configuration and then set the final makevars file.
 
 ```sh
 $ mkdir ~/.R
@@ -925,19 +984,19 @@ CXX=/usr/local/opt/llvm/bin/clang++ -fopenmp
 CFLAGS=-g -O3 -Wall -pedantic -std=gnu99 -mtune=native -pipe
 CXXFLAGS=-g -O3 -Wall -pedantic -std=c++11 -mtune=native -pipe
 LDFLAGS=-L/usr/local/opt/gettext/lib -L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib
-CPPFLAGS=-I/usr/local/opt/gettext/include -I/usr/local/opt/llvm/include" &gt;&gt; ~/.R/Makevars
+CPPFLAGS=-I/usr/local/opt/gettext/include -I/usr/local/opt/llvm/include" >> ~/.R/Makevars
 ```
 
 Now we can install Data Table package on terminal. To do so just run on terminal:
 
 ```sh
-$ R --vanilla &lt;&lt; EOF
+$ R --vanilla << EOF
 install.packages('data.table', repos='http://cran.us.r-project.org')
 q()
 EOF
 ```
 
-### Setting the final Makevars
+#### Setting the final Makevars
 
 First, we delete the previous makevars file.
 
@@ -954,13 +1013,12 @@ CXX=/usr/local/opt/llvm/bin/clang++
 CFLAGS=-g -O3 -Wall -pedantic -std=gnu99 -mtune=native -pipe
 CXXFLAGS=-g -O3 -Wall -pedantic -std=c++11 -mtune=native -pipe
 LDFLAGS=-L/usr/local/opt/gettext/lib -L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib
-CPPFLAGS=-I/usr/local/opt/gettext/include -I/usr/local/opt/llvm/include" &gt;&gt; ~/.R/Makevars
-
+CPPFLAGS=-I/usr/local/opt/gettext/include -I/usr/local/opt/llvm/include" >> ~/.R/Makevars
 ```
 
 As you probably have noticed the change is just the `-fopenmp` flag on the second line. In case you have to reinstall, or update Data Table, you just have to add that flag and then delete it. Really easy and you can even do it from RStudio.
 
-## RStudio
+### RStudio
 
 When you install R from Homebrew and you compile it, you don't have anymore the R shell as an application on your Applications folder. But you can install any other graphical interface like [RStudio](https://www.rstudio.com). To do it you just run in your terminal:
 
@@ -970,30 +1028,29 @@ $ brew cask install rstudio
 
 Usually RStudio is able to recognize R install and you don't need to do anything else.
 
-## Additional related languages -optional
+### Additional related languages -optional
 
 You can also install some additional related languages like:
 
-### Node.js {#node-js}
+#### Node.js {#node-js}
 
-From Wikipedia: _[Node.js](https://en.wikipedia.org/wiki/Node.js) is an [open-source](https://en.wikipedia.org/wiki/Open-source_software "Open-source software"), [cross-platform](https://en.wikipedia.org/wiki/Cross-platform "Cross-platform") [JavaScript](https://en.wikipedia.org/wiki/JavaScript "JavaScript") [run-time environment](https://en.wikipedia.org/wiki/Runtime_system "Runtime system") for executing JavaScript code [server-side](https://en.wikipedia.org/wiki/Server-side "Server-side")._ To install it just run:
+From Wikipedia: _[Node.js](https://en.wikipedia.org/wiki/Node.js) is an [open-source](https://en.wikipedia.org/wiki/Open-source_software "Open-source software"), [cross-platform](https://en.wikipedia.org/wiki/Cross-platform "Cross-platform") [JavaScript](https://en.wikipedia.org/wiki/JavaScript "JavaScript") [run-time environment](https://en.wikipedia.org/wiki/Runtime_system "Runtime system") for executing JavaScript code [server-side](https://en.wikipedia.org/wiki/Server-side "Server-side")._ To install it just run:
 
 ```sh
-$ brew install node phantomjs casperjs
+$ brew install node phantomjs casperjs
 ```
 
-### Scala
+#### Scala
 
-From Wikipedia: _[Scala](https://en.wikipedia.org/wiki/Scala_(programming_language)) is a [general-purpose](https://en.wikipedia.org/wiki/General-purpose_programming_language "General-purpose programming language") [programming language](https://en.wikipedia.org/wiki/Programming_language "Programming language") providing support for [functional programming](https://en.wikipedia.org/wiki/Functional_programming "Functional programming") and a strong [static](https://en.wikipedia.org/wiki/Static_typing "Static typing"){.mw-redirect} [type system](https://en.wikipedia.org/wiki/Type_system "Type system")_. To install it just run in your terminal:
+From Wikipedia: _[Scala](https://en.wikipedia.org/wiki/Scala_(programming_language)) is a [general-purpose](https://en.wikipedia.org/wiki/General-purpose_programming_language "General-purpose programming language") [programming language](https://en.wikipedia.org/wiki/Programming_language "Programming language") providing support for [functional programming](https://en.wikipedia.org/wiki/Functional_programming "Functional programming") and a strong [static](https://en.wikipedia.org/wiki/Static_typing "Static typing"){.mw-redirect} [type system](https://en.wikipedia.org/wiki/Type_system "Type system")_. To install it just run in your terminal:
 
 ```sh
 $ brew install scala
-
 ```
 
-### golang
+#### golang
 
-From Wikipedia: _[Go](https://en.wikipedia.org/wiki/Go_(programming_language)) (often referred to as golang) is a [programming language](https://en.wikipedia.org/wiki/Programming_language "Programming language") created at [Google](https://en.wikipedia.org/wiki/Google "Google")<sup id="cite_ref-12" class="reference"><a href="https://en.wikipedia.org/wiki/Go_(programming_language)#cite_note-12">[12]</a></sup> in 2009 by Robert Griesemer, [Rob Pike](https://en.wikipedia.org/wiki/Rob_Pike "Rob Pike"), and [Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson "Ken Thompson").<sup id="cite_ref-langfaq_10-1" class="reference"><a href="https://en.wikipedia.org/wiki/Go_(programming_language)#cite_note-langfaq-10">[10]</a></sup> It is a [compiled](https://en.wikipedia.org/wiki/Compiler "Compiler"), [statically typed](https://en.wikipedia.org/wiki/Static_typing "Static typing"){.mw-redirect} language in the tradition of [Algol](https://en.wikipedia.org/wiki/ALGOL "ALGOL") and [C](https://en.wikipedia.org/wiki/C_(programming_language) "C (programming language)"), with [garbage collection](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science) "Garbage collection (computer science)"), limited [structural typing](https://en.wikipedia.org/wiki/Structural_type_system "Structural type system"),<sup id="cite_ref-structural_typing_3-1" class="reference"><a href="https://en.wikipedia.org/wiki/Go_(programming_language)#cite_note-structural_typing-3">[3]</a></sup> [memory safety](https://en.wikipedia.org/wiki/Memory_safety "Memory safety") features and [CSP](https://en.wikipedia.org/wiki/Communicating_sequential_processes "Communicating sequential processes")-style [concurrent programming](https://en.wikipedia.org/wiki/Concurrent_programming "Concurrent programming"){.mw-redirect} features added._ To install it just run in your terminal:
+From Wikipedia: _[Go](https://en.wikipedia.org/wiki/Go_(programming_language)) (often referred to as golang) is a [programming language](https://en.wikipedia.org/wiki/Programming_language "Programming language") created at [Google](https://en.wikipedia.org/wiki/Google "Google")<sup id="cite_ref-12" class="reference"><a href="https://en.wikipedia.org/wiki/Go_(programming_language)#cite_note-12">[12]</a></sup> in 2009 by Robert Griesemer, [Rob Pike](https://en.wikipedia.org/wiki/Rob_Pike "Rob Pike"), and [Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson "Ken Thompson").<sup id="cite_ref-langfaq_10-1" class="reference"><a href="https://en.wikipedia.org/wiki/Go_(programming_language)#cite_note-langfaq-10">[10]</a></sup> It is a [compiled](https://en.wikipedia.org/wiki/Compiler "Compiler"), [statically typed](https://en.wikipedia.org/wiki/Static_typing "Static typing"){.mw-redirect} language in the tradition of [Algol](https://en.wikipedia.org/wiki/ALGOL "ALGOL") and [C](https://en.wikipedia.org/wiki/C_(programming_language) "C (programming language)"), with [garbage collection](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science) "Garbage collection (computer science)"), limited [structural typing](https://en.wikipedia.org/wiki/Structural_type_system "Structural type system"),<sup id="cite_ref-structural_typing_3-1" class="reference"><a href="https://en.wikipedia.org/wiki/Go_(programming_language)#cite_note-structural_typing-3">[3]</a></sup> [memory safety](https://en.wikipedia.org/wiki/Memory_safety "Memory safety") features and [CSP](https://en.wikipedia.org/wiki/Communicating_sequential_processes "Communicating sequential processes")-style [concurrent programming](https://en.wikipedia.org/wiki/Concurrent_programming "Concurrent programming"){.mw-redirect} features added._ To install it just run in your terminal:
 
 ```sh
 $ brew install golang
@@ -1007,17 +1064,17 @@ echo '## Path for Golang
 export GOPATH=$HOME/golang
 export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin
-export PATH=$PATH:$GOROOT/bin' &gt;&gt; ~/.zshrc
+export PATH=$PATH:$GOROOT/bin' >> ~/.zshrc
 
 # For bash
 echo '## Path for Golang
 export GOPATH=$HOME/golang
 export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin
-export PATH=$PATH:$GOROOT/bin' &gt;&gt; ~/.bash_profile
+export PATH=$PATH:$GOROOT/bin' >> ~/.bash_profile
 ```
 
-## Some GIS Libraries & Soft -optional
+### Some GIS Libraries & Soft -optional
 
 You can also install some GIS libraries. This libraries could be mandatory if you are going to install geographical packages:
 
@@ -1028,7 +1085,7 @@ $ brew install gdal2 --with-complete --with-opencl --with-armadillo --with-unsup
 $ brew install postgis --with-gui
 ```
 
-## Shell Profiles
+### Shell Profiles
 
 You've been adding things to your Zsh and/or Bash profiles. I recommend you to make those profiles tidy, it's going to be easier to modify things in the future.
 
@@ -1075,6 +1132,6 @@ $ open -a TextEdit ~/.zshrc
 $ open -a TextEdit ~/.bash_profile
 ```
 
-# The End
+## The End
 
 Now you can begin to use your new R.

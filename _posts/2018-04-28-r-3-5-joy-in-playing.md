@@ -2,8 +2,8 @@
 title: 'R 3.5 "Joy in Playing"'
 date: 2018-04-28 18:52:30
 header: 
-  overlay_image: /assets/images/blog/4421de17ce2dc4cd3843ba00b224fbe0-header.jpeg
-  teaser: /assets/images/blog/4421de17ce2dc4cd3843ba00b224fbe0-header.jpeg
+  overlay_image: /assets/images/blog/2018/4421de17ce2dc4cd3843ba00b224fbe0-header.jpeg
+  teaser: /assets/images/blog/2018/4421de17ce2dc4cd3843ba00b224fbe0-header.jpeg
 categories:
   - Professional
   - RStats
@@ -14,7 +14,7 @@ tags:
   - RSoft
   - RStats
 ---
-{% include figure image_path="/assets/images/blog/4421de17ce2dc4cd3843ba00b224fbe0.jpg" alt="The joy is (in the) playing" caption="The joy is (in the) playing" %}{: .align-center}
+{% include figure image_path="/assets/images/blog/2018/4421de17ce2dc4cd3843ba00b224fbe0.jpg" alt="The joy is (in the) playing" caption="The joy is (in the) playing" %}{: .align-center}
 
 Last Monday, 23rd of April, [R was updated](https://stat.ethz.ch/pipermail/r-announce/2018/000628.html) to its version 3.5, codenamed The _Joy in Playing_, which as the rest of the releases, make reference to a Peanuts' cartoon.
 

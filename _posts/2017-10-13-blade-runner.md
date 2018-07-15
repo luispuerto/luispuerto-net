@@ -1,10 +1,9 @@
 ---
-id: 366
 title: Blade Runner
-date: 2017-10-13T07:38:58+00:00
-guid: http://luisspuerto.net/?p=366
-permalink: /2017/10/blade-runner/
-image: /wp-content/uploads/2017/10/blade-runner.jpg
+date: 2017-10-13 07:38:58
+header: 
+  image: assets/images/blog/2018/blade-runner.jpg
+  teaser: assets/images/blog/2018/blade-runner.jpg
 categories:
   - Movies
   - Personal
@@ -22,7 +21,7 @@ The interpretation and themes of the movie are endless, as you can read in the [
   * The previous point can be clone, if you excuse the redundancy, for **robots and artificial intelligence**. If at any point we'll be able to get birth to a machine that it's intelligent _enough_&nbsp;(in whatever quantity we feel it should be), what are the rights of that machine? Does it have entity?
   * **Empathy**… Deckard feels empathy for those he hunts down and probably that was the reason because he left the job in the first place.
   * **Love**… _interracial love_, specifically love between a replicant, a thing without rights, and an "_alleged_" human. We have to take into account that replicants doesn't have emotions, and it's something they develop little by little over their life and for that reason they usually have a really short life. The development of those emotions make them dangerous. Deckard is able to develop that felling on Rachel. Is love that powerful?
-  * The **<del><em>sparsity</em></del>&nbsp;_ephemeral_****&nbsp;of life[<sup>1</sup>](#fn1)**, or how life is too short and not enough. How replicants life in constant fear of dying since they don't know their conception or expiration dates. Also, the importance of your.
+  * The **~~*sparsity*~~ _ephemeral[^1]_** or how life is too short and not enough. How replicants life in constant fear of dying since they don't know their conception or expiration dates. Also, the importance of your.
   * The notion that we are our **memories** and experiences, and how your personality is developed through them. How do you know that your memories are yours and not someone's else.
   * **Philosophical and religious symbolism** relating replicants with angels and Roy with&nbsp;[Nietzsche's Superman](https://en.wikipedia.org/wiki/Übermensch).
   * Blade Runner's World is **environmentally** destroyed and totally **globalized**. The climate in Los Angeles has change drastically and the population there is a mixture of cultures and languages. Even some of then speak a kind of _neolingua_ or _interligua_ make of different languages.
@@ -32,9 +31,7 @@ There are other details that make the movie a masterpiece, from my point of view
 
 All of these details make it an almost perfect movie. Perfection doesn't exist, but some movies as this one are close.
 
-<div class="jetpack-video-wrapper">
-  <span class="embed-youtube" style="text-align:center; display: block;"></span>
-</div>
+{% include video id="skiNUaOS3mg" provider="youtube" %}
 
 On the contrary, its continuation, Blade Runner 2049, lacks of all of these themes or barely develop or touch them. The only new one developed is the possibility for replicants to bear children, something that would make then more human. The story is more flat or at least, and in my opinion, much more less complex and detailed. No philosophical or religious implications this time, or at least I haven't perceived them (I can be wrong though).
 
@@ -44,4 +41,4 @@ Anyhow… usually magic is difficult to make to happen and this time didn't happ
 
 * * *
 
-<a id=fn1>1.</a> Update 10th November 2017: When I wrote his post I was looking for this specific work but I could find it… I had it in the tip of my tongue but never came out. Now, it came to my mind like an act of [magic](https://imgur.com/gallery/YsbKHg1).
+[^1]: Update 10th November 2017: When I wrote his post I was looking for this specific work but I could find it… I had it in the tip of my tongue but never came out. Now, it came to my mind like an act of [magic](https://imgur.com/gallery/YsbKHg1).

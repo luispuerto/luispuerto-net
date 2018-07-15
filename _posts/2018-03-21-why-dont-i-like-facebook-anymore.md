@@ -1,10 +1,9 @@
 ---
-id: 1661
 title: Why don't I like Facebook anymore?
-date: 2018-03-21T17:01:12+00:00
-guid: http://luisspuerto.net/?p=1661
-permalink: /2018/03/why-dont-i-like-facebook-anymore/
-image: /wp-content/uploads/2018/03/Facebook-dislike.jpg
+date: 2018-03-21 17:01:12
+header:
+  overlay_image: assets/images/blog/2018/Facebook-dislike.jpg
+  teaser: assets/images/blog/2018/Facebook-dislike.jpg
 categories:
   - Personal
   - Technology
@@ -15,25 +14,13 @@ tags:
   - privacy
   - social media
 ---
-<div id="attachment_1723" style="width: 345px" class="wp-caption alignleft">
-  <a href="http://luisspuerto.net/wp-content/uploads/2018/03/delete-facebook.png"><img class="wp-image-1723" src="http://luisspuerto.net/wp-content/uploads/2018/03/delete-facebook.png" alt="" width="335" height="178" srcset="http://luisspuerto.net/wp-content/uploads/2018/03/delete-facebook.png 1390w, http://luisspuerto.net/wp-content/uploads/2018/03/delete-facebook-300x159.png 300w, http://luisspuerto.net/wp-content/uploads/2018/03/delete-facebook-768x408.png 768w, http://luisspuerto.net/wp-content/uploads/2018/03/delete-facebook-1024x544.png 1024w, http://luisspuerto.net/wp-content/uploads/2018/03/delete-facebook-1216x646.png 1216w, http://luisspuerto.net/wp-content/uploads/2018/03/delete-facebook-471x250.png 471w" sizes="(max-width: 335px) 100vw, 335px" /></a>
-
-  <p class="wp-caption-text">
-    #deletefacebook from <a href="https://techcrunch.com/2018/03/19/deletefacebook/">TechCrunch post</a>.
-  </p>
-</div>
+{% include figure image_path="assets/images/blog/2018/delete-facebook.png" alt="#deletefacebook from [TechCrunch post](https://techcrunch.com/2018/03/19/deletefacebook/)." caption="#deletefacebook from [TechCrunch post](https://techcrunch.com/2018/03/19/deletefacebook/)." %} 
 
 It's funny, but I was on my way to write this post about why I don't like Facebook anymore and suddenly the [Cambridge Analytica](https://cambridgeanalytica.org) [scandal](https://news.google.com/news/story/d8ZWQzE76OKMXAMoFhodT8XT5u4oM?ned=us&hl=en&gl=US) about Facebook just explode the last weekend. At the moment of writing this post, the front page of Reddit has a good number of posts about the scandal and [r/Technology](https://www.reddit.com/r/technology/) —[the screenshot](http://luisspuerto.net/wp-content/uploads/2018/03/Technology-2018-03-20-10-09-37-UTC.png)— is full of post about the issue. Not to mention that are also a couple of good posts in [r/Politics](https://www.reddit.com/r/technology/), [r/Worldnews](https://www.reddit.com/r/worldnews/) and [r/News](https://www.reddit.com/r/news/). And of course [all over the Internet](https://news.google.com/news/story/d8ZWQzE76OKMXAMoFhodT8XT5u4oM?ned=us&hl=en&gl=US) too. There is even a hashtag in Twitter —[#DeleteFacebook](https://twitter.com/search?q=%20%23DeleteFacebook&src=typd)— with an even other hashtags associated —like [#cambridgeanalytics](https://twitter.com/hashtag/cambridgeanalytics?src=rela)— where people look for advice to delete their data from Facebook accounts and are vowing they are going to delete their accounts. All of this scandal started —I think— with [this article on The Guardian](https://www.theguardian.com/news/2018/mar/17/cambridge-analytica-facebook-influence-us-election), where an ex-employee and co-founder of [Cambridge Analytica](https://cambridgeanalytica.org) denounced how they harvested information from about **50 million** of Facebook accounts. Not so much, if you take into account that Facebook has [2.2. billion of users](https://en.wikipedia.org/wiki/Facebook).
 
 All of this touches me a little bit closer, since I really believe that [Data Science](http://luisspuerto.net/tag/data-science/) —yes this is what Cambridge Analytica was doing, Data Science— is here to help people to improve their lives and to understand better our world and lives, not to try to swing elections. Basically, what they were doing was to understand the psychological profiles of those Facebook profiles and then they crafted messages that appealed to their most inner core values to make them vote or change their vote in the elections. In other words “information warfare” at the service of political ideologies, or perhaps in this case not even that, just at the service of the powerful. Something, that surprisingly —or unsurprisingly— has been already depicted [on media](https://www.youtube.com/watch?v=_Qx3pg0_-d4).
 
-<div id="attachment_1716" style="width: 354px" class="wp-caption alignright">
-  <a href="http://luisspuerto.net/wp-content/uploads/2018/03/957ca3a8c332c99c6732f298c426a305.jpg"><img class=" wp-image-1716" src="http://luisspuerto.net/wp-content/uploads/2018/03/957ca3a8c332c99c6732f298c426a305.jpg" alt="" width="344" height="258" srcset="http://luisspuerto.net/wp-content/uploads/2018/03/957ca3a8c332c99c6732f298c426a305.jpg 600w, http://luisspuerto.net/wp-content/uploads/2018/03/957ca3a8c332c99c6732f298c426a305-300x225.jpg 300w, http://luisspuerto.net/wp-content/uploads/2018/03/957ca3a8c332c99c6732f298c426a305-480x360.jpg 480w, http://luisspuerto.net/wp-content/uploads/2018/03/957ca3a8c332c99c6732f298c426a305-333x250.jpg 333w" sizes="(max-width: 344px) 100vw, 344px" /></a>
-
-  <p class="wp-caption-text">
-    I bet these two don't have a Facebook account
-  </p>
-</div>
+{% include figure image_path="assets/images/blog/2018/957ca3a8c332c99c6732f298c426a305.jpg" alt="I bet these two don't have a Facebook account" caption="I bet these two don't have a Facebook account" %}{: .align-center} 
 
 However, this is not a post about how bad Facebook is, about your privacy or conspiracy theories about how they  and other social media platforms and networks want to harvest your data to sell it and to control you. Don't worry, I'm not going to ask you to delete your Facebook, Twitter, Google+ or [put here whatever social network you are concerned about] accounts, get a tinfoil hat and hide in your basement. That is totally up to you, and how crazy you are about the issue, and I really think it's a really personal decision. I still believe that social networks, Facebook included, are services that really can help us to connect with other people all over the world, organize events or make us discover what is going on in our city, university or whatever social group or circle you are involved.
 
@@ -49,13 +36,7 @@ Facebook is designed to share small pieces of text without almost any formatting
 
 It's true that you can share other content and not only photos in Facebook, but I find other networks more suitable to do it. If I just want to share a couple of photos, usually Instagram fits the bill much better and if want to share a whole album Flickr looks better suited for that.
 
-<div id="attachment_1733" style="width: 523px" class="wp-caption aligncenter">
-  <a href="http://luisspuerto.net/wp-content/uploads/2018/03/Screen-Shot-2018-03-20-at-15.49.51.png"><img class="wp-image-1733 size-full" src="http://luisspuerto.net/wp-content/uploads/2018/03/Screen-Shot-2018-03-20-at-15.49.51.png" alt="" width="513" height="337" srcset="http://luisspuerto.net/wp-content/uploads/2018/03/Screen-Shot-2018-03-20-at-15.49.51.png 513w, http://luisspuerto.net/wp-content/uploads/2018/03/Screen-Shot-2018-03-20-at-15.49.51-300x197.png 300w, http://luisspuerto.net/wp-content/uploads/2018/03/Screen-Shot-2018-03-20-at-15.49.51-381x250.png 381w" sizes="(max-width: 513px) 100vw, 513px" /></a>
-
-  <p class="wp-caption-text">
-    Facebook update box
-  </p>
-</div>
+{% include figure image_path="assets/images/blog/2018/Screen-Shot-2018-03-20-at-15.49.51.png" alt="Facebook update box" caption="Facebook update box" %}{: .align-center}
 
 Before Facebook came out that was the way we shared content, using multiple open services. After ponder how Facebook has contributed to share that content I think that with nothing positive or worthy. More the contrary, our content now is trapped in a platform that unless you have an account you see or share with others. It's stuck there forever.
 
@@ -77,7 +58,9 @@ For me the most annoying thing are when Facebook pretend that an advertisement c
 
 # Toxic or silly conversation
 
-[<img class="alignleft size-full wp-image-1740" src="http://luisspuerto.net/wp-content/uploads/2018/03/iur.gif" alt="" width="250" height="178" />](http://luisspuerto.net/wp-content/uploads/2018/03/iur.gif)Facebook has become a political tool, proof of this is just the last weekend scandal about Cambridge Analytical, and that is the less obvious way. And I say less obvious because they were doing it on the hiding.  However, there're much most obvious ways to use Facebook —or Twitter— as a political tool. There is an incredible amount of pages and groups which aim is to <del>discuss politics</del> promote political ideas, or rather, be a battering ram against the opposite political group. There is a lot of toxic people and conversation there and a lot of disrespect for other. Besides, conversations can get pretty hairy easily, and you can easily be called names quick just to express your opinion with respect. Suddenly, people get angry or offended really fast and they don't behave like they were talking to other human being but just to their computers. Computers and technology facilitate communication, but it also make it easy to forget that in the other side there is someone with feelings.
+{% include figure image_path="assets/images/blog/2018/iur.gif" %}{: .align-left} 
+
+Facebook has become a political tool, proof of this is just the last weekend scandal about Cambridge Analytical, and that is the less obvious way. And I say less obvious because they were doing it on the hiding.  However, there're much most obvious ways to use Facebook —or Twitter— as a political tool. There is an incredible amount of pages and groups which aim is to <del>discuss politics</del> promote political ideas, or rather, be a battering ram against the opposite political group. There is a lot of toxic people and conversation there and a lot of disrespect for other. Besides, conversations can get pretty hairy easily, and you can easily be called names quick just to express your opinion with respect. Suddenly, people get angry or offended really fast and they don't behave like they were talking to other human being but just to their computers. Computers and technology facilitate communication, but it also make it easy to forget that in the other side there is someone with feelings.
 
 On the other hand, Facebook is full of content that doesn't have any interested for me and due the way Facebook is design it ended in my timeline. I really care about my friends and what is going on with their lives,  but I even care more when we are able to be together in the same spacetime, have a beer and talk. In other words, meaningful and real social interaction.
 

@@ -1,9 +1,9 @@
 ---
 title: Installing R with Homebrew with all the capabilities
-date: 2018-05-11 11:57:06 
-header: 
-  overlay_image: assets/images/blog/R-Homebrew.jpg
-  teaser: assets/images/blog/R-Homebrew.jpg
+date: 2018-05-11 11:57:06
+header:
+  overlay_image: assets/images/blog/2018/R-Homebrew.jpg
+  teaser: assets/images/blog/2018/R-Homebrew.jpg
 categories:
   - Professional
   - RStats
@@ -22,7 +22,7 @@ $ brew cask install r-app
 
 However, if you install that way you can't take advantage of [OpenBlas and OpenMP](http://luisspuerto.net/2018/01/install-r-100-homebrew-edition-with-openblas-openmp-my-version/#openblas-openmp) which really enhance the speed of R processing. Well, you can take advantage of OpenMP with CRAN install if you use the [coatless professor method](http://luisspuerto.net/2018/01/install-r-100-homebrew-edition-with-openblas-openmp-my-version/#openblas-openmp).
 
-# Getting all the capabilities
+## Getting all the capabilities
 
 To make this possible we are going to install/reinstall R, and Cairo, with the formulae [Seth Fore](https://github.com/sethrfore) has in his tap, <span style="font-size: 12pt;"><span class="author"><a class="url fn" href="https://github.com/sethrfore" rel="author">sethrfore</a></span><span class="path-divider">/</span><a href="https://github.com/sethrfore/homebrew-r-srf" data-pjax="#js-repo-pjax-container">homebrew-r-srf</a>. These formulae are basically the same on </span><span class="author"><a class="url fn" href="https://github.com/brewsci" rel="author">brewsci</a></span><span class="path-divider">/</span><a href="https://github.com/brewsci/homebrew-science" data-pjax="#js-repo-pjax-container">homebrew-science</a>, which is a legacy tap (no longer updated), which we all were using to install R with Homebrew before they merge everything to Core. Seth updated both formulae for us, so we can enjoy the last version of R and Cairo while not loosing any capability.
 
@@ -65,7 +65,7 @@ When Cairo finish to build you can proceed with R.
 $ brew install sethrfore/r-srf/r --with-openblas --with-java --with-cairo --with-libtiff --with-pango
 ```
 
-To use the Pango flag `--with-pango` you must have installed in your system [Pango](http://www.pango.org) `brew install pango` .
+To use the Pango flag `--with-pango` you must have installed in your system [Pango](http://www.pango.org) `brew install pango`.
 
 When it end to build, you can use use `capabilities()` in R console and you have to get something like this:
 

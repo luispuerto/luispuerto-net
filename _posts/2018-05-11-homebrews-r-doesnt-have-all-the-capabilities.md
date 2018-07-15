@@ -2,8 +2,8 @@
 title: Homebrew's R doesn't have all the capabilities
 date: 2018-05-11 10:35:32
 header: 
-  overlay_image: assets/images/blog/R-Homebrew.jpg
-  teaser: assets/images/blog/R-Homebrew.jpg
+  overlay_image: assets/images/blog/2018/R-Homebrew.jpg
+  teaser: assets/images/blog/2018/R-Homebrew.jpg
 categories:
   - Professional
   - RStats
@@ -44,7 +44,7 @@ Error: package or namespace load failed for ‘tcltk’:
   call: fun(libname, pkgname)
   error: Tcl/Tk support is not available on this system
 In addition: Warning message:
-S3 methods ‘as.character.tclObj’, ‘as.character.tclVar’, ‘as.double.tclObj’, ‘as.integer.tclObj’, ‘as.logical.tclObj’, ‘as.raw.tclObj’, ‘print.tclObj’, ‘[[.tclArray’, ‘[[&lt;-.tclArray’, ‘$.tclArray’, ‘$&lt;-.tclArray’, ‘names.tclArray’, ‘names&lt;-.tclArray’, ‘length.tclArray’, ‘length&lt;-.tclArray’, ‘tclObj.tclVar’, ‘tclObj&lt;-.tclVar’, ‘tclvalue.default’, ‘tclvalue.tclObj’, ‘tclvalue.tclVar’, ‘tclvalue&lt;-.default’, ‘tclvalue&lt;-.tclVar’, ‘close.tkProgressBar’ were declared in NAMESPACE but not found
+S3 methods ‘as.character.tclObj’, ‘as.character.tclVar’, ‘as.double.tclObj’, ‘as.integer.tclObj’, ‘as.logical.tclObj’, ‘as.raw.tclObj’, ‘print.tclObj’, ‘[[.tclArray’, ‘[[<-.tclArray’, ‘$.tclArray’, ‘$<-.tclArray’, ‘names.tclArray’, ‘names<-.tclArray’, ‘length.tclArray’, ‘length<-.tclArray’, ‘tclObj.tclVar’, ‘tclObj<-.tclVar’, ‘tclvalue.default’, ‘tclvalue.tclObj’, ‘tclvalue.tclVar’, ‘tclvalue<-.default’, ‘tclvalue<-.tclVar’, ‘close.tkProgressBar’ were declared in NAMESPACE but not found
 ```
 
 As you can see I've highlighted the key line, R doesn't have [tcltk](https://en.wikipedia.org/wiki/Tcl) available and running in that system and if you run `capabilities()` in the R console you'll probably get something similar to the first code-block. After researching a little bit about the problem [[1](https://discourse.brew.sh/t/r-installs-on-high-sierra-without-tcl-tk-support/1190) & [2](https://discourse.brew.sh/t/r-bottle-options-graphics-capabilities/1785/10)], I found out what I've already said, Homebrew R isn't build with those capabilities. Why? Well…

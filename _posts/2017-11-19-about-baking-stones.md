@@ -1,10 +1,9 @@
 ---
-id: 940
 title: About baking stones
-date: 2017-11-19T19:44:33+00:00
-guid: http://luisspuerto.net/?p=940
-permalink: /2017/11/about-baking-stones/
-image: /wp-content/uploads/2017/11/Pizza_on_stone.jpg
+date: 2017-11-19 19:44:33
+header: 
+  overlay_image: assets/images/blog/2018/Pizza_on_stone.jpg
+  teaser: assets/images/blog/2018/Pizza_on_stone.jpg
 categories:
   - Personal
   - Recipes

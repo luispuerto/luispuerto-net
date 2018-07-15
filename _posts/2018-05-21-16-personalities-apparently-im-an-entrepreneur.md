@@ -2,8 +2,8 @@
 title: "16 Personalities: Apparently I'm an Entrepreneur"
 date: 2018-05-21 18:05:16 00:00
 header:
-  overlay_image: /assets/images/blog/Luis-Puerto-The-Entreprenour2.jpg
-  teaser: /assets/images/blog/Luis-Puerto-The-Entreprenour2.jpg
+  overlay_image: /assets/images/blog/2018/Luis-Puerto-The-Entreprenour2.jpg
+  teaser: /assets/images/blog/2018/Luis-Puerto-The-Entreprenour2.jpg
 categories:
   - Personal
   - Professional
@@ -20,7 +20,7 @@ It's funny, because I just finish reading [Rework](https://basecamp.com/books/re
 
 But lest return to the personality test, as they explain in the [Our Theory / Our Framework](https://www.16personalities.com/articles/our-theory) section of the web, they are using the [Myers—Briggs Type Indicator](https://en.wikipedia.org/wiki/Myers—Briggs_Type_Indicator#Criticism) —which is an evolution of [Carl Jung's Phycological Types](https://en.wikipedia.org/wiki/Psychological_Types)— with the addition of the [Big Five personality traits model](https://en.wikipedia.org/wiki/Big_Five_personality_traits) as an analytical base. They also, of course, add algorithms, models and theories from their own _vintage_. I'm not a psychologist, a sociologist, or any of the sort, so I can't by any means, build an educated critic or something similar. I just can tell you that while reading the profile I was indeed feeling in some parts related, but in others I was totally not. Also, I noticed, that while not totally true or untrue, some of the descriptions were appealing, in the sense that if I'm not like that, I would like to be.
 
-{% include figure image_path="/assets/images/blog/Screen-Shot-2018-05-02-at-20.26.39-1.png" alt="General idea of what is seems I'm" caption="General idea of what it seems I'm" %}{: .align-left}
+{% include figure image_path="/assets/images/blog/2018/Screen-Shot-2018-05-02-at-20.26.39-1.png" alt="General idea of what is seems I'm" caption="General idea of what it seems I'm" %}{: .align-left}
 
 If you check the introduction of [my profile](https://www.16personalities.com/profiles/aac7d80816e2d), they say that I'm an entrepreneur with a role of an [explorer](https://www.16personalities.com/articles/roles-explorers) and with a strategy of [people mastery](https://www.16personalities.com/articles/strategies-people-mastery). It's funny because I've always considered myself an explorer, I always enjoy wondering, and wandering, discovering new places and new people. Perhaps for that reason I've always loved maps —they help you reach new places and imagine. However, I never considered myself a social person or people master. When I was a child I was always really shy, buy my mother always encourage talk to people and be myself. She, on the other hand, has been always a really sociable person and really outspoken, even when she was a child. Perhaps, that is something I have inside of me.
 
