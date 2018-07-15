@@ -3,7 +3,7 @@ title: trash instead of rm
 date: 2017-10-19 17:33:24
 header: 
   overlay_image: assets/images/blog/2018/mac-trash.jpg
-  teaser: assets/images/blog/2018/2018mac-trash.jpg
+  teaser: assets/images/blog/2018/mac-trash.jpg
 categories:
   - Professional
   - Technology

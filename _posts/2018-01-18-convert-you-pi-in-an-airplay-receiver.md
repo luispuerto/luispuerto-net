@@ -5,7 +5,7 @@ header:
   overlay_image: assets/images/blog/2018/speakers-raspberry.jpg
   teaser: assets/images/blog/2018/speakers-raspberry.jpg
 toc: true
-sticky_toc: true 
+sticky_toc: true
 categories:
   - Personal
   - Technology
@@ -30,7 +30,7 @@ $ sudo apt-get install autoconf libtool libdaemon-dev libasound2-dev libpopt-dev
 
 ## Shairport sync
 
-To convert our Pi in a AirPlay device we need a software that is call <a href="https://github.com/mikebrady/shairport-sync" target="_blank" rel="noopener">Shairport Sync</a>. We are going to need to compile it for our system, so we need to download the source code and then compile. To download it just run on the Pi's terminal:
+To convert our Pi in a AirPlay device we need a software that is call [Shairport Sync](https://github.com/mikebrady/shairport-sync). We are going to need to compile it for our system, so we need to download the source code and then compile. To download it just run on the Pi's terminal:
 
 ```sh
 $ cd ~/Downloads # I like to download my soft in Downloads folder.

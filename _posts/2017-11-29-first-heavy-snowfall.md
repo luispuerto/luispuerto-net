@@ -1,7 +1,7 @@
 ---
 title: First Heavy Snowfall
 date: 2017-11-29 18:25:39
-header: 
+header:
   overlay_image: assets/images/blog/2018/DSC8753.jpg
   teaser: assets/images/blog/2018/DSC8753.jpg
 categories:

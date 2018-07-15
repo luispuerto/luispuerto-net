@@ -35,7 +35,7 @@ $ brew update && brew upgrade && brew cleanup && brew prune && brew cu -ay && br
   * `brew upgrade` updates the packages you have installed that have new formulae.
   * `brew cleanup` cleans the cache of old versions of packages.
   * `brew prune` clean the old symbolic links form \`/usr/bin/\`.
-  * `brew cu -ay` uses <a class="url fn" href="https://github.com/buo" rel="author"><span class="author">buo</span></a><span class="path-divider">/</span><a href="https://github.com/buo/homebrew-cask-upgrade" data-pjax="#js-repo-pjax-container">homebrew-cask-upgrade</a> to update casks. `-ay` flag is all and yes update all outdated apps.
+  * `brew cu -ay` uses [buo](https://github.com/buo)/[homebrew-cask-upgrade](https://github.com/buo/homebrew-cask-upgrade) to update casks. `-ay` flag is all and yes update all outdated apps.
   * `brew cask cleanup` clean the old caches of the updated apps.
 
 If for some reason you don't want to update an specific package in Homebrew, you can _pin _in to an specific version or the current version.

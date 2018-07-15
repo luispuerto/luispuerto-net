@@ -1034,7 +1034,11 @@ You can also install some additional related languages like:
 
 #### Node.js {#node-js}
 
-From Wikipedia: _[Node.js](https://en.wikipedia.org/wiki/Node.js) is an [open-source](https://en.wikipedia.org/wiki/Open-source_software "Open-source software"), [cross-platform](https://en.wikipedia.org/wiki/Cross-platform "Cross-platform") [JavaScript](https://en.wikipedia.org/wiki/JavaScript "JavaScript") [run-time environment](https://en.wikipedia.org/wiki/Runtime_system "Runtime system") for executing JavaScript code [server-side](https://en.wikipedia.org/wiki/Server-side "Server-side")._ To install it just run:
+From Wikipedia: 
+
+> **[Node.js](https://en.wikipedia.org/wiki/Node.js)** is an [open-source](https://en.wikipedia.org/wiki/Open-source_software), [cross-platform](https://en.wikipedia.org/wiki/Cross-platform) [JavaScript](https://en.wikipedia.org/wiki/JavaScript) [run-time environment](https://en.wikipedia.org/wiki/Runtime_system) that executes JavaScript code [outside the browser](https://en.wikipedia.org/w/index.php?title=Outside_the_browser&action=edit&redlink=1).
+
+To install it just run:
 
 ```sh
 $ brew install node phantomjs casperjs
@@ -1042,7 +1046,11 @@ $ brew install node phantomjs casperjs
 
 #### Scala
 
-From Wikipedia: _[Scala](https://en.wikipedia.org/wiki/Scala_(programming_language)) is a [general-purpose](https://en.wikipedia.org/wiki/General-purpose_programming_language "General-purpose programming language") [programming language](https://en.wikipedia.org/wiki/Programming_language "Programming language") providing support for [functional programming](https://en.wikipedia.org/wiki/Functional_programming "Functional programming") and a strong [static](https://en.wikipedia.org/wiki/Static_typing "Static typing"){.mw-redirect} [type system](https://en.wikipedia.org/wiki/Type_system "Type system")_. To install it just run in your terminal:
+From Wikipedia: 
+
+> **[Scala](https://en.wikipedia.org/wiki/Scala_(programming_language))** ([/ˈskɑːlɑː/](https://en.wikipedia.org/wiki/Help:IPA/English) [*SKAH-lah*](https://en.wikipedia.org/wiki/Help:Pronunciation_respelling_key))[[9\]](https://en.wikipedia.org/wiki/Scala_(programming_language)#cite_note-9) is a [general-purpose](https://en.wikipedia.org/wiki/General-purpose_programming_language) [programming language](https://en.wikipedia.org/wiki/Programming_language) providing support for [functional programming](https://en.wikipedia.org/wiki/Functional_programming) and a strong [static](https://en.wikipedia.org/wiki/Static_typing) [type system](https://en.wikipedia.org/wiki/Type_system). Designed to be concise,[[10\]](https://en.wikipedia.org/wiki/Scala_(programming_language)#cite_note-10) many of Scala's design decisions aimed to address [criticisms of Java](https://en.wikipedia.org/wiki/Criticism_of_Java).[[8\]](https://en.wikipedia.org/wiki/Scala_(programming_language)#cite_note-overview-8) 
+
+To install it just run in your terminal:
 
 ```sh
 $ brew install scala
@@ -1050,7 +1058,11 @@ $ brew install scala
 
 #### golang
 
-From Wikipedia: _[Go](https://en.wikipedia.org/wiki/Go_(programming_language)) (often referred to as golang) is a [programming language](https://en.wikipedia.org/wiki/Programming_language "Programming language") created at [Google](https://en.wikipedia.org/wiki/Google "Google")<sup id="cite_ref-12" class="reference"><a href="https://en.wikipedia.org/wiki/Go_(programming_language)#cite_note-12">[12]</a></sup> in 2009 by Robert Griesemer, [Rob Pike](https://en.wikipedia.org/wiki/Rob_Pike "Rob Pike"), and [Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson "Ken Thompson").<sup id="cite_ref-langfaq_10-1" class="reference"><a href="https://en.wikipedia.org/wiki/Go_(programming_language)#cite_note-langfaq-10">[10]</a></sup> It is a [compiled](https://en.wikipedia.org/wiki/Compiler "Compiler"), [statically typed](https://en.wikipedia.org/wiki/Static_typing "Static typing"){.mw-redirect} language in the tradition of [Algol](https://en.wikipedia.org/wiki/ALGOL "ALGOL") and [C](https://en.wikipedia.org/wiki/C_(programming_language) "C (programming language)"), with [garbage collection](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science) "Garbage collection (computer science)"), limited [structural typing](https://en.wikipedia.org/wiki/Structural_type_system "Structural type system"),<sup id="cite_ref-structural_typing_3-1" class="reference"><a href="https://en.wikipedia.org/wiki/Go_(programming_language)#cite_note-structural_typing-3">[3]</a></sup> [memory safety](https://en.wikipedia.org/wiki/Memory_safety "Memory safety") features and [CSP](https://en.wikipedia.org/wiki/Communicating_sequential_processes "Communicating sequential processes")-style [concurrent programming](https://en.wikipedia.org/wiki/Concurrent_programming "Concurrent programming"){.mw-redirect} features added._ To install it just run in your terminal:
+From Wikipedia: 
+
+>**[Go](https://en.wikipedia.org/wiki/Go_(programming_language))** (often referred to as **Golang**) is a [programming language](https://en.wikipedia.org/wiki/Programming_language) created at [Google](https://en.wikipedia.org/wiki/Google)[[12\]](https://en.wikipedia.org/wiki/Go_(programming_language)#cite_note-techcrunch-12) in 2009 by Robert Griesemer, [Rob Pike](https://en.wikipedia.org/wiki/Rob_Pike), and [Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson).[[10\]](https://en.wikipedia.org/wiki/Go_(programming_language)#cite_note-langfaq-10) Go is a [statically typed](https://en.wikipedia.org/wiki/Static_typing), [compiled](https://en.wikipedia.org/wiki/Compiled_language) language in the tradition of [C](https://en.wikipedia.org/wiki/C_(programming_language)), with [memory safety](https://en.wikipedia.org/wiki/Memory_safety), [garbage collection](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)), [structural typing](https://en.wikipedia.org/wiki/Structural_type_system),[[3\]](https://en.wikipedia.org/wiki/Go_(programming_language)#cite_note-structural_typing-3) and [CSP](https://en.wikipedia.org/wiki/Communicating_sequential_processes)-style [concurrency](https://en.wikipedia.org/wiki/Concurrency_(computer_science)).[[13\]](https://en.wikipedia.org/wiki/Go_(programming_language)#cite_note-boldly-13)
+
+To install it just run in your terminal:
 
 ```sh
 $ brew install golang

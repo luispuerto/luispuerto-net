@@ -1,7 +1,7 @@
 ---
 title: Sunsets in the land of the magic light
 date: 2018-01-24 12:56:16
-header: 
+header:
   overlay_image: assets/images/blog/2018/IMG_4707.jpg
   teaser: assets/images/blog/2018/IMG_4707.jpg
 categories:
@@ -22,7 +22,7 @@ After I took the shot and share it on my social networks, it started to make me 
 
 Among the pictures that google images served me there was a little more elaborated sunset on Mars with people on it…
 
-{% include figure image_path="assets/images/blog/2018/WANDERERS_blue_sunset_01.jpg" alt="The Blue Sunset. Source: [Wanderers](http://www.erikwernquist.com/wanderers/) a Short film by Erik Wernquist" caption="The Blue Sunset. Source: [Wanderers](http://www.erikwernquist.com/wanderers/) a Short film by Erik Wernquist" %} 
+{% include figure image_path="assets/images/blog/2018/WANDERERS_blue_sunset_01.jpg" alt="The Blue Sunset. Source: [Wanderers](http://www.erikwernquist.com/wanderers/) a Short film by Erik Wernquist" caption="The Blue Sunset. Source: [Wanderers](http://www.erikwernquist.com/wanderers/) a Short film by Erik Wernquist" %}
 
 It's incredible how a sunset can make our mind fly away and dream with a close future when we can wander freely on the Solar System. It's also incredible how a sunset in two different neighbor planets on the Solar System can look quite alike. Perhaps Mars is going to be our [next home](https://www.nasa.gov/content/journey-to-mars-overview)… and soon we'er going to be able to enjoy those sunsets on first hand.
 
@@ -42,7 +42,7 @@ It's incredible how a sunset can make our mind fly away and dream with a close f
 >
 >Silently, they orbit the Sun, waiting.
 >
->Source: <a href="https://en.wikipedia.org/wiki/Pale_Blue_Dot_(book)">Pale Blue Dot</a>, Introduction. Pages 18 to 24.
+>Source: [Pale Blue Dot](https://en.wikipedia.org/wiki/Pale_Blue_Dot_(book)), Introduction. Pages 18 to 24.
 >{: .text-right style="font-size: small"}
 
 Because wer are natural wanderers and explorers. We always crave for go a little bit far and beyond. I hope we never forgot that appeal.
