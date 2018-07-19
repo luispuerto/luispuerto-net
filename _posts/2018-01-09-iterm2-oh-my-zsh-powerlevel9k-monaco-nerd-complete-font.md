@@ -1,7 +1,7 @@
 ---
 title: iTerm2 + Oh My Zsh + Powerlevel9k + Monaco Nerd Complete Font
 date: 2018-01-09 19:15:18
-header: 
+header:
   overlay_image: assets/images/blog/2018/Screen-Shot-2017-12-19-at-11.20.07.png
   teaser: assets/images/blog/2018/Screen-Shot-2017-12-19-at-11.20.07.png
 toc: true
@@ -21,7 +21,7 @@ How you can get something similar? Reach this configuration is quite easy. These
 
 I would begin installing iTerm2. iTerm2 is just an app similar to Terminal, but with steroids. It has far more options and even have mouse support.
 
-To install iTerm we are going to use [Homebrew](http://luisspuerto.net/2017/11/homebrew/):
+To install iTerm we are going to use [Homebrew](https://luisspuerto.net/blog/2017/11/21/homebrew/):
 
 ```sh
 $ brew cask install iterm2
@@ -31,7 +31,7 @@ Now that you have iTerm2 you have to install Oh My Zsh.
 
 ## Install Oh My Zsh
 
-To install Oh My Zsh you need to have installed in your system [Git](http://luisspuerto.net/2017/11/set-rstudio-with-homebrews-git/). Usually that is not a problem because Mac comes with its own Git, but remember that [you can update to the last version easily using Homebrew](http://luisspuerto.net/2017/11/set-rstudio-with-homebrews-git/).
+To install Oh My Zsh you need to have installed in your system [Git](https://luisspuerto.net/blog/2017/11/05/set-rstudio-with-homebrews-git/). Usually that is not a problem because Mac comes with its own Git, but remember that [you can update to the last version easily using Homebrew](https://luisspuerto.net/blog/2017/11/05/set-rstudio-with-homebrews-git/).
 
 However, you can't install Oh My Zsh itself using Homebrew, but you can use [cURL](https://en.wikipedia.org/wiki/CURL) or [Wget](https://en.wikipedia.org/wiki/Wget), which probably you have already installed in your system. If you don't have any of those, you can install them through Homebrew. To install Oh My Zsh you can run the following commands:
 
@@ -224,9 +224,9 @@ alias zshconfig="atom ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 ```
 
-As you can see I have a lot the lines commented with `#`, since I don't want to use that config, but I didn't lose them. From line 28 to 73, it's basically the configuration of the prompt. There are literally dozens of ways to configure the prompt, and you can see some of them [here](https://github.com/bhilburn/powerlevel9k/wiki/Show-Off-Your-Config). Mine is quite similar to [Falkor's one](https://github.com/bhilburn/powerlevel9k/wiki/Show-Off-Your-Config#falkors-configuration), but I've edited it a little bit. You can find out more about how to stylizing your prompt and how the configuration variables work [here](https://github.com/bhilburn/powerlevel9k#prompt-customization) and [here](https://github.com/bhilburn/powerlevel9k/wiki/Stylizing-Your-Prompt). 
+As you can see I have a lot the lines commented with `#`, since I don't want to use that config, but I didn't lose them. From line 28 to 73, it's basically the configuration of the prompt. There are literally dozens of ways to configure the prompt, and you can see some of them [here](https://github.com/bhilburn/powerlevel9k/wiki/Show-Off-Your-Config). Mine is quite similar to [Falkor's one](https://github.com/bhilburn/powerlevel9k/wiki/Show-Off-Your-Config#falkors-configuration), but I've edited it a little bit. You can find out more about how to stylizing your prompt and how the configuration variables work [here](https://github.com/bhilburn/powerlevel9k#prompt-customization) and [here](https://github.com/bhilburn/powerlevel9k/wiki/Stylizing-Your-Prompt).
 
-Don't forget to set your theme as Powerlevel9k —line 33 `ZSH_THEME="powerlevel9k/powerlevel9k"`— and also the Powerlevel mode —line 35. The Powerlevel Mode define the type —or the style— of glyphs than are shown. 
+Don't forget to set your theme as Powerlevel9k —line 33 `ZSH_THEME="powerlevel9k/powerlevel9k"`— and also the Powerlevel mode —line 35. The Powerlevel Mode define the type —or the style— of glyphs than are shown.
 
 You can see also that in the lines 118 — 122 are the plugins I'm using and that in the the line 151 I establish a shortcut to access to the configuration through atom just typing `zshconfig`.
 
@@ -236,7 +236,7 @@ Finally, you have to configure iTerm2 to use your patched font if you want the g
 
 {% include figure image_path="assets/images/blog/2018/Screen-Shot-2018-01-02-at-13.05.13.png" alt="iTerm2 font configuration." caption="iTerm2 font configuration." %}
 
-If you don't want to patch any font, you can download any of the prepatched fonts, and I recommend do it [using Hombrew](https://github.com/ryanoasis/nerd-fonts#option-4-homebrew-fonts). 
+If you don't want to patch any font, you can download any of the prepatched fonts, and I recommend do it [using Hombrew](https://github.com/ryanoasis/nerd-fonts#option-4-homebrew-fonts).
 
 ```sh
 $ brew tap caskroom/fonts
@@ -245,7 +245,7 @@ $ brew cask install font-meslo-nerd-font #if you want to install Meslo font
 
 {% include figure image_path="assets/images/blog/2018/Screen-Shot-2018-01-02-at-13.11.31.png" alt="Color configuration in iTerm2" caption="Color configuration in iTerm2" %}
 
-Finally you can configure the colors in iTerm2. Usually people use of of the presets iTerm have, or the ones you can download. But I have tweaked a little bit the colors and I have my [own configuration](http://luisspuerto.net/wp-content/uploads/2018/01/Luis-Puerto-iTerm.itermcolors.zip).
+Finally you can configure the colors in iTerm2. Usually people use of of the presets iTerm have, or the ones you can download. But I have tweaked a little bit the colors and I have my [own configuration](https://luisspuerto.net/blog/wp-content/uploads/2018/01/Luis-Puerto-iTerm.itermcolors.zip).
 
 Now you are ready to use iTerm2 with your new configuration.
 

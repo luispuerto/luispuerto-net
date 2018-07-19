@@ -12,7 +12,7 @@ tags:
   - homebrew
   - RStats
 ---
-As I just explained in my [last post](http://luisspuerto.net/2018/03/updating-to-r-3-4-4-someone-to-lean-on/), the last version of R —3.4.4 "Someone to Lean on"— was rolled out las Thursday and this time I was the one that updated the Homebrew's formula to reflect the new version. I just decided to give it a try and update for first time a Homebrew's formula since no one had updated it yet on Thursday afternoon and this way I would be able to install the new version with [Homebrew](http://brew.sh).
+As I just explained in my [last post](https://luisspuerto.net/blog/2018/03/updating-to-r-3-4-4-someone-to-lean-on/), the last version of R —3.4.4 "Someone to Lean on"— was rolled out las Thursday and this time I was the one that updated the Homebrew's formula to reflect the new version. I just decided to give it a try and update for first time a Homebrew's formula since no one had updated it yet on Thursday afternoon and this way I would be able to install the new version with [Homebrew](http://brew.sh).
 
 As I've already mentioned, I really encourage anyone to contribute to Homebrew's community and try to keep the formulae update. Homebrew also encourage this, since as more people keep an eye on formula and update them, the better for the community.
 

@@ -18,7 +18,7 @@ tags:
 
 Last Monday, 23rd of April, [R was updated](https://stat.ethz.ch/pipermail/r-announce/2018/000628.html) to its version 3.5, codenamed The _Joy in Playing_, which as the rest of the releases, make reference to a Peanuts' cartoon.
 
-Since it's a [minor release](https://semver.org) (3.x) and not just a patch, it's advisable to reinstall all your packages, in some cases, to make then work properly. For example, and in my case, since I've built all of them as a consequence of my [Homebrew install](http://luisspuerto.net/2018/01/install-r-100-homebrew-edition-with-openblas-openmp-my-version/), some of them where throwing me the following message
+Since it's a [minor release](https://semver.org) (3.x) and not just a patch, it's advisable to reinstall all your packages, in some cases, to make then work properly. For example, and in my case, since I've built all of them as a consequence of my [Homebrew install](https://luisspuerto.net/blog/2018/01/12/install-r-100-homebrew-edition-with-openblas-openmp-my-version/), some of them where throwing me the following message
 
 ```R
 Error: package ‘XXXXXXXXXXX’ was installed by an R version with different internals; it needs to be reinstalled for use with this R version
@@ -34,7 +34,7 @@ I would recommend to run it twice, since some packages have dependencies and the
 
 # Java and rJava configuration
 
-In some of my machines I hadn't configured the new Java 10 with the prerelease rJava so [Java 10 can be run properly in R](http://luisspuerto.net/2018/03/r-and-java-10/). If this is your case remember to run:
+In some of my machines I hadn't configured the new Java 10 with the prerelease rJava so [Java 10 can be run properly in R](https://luisspuerto.net/blog/2018/03/r-and-java-10/). If this is your case remember to run:
 
 ```sh
 $ R CMD javareconf
@@ -75,7 +75,7 @@ install.packages('rJava', repos = 'http://rforge.net')
 
 In another machine I wasn't being able to install devEMF package. You can see the specific error I was getting in this Stack Overflow [question](https://stackoverflow.com/questions/50075549/devemf-package-in-r-3-5-on-macos-doesnt-build/50076667#50076667).
 
-The problem was the [makevars](http://luisspuerto.net/2018/01/install-r-100-homebrew-edition-with-openblas-openmp-my-version/#setting-the-final-makevars) file, which is crafted to use the [LLVM](https://llvm.org). I commented all of the lines to build the package and all set. Seems that for some reason LLVM isn't supported to build this package in this version of R (or it isn't supported at all).
+The problem was the [makevars](https://luisspuerto.net/blog/2018/01/12/install-r-100-homebrew-edition-with-openblas-openmp-my-version/#setting-the-final-makevars) file, which is crafted to use the [LLVM](https://llvm.org). I commented all of the lines to build the package and all set. Seems that for some reason LLVM isn't supported to build this package in this version of R (or it isn't supported at all).
 
 ```
 # Remove the comment on -fopenmp for compiling data.table packag`akevars"># Remove the comment on -fopenmp for compiling data.table packagakevars"># Remove the comment on -fopenmp for compiling data.table packag`e
@@ -104,7 +104,7 @@ CPPFLAGS=-I/usr/local/opt/gettext/include -I/usr/local/opt/llvm/include
 
 # data.table
 
-Don't forget that data.table package has also specific [makevars](http://luisspuerto.net/2018/01/install-r-100-homebrew-edition-with-openblas-openmp-my-version/#setting-the-final-makevars) necessities if you are building it, as you should, with LLVM. Remember that the flag `-fopenmp` has to be present / uncommented in the lines related to C and C++ compilers.
+Don't forget that data.table package has also specific [makevars](https://luisspuerto.net/blog/2018/01/12/install-r-100-homebrew-edition-with-openblas-openmp-my-version/#setting-the-final-makevars) necessities if you are building it, as you should, with LLVM. Remember that the flag `-fopenmp` has to be present / uncommented in the lines related to C and C++ compilers.
 
 ```
 CC=/usr/local/opt/llvm/bin/clang -fopenmp

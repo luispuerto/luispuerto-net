@@ -25,9 +25,9 @@ gallery:
     title: "Trash on Raspbian"
 ---
 
-{% include figure image_path="https://i.imgur.com/pzcHnNy.png" atl="White trash (oh wait!) on macOS" caption="White trash (oh wait!) on macOS" %}{: .align-left} 
+{% include figure image_path="https://i.imgur.com/pzcHnNy.png" atl="White trash (oh wait!) on macOS" caption="White trash (oh wait!) on macOS" %}{: .align-left}
 
-[The other day](http://luisspuerto.net/2017/10/trash-instead-of-rm/), I explained that there is a way to send files and folders to the trash from the the shell. Now, I just found out that there are differences between where is located the trash (it's a folder nonetheless) in macOS and Linux.
+[The other day](https://luisspuerto.net/blog/2017/10/19/trash-instead-of-rm/), I explained that there is a way to send files and folders to the trash from the the shell. Now, I just found out that there are differences between where is located the trash (it's a folder nonetheless) in macOS and Linux.
 
 In macOS, the trash is located in your user's folder `rmtrash`   on macOS, since it's a [much nicer](https://github.com/PhrozenByte/rmtrash) and neat command. And easily to understand.
 

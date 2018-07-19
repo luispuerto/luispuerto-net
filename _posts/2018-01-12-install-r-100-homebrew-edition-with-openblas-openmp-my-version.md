@@ -18,15 +18,15 @@ tags:
   - RStats
 ---
 
-**Update Friday, 10th of May 2018**: If you want to install R with all the capabilities you need to read this [post](http://luisspuerto.net/2018/05/installing-r-with-homebrew-with-all-the-capabilities/) too, and perhaps this [one](http://luisspuerto.net/2018/05/homebrews-r-doesnt-have-all-the-capabilities/) too.
+**Update Friday, 10th of May 2018**: If you want to install R with all the capabilities you need to read this [post](https://luisspuerto.net/blog/2018/05/11/installing-r-with-homebrew-with-all-the-capabilities/) too, and perhaps this [one](https://luisspuerto.net/blog/2018/05/11/homebrews-r-doesnt-have-all-the-capabilities/) too.
 
 **Update Tuesday, 27th of March 2018:** I just found out that seems you don't just need to run `sudo R CMD javareconf` to configure Java an R, at least with the versions of Java 9.0.4 and R 3.4.4.
 
-**Update Thursday, 22nd of March 2018:** I have to add `-fopenmp` to both `clang` and `clang++` variables in my `makevars` to be able to build data.table package correctly. This is not exactly what the [Data Table wiki](https://github.com/Rdatatable/data.table/wiki/Installation#openmp-enabled-compiler-for-mac) recommends. I update the [section about the Data Table Package](http://luisspuerto.net/2018/01/install-r-100-homebrew-edition-with-openblas-openmp-my-version/#data-table-package) accordingly.
+**Update Thursday, 22nd of March 2018:** I have to add `-fopenmp` to both `clang` and `clang++` variables in my `makevars` to be able to build data.table package correctly. This is not exactly what the [Data Table wiki](https://github.com/Rdatatable/data.table/wiki/Installation#openmp-enabled-compiler-for-mac) recommends. I update the [section about the Data Table Package](https://luisspuerto.net/blog/2018/01/12/install-r-100-homebrew-edition-with-openblas-openmp-my-version/#data-table-package) accordingly.
 
 * * *
 
-As you know I'm a big fan of [Homebrew](http://luisspuerto.net/tag/homebrew/) as a manager of part of the software of my Mac, since it make things easier. There are a lot of guides out there about [how to have a R installation 100% Homebrew](https://www.google.com/search?client=safari&rls=en&q=r+homebrew&ie=UTF-8&oe=UTF-8) and some people, like me, like to have this kind of setup because it's convenient and for the sake of lear a little bit more about how R works in more detail. However, Homebrew setup isn't officially supported by the [R Core Team](https://scholar.google.com/citations?user=yvS1QUEAAAAJ), so if you find problems with your R installation you aren't going to get support from them. Nevertheless, you are going to be able to get support from [Homebrew](https://github.com/Homebrew/homebrew-core) and of course, from the [regular channels to get help for R](https://www.r-project.org/help.html), like the [mail list](https://www.r-project.org/mail.html).
+As you know I'm a big fan of [Homebrew](https://luisspuerto.net/blog/tag/homebrew/) as a manager of part of the software of my Mac, since it make things easier. There are a lot of guides out there about [how to have a R installation 100% Homebrew](https://www.google.com/search?client=safari&rls=en&q=r+homebrew&ie=UTF-8&oe=UTF-8) and some people, like me, like to have this kind of setup because it's convenient and for the sake of lear a little bit more about how R works in more detail. However, Homebrew setup isn't officially supported by the [R Core Team](https://scholar.google.com/citations?user=yvS1QUEAAAAJ), so if you find problems with your R installation you aren't going to get support from them. Nevertheless, you are going to be able to get support from [Homebrew](https://github.com/Homebrew/homebrew-core) and of course, from the [regular channels to get help for R](https://www.r-project.org/help.html), like the [mail list](https://www.r-project.org/mail.html).
 
 The biggest advantage, besides of the regular advantages of installing something with HomeBrew, is you can create your own version of R, you can compile it, therefore you can compile it with steroids, so you can take advantage of the OpenBlas and OpenMP libraries.
 
@@ -107,11 +107,11 @@ Take into account that sometimes even the CRAN install binaries pose problems, m
 
 I've used as inspiration for this guide mainly two main sources. On one hand, [Bhaskar Karambelar's installation guide](https://www.karambelkar.info/2017/01/setup-osx-for-r/), and on the other [Mauricio Vargas' one](http://pacha.hk/2017-07-12_r_and_python_via_homebrew.html). Bhaskar's one was the first I used, more than 6 months ago, while we were in the United Stated, and really worked well in that moment. Problem with it is, it installs a lot or libraries to program in C/C++ what unless you are a C/C++ programmer you aren't going to use, although you never know. At that moment, I installed everything due to lack of knowledge, but probably right now I wouldn't. It's up to you if you want to install those libraries and programing languages. However, I have more than enough space in my hard drive and I don't mind to have then, perhaps they are going to to be useful in the future. Besides, this has been a way to discover then and know more about C/C++ programing. Mauricio's guide goes more to the point and it just helps you to install a really fast and quick version of R that use OpenMP and OpenBlas.
 
-Through this guide I just want to try to show you how I ended with my installation, that is an updated mixture of both guides.  However, take into account that mine guide is going to be a little bit different, even more taking into account that [I use Zsh](http://luisspuerto.net/2018/01/iterm2-oh-my-zsh-powerlevel9k-monaco-nerd-complete-font/) as my shell.
+Through this guide I just want to try to show you how I ended with my installation, that is an updated mixture of both guides.  However, take into account that mine guide is going to be a little bit different, even more taking into account that [I use Zsh](https://luisspuerto.net/blog/2018/01/iterm2-oh-my-zsh-powerlevel9k-monaco-nerd-complete-font/) as my shell.
 
 ### Homebrew
 
-You probably have Homebrew already installed, if you don't, please, [install it](http://luisspuerto.net/2017/11/homebrew/). Then, I recommend you to connect to the cask tap if you haven't done it already:
+You probably have Homebrew already installed, if you don't, please, [install it](https://luisspuerto.net/blog/2017/11/21/homebrew/). Then, I recommend you to connect to the cask tap if you haven't done it already:
 
 ```sh
 $ brew tap caskroom/cask # Tap to install regular app with user interface (GUI)
@@ -333,7 +333,7 @@ Found second.cpp file in "/Users/brewmaster"
 
 ### GPG & Git
 
-I've already explained how to install [GPG in a previous post](http://luisspuerto.net/2017/11/installing-pgp-signing-for-git-on-macos/) to use it with [Git](http://luisspuerto.net/2017/11/set-rstudio-with-homebrews-git/). How to install Git was also [explained](http://luisspuerto.net/2017/11/set-rstudio-with-homebrews-git/).
+I've already explained how to install [GPG in a previous post](https://luisspuerto.net/blog/2017/11/04/installing-pgp-signing-for-git-on-macos/) to use it with [Git](https://luisspuerto.net/blog/2017/11/05/set-rstudio-with-homebrews-git/). How to install Git was also [explained](https://luisspuerto.net/blog/2017/11/05/set-rstudio-with-homebrews-git/).
 
 ### X-Server
 
@@ -392,7 +392,7 @@ Python 3.6.4
 
 We are going to install some things before we install R itself. [Pandoc](https://en.wikipedia.org/wiki/Pandoc) is really useful when you have R to convert documents in different formats. [Cairo](https://en.wikipedia.org/wiki/Cairo_(graphics)) is a graphical library that can be use for in R and it's need for [QGIS](https://en.wikipedia.org/wiki/QGIS). Libsvg and librsvg are optional
 
-**Important!**: If you want to have R with all the capabilities you need to install Cairo with the instructions in this [post](http://luisspuerto.net/2018/05/installing-r-with-homebrew-with-all-the-capabilities/).
+**Important!**: If you want to have R with all the capabilities you need to install Cairo with the instructions in this [post](https://luisspuerto.net/blog/2018/05/11/installing-r-with-homebrew-with-all-the-capabilities/).
 
 ```sh
 $ brew install pandoc cairo libsvg librsvg
@@ -860,7 +860,7 @@ V8 version 3.15.11.18 [sample shell]
 
 #### R
 
-Important!: If you want to have R with all the capabilities you have to follow the instructions in this [post](http://luisspuerto.net/2018/05/installing-r-with-homebrew-with-all-the-capabilities/), then you can continue.
+Important!: If you want to have R with all the capabilities you have to follow the instructions in this [post](https://luisspuerto.net/blog/2018/05/11/installing-r-with-homebrew-with-all-the-capabilities/), then you can continue.
 
 Let's finally install R.
 
@@ -1034,7 +1034,7 @@ You can also install some additional related languages like:
 
 #### Node.js {#node-js}
 
-From Wikipedia: 
+From Wikipedia:
 
 > **[Node.js](https://en.wikipedia.org/wiki/Node.js)** is an [open-source](https://en.wikipedia.org/wiki/Open-source_software), [cross-platform](https://en.wikipedia.org/wiki/Cross-platform) [JavaScript](https://en.wikipedia.org/wiki/JavaScript) [run-time environment](https://en.wikipedia.org/wiki/Runtime_system) that executes JavaScript code [outside the browser](https://en.wikipedia.org/w/index.php?title=Outside_the_browser&action=edit&redlink=1).
 
@@ -1046,9 +1046,9 @@ $ brew install node phantomjs casperjs
 
 #### Scala
 
-From Wikipedia: 
+From Wikipedia:
 
-> **[Scala](https://en.wikipedia.org/wiki/Scala_(programming_language))** ([/ˈskɑːlɑː/](https://en.wikipedia.org/wiki/Help:IPA/English) [*SKAH-lah*](https://en.wikipedia.org/wiki/Help:Pronunciation_respelling_key))[[9\]](https://en.wikipedia.org/wiki/Scala_(programming_language)#cite_note-9) is a [general-purpose](https://en.wikipedia.org/wiki/General-purpose_programming_language) [programming language](https://en.wikipedia.org/wiki/Programming_language) providing support for [functional programming](https://en.wikipedia.org/wiki/Functional_programming) and a strong [static](https://en.wikipedia.org/wiki/Static_typing) [type system](https://en.wikipedia.org/wiki/Type_system). Designed to be concise,[[10\]](https://en.wikipedia.org/wiki/Scala_(programming_language)#cite_note-10) many of Scala's design decisions aimed to address [criticisms of Java](https://en.wikipedia.org/wiki/Criticism_of_Java).[[8\]](https://en.wikipedia.org/wiki/Scala_(programming_language)#cite_note-overview-8) 
+> **[Scala](https://en.wikipedia.org/wiki/Scala_(programming_language))** ([/ˈskɑːlɑː/](https://en.wikipedia.org/wiki/Help:IPA/English) [*SKAH-lah*](https://en.wikipedia.org/wiki/Help:Pronunciation_respelling_key))[[9\]](https://en.wikipedia.org/wiki/Scala_(programming_language)#cite_note-9) is a [general-purpose](https://en.wikipedia.org/wiki/General-purpose_programming_language) [programming language](https://en.wikipedia.org/wiki/Programming_language) providing support for [functional programming](https://en.wikipedia.org/wiki/Functional_programming) and a strong [static](https://en.wikipedia.org/wiki/Static_typing) [type system](https://en.wikipedia.org/wiki/Type_system). Designed to be concise,[[10\]](https://en.wikipedia.org/wiki/Scala_(programming_language)#cite_note-10) many of Scala's design decisions aimed to address [criticisms of Java](https://en.wikipedia.org/wiki/Criticism_of_Java).[[8\]](https://en.wikipedia.org/wiki/Scala_(programming_language)#cite_note-overview-8)
 
 To install it just run in your terminal:
 
@@ -1058,7 +1058,7 @@ $ brew install scala
 
 #### golang
 
-From Wikipedia: 
+From Wikipedia:
 
 >**[Go](https://en.wikipedia.org/wiki/Go_(programming_language))** (often referred to as **Golang**) is a [programming language](https://en.wikipedia.org/wiki/Programming_language) created at [Google](https://en.wikipedia.org/wiki/Google)[[12\]](https://en.wikipedia.org/wiki/Go_(programming_language)#cite_note-techcrunch-12) in 2009 by Robert Griesemer, [Rob Pike](https://en.wikipedia.org/wiki/Rob_Pike), and [Ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson).[[10\]](https://en.wikipedia.org/wiki/Go_(programming_language)#cite_note-langfaq-10) Go is a [statically typed](https://en.wikipedia.org/wiki/Static_typing), [compiled](https://en.wikipedia.org/wiki/Compiled_language) language in the tradition of [C](https://en.wikipedia.org/wiki/C_(programming_language)), with [memory safety](https://en.wikipedia.org/wiki/Memory_safety), [garbage collection](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)), [structural typing](https://en.wikipedia.org/wiki/Structural_type_system),[[3\]](https://en.wikipedia.org/wiki/Go_(programming_language)#cite_note-structural_typing-3) and [CSP](https://en.wikipedia.org/wiki/Communicating_sequential_processes)-style [concurrency](https://en.wikipedia.org/wiki/Concurrency_(computer_science)).[[13\]](https://en.wikipedia.org/wiki/Go_(programming_language)#cite_note-boldly-13)
 

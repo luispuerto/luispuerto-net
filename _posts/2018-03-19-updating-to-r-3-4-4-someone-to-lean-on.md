@@ -41,12 +41,12 @@ tags:
 
 If you are on macOS and you want to enjoy the improvements and the bug fixings, you just can download the binary from [CRAN](https://cran.r-project.org/bin/macosx/) or if you are a Homebrew user you just can update with the following command
 
-```sh 
+```sh
 $ brew update && brew upgrade
 ```
 
 This time the binaries for macOS came almost as the same time as the binaries for the rest of the platforms and I really welcome the change and the diligence. Sometimes I feel as a macOS user a second class user in some open source projects, since they release the new versions a little bit later on macOS than in the rest of the platforms. However, I really appreciate the work that all these people put in develop R and to bring to it to the macOS ecosystem. I acknowledge that they are doing a non-payed job and they are doing it for the community of users, which is incredible remarkable.
 
-On the other hand, this time Homebrew was the one falling back a little bit, and on Thursday afternoon the formula to install R hadn't been updated yet. So I just, just decided to update myself and make my first contribution to the Homebrew project. Update a Homebrew formula isn't rocket science, and they even have [a script](https://github.com/Homebrew/homebrew-core/blob/master/CONTRIBUTING.md#submit-a-version-upgrade-for-the-foo-formula) to make things easier, so I really encourage you to update Homebrew formula and contribute to the community. In the [next post](http://luisspuerto.net/2018/03/how-i-updated-the-r-formula-in-homebrew/) I'll try to explain the procedure of how to update a Homebrew formula.
+On the other hand, this time Homebrew was the one falling back a little bit, and on Thursday afternoon the formula to install R hadn't been updated yet. So I just, just decided to update myself and make my first contribution to the Homebrew project. Update a Homebrew formula isn't rocket science, and they even have [a script](https://github.com/Homebrew/homebrew-core/blob/master/CONTRIBUTING.md#submit-a-version-upgrade-for-the-foo-formula) to make things easier, so I really encourage you to update Homebrew formula and contribute to the community. In the [next post](https://luisspuerto.net/blog/2018/03/19/how-i-updated-the-r-formula-in-homebrew/) I'll try to explain the procedure of how to update a Homebrew formula.
 
 Happy data analysis with the new R.

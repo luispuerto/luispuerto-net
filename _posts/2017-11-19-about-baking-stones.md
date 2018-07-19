@@ -1,7 +1,7 @@
 ---
 title: About baking stones
 date: 2017-11-19 19:44:33
-header: 
+header:
   overlay_image: assets/images/blog/2018/Pizza_on_stone.jpg
   teaser: assets/images/blog/2018/Pizza_on_stone.jpg
 categories:
@@ -11,7 +11,7 @@ tags:
   - bread
   - opinion
 ---
-As I [promised](http://luisspuerto.net/2017/11/pizza-recipe/), here is a small note about my experience using baking stones and some things I think you should take into account if you decide to use one.
+As I [promised](https://luisspuerto.net/blog/2017/11/19/pizza-recipe/), here is a small note about my experience using baking stones and some things I think you should take into account if you decide to use one.
 
 First of all, I think, if my memory doesn't fail me, that I have used just one baking stone and it broke as a cause of the heat —while we were baking a pizza some pieces of the stone started to fall from the rack, creating a interesting scorched mess in the bottom of the oven composed of stone pieces, pizza dough, tomato and mozzarella. Until it broke, I use it extensively to bake pizza and bread.
 
