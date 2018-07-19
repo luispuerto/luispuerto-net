@@ -1,62 +1,37 @@
-# TO-DO
+# TO-DO of :japanese_ogre: Jekyll TuneUp
 
-- [ ] Read Jekyll [documentation](https://jekyllrb.com/docs/home/) thoroughly. 
-- [ ] Check [this tutorial](https://www.youtube.com/watch?v=oiNVQ9Zjy4o&list=PLWjCJDeWfDdfVEcLGAfdJn_HXyM4Y7_k-) about Jekyll. 
-- [ ] Update the readme with the license. 
-- [x] Write the readme for the repo. 
-- [x] Check how can I change things and still receive updates of the theme. 
+I've already transitioned to Jekyll and now there are some fringes that I would like to trim. I would like to do the process publicly.   
+These are the pending tasks I have ahead. Slightly more detailed TO-DO [here](https://luisspuerto.net/assets/docs/Jekyll-TuneUp.pdf). 
 
-## Footer
+- [ ] Update readme and licenses
+- [ ] Add licenses (CC & GPL3) in the footer
+- [ ] Improve search engine
+- [ ] Add information to pagination (/blog) page
+- [ ] Set up the building of the site with travis or a similar service.
 
-* [x] Smaller or thinner
-* [ ] Add the license CC and GPL3
-* [x] Edit the links
-  * [x] Add Twitter
-  * [x] Remove Gitlab
-  * [x] Add LinkedIn 
-* [x] ~~Perhaps delete it, since I don't know if it's really necessary~~ . 
+## Syntax Highlight
 
-## Tweaks
+- [ ] Optionally wrap code and disable line numbers
+- [ ] Style shell code blocks as terminal windows
+- [ ] how to highlight lines in jekyll codeblocks
 
-* [x] Set time zone to UTC 
-* [x] Set up the search engine
-* [ ] Perhaps try to improve the search engine and put google. 
-* [ ] Set up the comments in disqus
-* [ ] Add social buttons
-  * [ ] ~~Whatsapp~~
-  * [ ] Telegram
-* [ ] Read time in a image overlay post? 
-* [ ] Build the site with travis
-* [ ] How to wrap code and disable line numbers.
+## Posts & Pages content and features
 
-## Single Post page
-
-* [ ] Updated date at the beginning? 
-* [x] Sticky table of contents? 
-
-## Splash page
-
-* [x] Fix the second excerpt in the splash page, it's not showing. 
-* [x] Change the font of my name. ➜ `Mr Dafoe`
+- [ ] How to highlight text in kramdown / Jekyll?
+- [ ] Posting/update time & date at the beginning?
+- [ ] Show read time when there is a image overlay
+- [ ] Toc is not showing fully
+- [ ] Create the following pages
+- [ ] Review the headings of all post
+- [ ] Fix problem with target links
+- [ ] Title in figures ➜ caption on frame.
 
 ## Sidebar
 
-* [ ] Specific content for specific pages
-* [ ] Add more content
-  * [ ] Twitter feed? 
-  * [ ] Archive
-  * [ ] Tags 
-  * [ ] Categories 
-  * [ ] Text 
+- [ ] Specific content for specific pages
+- [ ] Add more content
 
-# Posts 
+## Domine & Hosting
 
-* [ ] Update the post for Jekyll. 
-
-## Domain and Hosting
-
-* [ ] Transfer our domains to dondominio.es 
-
-* [ ] Get an email plan.
-
-
+- [ ] Transfer domains to a new registrant
+- [ ] Get an email plan.
