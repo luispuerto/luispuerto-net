@@ -3,7 +3,7 @@ feature-img: ../assets/images/IMG_2177.jpg
 typora-copy-images-to: ../assets/images
 ---
 
-![IMG_2177](../assets/images/IMG_2177.jpg)
+![IMG_2177](/assets/images/IMG_2177.jpg)
 
 In one of my [previous post](http://luisspuerto.net/2018/05/16-personalities-apparently-im-an-entrepreneur/)I was briefly explaining about the results of a personality test I took a while ago. In that test they told me I have a personality with a role of [Explorer](https://www.16personalities.com/articles/roles-explorers)and a strategy of [People Mastery](https://www.16personalities.com/articles/strategies-people-mastery). The role *determines our goals, interests and preferred activities*and the strategy *shows our preferred ways of doing things and achieving goals*. I would like to explore —if you excuse the repetition— a little bit more those features of my personality and discuss a little bit more if they are accurate.
 
