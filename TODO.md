@@ -1,4 +1,4 @@
-# TO-DO of :japanese_ogre: Jekyll TuneUp
+# TODO of :japanese_ogre: Jekyll TuneUp
 
 I've already transitioned to Jekyll and now there are some fringes that I would like to trim. I would like to do the process publicly.   
 These are the pending tasks I have ahead. Slightly more detailed TO-DO [here](https://luisspuerto.net/assets/docs/Jekyll-TuneUp.pdf). 
