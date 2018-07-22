@@ -170,6 +170,7 @@ exclude:
   - TO-DO.*
   - /docs # ignore Minimal Mistakes /docs
   - /test # ignore Minimal Mistakes /test
+  - /resources # different files I use for the blog and the web.
 keep_files:
   - .git
   - .svn
