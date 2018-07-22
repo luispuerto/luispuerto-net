@@ -1,13 +1,17 @@
-# TODO of :japanese_ogre: Jekyll TuneUp
+# TODO of :japanese_ogre: Jekyll TuneU
 
-I've already transitioned to Jekyll and now there are some fringes that I would like to trim. I would like to do the process publicly.   
-These are the pending tasks I have ahead. Slightly more detailed TO-DO [here](https://luisspuerto.net/assets/docs/Jekyll-TuneUp.pdf). 
+I've already transitioned to Jekyll and now there are some fringes that I would like to trim. I would like to do the process publicly. 
+These are the pending tasks I have ahead.
 
+- [ ] Set up the building of the site with Travis or a similar service.
+- [ ] Create the following pages
 - [ ] Update readme and licenses
 - [ ] Add licenses (CC & GPL3) in the footer
 - [ ] Improve search engine
 - [ ] Add information to pagination (/blog) page
-- [ ] Set up the building of the site with travis or a similar service.
+- [ ] Images in lists
+- [ ] Responsive breakpoints
+- [ ] Implement Latent Semantic Index for related posts
 
 ## Syntax Highlight
 
