@@ -61,6 +61,12 @@ $(document).ready(function() {
     }, 400);
   });
 
+  // Bigfoot footnotes
+  var bigfoot = $.bigfoot({
+    actionOriginalFN: "ignore",
+    positionContent: "true"
+    });
+
   // init smooth scroll
   $("a").smoothScroll({ offset: -20 });
 
