@@ -1,7 +1,7 @@
 ---
 title: Blade Runner
 date: 2017-10-13 07:38:58
-header: 
+header:
   image: assets/images/blog/2018/blade-runner.jpg
   teaser: assets/images/blog/2018/blade-runner.jpg
 categories:
@@ -39,6 +39,5 @@ Don't get me wrong, I don't think that the new movie is bad at all, but just ano
 
 Anyhow… usually magic is difficult to make to happen and this time didn't happen.
 
-* * *
 
 [^1]: Update 10th November 2017: When I wrote his post I was looking for this specific work but I could find it… I had it in the tip of my tongue but never came out. Now, it came to my mind like an act of [magic](https://imgur.com/gallery/YsbKHg1).

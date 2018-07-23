@@ -300,6 +300,5 @@ Open Terminal and launch the options screen `Cmd + ;`. In the General tap you ca
 
 Done, now you can enjoy the best of the two worlds. Enjoying a new, more flexible and customizable shell as default, while keeping your old one, just in case you felt nostalgic.
 
-----
 
 [^1]: I was about to upload my patched Monaco font, but then I realize that I can't post any modification of the Monaco font since it's copyrighted by Apple. However, you can easily patch your copy of the font for your personal use with the [script provided by Nerd Fonts](https://github.com/ryanoasis/nerd-fonts#font-patcher). I faced some problems when I tried to patch it myself, basically related to the height of the patched font, which ended up different than the original font. If this is your case, you can just download [FontForge](https://en.wikipedia.org/wiki/FontForge) —`brew cask install fontforge`— and modify those parameters to be equal to the original ones

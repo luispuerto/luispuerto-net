@@ -90,7 +90,5 @@ Now you can update without any problem your Git using Homebrew and it will keep 
 
 {% include figure image_path="assets/images/blog/2018/Screen-Shot-2017-11-09-at-18.00.27.png" alt="Git's version in High Sierra" caption="Git's version in High Sierra" %}{: .align-center} 
 
-----
 
 [^1]: I just updated to High Sierra, and I can confirm that the Git's version is a little bit more up to to day, but it isn't the latest.
-
