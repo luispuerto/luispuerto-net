@@ -1,7 +1,7 @@
 ---
 title: 'R 3.5 "Joy in Playing"'
 date: 2018-04-28 18:52:30
-header: 
+header:
   overlay_image: /assets/images/blog/2018/4421de17ce2dc4cd3843ba00b224fbe0-header.jpeg
   teaser: /assets/images/blog/2018/4421de17ce2dc4cd3843ba00b224fbe0-header.jpeg
 categories:
@@ -34,7 +34,7 @@ I would recommend to run it twice, since some packages have dependencies and the
 
 # Java and rJava configuration
 
-In some of my machines I hadn't configured the new Java 10 with the prerelease rJava so [Java 10 can be run properly in R](https://luisspuerto.net/blog/2018/03/r-and-java-10/). If this is your case remember to run:
+In some of my machines I hadn't configured the new Java 10 with the prerelease rJava so [Java 10 can be run properly in R](https://luisspuerto.net/blog/2018/03/28/r-and-java-10/). If this is your case remember to run:
 
 ```sh
 $ R CMD javareconf

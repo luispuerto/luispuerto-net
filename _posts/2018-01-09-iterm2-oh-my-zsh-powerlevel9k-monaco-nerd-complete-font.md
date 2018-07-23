@@ -245,7 +245,7 @@ $ brew cask install font-meslo-nerd-font #if you want to install Meslo font
 
 {% include figure image_path="assets/images/blog/2018/Screen-Shot-2018-01-02-at-13.11.31.png" alt="Color configuration in iTerm2" caption="Color configuration in iTerm2" %}
 
-Finally you can configure the colors in iTerm2. Usually people use of of the presets iTerm have, or the ones you can download. But I have tweaked a little bit the colors and I have my [own configuration](https://luisspuerto.net/blog/wp-content/uploads/2018/01/Luis-Puerto-iTerm.itermcolors.zip).
+Finally you can configure the colors in iTerm2. Usually people use of of the presets iTerm have, or the ones you can download. But I have tweaked a little bit the colors and I have my [own configuration](/assets/docs/Luis-Puerto-iTerm.itermcolors.zip).
 
 Now you are ready to use iTerm2 with your new configuration.
 
