@@ -1,6 +1,6 @@
 ---
 title: "16 Personalities: Apparently I'm an Entrepreneur"
-date: 2018-05-21 18:05:16 00:00
+date: 2018-05-21 18:05:16
 header:
   overlay_image: /assets/images/blog/2018/Luis-Puerto-The-Entreprenour2.jpg
   teaser: /assets/images/blog/2018/Luis-Puerto-The-Entreprenour2.jpg
