@@ -255,6 +255,5 @@ In the same way… An almost month ago I installed High Sierra and I noticed a w
 
 The error is still there right now, and I told Apple about it [when I noticed](https://twitter.com/lpuerto/status/928885729916342272). They contacted me and collected some data. They never return to me about this issue. Now, I wondering if this two issues are connected and High Sierra accelerated the degradation process of the Nvidia / AMD chip.
 
-
 [^1]: To be entirely honest I don't remember if after deleting the kexts I was able to boot directly to the striped desktop or I needed to run the commands in the beginning of solution [2](#using-solutions-2-3-and-4).
 [^2]: Today, 8th of December 2017, I decided to install the update to 10.13.2. It worked really well, and even booted without needed to apply the fix again. In other words, the discrete GPU was working. However, after a while fail, and took me more than what I wanted to reestablish everything. So my recommendation is, if you update, apply the fix as soon as possible, but cause sooner or later things are going to go south and it's going to take you even more time to fix it. In my case I needed to apply the solution almost from the very beginning and a NVRAM reset was necessary to be able to operate again the computer. Good luck!
