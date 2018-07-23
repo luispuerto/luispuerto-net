@@ -150,7 +150,7 @@ body:hover .visually-hidden button {
   @media (max-width: $small) {
     width: 100% !important;
   }
-  
+
   @include breakpoint($small) {
     float: right;
     margin-left: 1em;
@@ -487,8 +487,8 @@ body:hover .visually-hidden button {
     font-weight: bold;
     margin: 1em 0;
     border: 0;
-    border-top: 1px solid #bfbfbf;
-    padding-top: 1em; 
+    border-top: 1px solid $border-color;
+    padding-top: 1em;
   }
 }
 
