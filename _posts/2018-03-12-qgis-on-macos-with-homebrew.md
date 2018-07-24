@@ -198,7 +198,7 @@ $ brew reinstall bison
 
 And then I have to modify the file `/usr/local/bin/pyrcc5` and change `pythonw2.7` to `python3`.
 
-```shell
+```sh
 #!/bin/sh
 exec python3 -m PyQt5.pyrcc_main ${1+"$@"}
 ```
