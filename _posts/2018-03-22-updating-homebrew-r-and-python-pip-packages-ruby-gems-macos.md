@@ -49,10 +49,9 @@ $ brew pin <formulae>
 To update R packages I run:
 
 ```sh
+# to see what are the old packages
 $ Rscript --vanilla -e "old.packages(repos = 'cloud.r-project.org')"
-```
-
-```sh
+# to directly update
 $ Rscript --vanilla -e "update.packages(ask = F, repos = 'cloud.r-project.org')"
 ```
 
@@ -68,10 +67,7 @@ To update all the packages from pip and pip itself I run:
 
 ```sh
 $ pip install --upgrade pip && pip freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U
-```
-
-```sh
-$ pip3 install --upgrade pip && pip3 freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip3 install -U
+$ pip3 install --upgrade pip && pip3 freeze --local | grep -v '^-e' | cut -d = -f 1  | xargs -n1 pip3 install -U
 ```
 
 I took the idea from [here](https://stackoverflow.com/questions/2720014/upgrading-all-packages-with-pip).
