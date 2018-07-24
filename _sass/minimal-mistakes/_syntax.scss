@@ -366,9 +366,15 @@ figure.highlight {
   }
   .highlight {
     @include border-radius(0 0 5px 5px);
-    // pre {
-    //   white-space: pre-wrap;
-    // }
+    pre {
+      white-space: pre-wrap;
+    }
+  }
+  .rouge-gutter {
+    display: none;
+  }
+  .rouge-code {
+    padding-left: 0em !important;
   }
   pre.highlight {
     //background: #1c1c1c;
