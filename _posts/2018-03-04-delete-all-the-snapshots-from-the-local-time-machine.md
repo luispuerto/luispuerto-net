@@ -14,7 +14,7 @@ Sometimes you need to delete all the snapshots that the macOS time machine do lo
 
 So if you run
 
-```sh 
+```shell 
 $ sudo tmutil listlocalsnapshots
 com.apple.TimeMachine.2018-03-03-144538
 com.apple.TimeMachine.2018-03-03-154712
@@ -29,7 +29,7 @@ You probably end up with a similar list as mine, or perhaps even longer. If you 
 
 Lucky, [someone in the MacRumors](https://forums.macrumors.com/threads/how-to-delete-time-machine-local-backups-on-high-sierra.2073998/#post-25673423) forum came with a clever idea of using the terminal and the grep command. If you run:
 
-```sh 
+```shell 
 $ tmutil listlocalsnapshotdates / |grep 20|while read f; do tmutil deletelocalsnapshots $f; done
 Deleted local snapshot '2018-03-03-144538'
 Deleted local snapshot '2018-03-03-154712'

@@ -46,7 +46,7 @@ Let's explain how it's done:
 
 2. Now, boot into recovery single user mode by holding: `cmd + R + S`. When finish to load, you run:
 
-   ```sh
+   ```shell
    $ csrutil disable # to disable SIP
    $ nvram fa4ce28d-b62f-4c99-9cc3-6815686e30f9:gpu-power-prefs=%01%00%00%00 # to disable the dGPU on boot.
    $ nvram boot-args="-v" # Load in verbose mode
@@ -57,7 +57,7 @@ Let's explain how it's done:
 
 4. Now we are going to mount the hard drive and move the driver of the dGPU `AMDRadeonX3000.kext` out of the drivers folder.
 
-   ```sh
+   ```shell
    $ /sbin/mount -uw / # mount root partition writeable
    $ mkdir -p /System/Library/Extensions-off # make a kext-backup directory
    $ mv /System/Library/Extensions/AMDRadeonX3000.kext /System/Library/Extensions-off/ # only move ONE offending kext out of the way
@@ -67,13 +67,13 @@ Let's explain how it's done:
 
 5. Now you're going to be able to load your desktop normally, but with an accelerated iGPU display. However, the system doesn't know how to power-management the failed AMD-chip, so you are going to need to load it manually.
 
-   ```sh
+   ```shell
    $ sudo kextload /System/Library/Extensions-off/AMDRadeonX3000.kext
    ```
 
 6. You can automate the loading with the doing the following:
 
-   ```sh
+   ```shell
    $ sudo mkdir -p /Library/LoginHook # Creating a folder to store the script.
    $ sudo nano /Library/LoginHook/LoadX3000.sh # Creating the script.
    ```
@@ -90,19 +90,19 @@ Let's explain how it's done:
 
 8. You make it executable active:
 
-   ```sh
+   ```shell
    $ sudo chmod a+x /Library/LoginHook/LoadX3000.sh
    $ sudo defaults write com.apple.loginwindow LoginHook /Library/LoginHook/LoadX3000.sh
    ```
 
 9. This is what I like the most. You create a script in the root of your hard drive to automate the process in case of an update.
 
-   ```sh
+   ```shell
    $ sudo nano /force-iGPU-boot.sh # Creates the script in the root
    ```
    With the following content.
 
-   ```sh
+   ```shell
    #/bin/sh
    sudo nvram boot-args="-v"
    sudo nvram fa4ce28d-b62f-4c99-9cc3-6815686e30f9:gpu-power-prefs=%01%00%00%00
@@ -111,18 +111,18 @@ Let's explain how it's done:
 
 10. Now you make it executable and I hide to avoid delete it:
 
-    ```sh
+    ```shell
     $ sudo chmod a+x /force-iGPU-boot.sh # make ir executable
     $ sudo chflags hidden /force-iGPU-boot.sh # hide the file.
     ```
     In the future if you reset SMC and PRAM/NVRAM you just have to load in single user mode holding `cmd + S` and run:
 
-    ```sh
+    ```shell
     $ sh /force-iGPU-boot.sh
     ```
 
 11. ~~Then, you can copy the [AMDGPUWakeHandler](https://github.com/blackgate/AMDGPUWakeHandler), or the one I created A[MDGPUWakeHandler.kext](assets/docs/AMDGPUWakeHandler.kext.zip), to `/Library/Extensions` and run the following commands:~~
-    ```sh
+    ```shell
     $ # sudo chmod -R 755 /Library/Extensions/AMDGPUWakeHandler.kext
     $ # sudo chown -R root:wheel /Library/Extensions/AMDGPUWakeHandler.kext
     $ # sudo touch /Library/Extensions
@@ -132,13 +132,13 @@ Let's explain how it's done:
 
      I recommend you the way the machine sleeps to hibernate, but I haven't tested if it can sleeps normally after we apply the following step
 
-    ```sh
+    ```shell
     $ sudo pmset -a hibernatemode 25
     ```
 
     All the fuss about the wake up after sleep / hibernate is related to when the computer wake ups checks the GPUs and somehow it gets stuck to dGPU. For that reason some people has changed the variable gpuswitch in pmset. Nevertheless, this variable is really undocumented and you find explanations to what the values to that variable (0, 1 and 2) do on internet. ~~At this moment I have it set as default 2~~ I've decided to change to 1.
 
-    ```sh
+    ```shell
     $ sudo pmset -a gpuswitch 1
     ```
 
@@ -150,7 +150,7 @@ Let's explain how it's done:
 
 13. After you reboot and if everything goes smoothly, perhaps you wan to return to the normal boot mode. You can room in terminal:
 
-    ```sh
+    ```shell
     $ sudo nvram boot-args=""
     ```
 
@@ -166,25 +166,25 @@ Now I just going to copy paste from [MikeyN](https://forums.macrumors.com/member
 
 So, before you update the system, please remember to run:
 
-```sh
+```shell
 $ sudo cp -r /System/Library/Extensions-off/AMDRadeonX3000.kext /System/Library/Extensions/
 ```
 
 Then you update. If you can't normally load your computer, you can hold `cmd + S` and run:
 
-```sh
+```shell
 $ sh /force-iGPU-boot.sh
 ```
 
 Then you can reboot again on single user mode holding `cmd + S` and then run
 
-```sh
+```shell
 $ sudo mv /System/Library/Extensions/AMDRadeonX3000.kext /System/Library/Extensions-off/
 ```
 
 To move again the kext. Keep in mid that the other one still there do you are going to probably rename it in this fashion:
 
-```sh
+```shell
 $ sudo mv /System/Library/Extensions/AMDRadeonX3000.kext /System/Library/Extensions-off/AMDRadeonX3000-1.kext
 ```
 
@@ -192,13 +192,13 @@ $ sudo mv /System/Library/Extensions/AMDRadeonX3000.kext /System/Library/Extensi
 
 If you run in terminal
 
-```sh
+```shell
 $ kextstat | grep AMD
 ```
 
 You have to get something similar to this:
 
-```sh
+```shell
 111    2 0xffffff7f82da8000 0x122000   0x122000   com.apple.kext.AMDLegacySupport (1.6.0) 3BE3756A-6D69-3CD0-B18A-BC844EE2A4DF <105 12 11 7 5 4 3 1>
 130    0 0xffffff7f83631000 0x12e000   0x12e000   com.apple.kext.AMD6000Controller (1.6.0) DC45A18B-6F81-38D5-85CB-06BFBD74B524 <111 105 12 11 5 4 3 1>
 146    0 0xffffff7f83126000 0x22000    0x22000    com.apple.kext.AMDLegacyFramebuffer (1.6.0) 5F948DD4-8D1E-31BD-A7EE-C44254CBA506 <111 105 12 11 7 5 4 3 1>
@@ -207,7 +207,7 @@ You have to get something similar to this:
 
 In the beginning I wasn't getting any of these and the system just loaded AMDRadeonX3000. That resulting in a little bit of overheating in the dGPU and I wasn't able to sleep the computer. The reason for the system to not load the kext was I moved them that much that I changed the ownership of the files. If that is your case you can run in terminal:
 
-```sh
+```shell
 $ sudo chown -R root:wheel /System/Library/Extensions/AMD*.*
 $ sudo chown -R root:wheel /System/Library/Extensions-off/AMD*.*
 ```

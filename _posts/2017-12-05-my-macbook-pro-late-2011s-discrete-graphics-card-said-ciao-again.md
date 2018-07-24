@@ -41,7 +41,7 @@ This step isn't really necessary, and you can jump to the [next step](https://lu
 
 You need to boot on single user mode (press and hold `Cmd + S + R ) and run the following commands.
 
-```sh
+```shell
 $ fsck -fy # to check a disk
 $ mount -uw / # mount a root filesystem with read/write permissions
 $ sudo mkdir /AMD_Kexts/ # make a directory to store the AMD drivers in case you'll need them in future
@@ -57,7 +57,7 @@ However, in the same way as the solution's poster, when I tried to delete the ke
 
 From there, I just needed to performed the same commands but a little bit different. You have to take into account that in macOS your hard drive is going to mount automatically, so it wasn't necessary to mount it like before, and you just have to run the rest of the commands with the proper path and the name of your drive. In my case my hard drive name is `Macintosh SSD`, and in this Mac there is also a `Macintosh SSD`, so when it mounted my hard drive macOS renamed it to to `Macintosh SSD 1`, In the shell you have to proper indecate the blank spaces on name and paths using the backslash symbol `\`, therefore I could access to my hard drive using the name `Macintosh\ SSD\ 1`. Mind the name of your hard drive (usually `Macintosh HD`) and change the path in the commands in consequence.
 
-```sh
+```shell
 $ sudo mkdir /Volumes/Macintosh\ SSD\ 1/AMD_Kexts/ # make a directory to store the AMD drivers in case you'll need them in future
 $ sudo mv /Volumes/Macintosh\ SSD\ 1/System/Library/Extensions/AMD*.* /AMD_Kexts/ # move the AMD drivers
 $ sudo rm -rf /Volumes/Macintosh\ SSD\ 1/System/Library/Caches/com.apple.kext.caches/ # remove the AMD drivers cache
@@ -74,7 +74,7 @@ Now, you can take your disk, reinstall it in your Mac and begin from there. I bo
 
 That's beginning… at least now I knew that my computer can be booted. Then, I decided to switch solutions and continue with the fix explained in [2,](https://forums.macrumors.com/threads/disable-a-failed-amd-gpu-on-a-2011-macbook-pro-grub-solution.2087527/) which is fully explained in [3](https://gist.github.com/blackgate/17ac402e35d2f7e0f1c9708db3dc7a44). The reason… because seemed more recent and better explained, and more stable in the long term. So, as it's detailed in that solutions, first reset the [SMC](https://support.apple.com/en-us/HT201295) and the [NVRAM](https://support.apple.com/en-us/HT204063). Then, boot your Mac on recovery single user mode (pressing and holding `Cmd + S + R`) and run the following commands.
 
-```sh
+```shell
 $ nvram fa4ce28d-b62f-4c99-9cc3-6815686e30f9:gpu-power-prefs=%01%00%00%00
 $ csrutil disable
 $ reboot
@@ -92,7 +92,7 @@ At this point, I recommend to move the kexts to the original location `/System/L
 
   You can do it dragging and dropping those back to its original location (it's going to ask for your password), or you just can move then with terminal:
 
-```sh
+```shell
 $ sudo mv /AMD_Kexts/*.* /System/Library/Extensions/
 ```
 
@@ -100,13 +100,13 @@ $ sudo mv /AMD_Kexts/*.* /System/Library/Extensions/
 
 Now, to implement the complete solution you have to [download ubuntu](https://www.ubuntu.com/download/desktop) to take the GRUB from there. I've downloaded [Ubuntu 17.10](http://www.nic.funet.fi/pub/mirrors/releases.ubuntu.com/17.10/ubuntu-17.10-desktop-amd64.iso), as it's specified in the fix. When you've downloaded the .ISO, you have to attach and mount it, so assuming that you have the ISO in downloads:
 
-```sh
+```shell
 $ hdiutil attach -nomount ~/Downloads/ubuntu-17.10-desktop-amd64.iso
 ```
 
 Which probably turns something like this:
 
-```sh
+```shell
 /dev/disk2              Apple_partition_scheme
 /dev/disk2s1            Apple_partition_map
 /dev/disk2s2            Apple_HFS
@@ -116,7 +116,7 @@ The disk number could be different, for example in my case the first time was di
 
 Now you can finally mount the ISO with the following commands:
 
-```sh
+```shell
 $ mkdir /tmp/ubuntu
 $ mount -t cd9660 /dev/disk2 /tmp/ubuntu/
 $ open /tmp/ubuntu/shell
@@ -130,19 +130,19 @@ You have to [format you USB stick to FAT32](https://support.apple.com/kb/PH22241
 
 When you have those folders on your USB stick, you have to edit the file `/RESCUE/boot/grub/grub.cfg`. I like Atom to edit, but perhaps you don't have it installed so if you type:
 
-```sh
+```shell
 $ open /Volumes/RESCUE/boot/grub/grub.cfg
 ```
 
 Your default text editor will open. In case you want to be sure and open with Text Edit:
 
-```sh
+```shell
 $ open -a TextEdit /Volumes/RESCUE/boot/grub/grub.cfg
 ```
 
 Then you have to delete all the file content and paste the following.
 
-```sh
+```shell
 if loadfont /boot/grub/font.pf2 ; then
     set gfxmode=auto
     insmod efi_gop
@@ -173,7 +173,7 @@ Save the file and let's copy now to you Mac. Or perhaps, you can test if this wo
 
 Now you can make this permanent and without need the USB. You run on terminal the following commands with your USB still plugged and assuming that you named it `RESCUE`.
 
-```sh
+```shell
 $ cd /Volumes
 $ sudo mkdir efi
 $ sudo mount -t msdos /dev/disk0s1 /Volumes/efi
@@ -191,19 +191,19 @@ Now… you can unmount the USB and boot without it.
 
 When you are under High Sierra, the next step doesn't really work, and even installing this kext is going to return to a black screen when you return form sleep. To prevent this, you can just change the way your Mac sleep and make it hibernate. If you have a SSD in place, like I have, the difference on time between waking up from a normal sleep than from hibernation is going to be neglectable.  The only real difference is, your computer isn't going to wake up when you lift the lid and you have to push the on/off button to wake your Mac up. To set this up you have to run on terminal:
 
-```sh
+```shell
 $ sudo pmset -a hibernatemode 25
 ```
 
 If you want to return to the normal sleep mode you set in the following way:
 
-```sh
+```shell
 $ sudo pmset -a hibernatemode 3
 ```
 
 Anyhow, I decided to apply the solution as it's explained [here](https://github.com/blackgate/AMDGPUWakeHandler) and I even [created a kext myself for High Sierra](https://luisspuerto.net/blog/wp-content/uploads/2017/12/AMDGPUWakeHandler.kext_.zip). Just in hopes that in a close future things improve I can normally sleep. If you download the kext you just have to unzip it and then copy to `/Library/Extensions` and run the following commands.
 
-```sh
+```shell
 $ sudo chmod -R 755 /Library/Extensions/AMDGPUWakeHandler.kext
 $ sudo chown -R root:wheel /Library/Extensions/AMDGPUWakeHandler.kext
 $ sudo touch /Library/Extensions
@@ -217,7 +217,7 @@ Now, you are done.
 
 If you need to reimplement the solution because you updated the system you are going to need to just bless GRUB disk again —make it a bootable disk. You just boot from the rescue USB stick and run the following commands on terminal[^2]
 
-```sh
+```shell
 $ cd /Volumes
 $ sudo mkdir efi
 $ sudo mount -t msdos /dev/disk0s1 /Volumes/efi

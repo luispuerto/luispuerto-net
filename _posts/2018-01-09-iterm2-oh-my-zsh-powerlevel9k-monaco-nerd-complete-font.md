@@ -23,7 +23,7 @@ I would begin installing iTerm2. iTerm2 is just an app similar to Terminal, but 
 
 To install iTerm we are going to use [Homebrew](https://luisspuerto.net/blog/2017/11/21/homebrew/):
 
-```sh
+```shell
 $ brew cask install iterm2
 ```
 
@@ -35,13 +35,13 @@ To install Oh My Zsh you need to have installed in your system [Git](https://lui
 
 However, you can't install Oh My Zsh itself using Homebrew, but you can use [cURL](https://en.wikipedia.org/wiki/CURL) or [Wget](https://en.wikipedia.org/wiki/Wget), which probably you have already installed in your system. If you don't have any of those, you can install them through Homebrew. To install Oh My Zsh you can run the following commands:
 
-```sh
+```shell
 $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
 or
 
-```sh
+```shell
 $ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 ```
 
@@ -51,7 +51,7 @@ Oh My Zsh has a autoupdate feature, so don't worry about update. From time to ti
 
 [Powerlevel9K](https://github.com/bhilburn/powerlevel9k) is a Oh My Zsh external theme that gives it that awesome look and the capacity to configure the prompt, yet keep it light. There are literally dozens of themes, whether [included in the Oh My Zsh repo](https://github.com/robbyrussell/oh-my-zsh/wiki/Themes) or [external](https://github.com/robbyrussell/oh-my-zsh/wiki/External-themes) ones, and Powerlevel9K is one of the external ones, so you have to download (clone the repo) and store it on the custom part for the Oh My Zsh configuration folders. To do so, just run the following command in your terminal.
 
-```sh
+```shell
 $ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 ```
 
@@ -61,7 +61,7 @@ $ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/the
 
 When you have Oh My Zsh installed you can begin to configure. In order to do that you have to open the configuration file, which is located in your user folder, with your favorite text editor. In my case I like to use Atom, so I run the following command in the terminal.
 
-```sh
+```shell
 $ atom ~/.zshrc
 ```
 
@@ -238,7 +238,7 @@ Finally, you have to configure iTerm2 to use your patched font if you want the g
 
 If you don't want to patch any font, you can download any of the prepatched fonts, and I recommend do it [using Hombrew](https://github.com/ryanoasis/nerd-fonts#option-4-homebrew-fonts).
 
-```sh
+```shell
 $ brew tap caskroom/fonts
 $ brew cask install font-meslo-nerd-font #if you want to install Meslo font
 ```
@@ -253,7 +253,7 @@ Now you are ready to use iTerm2 with your new configuration.
 
 First you need to check what version, if any, of Zsh you have installed.
 
-```sh
+```shell
 $ zsh --version
 ```
 
@@ -261,13 +261,13 @@ in my case and right now my version is 5.4.2, but you can check which is the las
 
 Now you have to check that you have Zsh in your list of authorized shells. You have check running opening the file `/etc/shells` with atom:
 
-```sh
+```shell
 $ atom /etc/shells
 ```
 
 You have to see something similar to this.
 
-```sh
+```shell
 # List of acceptable shells for chpass(1).
 # Ftpd will not allow users to connect who are not using
 # one of these shells.
@@ -285,7 +285,7 @@ If you don't have the line 10, add it and save the file.
 
 Now you run the following command to make Zsh your default shell:
 
-```sh
+```shell
 $ chsh -s
 $(which zsh)
 ```

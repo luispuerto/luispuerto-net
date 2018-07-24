@@ -36,13 +36,13 @@ I would recommend to run it twice, since some packages have dependencies and the
 
 In some of my machines I hadn't configured the new Java 10 with the prerelease rJava so [Java 10 can be run properly in R](https://luisspuerto.net/blog/2018/03/28/r-and-java-10/). If this is your case remember to run:
 
-```sh
+```shell
 $ R CMD javareconf
 ```
 
 so you yield something similar to:
 
-```sh
+```shell
 Java interpreter : /Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home/bin/java
 Java version     : 10.0.1
 Java home path   : /Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home
@@ -91,7 +91,7 @@ The problem was the [makevars](https://luisspuerto.net/blog/2018/01/12/install-r
 
 Remember to uncomment them after you finish the build.
 
-```sh
+```shell
 # Remove the comment on -fopenmp for compiling data.table package
 CC=/usr/local/opt/llvm/bin/clang #-fopenmp
 CXX=/usr/local/opt/llvm/bin/clang++ #-fopenmp

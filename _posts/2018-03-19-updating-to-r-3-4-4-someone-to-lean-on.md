@@ -41,7 +41,7 @@ tags:
 
 If you are on macOS and you want to enjoy the improvements and the bug fixings, you just can download the binary from [CRAN](https://cran.r-project.org/bin/macosx/) or if you are a Homebrew user you just can update with the following command
 
-```sh
+```shell
 $ brew update && brew upgrade
 ```
 

@@ -27,7 +27,7 @@ In the [post about Homebrew](https://luisspuerto.net/blog/2017/11/21/homebrew/) 
 
 To update Homebrew packages I run:
 
-```sh
+```shell
 $ brew update && brew upgrade && brew cleanup && brew prune && brew cu -ay && brew cask cleanup
 ```
 
@@ -40,7 +40,7 @@ $ brew update && brew upgrade && brew cleanup && brew prune && brew cu -ay && br
 
 If for some reason you don't want to update an specific package in Homebrew, you can _pin _in to an specific version or the current version.
 
-```sh
+```shell
 $ brew pin <formulae>
 ```
 
@@ -48,7 +48,7 @@ $ brew pin <formulae>
 
 To update R packages I run:
 
-```sh
+```shell
 # to see what are the old packages
 $ Rscript --vanilla -e "old.packages(repos = 'cloud.r-project.org')"
 # to directly update
@@ -65,7 +65,7 @@ I really think it would be cool to be able also _pin _packages in R, but I haven
 
 To update all the packages from pip and pip itself I run:
 
-```sh
+```shell
 $ pip install --upgrade pip && pip freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U
 $ pip3 install --upgrade pip && pip3 freeze --local | grep -v '^-e' | cut -d = -f 1  | xargs -n1 pip3 install -U
 ```
@@ -80,7 +80,7 @@ pip is the package manager for packages written in Python. You can read a little
 
 To update the RubyGems you run the following command:
 
-```sh
+```shell
 $ gem update
 ```
 
@@ -88,7 +88,7 @@ $ gem update
 
 Although these ones are really easy and you can update them just using the Mac App Store app in your Mac, it's possible to trigger the update checking and the update itself through CLI. macOS has a command that allow you to make this happen `softwareupdate`. You can run it like this:
 
-```sh
+```shell
 $ softwareupdate -l ## to list all the updates
 $ softwareupdate -i ## to install updates
 $ softwareupdate -ia ## to install all updates
@@ -101,13 +101,13 @@ As you see it's quite thorough and you can see more options with running `man so
 
 If you want something more complex you can install [mas-cli](https://github.com/mas-cli/mas), which is a Mac App Store command line interface. Install you just run:
 
-```sh
+```shell
 $ brew install mas
 ```
 
 Then, you can run in your command line the following to update:
 
-```sh
+```shell
 $ mas list ## List your Mac App Store apps
 $ mas search <app> ## Search for an app
 $ mas install <app-number> ## Install an specific app

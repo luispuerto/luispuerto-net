@@ -15,19 +15,19 @@ A couple of weeks ago I [wrote about the problem I have with my old MacBook Pro 
 
 I'm doing two things to prevent the black screen behavior. First I'm sleeping the computer using the command line:
 
-```sh
+```shell
 $ sudo shutdown -s now
 ```
 
 I've also change the hibernation mode of the machine to zero, in other words, it doesn't save the state in a file in the hard drive. I've also deleted that file from my hard drive.
 
-```sh
+```shell
 $ sudo rm -f /var/vm/sleepimage
 ```
 
 Finally I've disable the options to wake up the computer when you connect to power source and when you open the lid.
 
-```sh
+```shell
 $ sudo pmset -a lidwake 0
 ```
 

@@ -53,7 +53,7 @@ Some people say that the correct way to do this just push the power button and c
 
 Other solution I've read about is just change the way your Mac sleeps. You Mac can be sent to sleep in two ways, simple sleep or Safe Sleep —the last one is/was called hibernation in windows— so macOS has three different setups for sleeping —only simple sleep, only safe sleep or both. You can see your config using the command:
 
-```sh
+```shell
 $ sudo pmset -g custom
   Battery Power:
    lidwake              0
@@ -102,7 +102,7 @@ Some people argue that the back screen problem is related to the sleep image or 
 
 To change the sleep behavior you can run the following commands
 
-```sh
+```shell
 # Just sleep mode
 $ sudo pmset -a hibernationmode 0
 # Sleep mode + safe sleep
@@ -115,7 +115,7 @@ $ sudo pmset -a hibernationmode 25
 
 If you decide to go for `hibernatemode 0` you can also delete de `sleepimage` and sabe some space in your hard drive.
 
-```sh
+```shell
 $ sudo rm -f /var/vm/sleepimage
 ```
 
@@ -125,7 +125,7 @@ Since some people say that the problem is related to the lid I've decided to cha
 
 You can achieve this changing the `lidwake` parameter to `0`:
 
-```sh
+```shell
 $ sudo pmset -a lidwake 0
 ```
 

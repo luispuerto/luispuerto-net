@@ -16,7 +16,7 @@ tags:
 ---
 As I explained in my [previous post](https://luisspuerto.net/blog/2018/05/11/homebrews-r-doesnt-have-all-the-capabilities/) if you installed R with Homebrew you have less capabilities than with a R installed from CRAN's binary. But, **can you have all the capabilities while you still use Homebrew to install R? Yes!** However… why you bother to install it with Homebrew at all instead of installing it from CRAN. Well, it's true that CRAN install it's easier. You just have to download the binary and that's it. You can even use Homebrew Cask to install R that way
 
-```sh
+```shell
 $ brew cask install r-app
 ```
 
@@ -30,7 +30,7 @@ You also have to remember that this instructions are just aimed to reinstall R i
 
 The first thing you have to do is uninstall R and Cairo if you have them installed:
 
-```sh
+```shell
 $ brew uninstall R
 $ brew uninstall --ignore-dependencies cairo
 ```
@@ -41,7 +41,7 @@ When you don't have R and Cairo in your system you can go ahead.
 
 You begin tapping Seth's tap.
 
-```sh
+```shell
 $ brew tap sethrfore/r-srf
 ```
 
@@ -49,19 +49,19 @@ Actually, you can avoid this step since Seth's formulae have the same name as Ho
 
 If you don't have [Xquartz](https://www.xquartz.org) already installed in your system you can install with:
 
-```sh
+```shell
 $ brew cask install xquartz
 ```
 
 Now, you can install Cairo.
 
-```sh
+```shell
 $ brew install sethrfore/r-srf/cairo
 ```
 
 When Cairo finish to build you can proceed with R.
 
-```sh
+```shell
 $ brew install sethrfore/r-srf/r --with-openblas --with-java --with-cairo --with-libtiff --with-pango
 ```
 
@@ -81,7 +81,7 @@ When it end to build, you can use use `capabilities()` in R console and you have
 
 To finish I would run:
 
-```sh
+```shell
 $ R CMD javareconf
 Java interpreter : /Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/java
 Java version     : 10.0.2

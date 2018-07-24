@@ -21,7 +21,7 @@ You can read a little bit more about it [here](https://unix.stackexchange.com/qu
 
 For that reason you can install other commands like [trash-cli](https://github.com/andreafrancia/trash-cli), and in macOS you can also install [rmtrash](https://github.com/PhrozenByte/rmtrash). On macOS you can install both things using [homebrew](https://brew.sh) and in Linux with `apt-get`  .
 
-```sh 
+```shell 
 # On Mac you can install with Brew
 $ brew install trash-cli
 $ brew install rmtrash

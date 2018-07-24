@@ -18,7 +18,7 @@ I've been committing on [Git](https://git-scm.com) a lot lately and I've been up
 
 If you what to set up the PGP signing is pretty easy in principle, but could have some caveats. To be honest, I struggled with it on the beginning and every time I committed after I set if up in the beginning I got the following message:
 
-```sh
+```shell
 error: gpg failed to sign the data
 fatal: failed to write commit object
 ```
@@ -37,19 +37,19 @@ You can check the knowledge base that GitHub has about the topic [here](https://
 
 First of all, you need to install `pinentry`   for mac. I've installed all of them using [homebrew](https://brew.sh).
 
-```sh
+```shell
 $ brew install gpg gpg-agent pinentry-mac 
 ```
 
 Now, you need to created a PGP key runnnig the command:
 
-```sh
+```shell
 $ gpg --full-generate-key
 ```
 
 You can do it also with:
 
-```sh
+```shell
 $ gpg --gen-key 
 ```
 
@@ -59,7 +59,7 @@ Answer all the prompted questions and be specially careful with your email since
 
 Now, you can have to list all your keys with the command:
 
-```sh
+```shell
 $ gpg --list-secret-keys --keyid-format LONG
 
 /Users/lpuerto/.gnupg/pubring.kbx
@@ -73,14 +73,14 @@ ssb   rsa4096/62E5B29EEA7145E 2017-11-04 [E]
 
 You have to copy to your clipboard `<YOUR_LONG_KEY_ID>` , with is your key id, and paste in the following commands to configure you Git with your key.
 
-```sh
+```shell
 $ git config --global user.signingKey <YOUR_LONG_KEY_ID>
 $ git config --global commit.gpgsign true
 ```
 
 You can certainly not pass the command
 
-```sh
+```shell
 $ git config --global commit.gpgsign true
 ```
 
@@ -88,7 +88,7 @@ that configures your Git to always sign your commits with your signature and sig
 
 You also need to copy your long key id again to get your PGP key with the following command.
 
-```sh
+```shell
 $ gpg --armor --export <YOUR_LONG_KEY>
 ```
 
@@ -96,19 +96,19 @@ Which print you full GPG key, beginning with `——BEGIN PGP PUBLIC KEY BLOCK�
 
 Now, to make it work you need to config pinentry for mac as your dialog to enter your passphrase. To do that you have to use the following command to write `pinentry-program /usr/local/bin/pinentry-mac` in `gpg agent` config file.
 
-```sh
+```shell
 $ echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
 ```
 
 You can also do it manually.
 
-```sh
+```shell
 $ open ~/.gnupg/gpg-agent.conf
 ```
 
 Finally, you need to restart the `gpg agent`  doing the following. This is really important and it's was one of the reason because I took me so long to finally configure Git with the PGP. Since I haven't restarted the gpg-agent it hasn't pick up the configuration.
 
-```sh
+```shell
 $ gpgconf --kill gpg-agent
 ```
 

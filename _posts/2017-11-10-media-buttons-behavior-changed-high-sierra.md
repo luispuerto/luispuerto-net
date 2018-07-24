@@ -23,7 +23,7 @@ Now, Safari has stolen that preference, and if a video or some kind of media is 
 
 What I've found helpful is this [little app](http://milgra.com/high-sierra-media-key-enabler.html) called Media Key Enable that someone recommended in [Ask Different](https://apple.stackexchange.com/questions/300811/high-sierra-mediaplay-button-changes). It just turn back the behavior as in earlier releases. You can check the project in [GitHub](https://github.com/milgra/highsierramediakeyenabler) if you want. If you're a [Homebrew](https://brew.sh) user you can install it with Homebrew cask:
 
-```sh 
+```shell 
 $ brew cask install highsierramediakeyenabler
 ```
 

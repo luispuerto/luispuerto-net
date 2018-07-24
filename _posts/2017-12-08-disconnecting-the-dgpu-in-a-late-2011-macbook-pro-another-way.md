@@ -26,14 +26,14 @@ In other words this are the steps. Please keep in mind that I'm running High Sie
 
 2. Boot your Mac on recovery single user mode (pressing and holding `Cmd + S + R`) and run the following commands.
 
-    ```sh 
+    ```shell 
     $ nvram fa4ce28d-b62f-4c99-9cc3-6815686e30f9:gpu-power-prefs=%01%00%00%00
     $ csrutil disable
     $ reboot
     ```
 
 3. You are going to reboot to your normal desktop. Now you can move the GPU kexts to other place: 
-    ```sh 
+    ```shell 
     $ sudo mkdir /AMD_Kexts/ # make a directory to store the AMD drivers in case you'll need them in future
     $ sudo mv /System/Library/Extensions/AMD*.* /AMD_Kexts/ # move the AMD drivers
     $ sudo rm -rf /System/Library/Caches/com.apple.kext.caches/ # remove the AMD drivers cache
@@ -43,7 +43,7 @@ In other words this are the steps. Please keep in mind that I'm running High Sie
 
 4. Take the [AMDGPUWakeHandler.kext](https://luisspuerto.net/blog/wp-content/uploads/2017/12/AMDGPUWakeHandler.kext_.zip) and copy it to <span `/Library/Extensions` then run the following commands 
 
-    ```sh 
+    ```shell 
     $ sudo chmod -R 755 /Library/Extensions/AMDGPUWakeHandler.kext
     $ sudo chown -R root:wheel /Library/Extensions/AMDGPUWakeHandler.kext
     $ sudo touch /Library/Extensions
@@ -51,14 +51,14 @@ In other words this are the steps. Please keep in mind that I'm running High Sie
 
 5. Make sure to have change the way the system sleeps:
 
-    ```sh 
+    ```shell 
     $ sudo pmset -a hibernatemode 25
     ```
 
 6. Now you can reboot.
 7. Perhaps it's recomendable to re-enable the SIP. To do that just boot your Mac on recovery single user mode (pressing and holding `Cmd + S + R`) and run: 
 
-    ```sh 
+    ```shell 
     $ csrutil enable
     $ reboot
     ```

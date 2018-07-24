@@ -23,19 +23,19 @@ Apple ships with their systems a really to use version of Git, but it's usually 
 
 First of all, you need to install the last Git using Homebrew:
 
-```sh
+```shell
 $ brew install git
 ```
 
 You are probably going to need to relink by force `-f` your new Git to make the system to use it.
 
-```sh
+```shell
 $ brew link -f git
 ```
 
 Know if you ask the system, your version of Git have to be different —superior—  to the one Apple provides. In my case and under El Capitan is like this:
 
-```sh
+```shell
 $ usr/bin/git --version
 git version 2.10.1 (Apple Git-78) # Apple's version
 $ /usr/local/Cellar/git/2.15.0/bin/git --version
@@ -50,13 +50,13 @@ If you are user of [rStudio](https://www.rstudio.com), you'll probably know that
 
 If you want to use your own downloaded Git you just have to change that value in the settings and that's it. However, it's a little bit more complicated than that in practice. Since we're using Homebrew to manage our apps the directory of the app changes every time you update it to show the version it's storing, just in case you wanted to have more than one version. The path to the directory of Homebrew's Git looks something like this, as you saw before in a code chuck:
 
-```sh
+```shell
 /usr/local/Cellar/git/2.15.0/bin/git
 ```
 
 If you updated Git using Homebrew, the new path would look something like this.
 
-```sh
+```shell
 /usr/local/Cellar/git/2.XX.X/bin/git
 ```
 
@@ -68,7 +68,7 @@ So, you're probably thinking that you just have to set the path to Git executabl
 
 Then… What we should do? You need to open the user setting's file of rStudio located in a hidden directory in your user folder `~/.rstudio/monitored/user-settings/user-settings`  with the following command.
 
-```sh
+```shell
 $ open ~/.rstudio/monitored/user-settings/user-settings
 ```
 
@@ -76,7 +76,7 @@ $ open ~/.rstudio/monitored/user-settings/user-settings
 
 Towards the end of the file, there is a variable called `vcsGitExePath`  that set your personalized options for the path of Git executable. With your rStudio closed, you can change it in the file to this:
 
-```sh
+```shell
 vcsGitExePath=“/usr/local/bin/git"
 ```
 
