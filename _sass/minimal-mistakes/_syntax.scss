@@ -366,6 +366,9 @@ figure.highlight {
   }
   .highlight {
     @include border-radius(0 0 5px 5px);
+    // pre {
+    //   white-space: pre-wrap;
+    // }
   }
   pre.highlight {
     //background: #1c1c1c;
