@@ -45,7 +45,7 @@ You begin tapping Seth's tap.
 $ brew tap sethrfore/r-srf
 ```
 
-Actually, you can avoid this step since Seth's formulae have the same name as Homebrew Core ones we are forced to install them using the full name of the tap in combination with the formula name.
+Actually, you can avoid this step since Seth's formulae have the same name as Homebrew Core's one we are forced to install them using the full name of the tap in combination with the formula name.
 
 If you don't have [Xquartz](https://www.xquartz.org) already installed in your system you can install with:
 
@@ -55,7 +55,7 @@ $ brew cask install xquartz
 
 Now, you can install Cairo.
 
-```s
+```sh
 $ brew install sethrfore/r-srf/cairo
 ```
 
@@ -83,6 +83,27 @@ To finish I would run:
 
 ```sh
 $ R CMD javareconf
+Java interpreter : /Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/java
+Java version     : 10.0.2
+Java home path   : /Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home
+Java compiler    : /Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/javac
+Java headers gen.: /usr/bin/javah
+Java archive tool: /Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/jar
+
+trying to compile and link a JNI program
+detected JNI cpp flags    : -I$(JAVA_HOME)/include -I$(JAVA_HOME)/include/darwin
+detected JNI linker flags : -L$(JAVA_HOME)/lib/server -ljvm
+/usr/local/opt/llvm/bin/clang  -I"/usr/local/Cellar/r/3.5.1/lib/R/include" -DNDEBUG -I/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/include -I/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/include/darwin  -I/usr/local/opt/gettext/include -I/usr/local/opt/llvm/include   -fPIC  -g -O3 -Wall -pedantic -std=gnu99 -mtune=native -pipe -c conftest.c -o conftest.o
+/usr/local/opt/llvm/bin/clang -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -single_module -multiply_defined suppress -L/usr/local/Cellar/r/3.5.1/lib/R/lib -L/usr/local/opt/gettext/lib -L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib -o conftest.so conftest.o -L/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/server -ljvm -L/usr/local/Cellar/r/3.5.1/lib/R/lib -lR -lintl -Wl,-framework -Wl,CoreFoundation
+ld: warning: text-based stub file /System/Library/Frameworks//CoreFoundation.framework/CoreFoundation.tbd and library file /System/Library/Frameworks//CoreFoundation.framework/CoreFoundation are out of sync. Falling back to library file for linking.
+
+
+JAVA_HOME        : /Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home
+Java library path: $(JAVA_HOME)/lib/server
+JNI cpp flags    : -I$(JAVA_HOME)/include -I$(JAVA_HOME)/include/darwin
+JNI linker flags : -L$(JAVA_HOME)/lib/server -ljvm
+Updating Java configuration in /usr/local/Cellar/r/3.5.1/lib/R
+Done.
 ```
 
 To reconfigure Java on R, just in case.
