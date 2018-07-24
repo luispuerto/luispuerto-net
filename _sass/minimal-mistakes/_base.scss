@@ -158,7 +158,8 @@ pre {
 }
 
 pre {
-  overflow-x: auto; /* add scrollbars to wide code blocks*/
+//  overflow-x: auto; /* add scrollbars to wide code blocks*/
+//  Removed because it was mesing with the codeblocks
 }
 
 p > code,
