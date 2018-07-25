@@ -1,0 +1,13 @@
+name: phabet
+date: '2018-01-11 22:17:47'
+url: ''
+message: >-
+  funny thing, i just noticed that my system doesnt even contain the
+  AMDRadeonX3000.kext, only the AMDRadeonX3000.bundle??! how come? im on fresh
+  installed high sierra 10.13.2. my mbp stopped working and i tried to do the
+  fix, but there was no kext to move and so i stucked on system not booting. i
+  started from extern hd and found out that there is no AMDRadeonX3000.kext at
+  all. now my system works perfect again but without x3000. i would like to
+  install the last update but im affraid to fuck up the system again. any
+  suggestions?
+email: 42342a279bb44653f0d8b40df60989c9

@@ -1,0 +1,47 @@
+name: Luis Puerto
+date: '2018-03-20 22:13:13'
+url: 'http://wp.luisspuerto.net'
+message: >-
+  About the benchmarking of R homebrew vs R homebrew with openblas (and openmp),
+  well I haven't seen any specific for both cases. However... I can tell you
+  that R binary from CRAN has <a
+  href="https://cran.r-project.org/bin/macosx/RMacOSX-FAQ.html#Which-BLAS-is-used-and-how-can-it-be-changed_003f"
+  rel="nofollow">that implementation</a> and performed much worse in my wife's
+  computer than with openBlas from Homebrew (those are the results at the
+  beginning of the post) I can't tell about just the Homebrew version. I had it
+  for a while and then switched to the openBlas version, but in the change I
+  didn't perform a benchmark.
+
+
+  About the other question. I installed that package and seems that everything
+  is OK. I've compiled it without problem and loaded also without a warning.
+  Usually those problems are fixed with you install everything again...
+
+
+  I installed INLA with:
+
+
+  <pre><code class="r">install.packages("INLA", repos=c(getOption("repos"),
+  INLA="https://inla.r-inla-download.org/R/stable"), dep=TRUE)
+
+  </code></pre>
+
+
+  Because if I try CRAN I get:
+
+
+  <pre><code class="r">&gt; install.packages("INLA")
+
+  Installing package into ‘/Users/lpuerto/Library/R/3.x/library’
+
+  (as ‘lib’ is unspecified)
+
+  Warning in install.packages :
+    package ‘INLA’ is not available (for R version 3.4.4)
+  </code></pre>
+
+
+  This is suggested in the <a
+  href="https://stackoverflow.com/questions/45494818/r-library-breaks-due-to-failure-in-loading-dyld#comment77984399_45494818"
+  rel="nofollow">comment</a> of the question you sent.
+email: 8afddd2d4401dc54843bb42ba3285f89

@@ -1,0 +1,62 @@
+name: saso
+date: '2018-03-17 16:01:31'
+url: ''
+message: >-
+  so after update if Im stuck at logo, that means I have new working file.  this
+  way I will know if system updated the kexts. if it's there and system load i
+  have copy that won't work, and system did not made changes.
+
+  in my case I know it will make update of files it's security update with
+  restart.
+
+  I noticed when I did overwrite after update I did not lose ownership, it was
+  read/write. but will not load in terminal with the script.
+
+
+  $ sudo cp -r /System/Library/Extensions-off/AMDRadeonX3000.kext
+  /System/Library/Extensions/
+
+  this I enter in terminal, but when u make copy of the kext this means the
+  copied file - will not load after. it will be "corrupted" ?
+
+
+  Ok now understand, if i have new installed kext
+
+  when I move the updated file I rename it:
+
+  $ sudo mv /System/Library/Extensions/AMDRadeonX3000.kext
+  /System/Library/Extensions-off/AMDRadeonX3000-1.kext
+
+
+  AMDRadeonX3000-1.kext will be the new file.  later in terminal I will see
+  witch of those two can be loaded.
+
+  as if they are different version maybe old one will not load. now i have
+  1.51.8 version of AMDRadeonX3000
+
+
+  so for example if the new kext AMDRadeonX3000-1.kext load in terminal better
+  to keep that without rename and make changes in the nano script to load  that
+  file:
+
+  "LoadX3000.sh"
+
+  #!/bin/bash
+
+  kextload /System/Library/Extensions-off/AMDRadeonX3000-1.kext
+
+
+  pmset -a gpuswitch 0 # to prevent to switch to the dGPU
+
+
+  exit 0
+
+
+  But here Is what makes me scared. what if when you make rename the file is not
+  in use anymore, the system, notice when u make rename, copy, or overwrite in
+  my last case.
+
+
+  lol I don't know why I see this so complicated, or I think too much. that's
+  why I need simple steps what to do.
+email: 75f6cd9e84fb89372239de83418bca91

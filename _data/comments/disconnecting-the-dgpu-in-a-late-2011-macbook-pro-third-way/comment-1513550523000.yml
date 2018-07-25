@@ -1,0 +1,9 @@
+name: Luis Puerto
+date: '2017-12-17 23:42:03'
+url: 'http://wp.luisspuerto.net'
+message: >-
+  I just tried without gfxcardststus and also works. But I have “hibernate mode
+  25”. 
+
+  Check the ownership of the kexts. If they don’t load perhaps is that.
+email: 8afddd2d4401dc54843bb42ba3285f89

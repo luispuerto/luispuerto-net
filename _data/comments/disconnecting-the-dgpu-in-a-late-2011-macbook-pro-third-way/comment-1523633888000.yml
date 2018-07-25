@@ -1,0 +1,13 @@
+name: 'MBP wakes up from sleep to back screen &#8211; Luis Puerto'
+date: '2018-04-13 17:38:08'
+url: 'http://wp.luisspuerto.net/2018/04/mbp-wakes-up-from-sleep-to-back-screen/'
+message: >-
+  [&#8230;] As you know, I have had problems with my old MacBook Pro Late 2011
+  and its dGPU which I&rsquo;ve been able to&nbsp;patch to make the computer
+  work again. In the beginning, the side effect of the fix was not to be able to
+  wake up properly the Mac from sleep mode. The computer woke up to a black or
+  grey screen and the fans started to work at full speed to finally turn off
+  itself. This was cause because on the wake up process the computer decided to
+  stuck to the faulty dGPU instead to the iGPU. Luckily, this problem was solve
+  as you can see in the final fix. [&#8230;]
+email: d41d8cd98f00b204e9800998ecf8427e

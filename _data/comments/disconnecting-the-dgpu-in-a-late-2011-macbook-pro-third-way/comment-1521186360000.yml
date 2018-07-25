@@ -1,0 +1,22 @@
+name: Luis Puerto
+date: '2018-03-16 08:46:00'
+url: 'http://wp.luisspuerto.net'
+message: >-
+  I'm glad that worked for you! When you understand the solution it's kinda
+  silly and really simple. You have to think that it load everything faster
+  because it doesn't have to be shifting between the two cards it just sticks
+  with one. If you don't do anything that it's really GPU intense it's going to
+  be really fine. You have to think you have a kind of MacBook Air.
+
+
+  As I think I've mentioned in the post, I still have some problems from time to
+  time with the wake up from sleep. Perhaps you aren't going to have any of
+  those since Sierra seems to be more stable in that department. Basically what
+  happens is the screen doesn't turn on after I pull up the lid and I have to
+  reboot. It's a random error that I really don't know why happens. Before the
+  dGPU crashed it happened also, but perhaps once every 6 months or so.
+
+
+  I didn't developed this solution, I just put it here to make it more clear,
+  but the ones that came out with it are the people from MacRumors forum.
+email: 8afddd2d4401dc54843bb42ba3285f89

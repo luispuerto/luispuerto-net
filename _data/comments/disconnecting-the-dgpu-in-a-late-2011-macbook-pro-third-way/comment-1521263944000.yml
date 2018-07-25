@@ -1,0 +1,21 @@
+name: Luis Puerto
+date: '2018-03-17 06:19:04'
+url: 'http://wp.luisspuerto.net'
+message: >-
+  Hi!
+
+
+  Yes, you have to rename the kext, or at least it's recomendable.
+  <code>mv</code>in terminal works for moving files and for rename. 
+
+  The idea is that you don't know if Apple is going to update the kexts or not,
+  so you bring things back to <code>normal</code> update and take again the
+  problematic kext out of the folder. In the spirit to keep every single kext
+  you move, you rename the new one. Perhaps it's a better idea to rename the old
+  one and copy the new one. I'll try to explain this better.
+
+
+  Be careful when you move those files... they lose the ownership pretty quick
+  if you don't move then on terminal and being logged as root <code>sudo</code>.
+  If they don't load check the permissions / ownership.
+email: 8afddd2d4401dc54843bb42ba3285f89

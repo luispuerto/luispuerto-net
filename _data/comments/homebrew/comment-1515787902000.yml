@@ -1,0 +1,11 @@
+name: >-
+  Install R 100% Homebrew Edition With OpenBlas &#038; OpenMP &#8211; My Version
+  &#8211; Luis Puerto
+date: '2018-01-12 21:11:42'
+url: >-
+  http://wp.luisspuerto.net/2018/01/install-r-100-homebrew-edition-with-openblas-openmp-my-version/
+message: >-
+  [&#8230;] probably have Homebrew already installed, if you don&rsquo;t,
+  please, install it. Then, I recommend you to connect to the cask tap if you
+  haven&rsquo;t done it [&#8230;]
+email: d41d8cd98f00b204e9800998ecf8427e

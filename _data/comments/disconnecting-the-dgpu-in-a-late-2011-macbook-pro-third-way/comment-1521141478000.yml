@@ -1,0 +1,35 @@
+name: Luis Puerto
+date: '2018-03-15 20:17:58'
+url: 'http://wp.luisspuerto.net'
+message: >-
+  I really don't know what could be really wrong. In the end you have to think
+  that this is just a rig to be able to continue to use your computer although
+  it's broken. I haven't experience anything like you have experience, but I'm
+  in High Sierra and I haven't been watching any movie lately, but I've been
+  doing some other intensive iGPU jobs.
+
+
+  Two/three things that can come to my mind are:
+
+
+  <ul>
+
+  <li>Check if the <code>AMDRadeonX3000.kext</code> is really out of the
+  <code>/System/Library/Extensions/</code></li>
+
+  <li>Check the ownership of all the kexts, whether or not they are in the
+  <code>/System/Library/Extensions/</code> or in
+  <code>/System/Library/Extensions-off/</code></li>
+
+  <li>Check if all the kext related to graphics load. </li>
+
+  <li>See if something in your system is forcing to try to use the dGPU. I
+  haven't use sierra –I didn't like it– I jumped from El Capitan to High Sierra.
+  Perhaps your movie app or something. </li>
+
+  </ul>
+
+
+  If you still have problems, I recommend you to post in the thread about issue
+  in the MacRumors forums. I think the link is in my post.
+email: 8afddd2d4401dc54843bb42ba3285f89

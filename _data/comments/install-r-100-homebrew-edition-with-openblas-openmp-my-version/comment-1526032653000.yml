@@ -1,0 +1,9 @@
+name: 'Installing R with Homebrew with all the capabilities &#8211; Luis Puerto'
+date: '2018-05-11 11:57:33'
+url: >-
+  http://wp.luisspuerto.net/2018/05/installing-r-with-homebrew-with-all-the-capabilities/
+message: >-
+  [&#8230;] if you install that way you can&rsquo;t take advantage of OpenBlas
+  and OpenMP&nbsp;which really enhance the speed of R processing. Well, you can
+  take advantage of OpenMP with [&#8230;]
+email: d41d8cd98f00b204e9800998ecf8427e

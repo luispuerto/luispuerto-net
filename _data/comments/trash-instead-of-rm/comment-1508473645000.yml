@@ -1,0 +1,9 @@
+name: Mike
+date: '2017-10-20 06:27:25'
+url: ''
+message: |-
+  Below command may be useful
+  alias rm!="/bin/rm -vi"
+  alias rm=trash
+  alias lstrash=trash-list
+email: 5661850511676a7b8a23954d602004ad

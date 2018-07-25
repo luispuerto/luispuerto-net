@@ -1,0 +1,29 @@
+name: Luis Puerto
+date: '2018-03-18 20:47:07'
+url: 'http://wp.luisspuerto.net'
+message: >-
+  You can rename the other way around... I mean. First rename the file you
+  already have in <code>Extensions-off</code> and then you copy the new file.
+  You do that this way for example.
+
+
+  <pre><code class="sh">$ sudo mv
+  /System/Library/Extensions-off/AMDRadeonX3000.kext
+  /System/Library/Extensions-off/AMDRadeonX3000-1.kext
+
+  $ sudo mv /System/Library/Extensions/AMDRadeonX3000.kext
+  /System/Library/Extensions-off/AMDRadeonX3000.kext
+
+  </code></pre>
+
+
+  This way you always know that the last one is the one with the correct name
+  and not the ones renamed.
+
+
+  Regarding why I don't set <code>hibernatemode 25</code>... I have that way for
+  a while, but it also happen to me from time to time that the computer doesn't
+  wake up correctly. Funny thing was it loaded, I could see the bar loading the
+  hibernation info from hard drive, but at the end the screen ended up black. So
+  I decided to leave it in <code>hibernatemode 3</code>.
+email: 8afddd2d4401dc54843bb42ba3285f89

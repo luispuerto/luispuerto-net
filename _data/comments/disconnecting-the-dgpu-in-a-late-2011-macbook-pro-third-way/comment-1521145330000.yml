@@ -1,0 +1,37 @@
+name: saso
+date: '2018-03-15 21:22:10'
+url: ''
+message: >-
+  Thank you for the fast reply,
+
+  just checked the folders and: kexts are still in /System/Library/Extensions/
+  including AMDRadeonX3000.kext,
+
+  they are not in the new created folder: (your name
+  "/System/Library/Extensions-off/") (my name "AMD_Kexts") this folder is
+  empty. 
+
+  All 4 kext are load:
+    102    2 0xffffff7f83b6b000 0x122000   0x122000   com.apple.kext.AMDLegacySupport (1.5.1) 0670744B-B64C-3424-B186-FD972A37E78E 
+    130    0 0xffffff7f83cd0000 0x12e000   0x12e000   com.apple.kext.AMD6000Controller (1.5.1) 2015FD1C-294C-3C71-AEB5-C1EE0E65BD46 
+    141    0 0xffffff7f83520000 0x571000   0x571000   com.apple.AMDRadeonX3000 (1.5.1) F6F37414-893B-3F66-8AB7-F3327DE6AC55 
+    148    0 0xffffff7f83c9a000 0x22000    0x22000    com.apple.kext.AMDLegacyFramebuffer (1.5.1) 930A7077-5EBD-3FA5-A023-415A1438E132 
+
+  For now I was able to boot just with: sh /force-iGPU-boot.sh, 
+
+  and I see now the line in this script is different of my folder "AMD_Kexts" : 
+  kextload /System/Library/Extensions-off/AMDRadeonX3000.kext 
+
+  in my case should be: kextload /AMD_Kexts/AMDRadeonX3000.kext ?
+
+
+  I will start over and use your folder name now, and see what happens.
+
+  Thank you again, just by writing to you, I notice this mistake. I will try
+  this and write back.
+
+
+  p.s. Maybe is better for me to update with High Sierra and start over. I think
+  it will work better maybe. Just don't know should I start right after the
+  update is done, or should I stop it and enter the code.
+email: 75f6cd9e84fb89372239de83418bca91

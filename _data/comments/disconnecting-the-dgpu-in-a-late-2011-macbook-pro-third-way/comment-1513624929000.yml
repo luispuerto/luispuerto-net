@@ -1,0 +1,15 @@
+name: mark
+date: '2017-12-18 20:22:09'
+url: ''
+message: >-
+  ok, there is no AMD6000Controller.kext at all, nowhere. must have deleted it
+  somehow? all others are there. AMDLegacyFramebuffer.kext is read and write.
+
+
+  "/Users/me/AMDLegacyFramebuffer.kext failed to load - (libkern/kext) not
+  found; check the system/kernel logs for errors or try kextutil(8)." - this is
+  what i get if i try to "sudo kextload AMDLegacyFramebuffer.kext
+
+
+  can i just download AMD6000Controller.kext? or need to reinstall?
+email: 42342a279bb44653f0d8b40df60989c9

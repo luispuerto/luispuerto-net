@@ -1,0 +1,10 @@
+name: mark
+date: '2017-12-17 23:39:15'
+url: ''
+message: >-
+  i do have gfxCardStatus in igpu, but still it wont work. idk if that matters,
+  but i only have com.apple.kext.AMDLegacySupport and
+  com.apple.kext.AMDRadeonX3000 kext loaded, all others dont load and cannot
+  load manually either. also tried gpuswitch 0, 1 and 2, no result. maybe need
+  clean install and start new
+email: 42342a279bb44653f0d8b40df60989c9

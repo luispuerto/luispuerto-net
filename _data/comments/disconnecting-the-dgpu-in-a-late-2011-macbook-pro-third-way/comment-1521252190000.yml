@@ -1,0 +1,55 @@
+name: saso
+date: '2018-03-17 03:03:10'
+url: ''
+message: >-
+  Thank you again, I saw the forum also, shoutout to MikeyN. 
+
+  But this was cleaner to look at to, as I am not programer or understand what I
+  write :), and at the end I did.
+
+  I see some security update for Sierra. I messed up last night. I did the
+  update but I did not made copy for the X3000, and I thought I will just move
+  it and then I was asked to overwrite and I did, but I ended with not working
+  X3000, It was impossible to load the kext, to complete the last step. Today I
+  did clean instal. and ...
+
+
+  I still have the urge to do the update, but I don't understand the last step:
+
+
+
+  $ sudo cp -r /System/Library/Extensions-off/AMDRadeonX3000.kext
+  /System/Library/Extensions/
+
+  -this will make copy in the original folder right ?
+
+  sh /force-iGPU-boot.sh
+
+  -this I know.
+
+  $ sudo mv /System/Library/Extensions/AMDRadeonX3000.kext
+  /System/Library/Extensions-off/
+
+  -ok this is for the move of the newly created file.
+
+  $ sudo mv /System/Library/Extensions/AMDRadeonX3000.kext
+  /System/Library/Extensions-off/AMDRadeonX3000-1.kext
+
+  -but here don't know what to expect. 
+
+  when I enter step 3, I will be asked to rename the old one? What should I do
+  when asked or ..?
+
+  or should I manually rename it?
+
+  the renamed file will stay in the same folder?  what to do with it?
+
+
+
+  did you made this step? any tips?
+
+  for your problem why you don't turn the sleep to never in energy saver?
+
+
+  Cheers
+email: 75f6cd9e84fb89372239de83418bca91

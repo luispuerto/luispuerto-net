@@ -1,0 +1,16 @@
+name: Chad B
+date: '2018-03-20 22:47:08'
+url: ''
+message: >-
+  Thanks for the reply. Looks like they (recently?) changed the default matrix
+  algebra library for binary R! It used to default to R's (slow) reference
+  matrix algebra library, which is of course quite slow.
+
+
+  Regarding INLA, I was able to install it without problems as well, but it
+  throws those errors when you try to run a model. The INLA folks have suggested
+  it's a problem with Homebrew R, but I can't imagine why that would be.
+
+
+  In any case, thanks for taking the time to look into it!
+email: 4168812dbb43732a82030391dab119e0

@@ -1,0 +1,7 @@
+name: 'Updating Homebrew, R Packages and Python pip &#8211; Luis Puerto'
+date: '2018-03-22 14:20:35'
+url: 'http://wp.luisspuerto.net/2018/03/updating-homebrew-r-packages-and-python-pip/'
+message: >-
+  [&#8230;] need a different makevars&nbsp;than the rest of the packages so just
+  in case I needed to change the makevars and rebuild that [&#8230;]
+email: d41d8cd98f00b204e9800998ecf8427e

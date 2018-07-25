@@ -1,0 +1,49 @@
+name: Saso
+date: '2018-03-15 18:51:04'
+url: ''
+message: >-
+  Hello, I have Macbook pro late 2011. (I had graphic card replace by Apple
+  2years ago. And now this problem again.) Started now with fresh Sierra instal
+  10.12.6.
+
+
+  Last night I did this method and got my mac working again, I noticed it's even
+  faster than before. But I had some problems, first that I noticed was when
+  youtube video was playing after 20min, just when I was on terminal at this
+  line: 
+
+  sudo pmset -a hibernatemode 25
+
+  sudo pmset -a gp.....
+
+
+  whole screen froze and you can hear the audio stuck in last word ts ts ts ts,
+  so I had to force shutdown. It loaded again. everything was working, but I
+  noticed on one time whole screen brightens went to black and lighten up again.
+  Still worked after that till I decided to test my build in camera, so when I
+  clicked on Photo booth (app) screen froze again as before. 
+
+  (I have read people have this freeze with programs like Photoshop, Ableton
+  etc.. and there are some fix for that too. I am still far from installing some
+  software to test this.) On the next restart went to gray screen and I could
+  hear the fans again. 
+
+  So I know I was back to start again.
+
+
+  In single user mode I started the "sh /force-iGPU-boot.sh", and in 5sec I was
+  on Sierra. I watched movie, and before sleep I did regular shut down. Next
+  morning I was on gray screen again.... 
+
+  I did "sh /force-iGPU-boot.sh" again, and now I am here to write this. Can you
+  please help me where I do wrong. I think after restart I will see Verbose mode
+  again (as I see it regularly now after restart is this ok?)
+
+
+  p.s. sleep works fine, brightness works too.
+
+
+  Thank you so much!
+
+  Cheers
+email: 75f6cd9e84fb89372239de83418bca91

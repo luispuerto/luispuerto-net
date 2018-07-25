@@ -1,0 +1,21 @@
+name: Chad B.
+date: '2018-03-20 17:12:50'
+url: ''
+message: >-
+  Great guide, but is there an advantage to using Openblas over Apple's
+  Accelerate library? The benchmarks I've seen before suggest that they perform
+  about the same. But since the default for Homebrew R is to use Accelerate,
+  this seems like the simpler solution. Would love to hear your thoughts.
+
+
+  And since I'm here... I had to switch to the binary R installer because
+  Homebrew R wouldn't work with the R-INLA package. (I get the same error as
+  this guy:
+  https://stackoverflow.com/questions/45494818/r-library-breaks-due-to-failure-in-loading-dyld).
+  This is obviously beyond the scope of your post, but I was wondering if you
+  had any idea on what might be going on there? I'd love to switch back to a
+  100% Homebrew solution.
+
+
+  Thanks again for the post, and any other thoughts you might have.
+email: 4168812dbb43732a82030391dab119e0
