@@ -21,6 +21,11 @@
     max-width: $x-large;
   }
 }
+.landing {
+  #main {
+    padding-top: 0em;
+  }
+}
 
 .page {
   @include breakpoint($large) {
