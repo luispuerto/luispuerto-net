@@ -583,6 +583,7 @@
 .comment__content-wrapper {
   float: right;
   width: calc(100% - 60px);
+  font-size: $type-size-7;
 
   @include breakpoint($large) {
     width: calc(100% - 100px);
