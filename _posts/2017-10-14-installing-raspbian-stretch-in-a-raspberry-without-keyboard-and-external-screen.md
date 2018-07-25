@@ -4,6 +4,7 @@ date: 2017-10-14 18:47:55
 header:
   overlay_image: https://i.imgur.com/b7WS6uG.png
   teaser: https://i.imgur.com/b7WS6uG.png
+  caption: Remote desktop of Raspberry Pi.
 categories:
   - Professional
   - Technology
