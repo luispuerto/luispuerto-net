@@ -27,7 +27,7 @@ teaser                   : "/assets/images/pages/teaser-default.jpg"
 breadcrumbs              : # false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
+  provider               : "staticman_v2" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
   disqus:
     shortname            : "luisspuerto-net" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
     api_key              : "Pl2s6WZnj9RWDS428ro3EiD9nz6QkH91pNswUepzxrSgOmSG0byByPNPR4Tdc6Zp"
@@ -56,7 +56,7 @@ staticman:
         format           : # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 reCaptcha:
   siteKey                : "6Le3UGYUAAAAAGCV3MSUS-8eLKv8z1_QoRKY7nFG"
-  secret                 : "6Le3UGYUAAAAAFk5lDcP8WhzgiPvriUdIcHvIw0-"
+  secret                 : "kmvLr5CVHi1aUyL3yL2SYTe1qIig7fbb0mgBAw+Et1J2OgJ+L8amh1FXbogoY5KnFS1UFUh4VyGyCyOBsjpVOqcHN6BhtC6kORA5VzUscGyHCUlql636m2C5qaOkGPzpaxAuX4XPAH3LLk1eqTWZF6d3Ieeappzz2m6yDRGl0eY="
 atom_feed:
   path                   : # blank (default) uses feed.xml
 search                   : true # true, false (default)
