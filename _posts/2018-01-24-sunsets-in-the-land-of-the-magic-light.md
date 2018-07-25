@@ -4,6 +4,7 @@ date: 2018-01-24 12:56:16
 header:
   overlay_image: assets/images/blog/2018/IMG_4707.jpg
   teaser: assets/images/blog/2018/IMG_4707.jpg
+  caption: The beautiful photo I took.
 categories:
   - Personal
 tags:

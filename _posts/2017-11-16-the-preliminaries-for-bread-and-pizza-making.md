@@ -4,6 +4,7 @@ date: 2017-11-16 21:08:39
 header:
   overlay_image: assets/images/blog/2018/IMG_4380.jpg
   teaser: assets/images/blog/2018/IMG_4380.jpg
+  caption: One my loaves just got out of the oven.
 categories:
   - Personal
   - Recipes

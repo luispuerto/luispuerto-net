@@ -1,9 +1,10 @@
 ---
 title: Back to Joensuu
 date: 2017-10-12 18:35:03
-header: 
+header:
   image: assets/images/blog/2018/IMG_0736.jpg
   teaser: assets/images/blog/2018/IMG_0736.jpg
+  caption: Joensuu form the air. 
 categories:
   - Personal
 tags:

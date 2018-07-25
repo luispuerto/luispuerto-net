@@ -1,9 +1,10 @@
 ---
 title: First blog post
 date: 2017-05-15 04:08:07
-header: 
+header:
   image: assets/images/blog/2018/hwijjf7rwopgej1nb4zb_img_3773.jpg
   teaser: assets/images/blog/2018/hwijjf7rwopgej1nb4zb_img_3773.jpg
+  caption: New York City from Empire State Building. Source [Pexels](https://www.pexels.com/photo/aerial-america-architecture-buildings-515996/).
 categories:
   - Personal
 tags:

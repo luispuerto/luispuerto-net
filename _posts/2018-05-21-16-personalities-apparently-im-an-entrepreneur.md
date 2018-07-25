@@ -4,6 +4,7 @@ date: 2018-05-21 18:05:16
 header:
   overlay_image: /assets/images/blog/2018/Luis-Puerto-The-Entreprenour2.jpg
   teaser: /assets/images/blog/2018/Luis-Puerto-The-Entreprenour2.jpg
+  caption: Part of my profile in 16 personalities website. 
 categories:
   - Personal
   - Professional

@@ -4,6 +4,7 @@ date: 2017-10-16 07:20:24
 header:
   image: assets/images/blog/2018/IMG_4290-e1508086408810.jpg
   teaser: assets/images/blog/2018/IMG_4290-e1508086408810.jpg
+  caption: View from Jääkarhut jetty. 
 categories:
   - Personal
 tags:

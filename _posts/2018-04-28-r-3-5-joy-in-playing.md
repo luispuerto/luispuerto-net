@@ -4,6 +4,7 @@ date: 2018-04-28 18:52:30
 header:
   overlay_image: /assets/images/blog/2018/4421de17ce2dc4cd3843ba00b224fbe0-header.jpeg
   teaser: /assets/images/blog/2018/4421de17ce2dc4cd3843ba00b224fbe0-header.jpeg
+  caption: The joy is (in the) playing
 categories:
   - Professional
   - RStats

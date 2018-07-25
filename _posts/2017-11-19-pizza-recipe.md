@@ -3,6 +3,7 @@ title: Pizza recipe
 header:
   overlay_image: assets/images/blog/2018/IMG_4377.jpg
   teaser: assets/images/blog/2018/IMG_4377.jpg
+  caption: Pizza ready to be eaten
 categories:
   - Personal
   - Recipes

@@ -4,6 +4,7 @@ date: 2018-04-29 12:49:50
 header:
   overlay_image: /assets/images/blog/2018/IMG_5302.jpg
   teaser: /assets/images/blog/2018/IMG_5302.jpg
+  caption: The final result of the recipe. 
 categories:
   - Personal
   - Recipes

@@ -4,6 +4,7 @@ date: 2017-11-17 15:39:29
 header:
   overlay_image: assets/images/blog/2018/IMG_4384.jpg
   teaser: assets/images/blog/2018/IMG_4384.jpg
+  caption: The final result
 categories:
   - Personal
   - Recipes
