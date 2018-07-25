@@ -27,7 +27,7 @@ teaser                   : "/assets/images/pages/teaser-default.jpg"
 breadcrumbs              : # false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : "staticman_v2" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
   disqus:
     shortname            : "luisspuerto-net" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
     api_key              : "Pl2s6WZnj9RWDS428ro3EiD9nz6QkH91pNswUepzxrSgOmSG0byByPNPR4Tdc6Zp"
