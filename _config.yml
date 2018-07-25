@@ -22,7 +22,7 @@ name                     : "Luis Puerto"
 description              : "Forestry | Research | GIS | Remote Sensing"
 url                      : "https://luisspuerto.net"
 baseurl                  : # "/blog"
-repository               : "luisspuerto/jekyll.luisspuerto.net"
+repository               : "luisspuerto/luisspuerto.net"
 teaser                   : "/assets/images/pages/teaser-default.jpg"
 breadcrumbs              : # false # true, false (default)
 words_per_minute         : 200
