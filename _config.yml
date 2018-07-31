@@ -61,7 +61,7 @@ atom_feed:
   path                   : # blank (default) uses feed.xml
 search                   : true # true, false (default)
 search_full_content      : true # true, false (default)
-search_provider          : # google # lunr (default), algolia, google
+search_provider          :  "algolia" # google # lunr (default), algolia, google
 algolia:
   application_id         : "NSAWFR2G1K" # YOUR_APPLICATION_ID
   index_name             : "luisspuerto-net" # YOUR_INDEX_NAME
