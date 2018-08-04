@@ -18,7 +18,7 @@ intro:
   - title: Welcomed to my place.
   - excerpt: | 
       Right now I'm in transition from my previous site and some parts are under development. 
-      You can know more [here](/blog/2018/07/23/New-Web-in-Jekyll/).  
+      You can know more [here](/blog/2018/07/23/new-web-in-jekyll/).  
 
 feature_row:
   - image_path: assets/images/pages/splash-featurerow-aboutme.jpg
