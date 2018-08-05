@@ -275,6 +275,7 @@
     color: inherit;
     font-size: $type-size-6;
     text-decoration: none;
+    max-width: 4em;
 
     &:hover {
       text-decoration: underline;
