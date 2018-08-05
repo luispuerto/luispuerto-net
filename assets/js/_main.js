@@ -67,6 +67,11 @@ $(document).ready(function() {
     positionContent: "true"
     });
 
+  // Anchor-js
+  anchors.options = {
+  placement: 'left',
+  };
+
   // init smooth scroll
   $("a").smoothScroll({ offset: -20 });
 
