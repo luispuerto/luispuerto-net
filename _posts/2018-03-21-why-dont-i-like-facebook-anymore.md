@@ -28,7 +28,7 @@ I don't think that hiding is the answer either, but exactly one of the exacts re
 
 Nevertheless, Facebook has lost its appeal for me and I no longer interested in spend a lot of time there. I would even say that my life has improved since I'm there just a couple of times a week and just for a couple of minutes. I just find it boring and no longer fits my communication and social needs. Why? Well there are several reasons and I'll try to explain them next.
 
-# Facebook isn't the correct format for me anymore
+## Facebook isn't the correct format for me anymore
 
 I don't feel interested to share content on Facebook anymore because I find if too simple. Although it's more painful, it takes me more effort, I prefer blogging. Blogging allows me to create more complex post and develop a much great deal of ideas in comparison with Facebook.
 
@@ -42,7 +42,7 @@ Before Facebook came out that was the way we shared content, using multiple open
 
 I really like the kind of interaction a blog provides. More meaningful, real and open. It allows me share content in more rich and diverse ways.
 
-# Facebook is an attention whore
+## Facebook is an attention whore
 
 This's something that I really detest from Facebook with all my soul and I think it has become more acute lately. I really don't know if it's because this has been always the case, but since now I spend much much less time there —so they are trying to lure me back— or because they've deployed that policy lately to try to keep people engaged to the platform. I abhor it so much that I finally deleted the app from my iPhone and iPad because to get rid of the notifications and red bubbles.
 
@@ -50,13 +50,13 @@ Facebook want you to be inside of its interface as much as you can, so if you do
 
 Almost, 99% of those notifications had zero interest for me and were really annoying in the end.
 
-# Ads everywhere and in hiding in multiple forms
+## Ads everywhere and in hiding in multiple forms
 
 Facebook is full of ads. They are the source of their revenue. They have ads in the sidebar, featured groups, pages, someone you perhaps know has liked some page, a featured post here and there… I despise that. I understand that as a company needs revenue to run their payroll and their servers, but at least in my opinion this is too much for me. Google has a much better approach, trying to be as less intrusive as possible. Normally, I use a script on my browser —[F.B. Purity](https://www.fbpurity.com/)— that, on top of the ad blocker, remove all those annoyances. However I can't have it on my mobile and my tablet. It would be fine if they had some ad here and there, but not every three post or something like that.
 
 For me the most annoying thing are when Facebook pretend that an advertisement could be disguised as an interaction from one of your friends. Please don't do that, don't build fake stories to fill the timeline.
 
-# Toxic or silly conversation
+## Toxic or silly conversation
 
 {% include figure image_path="assets/images/blog/2018/iur.gif" %}{: .align-left} 
 
@@ -64,11 +64,11 @@ Facebook has become a political tool, proof of this is just the last weekend sca
 
 On the other hand, Facebook is full of content that doesn't have any interested for me and due the way Facebook is design it ended in my timeline. I really care about my friends and what is going on with their lives,  but I even care more when we are able to be together in the same spacetime, have a beer and talk. In other words, meaningful and real social interaction.
 
-# Time consuming
+## Time consuming
 
 Facebook is a time-consuming machine and it's been designed for that, to trap us inside and keeps us browsing and browsing the life of others. That doesn't have any sense for me, doesn't produce anything or have any outcome and in the end keep me separate from others. I like much more to spend time writing in English this blog about what I care and like, and using it to improve my English skills. When the web 2.0 came out everyone talked about being a prosumer —producer and consumer. I think that facebook has make us to be just consumers. Consumers of the life of others instead of producing out own life.
 
-# I prefer Twitter or Reddit
+## I prefer Twitter or Reddit
 
 Although Twitter has some of the same problems that Facebook has, I prefer it because it's much simpler. You have a small set of characters —240— so you have to be brief and direct and it's mean to be use in real time. You don't browse your the timeline so much back in time, perhaps just one hour or so, so you don't spend too much time there. What it's important is **_now & here_**.  You can have a richer timeline in Twitter since it's totally open, or most people use it that way. You don't need to be friend of someone, you just follow them. I can interact there not only with friends and family, but almost with anyone, which is great. Personal and professional interactions also mix up, which make it more real. Everyone is at the same level.
 
@@ -78,9 +78,7 @@ I also like Reddit a lot. Reddit is really organic and mostly anonymous. You don
 
 Reddit is composed of _subreddits_, that are like thematic sub-forums or something like that. The mechanic of Reddit is really simple. Someone post something, usually a piece of text, which could be more complex than anything you can post in Facebook, or a link to something —image, gif, video, or other webpage. From there on things begin to become pretty wild and organic. Every post could be voted —positively or negatively— there are comments, people commenting in those comments and so on… Comments can be voted too. This creates a pretty interesting democratic structure where the most interesting content —for the community— get up in the page and the less interesting is buried to the bottom. It isn't perfect, of course, but since it's pretty democratic and free, the outcome is quite interesting and sometimes unpredictable. It isn't free of toxicity and a week ago or so, the New Yorker, whose [parent company owns Reddit](https://en.wikipedia.org/wiki/Condé_Nast), published an [article](https://www.newyorker.com/magazine/2018/03/19/reddit-and-the-struggle-to-detoxify-the-internet) about their struggle to keep things free of trolls and toxic conversation. There has been also pretty mess up things, like when they [thought that they have capture the Boston bomber](https://www.reddit.com/r/OutOfTheLoop/comments/2r3d54/what_happened_with_reddit_and_the_boston_marathon/) and other pretty similar things. Mobs and circle-jerking are dangerous everywhere.
 
-&nbsp;
-
-# Bottom line
+## Bottom line
 
 As a result, I really think that I'm going to use less and less Facebook. I don't think that I'm going to delete my account or just stop to use it. Facebook is still a valuable tool for me, it allows me to connect with my friends around the globe, specially with the Spanish ones. However, I encourage you to use other way to contact me, like email, messaging or just phone me if you know my number.
 
