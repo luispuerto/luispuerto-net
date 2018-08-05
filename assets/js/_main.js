@@ -72,6 +72,7 @@ $(document).ready(function() {
     class: 'anchorjs'
   };
   anchors.add();
+  anchors.remove('.archive__item-title, .author__name');
 
   // init smooth scroll
   $("a").smoothScroll({ offset: -20 });
