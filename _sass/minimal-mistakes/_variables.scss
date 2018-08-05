@@ -109,22 +109,40 @@ $masthead-link-color-hover: mix(#000, $primary-color, 25%) !default;
 $navicon-link-color-hover: mix(#fff, $primary-color, 75%) !default;
 
 /* syntax highlighting (base16) */
-$base00: #263238 !default;
-$base01: #2e3c43 !default;
-$base02: #314549 !default;
-$base03: #546e7a !default;
-$base04: #b2ccd6 !default;
-$base05: #eeffff !default;
-$base06: #eeffff !default;
-$base07: #ffffff !default;
-$base08: #f07178 !default;
-$base09: #f78c6c !default;
-$base0a: #ffcb6b !default;
-$base0b: #c3e88d !default;
-$base0c: #89ddff !default;
-$base0d: #82aaff !default;
-$base0e: #c792ea !default;
-$base0f: #ff5370 !default;
+// $base00: #263238 !important;
+// $base01: #2e3c43 !important;
+// $base02: #314549 !important;
+// $base03: #546e7a !important;
+// $base04: #b2ccd6 !important;
+// $base05: #eeffff !important;
+// $base06: #eeffff !important;
+// $base07: #ffffff !important;
+// $base08: #f07178 !important;
+// $base09: #f78c6c !important;
+// $base0a: #ffcb6b !important;
+// $base0b: #c3e88d !important;
+// $base0c: #89ddff !important;
+// $base0d: #82aaff !important;
+// $base0e: #c792ea !important;
+// $base0f: #ff5370 !important;
+
+/* syntax highlighting (base16) twilight */
+$base00: #1e1e1e !important;
+$base01: #323537 !important;
+$base02: #464b50 !important;
+$base03: #5f5a60 !important;
+$base04: #838184 !important;
+$base05: #a7a7a7 !important;
+$base06: #c3c3c3 !important;
+$base07: #ffffff !important;
+$base08: #cf6a4c !important;
+$base09: #cda869 !important;
+$base0A: #f9ee98 !important;
+$base0B: #8f9d6a !important;
+$base0C: #afc4db !important;
+$base0D: #7587a6 !important;
+$base0E: #9b859d !important;
+$base0F: #9b703f !important;
 
 /*
    Breakpoints
@@ -155,4 +173,4 @@ $navicon-height: 0.25rem !default;
 $global-transition: all 0.2s ease-in-out !default;
 $intro-transition: intro 0.3s both !default;
 $masthead-height: 2.6em;
-$highlight-block-width: 97%; 
+$highlight-block-width: 97%;
