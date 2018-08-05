@@ -27,7 +27,7 @@ This left the macOS users a little bit hanging although we still can download th
 
 Nevertheless, this weekend I was able to rebuild the last version of the LTR of QGIS 2 and the developer version of QGIS3. I really don't know how stable is the QGIS 3 developer version, but at least at first sight everything works and the app even open faster than the QGIS 2.
 
-# How to install the last version of QGIS 2?
+## How to install the last version of QGIS 2?
 
 What I did was just reinstall `python`, `python2`, `gdal`, `gdal2`, and finally `qgis2`. More or less as follows:
 
@@ -56,7 +56,7 @@ $ ln -s /Applications/QGIS.app /usr/local/Cellar/qgis2/2.18.14/QGIS.app
 
 Yet, weren't we going to install the last version of QGIS? This isn't the last version. OK…
 
-## QGIS 2.18.17
+### QGIS 2.18.17
 
 To install the last version you need to change the the QGIS formulae to make it to download the last version from the LTR. Since Homebrew isn't anything more than a git with Ruby scripts I recommend you to make a branch in the repository and change the formula. You aren't going to change anything in Homebrew, but in a branch of tap, in the [OSGeo/homebrew-osgeo4mac](https://github.com/OSGeo/homebrew-osgeo4mac) tap. I did the following.
 
@@ -93,7 +93,7 @@ $ ln -s /Applications/QGIS.app /usr/local/Cellar/qgis2/2.18.17/QGIS.app
 
 {% include figure image_path="assets/images/blog/2018/Screen-Shot-2018-03-12-at-10.27.49.png" alt="QGIS 2.18.17 interface" caption="QGIS 2.18.17 interface" %}{: .align-center}
 
-## Matplotlib
+### Matplotlib
 
 Since [Homebrew](https://github.com/Homebrew)/[homebrew-science](https://github.com/Homebrew/homebrew-science) has been deprecated and some of the formulae wasn't migrated to the [Homebrew](https://github.com/Homebrew)/[homebrew-core](https://github.com/Homebrew/homebrew-core) this left us with a message at the end of the QGIS' compilation asking us to install [matplotlib](https://matplotlib.org) via pip.
 
@@ -160,7 +160,7 @@ $ sudo chown -R $(echo $USER) ~/Library/Caches/pip
 
 Now, I was able to install.
 
-# How to install QGIS 3?
+## How to install QGIS 3?
 
 Well, this is a little bit more challenging, but just a little bit. The only version of a Homebrew formula that is available to install QGIS 3 is the developer version one that is in this [qgis](https://github.com/qgis)/[homebrew-qgisdev](https://github.com/qgis/homebrew-qgisdev) repo-tap. So I just have to tap that repo:
 
@@ -220,7 +220,7 @@ $ mv /usr/local/opt/qgis3-dev/QGIS.app /Applications/QGIS\ 3.app
 $ ln -s /Applications/QGIS\ 3.app /usr/local/opt/qgis3-dev/QGIS.app
 ```
 
-# Final thoughts
+## Final thoughts
 
 I hope that in the near future the situation improve and we can enjoy the last version of QGIS on macOS in a easier way. Perhaps even without needed to compile. However, in this very moment isn't the case.
 
