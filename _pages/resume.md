@@ -12,11 +12,11 @@ header:
 *If you prefer you can download the most recent version of my résumé in pdf in [http://resume.luisspuerto.net](http://resume.luisspuerto.net)*{: style="color: grey"}
 {: style="color: grey; font-size: 80%"}
 
-# Profile and Objective
+## Profile and Objective
 
 I am a dynamic and versatile Forest Engineer from Spain with more than 10 years of diverse and wide experience in GIS and remote sensing. I have been working lately on research projects involving LiDAR, biomass and R language. I have experience working internationally, in different fields related to technology and interdisciplinary teams. I have great ability to learn, and I have an analytical mind. I am mainly looking for challenging projects related to GIS, remote sensing technologies and new ways to acquire data where I can use my background and skills, learning new ones in the process.
 
-# Education
+## Education
 
 **On going:**{: style="color: grey"} **MSc. iGEON. Master of Science in Geographic Information Science (GIS) and Earth Observation for Environmental Modeling and Natural Resource Management.** (120 ETCS | Online) <http://www.igeon.eu>  
 Lund University (Sweden) and University of Twente (Netherland)
@@ -26,7 +26,7 @@ Thesis / Senior project: ***"El Pajariel"  Stand Management Plan.***
 
 **2008:**{: style="color: grey"} **Bachelor of Agricultural Engineering (Forestry)** (180 ETCS), University of León, Spain.
 
-# Experience
+## Experience
 
 **2015-2017:**{: style="color: grey"} **University of Easter of Finland. Different LiDAR projects as intern. 9 months in total.** 
 
@@ -78,7 +78,7 @@ Thesis / Senior project: ***"El Pajariel"  Stand Management Plan.***
   * Collecting data in field with professional GPS. Advanced knowledge of GPS methodology.
   * Forest inventory with computing systems such PDA, Vertex, and electronic caliper.
 
-## Additional Training
+### Additional Training
 
   * 10 training courses on **ArcGIS 10 Desktop and Server** systems, including Oracle DDBB and programming in python and add-ins, by ESRI Spain (300 hours).
   * Course **Sextante** (GIS toolbox) by Uni. of León (20 hours).
@@ -95,14 +95,14 @@ Thesis / Senior project: ***"El Pajariel"  Stand Management Plan.***
   * Course of **Wonderware** by Wonderware Spain (35 hours).
   * I've assisted to many others talks, seminaries, conferences and congresses at local, national and international level.
 
-## Languages
+### Languages
 
   * Spanish: Native Speaker
   * English: Advanced level. TOEFL iBT score 96
   * Finnish: A2
   * Swedish: A1
 
-## Computer Skills
+### Computer Skills
 
   * ArcGIS
   * AutoCAD
@@ -113,7 +113,7 @@ Thesis / Senior project: ***"El Pajariel"  Stand Management Plan.***
   * Experience in Mac OS X, Windows & Linux environments
   * Experience in scripting, databases and web developing
 
-# PDF Résumé
+## PDF Résumé
 
 Additionally you can see and download the [most recent version of my résumé in pdf](http://resume.luisspuerto.net).
 
