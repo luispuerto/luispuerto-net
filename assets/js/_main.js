@@ -75,7 +75,7 @@ $(document).ready(function() {
   anchors.remove('.archive__item-title, .author__name');
 
   // init smooth scroll
-  $("a").smoothScroll({ offset: -20 });
+  $("a").smoothScroll({ offset: -80});
 
   // add lightbox class to all image links
   $(

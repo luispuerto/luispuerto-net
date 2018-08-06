@@ -5,10 +5,10 @@
 #main {
   @include clearfix;
   margin-left: auto;
-  margin-top: calc(-#{$masthead-height} + 1em);
+  // margin-top: calc(-#{$masthead-height} + 1em);
 //  margin-top: -$masthead-height;
   margin-right: auto;
-  padding-top: $masthead-height;
+  // padding-top: $masthead-height;
   padding-left: 1em;
   padding-right: 1em;
   -webkit-animation: $intro-transition;
@@ -79,12 +79,12 @@
     padding-bottom: 0.2em;
     border-bottom: 1px solid $border-color;
   }
-  .post__content{
-    h1, h2, h3, h4, h5, h6 {
-      margin-top: -$masthead-height;
-      padding-top: $masthead-height;
-    }
-  }
+  // .post__content{
+  //   h1, h2, h3, h4, h5, h6 {
+  //     margin-top: -$masthead-height;
+  //     padding-top: $masthead-height;
+  //   }
+  // }
 
   p,
   li,
