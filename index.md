@@ -15,7 +15,7 @@ excerpt: |
   #Europe 🇪🇺 #Spain 🇪🇸 #Sweden 🇸🇪 #Finland 🇫🇮 #Oregon US 🇺🇸
 
 intro:
-  - title: Welcomed to my place.
+  - title: Welcomed to my place!
   - excerpt: | 
       Right now I'm in transition from my previous site and some parts are under development. 
       You can know more [here](/blog/2018/07/23/new-web-in-jekyll/).  
