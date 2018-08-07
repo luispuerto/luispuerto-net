@@ -9,7 +9,7 @@ gemfile: Gemfile
 script:
   - bundle exec jekyll algolia
   - bundle exec jekyll build
-  - bundle exec htmlproofer ./_site --alt_ignore "/.*/" --allow_hash_href --http-status-ignore 999
+  - bundle exec htmlproofer ./_site --disable-external --alt_ignore "/.*/" --allow_hash_href --http-status-ignore 999
 branches:
   only:
     # Change this to gh-pages if you're deploying using the gh-pages branch
