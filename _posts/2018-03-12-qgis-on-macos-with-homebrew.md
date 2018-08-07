@@ -68,7 +68,7 @@ $ git checkout -b QGIS2.18.17
 $ brew edit qgis2
 ```
 
-Now you can edit the formula to be able to install QGIS 2.18.17. You can see how I modify [mine](https://github.com/luisspuerto/homebrew-osgeo4mac/blob/QGIS2.18.17/Formula/qgis2.rb) below that has highlighted the lines I've changed.
+Now you can edit the formula to be able to install QGIS 2.18.17. ~You can see how I modify mine~~[^1] below that has highlighted the lines I've changed.
 
 ```ruby
 <pre class="nums:true lang:ruby mark:12-13 decode:true" title="qgis2.rb" data-url="https://raw.githubusercontent.com/luisspuerto/homebrew-osgeo4mac/QGIS2.18.17/Formula/qgis2.rb">
@@ -821,3 +821,5 @@ end
 
 Anyhow, I think I'm going to keep the 3.1 version for a while.
 
+
+[^1]: No, you can see that because I deteletd the branch... Sorry. 

@@ -14,7 +14,7 @@ tags:
   - how to
   - macOS
 ---
-As I've told in the [previous post](https://luisspuerto.net/blog/2017/12/my-macbook-pro-late-2011s-discrete-graphics-card-said-ciao-again/), the discrete graphic car of my MacBook Pro late 2011 is faulty and can be trusted any more. So I decided to disconnect it.
+As I've told in the [previous post](/blog/2017/12/05/my-macbook-pro-late-2011s-discrete-graphics-card-said-ciao-again/), the discrete graphic car of my MacBook Pro late 2011 is faulty and can be trusted any more. So I decided to disconnect it.
 
 Yesterday, I updated the system to 10.13.2 and although in the beginning everything was working fine without enforcing the dGPU disconnection, the graphic card later failed and I had to apply the fix again. For some reason the fix didn't working as well as it was working before so after too much booting and trying I decided to take the middle way. Besides, the GRUB soliton was nice, but it made the booting much more slower.
 
@@ -41,7 +41,7 @@ In other words this are the steps. Please keep in mind that I'm running High Sie
     $ sudo touch /System/Library/Extensions/ # to update the timestamps so that new driver caches - without AMD drivers - will be definitely rebuilt
     ```
 
-4. Take the [AMDGPUWakeHandler.kext](https://luisspuerto.net/blog/wp-content/uploads/2017/12/AMDGPUWakeHandler.kext_.zip) and copy it to <span `/Library/Extensions` then run the following commands 
+4. Take the [AMDGPUWakeHandler.kext](/assets/docs/AMDGPUWakeHandler.kext.zip/) and copy it to <span `/Library/Extensions` then run the following commands 
 
     ```shell 
     $ sudo chmod -R 755 /Library/Extensions/AMDGPUWakeHandler.kext
@@ -65,4 +65,4 @@ In other words this are the steps. Please keep in mind that I'm running High Sie
 
 This solution perhaps it's a little bit easier, but has the disadvantage that you need to apply it all every time you update the system.
 
-Anyway, I recommend to read the [previous post](https://luisspuerto.net/blog/2017/12/my-macbook-pro-late-2011s-discrete-graphics-card-said-ciao-again/) to understand fully what is going on.
+Anyway, I recommend to read the [previous post](/blog/2017/12/05/my-macbook-pro-late-2011s-discrete-graphics-card-said-ciao-again/) to understand fully what is going on.

@@ -152,7 +152,7 @@ For that reason I developed the below tables. Bear in mind that they are really 
 <iframe width="100%" height="650em"
 src="/assets/docs/Pizza-Bread-FWSY.pdf" frameborder="0" allowfullscreen></iframe>
 
-You can use then, and perhaps you can even develop yours. You can download in pdf in the link above or [here](https://luisspuerto.net/blog/wp-content/uploads/2017/11/Pizza-Bread-FWSY.pdf). I created them in Numbers App on Mac, you can download the original [here](/assets/docs/Pizza-Bread-FWSY.numbers). If you want an Excel version you can download it [here](/assets/docs/Pizza-Bread-FWSY.xlsx), but take into account that I just converted them using Numbers so bugs galore.
+You can use then, and perhaps you can even develop yours. You can download in pdf in the link above or [here](/assets/docs/Pizza-Bread-FWSY.pdf). I created them in Numbers App on Mac, you can download the original [here](/assets/docs/Pizza-Bread-FWSY.numbers). If you want an Excel version you can download it [here](/assets/docs/Pizza-Bread-FWSY.xlsx), but take into account that I just converted them using Numbers so bugs galore.
 
 Perhaps, at some point I should try to create a regression equation or something.
 

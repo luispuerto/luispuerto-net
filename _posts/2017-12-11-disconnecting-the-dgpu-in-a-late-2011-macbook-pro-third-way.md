@@ -26,15 +26,15 @@ I've updated steps 11 and 12 in consequence.
 
 **Update 2017.12.18-14.42 EET**: I've tried to wake up from hibernation without gxfCardStatus and it worked pretty well I didn't have any issue, so if you don't want to have it installed or at least running in the background I think it's OK.
 
-**Update 2018.01.09-21.35 EET**: After install the [security update to mitigate the effects of Spectre](https://support.apple.com/en-gb/HT208397), I have to apply the fix again as explained [here](https://luisspuerto.net/blog/2017/12/disconnecting-the-dgpu-in-a-late-2011-macbook-pro-third-way/#in-case-you-have-to-update). Everything worked fine, but on wake up of hibernation I got a black screen a couple of times. Also the computer didn't turn off and got stuck in a black screen. I really don't know what is the reason, but seems it's related to the `gpuswitch` parameter. I changed to 0 and then to 2 again, and seems that everything is normal again. But I don't know if it's really that or it's other thing.
+**Update 2018.01.09-21.35 EET**: After install the [security update to mitigate the effects of Spectre](https://support.apple.com/en-gb/HT208397), I have to apply the fix again as explained [here](/blog/2017/12/11/disconnecting-the-dgpu-in-a-late-2011-macbook-pro-third-way/#in-case-you-have-to-update). Everything worked fine, but on wake up of hibernation I got a black screen a couple of times. Also the computer didn't turn off and got stuck in a black screen. I really don't know what is the reason, but seems it's related to the `gpuswitch` parameter. I changed to 0 and then to 2 again, and seems that everything is normal again. But I don't know if it's really that or it's other thing.
 
 **Update 2018.01.21-09.20 EET**: I just installed macOS update 10.13.3 and after testing a little bit I got to the conclusion that what work best for me is to set `pmset -a gpuswitch 1`
 
 * * *
 
-Ok!!!!!! There is a third, and I think final, solution to totally deactivate the dGPU. Till this moment this is my favorite solution and I even have the brightness back to my computer. Also it sleeps correctly. You can check my previous post also [1](https://luisspuerto.net/blog/2017/12/my-macbook-pro-late-2011s-discrete-graphics-card-said-ciao-again/) & [2](https://luisspuerto.net/blog/2017/12/disconnecting-the-dgpu-in-a-late-2011-macbook-pro-another-way/).
+Ok!!!!!! There is a third, and I think final, solution to totally deactivate the dGPU. Till this moment this is my favorite solution and I even have the brightness back to my computer. Also it sleeps correctly. You can check my previous post also [1](/blog/2017/12/05/my-macbook-pro-late-2011s-discrete-graphics-card-said-ciao-again/) & [2](/blog/2017/12/08/disconnecting-the-dgpu-in-a-late-2011-macbook-pro-another-way/).
 
-We all have to thank to [MacRumors community](https://forums.macrumors.com/threads/force-2011-macbook-pro-8-2-with-failed-amd-gpu-to-always-use-intel-integrated-gpu-efi-variable-fix.2037591/page-50#post-25581450) that all of them have been working really hard to create a workable solution to all of us. This guide is almost a exact copy of the one posted by <a class="username" dir="auto" href="https://forums.macrumors.com/members/mikeyn.1088105/">MikeyN</a> [here](https://forums.macrumors.com/threads/force-2011-macbook-pro-8-2-with-failed-amd-gpu-to-always-use-intel-integrated-gpu-efi-variable-fix.2037591/page-35#post-24956091). I've just changed somethings and added the [AMDGPUWakeHandler](https://github.com/blackgate/AMDGPUWakeHandler) to manage the sleep.
+We all have to thank to [MacRumors community](https://forums.macrumors.com/threads/force-2011-macbook-pro-8-2-with-failed-amd-gpu-to-always-use-intel-integrated-gpu-efi-variable-fix.2037591/page-50#post-25581450) that all of them have been working really hard to create a workable solution to all of us. This guide is almost a exact copy of the one posted by MikeyN [here](https://forums.macrumors.com/threads/force-2011-macbook-pro-8-2-with-failed-amd-gpu-to-always-use-intel-integrated-gpu-efi-variable-fix.2037591/page-35#post-24956091). I've just changed somethings and added the [AMDGPUWakeHandler](https://github.com/blackgate/AMDGPUWakeHandler) to manage the sleep.
 
 ## The fix
 
@@ -121,7 +121,7 @@ Let's explain how it's done:
     $ sh /force-iGPU-boot.sh
     ```
 
-11. ~~Then, you can copy the [AMDGPUWakeHandler](https://github.com/blackgate/AMDGPUWakeHandler), or the one I created A[MDGPUWakeHandler.kext](assets/docs/AMDGPUWakeHandler.kext.zip), to `/Library/Extensions` and run the following commands:~~
+11. ~~Then, you can copy the [AMDGPUWakeHandler](https://github.com/blackgate/AMDGPUWakeHandler), or the one I created A[MDGPUWakeHandler.kext](/assets/docs/AMDGPUWakeHandler.kext.zip/), to `/Library/Extensions` and run the following commands:~~
     ```shell
     $ # sudo chmod -R 755 /Library/Extensions/AMDGPUWakeHandler.kext
     $ # sudo chown -R root:wheel /Library/Extensions/AMDGPUWakeHandler.kext
@@ -154,7 +154,7 @@ Let's explain how it's done:
     $ sudo nvram boot-args=""
     ```
 
-Now I just going to copy paste from [MikeyN](https://forums.macrumors.com/members/mikeyn.1088105/)'s [post](https://forums.macrumors.com/threads/force-2011-macbook-pro-8-2-with-failed-amd-gpu-to-always-use-intel-integrated-gpu-efi-variable-fix.2037591/page-35#post-24956091)
+Now I just going to copy paste from [MikeyN's post](https://forums.macrumors.com/threads/force-2011-macbook-pro-8-2-with-failed-amd-gpu-to-always-use-intel-integrated-gpu-efi-variable-fix.2037591/page-35#post-24956091)
 
 >This setup has now one kext in a place Apple's installers do not expect. That is why in this guide <span style="background-color: #ffff00;">SIP has not been reenabled. If an update that contains changes to the AMD drivers is about to take place it is advisable to move back the AMDRadeonX3000.kext to its default location before the update process. Otherwise the updater writes at least another kext of a different version to its default location or at worst you end up with an undefined state of partially non-matching drivers.
 >

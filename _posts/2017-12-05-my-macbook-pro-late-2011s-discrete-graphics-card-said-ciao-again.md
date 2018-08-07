@@ -33,11 +33,11 @@ I'm going to summarize here what I've done to fix it under High Sierra macOS 10.
 
 ## The solution
 
-First of all, I have to say that I begun with the solution number [1](https://forums.macrumors.com/threads/force-2011-macbook-pro-8-2-with-failed-amd-gpu-to-always-use-intel-integrated-gpu-efi-variable-fix.2037591/) and then I switch to the [2](https://forums.macrumors.com/threads/disable-a-failed-amd-gpu-on-a-2011-macbook-pro-grub-solution.2087527/), [3](https://gist.github.com/blackgate/17ac402e35d2f7e0f1c9708db3dc7a44) and [4](https://github.com/blackgate/AMDGPUWakeHandler) ones. Probably, you are fine to proceded from the solution number [2](https://luisspuerto.net/blog/2017/12/my-macbook-pro-late-2011s-discrete-graphics-card-said-chao-again/#using-solutions-2-3-and-4) onwards. To make make those solutions work in the long run, you are going to need a USB stick in order to have a way of booting your Mac, from the very beginning, or when you update your system and the fix stop working as a consequence of the update. You don't need a very big USB stick. What you are going to store on it it's not going to more than 10 mb.
+First of all, I have to say that I begun with the solution number [1](https://forums.macrumors.com/threads/force-2011-macbook-pro-8-2-with-failed-amd-gpu-to-always-use-intel-integrated-gpu-efi-variable-fix.2037591/) and then I switch to the [2](https://forums.macrumors.com/threads/disable-a-failed-amd-gpu-on-a-2011-macbook-pro-grub-solution.2087527/), [3](https://gist.github.com/blackgate/17ac402e35d2f7e0f1c9708db3dc7a44) and [4](https://github.com/blackgate/AMDGPUWakeHandler) ones. Probably, you are fine to proceded from the solution number [2](/blog/2017/12/05/my-macbook-pro-late-2011s-discrete-graphics-card-said-ciao-again/#using-solutions-2-3-and-4) onwards. To make make those solutions work in the long run, you are going to need a USB stick in order to have a way of booting your Mac, from the very beginning, or when you update your system and the fix stop working as a consequence of the update. You don't need a very big USB stick. What you are going to store on it it's not going to more than 10 mb.
 
 ### Moving the kexts
 
-This step isn't really necessary, and you can jump to the [next step](https://luisspuerto.net/blog/2017/12/my-macbook-pro-late-2011s-discrete-graphics-card-said-chao-again/#using-solutions-2-3-and-4). However, this is the exactly how I did things, since first I found one solution and then the others. Also, if you have trouble booting with the other solutions, perhaps this part is going to help you.
+This step isn't really necessary, and you can jump to the [next step](/blog/2017/12/05/my-macbook-pro-late-2011s-discrete-graphics-card-said-ciao-again/#using-solutions-2-3-and-4). However, this is the exactly how I did things, since first I found one solution and then the others. Also, if you have trouble booting with the other solutions, perhaps this part is going to help you.
 
 You need to boot on single user mode (press and hold `Cmd + S + R ) and run the following commands.
 
@@ -98,7 +98,7 @@ $ sudo mv /AMD_Kexts/*.* /System/Library/Extensions/
 
 #### Getting a GRUB
 
-Now, to implement the complete solution you have to [download ubuntu](https://www.ubuntu.com/download/desktop) to take the GRUB from there. I've downloaded [Ubuntu 17.10](http://www.nic.funet.fi/pub/mirrors/releases.ubuntu.com/17.10/ubuntu-17.10-desktop-amd64.iso), as it's specified in the fix. When you've downloaded the .ISO, you have to attach and mount it, so assuming that you have the ISO in downloads:
+Now, to implement the complete solution you have to [download ubuntu](https://www.ubuntu.com/download/desktop) to take the GRUB from there. I've downloaded [Ubuntu ~~17.10~~](https://www.ubuntu.com/download/desktop)[^3], as it's specified in the fix. When you've downloaded the .ISO, you have to attach and mount it, so assuming that you have the ISO in downloads:
 
 ```shell
 $ hdiutil attach -nomount ~/Downloads/ubuntu-17.10-desktop-amd64.iso
@@ -201,7 +201,7 @@ If you want to return to the normal sleep mode you set in the following way:
 $ sudo pmset -a hibernatemode 3
 ```
 
-Anyhow, I decided to apply the solution as it's explained [here](https://github.com/blackgate/AMDGPUWakeHandler) and I even [created a kext myself for High Sierra](https://luisspuerto.net/blog/wp-content/uploads/2017/12/AMDGPUWakeHandler.kext_.zip). Just in hopes that in a close future things improve I can normally sleep. If you download the kext you just have to unzip it and then copy to `/Library/Extensions` and run the following commands.
+Anyhow, I decided to apply the solution as it's explained [here](https://github.com/blackgate/AMDGPUWakeHandler) and I even [created a kext myself for High Sierra](/assets/docs/AMDGPUWakeHandler.kext.zip/). Just in hopes that in a close future things improve I can normally sleep. If you download the kext you just have to unzip it and then copy to `/Library/Extensions` and run the following commands.
 
 ```shell
 $ sudo chmod -R 755 /Library/Extensions/AMDGPUWakeHandler.kext
@@ -257,3 +257,4 @@ The error is still there right now, and I told Apple about it [when I noticed](h
 
 [^1]: To be entirely honest I don't remember if after deleting the kexts I was able to boot directly to the striped desktop or I needed to run the commands in the beginning of solution [2](#using-solutions-2-3-and-4).
 [^2]: Today, 8th of December 2017, I decided to install the update to 10.13.2. It worked really well, and even booted without needed to apply the fix again. In other words, the discrete GPU was working. However, after a while fail, and took me more than what I wanted to reestablish everything. So my recommendation is, if you update, apply the fix as soon as possible, but cause sooner or later things are going to go south and it's going to take you even more time to fix it. In my case I needed to apply the solution almost from the very beginning and a NVRAM reset was necessary to be able to operate again the computer. Good luck!
+[^3]: Previusly I downloaded a spefific release of Ubuntu. I've changed to the last one. 

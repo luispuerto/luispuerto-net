@@ -13,11 +13,11 @@ tags:
   - Joensuu
   - sauna
 ---
-Yesterday was the first time in while I’ve been in [Jääkarhut](http://www.joensuunjaakarhut.fi/fi/etusivu/". It’s a really especial place and quite singular, or at least it’s what I’ve been told. It’s really true that at least the scenery, if the weather is favorable (I don’t mean necessarily sunny), it’s really awe and jaw-droping, as you can see in the header image of the post or in the image below.
+Yesterday was the first time in while I’ve been in [Jääkarhut](http://www.joensuunjaakarhut.fi/fi/etusivu/). It’s a really especial place and quite singular, or at least it’s what I’ve been told. It’s really true that at least the scenery, if the weather is favorable (I don’t mean necessarily sunny), it’s really awe and jaw-droping, as you can see in the header image of the post or in the image below.
 
 {% include figure image_path="assets/images/blog/2018/IMG_4291.jpg" alt="Sunset from Jääkarhut bay yesterday." caption="Sunset from Jääkarhut bay yesterday." %}
 
-Jääkarhut is a *swimming club* in Joensuu that is [located](https://www.google.fi/maps/place/Joensuun+J%C3%A4%C3%A4karhut+ry/@62.5797329,29.7637943,14.97z/data=!4m5!3m4!1s0x0:0xa32089923303b540!8m2!3d62.5808783!4d29.7652566?hl=en) in the Southwest part of the city in a bay with a quite narrow access to the [Pyhäselkä](http://https://en.wikipedia.org/wiki/Lake_Pyhäselkä), which make it a really nice and quiet (what is not quiet in Finland?) place to swim because the water it isn’t insanely cold. Ok, sometimes it’s, but not always. I say that it's a swimming club because it's how they define themselves, but the reality is that they are more than that.
+Jääkarhut is a *swimming club* in Joensuu that is [located](https://www.google.fi/maps/place/Joensuun+J%C3%A4%C3%A4karhut+ry/@62.5797329,29.7637943,14.97z/data=!4m5!3m4!1s0x0:0xa32089923303b540!8m2!3d62.5808783!4d29.7652566?hl=en) in the Southwest part of the city in a bay with a quite narrow access to the [Pyhäselkä](https://en.wikipedia.org/wiki/Lake_Pyhäselkä), which make it a really nice and quiet (what is not quiet in Finland?) place to swim because the water it isn’t insanely cold. Ok, sometimes it’s, but not always. I say that it's a swimming club because it's how they define themselves, but the reality is that they are more than that.
 
 {% include figure image_path="assets/images/blog/2018/20150215-003-Jääkarhut.jpg" alt="Staircase to the avanto in winter." caption="Staircase to the avanto in winter." %}{: .align-right style="width: 40%"}
 
