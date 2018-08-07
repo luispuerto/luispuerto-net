@@ -31,7 +31,7 @@ deploy:
   keep-history: true
   exclude: [vendor]
   local_dir: _site
-  repo: luisspuerto/luisspuerto.net
+  # repo: luisspuerto/luisspuerto.net # in case I wanted to build my page in other repo
   target-branch: gh-pages
   on:
     branch: master
