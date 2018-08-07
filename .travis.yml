@@ -31,5 +31,7 @@ deploy:
   keep-history: true
   exclude: [vendor]
   local_dir: _site
+  repo: luisspuerto/luisspuerto.net-deploy
+  target-branch: gh-pages
   on:
     branch: master
