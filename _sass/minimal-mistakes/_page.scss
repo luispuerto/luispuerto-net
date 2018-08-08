@@ -247,8 +247,8 @@
 
     &--overlay {
       position: relative;
-      margin-bottom: 2em;
-      padding: 3em 0;
+      margin-bottom: 1em;
+      padding: 0em 0;
       @include clearfix;
       background-size: cover;
       background-repeat: no-repeat;
@@ -257,7 +257,7 @@
       animation: $intro-transition;
       -webkit-animation-delay: 0.25s;
       animation-delay: 0.25s;
-      max-height: 900px;
+      max-height: 1300px;
 
       a {
         color: #fff;
@@ -279,11 +279,12 @@
         @include breakpoint($large) {
 //          max-width: $large;
           padding-left: 5em;
-          padding-top: 25%;
+          padding-top: 15%;
           padding-bottom: 20%;
         }
         @include breakpoint($x-large) {
           max-width: $x-large;
+          padding-top: 20%;
         }
       }
 
@@ -302,7 +303,7 @@
         font-weight: bold;
 
         @include breakpoint($small){
-          font-size: $type-size-3
+          font-size: $type-size-4
         }
 
         @include breakpoint($large){
