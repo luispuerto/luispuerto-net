@@ -183,7 +183,7 @@
 
   a {
     display: block;
-    margin: 0 1rem;
+    margin: 0 .6rem;
     padding: 0.5rem 0;
     color: $masthead-link-color;
     text-decoration: none;
@@ -195,6 +195,10 @@
 
     &.site-title {
       margin-left: 0;
+    }
+
+    @include breakpoint($large) {
+      margin: 0 1rem;
     }
   }
 
