@@ -7,7 +7,7 @@ before_install:
   - gem install bundler
 gemfile: Gemfile
 script:
-  - bundle exec jekyll algolia
+  # - bundle exec jekyll algolia
   - JEKYLL_ENV=production bundle exec jekyll build
   - bundle exec htmlproofer ./_site --disable-external --alt_ignore "/.*/" --allow_hash_href --http-status-ignore 999
 branches:
@@ -23,7 +23,6 @@ env:
 
 sudo: false # route your build to the container-based infrastructure for a faster build
 
-
 deploy:
   provider: pages
   skip-cleanup: true
@@ -34,3 +33,6 @@ deploy:
   target-branch: gh-pages
   on:
     branch: master
+
+after_deploy:
+  - bundle exec jekyll algolia
