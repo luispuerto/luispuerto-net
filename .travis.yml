@@ -4,15 +4,15 @@
 language: ruby
 cache:
   bundler: true
-  directories:
-    - $TRAVIS_BUILD_DIR/tmp/.htmlproofer
+  # directories:
+  #   - $TRAVIS_BUILD_DIR/tmp/.htmlproofer
 before_install:
   - gem install bundler
 gemfile: Gemfile
 script:
   - bundle exec jekyll algolia
   - JEKYLL_ENV=production bundle exec jekyll build
-  - bundle exec htmlproofer ./_site --alt_ignore "/.*/" --allow_hash_href --http-status-ignore 999 --disable-external 
+  - bundle exec htmlproofer ./_site --alt_ignore "/.*/" --allow_hash_href --http-status-ignore 999 --disable-external
 branches:
   only:
     # Change this to gh-pages if you're deploying using the gh-pages branch
