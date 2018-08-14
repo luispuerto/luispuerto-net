@@ -9,8 +9,8 @@
 }
 
 .search__toggle {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: .1rem;
+  margin-right: .1rem;
   border: 0;
   outline: none;
   color: $muted-text-color;
@@ -19,8 +19,16 @@
   -webkit-transition: 0.2s;
   transition: 0.2s;
 
+  @include breakpoint($small) {
+    margin-right: .5rem;
+  }
+
+  @include breakpoint($medium) {
+    margin-right: 1rem;
+  }
+
   &:hover {
-    color: $text-color;
+    color: $primary-color;
   }
 }
 
