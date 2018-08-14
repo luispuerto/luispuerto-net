@@ -547,18 +547,23 @@
     font-weight: normal;
   }
 
-  li ul > li ul li a {
+  li ul li ul > li a {
     padding-left: 2.15rem;
     font-weight: normal;
   }
 
-  li ul > li ul li ul li a {
+  li ul li ul li ul > li a {
     padding-left: 2.45rem;
     font-weight: normal;
   }
 
+  li ul li ul li ul li ul > li a {
+    padding-left: 2.75rem;
+    font-weight: normal;
+  }
+
   /* hide sub sub links on small screens*/
-  li > ul li ul {
+  li ul li > ul {
     display: none;
 
     @include breakpoint($medium) {
