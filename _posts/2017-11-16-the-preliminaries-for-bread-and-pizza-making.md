@@ -196,7 +196,7 @@ However, I usually don't score then and I try to leave the seam —the one I mad
 
 It's up to you so score or not your bread before you bake it.
 
-### The _sauna_ oven :finland: 🧖🏼‍♂️
+### The _sauna_ oven :finland: 
 
 {% include figure image_path="https://i.imgur.com/yWZ70vu.jpg" alt="Water in a container inside the oven." caption="Water in a container inside the oven." %}
 
