@@ -1,9 +1,9 @@
-// These are the css for the anchorjs links feature. 
+// These are the css for the anchorjs links feature.
 
 
 .anchorjs {
   transition: all .25s linear;
-  color: grey;
+  color: grey !important;
   &:hover{
     color: $primary-color;
     text-decoration: none !important;
