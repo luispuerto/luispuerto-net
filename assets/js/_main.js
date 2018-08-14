@@ -72,7 +72,7 @@ $(document).ready(function() {
     class: 'anchorjs'
   };
   anchors.add();
-  anchors.remove('.archive__item-title, .author__name');
+  anchors.remove('.archive__item-title, .author__name, .nav__title');
 
   // init smooth scroll
   $("a").smoothScroll({ offset: -80});
