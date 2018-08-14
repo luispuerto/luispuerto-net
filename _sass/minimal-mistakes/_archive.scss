@@ -38,6 +38,10 @@
   text-overflow: ellipsis;
   margin-top: 0.5em;
 
+  a {
+    color: inherit;
+  }
+
   a + a {
     opacity: 0.5;
   }
