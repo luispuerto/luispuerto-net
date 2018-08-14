@@ -362,8 +362,8 @@ input[type="submit"],
    Offset for the target links due to fixed masthead
    ========================================================================== */
 
-:target {
-	display: block;
-	padding-top: $masthead-height;
-	margin-top: -$masthead-height;
-}
+// :target {
+// 	display: block;
+// 	padding-top: $masthead-height;
+// 	margin-top: -$masthead-height;
+// }
