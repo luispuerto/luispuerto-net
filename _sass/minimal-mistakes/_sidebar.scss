@@ -89,6 +89,8 @@
       position: sticky;
       top: 4em;
       float: right;
+      height: calc(100vh - 2.5em - 2em);
+      overflow-y: auto;
     }
   }
 
