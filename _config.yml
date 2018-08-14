@@ -167,8 +167,9 @@ exclude:
   - package.json
   - Rakefile
   - README.*
+  - staticman.yml
   - tmp
-  - TO-DO.*
+  - TODO.*
   - /docs # ignore Minimal Mistakes /docs
   - /test # ignore Minimal Mistakes /test
   - /resources # different files I use for the blog and the web.

@@ -1,15 +1,18 @@
+# .travis.yml
+# This file should be at the root of your project
+#
 language: ruby
 cache:
   bundler: true
-  directories:
-    - $TRAVIS_BUILD_DIR/tmp/.htmlproofer
+  # directories:
+  #   - $TRAVIS_BUILD_DIR/tmp/.htmlproofer
 before_install:
   - gem install bundler
 gemfile: Gemfile
 script:
   - bundle exec jekyll algolia
   - JEKYLL_ENV=production bundle exec jekyll build
-  - bundle exec htmlproofer ./_site --disable-external --alt_ignore "/.*/" --allow_hash_href --http-status-ignore 999
+  - bundle exec htmlproofer ./_site --alt_ignore "/.*/" --allow_hash_href --http-status-ignore 999 --disable-external
 branches:
   only:
     # Change this to gh-pages if you're deploying using the gh-pages branch
@@ -29,9 +32,8 @@ deploy:
   skip-cleanup: true
   github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep-history: true
-  exclude: [vendor]
   local_dir: _site
   # repo: luisspuerto/luisspuerto.net # in case I wanted to build my page in other repo
   target-branch: gh-pages
-  on:
-    branch: master
+  # on:
+  #   branch: master
