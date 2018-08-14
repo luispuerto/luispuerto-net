@@ -104,6 +104,14 @@ body:hover .visually-hidden button {
 }
 
 /*
+   Text atributes
+   ========================================================================== */
+
+.red-hover:hover {
+    color: $primary-color !important;
+}
+
+/*
    Alignment
    ========================================================================== */
 
