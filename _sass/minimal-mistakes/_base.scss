@@ -31,6 +31,10 @@ h6 {
   line-height: 1.2;
   font-family: $header-font-family;
   font-weight: bold;
+  &:target{
+    padding-top: calc(#{$masthead-height} + 30px);;
+    margin-top:calc(-#{$masthead-height} - 30px);;
+  }
 }
 
 h1 {
@@ -362,8 +366,11 @@ input[type="submit"],
    Offset for the target links due to fixed masthead
    ========================================================================== */
 
-// :target {
-// 	display: block;
-// 	padding-top: $masthead-height;
-// 	margin-top: -$masthead-height;
+// :target::before {
+//   content:"";
+//   display: none;
+// 	// padding-top: calc(-#{$masthead-height} - 30px);
+//  	// padding-top: calc(#{$masthead-height} + 30px);
+//  	padding-top: 50px;
+//   visibility: hidden;
 // }
