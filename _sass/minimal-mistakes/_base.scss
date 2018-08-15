@@ -361,16 +361,3 @@ input[type="submit"],
   -webkit-transition: $global-transition;
   transition: $global-transition;
 }
-
-/*
-   Offset for the target links due to fixed masthead
-   ========================================================================== */
-
-// :target::before {
-//   content:"";
-//   display: none;
-// 	// padding-top: calc(-#{$masthead-height} - 30px);
-//  	// padding-top: calc(#{$masthead-height} + 30px);
-//  	padding-top: 50px;
-//   visibility: hidden;
-// }
