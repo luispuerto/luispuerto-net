@@ -346,7 +346,7 @@
     display: none;
   }
 
-  @include breakpoint(max-width($large - 1px)) {
+  @include breakpoint(max-width $large - 1px) {
     label {
       position: relative;
       display: inline-block;
@@ -452,7 +452,7 @@
     font-weight: bold;
   }
 
-  @include breakpoint(max-width($large - 1px)) {
+  @include breakpoint(max-width $large - 1px) {
     position: relative;
     max-height: 0;
     opacity: 0%;
@@ -466,7 +466,7 @@
   }
 }
 
-@include breakpoint(max-width($large - 1px)) {
+@include breakpoint(max-width $large - 1px) {
   .nav__list input:checked ~ .nav__items {
     -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
@@ -482,7 +482,7 @@
 
 .nav__title {
   margin: 0;
-  padding: 0.5rem 1rem;
+  padding: 0.25rem 0.75rem;
   font-family: $sans-serif-narrow;
   font-size: $type-size-5;
   font-weight: bold;
@@ -491,7 +491,7 @@
 .nav__sub-title {
   display: block;
   margin: 0.5rem 0;
-  padding: 0.5rem 0;
+  padding: 0.25rem 0;
   font-family: $sans-serif-narrow;
   font-size: $type-size-6;
   font-weight: bold;
@@ -526,11 +526,15 @@
   padding: 0;
   width: 100%;
   list-style: none;
-  font-size: $type-size-7;
+  font-size: $type-size-6;
+
+  @include breakpoint($large) {
+    font-size: $type-size-7;
+  }
 
   a {
     display: block;
-    padding: 0.5rem 1rem;
+    padding: 0.25rem 0.75rem;
     color: $muted-text-color;
     font-size: $type-size-5;
     font-weight: bold;
@@ -543,31 +547,23 @@
   }
 
   li ul > li a {
-    padding-left: 1.55rem;
+    padding-left: 1.25rem;
     font-weight: normal;
   }
 
   li ul li ul > li a {
-    padding-left: 2.15rem;
-    font-weight: normal;
+    padding-left: 1.75rem;
   }
 
   li ul li ul li ul > li a {
-    padding-left: 2.45rem;
-    font-weight: normal;
+    padding-left: 2.25rem;
   }
 
   li ul li ul li ul li ul > li a {
     padding-left: 2.75rem;
-    font-weight: normal;
   }
 
-  /* hide sub sub links on small screens*/
-  li ul li > ul {
-    display: none;
-
-    @include breakpoint($medium) {
-      display: block;
-    }
+  li ul li ul li ul li ul li ul > li a {
+    padding-left: 3.25rem
   }
 }

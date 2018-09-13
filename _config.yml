@@ -113,31 +113,50 @@ author:
                       in Science and Technology. Fascinated about almost everything"
   location         : "🇪🇺🇪🇸🇸🇪🇫🇮🇺🇸"
   email            : "luis@luisspuerto.net"
-  uri              : # "/aboutme"
-  home             : "/aboutme" # null (default), "absolute or relative url to link to author home"
-  bitbucket        : # "luisspuerto"
-  codepen          :
-  dribbble         :
-  flickr           : "luisspuerto"
-  facebook         : # "lpuerto"
-  foursquare       :
-  github           : "luisspuerto"
-  gitlab           : # "luisspuerto"
-  google_plus      : # "+LuisPuerto"
-  keybase          :
-  instagram        : "lpuerto"
-  lastfm           :
-  linkedin         : "lpuerto"
-  pinterest        :
-  soundcloud       :
-  stackoverflow    : # "6888648/lpuerto" # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
-  steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
-  tumblr           : "luisspuerto"
-  twitter          : "lpuerto"
-  vine             :
-  weibo            :
-  xing             :
-  youtube          : # "https://youtube.com/c/LuisPuerto" # "https://youtube.com/c/MichaelRoseDesign"
+  links:
+    # - label: "Email"
+    #   icon: "fas fa-fw fa-envelope-square"
+    #   url: mailto:luis@luisspuerto.net
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/lpuerto"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/lpuerto"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/luisspuerto"
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      # url: https://gitlab.com/luisspuerto
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/lpuerto"
+    - label: "Flickr"
+      icon: "fab fa-fw fa-flickr"
+      url: "https://www.flickr.com/luisspuerto"
+
+# Site Footer
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/lpuerto"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/lpuerto"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/luisspuerto"
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      # url: https://gitlab.com/luisspuerto
+    - label: "Bitbucket"
+      icon: "fab fa-fw fa-bitbucket"
+      # url:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      # url:
 
 
 # Reading Files
