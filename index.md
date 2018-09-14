@@ -24,7 +24,7 @@ feature_row:
   - image_path: assets/images/pages/splash-featurerow-aboutme.jpg
     alt: "About me"
     title: "About me"
-    excerpt: "Born in Ponferrada, Spain. I've lived in Sweden, Finland and United Stated, and traveled to several other places. Interested in Science and Technology, and fascinated about almost everything."
+    excerpt: "Born in Ponferrada, Spain. I've lived in Sweden, Finland and United States, and traveled to several other places. Interested in Science and Technology, and fascinated about almost everything."
     url: "/aboutme"
     btn_label: "Read More"
     btn_class: "btn--primary"
