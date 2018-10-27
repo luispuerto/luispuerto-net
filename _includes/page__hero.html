@@ -22,6 +22,22 @@
   {% capture overlay_filter %}rgba(0, 0, 0, {{ page.header.overlay_filter }}){% endcapture %}
 {% endif %}
 
+{% if page.header.overlay_filter1 contains "rgba" %}
+  {% capture overlay_filter1 %}{{ page.header.overlay_filter1 }}{% endcapture %}
+{% elsif page.header.overlay_filter1 %}
+  {% capture overlay_filter1 %}rgba(0, 0, 0, {{ page.header.overlay_filter1 }}){% endcapture %}
+{% endif %}
+
+{% if page.header.overlay_filter2 contains "rgba" %}
+  {% capture overlay_filter2 %}{{ page.header.overlay_filter2 }}{% endcapture %}
+{% elsif page.header.overlay_filter2 %}
+  {% capture overlay_filter2 %}rgba(0, 0, 0, {{ page.header.overlay_filter2 }}){% endcapture %}
+{% endif %}
+
+{% if page.header.overlay_perc %}
+  {% capture overlay_perc %}{{page.header.overlay_perc }}%{% endcapture %}
+{% endif %}
+
 {% if page.header.image_description %}
   {% assign image_description = page.header.image_description %}
 {% else %}
@@ -31,7 +47,12 @@
 {% assign image_description = image_description | markdownify | strip_html | strip_newlines | escape_once %}
 
 <div class="page__hero{% if page.header.overlay_color or page.header.overlay_image %}--overlay{% endif %}"
-  style="{% if page.header.overlay_color %}background-color: {{ page.header.overlay_color | default: 'transparent' }};{% endif %} {% if overlay_img_path %}background-image: {% if overlay_filter %}linear-gradient({{ overlay_filter }}, {{ overlay_filter }}), {% endif %}url('{{ overlay_img_path }}');{% endif %}"
+  style="{% if page.header.overlay_color %}background-color: {{ page.header.overlay_color | default: 'transparent' }};{% endif %}
+          {% if overlay_img_path %}background-image:
+            {% if overlay_filter2 %}linear-gradient({{ overlay_filter1 }} {{ overlay_perc }}, {{ overlay_filter2 }}),
+              {% elsif overlay_filter %}linear-gradient({{ overlay_filter }}, {{ overlay_filter }}),
+            {% endif %}url('{{ overlay_img_path }}');
+          {% endif %}"
 >
   {% if page.header.overlay_color or page.header.overlay_image %}
     <div class="wrapper">
@@ -45,9 +66,9 @@
       {% if page.header.show_overlay_excerpt != false and page.excerpt %}
         <p class="page__lead">{{ page.excerpt | markdownify | remove: "<p>" | remove: "</p>" }}</p>
       {% endif %}
-      {% if page.read_time %}
+      <!-- {% if page.read_time %}
         <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
-      {% endif %}
+      {% endif %} -->
       {% if page.header.cta_url %}
         <p><a href="{{ cta_path }}" class="btn btn--light-outline btn--large">{{ page.header.cta_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a></p>
       {% endif %}

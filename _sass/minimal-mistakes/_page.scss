@@ -5,7 +5,10 @@
 #main {
   @include clearfix;
   margin-left: auto;
+  // margin-top: calc(-#{$masthead-height} + 1em);
+  // margin-top: -$masthead-height;
   margin-right: auto;
+  // padding-top: $masthead-height;
   padding-left: 1em;
   padding-right: 1em;
   -webkit-animation: $intro-transition;
@@ -18,12 +21,17 @@
     max-width: $x-large;
   }
 }
+.landing {
+  #main {
+    padding-top: 0em;
+  }
+}
 
 .page {
   @include breakpoint($large) {
     float: right;
     width: calc(100% - #{$right-sidebar-width-narrow});
-    padding-right: $right-sidebar-width-narrow;
+    padding-right: $right-sidebar-width;
   }
 
   @include breakpoint($x-large) {
@@ -48,12 +56,13 @@
       margin-right: 0;
       width: 100%;
       clear: both;
+      font-size:$type-size-6;
     }
   }
 }
 
 .page__title {
-  margin-top: 0;
+  margin-top: 1em;
   line-height: 1;
 
   & + .page__meta {
@@ -67,15 +76,21 @@
 }
 
 .page__content {
-  h2 {
-    padding-bottom: 0.5em;
+  h1, h2 {
+    padding-bottom: 0.2em;
     border-bottom: 1px solid $border-color;
   }
+  // .post__content{
+  //   h1, h2, h3, h4, h5, h6 {
+  //     margin-top: -$masthead-height;
+  //     padding-top: $masthead-height;
+  //   }
+  // }
 
   p,
   li,
   dl {
-    font-size: 1em;
+    font-size: $type-size-5;
   }
 
   /* paragraph indents */
@@ -110,11 +125,11 @@
   dd {
     margin-left: 1em;
     font-family: $sans-serif;
-    font-size: $type-size-6;
+    font-size: $type-size-5;
   }
 
   .small {
-    font-size: $type-size-6;
+    font-size: $type-size-7;
   }
 
   /* blockquote citations */
@@ -153,6 +168,8 @@
     .wrapper {
       padding-left: 1em;
       padding-right: 1em;
+      padding-top: 7%;
+      padding-bottom: 7%;
 
       @include breakpoint($x-large) {
         max-width: $x-large;
@@ -164,7 +181,10 @@
     .page__lead,
     .btn {
       color: #fff;
-      text-shadow: 1px 1px 4px rgba(#000, 0.5);
+      text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3),
+                  -3px -3px 5px rgba(0, 0, 0, 0.3),
+                  -3px 3px 5px rgba(0, 0, 0, 0.3),
+                  3px -3px 5px rgba(0, 0, 0, 0.3);
     }
 
     .page__lead {
@@ -172,10 +192,10 @@
     }
 
     .page__title {
-      font-size: $type-size-2;
+      font-size: $type-size-1;
 
       @include breakpoint($small) {
-        font-size: $type-size-1;
+        font-size: 4em;
       }
     }
   }
@@ -209,6 +229,133 @@
   a {
     color: #fff;
     text-decoration: none;
+  }
+}
+
+/*
+   Landing page
+   ========================================================================== */
+
+.landing {
+  .page__hero {
+    position: relative;
+    margin-bottom: 2em;
+    @include clearfix;
+    -webkit-animation: $intro-transition;
+    animation: $intro-transition;
+    -webkit-animation-delay: 0.25s;
+    animation-delay: 0.25s;
+
+    &--overlay {
+      position: relative;
+      margin-bottom: 1em;
+      padding: 0em 0;
+      @include clearfix;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top;
+      -webkit-animation: $intro-transition;
+      animation: $intro-transition;
+      -webkit-animation-delay: 0.25s;
+      animation-delay: 0.25s;
+      max-height: 1300px;
+
+      a {
+        color: #fff;
+      }
+
+      .wrapper {
+        padding-left: 2em;
+        padding-right: 1em;
+        padding-top: 40%;
+        padding-bottom: 0%;
+
+        @include breakpoint($small) {
+        //          max-width: $large;
+          padding-left: 3em;
+          padding-top: 30%;
+          padding-bottom: 5%;
+        }
+
+        @include breakpoint($large) {
+//          max-width: $large;
+          padding-left: 5em;
+          padding-top: 15%;
+          padding-bottom: 20%;
+        }
+        @include breakpoint($x-large) {
+          max-width: $x-large;
+          padding-top: 20%;
+        }
+      }
+
+      .page__title,
+      .page__meta,
+      .page__lead,
+      .btn {
+        color: #fff;
+        text-shadow: 5px 5px 10px rgba(0,0,0,0.7);
+        font-weight: normal;
+      }
+
+      .page__lead {
+        max-width: none;
+        font-size: $type-size-5;
+        font-weight: bold;
+
+        @include breakpoint($small){
+          font-size: $type-size-4
+        }
+
+        @include breakpoint($large){
+          font-size: $type-size-2;
+        }
+      }
+
+      .page__title {
+        font-size: 3.5em;
+        font-family: Mr Dafoe;
+        margin-bottom: 0em;
+
+        @include breakpoint($small) {
+          font-size: 7em;
+        }
+        @include breakpoint($large) {
+          font-size: 10em;
+        }
+      }
+    }
+  }
+
+  .page__hero-image {
+    width: 100%;
+    height: auto;
+    -ms-interpolation-mode: bicubic;
+  }
+
+  .page__hero-caption {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 2px 5px;
+    color: #fff;
+    font-family: $caption-font-family;
+    font-size: $type-size-7;
+    background: #000;
+    text-align: right;
+    z-index: 5;
+    opacity: 0.5;
+    border-radius: $border-radius 0 0 0;
+
+    @include breakpoint($large) {
+      padding: 5px 10px;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
   }
 }
 
@@ -258,6 +405,17 @@
   a {
     color: inherit;
   }
+}
+
+// adds a border if I want to the top of the tags block
+// .page__meta-footer {
+//     border-top: 1px solid $border-color;
+//     padding-top: 2em;
+//   }
+
+.page__reading_time {
+  margin-top: -0.5em;
+  font-size: $type-size-8 !important;
 }
 
 .page__meta-title {
@@ -438,6 +596,7 @@
 .comment__content-wrapper {
   float: right;
   width: calc(100% - 60px);
+  font-size: $type-size-7;
 
   @include breakpoint($large) {
     width: calc(100% - 100px);

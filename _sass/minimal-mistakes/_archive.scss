@@ -40,11 +40,18 @@
   line-height: initial;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin-top: 0.5em;
+  color: black; 
+
+  a {
+    color: inherit;
+  }
 
   a::before {
     content: '';
     position: absolute;
     left: 0;
+    color: black !important;
     top: 0;
     right: 0;
     bottom: 0;
@@ -80,9 +87,11 @@
   position: relative;
   border-radius: $border-radius;
   overflow: hidden;
+  max-height: 350px;
 
   img {
     width: 100%;
+    padding-top: 1em;
   }
 }
 
@@ -161,7 +170,7 @@
   @include breakpoint($medium) {
     margin-left: 0; /* override margin*/
     margin-right: 0; /* override margin*/
-    width: span(3 of 12);
+    width: span(3 of 9);
 
     &:nth-child(2n + 1) {
       clear: none;
@@ -208,11 +217,11 @@
 
   .archive__item-teaser {
     @include breakpoint($small) {
-      max-height: 200px;
+      max-height: 200px
     }
 
     @include breakpoint($medium) {
-      max-height: 120px;
+      max-height: 150px;
     }
   }
 }
@@ -277,7 +286,6 @@
   }
 
   &--left {
-    position: relative;
     float: left;
     margin-left: 0;
     margin-right: 0;
@@ -368,8 +376,8 @@
     width: 100%;
     clear: both;
     font-size: 1.125em;
-
     .archive__item {
+
       float: left;
       width: 100%;
     }

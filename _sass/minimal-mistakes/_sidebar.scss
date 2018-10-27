@@ -87,12 +87,14 @@
       @include clearfix();
       position: -webkit-sticky;
       position: sticky;
-      top: 2em;
+      top: 4em;
       float: right;
+      height: calc(100vh - 2.5em - 2em);
+      overflow-y: auto;
     }
   }
 
-  @include breakpoint($x-large) {
+  @include breakpoint($large) {
     width: $right-sidebar-width;
     margin-right: -1 * $right-sidebar-width;
   }
@@ -167,11 +169,12 @@
 }
 .sidebar .author__name {
   font-family: $sans-serif;
-  font-size: $type-size-5;
+  font-size: $type-size-4;
 }
 
 .author__bio {
   margin: 0;
+  font-size: $type-size-7 !important;
 
   @include breakpoint($large) {
     margin-top: 10px;
@@ -277,11 +280,12 @@
     display: block;
     margin-bottom: 5px;
     padding-right: 5px;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    //padding-top: 2px;
+    //padding-bottom: 2px;
     color: inherit;
-    font-size: $type-size-5;
+    font-size: $type-size-6;
     text-decoration: none;
+    max-width: 4em;
 
     &:hover {
       text-decoration: underline;
@@ -315,4 +319,3 @@
     margin-right: initial;
   }
 }
-

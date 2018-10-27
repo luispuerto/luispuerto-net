@@ -61,8 +61,26 @@ $(document).ready(function() {
     }, 400);
   });
 
+  // Bigfoot footnotes
+  var bigfoot = $.bigfoot({
+    actionOriginalFN: "ignore",
+    positionContent: "true"
+    });
+
+  // Anchor-js
+  anchors.options = {
+    class: 'anchorjs'
+  };
+  anchors.add();
+  anchors.remove('.archive__item-title, .author__name, .nav__title');
+
   // init smooth scroll
-  $("a").smoothScroll({ offset: -20 });
+  var scroll = new SmoothScroll('a[href*="#"]', {
+    header: '.masthead',
+    offset: 30,
+    updateURL: true,
+	  popstate: true,
+  });
 
   // add lightbox class to all image links
   $(
