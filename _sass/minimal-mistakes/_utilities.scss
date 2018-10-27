@@ -104,6 +104,14 @@ body:hover .visually-hidden button {
 }
 
 /*
+   Text atributes
+   ========================================================================== */
+
+.red-hover:hover {
+    color: $primary-color !important;
+}
+
+/*
    Alignment
    ========================================================================== */
 
@@ -130,6 +138,10 @@ body:hover .visually-hidden button {
   margin-left: auto;
   margin-right: auto;
 
+  @media (max-width: $small) {
+    width: 100% !important;
+  }
+
   @include breakpoint($small) {
     float: left;
     margin-right: 1em;
@@ -143,6 +155,10 @@ body:hover .visually-hidden button {
   margin-left: auto;
   margin-right: auto;
 
+  @media (max-width: $small) {
+    width: 100% !important;
+  }
+
   @include breakpoint($small) {
     float: right;
     margin-left: 1em;
@@ -155,6 +171,18 @@ body:hover .visually-hidden button {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: intrinsic;
+}
+
+/* image align center-full */
+
+.align-center-full {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  img {
+    width: 100%
+  }
 }
 
 /* file page content container */
@@ -375,7 +403,7 @@ body:hover .visually-hidden button {
     @include clearfix();
     position: -webkit-sticky;
     position: sticky;
-    top: 2em;
+    top: 4em;
 
     > * {
       display: block;
@@ -468,6 +496,16 @@ body:hover .visually-hidden button {
   p {
     margin-bottom: 0;
     font-size: $type-size-6;
+  }
+
+  &::before {
+    display: block;
+    content: "Footnotes:";
+    font-weight: bold;
+    margin: 1em 0;
+    border: 0;
+    border-top: 1px solid $border-color;
+    padding-top: 1em;
   }
 }
 

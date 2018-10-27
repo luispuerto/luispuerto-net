@@ -74,3 +74,17 @@ task :preview do
 
   Jekyll::Commands::Serve.process(options)
 end
+
+
+# task for the htmlproofer
+require 'html-proofer'
+task :test do
+  options = {
+    disable_external: false,
+    url_ignore: [/feed/],
+    alt_ignore: [/.*/],
+    allow_hash_href: true,
+    http_status_ignore: [999]
+  }
+  HTMLProofer.check_directory("./_site/", options).run
+end

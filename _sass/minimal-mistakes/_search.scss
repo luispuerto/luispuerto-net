@@ -9,8 +9,8 @@
 }
 
 .search__toggle {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: .1rem;
+  margin-right: .1rem;
   border: 0;
   outline: none;
   color: $muted-text-color;
@@ -19,14 +19,29 @@
   -webkit-transition: 0.2s;
   transition: 0.2s;
 
+  @include breakpoint($small) {
+    margin-right: .5rem;
+  }
+
+  @include breakpoint($medium) {
+    margin-right: 1rem;
+  }
+
   &:hover {
-    color: $text-color;
+    color: $primary-color;
   }
 }
 
 .search-icon {
   width: 100%;
   height: 100%;
+}
+
+.error404 {
+  margin-left: -0.2rem;
+  margin-right: 0rem;
+  font-weight: bold;
+  vertical-align: .006em;
 }
 
 .search-content {

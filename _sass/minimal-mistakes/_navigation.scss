@@ -186,9 +186,10 @@
 
   a {
     display: block;
-    margin: 0 1rem;
+    margin: 0 .6rem;
     color: $masthead-link-color;
     text-decoration: none;
+    font-weight: bold;
 
     &:hover {
       color: $masthead-link-color-hover;
@@ -196,6 +197,10 @@
 
     &.site-title {
       margin-left: 0;
+    }
+
+    @include breakpoint($large) {
+      margin: 0 1rem;
     }
   }
 
@@ -230,6 +235,7 @@
 
     a {
       position: relative;
+      padding: .5em 0; 
 
       &:before {
         content: "";
@@ -530,8 +536,9 @@
     display: block;
     padding: 0.25rem 0.75rem;
     color: $muted-text-color;
+    font-size: $type-size-5;
     font-weight: bold;
-    line-height: 1.5;
+    line-height: 1;
     border-bottom: 1px solid $border-color;
 
     &:hover {
