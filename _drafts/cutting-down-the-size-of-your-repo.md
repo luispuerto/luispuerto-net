@@ -2,8 +2,8 @@
 title: Cutting down the size of your repo
 # date: 2018-10-29 00:00 +00:00
 header: 
-  overlay_image: assets/images/blog/2018/image.jpg
-  teaser: assets/images/blog/2018/explorer-header-01.jpg
+  overlay_image: /assets/images/pages/teaser-default.jpg
+  teaser: /assets/images/pages/teaser-default.jpg
   caption: Me enjoying the sunny Yellowstone
 categories: 
   - Professional
