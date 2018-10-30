@@ -2,8 +2,8 @@
 title: What I've been doing this last years
 # date: 
 header: 
-  overlay_image: assets/images/blog/2018/explorer-header-01.jpg
-  teaser: assets/images/blog/2018/explorer-header-01.jpg
+  overlay_image: /assets/images/pages/teaser-default.jpg
+  teaser: /assets/images/pages/teaser-default.jpg
   caption: Me enjoying the sunny Yellowstone
 categories: 
   - Personal
