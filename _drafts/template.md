@@ -8,9 +8,10 @@
 # categories: 
 #  - Category1
 #  - Category2
-# tags: 
-#  - tag1
-#  - tag2
+# tags: [tag1, tag2]
+# toc: true
+# toc_label: "Unique Title"
+# toc_icon: "heart"  # corresponding Font Awesome icon name (without fa prefix)
 ---
 
 # This is just a post template
