@@ -17,4 +17,11 @@ Since some people is asking me this from time to time I think it's going to be a
 
 As some of you know, 
 
+<<<<<<< HEAD
 ## 
+=======
+## Enjoying my life 
+
+I really think this is the most important thing
+
+>>>>>>> writing
