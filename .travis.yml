@@ -10,13 +10,20 @@ before_install:
   - gem install bundler
 gemfile: Gemfile
 script:
-  - bundle exec jekyll algolia
-  - JEKYLL_ENV=production bundle exec jekyll build
-  - bundle exec htmlproofer ./_site --alt_ignore "/.*/" --allow_hash_href --http-status-ignore 999 --disable-external
+  - if [ "$TRAVIS_BRANCH" = "master" ]; then
+      bundle exec jekyll algolia; 
+      JEKYLL_ENV=production bundle exec jekyll build; 
+      bundle exec htmlproofer ./_site --alt_ignore "/.*/" --allow_hash_href --http-status-ignore 999 --disable-external;
+      fi 
+  - if [ "$TRAVIS_BRANCH" = "develop" ]; then
+      JEKYLL_ENV=production bundle exec jekyll build; 
+      bundle exec htmlproofer ./_site --alt_ignore "/.*/" --allow_hash_href --http-status-ignore 999 --disable-external;
+      fi 
 branches:
   only:
     # Change this to gh-pages if you're deploying using the gh-pages branch
     - master
+    - develop
 rvm:
  - 2.4.1
 
@@ -35,5 +42,5 @@ deploy:
   local_dir: _site
   # repo: luispuerto/luispuerto.net # in case I wanted to build my page in other repo
   target-branch: gh-pages
-  # on:
-  #   branch: master
+  on:
+    branch: master
