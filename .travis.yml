@@ -17,6 +17,7 @@ branches:
   only:
     # Change this to gh-pages if you're deploying using the gh-pages branch
     - master
+    - develop
 rvm:
  - 2.4.1
 
@@ -35,5 +36,5 @@ deploy:
   local_dir: _site
   # repo: luispuerto/luispuerto.net # in case I wanted to build my page in other repo
   target-branch: gh-pages
-  # on:
-  #   branch: master
+  on:
+    branch: master
