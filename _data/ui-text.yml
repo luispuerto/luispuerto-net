@@ -17,7 +17,8 @@ en: &DEFAULT_EN
   meta_label                 :
   tags_label                 : "Tags:"
   categories_label           : "Categories:"
-  date_label                 : "Updated:"
+  date_label                 : "Posted:"
+  update_label               : "Updated:"
   comments_label             : "Leave a comment"
   comments_title             : "Comments"
   more_label                 : "Learn more"
@@ -69,7 +70,8 @@ es: &DEFAULT_ES
   meta_label                 :
   tags_label                 : "Etiquetas:"
   categories_label           : "Categorías:"
-  date_label                 : "Actualizado:"
+  date_label                 : "Publicado:"
+  update_label               : "Actualizado:"
   comments_label             : "Comentar"
   comments_title             :
   more_label                 : "Ver más"

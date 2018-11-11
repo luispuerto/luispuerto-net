@@ -1,6 +1,7 @@
 ---
 title: The Explorer with the People Mastery
 # date: 2018-11-05 14:00
+# last_modified_at:
 header: 
   overlay_image: assets/images/blog/2018/explorer-header-01.jpg
   teaser: assets/images/blog/2018/explorer-header-01.jpg
