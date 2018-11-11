@@ -280,12 +280,18 @@ jekyll-archives:
   enabled:
     - categories
     - tags
+    - year
+    - month
   layouts:
     category: archive-taxonomy
     tag: archive-taxonomy
+    year: archive-taxonomy-year
+    month: archive-taxonomy-month
   permalinks:
-    category: /categories/:name/
-    tag: /tags/:name/
+    category: /blog/archive/categories/:name/
+    tag: /blog/archive/tags/:name/
+    year: /blog/archive/:year/
+    month: /blog/archive/:year/:month/
 
 
 # HTML Compression
