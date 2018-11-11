@@ -8,5 +8,7 @@ main:
     url: /resume
   - title: "Blog"
     url: /blog
+  - title: "Archive"
+    url: /archive
   - title: "Contact"
     url: /contact
