@@ -311,3 +311,4 @@ defaults:
       related: true
       header:
         show_overlay_excerpt: false
+      is_post: true
