@@ -21,7 +21,7 @@ layout: default
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%A, %d %B %Y %H:%M UTC" }}">{% endif %}
-    {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date: "%B %d, %Y" }}">{% endif %}
+    {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date: "%A, %d %B %Y %H:%M UTC" }}">{% endif %}
 
     <div class="page__inner-wrap">
       {% unless page.header.overlay_color or page.header.overlay_image %}
@@ -33,8 +33,17 @@ layout: default
 
       {% endunless %}
 
-      {% if page.read_time %}
-        <p class="page__meta page__reading_time"><i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
+      {% if page.read_time or page.last_modified_at or page.date %}
+        <p class="page__meta page__reading_time">
+        {% if page.last_modified_at %}
+            <strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.last_modified_at | date: "%Y-%m-%d" }}">{{ page.last_modified_at | date: "%A, %d %B %Y %H:%M UTC" }}</time>
+          {% elsif page.date %}
+            <strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%A, %d %B %Y %H:%M UTC" }}</time>
+        {% endif %}
+        {% if page.read_time %}
+          <strong><i class="far fa-clock" aria-hidden="true"></i></strong> {% include read-time.html %}
+        {% endif %}
+        </p>
       {% endif %}
 
         </header>
