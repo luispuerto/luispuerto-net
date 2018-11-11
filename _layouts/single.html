@@ -37,9 +37,9 @@ layout: default
         <p class="page__meta page__reading_time">
           {% if page.is_post %}
           {% if page.last_modified_at %}
-              <strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.last_modified_at | date: "%Y-%m-%d" }}">{{ page.last_modified_at | date: "%A, %d %B %Y %H:%M UTC" }}</time>
+              <strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].update_label | default: "Updated:" }}</strong> <time datetime="{{ page.last_modified_at | date: "%Y-%m-%d" }}">{{ page.last_modified_at | date: "%A, %d %B %Y %H:%M UTC" }}</time>
             {% elsif page.date %}
-              <strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%A, %d %B %Y %H:%M UTC" }}</time>
+              <strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Posted:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%A, %d %B %Y %H:%M UTC" }}</time>
           {% endif %}
           {% endif %}
         {% if page.read_time %}
@@ -71,9 +71,9 @@ layout: default
         {% endif %}
         {% include page__taxonomy.html %}
         {% if page.last_modified_at %}
-          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.last_modified_at | date: "%Y-%m-%d" }}">{{ page.last_modified_at | date: "%A, %d %B %Y %H:%M UTC" }}</time></p>
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].update_label | default: "Updated:" }}</strong> <time datetime="{{ page.last_modified_at | date: "%Y-%m-%d" }}">{{ page.last_modified_at | date: "%A, %d %B %Y %H:%M UTC" }}</time></p>
         {% elsif page.date %}
-          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%A, %d %B %Y %H:%M UTC" }}</time></p>
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Posted:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%A, %d %B %Y %H:%M UTC" }}</time></p>
         {% endif %}
       </footer>
 
