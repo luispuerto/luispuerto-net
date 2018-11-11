@@ -4,7 +4,9 @@ layout: single
 permalink: /archive/
 author_profile: true
 header:
-  overlay_image: https://torange.biz/photofx/1/8/light-sepia-toned-old-dark-frame-forest-road-autumn-1949.jpg
+  overlay_image: /assets/images/pages/header-archive.jpg
+  caption: 'Image from page 623 of "American forests". [Source](https://www.flickr.com/photos/internetarchivebookimages/18146675355/).'
+  overlay_filter: 0.3 
 ---
 
 ## By Categories by Size
