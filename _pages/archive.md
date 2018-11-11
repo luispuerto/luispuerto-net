@@ -21,7 +21,7 @@ header:
     {% for category in site.categories %}
       {% if category[1].size == i %}
         <li>
-          <a href="/blog/archive/categories/{{ category[0] | slugify }}">
+          <a href="/archive/categories/{{ category[0] | slugify }}">
             <strong>{{ category[0] }}</strong> <span class="taxonomy__count">{{ i }}</span>
           </a>
         </li>
@@ -44,7 +44,7 @@ header:
     {% for tag in site.tags %}
       {% if tag[1].size == i %}
         <li>
-          <a href="/blog/archive/tags/{{ tag[0] | slugify }}">
+          <a href="/archive/tags/{{ tag[0] | slugify }}">
             <strong>{{ tag[0] }}</strong> <span class="taxonomy__count">{{ i }}</span>
           </a>
         </li>
@@ -59,14 +59,14 @@ header:
   {% assign postsInYear = site.posts | group_by_exp: 'post', 'post.date | date: "%Y"' %}
   {% for year in postsInYear %}
     <li>
-      <a href="/blog/archive/{{ year.name }}">
+      <a href="/archive/{{ year.name }}">
         <strong>{{ year.name }}</strong> <span class="taxonomy__count">{{ year.items | size }}</span>
       </a>
       <ul class="subtaxonomy__index">
       {% assign postsInMonth = year.items | group_by_exp: 'post', 'post.date | date: "%B %m"' %}
  				 {% for month in postsInMonth %}
  			   <li>
-      <a href="/blog/archive/{{ year.name | slugify  }}/{{ month.name | slice: -2, 2 | slugify }}">
+      <a href="/archive/{{ year.name | slugify  }}/{{ month.name | slice: -2, 2 | slugify }}">
         <strong>{{ month.name | truncatewords: 1, "" }}</strong> <span class="taxonomy__count">{{ month.items | size }}</span>
       </a>
     	</li>
