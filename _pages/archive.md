@@ -13,7 +13,9 @@ toc_icon: "archive"  # corresponding Font Awesome icon name (without fa prefix)
 toc_sticky: true
 ---
 
-## By Categories by Size
+## Categories 
+
+### By Size
 
 {% assign categories_max = 0 %}
 {% for category in site.categories %}
@@ -36,7 +38,27 @@ toc_sticky: true
   {% endfor %}
 </ul>
 
-## By Tags by Size
+### Alphabetically
+
+{% assign categories = "" | split:"" %}
+{% for c in site.categories %}
+  {% assign categories = categories | push: c[0] %}
+{% endfor %}
+
+<ul class="taxonomy__index">
+  {% assign sorted_categories = categories | sort_natural %}
+    {% for c in sorted_categories %}
+      <li>
+        <a href="/archive/categories/{{ c | slugify }}">
+          <strong>{{ c }}</strong> <span class="taxonomy__count">{{ site.categories[c].size }}</span>
+        </a>
+      </li>
+  {% endfor %}
+</ul>
+
+## Tags
+
+### By Size
 
 {% assign tags_max = 0 %}
 {% for tag in site.tags %}
@@ -56,6 +78,24 @@ toc_sticky: true
         </li>
       {% endif %}
     {% endfor %}
+  {% endfor %}
+</ul>
+
+### Alphabetically
+
+{% assign tags = "" | split:"" %}
+{% for t in site.tags %}
+  {% assign tags = tags | push: t[0] %}
+{% endfor %}
+
+<ul class="taxonomy__index">
+  {% assign sorted_tags = tags | sort_natural %}
+    {% for t in sorted_tags %}
+      <li>
+        <a href="/archive/tags/{{ t | slugify }}">
+          <strong>{{ t }}</strong> <span class="taxonomy__count">{{ site.tags[t].size }}</span>
+        </a>
+      </li>
   {% endfor %}
 </ul>
 
