@@ -7,6 +7,10 @@ header:
   overlay_image: /assets/images/pages/header-archive.jpg
   caption: 'Image from page 623 of "American forests". [Source](https://www.flickr.com/photos/internetarchivebookimages/18146675355/).'
   overlay_filter: 0.3 
+toc: true
+toc_label: "Index"
+toc_icon: "archive"  # corresponding Font Awesome icon name (without fa prefix)
+toc_sticky: true
 ---
 
 ## By Categories by Size
