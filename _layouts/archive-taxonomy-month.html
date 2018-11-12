@@ -7,6 +7,7 @@ author_profile: true
   {% include sidebar.html %}
 
   <div class="archive">
+  	<a href="/archive"><img src="/assets/images/pages/subheader-archive.png" alt="archive"></a>
     <h1 class="page__title">{{ page.date | date: "%B of %Y" }}</h1>
     {% for post in page.posts %}
       {% include archive-single.html %}
