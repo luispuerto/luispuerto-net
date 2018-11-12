@@ -5,7 +5,7 @@ permalink: /archive/
 author_profile: true
 header:
   overlay_image: /assets/images/pages/header-archive.jpg
-  caption: 'Image from page 623 of "American forests". [Source](https://www.flickr.com/photos/internetarchivebookimages/18146675355/).'
+  caption: '*A virgin forest of White Pine* from [page 623](https://archive.org/stream/americanforests15natiuoft/#page/606/mode/1up) of "[American forests](https://archive.org/details/americanforests15natiuoft)". Source: [Flickr](https://www.flickr.com/photos/internetarchivebookimages/18146675355/).'
   overlay_filter: 0.3 
 toc: true
 toc_label: "Index"
