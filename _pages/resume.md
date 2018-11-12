@@ -44,7 +44,7 @@ Thesis / Senior project: ***"El Pajariel"  Stand Management Plan.***
 
 **2015-2017:**{: style="color: grey"} **University of Easter of Finland. Different LiDAR projects as intern. 9 months in total.** 
 
-  * Download, processing and analyzing the whole LiDAR information of Finland using Fusion, LAStools and other others.
+  * Download, processing and analyzing the whole LiDAR information of Finland using Fusion, LAStools and others.
   * Scripting in R language to process and analyze LiDAR data. Statistical modeling to yield biomass estimations.
   * Reference research and scientific writing about LiDAR and biomass estimation.
 
@@ -131,7 +131,7 @@ Thesis / Senior project: ***"El Pajariel"  Stand Management Plan.***
 - **Volunteering** at Albany Historic Carrousel. Setting the animals, assembling the wooden structure and helping with the mechanical and electrical systems.
 - Self-learner about Project Management and personal Productivity. Curious about “**Fifth Discipline**”, “**Systems Thinking**”, “Learning Organizations”, new ways of learning and similar subjects. 
 - Very interested in social media and the new ways of communicating ideas. 
-  •	Science and technology lover. Rational thinker. Always trying to implement technology to be me more efficient. 
+- Science and technology lover. Rational thinker. Always trying to implement technology to be me more efficient. 
 - Photography enthusiasm and eager learner of almost everything. 
 - I like the **adventure**, hiking and camping in the wilderness. 
 
