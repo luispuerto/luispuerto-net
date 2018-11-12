@@ -10,8 +10,8 @@ header:
   overlay_image: /assets/images/pages/header-resume.png
   caption: '*Rendering of LiDAR from Norway*'
 ---
-*You can download the most recent version of my résumé in pdf in [http://resume.luispuerto.net](http://resume.luispuerto.net)*{: style="color: grey"}
-{: style="color: grey; font-size: 80%"}
+*You can download the most recent version of my résumé in pdf in [http://pdf-resume.luispuerto.net](http://pdf-resume.luispuerto.net){: style="color: steelblue"}
+or at the [bottom of this page](#pdf-résumé){: style="color: steelblue"}.*{: style="color: grey; font-size: 80%"}
 
 ## Profile and Objective
 
@@ -38,7 +38,7 @@ Thesis / Senior project: ***"El Pajariel"  Stand Management Plan.***
 
 **2017-2018:**{: style="color: grey"} **Independent consultant and professional**
 
-- Develop web projects in Jekyll platform. HTML, CSS, Liquid templating, Git and some Ruby. 
+- Develop web projects in Jekyll platform. HTML, CSS, Liquid templating, Git, Continuous Integration and some Ruby. 
 - Manage a small network using Raspberry Pis as small home server for different applications such as R Studio server, VPN server, NAS, cloud storage, wireless audio streaming, ad blocker, internet speed logger and many others. 
 - Setting AWS for parallel computing on the cloud with R Studio server, passing from 2 days analysis to 1h.
 
@@ -63,7 +63,7 @@ Thesis / Senior project: ***"El Pajariel"  Stand Management Plan.***
   * Co-responsible to commission the digital platform for the  _Museo Nacional de la Energía_. 1-million-euro project.
   * Develop, implement and commission different kinds of **technological systems** such as public Wi-Fi networks, ticket-selling systems, geolocation systems for people and objects, and cloud computing systems.
   * Responsible of the **Geographic Information Systems (GIS)**. Cartography elaboration (such as two tourism maps, web apps or in-house cartography), data analysis, geodatabase keeping and in-house GIS training.
-  * Responsible of the office tasks of **“Current pest measurement of European chestnut from El Bierzo (León, Spain)”** project; managing field work, inventory operations, and data processing and analysis.
+  * Responsible of the office tasks of **“Assessment of the current phytosanitary status of European chestnut in El Bierzo (León, Spain)”** project; managing field work, inventory operations, and data processing and analysis.
   * Other projects:
   * **Heritage Inventory of El Bierzo and Laciana Counties**. Helping to plan field works, develop the inventory and coordinate and create a database. Also, subsequent analysis of data using GIS methodologies.
   * **La Mirada Circular** (more than 300 km of hiking routes): Help to organize activities, signaling, mapping and managing.
@@ -71,7 +71,7 @@ Thesis / Senior project: ***"El Pajariel"  Stand Management Plan.***
 
 **2009:**{: style="color: grey"} **Freelance consultant for TRAGSATEC; collaborate in the preliminary plan for the Pajariel Forestry Park.**
 
-  * Collecting data in field, team organization, and cartography elaboration.
+  * Collecting data in the field, team organization, and cartography elaboration.
   * GIS multi-criteria analysis of data, develop and analysis proposals of restoration and activities for the park.
   * Analysis of potentialities and the development of citizen participation process.
 
@@ -128,16 +128,16 @@ Thesis / Senior project: ***"El Pajariel"  Stand Management Plan.***
 
 ### Complementary Activities
 
-- Volunteering at Albany Historic Carrousel. Setting the animals, assembling the wooden structure and helping with the mechanical and electrical systems.
-- Self-learner about Project Management and personal Productivity. Curious about “Fifth Discipline”, “Systems Thinking”, “Learning Organizations”, new ways of learning and similar subjects. 
+- **Volunteering** at Albany Historic Carrousel. Setting the animals, assembling the wooden structure and helping with the mechanical and electrical systems.
+- Self-learner about Project Management and personal Productivity. Curious about “**Fifth Discipline**”, “**Systems Thinking**”, “Learning Organizations”, new ways of learning and similar subjects. 
 - Very interested in social media and the new ways of communicating ideas. 
   •	Science and technology lover. Rational thinker. Always trying to implement technology to be me more efficient. 
 - Photography enthusiasm and eager learner of almost everything. 
-- I like the adventure, hiking and camping in the wilderness. 
+- I like the **adventure**, hiking and camping in the wilderness. 
 
 ## PDF Résumé
 
-Additionally you can see and download the [most recent version of my résumé in pdf](http://resume.luispuerto.net).
+Additionally you can see and download the most recent version of my résumé in pdf bellow or [here](http://pdf-resume.luispuerto.net). 
 
 <iframe width="100%" height="650em" 
 src="https://www.dropbox.com/s/tba5d4eeja4vt2i/Luis%20Puerto%20Resume.pdf?raw=1&autoplay=1" frameborder="0" allowfullscreen></iframe>
