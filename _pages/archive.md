@@ -18,7 +18,7 @@ toc_sticky: true
   In that moment, it seemed a good idea.
   </blockquote>
 <p style="margin: 0 0 0 0; text-align: right; font-size: small; padding-right: 2em">
-  - <a href="http://escolar.net" style="text-decoration: none; color: black">Ignacio Escolar</a></p>
+  - <a href="https://en.wikipedia.org/wiki/Ignacio_Escolar" style="text-decoration: none; color: black">Ignacio Escolar</a></p>
 </p>
 
 ## Categories 
