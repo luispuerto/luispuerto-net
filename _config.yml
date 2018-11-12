@@ -271,21 +271,27 @@ whitelist:
 #  - <base_path/my-awesome-category/index.html ~> path: /
 category_archive:
   type: jekyll-archives
-  path: /categories/
+  path: /archive/categories/
 tag_archive:
   type: jekyll-archives
-  path: /tags/
+  path: /archive/tags/
 # https://github.com/jekyll/jekyll-archives
 jekyll-archives:
   enabled:
     - categories
     - tags
+    - year
+    - month
   layouts:
     category: archive-taxonomy
     tag: archive-taxonomy
+    year: archive-taxonomy-year
+    month: archive-taxonomy-month
   permalinks:
-    category: /categories/:name/
-    tag: /tags/:name/
+    category: /archive/categories/:name/
+    tag: /archive/tags/:name/
+    year: /archive/:year/
+    month: /archive/:year/:month/
 
 
 # HTML Compression
@@ -311,3 +317,4 @@ defaults:
       related: true
       header:
         show_overlay_excerpt: false
+      is_post: true

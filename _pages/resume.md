@@ -1,7 +1,8 @@
 ---
 title: Résumé
 permalink: /resume/
-date: 2017-04-19T22:08:12+00:00
+date: 2018-11-1 05:30 +00:00
+last_modified_at: 2018-11-11 20:45 +00:00
 layout: single
 classes: wide
 author_profile: true
@@ -14,7 +15,14 @@ header:
 
 ## Profile and Objective
 
-I am a dynamic and versatile Forest Engineer from Spain with more than 10 years of diverse and wide experience in GIS and remote sensing. I have been working lately on research projects involving LiDAR, biomass and R language. I have experience working internationally, in different fields related to technology and interdisciplinary teams. I have great ability to learn, and I have an analytical mind. I am mainly looking for challenging projects related to GIS, remote sensing technologies and new ways to acquire data where I can use my background and skills while learning new ones in the process.
+I am a dynamic and versatile Forest Engineer from Spain with more than
+10 years of diverse and wide experience in GIS and remote sensing. I have been
+working lately on research projects involving LiDAR, biomass and R language. I
+have experience working internationally, in different fields related to
+technology and interdisciplinary teams. I have great ability to learn, and I
+have an analytical mind. I am mainly looking for challenging projects related
+to GIS, remote sensing technologies and new ways to acquire data where I can
+use my background and skills, learning new ones in the process.
 
 ## Education
 
@@ -27,6 +35,12 @@ Thesis / Senior project: ***"El Pajariel"  Stand Management Plan.***
 **2008:**{: style="color: grey"} **Bachelor of Agricultural Engineering (Forestry)** (180 ETCS), University of León, Spain.
 
 ## Experience
+
+**2017-2018:**{: style="color: grey"} **Independent consultant and professional**
+
+- Develop web projects in Jekyll platform. HTML, CSS, Liquid templating, Git and some Ruby. 
+- Manage a small network using Raspberry Pis as small home server for different applications such as R Studio server, VPN server, NAS, cloud storage, wireless audio streaming, ad blocker, internet speed logger and many others. 
+- Setting AWS for parallel computing on the cloud with R Studio server, passing from 2 days analysis to 1h.
 
 **2015-2017:**{: style="color: grey"} **University of Easter of Finland. Different LiDAR projects as intern. 9 months in total.** 
 
@@ -104,14 +118,22 @@ Thesis / Senior project: ***"El Pajariel"  Stand Management Plan.***
 
 ### Computer Skills
 
-  * ArcGIS
-  * AutoCAD
+  * ArcGIS & AutoCAD
   * Photoshop
-  * R (statistical language)
-  * Fusion
-  * Git and version control
-  * Experience in Mac OS X, Windows & Linux environments
-  * Experience in scripting, databases and web developing
+  * macOS, Windows & Linux		
+  * R stats & Python 
+  * Fusion & LidR
+  * Git, GitHub & GitLab
+  * Shell scripting, databases and web developing
+
+### Complementary Activities
+
+- Volunteering at Albany Historic Carrousel. Setting the animals, assembling the wooden structure and helping with the mechanical and electrical systems.
+- Self-learner about Project Management and personal Productivity. Curious about “Fifth Discipline”, “Systems Thinking”, “Learning Organizations”, new ways of learning and similar subjects. 
+- Very interested in social media and the new ways of communicating ideas. 
+  •	Science and technology lover. Rational thinker. Always trying to implement technology to be me more efficient. 
+- Photography enthusiasm and eager learner of almost everything. 
+- I like the adventure, hiking and camping in the wilderness. 
 
 ## PDF Résumé
 
