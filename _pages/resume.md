@@ -2,7 +2,7 @@
 title: Résumé
 permalink: /resume/
 date: 2018-11-1 05:30 +00:00
-last_modified_at: 2018-11-11 20:45 +00:00
+last_modified_at: 2018-11-12 13:45 +00:00
 layout: single
 classes: wide
 author_profile: true
@@ -137,7 +137,7 @@ Thesis / Senior project: ***"El Pajariel"  Stand Management Plan.***
 
 ## PDF Résumé
 
-Additionally you can see and download the most recent version of my résumé in pdf bellow or [here](http://pdf-resume.luispuerto.net). 
+Additionally you can see and download the most recent version of my résumé in pdf bellow or [here](http://pdf-resume.luispuerto.net). 
 
 <iframe width="100%" height="650em" 
 src="https://www.dropbox.com/s/tba5d4eeja4vt2i/Luis%20Puerto%20Resume.pdf?raw=1&autoplay=1" frameborder="0" allowfullscreen></iframe>
