@@ -490,8 +490,18 @@
   grid-template-columns: repeat(2, 1fr);
   margin: 1.414em 0;
   padding: 0;
-  font-size: 0.75em;
+  font-size: 0.85em;
   list-style: none;
+
+  .subtaxonomy__index {
+    // display: grid;
+    // grid-column-gap: 2em;
+    // grid-template-columns: repeat(2, 1fr);
+    margin: 0.707em 0;
+    padding-left: 1em;
+    // font-size: 0.75em;
+    list-style: none;
+  }
 
   @include breakpoint($large) {
     grid-template-columns: repeat(3, 1fr);
