@@ -13,6 +13,14 @@ toc_icon: "archive"  # corresponding Font Awesome icon name (without fa prefix)
 toc_sticky: true
 ---
 
+<p style="margin: 0 0 0 0">
+  <blockquote style="font-size: xx-large; margin: 0 0 0 0; font-weight: bold;">
+  In that moment, it seemed a good idea.
+  </blockquote>
+<p style="margin: 0 0 0 0; text-align: right; font-size: small; padding-right: 2em">
+  - <a href="https://en.wikipedia.org/wiki/Ignacio_Escolar" style="text-decoration: none; color: black">Ignacio Escolar</a></p>
+</p>
+
 ## Categories 
 
 ### By Size
