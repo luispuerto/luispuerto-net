@@ -10,15 +10,15 @@ header:
   overlay_filter2: "0.7"
   overlay_perc: "42" 
 excerpt: | 
-  #Forestry 🌲 #Research 🔬 #GIS 🌍 #Remote Sensing 🛰       
-  #LiDAR 🔦 #RStats 📈 #Biomass 🌱 #Cartography 🗺       
-  #Europe 🇪🇺 #Spain 🇪🇸 #Sweden 🇸🇪 #Finland 🇫🇮 #Oregon US 🇺🇸
+  #Forestry 🌲 #Research 🔬 [#GIS](/archive/categories/gis) 🌍 #Remote Sensing 🛰       
+  #LiDAR 🔦 [#RStats](/archive/categories/rstats/) 📈 #Biomass 🌱 #Cartography 🗺       
+  #Europe 🇪🇺 #Spain 🇪🇸 #Sweden 🇸🇪 [#Finland](/archive/tags/finland) 🇫🇮 #Oregon US 🇺🇸
 
 intro:
   - title: Welcomed to my place!
   - excerpt: | 
-      Right now I'm in transition from my previous site and some parts are under development. 
-      You can know more [here](/blog/2018/07/23/new-web-in-jekyll/).  
+      Here, I try to explain a little bit of myself and talk about things I'm interested. I hope you enjoy!  
+      Recently, I changed my site from Wordpress to Jekyll. Know more [here](/blog/2018/07/23/new-web-in-jekyll/).
 
 feature_row:
   - image_path: assets/images/pages/splash-featurerow-aboutme.jpg
