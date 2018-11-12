@@ -10,9 +10,9 @@ header:
   overlay_filter2: "0.7"
   overlay_perc: "42" 
 excerpt: | 
-  #Forestry 🌲 #Research 🔬 #GIS 🌍 #Remote Sensing 🛰       
-  #LiDAR 🔦 #RStats 📈 #Biomass 🌱 #Cartography 🗺       
-  #Europe 🇪🇺 #Spain 🇪🇸 #Sweden 🇸🇪 #Finland 🇫🇮 #Oregon US 🇺🇸
+  #Forestry 🌲 #Research 🔬 [#GIS](/archive/categories/gis) 🌍 #Remote Sensing 🛰       
+  #LiDAR 🔦 [#RStats](/archive/categories/rstats/) 📈 #Biomass 🌱 #Cartography 🗺       
+  #Europe 🇪🇺 #Spain 🇪🇸 #Sweden 🇸🇪 [#Finland](/archive/tags/finland) 🇫🇮 #Oregon US 🇺🇸
 
 intro:
   - title: Welcomed to my place!
