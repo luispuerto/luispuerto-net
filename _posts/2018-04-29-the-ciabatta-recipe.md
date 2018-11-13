@@ -5,6 +5,7 @@ header:
   overlay_image: /assets/images/blog/2018/IMG_5302.jpg
   teaser: /assets/images/blog/2018/IMG_5302.jpg
   caption: The final result of the recipe. 
+image: /assets/images/blog/2018/IMG_5302.jpg
 categories:
   - Personal
   - Recipes

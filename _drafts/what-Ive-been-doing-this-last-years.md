@@ -6,6 +6,7 @@ header:
   overlay_image: /assets/images/pages/teaser-default.jpg
   teaser: /assets/images/pages/teaser-default.jpg
   caption: Me enjoying the sunny Yellowstone
+image: /assets/images/pages/teaser-default.jpg
 categories: 
   - Personal
   - Professional

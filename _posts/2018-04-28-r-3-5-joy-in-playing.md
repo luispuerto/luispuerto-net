@@ -5,6 +5,7 @@ header:
   overlay_image: /assets/images/blog/2018/4421de17ce2dc4cd3843ba00b224fbe0-header.jpeg
   teaser: /assets/images/blog/2018/4421de17ce2dc4cd3843ba00b224fbe0-header.jpeg
   caption: The joy is (in the) playing
+image: /assets/images/blog/2018/4421de17ce2dc4cd3843ba00b224fbe0-header.jpeg
 categories:
   - Professional
   - RStats
