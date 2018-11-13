@@ -5,6 +5,7 @@ header:
   overlay_image: /assets/images/blog/2018/big-file.jpg
   teaser: /assets/images/blog/2018/big-file.jpg
   caption: "Source: [Oracle Database SQL scripts](http://www.oracle-scripts.net/listener-log-too-big/)"
+image: /assets/images/blog/2018/big-file.jpg
 categories: 
   - Professional
 tags: 

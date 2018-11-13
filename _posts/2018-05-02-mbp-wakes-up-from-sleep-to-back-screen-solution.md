@@ -2,8 +2,9 @@
 title: 'MBP wakes up from sleep to back screen —  Solution'
 date: 2018-05-02 09:23:04
 header:
-  overlay_image: assets/images/blog/2018/apple-wake-up.jpg
-  teaser: assets/images/blog/2018/apple-wake-up.jpg
+  overlay_image: /assets/images/blog/2018/apple-wake-up.jpg
+  teaser: /assets/images/blog/2018/apple-wake-up.jpg
+image: /assets/images/blog/2018/apple-wake-up.jpg
 categories:
   - Technology
 tags:
