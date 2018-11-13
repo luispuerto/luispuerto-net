@@ -3,10 +3,10 @@ title: The Explorer with the People Mastery
 date: 2018-11-13 12:25
 # last_modified_at:
 header: 
-  overlay_image: assets/images/blog/2018/explorer-header-01.jpg
-  teaser: assets/images/blog/2018/explorer-header-01.jpg
+  overlay_image: /assets/images/blog/2018/explorer-header-01.jpg
+  teaser: /assets/images/blog/2018/explorer-header-01.jpg
   caption: Me enjoying the sunny Yellowstone
-image: /assets/images/pages/teaser-default.jpg
+image: /assets/images/blog/2018/explorer-header-01.jpg
 categories: 
   - Personal
   - Professional
