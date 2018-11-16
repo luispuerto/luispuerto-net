@@ -6,6 +6,7 @@
 #  overlay_image: /assets/images/pages/teaser-default.jpg
 #  teaser: /assets/images/pages/teaser-default.jpg
 #  caption: Your caption
+#  overlay_filter: 0.3
 # image: /assets/images/pages/teaser-default.jpg
 # categories: 
 #  - Category1
