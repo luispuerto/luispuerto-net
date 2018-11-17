@@ -5,7 +5,7 @@ header:
   overlay_image: /assets/images/blog/2018/facebooktoilet.jpg
   teaser: /assets/images/blog/2018/facebooktoilet.jpg
   caption: "Facebook: We are toilet. Source: [Last Week Tonight](https://www.youtube.com/watch?v=OjPYmEZxACM)"
-share: facebook twitter twitter--hashtags linkedin
+image: /assets/images/blog/2018/facebooktoilet.jpg
 categories: 
   - Personal
 tags: 
@@ -15,11 +15,11 @@ tags:
   - privacy
 ---
 
-Today I was finally able to empty my Facebook :toilet: account. I totally deleted all my content, or at least the one I was able to delete, since not all the content is *deletable*. For example, you can't delete the events you've been interested in, invited, or you have attended, or you can't delete some of the pages you liked, because they aren't available anymore. It's quite interesting the amount of data some of us have poured into that social network. If you have an account in Facebook :toilet: I invite you to go into Download Your Data section, download it, and peek into what Facebook :toilet: has about you. And I didn't say knows because it probably knows more that all that data you are able to download and they probably have a more detailed profile of you in their end. 
+Today I was finally able to empty my Facebook :toilet: account. I totally deleted all my content, or at least the one I was able to delete, since not all the content is *deletable*. For example, you can't delete the events you've been interested in, invited, or you have attended, or you can't delete some of the pages you liked, because they aren't available anymore. It's quite interesting the amount of data some of us have poured into that social network. If you have an account in Facebook :toilet: I invite you to go into Download Your Data section, download it, and peek into what Facebook :toilet: has about you. And I didn't say knows because it probably knows more that all that data you are able to download and they probably have a more detailed profile of you in their end. 
 
 ## Why?
 
-Well, as I've already explained —more or less— in a [previous post](https://luispuerto.net/blog/2018/03/21/why-dont-i-like-facebook-anymore/), Facebook :toilet: has stopped to feel right as a place to share content. The problem **isn't really privacy or anything like that** —although is an importan issue. It's just that doesn't fit in what I want to share with the World :earth_africa: right now. It just feels that falls short when I want to share the content I want to share now —rich, complex and more elaborated. 
+Well, as I've already explained —more or less— in a [previous post](https://luispuerto.net/blog/2018/03/21/why-dont-i-like-facebook-anymore/), Facebook :toilet: has stopped to feel right as a place to share content. The problem **isn't really privacy or anything like that** —although is an importan issue. It's just that doesn't fit in what I want to share with the World :earth_africa: right now. It just feels that falls short when I want to share the content I want to share now —rich, complex and more elaborated. 
 
 There is also another reason... I don't want a third party to own my content. Or at leas I don't want a third party owning my content that makes **really bloody difficult** to delete or manage my content. I took me a couple of days to delete all my content from Facebook :toilet: —and the help of a couple[^1] of scripts/Chrome-extentions—  because they don't have any option or section in their site to proper manage your content. You just either can download your content or delete your account completely —or they say they do— and of course, delete post by post, like by like and comment by comment. Which is incredible painful. 
 

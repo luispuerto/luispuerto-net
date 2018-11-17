@@ -2,8 +2,9 @@
 title: Installing R with Homebrew with all the capabilities
 date: 2018-05-11 11:57:06
 header:
-  overlay_image: assets/images/blog/2018/R-Homebrew.jpg
-  teaser: assets/images/blog/2018/R-Homebrew.jpg
+  overlay_image: /assets/images/blog/2018/R-Homebrew.jpg
+  teaser: /assets/images/blog/2018/R-Homebrew.jpg
+image: /assets/images/blog/2018/R-Homebrew.jpg
 categories:
   - Professional
   - RStats

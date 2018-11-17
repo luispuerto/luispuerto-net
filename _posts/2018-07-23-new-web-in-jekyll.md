@@ -2,8 +2,9 @@
 title: New Web in Jekyll
 date: 2018-07-23 20:20:00
 header: 
-  overlay_image: assets/images/blog/2018/jekyll.png
-  teaser: assets/images/blog/2018/jekyll.png
+  overlay_image: /assets/images/blog/2018/jekyll.png
+  teaser: /assets/images/blog/2018/jekyll.png
+image: /assets/images/blog/2018/jekyll.png
 categories:
   - Personal
   - Technology
