@@ -6,6 +6,8 @@
 {% assign tag_count = tag_count | plus: site.tags[tag].size %}
 {% endfor %}
 
+{% assign tags = tags | sample: tag_count %}
+
 {% for tag in tags %}
 {% assign rel_tag_size = site.tags[tag].size | times: 12.0 | divided_by: tag_count | plus: 1 %}
 <span style="white-space: nowrap; font-size: {{ rel_tag_size }}em; padding: 0.2em;">
