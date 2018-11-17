@@ -13,6 +13,29 @@ toc_icon: "archive"  # corresponding Font Awesome icon name (without fa prefix)
 toc_sticky: true
 ---
 
+## By Year & Month
+
+<ul class="taxonomy__index">
+  {% assign postsInYear = site.posts | group_by_exp: 'post', 'post.date | date: "%Y"' %}
+  {% for year in postsInYear %}
+    <li>
+      <a href="/archive/{{ year.name }}">
+        <strong>{{ year.name }}</strong> <span class="taxonomy__count">{{ year.items | size }}</span>
+      </a>
+      <ul class="subtaxonomy__index">
+      {% assign postsInMonth = year.items | group_by_exp: 'post', 'post.date | date: "%B %m"' %}
+         {% for month in postsInMonth %}
+         <li>
+      <a href="/archive/{{ year.name | slugify  }}/{{ month.name | slice: -2, 2 | slugify }}">
+        <strong>{{ month.name | truncatewords: 1, "" }}</strong> <span class="taxonomy__count">{{ month.items | size }}</span>
+      </a>
+      </li>
+  {% endfor %}
+      </ul>
+    </li>
+  {% endfor %}
+</ul>
+
 ## Categories 
 
 ### By Size
@@ -58,6 +81,12 @@ toc_sticky: true
 
 ## Tags
 
+<p class="tag__cloud" style="text-align: center;">
+  {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+  {% assign tags = site_tags | split:',' | sort %}
+  {% include tagcloud.html %}
+  </p>
+
 ### By Size
 
 {% assign tags_max = 0 %}
@@ -96,29 +125,6 @@ toc_sticky: true
           <strong>{{ t }}</strong> <span class="taxonomy__count">{{ site.tags[t].size }}</span>
         </a>
       </li>
-  {% endfor %}
-</ul>
-
-## By Year & Month
-
-<ul class="taxonomy__index">
-  {% assign postsInYear = site.posts | group_by_exp: 'post', 'post.date | date: "%Y"' %}
-  {% for year in postsInYear %}
-    <li>
-      <a href="/archive/{{ year.name }}">
-        <strong>{{ year.name }}</strong> <span class="taxonomy__count">{{ year.items | size }}</span>
-      </a>
-      <ul class="subtaxonomy__index">
-      {% assign postsInMonth = year.items | group_by_exp: 'post', 'post.date | date: "%B %m"' %}
- 				 {% for month in postsInMonth %}
- 			   <li>
-      <a href="/archive/{{ year.name | slugify  }}/{{ month.name | slice: -2, 2 | slugify }}">
-        <strong>{{ month.name | truncatewords: 1, "" }}</strong> <span class="taxonomy__count">{{ month.items | size }}</span>
-      </a>
-    	</li>
-  {% endfor %}
-      </ul>
-    </li>
   {% endfor %}
 </ul>
 
