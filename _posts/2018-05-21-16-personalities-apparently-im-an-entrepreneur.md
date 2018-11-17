@@ -5,6 +5,7 @@ header:
   overlay_image: /assets/images/blog/2018/Luis-Puerto-The-Entreprenour2.jpg
   teaser: /assets/images/blog/2018/Luis-Puerto-The-Entreprenour2.jpg
   caption: Part of my profile in 16 personalities website. 
+image: /assets/images/blog/2018/Luis-Puerto-The-Entreprenour2.jpg
 categories:
   - Personal
   - Professional
@@ -23,7 +24,7 @@ But let's return to the personality test, as they explain in the [Our Theory / O
 
 {% include figure image_path="/assets/images/blog/2018/Screen-Shot-2018-05-02-at-20.26.39-1.png" alt="General idea of what is seems I'm" caption="General idea of what it seems I'm" %}{: .align-left}
 
-If you check the introduction of [my profile](https://www.16personalities.com/profiles/aac7d80816e2d), they say that I'm an entrepreneur with a role of an [explorer](https://www.16personalities.com/articles/roles-explorers) and with a strategy of [people mastery](https://www.16personalities.com/articles/strategies-people-mastery). It's funny because I've always considered myself an explorer, I always enjoy wondering, and wandering, discovering new places and new people and trying new things. In fact, lately I'm consider the word *try* by favorite word. Perhaps for that reason I've always loved maps —they help you reach new places and imagine. However, I never considered myself a social person or people master. When I was a child I was always really shy, buy my mother always encourage talk to people and be myself. She, on the other hand, has been always a really sociable person and really outspoken, even when she was a child. Perhaps, that is something I have inside of me.
+If you check the introduction of [my profile](https://www.16personalities.com/profiles/aac7d80816e2d), they say that I'm an entrepreneur with a role of an [explorer](https://www.16personalities.com/articles/roles-explorers) and with a strategy of [people mastery](https://www.16personalities.com/articles/strategies-people-mastery). It's funny because I've always considered myself an explorer, I always enjoy wondering, and wandering, discovering new places and new people and trying new things. In fact, lately I'm consider the word *try* by favorite word. Perhaps for that reason I've always loved maps —they help you reach new places and imagine. However, I never considered myself a social person or people master. When I was a child I was always really shy, buy my mother always encourage talk to people and be myself. She, on the other hand, has been always a really sociable person and really outspoken, even when she was a child. Perhaps, that is something I have inside of me.
 
 They also consider that I'm have a 78% extraverted, 58% observant, 58% thinking, 51% prospecting and 76% assertive personality. As you see, I only have two trails really clearly sided, while in the other three I'm quite balance. These should be translated as that I'm clearly extraverted, so "I usually prefer to be group activities", and clearly assertive, in other words, I'm self-assured, even-tempered and resistant to stress, and I usually don't worry too much, but I don't puss myself too much when I have to archive goals. Both of those trails are true or at least I feel they are true.
 

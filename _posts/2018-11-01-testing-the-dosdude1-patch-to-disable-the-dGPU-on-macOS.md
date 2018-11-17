@@ -5,6 +5,7 @@ header:
   overlay_image: "assets/images/blog/2018/grey_screen.jpg"
   teaser: "assets/images/blog/2018/grey_screen.jpg"
   caption: "Apple grey screen of dead"
+image: /assets/images/blog/2018/grey_screen.jpg
 categories: 
   - Personal
   - Technology
