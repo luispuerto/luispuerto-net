@@ -41,6 +41,10 @@ That's more of less the official function of the CI. However, it can do much mor
 
 ## How? 
 
+There are several options out there as CI services, from Travis —with is one of the most common one— to [Jenkins](https://jenkins.io) or, if you use [GitLab, their own CI](https://about.gitlab.com/product/continuous-integration/). 
+
+
+
 
 
 
