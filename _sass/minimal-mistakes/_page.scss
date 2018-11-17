@@ -522,6 +522,15 @@
   }
 }
 
+.tag__cloud {
+  font-size: 0.80em !important;
+  font-weight: 600; 
+  a {
+    color: black; 
+    text-decoration: none;
+  }
+}
+
 .back-to-top {
   display: block;
   clear: both;
