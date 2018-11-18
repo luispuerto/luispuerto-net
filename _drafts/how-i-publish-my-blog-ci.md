@@ -41,14 +41,20 @@ That's more of less the official function of the CI. However, it can do much mor
 
 ## How? 
 
-There are several options out there as CI services, from Travis —with is one of the most common one— to [Jenkins](https://jenkins.io) or, if you use [GitLab, their own CI](https://about.gitlab.com/product/continuous-integration/). 
+There are several options out there as CI services, from [Travis](https://travis-ci.com) —with is one of the most common one— to [Jenkins](https://jenkins.io) or, if you use [GitLab, their own CI](https://about.gitlab.com/product/continuous-integration/). I'm going to talk about Travis, because it's the one I'm using myself. 
+
+### Give access to Travis
+
+First of all, you should go to the Travis website and autorice them to have access to your repos in GitHub. Usually, just login with your GitHub account, they will ask for permission and if you just want to use Travis in all your repos or in some of the repos. I have it set for only the repos I'm interested on because otherwise Travis can be trigged just pushing a commit to GitHub[^2]. 
+
+### Configure your build
+
+Once you have given access to Travis, you need to configure your build. 
 
 
 
+[^1]: These scripts can be whatever you want —more or less.
+[^2]: IIRC to trigger Travis you also need to have a `.travis` file in the `root` of your repo but I'm not sure. Anyhow... sometimes I have repos in GitHub that have files `.travis` and I don't want they run in CI. In the end you can do whatever you think it's more convenient for you. 
 
 
 
-
-
-
-[^1]: These scripts can be whatever you want —more or less. 
