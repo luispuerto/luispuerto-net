@@ -39,7 +39,7 @@ For all these reasons [OGC](http://www.opengeospatial.org) (Open Geospatial Cons
 - It's just a file, not a series of files or a directory. 
 - Can store more than one kind of data in a file, even raster files. 
 - Can be extended over time if it's needed an evolution. 
-- And .... **IT'S [OPEN](https://en.wikipedia.org/wiki/Open_data)** :unlock:. So you never ever are going to need to pay to access your data. :
+- And .... **IT'S [OPEN](https://en.wikipedia.org/wiki/Open_data)** :unlock:. So you never ever are going to need to pay to access your data.
 
 You can read a little bit more about the formats and why you should use GeoPackages :package: [here](http://switchfromshapefile.org). 
 
