@@ -2,7 +2,7 @@
 title: Résumé
 permalink: /resume/
 date: 2018-11-1 05:30 +00:00
-last_modified_at: 2018-11-12 13:45 +00:00
+last_modified_at: 2018-11-19 09:30 +00:00
 layout: single
 classes: wide
 author_profile: true
@@ -32,7 +32,7 @@ use my background and skills, learning new ones in the process.
 **2012:**{: style="color: grey"} **[Degree in Forestry and Environmental Engineering](https://www.unileon.es/estudiantes/estudiantes-grado/oferta-de-estudios/grado-en-ingenieria-forestal-y-del-medio-natural)**[^1] (240 ETCS), [University of León](https://www.unileon.es/), Spain.  
 Thesis / Senior project: ***"[El Pajariel](https://es.wikipedia.org/wiki/Monte_Pajariel)"  Stand Management Plan.*** 
 
-**2008:**{: style="color: grey"} **Bachelor of Agricultural Engineering (Forestry)** (180 ETCS), University of León, Spain.
+**2008:**{: style="color: grey"} **Bachelor of Agricultural Engineering (Forestry)**[^2] (180 ETCS), University of León, Spain.
 
 ## Experience
 
@@ -62,12 +62,12 @@ Thesis / Senior project: ***"[El Pajariel](https://es.wikipedia.org/wiki/Monte_P
   * In charge of a multidisciplinary team of four members related to technology and programming.
   * Co-responsible to commission the digital platform for the *[Museo Nacional de la Energía](https://es.wikipedia.org/wiki/Museo_de_la_Energ%C3%ADa)*. 1-million-euro project.
   * Develop, implement and commission different kinds of **technological systems** such as public Wi-Fi networks, ticket-selling systems, geolocation systems for people and objects, and cloud computing systems.
-  * Responsible of the **Geographic Information Systems (GIS)**. Cartography elaboration (such as two tourism maps, web apps or in-house cartography), data analysis, geodatabase keeping and in-house GIS training.
+  * Responsible of the **[Geographic Information Systems (GIS)](https://en.wikipedia.org/wiki/Geographic_information_system)**. Cartography elaboration (such as two tourism maps, web apps or in-house cartography), data analysis, geodatabase keeping and in-house GIS training.
   * Responsible of the office tasks of **“[Assessment of the current phytosanitary status of European chestnut in El Bierzo (León, Spain)](http://www.castanea.es/noticia.php?id=28)”** project; managing field work, inventory operations, and data processing and analysis.
   * Other projects:
-  * **Heritage Inventory of [El Bierzo](https://en.wikipedia.org/wiki/El_Bierzo) and [Laciana](https://en.wikipedia.org/wiki/Laciana) Counties**. Helping to plan field works, develop the inventory and coordinate and create a database. Also, subsequent analysis of data using GIS methodologies.
-  * **[La Mirada Circular](https://web.archive.org/web/20110702215126/http://www.lamiradacircular.com:80/)** (more than 300 km of hiking routes): Help to organize activities, signaling, mapping and managing.
-  * Lots of other activities about environment, alternative and clean energies, tourism and territory analysis.
+      * **Heritage Inventory of [El Bierzo](https://en.wikipedia.org/wiki/El_Bierzo) and [Laciana](https://en.wikipedia.org/wiki/Laciana) Counties**. Helping to plan field works, develop the inventory and coordinate and create a database. Also, subsequent analysis of data using GIS methodologies.
+      * **[La Mirada Circular](https://web.archive.org/web/20110702215126/http://www.lamiradacircular.com:80/)** (more than 300 km of hiking routes): Help to organize activities, signaling, mapping and managing.
+      * Lots of other activities about environment, alternative and clean energies, tourism and territory analysis.
 
 **2009:**{: style="color: grey"} **Freelance consultant for [TRAGSATEC](http://www.tragsa.es/es/grupo-tragsa/empresas/Paginas/tragsatec.aspx); collaborate in the preliminary plan for the Pajariel Forestry Park.**
 
@@ -95,7 +95,7 @@ Thesis / Senior project: ***"[El Pajariel](https://es.wikipedia.org/wiki/Monte_P
 ### Additional Training
 
   * 10 training courses on **ArcGIS 10 Desktop and Server** systems, including Oracle DDBB and programming in python and add-ins, by ESRI Spain (300 hours).
-  * Course **Sextante** (GIS toolbox) by Uni. of León (20 hours).
+  * Course **[Sextante](http://sextantegis.blogspot.com)** (GIS toolbox) by Uni. of León (20 hours).
   * Course **“Thematic Cartography”**, by the Spanish National Geographic Institute (40 hours).
   * Course of “**Learn to Program: The Fundamentals**” in Python, by University of Toronto (50 hours).
   * Course “**Certification and Audition Systems** in forest exploitations” by PROFOR (144 hours).
@@ -144,4 +144,6 @@ src="https://www.dropbox.com/s/tba5d4eeja4vt2i/Luis%20Puerto%20Resume.pdf?raw=1&
 
 
 [^1]: I converted my previous title to this new one when the Bolonia transition happened in Spain, so I ended up with two similar titles. 
+
+[^2]: This studies have disappeared after the Bolonia process happened circa 2011. 
 
