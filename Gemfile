@@ -14,15 +14,15 @@ source "https://rubygems.org"
 # To upgrade, run `bundle update`.
 
 gem "github-pages"
-gem "minimal-mistakes-jekyll"
+# gem "minimal-mistakes-jekyll"
 
 # The following plugins are automatically loaded by the theme-gem:
-#   gem "jekyll-paginate"
-#   gem "jekyll-sitemap"
-#   gem "jekyll-gist"
+  gem "jekyll-paginate"
+  gem "jekyll-sitemap"
+  gem "jekyll-gist"
 #   gem "jekyll-feed"
-#   gem "jemoji"
-#   gem "jekyll-data"
+  gem "jemoji"
+  gem "jekyll-data"
 #
 # If you have any other plugins, put them here!
 group :jekyll_plugins do
