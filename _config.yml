@@ -99,6 +99,11 @@ social:
     - https://github.com/luispuerto
     - https://www.flickr.com/photos/lpuerto
 
+# Twitter Feed
+twitter_format: "New post: @title: @url @tags"
+twitter_url_length: 22
+twitter_max_length: 280 
+
 # Analytics
 analytics:
   provider               : "google" # false (default), "google", "google-universal", "custom"
@@ -320,3 +325,4 @@ defaults:
       header:
         show_overlay_excerpt: false
       is_post: true
+      share: twitter --twitter-hashtags
