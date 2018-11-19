@@ -10,7 +10,7 @@ categories:
   - Personal
   - Professional
 tags:
-  - "I'm the entrepreneur"
+  - my personality
   - science
   - work
 ---
