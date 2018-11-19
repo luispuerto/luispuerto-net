@@ -10,7 +10,7 @@ image: /assets/images/blog/2018/explorer-header-01.jpg
 categories: 
   - Personal
   - Professional
-tags: ["I'm the entrepreneur", science, work]
+tags: [my personality, science, work]
 toc: true
 toc_icon: user
 toc_sticky: true
