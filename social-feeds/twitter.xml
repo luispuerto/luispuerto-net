@@ -62,15 +62,10 @@ layout: null
 
                 {% capture post_footer %}<a href="{{ post.url | absolute_url }}" rel="nofollow">{{ post.title }}</a> was originally published on {{ site.title }}.{% endcapture %}
                 {{ post_footer | markdownify | xml_escape }}
-
-                {% assign post_image = post.image | default: site.teaser %}
-                {% if post_image %}
-                  {% unless post_image contains "://" %}
-                    {% assign post_image = post_image | absolute_url | xml_escape %}
-                  {% endunless %}
-                  {% capture post_image_html %}<img src="{{ post_image }}" alt="">{% endcapture %}
-                  {{ post_image_html | markdownify | xml_escape }}
-                {% endif %}
+                
+                {% capture post_image_html %}<img src="{{ site.teaser | absolute_url }}" alt="">{% endcapture %}
+                {{ post_image_html | markdownify | xml_escape }}
+                
             </description>
             <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
             <link>{{ post.url | absolute_url }}</link>
