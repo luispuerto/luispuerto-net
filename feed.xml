@@ -13,7 +13,9 @@ layout: null
   <updated>{{ site.time | date_to_xmlschema }}</updated>
   <id>{{ '/' | absolute_url | xml_escape }}</id>
 
-  {% if site.title %}
+  {% if site.feed_title %}
+    <title type="html">{{ site.feed_title | smartify | xml_escape }}</title>
+  {% elsif site.title %}
     <title type="html">{{ site.title | smartify | xml_escape }}</title>
   {% elsif site.name %}
     <title type="html">{{ site.name | smartify | xml_escape }}</title>
@@ -53,7 +55,7 @@ layout: null
       <updated>{{ post.last_modified_at | default: post.date | date_to_xmlschema }}</updated>
       <id>{{ post.id | absolute_url | xml_escape }}</id>
       <content type="html" xml:base="{{ post.url | absolute_url | xml_escape }}">
-        {% assign post_image = post.image.feature | default: post.image.path %}
+        {% assign post_image = post.image | default: post.header.overlay_image %}
         {% if post_image %}
           {% unless post_image contains "://" %}
             {% assign post_image = post_image | relative_url | xml_escape %}
@@ -69,14 +71,14 @@ layout: null
 
         {{ post.content | strip | xml_escape }}
 
-        {% capture post_footer %}<a href="{{ post.url | absolute_url }}" rel="nofollow">{{ post.title }}</a> was originally published on {{ site.title }}.{% endcapture %}
+        {% capture post_footer %}<a href="{{ post.url | absolute_url }}" rel="nofollow">{{ post.title }}</a> was originally published on {{ site.feed_title }}.{% endcapture %}
         {{ post_footer | markdownify | xml_escape }}
       </content>
 
       {% assign post_author = post.author | default: post.authors[0] | default: site.author %}
       {% assign post_author = site.data.authors[post_author] | default: post_author %}
       {% assign post_author_email = post_author.email | default: nil %}
-      {% assign post_author_uri = post_author.uri | default: nil %}
+      {% assign post_author_uri = post_author.uri | default: site.author.uri %}
       {% assign post_author_name = post_author.name | default: post_author %}
 
       <author>
