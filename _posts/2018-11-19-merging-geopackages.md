@@ -1,6 +1,6 @@
 ---
 title: Merging GeoPackages
-# date: 2018-11-01 00:00 +00:00
+date: 2018-11-19 09:35 +00:00
 # last_modified_at: 2018-11-11 20:45 +00:00
 header: 
  overlay_image: /assets/images/blog/2018/geopackage-layers.png
@@ -19,7 +19,7 @@ toc: true
 toc_sticky: true
 ---
 
-The other day I had to deal with a problem I haven't dealt before. I have to merge a bunch of [GeoPackages](https://www.geopackage.org) (.gpkg) containing Finnish Forest data —downloaded from [here](https://www.metsaan.fi/paikkatietoaineistot) :finland: — because they had more sense if they ended up together. The reality is, GeoPackage format is something quite new to me —well, it was approved in [2014](http://www.opengeospatial.org/pressroom/pressreleases/1964)— since I've been using ESRI products, where [shapefiles](https://en.wikipedia.org/wiki/Shapefile) (.shp) are more or less the standard —they are the King 👑— and if you want to go a little bit further you have to use [file geodatabases](https://gisgeography.com/geodatabase-personal-file/). From there on you need to step up your game and have a real database engine/server like Oracle :money_mouth_face::money_mouth_face::money_mouth_face:, MS SQL :money_mouth_face:, [PostGIS](https://postgis.net) :elephant: —free and open source :+1:—​ and some [others](https://en.wikipedia.org/wiki/Spatial_database). 
+The other day I had to deal with a problem I haven't dealt before. I have to merge a bunch of [GeoPackages](https://www.geopackage.org) (.gpkg) containing Finnish Forest data —downloaded from [here](https://www.metsaan.fi/paikkatietoaineistot) :finland: — because they had more sense if they ended up together. The reality is, GeoPackage format is something quite new to me —well, it was approved in [2014](http://www.opengeospatial.org/pressroom/pressreleases/1964)— since I've been using ESRI products, where [shapefiles](https://en.wikipedia.org/wiki/Shapefile) (.shp) are more or less the standard —they are the King 👑— and if you want to go a little bit further you have to use [file geodatabases](https://gisgeography.com/geodatabase-personal-file/). From there on you need to step up your game and have a real database engine/server like Oracle :money_mouth_face::money_mouth_face::money_mouth_face:, MS SQL :money_mouth_face:, [PostGIS](https://postgis.net) :elephant: —free and open source :+1:—​ and some [others](https://en.wikipedia.org/wiki/Spatial_database). 
 
 ## What is? and why the GeoPackage?
 
@@ -78,7 +78,7 @@ Yeah... one in this case. Since the info in from those grid GeoPackages was over
 
 ------
 
-PS/ The problem I faced [the other day](/blog/2018/11/05/cutting-down-the-size-of-your-repo/) related to the git repo being too *fat* and with *too-big-for-github* files was related to this GeoPackage file :smiley:. 
+PS/ The problem I faced [the other day](/blog/2018/11/05/cutting-down-the-size-of-your-repo/) related to the git repo being too *fat* and with *too-big-for-github* files was related to this GeoPackage file :smiley:. 
 
 
 
