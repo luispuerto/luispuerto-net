@@ -60,6 +60,7 @@ reCaptcha:
   secret                 : "kmvLr5CVHi1aUyL3yL2SYTe1qIig7fbb0mgBAw+Et1J2OgJ+L8amh1FXbogoY5KnFS1UFUh4VyGyCyOBsjpVOqcHN6BhtC6kORA5VzUscGyHCUlql636m2C5qaOkGPzpaxAuX4XPAH3LLk1eqTWZF6d3Ieeappzz2m6yDRGl0eY="
 atom_feed:
   path                   : # blank (default) uses feed.xml
+feed_title               : "Luis Puerto's Blog"
 search                   : true # true, false (default)
 search_full_content      : true # true, false (default)
 search_provider          :  "algolia" # google # lunr (default), algolia, google
@@ -98,6 +99,11 @@ social:
     - https://github.com/luispuerto
     - https://www.flickr.com/photos/lpuerto
 
+# Twitter Feed
+twitter_format: "New post: @title: @url @tags"
+twitter_url_length: 22
+twitter_max_length: 280 
+
 # Analytics
 analytics:
   provider               : "google" # false (default), "google", "google-universal", "custom"
@@ -113,6 +119,7 @@ author:
   bio              : "Born in Ponferrada, Spain. A Forest Engineer interested
                       in Science and Technology. Fascinated about almost everything"
   location         : ":eu::es::sweden::finland::us:"
+  uri              : "/aboutme/"
   email            : "luis@luispuerto.net"
   links:
     # - label: "Email"
@@ -245,7 +252,7 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
-  - jekyll-feed
+  # - jekyll-feed
   - jemoji
   - jekyll-include-cache
 
@@ -318,3 +325,4 @@ defaults:
       header:
         show_overlay_excerpt: false
       is_post: true
+      share: twitter --twitter-hashtags
