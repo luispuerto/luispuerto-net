@@ -58,14 +58,14 @@ layout: null
         {% assign post_image = post.image | default: post.header.overlay_image %}
         {% if post_image %}
           {% unless post_image contains "://" %}
-            {% assign post_image = post_image | relative_url | xml_escape %}
+            {% assign post_image = post_image | absolute_url | xml_escape %}
           {% endunless %}
           {% capture post_image_html %}<img src="{{ post_image }}" alt="">{% endcapture %}
           {{ post_image_html | markdownify | xml_escape }}
         {% endif %}
 
         {% if post.gallery %}
-          {% capture post_gallery %}{% include gallery.html %}{% endcapture %}
+          {% capture post_gallery %}{% include gallery %}{% endcapture %}
           {{ post_gallery | strip | xml_escape }}
         {% endif %}
 

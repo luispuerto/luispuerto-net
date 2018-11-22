@@ -31,10 +31,10 @@ h6 {
   line-height: 1.2;
   font-family: $header-font-family;
   font-weight: bold;
-  &:target{
-    padding-top: calc(#{$masthead-height} + 30px);;
-    margin-top:calc(-#{$masthead-height} - 30px);;
-  }
+  // &:target{
+  //   padding-top: calc(#{$masthead-height} + 30px);;
+  //   margin-top:calc(-#{$masthead-height} - 30px);;
+  // }
 }
 
 h1 {
@@ -219,7 +219,7 @@ figure {
   -webkit-box-align: start;
   align-items: flex-start;
   flex-wrap: wrap;
-  margin: 2em 0;
+  margin: 0.5em 0;
 
   img,
   iframe,
