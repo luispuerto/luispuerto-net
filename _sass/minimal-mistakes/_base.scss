@@ -31,10 +31,10 @@ h6 {
   line-height: 1.2;
   font-family: $header-font-family;
   font-weight: bold;
-  &:target{
-    padding-top: calc(#{$masthead-height} + 30px);;
-    margin-top:calc(-#{$masthead-height} - 30px);;
-  }
+  // &:target{
+  //   padding-top: calc(#{$masthead-height} + 30px);;
+  //   margin-top:calc(-#{$masthead-height} - 30px);;
+  // }
 }
 
 h1 {
