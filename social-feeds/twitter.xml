@@ -35,7 +35,8 @@ layout: null
                 {% endif %}
             {% endfor %}
 
-            {% assign post_title = site.twitter_format | replace: '@title', post.title | replace: '@tags', post_tags | replace: '@url', post.url %}
+            {% assign post_url = post.url | absolute_url %} 
+            {% assign post_title = site.twitter_format | replace: '@title', post.title | replace: '@tags', post_tags | replace: '@url', post_url %}
         {% else %}
             {% assign post_title = post.title %}
         {% endif %}
@@ -43,7 +44,7 @@ layout: null
         {% if share_on contains platform %}
         <item>
             <title>{{ post_title | xml_escape }}</title>
-            <description>
+            <content type="html" xml:base="{{ post.url | absolute_url | xml_escape }}">
                 {% assign post_image = post.image | default: nil %}
                 {% if post_image %}
                   {% unless post_image contains "://" %}
@@ -54,7 +55,7 @@ layout: null
                 {% endif %}
 
                 {% if post.gallery %}
-                  {% capture post_gallery %}{% include gallery.html %}{% endcapture %}
+                  {% capture post_gallery %}{% include gallery %}{% endcapture %}
                   {{ post_gallery | strip | xml_escape }}
                 {% endif %}
 
@@ -66,7 +67,7 @@ layout: null
                 {% capture post_image_html %}<img src="{{ site.teaser | absolute_url }}" alt="">{% endcapture %}
                 {{ post_image_html | markdownify | xml_escape }}
                 
-            </description>
+            </content>
             <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
             <link>{{ post.url | absolute_url }}</link>
             <guid isPermaLink="true">{{ post.url | prepend: site.site_url }}</guid>
