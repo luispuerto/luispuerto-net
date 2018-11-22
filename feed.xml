@@ -65,7 +65,7 @@ layout: null
         {% endif %}
 
         {% if post.gallery %}
-          {% capture post_gallery %}{% include gallery.html %}{% endcapture %}
+          {% capture post_gallery %}{% include gallery %}{% endcapture %}
           {{ post_gallery | strip | xml_escape }}
         {% endif %}
 
