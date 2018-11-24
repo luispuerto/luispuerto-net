@@ -100,7 +100,7 @@ social:
     - https://www.flickr.com/photos/lpuerto
 
 # Twitter Feed
-twitter_format: 'New blog post: "@title" @url @tags'
+twitter_format: 'New blog post: "@title" @url@tags'
 twitter_url_length: 22
 twitter_max_length: 280 
 
