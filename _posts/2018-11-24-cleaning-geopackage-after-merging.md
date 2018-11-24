@@ -1,6 +1,6 @@
 ---
 title: Cleaning a GeoPackage after merging 
-# date: 2018-11-01 00:00 +00:00
+date: 2018-11-24 19:10 +00:00
 # last_modified_at: 2018-11-11 20:45 +00:00
 header: 
  overlay_image: /assets/images/blog/2018/finnish-forest-stands.png
@@ -17,7 +17,7 @@ toc: true
 toc_sticky: true
 ---
 
-The other day <!--link needed to the previous post--> I was talking about how you can merge several GeoPackages files in a single GeoPackage —just because you wanted or needed that way. Problem is, sometimes some of the data or information that those GeoPackages contain could be redundan. In my particular case, some information was redundan because the GeoPackages contain forest data at stand level that is also at [UTM10 Finnish's grid](http://kartat.kapsi.fi/files/karttalehtijako_ruudukko/kaikki/etrs89)[^1] level. Since life is imperfect, some stands are between two grid quadrants, so a decision[^3] was made to have them in both —or more[^2]— of the quadrants. 
+The [other day](/blog/2018/11/19/merging-geopackages/) I was talking about how you can merge several GeoPackages files in a single GeoPackage —just because you wanted or needed that way. Problem is, sometimes some of the data or information that those GeoPackages contain could be redundan. In my particular case, some information was redundan because the GeoPackages contain forest data at stand level that is also at [UTM10 Finnish's grid](http://kartat.kapsi.fi/files/karttalehtijako_ruudukko/kaikki/etrs89)[^1] level. Since life is imperfect, some stands are between two grid quadrants, so a decision[^3] was made to have them in both —or more[^2]— of the quadrants. 
 
 So we needed to remove those duplicated stand, among other things to leave the GeoPackage ready to be analyzed in R. Most of the scripts we used are in the GeoProcessing tools from the Vector menu in [QGIS3](https://qgis.org/). 
 
@@ -33,7 +33,7 @@ First of all, we need to remove the duplicate stands from our data. This can be 
 
 {% include figure image_path="https://i.imgur.com/e0Hr0H3.png" alt="Stands overflowing the border" caption="Stands overflowing the border" %}{: .align-left style="max-width: 300px"} 
 
-As I told you, there are stands that overflow the grid representing our area of interest. In the previous step we just removed the duplicated stands, but the stands in the outside border of the area of interest weren't duplicated but part of them were outside, as you can see in the left image. Since we just want the forest area inside of the grid we have to `clip` those stands using the grid. 
+As I told you, there are stands that overflow the grid representing our area of interest. In the previous step we just removed the duplicated stands, but the stands in the outside border of the area of interest weren't duplicated but part of them were outside, as you can see in the left image. Since we just want the forest area inside of the grid we have to `clip` those stands using the grid. 
 
 {% include figure image_path="https://i.imgur.com/cgrzUM2.png" alt="Clip script in QGIS3" caption="Clip script in QGIS3" %}{: .align-center}
 
