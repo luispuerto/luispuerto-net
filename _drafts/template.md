@@ -7,11 +7,11 @@
 #  teaser: /assets/images/pages/teaser-default.jpg
 #  caption: Your caption
 #  overlay_filter: 0.3
-# image: /assets/images/pages/teaser-default.jpg
-# categories: 
-#  - Category1
-#  - Category2
+# categories: [Category1, Category2]
 # tags: [tag1, tag2]
+# twitter: 
+#   image: /assets/images/pages/teaser-default.jpg
+#   hashtags: [tag1, tag2] # Only for Twitter, they go before tags
 # toc: true
 # toc_label: "Unique Title"
 # toc_icon: "heart"  # corresponding Font Awesome icon name (without fa prefix)
