@@ -8,10 +8,11 @@ header:
  caption: Jekyll and Travis logos
  overlay_filter: 0.3
 image: /assets/images/blog/2018/jekyll+travis.png
-categories: 
- - Technology
- - Personal
+categories: [Technology, Personal]
 tags: [jekyll, blogging, CI, travis]
+twitter: 
+  image: /assets/images/blog/2018/jekyll+travis.png
+#   hashtags: [tag1, tag2] 
 toc: true
 # toc_label: "Unique Title"
 # toc_icon: "heart"  # corresponding Font Awesome icon name (without fa prefix)
