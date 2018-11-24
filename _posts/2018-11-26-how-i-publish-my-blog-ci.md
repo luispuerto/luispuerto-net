@@ -1,6 +1,6 @@
 ---
 title: "How I publish my blog: Using Continuous Integration with Jekyll"
-# date: 2018-11-01 00:00 +00:00
+date: 2018-11-26 08:07 +00:00
 # last_modified_at: 2018-11-11 20:45 +00:00
 header: 
  overlay_image: /assets/images/blog/2018/jekyll+travis.png
@@ -28,7 +28,7 @@ You can read more about this in the [Wikipedia](https://en.wikipedia.org/wiki/Co
 Usually a CI works as it follows —again simplified: 
 
 1. It's usually related / connected to your online repo and when you push commits to the repo the [webhooks](https://en.wikipedia.org/wiki/Webhook) are triggered and CI comes into action. 
-2. CI download the last commits of your repo to a machine —usually virtual— with an OS you can specify and begin tu run a series of scripts[^1] to test and to build your software from the last commit you've pushed. 
+2. CI download the last commits of your repo to a machine —usually virtual— with an OS you can specify and begin tu run a series of scripts[^1] to test and to build your software from the last commit you've pushed. 
 3. If those scripts give an error, so your code can't be *build*, report to you as failing and —bad luck— you have to review what you have done because it's not working. 
 4.  If the scripts exit without an error —you're lucky— and now a couple of things can happen. 
     - Just nothing else. You are notify there is not errors in your code —so you are free to merge. 
@@ -143,7 +143,7 @@ In other words, I think it's a good idea to test that everything add up before I
 
 ## LFS?
 
-At this moment, I have my configuration exactly like you can see above. However, while I was writing this post, I just discovered that you can use [LFS with Travis](https://docs.travis-ci.com/user/customizing-the-build#git-lfs) —of course you can, why wouldn't you? You [can't use LFS with GitHub Pages](https://github.com/git-lfs/git-lfs/issues/791#issuecomment-151318020) though, but I wonder if you implement the build of your site with Travis while using LFS, you'll make it possible. Anyhow, you need to take into account the [bandwidth limitations of LFS](https://help.github.com/articles/about-storage-and-bandwidth-usage/) and it's probably that, every time you build with Travis you'll use part of your bandwidth. 
+At this moment, I have my configuration exactly like you can see above. However, while I was writing this post, I just discovered that you can use [LFS with Travis](https://docs.travis-ci.com/user/customizing-the-build#git-lfs) —of course you can, why wouldn't you? You [can't use LFS with GitHub Pages](https://github.com/git-lfs/git-lfs/issues/791#issuecomment-151318020) though, but I wonder if you implement the build of your site with Travis while using LFS, you'll make it possible. Anyhow, you need to take into account the [bandwidth limitations of LFS](https://help.github.com/articles/about-storage-and-bandwidth-usage/) and it's probably that, every time you build with Travis you'll use part of your bandwidth. 
 
 I'll try to write a post in the near future about [what is LFS (Large File Storage)](https://git-lfs.github.com), but summing it up a lot, it's just a system that allow you to manage better large binary files with Git, storing them in alternative storage instead of just tracking them with Git. 
 
