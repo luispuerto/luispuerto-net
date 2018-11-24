@@ -13,7 +13,7 @@ layout: null
     <generator>Jekyll v{{ jekyll.version }}</generator>
     {% assign platform = 'twitter' %}
 
-    {% for post in site.posts limit:10 %}
+    {% for post in site.posts limit:5 %}
         {% assign share_on = post.share | downcase %}
 
         {% if share_on contains '--twitter-hashtags' %}
@@ -24,7 +24,17 @@ layout: null
             {% if site.twitter_format contains '@url' %}
                 {% assign space_left = space_left | minus: site.twitter_url_length %}
             {% endif %}
+            
+            {% for tag in post.twitter.hashtags %}
+                {% capture new_tag %} #{{ tag | slugify | remove: "-" }}{% endcapture %}
+                {% assign new_space_left = space_left | minus: new_tag.size %}
 
+                {% if new_space_left > 0 %}
+                    {% assign post_tags = post_tags | append: new_tag %}
+                    {% assign space_left = space_left | minus: new_tag.size %}
+                {% endif %}
+            {% endfor %}
+            
             {% for tag in post.tags %}
                 {% capture new_tag %} #{{ tag | slugify | remove: "-" }}{% endcapture %}
                 {% assign new_space_left = space_left | minus: new_tag.size %}
@@ -45,7 +55,7 @@ layout: null
         <item>
             <title>{{ post_title | xml_escape }}</title>
             <content:encoded type="html" xml:base="{{ post.url | absolute_url | xml_escape }}">
-                {% assign post_image = post.image | default: nil %}
+                {% assign post_image = post.twitter.image | default: post.header.overlay_image %}
                 {% if post_image %}
                   {% unless post_image contains "://" %}
                     {% assign post_image = post_image | absolute_url | xml_escape %}
