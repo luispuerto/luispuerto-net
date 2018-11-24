@@ -55,7 +55,7 @@ layout: null
       <updated>{{ post.last_modified_at | default: post.date | date_to_xmlschema }}</updated>
       <id>{{ post.id | absolute_url | xml_escape }}</id>
       <content type="html" xml:base="{{ post.url | absolute_url | xml_escape }}">
-        {% assign post_image = post.image | default: post.header.overlay_image %}
+        {% assign post_image = post.header.overlay_image %}
         {% if post_image %}
           {% unless post_image contains "://" %}
             {% assign post_image = post_image | absolute_url | xml_escape %}
