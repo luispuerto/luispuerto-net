@@ -1,6 +1,6 @@
 ---
 title: How I schedule post in Jekyll
-# date: 2018-11-01 00:00 +00:00
+date: 2018-12-03 09:14 +00:00
 # last_modified_at: 2018-11-11 20:45 +00:00
 header: 
  overlay_image: /assets/images/blog/2018/jekyll+travis.png
