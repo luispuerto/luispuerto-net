@@ -24,7 +24,7 @@ script:
   - if [ "$TRAVIS_BRANCH" = "master" ]; then 
       bundle exec jekyll build; 
       bundle exec htmlproofer ./_site --alt_ignore "/.*/" --allow_hash_href --http-status-ignore 999 --disable-external;
-      bundle exec jekyll algolia
+      bundle exec jekyll algolia;
       fi 
   - if [ "$TRAVIS_BRANCH" = "develop" ]; then
       bundle exec jekyll build; 
