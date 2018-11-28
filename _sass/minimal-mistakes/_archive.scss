@@ -154,7 +154,7 @@
 
   @include breakpoint($small) {
     float: left;
-    width: span(5 of 10);
+    // width: span(5 of 10); // commented so it became just one column
 
     &:nth-child(2n + 1) {
       clear: both;
