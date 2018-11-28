@@ -34,7 +34,7 @@ update.packages(ask = F, repos = 'cloud.r-project.org', checkBuild = T)
 
 I would recommend to run it twice, since some packages have dependencies and they need to be installed first and I don't know if the command follows a specific installation order to avoid this errors like this —in other words, if the dependencies aren't installed first to this specific release, the installation is going to fail. It doesn't hurt to run the command again since if all the packages were rebuilt with the current R version they aren't going to be reinstalled.
 
-# Java and rJava configuration
+## Java and rJava configuration
 
 In some of my machines I hadn't configured the new Java 10 with the prerelease rJava so [Java 10 can be run properly in R](/blog/2018/03/28/r-and-java-10/). If this is your case remember to run:
 
@@ -73,7 +73,7 @@ So you can install / build rJava prerelease with the following command
 install.packages('rJava', repos = 'http://rforge.net')
 ```
 
-# devEMF
+## devEMF
 
 In another machine I wasn't being able to install devEMF package. You can see the specific error I was getting in this Stack Overflow [question](https://stackoverflow.com/questions/50075549/devemf-package-in-r-3-5-on-macos-doesnt-build/50076667#50076667).
 
@@ -104,7 +104,7 @@ LDFLAGS=-L/usr/local/opt/gettext/lib -L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/l
 CPPFLAGS=-I/usr/local/opt/gettext/include -I/usr/local/opt/llvm/include
 ```
 
-# data.table
+## data.table
 
 Don't forget that data.table package has also specific [makevars](/blog/2018/01/12/install-r-100-homebrew-edition-with-openblas-openmp-my-version/#setting-the-final-makevars) necessities if you are building it, as you should, with LLVM. Remember that the flag `-fopenmp` has to be present / uncommented in the lines related to C and C++ compilers.
 

@@ -24,7 +24,7 @@ If want to try the dd utility you can download it from the site and normally ins
 $ brew cask install dd-utility
 ```
 
-### Backing up
+## Backing up
 
 When you executes the dd utility you only have two options: backup or restore a card with an image. Here you don't have a lot of complication. However, you have to take into account that at least in my case the internal card reader of the Mac doesn't work with this app in particular, and I need to insert the app in a external usb SD card reader.
 
@@ -60,7 +60,7 @@ You can see that I haven't used the same path that they use in the linked instru
 $ sudo dd if=/dev/rdiskX of=users/YOURUSERNAME/Downloads/SDCardBackup.dmg
 ```
 
-### Restoring
+## Restoring
 
 To restore you first have to unmount your SD card.
 

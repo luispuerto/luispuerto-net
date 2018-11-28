@@ -55,8 +55,6 @@ Oh My Zsh has a autoupdate feature, so don't worry about update. From time to ti
 $ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 ```
 
-&nbsp;
-
 ## Configuring Oh My Zsh & PowerLevel9K
 
 When you have Oh My Zsh installed you can begin to configure. In order to do that you have to open the configuration file, which is located in your user folder, with your favorite text editor. In my case I like to use Atom, so I run the following command in the terminal.
