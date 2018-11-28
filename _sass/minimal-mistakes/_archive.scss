@@ -154,7 +154,7 @@
 
   @include breakpoint($small) {
     float: left;
-    width: span(5 of 10);
+    // width: span(5 of 10); // commented so it became just one column
 
     &:nth-child(2n + 1) {
       clear: both;
@@ -217,11 +217,21 @@
 
   .archive__item-teaser {
     @include breakpoint($small) {
-      max-height: 200px
+      max-height: 200px;
+      img {
+        height: 200px; 
+        object-fit: cover;
+        overflow: hidden;
+      }
     }
 
     @include breakpoint($medium) {
       max-height: 150px;
+      img {
+        height: 150px; 
+        object-fit: cover;
+        overflow: hidden;
+      }
     }
   }
 }
