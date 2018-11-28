@@ -4,7 +4,9 @@
       "{{ include.image_path }}"
     {% else %}
       "{{ include.image_path | relative_url }}"
-    {% endif %}>
+    {% endif %}
+    {% if include.caption %}title="{{ include.caption | markdownify | strip_html }}"{% endif %}
+    >
   <img src=
     {% if include.image_path contains "://" %}
       "{{ include.image_path }}"
