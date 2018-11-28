@@ -16,7 +16,7 @@ As I just explained in my [last post](/blog/2018/03/19/updating-to-r-3-4-4-someo
 
 As I've already mentioned, I really encourage anyone to contribute to Homebrew's community and try to keep the formulae update. Homebrew also encourage this, since as more people keep an eye on formula and update them, the better for the community.
 
-# How can you update a Homebrew formula?
+## How can you update a Homebrew formula?
 
 The first and foremost important thing is to check if someone already filed a [pull request](https://github.com/Homebrew/homebrew-core/pulls) for that same formulae, or in other words, if that formula is in the process of being updated. If no one is updating that formula, it's opportunity to contribute and update it for the benefit of the community.
 
@@ -64,7 +64,7 @@ $ brew upgrade R
 
 {% include figure image_path="assets/images/blog/2018/Screen-Shot-2018-03-15-at-17.33.09.png" alt="Updating R with Homebrew" caption="Updating R with Homebrew" %}
 
-# Use someone else's formula
+## Use someone else's formula
 
 You can even use this updated formula to [update the R of someone computer](https://docs.brew.sh/FAQ) while they accept your pull request —if you are in a hurry or you are antsy guy. To do so you can use [hub](https://hub.github.com).
 
