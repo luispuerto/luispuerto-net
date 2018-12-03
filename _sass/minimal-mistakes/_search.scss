@@ -29,7 +29,8 @@
   }
 
   &:hover {
-    color: mix(#000, $primary-color, 25%);
+    // color: mix(#000, $primary-color, 25%);
+    color: $primary-color; 
   }
 }
 
