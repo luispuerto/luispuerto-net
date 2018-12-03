@@ -226,6 +226,7 @@
 
   &.is--visible {
     display: block;
+    min-width: 9em; // This is for the location flag to show properly
   }
 
   @include breakpoint($large) {
@@ -285,7 +286,7 @@
     color: inherit;
     font-size: $type-size-6;
     text-decoration: none;
-    max-width: 4em;
+    // max-width: 4em;
 
     &:hover {
       text-decoration: underline;
