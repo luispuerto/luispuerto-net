@@ -117,7 +117,6 @@ blockquote {
   font-style: italic;
   color: dimgrey; 
   border-left: 0.25em solid $primary-color;
-  overflow: hidden;
 
   cite {
     font-style: italic;
@@ -196,12 +195,6 @@ hr {
 
 /* lists */
 
-ul, ol {
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 0.5em;
-}
-
 ul li,
 ol li {
   margin-bottom: 0.5em; 
@@ -210,7 +203,6 @@ ol li {
 li ul,
 li ol {
   margin-top: 0.5em;
-  margin-bottom: -0.5em;  
 }
 
 /*
