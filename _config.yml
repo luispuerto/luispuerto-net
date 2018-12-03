@@ -38,6 +38,8 @@ comments:
     appid                :
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
+  utterances:
+    theme                : # "github-light" (default), "github-dark"
 staticman:
   allowedFields          : # ['name', 'email', 'url', 'message']
   branch                 : # "master"
@@ -120,13 +122,19 @@ author:
   avatar           : "/assets/images/pages/20121231-035-ol.jpg"
   bio              : "Born in Ponferrada, Spain. A Forest Engineer interested
                       in Science and Technology. Fascinated about almost everything"
-  location         : ":eu::es::sweden::finland::us:"
-  uri              : "/aboutme/"
-  email            : "luis@luispuerto.net"
+  location         : ":eu::es::sweden::finland::us:" 
+                      # to show flag properly you have to apply css in _sidebar.scss 
+                      # in .author__urls class 
+  home             : "/aboutme/"
+  # uri              : "/aboutme/"
+  # email            : "luis@luispuerto.net"
   links:
-    # - label: "Email"
-    #   icon: "fas fa-fw fa-envelope-square"
-    #   url: mailto:luis@luispuerto.net
+    - label: "About me"
+      icon: "fas fa-fw fa-user-circle"
+      url: /aboutme/
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: mailto:luis@luispuerto.net
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/lpuerto"
@@ -136,15 +144,15 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/luispuerto"
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url: https://gitlab.com/luispuerto
+    # - label: "GitLab"
+    #   icon: "fab fa-fw fa-gitlab"
+    #   url: https://gitlab.com/luispuerto
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/lpuerto"
-    - label: "Flickr"
-      icon: "fab fa-fw fa-flickr"
-      url: "https://www.flickr.com/lpuerto"
+    # - label: "Flickr"
+    #   icon: "fab fa-fw fa-flickr"
+    #   url: "https://www.flickr.com/lpuerto"
 
 # Site Footer
 footer:
