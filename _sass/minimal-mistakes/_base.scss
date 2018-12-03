@@ -117,6 +117,7 @@ blockquote {
   font-style: italic;
   color: dimgrey; 
   border-left: 0.25em solid $primary-color;
+  overflow: hidden;
 
   cite {
     font-style: italic;
