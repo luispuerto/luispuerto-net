@@ -30,13 +30,15 @@ As you can see in the picture in the left. They think I have:
 - **Tactics:** Prospecting (51%) vs. judging (49%). 
 - **Identity:** Assertive (76%) vs. turbulent (24%). 
 
-I would like to talk a little bit about each of the trails and see how I really fit —or I think I fit— on those results. 
+I would like to talk a little bit about each of the trails and see how I really fit —or I think I fit— on those results. 
 
 ## Mind: Extraverted vs. Introverted
 
 {% include figure image_path="https://www.16personalities.com/images/theory/traits/16personalities_extraverted.png" alt="Extraverted person" caption="Extraverted person. Source: [16personalities](https://www.16personalities.com/articles/mind-introverted-vs-extraverted)" %}{: .align-right style="max-width: 300px"}
 
-In their opinion, I'm extraverted (78%) vs. introverted (22%), which means I'm a highly extraverted person. I really, don't consider me that way at all, and I've always consider myself more introverted than extroverted. However, compare with what and whom am I more extroverted? As a Spaniard, I'm provably mostly introverted as a person —or I tend to be. However, in the North of Europe and in the Nordics I'm probably seen as an extroverted person. 
+In their opinion, I'm extraverted (78%) vs. introverted (22%), which means I'm a highly extraverted person. However, we shouldn't confuse 
+
+I really, don't consider me that way at all, and I've always consider myself more introverted than extroverted. However, compare with what and whom am I more extroverted? As a Spaniard, I'm provably mostly introverted as a person —or I tend to be. However, in the North of Europe and in the Nordics I'm probably seen as an extroverted person. 
 
 [They say](https://www.16personalities.com/articles/mind-introverted-vs-extraverted) that extroverts *are not as sensitive to outer stimuli and need to seek them out in order to gain a kind of functional equilibrium and to perform well*. Well, it's true that I like strong sensations because they make me feel alive, but I can usually appreciate the quiet and solitude. 
 
@@ -52,4 +54,4 @@ Are most of Finnish people extraverted because they love caffeine? I doubt it.
 
 > ...how you see the world and what kind of information you focus on. It may seem like your decisions are the most important, but a decision is only as good as the understanding that backs it up.
 
-It seems that I'm in between two worlds here... and more or less it's true in my opinion. I really think this has a really positive side. 
+It seems that I'm in between two worlds here... and more or less it's true in my opinion. I really think this has a really positive side.
