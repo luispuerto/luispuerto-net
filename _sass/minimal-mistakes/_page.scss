@@ -132,23 +132,28 @@
     font-size: $type-size-7;
   }
 
-  blockquote {
-    overflow: hidden;
-  }
-
   /* blockquote citations */
   blockquote + .small {
     margin-top: -1.5em;
     padding-left: 1.25rem;
   }
   
+  /* correct align of blockquote and list when image floating left*/
+  blockquote {
+    overflow: hidden;
+    p:last-child {
+      margin-bottom: 0em; 
+    }
+  }
+
   ul, ol {
     position: relative;
     overflow: hidden;
     margin-bottom: 0.5em;
   }
-  li ol {
-    margin-bottom: -0.5em;
+  li > ul, 
+  li > ol {
+    overflow: revert; 
   }
 }
 
