@@ -128,7 +128,10 @@ Thesis / Senior project: ***"[El Pajariel](https://es.wikipedia.org/wiki/Monte_P
 
 ### Complementary Activities
 
-- **Volunteering** at [Albany Historic Carrousel](http://albanycarousel.com/home/). Setting the animals, assembling the wooden structure and helping with the mechanical and electrical systems.
+- **Volunteering**:
+  - **[Albany Historic Carrousel](http://albanycarousel.com/home/)**: Setting the animals, assembling the wooden structure and helping with the mechanical and electrical systems.
+  - **[The Hour of Code](https://code.org)**: Teaching code to 4th grade school students. 
+  - Cultural volunteering: Immigration inclusion, developing leisure programs for children. 
 - Self-learner about Project Management and personal Productivity. “**[Fifth Discipline](https://en.wikipedia.org/wiki/The_Fifth_Discipline)**”, “**[Systems Thinking](https://en.wikipedia.org/wiki/Systems_theory)**”, “[Learning Organizations](https://en.wikipedia.org/wiki/Learning_organization)” enthusiast and curious about new ways of learning and similar subjects. 
 - Very interested in social media and the new ways of communicating ideas. 
 - Science and technology lover. Rational thinker. Always trying to implement technology to be me more efficient. 
