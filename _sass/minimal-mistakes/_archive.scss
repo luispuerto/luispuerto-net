@@ -16,10 +16,15 @@
     width: calc(100% - #{$right-sidebar-width});
     padding-right: $right-sidebar-width;
   }
+
+  .pagination {
+    margin-top: -0.0em; 
+  }
 }
 
 .archive__item {
   position: relative;
+  margin: 0 0 2em; 
 }
 
 .archive__subtitle {
