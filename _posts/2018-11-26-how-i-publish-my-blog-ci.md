@@ -19,7 +19,7 @@ toc: true
 toc_sticky: true
 ---
 
-As I've mention [before](/blog/2018/07/23/new-web-in-jekyll/), this blog is build as a [static website](https://en.wikipedia.org/wiki/Static_web_page) with [Jekyll](https://jekyllrb.com), which allow me not to worry about data bases, logins or anything of the sorts when I'm publishing and managing the web. I use the free tier of [GitHub Pages](https://pages.github.com) as hosting, which has its downsides and upsides. The main upside is, it's really convenient and free. On the other hand, I'm limited to [certain Jekyll plugins](https://pages.github.com/versions/) if I want to use GitHub Pages building capabilities. This can be circumnavigate if you use CI (Continuous Integration) to build your site. 
+As I've mentioned [before](/blog/2018/07/23/new-web-in-jekyll/), this blog is build as a [static website](https://en.wikipedia.org/wiki/Static_web_page) with [Jekyll](https://jekyllrb.com), which allow me not to worry about data bases, logins or anything of the sorts when I'm publishing and managing the web. I use the free tier of [GitHub Pages](https://pages.github.com) as hosting, which has its downsides and upsides. The main upside is, it's really convenient and free. On the other hand, I'm limited to [certain Jekyll plugins](https://pages.github.com/versions/) if I want to use GitHub Pages building capabilities. This can be circumnavigate if you use CI (Continuous Integration) to build your site. 
 
 ## What is Continuous Integration?
 
