@@ -504,6 +504,8 @@ body:hover .visually-hidden button {
 
 .footnotes {
   color: mix(#fff, $gray, 25%);
+  margin-top: 2em;
+  display: inline-block;
 
   ol,
   li,
