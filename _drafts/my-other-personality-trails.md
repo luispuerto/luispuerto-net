@@ -38,15 +38,17 @@ I would like to talk a little bit about each of the trails and see how I really 
 
 **In their opinion**, I'm extraverted (78%) vs. introverted (22%), which means I'm a highly extraverted person. However, and as they point out at the end of the [description they make about this trail](https://www.16personalities.com/articles/mind-introverted-vs-extraverted), one shouldn't confuse introversion / extraversion with [introspection](https://en.wikipedia.org/wiki/Introspection), which I really think this is key [in my case](http://tcat.tc/1PJ4yUZ). 
 
-I really never have considered myself a extraverted person, at least for the standard we have in Spain as extraverted individual. I see myself more introverted than extroverted, but since I live in Finland, and I have had some experience living in this World, I need to question that compare with whom am I extraverted or introverted? 
+I really never have considered myself a extraverted person, at least for the standard we have in Spain as an extraverted individual. I see myself more introverted than extroverted, but since I live in Finland, and I have had some experience living in this World, I need to question that, compare with whom am I extraverted or introverted? 
 
-Experience has make me to be more extroverted. When I was a kid I was much more introverted than I'm right now, but with the past of time and the experiences I have had in my life I've, little by little, learned to be less *fearful* of the outside world. In other words, you lose the fear to fail when you finally understand that usually it isn't such a big deal and it's part of the process of learning and living, which in the end gives you confidence in yourself. 
+Experience has make me to be more extroverted. When I was a kid, I was much more introverted than I'm right now, but with the past of time and the experiences I have had in my life, I've, little by little, learned to be less *fearful* of the outside world. In other words, you lose the fear to fail when you finally understand that usually it isn't such a big deal and it's part of the process of learning and living, which in the end gives you confidence in yourself and become more extraverted. 
 
-On the other hand, and reading directly from their description of the trail, they mention that  extroverts *are not as sensitive to outer stimuli and need to seek them out in order to gain a kind of functional equilibrium and to perform well*, which is somehow true. I really need to have social interaction to survive —who doesn't?— and I really miss the social life I get when I'm in the South of Europe or in the United States, where social life is different than in the North of Europe. 
+On the other hand, and reading directly from their description of the trail, they mention that extroverts *are not as sensitive to outer stimuli and need to seek them out in order to gain a kind of functional equilibrium and to perform well*, which is somehow true. I really need to have social interaction to survive —who doesn't?— and I really miss the social life I get when I'm in the South of Europe or in the United States, where social life is different than in the North of Europe. 
 
-They also mention that extroverts are *willing to take the lead*, *push the limits for them and for others* and that they *feel they can handle any chalenge*, which I would say that it's more or less true in my case. Yet, I really don't know if I can attribute that to my nature or personality or, again, to experience. Regarding taking the lead, I prefer rather not, even more if I feel there are someone more willing, and qualified[^1], than me. Seems that *extraverts are much more proactive in experiencing (and relying on) the world around them*, which somehow I can also relate to me, since I really need to feel the place I live on —or at least more to a place I can feel. 
+They also mention that extroverts are *willing to take the lead*, *push the limits for them and for others* and that they *feel they can handle any chalenge*, which I would say that it's more or less true in my case. Yet, I really don't know if I can attribute that to my nature or personality or, again, to experience. Regarding taking the lead, I prefer rather not, even more if I feel there are someone more willing, and qualified[^1], than me. In relation of taking any challenge, it isn't the first time that I go with overconfidence, but *live an learn*. Seems that *extraverts are much more proactive in experiencing (and relying on) the world around them*, which somehow I can also relate to me, since I really like places full or energy and activities and social life, in other words, [I like cities](https://www.youtube.com/watch?v=Fp_b3PnsPPs)[^2]. 
 
-In the end, we have to take into account that this seems to be just a measure of how much a external stimuli a person can handle. However, something called my attention: 
+In the end, we have to take into account that this seems to be just a measure of how much a external stimuli a person can handle. So, it isn't probably the same concept that people have of extroverts —someone shouting around— or introverts —someone that it's only able to look to their shoes. 
+
+Finally, something called my attention: 
 
 > Introverts are more likely to dislike coffee and energy drinks. 
 > {: .x-large}
@@ -59,11 +61,19 @@ Are most of the Finnish people extraverted because they love caffeine? I doubt i
 
 > ...how you see the world and what kind of information you focus on. It may seem like your decisions are the most important, but a decision is only as good as the understanding that backs it up.
 
-It seems that I'm in between two worlds here... and more or less it's true in my opinion. I really think this has a really positive side.
+It seems that I'm in between two worlds here... they consider me observant (58%) vs. intuitive (42%), and more or less it's true in my opinion. I really think this has a really positive side, because you can end with the best of two worlds. 
+
+I really able to dream, to wonder, to make questions and to think how to improve the world around me. And even sometimes I do it too much. However and at the same time, want to take into account reality, the current state of matters, data and facts, 
+
+
+
+
 
 
 
 
 
 [^1]: I don't consider myself specially qualified to lead. I really like to learn about it and I think that most people have the wrong concept of leadership —the commanding one— while leading is really complex position more to do with helping to find your own way and perhaps pointing the direction —but this can easily be confuse with forcing to go in that direction. 
+
+[^2]: Yeah, I love cities, specially big cities, where people is really social, I love NYC. However, don't get confuse, I love to explore, to camp away in the wild —not in a camping if possible— and enjoy the outdoors. 
 
