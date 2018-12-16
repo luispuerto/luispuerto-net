@@ -1,7 +1,7 @@
 ---
 title: Analyzing my personality. Bottom line
 # date: 2018-12-01 00:00 +00:00
-last_modified_at: 2018-12-11 20:45 +00:00
+# last_modified_at: 2018-12-11 20:45 +00:00
 header: 
  overlay_image: /assets/images/blog/2018/16personalities.png
  teaser: /assets/images/blog/2018/16personalities.png
