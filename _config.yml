@@ -70,8 +70,9 @@ algolia:
   index_name             : "luispuerto-net" # YOUR_INDEX_NAME
   search_only_api_key    : "b63bbd39b0bf76207cf9bebdb9c2b7dd" # YOUR_SEARCH_ONLY_API_KEY
   powered_by             : # true (default), false
-  files_to_exclude:
-    - _pages/archive.md
+  nodes_to_index         : "blockquote, li, h2, h3, p:not(.exclude-from-search)"
+  # files_to_exclude:
+  #   - _pages/archive.md
 google:
   search_engine_id       : "015834395021109974254:iwyitsyv8ii" # YOUR_SEARCH_ENGINE_ID
   instant_search         : true # false (default), true

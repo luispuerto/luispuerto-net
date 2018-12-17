@@ -89,7 +89,7 @@ toc_sticky: true
 
 ## Tags
 
-<p class="tag__cloud" style="text-align: center;">
+<p class="tag__cloud exclude-from-search" style="text-align: center;">
   {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
   {% assign tags = site_tags | split:',' | sort %}
   {% include tagcloud.html %}
