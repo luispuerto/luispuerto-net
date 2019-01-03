@@ -21,7 +21,7 @@ source "https://rubygems.org"
   # gem "jekyll-gist" # included in github-pages gem
   # gem "jekyll-feed" # included in github-pages gem & disable because I don't use it
   # gem "jemoji"  # included in github-pages gem
-  # gem "jekyll-data" # moved down to "jekyll_plugins"
+  # gem "jekyll-data" # not needed
 # end
 
 # gem "github-pages"
@@ -62,6 +62,5 @@ group :jekyll_plugins do
   gem "html-proofer"
   gem "jekyll-archives"
   gem "jekyll-include-cache"
-  gem "jekyll-data" # included in minimal-mistakes gem
   # gem "rake" # disable because I don't use it
 end
