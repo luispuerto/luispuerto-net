@@ -16,16 +16,16 @@ source "https://rubygems.org"
 # gem "minimal-mistakes-jekyll"
 # The following plugins are automatically loaded by the theme-gem:
 # group :mmistakes_plugins do
-  # gem "jekyll-paginate" # included in github-pages gem
-  # gem "jekyll-sitemap" # included in github-pages gem
-  # gem "jekyll-gist" # included in github-pages gem
-  # gem "jekyll-feed" # included in github-pages gem & disable because I don't use it
-  # gem "jemoji"  # included in github-pages gem
-  # gem "jekyll-data" # not needed
+  # gem "jekyll-paginate" # included in github-pages gem.
+  # gem "jekyll-sitemap" # included in github-pages gem.
+  # gem "jekyll-gist" # included in github-pages gem.
+  # gem "jekyll-feed" # included in github-pages gem & disable because I don't use it. 
+  # gem "jemoji"  # included in github-pages gem.
+  # gem "jekyll-data" # not needed out of the theme-gem. 
 # end
 
 # gem "github-pages"
-# The following plugins are automatically loaded by the github-pages gem
+# The following plugins are automatically loaded by the github-pages gem.
 group :github_pages_plugins do
   gem "jekyll"
   gem "jekyll-sass-converter"
@@ -35,16 +35,16 @@ group :github_pages_plugins do
   gem "rouge"
   gem "github-pages-health-check"
   gem "jekyll-redirect-from"
-  gem "jekyll-sitemap" # included in minimal-mistakes gem
-  # gem "jekyll-feed" # included in minimal-mistakes gem  & disable because I don't use it
-  gem "jekyll-gist" # included in minimal-mistakes gem
-  gem "jekyll-paginate" # included in minimal-mistakes gem
+  gem "jekyll-sitemap" # included in minimal-mistakes gem.
+  # gem "jekyll-feed" # included in minimal-mistakes gem & disable because I don't use it.
+  gem "jekyll-gist" # included in minimal-mistakes gem.
+  gem "jekyll-paginate" # included in minimal-mistakes gem.
   gem "jekyll-coffeescript"
   gem "jekyll-seo-tag"
   gem "jekyll-github-metadata"
   gem "jekyll-avatar"
   gem "jekyll-remote-theme"
-  gem "jemoji" # included in minimal-mistakes gem
+  gem "jemoji" # included in minimal-mistakes gem.
   gem "jekyll-mentions"
   gem "jekyll-relative-links"
   gem "jekyll-optional-front-matter"
@@ -62,5 +62,5 @@ group :jekyll_plugins do
   gem "html-proofer"
   gem "jekyll-archives"
   gem "jekyll-include-cache"
-  # gem "rake" # disable because I don't use it
+  # gem "rake" # disable because I don't use it.
 end
