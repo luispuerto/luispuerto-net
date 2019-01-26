@@ -517,19 +517,22 @@
 }
 
 .taxonomy__index {
-  display: grid;
+  display: grid !important; 
   grid-column-gap: 2em;
   grid-template-columns: repeat(2, 1fr);
   margin: 1.414em 0;
+  margin-bottom: initial !important; 
   padding: 0;
   font-size: 0.85em;
   list-style: none;
 
+
   .subtaxonomy__index {
-    // display: grid;
+    display: initial !important;
     // grid-column-gap: 2em;
     // grid-template-columns: repeat(2, 1fr);
     margin: 0.707em 0;
+    margin-bottom: initial !important; 
     padding-left: 1em;
     // font-size: 0.75em;
     list-style: none;
