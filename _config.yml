@@ -24,6 +24,8 @@ url                      : "https://luispuerto.net"
 baseurl                  : # "/blog"
 repository               : "luispuerto/luispuerto.net"
 teaser                   : "/assets/images/pages/teaser-default.jpg"
+logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : # false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -39,6 +41,7 @@ comments:
     colorscheme          : # "light" (default), "dark"
   utterances:
     theme                : # "github-light" (default), "github-dark"
+    issue_term           : # "pathname" (default)
 staticman:
   allowedFields          : # ['name', 'email', 'url', 'message']
   branch                 : # "master"
