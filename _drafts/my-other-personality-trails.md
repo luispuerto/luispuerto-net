@@ -29,7 +29,7 @@ As you can see in the picture in the left. They think I have:
 - **Energy:** Observant (58%) vs. intuitive (42%). 
 - **Nature:** Thinking (53%) vs. feeling (47%). 
 - **Tactics:** Prospecting (51%) vs. judging (49%). 
-- **Identity:** Assertive (76%) vs. turbulent (24%). [^1]
+- **Identity:** Assertive (76%) vs. turbulent (24%). 
 
 I would like to talk a little bit about each of the trails and see how I really fit —or I think I fit— on those results. 
 
