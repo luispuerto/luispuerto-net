@@ -87,6 +87,12 @@
     }
     blockquote {
       display: table;
+      p:first-child{
+        margin-top: .2em; 
+      }
+      p:last-child {
+        margin-bottom: .2em; 
+      }
     }
   }
 
