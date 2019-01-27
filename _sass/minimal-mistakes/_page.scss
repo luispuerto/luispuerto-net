@@ -85,6 +85,9 @@
       display: table; 
       margin-bottom: 1em; 
     }
+    li ul, li ol {
+      margin-bottom: -0.5em !important;
+    }
     blockquote {
       display: table;
       p:first-child{
