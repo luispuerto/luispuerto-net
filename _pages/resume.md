@@ -34,6 +34,12 @@ Thesis / Senior project: ***"[El Pajariel](https://es.wikipedia.org/wiki/Monte_P
 
 **2008:**{: style="color: grey"} **Bachelor of Agricultural Engineering (Forestry)**[^2] (180 ETCS), University of León, Spain.
 
+## Publications
+
+- *Estimation of forest
+  biomass components using airborne LiDAR and multispectral sensors*. [iForest Journal](https://iforest.sisef.org). 
+  Soon to be published. 
+
 ## Experience
 
 **2017-2018:**{: style="color: grey"} **Independent consultant and professional**
