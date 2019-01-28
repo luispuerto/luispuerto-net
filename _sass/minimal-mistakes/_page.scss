@@ -303,14 +303,14 @@
         padding-bottom: 0%;
 
         @include breakpoint($small) {
-        //          max-width: $large;
+          // max-width: $large;
           padding-left: 3em;
           padding-top: 30%;
           padding-bottom: 5%;
         }
 
         @include breakpoint($large) {
-//          max-width: $large;
+          //  max-width: $large;
           padding-left: 5em;
           padding-top: 15%;
           padding-bottom: 20%;
@@ -390,6 +390,11 @@
     a {
       color: #fff;
       text-decoration: none;
+    }
+  }
+  .page__content{
+    .archive__item {
+      margin: 0 0 .5em; 
     }
   }
 }
