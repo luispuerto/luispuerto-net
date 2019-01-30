@@ -56,7 +56,7 @@ $(document).ready(function() {
   // Bigfoot footnotes
   var bigfoot = $.bigfoot({
     actionOriginalFN: "ignore",
-    positionContent: "true"
+    useFootnoteOnlyOnce: false, 
     });
 
   // Anchor-js
