@@ -36,19 +36,24 @@ Thesis / Senior project: ***"[El Pajariel](https://es.wikipedia.org/wiki/Monte_P
 
 ## Publications
 
-- *Estimation of forest
-  biomass components using airborne LiDAR and multispectral sensors*. [iForest Journal](https://iforest.sisef.org). 
-  Soon to be published. 
+**2019:**{: style="color: grey"} 
+
+- Hernando A., Puerto L., Mola-Yudego B., Manzanera J.A., Garcia-Abril A., Maltamo M., Valbuena R. 2019.
+   *Estimation of forest biomass components using airborne LiDAR and multispectral sensors*.  [iForest Journal](https://iforest.sisef.org) (In print).
 
 ## Experience
 
 **2017-2018:**{: style="color: grey"} **Independent consultant and professional**
 
-- Develop web projects in [Jekyll](https://jekyllrb.com) platform. HTML, CSS, [Liquid templating](https://shopify.github.io/liquid/), [Git](https://git-scm.com), [Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration) and some [Ruby](https://en.wikipedia.org/wiki/Ruby_(programming_language)) and [JavaScript](https://en.wikipedia.org/wiki/JavaScript). 
+- Develop web projects in [Jekyll](https://jekyllrb.com) platform. HTML, CSS, [Liquid templating](https://shopify.github.io/liquid/), [Git](https://git-scm.com), [Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration) and some [Ruby](https://en.wikipedia.org/wiki/Ruby_(programming_language)) and [JavaScript](https://en.wikipedia.org/wiki/JavaScript). 
 - Manage a small network using [Raspberry Pis](https://www.raspberrypi.org) as small home server for different applications such as [R Studio server](https://www.rstudio.com/products/rstudio/download-server/), [VPN server](https://www.openvpn.net), NAS, cloud storage, wireless audio streaming, ad blocker, internet speed logger and many others. 
 - Setting [AWS](https://aws.amazon.com) for parallel computing on the cloud with R Studio server, passing from 2 days analysis to 1h.
 
-**2015-2017:**{: style="color: grey"} **[University of Easter of Finland](https://www.uef.fi/fi/etusivu). Different LiDAR projects as intern. 9 months in total.** 
+**Sep-Dec 2016:**{: style="color: grey"} **[Kansalaisopisto Joensuu](http://www.joensuu.fi/joensuunseudunkansalaisopisto)**. **Spanish teacher**. 
+
+* Teaching a course of Spanish language for adults.
+
+**2015-2017:**{: style="color: grey"} **[University of Eastern of Finland](https://www.uef.fi/fi/etusivu). Different LiDAR projects as intern. 9 months in total.** 
 
   * Download, processing and analyzing the whole LiDAR information of Finland using [Fusion](http://forsys.cfr.washington.edu/fusion/fusion_overview.html), [LAStools](https://rapidlasso.com/lastools/). [LidR](https://github.com/Jean-Romain/lidR) and others.
   * Scripting in [R language](https://www.r-project.org/about.html) to process and analyze [LiDAR](https://en.wikipedia.org/wiki/Lidar) data. Statistical modeling to yield biomass estimations.
