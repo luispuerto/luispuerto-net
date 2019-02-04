@@ -156,9 +156,6 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/lpuerto"
-    # - label: "Flickr"
-    #   icon: "fab fa-fw fa-flickr"
-    #   url: "https://www.flickr.com/lpuerto"
 
 # Site Footer
 footer:
