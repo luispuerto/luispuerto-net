@@ -1,5 +1,9 @@
 <!-- start custom head snippets -->
+
+<!-- Fonts Google: add the special font in the landing page -->
 <link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet">
+
+<!-- MathJax: To be able to publish equations -->
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
   tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
@@ -7,7 +11,13 @@ MathJax.Hub.Config({
 </script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 
-
+<!-- Hypothes.is: annotations in the web. -->
+<script type="application/json" class="js-hypothesis-config">
+  {
+    "theme": "clean"
+  }
+</script>
+<script src="https://hypothes.is/embed.js" async></script>
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 
 <!-- end custom head snippets -->
