@@ -1,0 +1,20 @@
+.annotator-bucket-bar {
+	top: calc(#{$masthead-height} + 1em);
+	.annotator-bucket-indicator {
+		margin-top: calc(-#{$masthead-height} - 1.2em) !important;
+	}
+	.annotator-bucket-indicator.upper {
+		margin-top: -0.6em !important;
+	}
+	.annotator-bucket-indicator.lower {
+		margin-top: calc(-#{$masthead-height} - 2.2em) !important;
+	}
+}
+
+.annotator-toolbar {
+  top: calc(#{$masthead-height} + 1em);
+
+  .annotator-frame-button--sidebar_toggle {
+		border-style: solid none solid solid !important; 
+	}
+}
