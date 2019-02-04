@@ -81,13 +81,18 @@
     border-bottom: 1px solid $border-color;
   }
   .post__content{
+    
+    @import "_icons";
+
     ol, ul {
       display: table; 
       margin-bottom: 1em; 
     }
+    
     li ul, li ol {
       margin-bottom: -0.5em !important;
     }
+    
     blockquote {
       display: table;
       p:first-child{
