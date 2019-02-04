@@ -226,7 +226,8 @@ body:hover .visually-hidden button {
   .fas,
   .fab,
   .far,
-  .fal {
+  .fal,
+  .ai {
     color: $text-color;
   }
 
@@ -344,6 +345,11 @@ body:hover .visually-hidden button {
   .fa-xing,
   .fa-xing-square {
     color: $xing-color;
+  }
+
+  .ai-orcid,
+  .ai-orcid-square {
+    color: $orcid-color;
   }
 }
 
