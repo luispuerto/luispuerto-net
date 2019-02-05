@@ -10,7 +10,7 @@ image: /assets/images/blog/2018/geopackage-layers.png
 categories: 
  - GIS
  - Technology
- - Profesional
+ - Professional
  - Forestry
 tags: [how to, QGIS, data science, Finland, forest inventory]
 toc: true
