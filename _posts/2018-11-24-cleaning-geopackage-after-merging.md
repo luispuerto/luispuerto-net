@@ -7,9 +7,7 @@ header:
  teaser: /assets/images/blog/2018/finnish-forest-stands.png
  caption: Some stands of Finnish forest
 image: /assets/images/blog/2018/finnish-forest-stands.png
-categories: 
- - Forestry
- - GIS
+categories: [Forestry, GIS, Professional]
 tags: [Finland, forest inventory, data science, QGIS]
 toc: true
 # toc_label: "Unique Title"
