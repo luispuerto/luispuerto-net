@@ -192,6 +192,7 @@ exclude:
   - .bundle
   - .jekyll-assets-cache
   - .sass-cache
+  - .jekyll-cache
   - assets/js/plugins
   - assets/js/_main.js
   - assets/js/vendor

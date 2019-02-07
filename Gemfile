@@ -27,7 +27,7 @@ source "https://rubygems.org"
 # gem "github-pages"
 # The following plugins are automatically loaded by the github-pages gem.
 group :github_pages_plugins do
-  gem "jekyll"
+  # gem "jekyll" # I'm using other version of Jekyll. See bellow. 
   gem "jekyll-sass-converter"
   gem "kramdown"
   gem "jekyll-commonmark-ghpages"
@@ -63,4 +63,6 @@ group :jekyll_plugins do
   gem "jekyll-archives"
   gem "jekyll-include-cache"
   # gem "rake" # disable because I don't use it.
+  gem "jekyll", github: "jekyll/jekyll" # allow to build Jekyll faster.
+  gem "liquid-c" # allow to build Jekyll faster.
 end
