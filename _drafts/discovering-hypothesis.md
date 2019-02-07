@@ -18,13 +18,13 @@ twitter:
 # toc_sticky: true
 ---
 
-I just discovered [Hypothes.is](https://hypothes.is/) which is a service to annotate and highlight articles, posts or whatever text you want all over the web, and in any site. 
+I just discovered [Hypothes.is](https://hypothes.is/) which is a service to annotate and highlight articles, posts, pdfs or whatever text you want and find all over the web and in any site. In their own words: 
 
 > The Hypothesis Project is a new effort to implement an old idea: A conversation layer over the entire web that works everywhere, without needing implementation by any underlying site.
 
-All their tools are open source and free, and they can be checked [here](https://web.hypothes.is/developers/), which make the services even more attractive to me. They are also a [non-profict](https://web.hypothes.is/about/) if you are wondering if there any comercial interest in the tools they're developing. They also provide you with [outline.com](https://outline.com), which is similar to hypothes.is but transform the article in a more readable version. 
+All their tools are open source and free, and they can be checked [here](https://web.hypothes.is/developers/), which make the services even more attractive to me. They are also a [non-profict](https://web.hypothes.is/about/), if you are wondering if there any comercial interest in the tools they're developing. In addition, they provide with [outline.com](https://outline.com), which is similar to hypothes.is but transform the article in a readable version without all the clutter websites usually have. 
 
-You can start using them right away, [creating yourself an account in hypothes.is](https://hypothes.is/signup) and fire up either hypothesi.is or outline in any web you want using a lightweight [bookmarklets](https://web.hypothes.is/start/) to share your annotations and highlights with others. 
+You can start using them right away, [creating yourself an account in hypothes.is](https://hypothes.is/signup) and firing up either hypothesi.is or outline in any web you want using a lightweight [bookmarklets](https://web.hypothes.is/start/) to share your annotations and highlights with others. You can find a outline bookmarklet below. 
 
 {% include figure image_path="/assets/images/blog/2019/HypotheisisHighlight.png" alt="hypothes.is highlighting and annotation tool" caption="hypothes.is highlighting and annotation tool" %}{: .align-left style="max-width: 50%"}
 
@@ -41,4 +41,4 @@ Web developers can also [implement this tool in their webs](https://web.hypothes
   - The classic way makes the sidebar always present through its  buttons and somehow interfered with the design of the site. Mostly on mobile. 
   - The clean way doesn't show you anything until you select text, but them you are missing some features such us: marks of where the annotations are, or the ability to turn the annotations on and off. This wouldn't bee a problem if users can bring all the features triggering the bookmarklet, but it doesn't work like that. 
 
-I really like the idea of being able to have a layer of notes and highlights all across the web. It's a great idea. I hope that the idea evolved in a sort of organization like the [Wikimedia Foundation](https://wikimediafoundation.org/) and it becomes a standard all across the web. I really think it's a great tool to share information with others, ever more if it's related to [research and science](https://web.hypothes.is/research/) or [education](https://web.hypothes.is/education/).  
+I really like the idea of being able to have a layer of notes and highlights all across the web. It's a great idea. I hope that the idea evolved in a sort of organization like the [Wikimedia Foundation](https://wikimediafoundation.org/) and it becomes a standard all across the web. I really think it's a great tool to share information with others, ever more if it's related to [research and science](https://web.hypothes.is/research/) or [education](https://web.hypothes.is/education/).  I encourage you to use the tool and share your notes with others. 
