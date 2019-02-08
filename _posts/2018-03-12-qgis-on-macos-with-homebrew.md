@@ -11,7 +11,7 @@ categories:
 tags:
   - homebrew
   - macOS
-  - qgis
+  - QGIS
 ---
 **Update Monday, 26th of March**: Almost the next day or the following day I published this post [KyngChaos](http://www.kyngchaos.com) just published the QGIS 3 release for macOS. You can download [here](http://www.kyngchaos.com/software/qgis).
 
