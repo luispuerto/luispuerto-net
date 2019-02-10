@@ -1,7 +1,7 @@
 ---
 # title: template
-# date: 2018-12-01 00:00 +00:00
-# last_modified_at: 2018-12-11 20:45 +00:00
+# date: 2019-00-00 00:00 +00:00
+# last_modified_at: 2019-00-00 00:00 +00:00
 # header: 
 #  overlay_image: /assets/images/pages/teaser-default.jpg
 #  teaser: /assets/images/pages/teaser-default.jpg
