@@ -956,7 +956,7 @@ echo 'export R_LIBS_USER=$HOME/Library/R/3.x/library' >> ~/.bash_profile
 
 #### LLVM
 
-[LLVM](https://en.wikipedia.org/wiki/LLVM) or _Low Level Virtual Machine _is a library that allow us to compile faster some R packages using OpenMP and also make that those packages use OpenMP when we are normally using R. To install it you run on your terminal the following:
+[LLVM](https://en.wikipedia.org/wiki/LLVM) or _Low Level Virtual Machine_ is a library that allow us to compile faster some R packages using OpenMP and also make that those packages use OpenMP when we are normally using R. To install it you run on your terminal the following:
 
 ```shell
 $ brew install llvm
