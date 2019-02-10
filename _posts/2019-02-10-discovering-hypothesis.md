@@ -1,6 +1,6 @@
 ---
 title: 'Discovering Hypothes.is'
-# date: 2018-12-01 00:00 +00:00
+date: 2019-2-10 13:15 +00:00
 # last_modified_at: 2018-12-11 20:45 +00:00
 header:
   overlay_image: /assets/images/blog/2019/HypothesisBannerGoogleForms.png
@@ -11,7 +11,7 @@ categories: [Professional, Technology]
 tags: [research, tools]
 twitter: 
   image: /assets/images/blog/2019/HypothesisBannerGoogleForms.png
-#   hashtags: [tag1, tag2] # Only for Twitter, they go before tags
+  hashtags: [science, reading, comments] # Only for Twitter, they go before tags
 # toc: true
 # toc_label: "Unique Title"
 # toc_icon: "heart"  # corresponding Font Awesome icon name (without fa prefix)
@@ -22,7 +22,7 @@ I just discovered [Hypothes.is](https://hypothes.is/) which is a service to anno
 
 > The Hypothesis Project is a new effort to implement an old idea: A conversation layer over the entire web that works everywhere, without needing implementation by any underlying site.
 
-All their tools are open source and free, and they can be checked [here](https://web.hypothes.is/developers/), which make the services even more attractive to me. They're also a [non-profict](https://web.hypothes.is/about/) organization, if you are wondering if there any comercial interest in the tools they're developing. In addition, they provide [outline.com](https://outline.com), which is similar to hypothes.is but transforming the article in a readable version without all the clutter websites usually have. 
+All their tools are open source and free, and they can be checked [here](https://web.hypothes.is/developers/), which make the services even more attractive to me. They're also a [non-profict](https://web.hypothes.is/about/) organization, if you are wondering if there any comercial interest in the tools they're developing. In addition, they provide [outline.com](https://outline.com), which is similar to hypothes.is but transforming the article in a readable version without all the clutter websites usually have. 
 
 You can start using them right away, [creating yourself an account in hypothes.is](https://hypothes.is/signup) and firing up either hypothesi.is or outline in any web you want using the lightweight [bookmarklets](https://web.hypothes.is/start/) to share your annotations and highlights with others. You can find a outline bookmarklet below. Please note... when you are highlighting and annotating in outline, you are just annotating there. Your comments aren't going to be share in the main article. 
 
@@ -43,5 +43,5 @@ Web developers can also [implement this tool in their webs](https://web.hypothes
 
 Perhaps in the future I will integrate it in someway if they improve how it blend with webs or if they for example develop something to transform the notes into comments. 
 
-I really like the idea of being able to have a layer of notes and highlights all across the web. It's a great idea. I hope that the idea evolved in a sort of organization like the [Wikimedia Foundation](https://wikimediafoundation.org/) and it becomes a standard all across the web. I really think it's a great tool to share information with others, ever more if it's related to [research and science](https://web.hypothes.is/research/) or [education](https://web.hypothes.is/education/).  I encourage you to use the tool and share your notes with others. 
+I really like the idea of being able to have a layer of notes and highlights all across the web. It's a great idea. I hope that the idea evolved in a sort of organization like the [Wikimedia Foundation](https://wikimediafoundation.org/) and it becomes a standard all across the web. I really think it's a great tool to share information with others, ever more if it's related to [research and science](https://web.hypothes.is/research/) or [education](https://web.hypothes.is/education/).  I encourage you to use the tool and share your notes with others. 
 
