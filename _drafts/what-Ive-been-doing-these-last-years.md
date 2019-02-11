@@ -179,7 +179,7 @@ Researching is a career that I've been toying with a little bit and I am also ve
 
 ### Coaching
 
-One 
+One of the things I was also doing during these last years is [coaching](https://en.wikipedia.org/wiki/Coaching) other people. 
 
 ### Volunteering
 
