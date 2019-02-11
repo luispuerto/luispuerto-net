@@ -51,15 +51,15 @@ h3 {
 }
 
 h4 {
-  font-size: $type-size-4;
+  font-size: calc(#{$type-size-4} + 0.20em);
 }
 
 h5 {
-  font-size: $type-size-4;
+  font-size: calc(#{$type-size-5} + 0.25em);
 }
 
 h6 {
-  font-size: $type-size-4;
+  font-size: $type-size-5;
 }
 
 small,
