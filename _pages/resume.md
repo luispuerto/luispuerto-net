@@ -46,7 +46,7 @@ Thesis / Senior project: ***"[El Pajariel](https://es.wikipedia.org/wiki/Monte_P
 **2017-2018:**{: style="color: grey"} **Independent consultant and professional**
 
 - Develop web projects in [Jekyll](https://jekyllrb.com) platform. HTML, CSS, [Liquid templating](https://shopify.github.io/liquid/), [Git](https://git-scm.com), [Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration) and some [Ruby](https://en.wikipedia.org/wiki/Ruby_(programming_language)) and [JavaScript](https://en.wikipedia.org/wiki/JavaScript). 
-- Manage a small network using [Raspberry Pis](https://www.raspberrypi.org) as small home server for different applications such as [R Studio server](https://www.rstudio.com/products/rstudio/download-server/), [VPN server](https://www.openvpn.net), NAS, cloud storage, wireless audio streaming, ad blocker, internet speed logger and many others. 
+- Manage a small network using [Raspberry Pis](https://www.raspberrypi.org) as small home server for different applications such as [R Studio server](https://www.rstudio.com/products/rstudio/download-server/), [VPN server](https://www.openvpn.net), [NAS](https://en.wikipedia.org/wiki/Samba_(software)), [cloud storage](https://en.wikipedia.org/wiki/Nextcloud), [wireless audio streaming](http://luispuerto.net/blog/2018/01/18/convert-you-pi-in-an-airplay-receiver/), [ad blocker](https://en.wikipedia.org/wiki/Pi-hole), internet speed logger and many others. 
 - Setting [AWS](https://aws.amazon.com) for parallel computing on the cloud with R Studio server, passing from 2 days analysis to 1h.
 
 **Sep-Dec 2016:**{: style="color: grey"} **[Kansalaisopisto Joensuu](http://www.joensuu.fi/joensuunseudunkansalaisopisto)**. **Spanish teacher**. 
