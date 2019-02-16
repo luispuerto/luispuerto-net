@@ -40,8 +40,8 @@ group :github_pages_plugins do
   gem "jekyll-gist" # included in minimal-mistakes gem.
   gem "jekyll-paginate" # included in minimal-mistakes gem.
   gem "jekyll-coffeescript"
-  gem "jekyll-seo-tag"
-  gem "jekyll-github-metadata"
+  gem "jekyll-seo-tag", github: "jekyll/jekyll-seo-tag", branch: "jekyll-cache"
+  gem "jekyll-github-metadata", github: "jekyll/github-metadata", branch: "no-cache-drop"
   gem "jekyll-avatar"
   gem "jekyll-remote-theme"
   gem "jemoji" # included in minimal-mistakes gem.
