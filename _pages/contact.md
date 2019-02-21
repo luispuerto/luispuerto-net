@@ -27,13 +27,13 @@ header:
 
 ### You can contact me on my:
 
-  * :mailbox: email: ***[luis@luispuerto.net](mailto:luis@luispuerto.net)***   
-      * <i class="fas fa-fingerprint"></i> **GPG fingerprint:** *9C00 2FD1 29AA B3DA AF48  86C1 1BAC FFF4 421C 6F24*
+  * :mailbox: email: ***[luis@luispuerto.net](mailto:luis@luispuerto.net){: style="color: black"}***   
+      * <i class="fas fa-fingerprint"></i> **[GPG fingerprint](https://en.wikipedia.org/wiki/Public_key_fingerprint){: style="color: black"}:** *9C00 2FD1 29AA B3DA AF48  86C1 1BAC FFF4 421C 6F24*
       {: style="list-style: none"}
   * :iphone: mobile: 
-      * :finland: ***+358 (0) 40 82 69 911*** <i class="fas fa-comment" style="color: #7D7D7D"></i> <i class="fab fa-apple" style="color: #7D7D7D"></i> <i class="fab fa-whatsapp-square" style="color: #1EBEA5"></i> <i class="fab fa-telegram" style="color: #0088CC"></i>
-      * :us: ***+1 (347) 464-8623*** <i class="fab fa-google" style="color: #db3236"></i> <i class="fas fa-robot" style="color: #4885ed"></i>
+      * :finland: ***+358 (0) 40 82 69 911*** <a href="https://en.wikipedia.org/wiki/IMessage"> <img class="emoji" title="iMessage" alt="iMessage" src="https://upload.wikimedia.org/wikipedia/commons/5/56/IMessage_logo_%28Apple_Inc.%29.png" height="20" width="20"></a> <a href="https://en.wikipedia.org/wiki/WhatsApp"><i class="fab fa-whatsapp-square" style="color: #1EBEA5"></i></a> <a href="https://en.wikipedia.org/wiki/Telegram_(service)"><i class="fab fa-telegram" style="color: #0088CC"></i></a>
+      * :us: ***+1 (347) 464-8623*** <a href="https://en.wikipedia.org/wiki/Google_Voice"> <img class="emoji" title="Google Voice" alt="Google Voice" src="https://upload.wikimedia.org/wikipedia/commons/3/35/GoogleVoiceLogoVector.svg" height="20" width="20"></a>
       {: style="list-style: none"}
-  * <i class="fab fa-skype" style="color: #00AFF0"></i> skype: ***[luiss.puerto](skype:luiss.puerto?chat)***
-  * <i class="fab fa-twitter"></i> twitter: ***[@lpuerto](https://twitter.com/lpuerto)***   
+  * <i class="fab fa-skype" style="color: #00AFF0"></i> skype: ***[luiss.puerto](skype:luiss.puerto?chat){: style="color: black"}***
+  * <i class="fab fa-twitter"></i> twitter: ***[@lpuerto](https://twitter.com/lpuerto){: style="color: black"}***   
 {: style="list-style: none"}
