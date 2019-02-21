@@ -10,13 +10,12 @@ header:
   overlay_image: /assets/images/pages/header-contact.jpg
 ---
 
-&nbsp;
-{: style="margin-top: 2em"}
-
 ### Right now I'm living in… 
 
 … the wild and incredible <a style="color: #000000;" href="https://en.wikipedia.org/wiki/Joensuu">Joensuu</a> <img class="emoji" title=":wolf:" alt=":wolf:" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/155/wolf-face_1f43a.png" height="30" width="30">, in the great <a style="color: #000000;" href="https://en.wikipedia.org/wiki/North_Karelia">North Karelia</a> <img class="emoji" title=":bear:" alt=":bear:" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/155/bear-face_1f43b.png" height="30" width="30"> in <a style="color: #000000;" href="https://en.wikipedia.org/wiki/Finland">Finland</a> <img class="emoji" title=":finland:" alt=":finland:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f1eb-1f1ee.png" height="30" width="30">, [Europe](https://en.wikipedia.org/wiki/European_Union){: style="color: #000000;"} <img class="emoji" title=":eu:" alt=":eu:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f1ea-1f1fa.png" height="30" width="30">   
 {: .large} 
+
+![](/assets/images/pages/joensuu-banner.jpg)
 
 <!-- ### However I'm right now temporally visiting...  -->
 
