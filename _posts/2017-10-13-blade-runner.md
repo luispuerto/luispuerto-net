@@ -5,7 +5,7 @@ header:
   image: assets/images/blog/2018/blade-runner.jpg
   teaser: assets/images/blog/2018/blade-runner.jpg
 categories:
-  - Movies
+  - Reviews
   - Personal
 tags:
   - movies
