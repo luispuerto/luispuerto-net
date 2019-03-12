@@ -5,13 +5,15 @@
 $(document).ready(function() {
   // Sticky footer
   var bumpIt = function() {
-      $("body").css("margin-bottom", $(".page__footer").outerHeight(true));
-    };
+    $("body").css("margin-bottom", $(".page__footer").outerHeight(true));
+  };
 
   bumpIt();
-  $(window).resize(jQuery.throttle(250, function() {
-    bumpIt();
-  }));
+  $(window).resize(
+    jQuery.throttle(250, function() {
+      bumpIt();
+    })
+  );
 
   // FitVids init
   $("#main").fitVids();
@@ -76,12 +78,28 @@ $(document).ready(function() {
   anchors.add();
   anchors.remove('.archive__item-title, .author__name, .nav__title');
 
-  // Init smooth scroll
+  // Smooth scrolling
   var scroll = new SmoothScroll('a[href*="#"]', {
-    header: '.masthead',
-    offset: 30,
-    updateURL: true,
-	  popstate: true,
+    offset: 20,
+    speed: 300
+  });
+
+  // Gumshoe scroll spy init
+  var spy = new Gumshoe("nav.toc a", {
+    // Active classes
+    navClass: "active", // applied to the nav list item
+    contentClass: "active", // applied to the content
+
+    // Nested navigation
+    nested: false, // if true, add classes to parents of active link
+    nestedClass: "active", // applied to the parent items
+
+    // Offset & reflow
+    offset: 20, // how far from the top of the page to activate a content area
+    reflow: true, // if true, listen for reflows
+
+    // Event support
+    events: true // if true, emit custom events
   });
 
   // // Smooth scrolling
