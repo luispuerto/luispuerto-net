@@ -80,8 +80,10 @@ $(document).ready(function() {
 
   // Smooth scrolling
   var scroll = new SmoothScroll('a[href*="#"]', {
-    offset: 20,
-    speed: 300
+    offset: 60,
+    speed: 300,
+    updateURL: true,
+    popstate: true,
   });
 
   // Gumshoe scroll spy init
@@ -95,7 +97,7 @@ $(document).ready(function() {
     nestedClass: "active", // applied to the parent items
 
     // Offset & reflow
-    offset: 20, // how far from the top of the page to activate a content area
+    offset: 60, // how far from the top of the page to activate a content area
     reflow: true, // if true, listen for reflows
 
     // Event support
