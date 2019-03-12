@@ -32,8 +32,8 @@ h6 {
   font-family: $header-font-family;
   font-weight: bold;
   &:target{
-    padding-top: calc(#{$masthead-height} + 30px);;
-    margin-top:calc(-#{$masthead-height} - 30px);;
+    padding-top: calc(#{$masthead-height} + 0px);;
+    margin-top: calc(-#{$masthead-height} - 0px);;
   }
 }
 
