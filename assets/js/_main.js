@@ -83,11 +83,12 @@ $(document).ready(function() {
 
   // Smooth scrolling
   var scroll = new SmoothScroll('a[href*="#"]', {
-    // offset: 60,
     offset: function () {
             return header.getBoundingClientRect().height + 20;
     },
-    speed: 300,
+    speed: 400,
+    speedAsDuration: true,
+    durationMax: 500
     updateURL: true,
     popstate: true,
   });
