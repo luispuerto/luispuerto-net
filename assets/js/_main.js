@@ -88,9 +88,9 @@ $(document).ready(function() {
     },
     speed: 400,
     speedAsDuration: true,
-    durationMax: 500
+    durationMax: 500,
     updateURL: true,
-    popstate: true,
+    popstate: true
   });
 
   // Gumshoe scroll spy init
