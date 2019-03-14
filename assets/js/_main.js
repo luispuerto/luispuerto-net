@@ -78,10 +78,17 @@ $(document).ready(function() {
   anchors.add();
   anchors.remove('.archive__item-title, .author__name, .nav__title');
 
+  // Capture Masthead for Smooth Scrolling and Gumshoe
+  var header = document.querySelector('#site-nav');
+
   // Smooth scrolling
   var scroll = new SmoothScroll('a[href*="#"]', {
-    offset: 60,
-    speed: 300,
+    offset: function () {
+            return header.getBoundingClientRect().height + 20;
+    },
+    speed: 400,
+    speedAsDuration: true,
+    durationMax: 500
     updateURL: true,
     popstate: true,
   });
@@ -97,7 +104,9 @@ $(document).ready(function() {
     nestedClass: "active", // applied to the parent items
 
     // Offset & reflow
-    offset: 60, // how far from the top of the page to activate a content area
+    offset: function () {
+            return header.getBoundingClientRect().height + 20;
+    }, // how far from the top of the page to activate a content area
     reflow: true, // if true, listen for reflows
 
     // Event support
