@@ -47,13 +47,10 @@ After that the update install continue and I was finally able to access to the d
 Since I wanted to apply to Dosdude1 patch, I thought that it would be wise to undo some of the changes I've done in the system go disable the dGPU. There are two main changes I though I should reverted: 
 
 - Disable the `Loginghook` we created during [the fix](/blog/2017/12/11/disconnecting-the-dgpu-in-a-late-2011-macbook-pro-third-way/#the-fix) —steps 6 to 8: 
-
   ```shell
   $ sudo defaults delete com.apple.loginwindow LoginHook
   ```
-
 - Restore the `AMDRadeonX3000.kext` that we moved during [the fix](/blog/2017/12/11/disconnecting-the-dgpu-in-a-late-2011-macbook-pro-third-way/#the-fix) — step 4:  
-
   ```shell
   $ sudo cp -p /System/Library/Extensions-off/AMDRadeonX3000.kext /System/Library/Extensions/
   ```

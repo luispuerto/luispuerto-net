@@ -109,13 +109,10 @@ You can learn more about how to create your own configuration file on [Travis Do
 - [`before_install`](https://docs.travis-ci.com/user/installing-dependencies/): Before we install the gems we are going to need to build our page we need to install the [`bundle`](https://jekyllrb.com/tutorials/using-jekyll-with-bundler/). 
 - [`gemfile`](https://docs.travis-ci.com/user/languages/ruby/): Location of the gemfile, so Travis knows what gems should install. 
 - [`script`](https://docs.travis-ci.com/user/languages/ruby): This is the script to build. In ruby the default script is your rake file, but you can define anything else here —like a shell script which is much more simple. As you see I have a couple of entries here that run depending on the branch it's pushed. 
-
   - When I push `master` I run [Algolia](https://community.algolia.com/jekyll-algolia/github-pages.html), build the site and then past the [htmlproofer](https://github.com/gjtorikian/html-proofer). 
-  - When I push `develop` I just build the site and past the [htmlproofer](https://github.com/gjtorikian/html-proofer).
-
+  - When I push `develop` I just build the site and past the [htmlproofer](https://github.com/gjtorikian/html-proofer).  
   **Please remember** to build your site with `JEKYLL_ENV=production` because if you don't some features aren't going to show in the final deployment.
   {: .notice--warning}
-
 - [`branches`](https://docs.travis-ci.com/user/customizing-the-build/#building-specific-branches): This define which branches trigger the build. In my case `master` and `develop`, but you can add/remove whatever you want. 
 - [`env`](https://docs.travis-ci.com/user/customizing-the-build/): You can define environment variables and in my case since I'm using [htmlproofer](https://github.com/gjtorikian/html-proofer) it's [recommended](https://jekyllrb.com/docs/continuous-integration/travis-ci/) to use `NOKOGIRI_USE_SYSTEM_LIBRARIES` as environment variable. 
 - [`sudo`](https://docs.travis-ci.com/user/tutorial/#selecting-infrastructure-optional): We don't need sudo, since we don't need customizations. 
