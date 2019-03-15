@@ -27,18 +27,17 @@ For this recipe, I'm going to make a **4 hours rise / fermentation** bread, but 
 
 ## Directions
 
-  1. Measure 500 gr. of flour and put them in your mixing bowl with the 10 gr. of salt.
-  2. Measure the 360 gr. of warm water (~36ºC) and dissolve on it the 6 gr. of fresh yeast with a spoon.
-  3. When the yeast is fully dissolved, you can pour the water on the flour.
-  4. You can start mixing, using the [pincer method](/blog/2017/11/16/the-preliminaries-for-bread-and-pizza-making/#the-pincer-method) and when the ingredients are fully mixed you can proceed with the [folding](/blog/2017/11/16/the-preliminaries-for-bread-and-pizza-making/#the-folding).
-  5. Leave the dough fully rise for 4 hours in a covered container.
-  6. When the dough is fully risen, you can use the scraper to remove it from the container and drop it over the counter where you previously have sprinkled some flour.
-  7. Shape the dough as explained in the [previous post](/blog/2017/11/16/the-preliminaries-for-bread-and-pizza-making/#shaping-and-proofing).
-  8. Leave for proofing for at least 20 — 30 minutes, but remember that the recommended time is about an hour. Don't forget to put into a plastic bag or cover it if you are going to leave it for an hour.
-  9. Remember to preheat the oven with the water container inside it before your loaf if fully proofed.
- 10. When the dough has finally proofed you can drop the loaf over the oven tray with the parchment paper and introduce it in the oven.
-      ![](https://i.imgur.com/GmfezME.jpg)
-
+1. Measure 500 gr. of flour and put them in your mixing bowl with the 10 gr. of salt.
+2. Measure the 360 gr. of warm water (~36ºC) and dissolve on it the 6 gr. of fresh yeast with a spoon.
+3. When the yeast is fully dissolved, you can pour the water on the flour.
+4. You can start mixing, using the [pincer method](/blog/2017/11/16/the-preliminaries-for-bread-and-pizza-making/#the-pincer-method) and when the ingredients are fully mixed you can proceed with the [folding](/blog/2017/11/16/the-preliminaries-for-bread-and-pizza-making/#the-folding).
+5. Leave the dough fully rise for 4 hours in a covered container.
+6. When the dough is fully risen, you can use the scraper to remove it from the container and drop it over the counter where you previously have sprinkled some flour.
+7. Shape the dough as explained in the [previous post](/blog/2017/11/16/the-preliminaries-for-bread-and-pizza-making/#shaping-and-proofing).
+8. Leave for proofing for at least 20 — 30 minutes, but remember that the recommended time is about an hour. Don't forget to put into a plastic bag or cover it if you are going to leave it for an hour.
+9. Remember to preheat the oven with the water container inside it before your loaf if fully proofed.
+10. When the dough has finally proofed you can drop the loaf over the oven tray with the parchment paper and introduce it in the oven.  
+    {% include figure image_path="https://i.imgur.com/GmfezME.jpg" alt="dough in the bowl" caption="Dough in the bowl" %}
 11. Keep the water container inside of the oven the next 20 minutes.
 12. After 20 minutes, remove the water container if there is any water left in it and bake for another 10 min.
 13. I usually at this point take the loaf out of the oven and flip it over quickly down side up and reintroduce it in the over for at least another 20 min. I want the bottom my loaves really well-baked. This way to get a really uniform dark brown color across all the loaf. Remember to pick up your loaf with the kitchen mittens if you don't want to burn your hands. The loaf is really hot.
