@@ -40,8 +40,8 @@ group :github_pages_plugins do
   gem "jekyll-gist" # included in minimal-mistakes gem.
   gem "jekyll-paginate" # included in minimal-mistakes gem.
   gem "jekyll-coffeescript"
-  gem "jekyll-seo-tag", github: "jekyll/jekyll-seo-tag", branch: "jekyll-cache"
-  gem "jekyll-github-metadata", github: "jekyll/github-metadata", branch: "no-cache-drop"
+  gem "jekyll-seo-tag" #, github: "jekyll/jekyll-seo-tag", branch: "jekyll-cache"
+  gem "jekyll-github-metadata" #, github: "jekyll/github-metadata", branch: "no-cache-drop"
   gem "jekyll-avatar"
   gem "jekyll-remote-theme"
   gem "jemoji" # included in minimal-mistakes gem.
@@ -63,6 +63,6 @@ group :jekyll_plugins do
   gem "jekyll-archives"
   gem "jekyll-include-cache"
   # gem "rake" # disable because I don't use it.
-  gem "jekyll", github: "jekyll/jekyll" # allow to build Jekyll faster.
+  gem "jekyll" #, github: "jekyll/jekyll" # allow to build Jekyll faster.
   gem "liquid-c" # allow to build Jekyll faster.
 end
