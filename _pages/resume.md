@@ -2,7 +2,7 @@
 title: Résumé
 permalink: /resume/
 date: 2018-11-1 05:30 +00:00
-last_modified_at: 2018-11-19 09:30 +00:00
+last_modified_at: 2019-06-06 18:31:48 +00:00
 layout: single
 classes: wide
 author_profile: true
@@ -39,7 +39,8 @@ Thesis / Senior project: ***"[El Pajariel](https://es.wikipedia.org/wiki/Monte_P
 **2019:**{: style="color: grey"} 
 
 - Hernando A., Puerto L., Mola-Yudego B., Manzanera J.A., Garcia-Abril A., Maltamo M., Valbuena R. 2019.
-   *Estimation of forest biomass components using airborne LiDAR and multispectral sensors*.  [iForest Journal](https://iforest.sisef.org) (In print).
+    *Estimation of forest biomass components using airborne LiDAR and multispectral sensors*.  [iForest Journal](https://iforest.sisef.org).   
+    doi: [10.3832/ifor2735-012](https://doi.org/10.3832/ifor2735-012)
 
 ## Experience
 
