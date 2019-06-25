@@ -12,7 +12,7 @@ header:
 ---
 {% include figure image_path="/assets/images/pages/20121231-031-ol-version-21-480x480.jpg" alt="Just me" caption="Just me" %}{: .align-left}
 
-My name is Luis Puerto and I'm from **[Ponferrada][]**, a medium-size town in the [Green Spain][GreenSpain] :es:, in the **[Northwest of the country][NorthwestOfTheCountry]** and the main city of [El Bierzo][ElBierzo] county. El Bierzo, is a [small region][SmallRegion] formed basically for a big valley ending in [Galicia](https://en.wikipedia.org/wiki/Galicia_(Spain)) and surrounded by [Asturias][] and the rest of [León][] province.
+My name is Luis Puerto and I'm from **[Ponferrada][]**, a medium-size town in the [Green Spain][GreenSpain] :es:, in the **[Northwest of the country][NorthwestOfTheCountry]** and the main city of [El Bierzo][ElBierzo] county. El Bierzo, is a [small region][SmallRegion] formed basically for a big valley which main river is the [Sil][Sil] and ends in [Galicia][Galicia]. El Bierzo is surrounded by [Asturias][] and the rest of [León][] province too, but our main cultural influence is the people that came up to the river and we considered us —at least me— mostly Galicians. 
 
 There, I spent the first 30 years of my life. I went to [high school][HighSchool] and college at [University of León][UniversityOfLeón], where I got a **Degree in [Forestry][] and Environmental Engineering.**
 
@@ -35,6 +35,8 @@ On a final note, I've been also trying to improve my concentration through medit
 [NorthwestOfTheCountry]: https://www.google.com/maps/place/Ponferrada,+Le%C3%B3n,+Spain/@41.9308893,-7.7021,7.93z/data=!4m5!3m4!1s0xd30ba8c4ef7b633:0xdc636ce1ab239060!8m2!3d42.5499958!4d-6.598259?hl=en
 [ElBierzo]: https://en.wikipedia.org/wiki/El_Bierzo
 [SmallRegion]: http://elpais.com/elpais/2016/10/07/inenglish/1475851411_631393.html
+[Sil]: https://en.wikipedia.org/wiki/Sil_(river)
+[Galicia]: https://en.wikipedia.org/wiki/Galicia_(Spain)
 [Asturias]: https://en.wikipedia.org/wiki/Asturias
 [León]: https://en.wikipedia.org/wiki/Province_of_León
 [HighSchool]: http://www.iesgilycarrasco.com
