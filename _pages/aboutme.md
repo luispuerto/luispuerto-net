@@ -12,7 +12,7 @@ header:
 ---
 {% include figure image_path="/assets/images/pages/20121231-031-ol-version-21-480x480.jpg" alt="Just me" caption="Just me" %}{: .align-left}
 
-My name is Luis Puerto and I'm from **[Ponferrada][]**, a medium-size town in the [Green Spain][GreenSpain] :es:, in the **[Northwest of the country][NorthwestOfTheCountry]** and the main city of [El Bierzo][ElBierzo] county. El Bierzo, is a [small region][SmallRegion] formed basically for a big valley which main river is the [Sil][Sil] and ends in [Galicia][Galicia]. El Bierzo is surrounded by [Asturias][] and the rest of [León][] province too, but our main cultural influence is the people that came up to the river and we considered us —at least me— mostly Galicians. 
+My name is Luis Puerto and I'm from **[Ponferrada][]**, a medium-size town in the [Green Spain][GreenSpain] :es:, in the **[Northwest of the country][NorthwestOfTheCountry]** and the main city of [El Bierzo][ElBierzo] county. El Bierzo, is a [small region][SmallRegion] formed basically for a big valley which main river is the [Sil][Sil] and ends in [Galicia][Galicia]. El Bierzo is surrounded by [Asturias][] and the rest of [León][] province too, but our main cultural influence is the people that came up from the river and we considered us —at least me— mostly Galicians. 
 
 There, I spent the first 30 years of my life. I went to [high school][HighSchool] and college at [University of León][UniversityOfLeón], where I got a **Degree in [Forestry][] and Environmental Engineering.**
 
