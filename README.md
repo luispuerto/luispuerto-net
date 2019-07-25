@@ -10,4 +10,4 @@ This is mainly a work in progress right now so expect some things being odd or n
 
 I would be really happy if my work can help others also to change their website. 
 
-PS/ I've archived **my work** in this repo previous to October 27 2018 [here](https://github.com/luispuerto/luispuerto.net.back). More info about **why?** in this [blog post](http://luispuerto.net/blog/2018/11/05/cutting-down-the-size-of-your-repo/). 
+PS/ I've archived **my work** in this repo previous to October 27, 2018 [here](https://github.com/luispuerto/luispuerto.net.back). More info about **why?** in this [blog post](http://luispuerto.net/blog/2018/11/05/cutting-down-the-size-of-your-repo/). 
