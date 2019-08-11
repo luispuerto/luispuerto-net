@@ -83,96 +83,34 @@ $(document).ready(function() {
 
   // Smooth scrolling
   var scroll = new SmoothScroll('a[href*="#"]', {
-    offset: function () {
+     offset: function () {
             return header.getBoundingClientRect().height + 20;
     },
     speed: 400,
     speedAsDuration: true,
-    durationMax: 500,
-    updateURL: true,
-    popstate: true
+    durationMax: 500
   });
 
   // Gumshoe scroll spy init
-  var spy = new Gumshoe("nav.toc a", {
-    // Active classes
-    navClass: "active", // applied to the nav list item
-    contentClass: "active", // applied to the content
+  if($("nav.toc").length > 0) {
+    var spy = new Gumshoe("nav.toc a", {
+      // Active classes
+      navClass: "active", // applied to the nav list item
+      contentClass: "active", // applied to the content
 
-    // Nested navigation
-    nested: false, // if true, add classes to parents of active link
-    nestedClass: "active", // applied to the parent items
+      // Nested navigation
+      nested: false, // if true, add classes to parents of active link
+      nestedClass: "active", // applied to the parent items
 
-    // Offset & reflow
-    offset: function () {
-            return header.getBoundingClientRect().height + 20;
-    }, // how far from the top of the page to activate a content area
-    reflow: true, // if true, listen for reflows
+      // Offset & reflow
+      offset: 20, // how far from the top of the page to activate a content area
+      reflow: true, // if true, listen for reflows
 
-    // Event support
-    events: true // if true, emit custom events
-  });
-
-  // // Smooth scrolling
-  //   // Bind popstate event listener to support back/forward buttons.
-  //   var smoothScrolling = false;
-  //   $(window).bind("popstate", function (event) {
-  //     $.smoothScroll({
-  //       scrollTarget: location.hash,
-  //       offset: -20,
-  //       beforeScroll: function() { smoothScrolling = true; },
-  //       afterScroll: function() { smoothScrolling = false; }
-  //     });
-  //   });
-  //   // Override clicking on links to smooth scroll
-  //   $('a[href*="#"]').bind("click", function (event) {
-  //     if (this.pathname === location.pathname && this.hash) {
-  //       event.preventDefault();
-  //       history.pushState(null, null, this.hash);
-  //       $(window).trigger("popstate");
-  //     }
-  //   });
-  //   // Smooth scroll on page load if there is a hash in the URL.
-  //   if (location.hash) {
-  //     $(window).trigger("popstate");
-  //   }
-
-  //   // Scrollspy equivalent: update hash fragment while scrolling.
-  //   $(window).scroll(jQuery.throttle(250, function() {
-  //     // Don't run while smooth scrolling (from clicking on a link).
-  //     if (smoothScrolling) return;
-  //     var scrollTop = $(window).scrollTop() + 30 + 1;  // 20 = offset
-  //     var links = [];
-  //     $("nav.toc a").each(function() {
-  //       var link = $(this);
-  //       var href = link.attr("href");
-  //       if (href && href[0] == "#") {
-  //         var element = $(href);
-  //         links.push({
-  //           link: link,
-  //           href: href,
-  //           top: element.offset().top
-  //         });
-  //         link.removeClass('active');
-  //       }
-  //     });
-  //     for (var i = 0; i < links.length; i++) {
-  //       var top = links[i].top;
-  //       var bottom = (i < links.length - 1 ? links[i+1].top : Infinity);
-  //       if (top <= scrollTop && scrollTop < bottom) {
-  //         // Mark all ancestors as active
-  //         links[i].link.parents("li").children("a").addClass('active');
-  //         if (links[i].href !== location.hash) {
-  //           history.replaceState(null, null, links[i].href);
-  //         }
-  //         return;
-  //       }
-  //     }
-  //     if ('#' !== location.hash) {
-  //       history.replaceState(null, null, '#');
-  //     }
-  //   }));
-
+      // Event support
+      events: true // if true, emit custom events
+    });
+  }
+  
   // add lightbox class to all image links
   $(
     "a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif']"
