@@ -198,10 +198,6 @@
     &.site-title {
       margin-left: 0;
     }
-
-    @include breakpoint($large) {
-      margin: 0 1rem;
-    }
   }
 
   &__toggle {
@@ -537,14 +533,14 @@
   font-size: $type-size-6;
 
   @include breakpoint($large) {
-    font-size: $type-size-7;
+    font-size: $type-size-6;
   }
 
   a {
     display: block;
     padding: 0.25rem 0.75rem;
     color: $muted-text-color;
-    font-size: $type-size-5;
+    font-size: $type-size-6;
     font-weight: bold;
     line-height: 1;
     border-bottom: 1px solid $border-color;
