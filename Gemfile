@@ -43,14 +43,14 @@ group :github_pages_plugins do
   gem "jekyll-seo-tag" #, github: "jekyll/jekyll-seo-tag", branch: "jekyll-cache"
   gem "jekyll-github-metadata" #, github: "jekyll/github-metadata", branch: "no-cache-drop"
   gem "jekyll-avatar"
-  gem "jekyll-remote-theme"
+  # gem "jekyll-remote-theme"
   gem "jemoji" # included in minimal-mistakes gem.
   gem "jekyll-mentions"
-  gem "jekyll-relative-links"
-  gem "jekyll-optional-front-matter"
-  gem "jekyll-readme-index"
-  gem "jekyll-default-layout"
-  gem "jekyll-titles-from-headings"
+  # gem "jekyll-relative-links"
+  # gem "jekyll-optional-front-matter"
+  # gem "jekyll-readme-index"
+  # gem "jekyll-default-layout"
+  # gem "jekyll-titles-from-headings"
   gem "listen"
   gem "activesupport"
   gem "jekyll-swiss"
@@ -58,11 +58,11 @@ end
 
 # If you have any other plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-algolia"
-  gem "html-proofer"
+  # gem "jekyll-algolia"
+  gem 'html-proofer' , '~> 3'  
   gem "jekyll-archives"
   gem "jekyll-include-cache"
   # gem "rake" # disable because I don't use it.
-  gem "jekyll" #, github: "jekyll/jekyll" # allow to build Jekyll faster.
+  gem 'jekyll', '~> 4.0' #, github: "jekyll/jekyll" # allow to build Jekyll faster.
   gem "liquid-c" # allow to build Jekyll faster.
 end
