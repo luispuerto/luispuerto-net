@@ -3,6 +3,7 @@
 *.sublime-workspace
 .bundle
 .DS_Store
+.jekyll-cache
 .jekyll-metadata
 .jekyll-cache
 .netlify
