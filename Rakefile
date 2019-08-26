@@ -1,4 +1,5 @@
-require "bundler/gem_tasks"
+# require "bundler/gem_tasks"
+require "bundler"
 require "jekyll"
 require "listen"
 
@@ -81,10 +82,23 @@ require 'html-proofer'
 task :test do
   options = {
     disable_external: false,
-    url_ignore: [/feed/],
+    url_ignore: [/feed/, /archive/],
     alt_ignore: [/.*/],
     allow_hash_href: true,
-    http_status_ignore: [999]
+    http_status_ignore: [999, 0],
+    assume_extension: true,
+    internal_domains: ["localhost:400", "luispuerto.net"]
   }
-  HTMLProofer.check_directory("./_site/", options).run
+  HTMLProofer.check_directory("./_site", options).run
+end
+
+
+require 'jekyll'
+task :build do
+  config = Jekyll.configuration({ 
+    'source' => './', 
+    'destination' => './_site' 
+  })
+  site = Jekyll::Site.new(config)
+  Jekyll::Commands::Build.build site, config
 end
