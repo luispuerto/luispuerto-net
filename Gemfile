@@ -64,7 +64,7 @@ group :jekyll_plugins do
   gem 'html-proofer' , '~> 3'  
   gem "jekyll-archives"
   gem "jekyll-include-cache"
-  # gem "rake" # disable because I don't use it.
+  gem "rake" 
   gem 'jekyll', '~> 4.0' #, github: "jekyll/jekyll" # allow to build Jekyll faster.
   gem "liquid-c" # allow to build Jekyll faster.
 end
