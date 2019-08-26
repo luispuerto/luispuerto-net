@@ -85,7 +85,7 @@ task :test do
     url_ignore: [/feed/, /archive/],
     alt_ignore: [/.*/],
     allow_hash_href: true,
-    http_status_ignore: [999, 0],
+    http_status_ignore: [999, 0, 503, 302],
     assume_extension: true,
     internal_domains: ["localhost:400", "luispuerto.net"]
   }
