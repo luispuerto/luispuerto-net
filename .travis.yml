@@ -24,13 +24,10 @@ git:
   lfs_skip_smudge: true
 script:
   - if [ "$TRAVIS_BRANCH" = "master" ]; then 
-      bundle exec jekyll algolia;
-      bundle exec jekyll build; 
-      bundle exec htmlproofer ./_site --alt_ignore "/.*/" --allow_hash_href --http-status-ignore 999 --disable-external;
+      rake algolia build test 
       fi 
-  - if [ "$TRAVIS_BRANCH" = "develop" ]; then
-      bundle exec jekyll build; 
-      bundle exec htmlproofer ./_site --alt_ignore "/.*/" --allow_hash_href --http-status-ignore 999 --disable-external;
+  - if [ "$TRAVIS_BRANCH" != "master" ]; then
+      rake build test
       fi
 
 # deploy:
