@@ -31,7 +31,7 @@ The sort answer is, just [**because I can**](https://www.youtube.com/watch?v=NE0
 
 ## How? 
 
-If you want to know how I delete the content of my Facebook :toilet: account, it's really easy. I just installed on my Chrome browser the [Delete All Facebook Post](https://chrome.google.com/webstore/detail/delete-all-facebook-posts/mnjffgbbcofcajpmooahlcnjgpfmpifk?hl=en) extension and then I begin to wipe posts and likes year by year. I have to use it more than a couple of times each year —sometimes when things were really stuck, i.e. I had too much activity during a period of time, I had to pass it like 5 times and sometimes I used it on specific months with a lot of content at lower speed. 
+If you want to know how I delete the content of my Facebook :toilet: account, it's really easy. I just installed on my Chrome browser the Delete All Facebook Post (no longer online) extension and then I begin to wipe posts and likes year by year. I have to use it more than a couple of times each year —sometimes when things were really stuck, i.e. I had too much activity during a period of time, I had to pass it like 5 times and sometimes I used it on specific months with a lot of content at lower speed. 
 
 {% include figure image_path="/assets/images/blog/2018/Screen-Shot-2018-10-16-at-12.21.06.png" alt="Facebook :toilet: Activity Log" caption="Facebook :toilet: Activity Log" %} 
 
@@ -57,6 +57,6 @@ The latest Facebook :toilet: events, not only the [Cambridge Analytica](https://
 
 
 
-[^1]: [Social Book Post Manager](https://chrome.google.com/webstore/detail/social-book-post-manager/ljfidlkcmdmmibngdfikhffffdmphjae) & [Delete All Facebook Post](https://chrome.google.com/webstore/detail/delete-all-facebook-posts/mnjffgbbcofcajpmooahlcnjgpfmpifk?hl=en). Specially the latter one. Anyhow, I have to pass the scripts several times and usually the best results are yield when you go year by year. In the end, you have to delete by hand of the posts because they need more than *hot water* to get rid of them :fire:.
+[^1]: [Social Book Post Manager](https://chrome.google.com/webstore/detail/social-book-post-manager/ljfidlkcmdmmibngdfikhffffdmphjae) & Delete All Facebook Post (no longer online). Specially the latter one. Anyhow, I have to pass the scripts several times and usually the best results are yield when you go year by year. In the end, you have to delete by hand of the posts because they need more than *hot water* to get rid of them :fire:.
 [^2]: You can check if your account has been affected [here](https://www.facebook.com/help/securitynotice). 
 
