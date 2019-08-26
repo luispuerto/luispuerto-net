@@ -76,24 +76,41 @@ task :preview do
   Jekyll::Commands::Serve.process(options)
 end
 
+# build the site
+require 'jekyll'
+task :build do
+  system "bundle exec jekyll build"
+end
+
 
 # task for the htmlproofer
 require 'html-proofer'
 task :test do
   options = {
-    disable_external: false,
+    disable_external: true,
     url_ignore: [/feed/],
     alt_ignore: [/.*/],
     allow_hash_href: true,
-    http_status_ignore: [999, 0, 503, 302],
+    http_status_ignore: [999, 0],
     assume_extension: true,
-    internal_domains: ["localhost:400", "luispuerto.net"]
+    internal_domains: ["localhost:4000", "luispuerto.net"]
+
+  }
+  HTMLProofer.check_directory("./_site", options).run
+end
+
+task :"test-external" do
+  options = {
+    disable_external: false,
+    external_only: true, 
+    url_ignore: [/feed/],
+    alt_ignore: [/.*/],
+    allow_hash_href: true,
+    http_status_ignore: [999, 0, 503, 302, 403],
+    assume_extension: true,
+    internal_domains: ["localhost:4000", "luispuerto.net"]
   }
   HTMLProofer.check_directory("./_site", options).run
 end
 
 
-require 'jekyll'
-task :build do
-  system "bundle exec jekyll build"
-end
