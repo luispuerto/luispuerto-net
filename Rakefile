@@ -113,4 +113,9 @@ task :"test-external" do
   HTMLProofer.check_directory("./_site", options).run
 end
 
+# Algolia search
+task :algolia do 
+  system "bundle exec jekyll algolia"
+end 
+
 
