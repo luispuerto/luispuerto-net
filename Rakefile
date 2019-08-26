@@ -82,7 +82,7 @@ require 'html-proofer'
 task :test do
   options = {
     disable_external: false,
-    url_ignore: [/feed/, /archive/],
+    url_ignore: [/feed/],
     alt_ignore: [/.*/],
     allow_hash_href: true,
     http_status_ignore: [999, 0, 503, 302],
@@ -95,10 +95,5 @@ end
 
 require 'jekyll'
 task :build do
-  config = Jekyll.configuration({ 
-    'source' => './', 
-    'destination' => './_site' 
-  })
-  site = Jekyll::Site.new(config)
-  Jekyll::Commands::Build.build site, config
+  system "bundle exec jekyll build"
 end
