@@ -24,11 +24,11 @@ git:
   lfs_skip_smudge: true
 script:
   - if [ "$TRAVIS_BRANCH" = "master" ]; then 
-      rake algolia build test 
-      fi 
+      bundle exec rake algolia build test; 
+    fi 
   - if [ "$TRAVIS_BRANCH" != "master" ]; then
-      rake build test
-      fi
+      bundle exec rake build test;
+    fi
 
 # deploy:
   # provider: pages
