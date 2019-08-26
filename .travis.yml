@@ -3,7 +3,7 @@
 #
 language: ruby
 rvm:
- - 2.6.0
+ - 2.6.3
 cache:
   bundler: true
   # directories:
@@ -20,6 +20,8 @@ env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
   - JEKYLL_ENV=production 
+git:
+  lfs_skip_smudge: true
 script:
   - if [ "$TRAVIS_BRANCH" = "master" ]; then 
       bundle exec jekyll algolia;
@@ -31,13 +33,13 @@ script:
       bundle exec htmlproofer ./_site --alt_ignore "/.*/" --allow_hash_href --http-status-ignore 999 --disable-external;
       fi
 
-deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-  keep-history: false
-  local_dir: _site
-  # repo: luispuerto/luispuerto.net # in case I wanted to build my page in other repo
-  target-branch: gh-pages
-  on:
-    branch: master
+# deploy:
+  # provider: pages
+  # skip-cleanup: true
+  # github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  # keep-history: false
+  # local_dir: _site
+  # # repo: luispuerto/luispuerto.net # in case I wanted to build my page in other repo
+  # target-branch: gh-pages
+  # on:
+  #   branch: master

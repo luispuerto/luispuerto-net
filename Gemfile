@@ -44,7 +44,7 @@ group :github_pages_plugins do
   gem "jekyll-github-metadata" #, github: "jekyll/github-metadata", branch: "no-cache-drop"
   gem "jekyll-avatar"
   # gem "jekyll-remote-theme"
-  gem "jemoji" # included in minimal-mistakes gem.
+  gem "jemoji"
   gem "jekyll-mentions"
   # gem "jekyll-relative-links"
   # gem "jekyll-optional-front-matter"
@@ -58,7 +58,9 @@ end
 
 # If you have any other plugins, put them here!
 group :jekyll_plugins do
-  # gem "jekyll-algolia"
+  gem "jekyll-algolia", 
+    :git => 'https://github.com/luispuerto/jekyll-algolia.git', 
+    :branch => 'develop'
   gem 'html-proofer' , '~> 3'  
   gem "jekyll-archives"
   gem "jekyll-include-cache"
