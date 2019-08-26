@@ -1,6 +1,7 @@
 # Readme of [luispuerto.net](https://luispuerto.net)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e747c978-bb75-4e89-baaa-d7e709185b5b/deploy-status)](https://app.netlify.com/sites/mystifying-haibt-8d1e50/deploys)
+[![Build Status](https://travis-ci.com/luispuerto/luispuerto.net.svg?branch=master)](https://travis-ci.com/luispuerto/luispuerto.net)
 
 This is the readme of my Jekyll page. That I moved from Wordpress to Jekyll while keeping the basic structure and trying to improve the design.
 
