@@ -180,9 +180,6 @@ $ git checkout -b matplotlib-fix
 $ brew edit qgis3-dev
 ```
 
-You can check how I've edited [mine](https://github.com/luisspuerto/homebrew-qgisdev/blob/master/Formula/qgis3-dev.rb). The important part is in the highlighted 86-87 lines.
-
-
 Then, I just committed my edits
 
 ```shell

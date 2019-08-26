@@ -107,7 +107,7 @@ Thesis / Senior project: ***"[El Pajariel](https://es.wikipedia.org/wiki/Monte_P
 ### Additional Training
 
   * 10 training courses on **ArcGIS 10 Desktop and Server** systems, including Oracle DDBB and programming in python and add-ins, by ESRI Spain (300 hours).
-  * Course **[Sextante](http://sextantegis.blogspot.com)** (GIS toolbox) by Uni. of León (20 hours).
+  * Course **Sextante** (GIS toolbox) by Uni. of León (20 hours).
   * Course **“Thematic Cartography”**, by the Spanish National Geographic Institute (40 hours).
   * Course of “**Learn to Program: The Fundamentals**” in Python, by University of Toronto (50 hours).
   * Course “**Certification and Audition Systems** in forest exploitations” by PROFOR (144 hours).

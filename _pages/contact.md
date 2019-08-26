@@ -32,7 +32,7 @@ header:
       {: style="list-style: none"}
   * :iphone: mobile: 
       * :finland: ***+358 (0) 40 82 69 911*** <a href="https://en.wikipedia.org/wiki/IMessage"> <img class="emoji" title="iMessage" alt="iMessage" src="https://upload.wikimedia.org/wikipedia/commons/5/56/IMessage_logo_%28Apple_Inc.%29.png" height="20" width="20"></a> <a href="https://en.wikipedia.org/wiki/WhatsApp"><i class="fab fa-whatsapp-square" style="color: #1EBEA5"></i></a> <a href="https://en.wikipedia.org/wiki/Telegram_(service)"><i class="fab fa-telegram" style="color: #0088CC"></i></a>
-      * :us: ***+1 (347) 464-8623*** <a href="https://en.wikipedia.org/wiki/Google_Voice"> <img class="emoji" title="Google Voice" alt="Google Voice" src="https://upload.wikimedia.org/wikipedia/commons/3/35/GoogleVoiceLogoVector.svg" height="20" width="20"></a>
+      * :us: ***+1 (347) 464-8623*** <a href="https://en.wikipedia.org/wiki/Google_Voice"> <img class="emoji" title="Google Voice" alt="Google Voice" src="https://www.gstatic.com/images/branding/product/1x/google_voice_64dp.png" height="20" width="20"></a>
       {: style="list-style: none"}
   * <i class="fab fa-skype" style="color: #00AFF0"></i> skype: ***[luiss.puerto](skype:luiss.puerto?chat){: style="color: black"}***
   * <i class="fab fa-twitter"></i> twitter: ***[@lpuerto](https://twitter.com/lpuerto){: style="color: black"}***   
