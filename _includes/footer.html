@@ -17,8 +17,16 @@
 </div>
 
 <div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }} |
+  {% if site.footer.licenses.code %}
+  {% assign lcode = site.footer.licenses.code %}
+    <a href="{{ lcode.url }}" rel="nofollow noopener noreferrer"><i class="{{ lcode.icon | default: 'fas fa-link' }}" aria-hidden="true"></i> {{ lcode.label }}</a>
+  {% endif %}
+  {% if site.footer.licenses.content %}
+  {% assign lcontent = site.footer.licenses.content %}
+    &amp; <a href="{{ lcontent.url }}" rel="nofollow noopener noreferrer"><i class="{{ lcontent.icon | default: 'fas fa-link' }}" aria-hidden="true"></i> {{ lcontent.label }}</a> | 
+  {% endif %}
   {% if site.repository %}
   <a href="https://github.com/{{ site.repository }}"><i class="fas fa-code" aria-hidden="true"></i> Source Code</a> | 
   {% endif %}
-{{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.
+{{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a>, <a href="https://www.netlify.com" rel="nofollow">Netlify</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.
 </div>
