@@ -15,7 +15,7 @@ branches:
   only:
     # Change this to gh-pages if you're deploying using the gh-pages branch
     - master
-    - develop
+    - /.*/
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
