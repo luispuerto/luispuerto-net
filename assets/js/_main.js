@@ -103,7 +103,7 @@ $(document).ready(function() {
       nestedClass: "active", // applied to the parent items
 
       // Offset & reflow
-      offset: 20, // how far from the top of the page to activate a content area
+      offset: 65, // how far from the top of the page to activate a content area
       reflow: true, // if true, listen for reflows
 
       // Event support
