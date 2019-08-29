@@ -41,7 +41,7 @@
     // TEXT
     font-size: $button-height*0.6;
     font-weight: bold;
-    color: rgba($button-color, 0.5);
+    color: $button-color-text;
 
     // TRANSITIONS
     transition: color $popover-transition-default-duration $popover-transition-default-timing-function;
