@@ -109,6 +109,7 @@ $button-vertical-adjust:                -0.1em !default;                        
 $button-inner-circle-left-margin:       1*$button-inner-circle-size !default;    // Space between the ellipsis circles
 
 $button-color:                          rgb(110, 110, 110) !default;             // Background color of the button
+$button-color-text:                     rgba($button-color, 1);
 $button-hovered-color:                  $button-color !default;                  // Background color of the button when being hovered
 $button-activating-color:               $button-color !default;                  // Background color of the button when being clicked
 $button-active-color:                   $button-color !default;                  // Background color of the button when active
