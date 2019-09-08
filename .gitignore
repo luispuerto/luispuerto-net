@@ -13,6 +13,7 @@ _site
 codekit-config.json
 example/_site
 Gemfile.lock
+package-lock.json
 node_modules
 npm-debug.log*
 test
