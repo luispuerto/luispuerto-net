@@ -40,7 +40,7 @@ group :github_pages_plugins do
   # gem "jekyll-github-metadata" # Not longer using ghpages
   # gem "jekyll-mentions" # I don't use it
   # gem "jekyll-optional-front-matter" # Not working with Jekyll 4
-  gem "jekyll-paginate"
+  # gem "jekyll-paginate"
   # gem "jekyll-readme-index" # Not working with Jekyll 4
   gem "jekyll-redirect-from"
   # gem "jekyll-relative-links" # Not working with Jekyll 4
@@ -81,4 +81,5 @@ group :jekyll_plugins do
   gem "jekyll-include-cache"
   gem "rake" 
   gem "liquid-c" # allow to build Jekyll faster.
+  gem "jekyll-paginate-v2"
 end
