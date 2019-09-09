@@ -274,9 +274,17 @@ sass:
 
 # Outputting
 permalink: /blog/:year/:month/:day/:title/
-paginate: 10 # amount of posts to show
-paginate_path: /blog/page:num/
+# paginate: 10 # amount of posts to show
+paginate_path: /blog/page/:num/
 timezone: UTC # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+# jekyll-paginate-v2 config
+pagination: 
+  enabled: true
+  colletion: "posts"
+  per_page: 10 
+  permalink: '/page/:num/'
+  sort_reverse: true
 
 
 # Plugins (previously gems:)
