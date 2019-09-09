@@ -277,7 +277,6 @@ timezone: UTC # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-gist
   - jemoji
   - jekyll-include-cache
 
@@ -285,7 +284,6 @@ plugins:
 whitelist:
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-gist
   - jemoji
   - jekyll-include-cache
 
