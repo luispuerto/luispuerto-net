@@ -14,6 +14,7 @@
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
+
 # Site Settings
 locale                   : "en-US"
 title                    : "Luis Puerto"
@@ -85,6 +86,7 @@ bing_site_verification   :
 yandex_site_verification :
 naver_site_verification  :
 
+
 # Social Sharing
 twitter:
   username               : "lpuerto"
@@ -106,10 +108,12 @@ social:
     - https://github.com/luispuerto
     - https://www.flickr.com/photos/lpuerto
 
+
 # Twitter Feed
 twitter_format: 'New blog post: "@title" @url@tags'
 twitter_url_length: 22
 twitter_max_length: 280 
+
 
 # Analytics
 analytics:
@@ -157,6 +161,7 @@ author:
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/lpuerto"
 
+
 # Site Footer
 footer:
   links:
@@ -187,6 +192,7 @@ footer:
       label: "BY-NC-SA"
       icon: "fab fa-creative-commons"
       url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+
 
 # Reading Files
 include:
