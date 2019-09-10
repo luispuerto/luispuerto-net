@@ -77,7 +77,7 @@ end
 group :jekyll_plugins do
   gem "jekyll-algolia", 
     :git => "https://github.com/luispuerto/jekyll-algolia.git", 
-    :branch => "fixed"
+    :branch => "jekyll4-fixed"
   gem "html-proofer"  
   gem "jekyll-archives"
   gem "jekyll-include-cache"
