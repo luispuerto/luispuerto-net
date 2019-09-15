@@ -76,8 +76,8 @@ end
 # If you have any other plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-algolia", 
-    :git => "https://github.com/luispuerto/jekyll-algolia.git", 
-    :branch => "jekyll4-fixed"
+    :git => "https://github.com/algolia/jekyll-algolia.git", 
+    :branch => "develop"
   gem "html-proofer"  
   gem "jekyll-archives"
   gem "jekyll-include-cache"
