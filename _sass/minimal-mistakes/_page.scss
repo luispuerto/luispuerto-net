@@ -344,15 +344,15 @@
         font-size: $type-size-5;
         font-weight: bold;
         img.emoji {
-            width: 1.1em;
+            width: 1em;
         }
 
         @include breakpoint($small){
-          font-size: $type-size-4
+          font-size: $type-size-4;
         }
 
         @include breakpoint($large){
-          font-size: $type-size-2;
+          font-size: calc(#{$type-size-2} - 0.1em);
         }
       }
 
@@ -408,6 +408,9 @@
 
     p {
         font-size: $type-size-6;
+    }
+    .archive__item-body {
+      width: 100%
     }
   }
 }
