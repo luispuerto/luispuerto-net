@@ -10,15 +10,15 @@ header:
   overlay_filter2: "0.7"
   overlay_perc: "42" 
 excerpt: | 
-  [#Forestry](/archive/categories/forestry) :evergreen_tree: #Research :microscope: [#GIS](/archive/categories/gis) :earth_africa: #Remote Sensing :artificial_satellite:​       
-  #LiDAR :flashlight: [#RStats](/archive/categories/rstats/) :chart_with_upwards_trend:​ #Biomass :seedling: #Cartography :world_map:​       
+  [#Forestry](/archive/categories/forestry) :evergreen_tree: [#GIS](/archive/categories/gis) :earth_africa: #RemoteSensing :artificial_satellite:​ #LiDAR :flashlight: #Research :microscope:        
+   #DataAnalysis :bulb: [#RStats](/archive/categories/rstats/) :chart_with_upwards_trend:​ #Biomass :seedling: #Cartography :world_map:​       
   #Europe :eu: #Spain :es: #Sweden :sweden: [#Finland](/archive/tags/finland) :finland: #Oregon [US](/archive/tags/usa) :us:
 
 intro:
   - title: Welcomed to my place!
   - excerpt: | 
-      Here, I try to explain a little bit of myself and talk about things I'm interested. I hope you enjoy!  
-      Recently, I changed my site from Wordpress to Jekyll. Know more [here](/blog/2018/07/23/new-web-in-jekyll/).
+      Where I try to explain a little bit about myself and talk about the things I'm interested.   
+      I hope you enjoy!  
 
 feature_row:
   - image_path: assets/images/pages/splash-featurerow-aboutme.jpg
