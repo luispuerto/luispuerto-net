@@ -348,11 +348,11 @@
         }
 
         @include breakpoint($small){
-          font-size: $type-size-4;
+          font-size: calc(#{$type-size-4} - 0.0001em);
         }
 
         @include breakpoint($large){
-          font-size: calc(#{$type-size-2} - 0.1em);
+          font-size: calc(#{$type-size-2} - 0.15em);
         }
       }
 
