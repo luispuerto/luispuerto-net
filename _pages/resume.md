@@ -2,7 +2,7 @@
 title: Résumé
 permalink: /resume/
 date: 2018-11-1 05:30 +00:00
-last_modified_at: 2019-06-06 18:31:48 +00:00
+last_modified_at: 2019-10-08 21:50 +00:00
 layout: single
 classes: wide
 author_profile: true
@@ -36,6 +36,17 @@ Thesis / Senior project: ***"[El Pajariel](https://es.wikipedia.org/wiki/Monte_P
     doi: [10.3832/ifor2735-012](https://doi.org/10.3832/ifor2735-012)
 
 ## Experience
+
+**Currently:**{: style="color: grey"} **European Forest Institute. Trainee**
+
+- Working in improving the [Trade Flows data base][TradeFlowsDB] related to forest products. 
+- R programing to continue developing an R package —debugging and adding new functionality— for data extraction, manipulation and analysis from different publicly available trade databases like UN Comtrade and EU Comext.
+- Preparing the system to be published on a web under a Linux server. 
+
+**Ongoing from summer 2019:**{: style="color: grey"} **Volunteer at US Forest Service**
+
+- Helping on my free time to create a model for gap forest detection using LiDAR, the FIA and aerial photo on Oregon.
+
 
 **2017-2018:**{: style="color: grey"} **Independent consultant and professional**
 
@@ -148,8 +159,7 @@ Additionally you can see and download the most recent version of my résumé in 
 <iframe width="100%" height="650em" 
 src="https://www.dropbox.com/s/tba5d4eeja4vt2i/Luis%20Puerto%20Resume.pdf?raw=1&autoplay=1" frameborder="0" allowfullscreen></iframe>
 
-
 [^1]: I converted my previous title to this new one when the Bolonia transition happened in Spain, so I ended up with two similar titles. 
-
 [^2]: This studies have disappeared after the Bolonia process happened circa 2011. 
 
+[TradeFlowsDB]: https://www.efi.int/knowledge/databases/fptf
