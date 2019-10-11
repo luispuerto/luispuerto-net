@@ -71,13 +71,6 @@ $(document).ready(function() {
     useFootnoteOnlyOnce: false, 
     });
 
-  // // Anchor-js
-  // anchors.options = {
-  //   class: 'anchorjs'
-  // };
-  // anchors.add();
-  // anchors.remove('.archive__item-title, .author__name, .nav__title');
-
   // Capture Masthead for Smooth Scrolling and Gumshoe
   var header = document.querySelector('#site-nav');
 
