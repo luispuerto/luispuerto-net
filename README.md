@@ -3,7 +3,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e747c978-bb75-4e89-baaa-d7e709185b5b/deploy-status)](https://app.netlify.com/sites/mystifying-haibt-8d1e50/deploys)
 [![Build Status](https://img.shields.io/travis/luispuerto/luispuerto.net/master?logo=travis)](https://travis-ci.com/luispuerto/luispuerto.net)
 [![Jekyll](https://img.shields.io/badge/jekyll-4.0.0-blue.svg?logo=jekyll)][Jekyll]
-[![GitHub](https://img.shields.io/github/license/luispuerto/luispuerto.net?label=code%20license&logo=opensourceinitiative&color=#3DA639)][LICENSE.txt]
+[![GitHub](https://img.shields.io/github/license/luispuerto/luispuerto.net?label=code%20license&logo=open-source-initiative&color=#3DA639)][LICENSE.txt]
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/content%20license-CC%20BY--NC--SA%204.0-lightgrey?logo=creative-commons)](LICENSE4CONTENT.txt)
 [![Tip Michael via PayPal](https://img.shields.io/badge/PayPal-tip%20mmistakes-green.svg?logo=paypal)](https://www.paypal.me/mmistakes)
 
