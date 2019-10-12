@@ -129,6 +129,8 @@ Thesis / Senior project: ***"[El Pajariel][]"  Stand Management Plan.***
 
   - Spanish: Native Speaker
   - English: Advanced level. TOEFL iBT score 96
+  - Finnish: A2
+  - Swedish: A1
 
 ### Computer Skills
 
