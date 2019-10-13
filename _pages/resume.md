@@ -127,10 +127,10 @@ Thesis / Senior project: ***"[El Pajariel][]"  Stand Management Plan.***
 
 ### Languages
 
-  - Spanish: Native Speaker
-  - English: Advanced level. TOEFL iBT score 96
-  - Finnish: A2
-  - Swedish: A1
+  - :es: Spanish: Native Speaker
+  - :us: English: Advanced level. TOEFL iBT score 96
+  - :finland: Finnish: A2
+  - :sweden: Swedish: A1
 
 ### Computer Skills
 
@@ -161,6 +161,7 @@ Additionally you can see and download the most recent version of my résumé in 
 
 <iframe width="100%" height="650em" 
 src="https://www.dropbox.com/s/tba5d4eeja4vt2i/Luis%20Puerto%20Resume.pdf?raw=1&autoplay=1" frameborder="0" allowfullscreen></iframe>
+
 [^1]: I converted my previous title to this new one when the Bolonia transition happened in Spain, so I ended up with two similar titles. 
 [^2]: This studies have disappeared after the Bolonia process happened circa 2011. 
 
