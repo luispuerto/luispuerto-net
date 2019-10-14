@@ -3,8 +3,8 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e747c978-bb75-4e89-baaa-d7e709185b5b/deploy-status)](https://app.netlify.com/sites/mystifying-haibt-8d1e50/deploys)
 [![Build Status](https://img.shields.io/travis/luispuerto/luispuerto.net/master?logo=travis)](https://travis-ci.com/luispuerto/luispuerto.net)
 [![Jekyll](https://img.shields.io/badge/jekyll-4.0.0-blue.svg?logo=jekyll)][Jekyll]
-[![GitHub](https://img.shields.io/github/license/luispuerto/luispuerto.net?label=code%20license&logo=open-source-initiative&color=#3DA639)][LICENSE.txt]
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/content%20license-CC%20BY--NC--SA%204.0-lightgrey?logo=creative-commons)](LICENSE4CONTENT.txt)
+[![GitHub](https://img.shields.io/github/license/luispuerto/rants.luispuerto.net?label=code%20license&logo=open-source-initiative&color=#3DA639)][LICENSE]
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/content%20license-CC%20BY--NC--SA%204.0-lightgrey?logo=creative-commons)][LICENSE4CONTENT]
 [![Tip Michael via PayPal](https://img.shields.io/badge/PayPal-tip%20mmistakes-green.svg?logo=paypal)](https://www.paypal.me/mmistakes)
 
 [![blog feed](https://img.shields.io/badge/feed-blog-yellow?style=social&logo=rss)][feed]
@@ -116,9 +116,9 @@ See also the list of [contributors][] who participated in this project either on
 
 ## License
 
-Following Michael Rose, I've continued to license the code of this project under the MIT License —see the [LICENSE.txt][] file for details. However, the content of the website is license under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license ——see the [LICENSE4CONTENT.txt][] file for details. 
+Following Michael Rose, I've continued to license the code of this project under the MIT License —see the [LICENSE][LICENSE] file for details. However, the content of the website is license under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license ——see the [LICENSE4CONTENT][] file for details. 
 
-Minimal Mistakes template uses also a series of additional software and plugins, and I've also added some to this fork. You can see the licenses of those in the [LICENSE4VENDORS.md][] file. 
+Minimal Mistakes template uses also a series of additional software and plugins, and I've also added some to this fork. You can see the licenses of those in the [LICENSE4VENDORS][] file. 
 
 ## Acknowledgments
 
@@ -126,7 +126,8 @@ I would like to specially acknowledge Michael Rose work creating the template I'
 
 
 [Jekyll]: https://jekyllrb.com
-[LICENSE.txt]: LICENSE.txt
+[LICENSE]: LICENSE.txt
+[LICENSE4CONTENT]: LICENSE4CONTENT.txt
 [feed]: https://luispuerto.net/feed.xml
 [twitter]: https://twitter.com/lpuerto
 [linkedin]: https://www.linkedin.com/in/lpuerto
@@ -148,6 +149,7 @@ I would like to specially acknowledge Michael Rose work creating the template I'
 [TheNounProject]: https://thenounproject.com
 [FontAwesome]: http://fontawesome.io/
 [Unsplash]: https://unsplash.com/
+[JekylCodex]: https://jekyllcodex.org
 [jQuery]: http://jquery.com/
 [Susy]: http://susy.oddbird.net/
 [Breakpoint]: http://breakpoint-sass.com/
@@ -159,7 +161,6 @@ I would like to specially acknowledge Michael Rose work creating the template I'
 [JqueryThrottle/Debounce]: http://benalman.com/projects/jquery-throttle-debounce-plugin/
 [Lunr]: http://lunrjs.com
 [Bigfootjs]: http://www.bigfootjs.com
-[JekylCodex]: https://jekyllcodex.org
 [CONTRIBUTING.md]: CONTRIBUTING.md
 [SemVer]: http://semver.org/
 [repo-tags]: https://github.com/luispuerto/luispuerto.net/tags
@@ -167,5 +168,4 @@ I would like to specially acknowledge Michael Rose work creating the template I'
 [luispuerto-gh]: https://github.com/luispuerto
 [contributors]: https://github.com/luispuerto/luispuerto.net/graphs/contributors
 [mmistakes-contri]: https://github.com/mmistakes/minimal-mistakes/graphs/contributors
-[LICENSE4CONTENT.txt]: LICENSE4CONTENT.txt
-[LICENSE4VENDORS.md]: LICENSE4VENDORS.md
+[LICENSE4VENDORS]: LICENSE4VENDORS.md
