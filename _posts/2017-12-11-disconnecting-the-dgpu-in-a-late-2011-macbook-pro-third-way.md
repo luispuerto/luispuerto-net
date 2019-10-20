@@ -1,6 +1,7 @@
 ---
 title: Disconnecting the dGPU in a late 2011 MacBook Pro —third way
-date: 2017-12-11 15:03:16
+date: 2017-12-11 15:03
+last_modified_at: 2019-10-20 19:24
 header:
   overlay_image: assets/images/blog/2018/grey_screen.jpg
   teaser: assets/images/blog/2018/grey_screen.jpg
@@ -29,6 +30,8 @@ I've updated steps 11 and 12 in consequence.
 **Update 2018.01.09-21.35 EET**: After install the [security update to mitigate the effects of Spectre](https://support.apple.com/en-gb/HT208397), I have to apply the fix again as explained [here](/blog/2017/12/11/disconnecting-the-dgpu-in-a-late-2011-macbook-pro-third-way/#in-case-you-have-to-update). Everything worked fine, but on wake up of hibernation I got a black screen a couple of times. Also the computer didn't turn off and got stuck in a black screen. I really don't know what is the reason, but seems it's related to the `gpuswitch` parameter. I changed to 0 and then to 2 again, and seems that everything is normal again. But I don't know if it's really that or it's other thing.
 
 **Update 2018.01.21-09.20 EET**: I just installed macOS update 10.13.3 and after testing a little bit I got to the conclusion that what work best for me is to set `pmset -a gpuswitch 1`
+
+**Update 2019.10.20-22.10 EEST**: I don't have this computer anymore, so I'm sorry but probably I'm not going to be able to help you. 
 
 * * *
 
