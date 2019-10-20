@@ -1,6 +1,6 @@
 ---
 title: My other personality trails
-# date: 2019-01-08 09:00 +00:00
+date: 2019-01-08 09:00 +00:00
 # last_modified_at: 2018-12-11 20:45 +00:00
 header: 
  overlay_image: /assets/images/blog/2018/personality.jpg
