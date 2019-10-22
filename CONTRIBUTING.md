@@ -15,7 +15,7 @@ There could be two kinds of pull request, for the code or for the content.
 3. Increase the version numbers in any examples files and the README.md to the new version that this Pull Request would represent. The versioning scheme we use is [SemVer][].
 4. You may merge the Pull Request in once you have the sign-off of two other developers, or if you do not have permission to do that, you may request the second reviewer to merge it for you.
 
-### Content
+### Contend
 
 1. Please verify the there are no broken links on your post or corrections to a post, or any other content. You can use the [`html-proofer` gem][html-proofer] to do this process 
 
