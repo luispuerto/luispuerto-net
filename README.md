@@ -97,7 +97,9 @@ I use the additional services, snippets and JavaScript in this site.
 
 ## Contributing
 
-Please read [CONTRIBUTING.md][] for details about the code of conduct, and the process of submitting a pull request to this repo. 
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](code-of-conduct.md)
+
+Please read [CONTRIBUTING.md][] for details about how to contribute and the process of submitting a pull request to this repo. Note that we have subscribe to the Contributor Covenant as our code of conduct while participating in this community. Please read [CODE_OF_CONDUCT.md][] if you don't know about it. 
 
 I more than happy to accept contributions to the code and even more to the content —like for example if you encounter a typo or something like that or you are a native English speaker and something you're reading isn't quite right. Even more if you think there is a mistake somewhere.
 
@@ -126,7 +128,7 @@ I would like to specially acknowledge Michael Rose work creating the template I'
 
 
 [Jekyll]: https://jekyllrb.com
-[LICENSE]: LICENSE.txt
+[LICENSE]: LICENSE
 [LICENSE4CONTENT]: LICENSE4CONTENT.txt
 [feed]: https://luispuerto.net/feed.xml
 [twitter]: https://twitter.com/lpuerto
@@ -169,3 +171,4 @@ I would like to specially acknowledge Michael Rose work creating the template I'
 [contributors]: https://github.com/luispuerto/luispuerto.net/graphs/contributors
 [mmistakes-contri]: https://github.com/mmistakes/minimal-mistakes/graphs/contributors
 [LICENSE4VENDORS]: LICENSE4VENDORS.md
+[CODE_OF_CONDUCT.md]: CODE_OF_CONDUCT.md
