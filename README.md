@@ -24,6 +24,7 @@ This is the source code of my personal site [luispuerto.net][]. It's built using
     - [Jekyll Plugins & Gems :gem:](#jekyll-plugins--gems-gem)
     - [Icons + Demo Images:](#icons--demo-images)
     - [Other:](#other)
+- [How to use?](#how-to-use)
 - [Contributing](#contributing)
 - [Versioning](#versioning)
 - [Authors](#authors)
@@ -94,6 +95,10 @@ I use the additional services, snippets and JavaScript in this site.
 - [jQuery throttle / debounce][JqueryThrottle/Debounce] - Allows you to rate-limit your functions in multiple useful ways.
 - [Lunr][] - In site search engine
 - [Bigfootjs][] - A better way to handle footnotes. 
+
+## How to use? 
+
+You can get a full and compressive documentation if you hit the [official Minimal Mistakes documentation][mmistakes-docs]. In this section thought I'll try to summarize mainly how to write post in the blog, how to do some updates, how to use some of the changes I've introduced, like more utility classes and so. 
 
 ## Contributing
 
@@ -172,3 +177,4 @@ I would like to specially acknowledge Michael Rose work creating the template I'
 [mmistakes-contri]: https://github.com/mmistakes/minimal-mistakes/graphs/contributors
 [LICENSE4VENDORS]: LICENSE4VENDORS.md
 [CODE_OF_CONDUCT.md]: CODE_OF_CONDUCT.md
+[mmistakes-docs]: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
