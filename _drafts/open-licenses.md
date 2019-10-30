@@ -18,3 +18,6 @@ tags: [open source, licenses]
 # toc_sticky: true
 ---
 
+**NOTICE:** First of all take into account that IANAL and if you really have doubts about how open licenses work you should, really should, seek advice with a lawyer, specially with one with expertise on Intelectual Property (IP). 
+{: .notice--danger}
+
