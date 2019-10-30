@@ -1,7 +1,7 @@
 ---
 title: "How I publish my blog: Using Continuous Integration with Jekyll"
-date: 2018-11-26 08:07 +00:00
-# last_modified_at: 2018-11-11 20:45 +00:00
+date: 2018-11-26 08:07:00
+# last_modified_at: 2018-00-00 00:00:00
 header: 
  overlay_image: /assets/images/blog/2018/jekyll+travis.png
  teaser: /assets/images/blog/2018/jekyll+travis.png

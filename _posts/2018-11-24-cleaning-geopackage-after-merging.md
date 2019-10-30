@@ -1,7 +1,7 @@
 ---
 title: Cleaning a GeoPackage after merging 
-date: 2018-11-24 19:10 +00:00
-# last_modified_at: 2018-11-11 20:45 +00:00
+date: 2018-11-24 19:10:00
+# last_modified_at: 2018-00-00 00:00:00
 header: 
  overlay_image: /assets/images/blog/2018/finnish-forest-stands.png
  teaser: /assets/images/blog/2018/finnish-forest-stands.png

@@ -1,6 +1,6 @@
 ---
 title: "My MacBook Pro late 2011's discrete graphics card said \"ciao\" \U0001F44B\U0001F3FB —again"
-date: 2017-12-05T11:51:30.000Z
+date: 2017-12-05 11:51:30
 header:
   overlay_image: assets/images/blog/2018/grey_screen.jpg
   teaser: assets/images/blog/2018/grey_screen.jpg

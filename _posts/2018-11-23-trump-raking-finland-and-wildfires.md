@@ -1,7 +1,7 @@
 ---
 title: Trump, raking, Finland & wildfires
-date: 2018-11-23 10:00 +00:00
-last_modified_at: 2018-11-23 11:35 +00:00
+date: 2018-11-23 10:00:00
+last_modified_at: 2018-11-23 11:35:00
 header: 
  overlay_image: /assets/images/blog/2018/raking-forest.jpg
  teaser: /assets/images/blog/2018/raking-forest.jpg

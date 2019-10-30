@@ -1,6 +1,6 @@
 ---
 title: Install R 100% Homebrew Edition With OpenBlas & OpenMP — My Version
-date: 2018-01-12T20:16:56+00:00
+date: 2018-01-12 20:16:56
 header:
   overlay_image: assets/images/blog/2018/R-Homebrew.jpg
   teaser: assets/images/blog/2018/R-Homebrew.jpg

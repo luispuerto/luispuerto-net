@@ -1,6 +1,6 @@
 ---
 title: Trash location in macOS vs Linux
-date: 2017-10-26T19:37:42+00:00
+date: 2017-10-26 19:37:42
 categories:
   - Professional
   - Technology

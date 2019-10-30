@@ -1,7 +1,7 @@
 ---
 title: 'Discovering Hypothes.is'
-date: 2019-2-10 13:15 +00:00
-# last_modified_at: 2018-12-11 20:45 +00:00
+date: 2019-2-10 13:15:00
+# last_modified_at: 2019-00-00 00:00:00
 header:
   overlay_image: /assets/images/blog/2019/HypothesisBannerGoogleForms.png
   teaser: /assets/images/blog/2019/HypothesisBannerGoogleForms.png
