@@ -1,6 +1,6 @@
 ---
 title: Testing the Dosdude1 patch to disable the dGPU on macOS
-# date: 2018-11-01 10:30 +00:00
+date: 2018-11-01 10:30:00
 header: 
   overlay_image: "assets/images/blog/2018/grey_screen.jpg"
   teaser: "assets/images/blog/2018/grey_screen.jpg"
