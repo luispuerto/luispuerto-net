@@ -1,6 +1,6 @@
 ---
 title: "Cutting ✂️ down the size of your repo"
-date: 2018-11-05 06:30 +00:00
+date: 2018-11-05 06:30:00
 header: 
   overlay_image: /assets/images/blog/2018/big-file.jpg
   teaser: /assets/images/blog/2018/big-file.jpg

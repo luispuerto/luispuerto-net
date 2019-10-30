@@ -1,7 +1,7 @@
 ---
 title: No message, no connection in LinkedIn
-date: 2019-02-21 21:25 +00:00
-# last_modified_at: 2018-12-11 20:45 +00:00
+date: 2019-02-21 21:25:00
+# last_modified_at: 2019-00-00 00:00:00
 header: 
  overlay_image: /assets/images/blog/2019/linkedin-logo-header.png
  teaser: /assets/images/blog/2019/linkedin-logo-header.png

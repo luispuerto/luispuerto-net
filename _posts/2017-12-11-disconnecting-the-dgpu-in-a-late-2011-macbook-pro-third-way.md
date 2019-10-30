@@ -1,6 +1,6 @@
 ---
 title: Disconnecting the dGPU in a late 2011 MacBook Pro —third way
-date: 2017-12-11 15:03
+date: 2017-12-11 15:03:00
 last_modified_at: 2019-10-20 19:24
 header:
   overlay_image: assets/images/blog/2018/grey_screen.jpg

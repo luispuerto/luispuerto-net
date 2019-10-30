@@ -1,7 +1,7 @@
 ---
 title: What have I been doing these last years?
-date: 2019-02-03 19:30
-# last_modified_at: 
+date: 2019-02-03 19:30:00
+# last_modified_at: 2019-00-00 00:00:00
 header: 
   overlay_image: /assets/images/blog/2018/existential-nihilism-header.jpeg
   teaser: /assets/images/blog/2018/existential-nihilism-header.jpeg
