@@ -76,6 +76,15 @@ task :preview do
   Jekyll::Commands::Serve.process(options)
 end
 
+# server the site
+require 'jekyll'
+task :server do 
+  if(Dir.exist?('_site'))
+    sh 'rm -rf _site'
+  end
+  sh 'bundle exec jekyll s -i --drafts --future'
+end
+
 # build the site
 require 'jekyll'
 task :build do
