@@ -21,7 +21,7 @@ Copyright (c) 2013 Dave Rubert and Chris Coyier.
 FitVids is distributed under the terms of the [WTFPL License](http://sam.zoy.org/wtfpl/).
 
 Minimal Mistakes incorporates [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/),
-Copyright (c) 2014-2016 Dmitry Semenov, http://dimsemenov.com.
+Copyright (c) 2014-2016 Dmitry Semenov, <http://dimsemenov.com>.
 Magnific Popup is distributed under the terms of the MIT License.
 
 Minimal Mistakes incorporates [Smooth Scroll](http://github.com/cferdinandi/smooth-scroll),
