@@ -3,7 +3,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e747c978-bb75-4e89-baaa-d7e709185b5b/deploy-status)](https://app.netlify.com/sites/mystifying-haibt-8d1e50/deploys)
 [![Build Status](https://img.shields.io/travis/luispuerto/luispuerto.net/master?logo=travis)](https://travis-ci.com/luispuerto/luispuerto.net)
 [![Jekyll](https://img.shields.io/badge/jekyll-4.0.0-blue.svg?logo=jekyll)][Jekyll]
-[![GitHub](https://img.shields.io/github/license/luispuerto/rants.luispuerto.net?label=code%20license&logo=open-source-initiative&color=#3DA639)][LICENSE]
+[![GitHub](https://img.shields.io/github/license/luispuerto/luispuerto.net?label=code%20license&logo=open-source-initiative&color=#3DA639)][LICENSE]
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/content%20license-CC%20BY--NC--SA%204.0-lightgrey?logo=creative-commons)][LICENSE4CONTENT]
 [![Tip Michael via PayPal](https://img.shields.io/badge/PayPal-tip%20mmistakes-green.svg?logo=paypal)](https://www.paypal.me/mmistakes)
 
@@ -24,6 +24,7 @@ This is the source code of my personal site [luispuerto.net][]. It's built using
     - [Jekyll Plugins & Gems :gem:](#jekyll-plugins--gems-gem)
     - [Icons + Demo Images:](#icons--demo-images)
     - [Other:](#other)
+- [Issues](#issues)
 - [Contributing](#contributing)
 - [Versioning](#versioning)
 - [Authors](#authors)
@@ -42,7 +43,7 @@ $ git clone https://github.com/luispuerto/luispuerto.net.git
 
 ### Prerequisites
 
-The only prerequisite to run this blog locally is to have Jekyll on your machine. 
+The only prerequisite to run this blog locally is to have Jekyll on your machine, and it's recommended to have also [Bundler][]. 
 
 ```shell
 $ gem install jekyll bundler
@@ -55,6 +56,7 @@ Of course to be able to run Jekyll you need to have several other things on your
 This site is build using the following software and services. 
 
 - [Jekyll][] - The static website generator I'm using to build my side. 
+- [Bundler][] - Bundler manages an application's dependencies through its entire life, across many machines, systematically and repeatably. 
 - [Minimal Mistakes][mmistakes-template] - The Jekyll template I'm using. 
 - [Netlify][] - Where I'm building and hosting my site. 
 - [TravisCI][] - I'm performing some continuous integration tasks over here, like for example index the site for [Algolia][] when I build it from master.  
@@ -95,6 +97,10 @@ I use the additional services, snippets and JavaScript in this site.
 - [Lunr][] - In site search engine
 - [Bigfootjs][] - A better way to handle footnotes. 
 
+## Issues
+
+Please submit any on [issues][], but please read first the [CONTRIBUTING.md][] file.
+
 ## Contributing
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](code-of-conduct.md)
@@ -114,7 +120,7 @@ I don't use any versioning system —and I don't know if it's appropriate for a 
 - **Michael Rose** - _Initial work and template creator_ - [@mmistakes][mmistakes-gh]
 - **Luis Puerto** - _Maintainer and author of this fork and the blog that it hosts_ - [@luispuerto][luispuerto-gh]
 
-See also the list of [contributors][] who participated in this project either on my side or in [mmistakes' ones][mmistakes-contri]. 
+See also the list of [contributors][] who participated on this project either on my side or in [mmistakes' ones][mmistakes-contri]. 
 
 ## License
 
@@ -172,3 +178,4 @@ I would like to specially acknowledge Michael Rose work creating the template I'
 [mmistakes-contri]: https://github.com/mmistakes/minimal-mistakes/graphs/contributors
 [LICENSE4VENDORS]: LICENSE4VENDORS.md
 [CODE_OF_CONDUCT.md]: CODE_OF_CONDUCT.md
+[Bundler]: https://bundler.io
