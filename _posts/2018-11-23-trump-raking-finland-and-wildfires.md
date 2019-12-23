@@ -42,7 +42,7 @@ Since people has been talking about this non-stop, I'm a forester, I live in Fin
 
 As you probably already know, this year has been a really nasty wildfire season in US and recently a really devastating wildfire occurred, [Camp Fire](https://en.wikipedia.org/wiki/Camp_Fire_(2018)), which has left a incredible track of destruction, desolation and pain on the population that suffered its effects. President Trump decided to pay a visit to the place of the devastation and he decided to make this statement: 
 
-https://www.youtube.com/watch?v=nwL6GWYg34M
+{% include video id="nwL6GWYg34M" provider="youtube" %}
 
 Well... first of all, I really don't understand why this man don't take the opportunity to just being silent or at the very least, don't talk about something he —clearly— doesn't have an idea how it works. This phrase sparked a myriad of [responses](https://www.nytimes.com/2018/11/12/us/politics/fact-check-trump-california-fire-tweet.html), [critiques](https://www.cbsnews.com/news/trump-tweet-about-california-fires-firefighter-union-president-responds-for-what-president-said-about-california-wildfires/), [mockery](https://www.arktimes.com/ArkansasBlog/archives/2018/11/18/trump-calls-for-raking-to-prevent-fires-claims-its-the-finnish-way-fake-news-anyone) and [memes](https://www.vox.com/world/2018/11/19/18102613/finland-trump-raking-woods) in US, in Finland and all over the World. News outlets even [asked the president of Finland](https://www.politico.com/story/2018/11/18/trump-raking-wildfires-california-finland-1002526) if he and Trump were talking about raking. 
 
