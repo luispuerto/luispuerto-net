@@ -1,7 +1,7 @@
 ---
 title: A Weird Christmas Tale
 date: 2019-12-23 12:50:11 
-# last_modified_at: 2019-00-00 00:00:00
+last_modified_at: 2019-12-24 22:53:42
 header: 
  overlay_image: /assets/images/blog/2019/the-egg.jpg
  teaser: /assets/images/blog/2019/the-egg.jpg
@@ -33,6 +33,11 @@ Anyhow...
 **Happy Holidays!!!!**   
 :christmas_tree::christmas_tree::christmas_tree::christmas_tree::christmas_tree::christmas_tree::christmas_tree::christmas_tree::christmas_tree::christmas_tree::christmas_tree::christmas_tree::christmas_tree::christmas_tree::christmas_tree::christmas_tree::christmas_tree::christmas_tree:
 {: .gigantic .text-center .red} 
+
+By the way... Happy Holidays from R too! 
+
+![](https://imgur.com/SITRETA.gif)
+
 
 
 [changes]: /blog/2019/12/20/parenthood/
