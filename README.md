@@ -63,7 +63,7 @@ This site is build using the following software and services.
 
 ### Jekyll Plugins & Gems :gem:
 
-Since I've not publishing the site on GitHub pages and I'm building this page by other means, I have the freedom of using additional plugins and more granular control over what plugins I use on this site. These are the most important gems I'm using, but you can check the complete list on my [gem file][gem file].
+Since I've not publishing the site on GitHub pages and I'm building this page by other means, I have the freedom of using additional plugins and more granular control over what plugins I use on this site. These are the most important gems I'm using, but you can check the complete list on my [`Gemfile`][].
 
 - [jekyll-algolia][] - I'm using [Algolia][] as a search engine on the site, so this gem comes in handy to index the site every time I push a new version to master.  
 - [jekyll-archives][] - I use this gem to create the [archives][luis-archives] of my site on a more compressive way. 
@@ -147,7 +147,7 @@ I would like to specially acknowledge Michael Rose work creating the template I'
 [JekyllDocs]: https://jekyllrb.com/docs/
 [TravisCI]: https://travis-ci.com
 [Algolia]: https://www.algolia.com
-[gem file]: Gemfile
+[`Gemfile]: Gemfile
 [jekyll-algolia]: https://github.com/algolia/jekyll-algolia
 [jekyll-archives]: https://github.com/jekyll/jekyll-archives
 [luis-archives]: https://luispuerto.net/archive/
