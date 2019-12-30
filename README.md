@@ -21,7 +21,7 @@ This is the source code of my personal site [luispuerto.net][]. It's built using
 - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
 - [Built With](#built-with)
-    - [Jekyll Plugins & Gems :gem:](#jekyll-plugins--gems-gem)
+    - [Noteworthy Jekyll Plugins - Gems :gem:](#noteworthy-jekyll-plugins---gems-gem)
     - [Icons + Demo Images:](#icons--demo-images)
     - [Other:](#other)
 - [Issues](#issues)
@@ -61,15 +61,14 @@ This site is build using the following software and services.
 - [Netlify][] - Where I'm building and hosting my site. 
 - [TravisCI][] - I'm performing some continuous integration tasks over here, like for example index the site for [Algolia][] when I build it from master.  
 
-### Jekyll Plugins & Gems :gem:
+### Noteworthy Jekyll Plugins - Gems :gem:
 
-Since I've not publishing the site on GitHub pages and I'm building this page by other means, I have the freedom of using additional plugins and more granular control over what plugins I use on this site. These are the most important gems I'm using, but you can check the complete list on my [`Gemfile`][].
+Since I've not publishing the site using GitHub pages and I'm building this page by other means —[Netlify][]— I have the freedom of using additional plugins and more granular control over what plugins I use on this site. These are the most noteworthy gems I'm using over the current [Jekyll 4 dependencies][], but you can check the complete list on my [`Gemfile`][].
 
 - [jekyll-algolia][] - I'm using [Algolia][] as a search engine on the site, so this gem comes in handy to index the site every time I push a new version to master.  
 - [jekyll-archives][] - I use this gem to create the [archives][luis-archives] of my site on a more compressive way. 
 - [jekyll-include-cache][] - To be able to cache part some includes that repeat themselves in most of the pages. 
 - [jemoji][] - The World without emojies is much more boring :man_shrugging:. 
-- [kramdown][] - Markdown to HTML converter. 
 
 ### Icons + Demo Images:
 
@@ -124,7 +123,7 @@ See also the list of [contributors][] who participated on this project either on
 
 ## License
 
-Following Michael Rose, I've continued to license the code of this project under the MIT License —see the [LICENSE][LICENSE] file for details. However, the content of the website is license under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license ——see the [LICENSE4CONTENT][] file for details. 
+Following Michael Rose, I've continued to license the code of this project under the MIT License —see the [LICENSE][] file for details. However, the content of the website is license under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license ——see the [LICENSE4CONTENT][] file for details. 
 
 Minimal Mistakes template uses also a series of additional software and plugins, and I've also added some to this fork. You can see the licenses of those in the [LICENSE4VENDORS][] file. 
 
@@ -179,3 +178,4 @@ I would like to specially acknowledge Michael Rose work creating the template I'
 [LICENSE4VENDORS]: LICENSE4VENDORS.md
 [CODE_OF_CONDUCT.md]: CODE_OF_CONDUCT.md
 [Bundler]: https://bundler.io
+[Jekyll 4 Dependencies]: https://rubygems.org/gems/jekyll/versions/4.0.0/dependencies
