@@ -148,18 +148,18 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/lpuerto"
-    # - label: "ORCID"
-    #   icon: "ai fa-fw ai-orcid"
+    - label: "ORCID"
+      icon: "ai fa-fw ai-orcid"
     #   url: "https://orcid.org/0000-0002-9740-1972"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/luispuerto"
-    # - label: "GitLab"
-    #   icon: "fab fa-fw fa-gitlab"
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
     #   url: https://gitlab.com/luispuerto
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/lpuerto"
+    #   url: "https://instagram.com/lpuerto"
 
 
 # Site Footer
