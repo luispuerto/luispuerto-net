@@ -26,9 +26,9 @@ My main areas of interest are, as you could guess for my background, **forestry*
 
 Above all of that and in more personal setting, I really like the **outdoors** and I'm always ready to **explore** and **camp in the wilderness**. I'm interested in wide spectrum of **music**, **photography** and **[movies][]** too. For a while, I was doing a little bit of **horseback riding** and **archery**. When I arrived to Finland, I developed an acute interest in **baking bread and pizza**, mainly because for us was difficult to find Spanish style (hard crust) bread there and I learned using [Ken's book][Ken'sBook] (I was [recently in his bakery][PhotoBakery] and I have to say it was a delicious experience).
 
-Other fields that call my attention are, politics, [globalization and internationalization][globalization] (in the human sense) and work management and organization (mainly through the [Fifth Discipline][5Discipline]). **Astronomy** and **space exploration** are of my interest too. And of course, **history**, as a way to learn from others experience.
+Other fields that call my attention are, politics, [globalization and internationalization][globalization] (in the human sense) and work management and organization (mainly through the [Fifth Discipline][5Discipline]). **Astronomy** and **space exploration** are of my interest too. And of course, **history**, as a way to learn from others experience. I've been also trying to improve my concentration through meditation, but the nirvana is something difficult to reach (_damn!_). I dream with **learning to fly** and to **sail** someday soon, too.
 
-On a final note, I've been also trying to improve my concentration through meditation, but the nirvana is something difficult to reach (*damn!*). I dream with **learning to fly** and to **sail** someday soon.
+On a final note, I would like to mention that recently I've change my civil status. I was _just married_ before and now I've just became father. A proud and scared father. Proud because I'm sure that my son is going to be an outstanding creature —all parents are proud of their kids and if they aren't, they are just ...— and scared because this is going to be the adventure of my life. Luckily, I'm not alone. I have him and of course I have my wife. If you want to know a little bit more about my fatherhood, you can check <https://jr.luispuerto.net> or this [post][]. 
 
 [Ponferrada]: https://en.wikipedia.org/wiki/Ponferrada
 [Green Spain]: https://en.wikipedia.org/wiki/Green_Spain
@@ -55,3 +55,4 @@ On a final note, I've been also trying to improve my concentration through medit
 [PhotoBakery]: https://www.instagram.com/p/BS6vNqLgML3/
 [globalization]: https://en.wikipedia.org/wiki/Globalization
 [5Discipline]: https://en.wikipedia.org/wiki/The_Fifth_Discipline
+[post]: /blog/2019/12/20/parenthood/
