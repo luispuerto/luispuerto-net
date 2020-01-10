@@ -105,7 +105,7 @@ Let's explain how it's done:
    ```
    With the following content.
 
-   ```shell
+   ```sh
    #/bin/sh
    sudo nvram boot-args="-v"
    sudo nvram fa4ce28d-b62f-4c99-9cc3-6815686e30f9:gpu-power-prefs=%01%00%00%00
