@@ -37,11 +37,11 @@ Thesis / Senior project: ***"[El Pajariel][]"  Stand Management Plan.***
 
 ## Experience
 
-**Currently:**{: style="color: grey"} **European Forest Institute. Trainee**
+**Currently:**{: style="color: grey"} **Tryout at European Forest Institute, Bioeconomy Programme, Smart Forestry Area**
 
-- Working in improving the [Trade Flows data base][TradeFlowsDB] related to forest products. 
-- R programing to continue developing an R package —debugging and adding new functionality— for data extraction, manipulation and analysis from different publicly available trade databases like UN Comtrade and EU Comext.
-- Preparing the system to be published on a web under a Linux server. 
+- Main project: [Forest Products Trade Flow database][TradeFlowsDB], related to the analysis of trade flows of forest products globally. 
+- R programing. Developing, maintaining, debugging and adding new functionality to a R package for data extraction, manipulation and analysis from different publicly available trade databases like UN Comtrade and EU Comext.
+- Working with APIs, databases like MySQL, and Linux on server and desktop, to implement and debug the final product.   
 
 **Ongoing from summer 2019:**{: style="color: grey"} **Volunteer at US Forest Service**
 
