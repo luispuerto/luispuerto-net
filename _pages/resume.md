@@ -13,9 +13,9 @@ header:
 
 *You can download the most recent version of my résumé in pdf in <http://pdf-resume.luispuerto.net>{: style="color: steelblue"} or at the [bottom of this page](#pdf-résumé){: style="color: steelblue"}.*{: style="color: grey; font-size: 80%"}
 
-## Profile and Objective
+## Profile
 
-I am a dynamic and versatile Forest Engineer from Spain with more than 10 years of diverse and wide experience in GIS, remote sensing and data analysis. I have been working lately on research projects involving LiDAR, biomass and R language. I have experience working internationally, in different fields related to technology and interdisciplinary teams. I have great ability to learn, and I have an analytical mind. I am mainly looking for challenging projects related to GIS, remote sensing technologies and new ways to acquire data where I can use my background and skills, learning new ones in the process.
+Hi, my name is Luis Puerto and I’m a dynamic and versatile Forest Engineer from Spain with more than 10 years of diverse and wide experience in GIS, remote sensing and data analysis. I have been working lately on research projects involving LiDAR, biomass, R language and trade data. I have experience working internationally, with a wide range of technologies and in interdisciplinary teams. I have great ability to learn and an analytical mind. I am mainly looking for challenging projects related to GIS, remote sensing and data analysis where I can use my background and skills, learning new ones in the process.
 
 ## Education
 
@@ -24,8 +24,6 @@ I am a dynamic and versatile Forest Engineer from Spain with more than 10 years 
 
 **2012:**{: style="color: grey"} **[Degree in Forestry and Environmental Engineering][ForestryDegree]**[^1] (240 ETCS), [University of León][ULeon], Spain.  
 Thesis / Senior project: ***"[El Pajariel][]"  Stand Management Plan.*** 
-
-**2008:**{: style="color: grey"} **Bachelor of Agricultural Engineering (Forestry)**[^2] (180 ETCS), University of León, Spain.
 
 ## Publications
 
@@ -39,13 +37,15 @@ Thesis / Senior project: ***"[El Pajariel][]"  Stand Management Plan.***
 
 **Currently:**{: style="color: grey"} **Tryout at European Forest Institute, Bioeconomy Programme, Smart Forestry Area**
 
-- Main project: [Forest Products Trade Flow database][TradeFlowsDB], related to the analysis of trade flows of forest products globally. 
+- Main project: [Forest Products Trade Flow database][TradeFlowsDB], related to the analysis of more than 100 GB of data from global trade flows, focusing in of forest product. 
 - R programing. Developing, maintaining, debugging and adding new functionality to a R package for data extraction, manipulation and analysis from different publicly available trade databases like UN Comtrade and EU Comext.
-- Working with APIs, databases like MySQL, and Linux on server and desktop, to implement and debug the final product.   
+- Working with APIs, databases like MySQL, and Linux on server and desktop, to gather and store the data and to implement and debug the final product.
+
 
 **Ongoing from summer 2019:**{: style="color: grey"} **Volunteer at US Forest Service**
 
-- Helping on my free time to create a model for gap forest detection using LiDAR, the FIA and aerial photo on Oregon.
+- Creating a model on R for gap forest detection using LiDAR, the FIA and aerial photo. 
+- Handling and analysis of the full forest inventory of Oregon. 
 
 
 **2017-2018:**{: style="color: grey"} **Independent consultant and professional**
@@ -60,110 +60,137 @@ Thesis / Senior project: ***"[El Pajariel][]"  Stand Management Plan.***
 
 **2015-2017:**{: style="color: grey"} **[University of Eastern of Finland][UEF]. Different LiDAR projects as intern. 9 months in total.** 
 
-  - Download, processing and analyzing the whole LiDAR information of Finland using [Fusion][], [LAStools][]. [LidR][] and others.
-  - Scripting in [R language][RLanguage] to process and analyze [LiDAR][] data. Statistical modeling to yield biomass estimations.
-  - Reference research and scientific writing about LiDAR and biomass estimation.
+- Download, processing and analyzing the whole LiDAR information of Finland using [Fusion][], [LAStools][]. [LidR][] and others.
+- Scripting in [R language][RLanguage] to process and analyze [LiDAR][] data. Statistical modeling to yield biomass estimations.
+- Reference research and scientific writing about LiDAR and biomass estimation.
 
-**Nov 2014:**{: style="color: grey"} **[Metsäkeskus][]. Finnish language course internship. Creation of digital cartography**
+**Nov 2014:**{: style="color: grey"} **[Metsäkeskus][]. Finnish language course internship**
 
-  - Analyzing and processing Metsäkeskus’ inventory data in Finnish to create digital cartography.
+- Creation of digital cartography using Metsäkeskus’ inventory data in Finnish. 
+- Able to work in a full Finnish language environment and interact other staff. 
 
 **2014-2016:**{: style="color: grey"} **Intensive Finnish Language Courses.** 
 
-  - I took 3 courses, which were more than 1500 hours in total, about Finnish language and culture
+- More than 1500 hours in total, about Finnish language and culture. 
+- Able to work with people in an environment where language could be a barrier. 
 
 **May 2009 – Dec 2012:**{: style="color: grey"} **[Fundación Ciudad de la Energía][CIUDEN] (City of Energy Foundation), Spanish Government**.
 
-  - Last position: Coordinator **of Technology & Innovation Area at Technology & Systems Department**
-  - In charge of a multidisciplinary team of four members related to technology and programming.
-  - Co-responsible to commission the digital platform for the *[Museo Nacional de la Energía][MNE]*. 1-million-euro project.
-  - Develop, implement and commission different kinds of **technological systems** such as public Wi-Fi networks, ticket-selling systems, geolocation systems for people and objects, and cloud computing systems.
-  - Responsible of the **[Geographic Information Systems (GIS)][GIS]**. Cartography elaboration (such as two tourism maps, web apps or in-house cartography), data analysis, geodatabase keeping and in-house GIS training.
-  - Responsible of the office tasks of **“[Assessment of the current phytosanitary status of European chestnut in El Bierzo (León, Spain)][CastaneaProject]”** project; managing field work, inventory operations, and data processing and analysis.
-  - Other projects:
-      - **Heritage Inventory of [El Bierzo][] and [Laciana][] Counties**. Helping to plan field works, develop the inventory and coordinate and create a database. Also, subsequent analysis of data using GIS methodologies.
-      - **[La Mirada Circular][]** (more than 300 km of hiking routes): Help to organize activities, signaling, mapping and managing.
-      - Lots of other activities about environment, alternative and clean energies, tourism and territory analysis.
+- Last position: Coordinator **of Technology & Innovation Area at Technology & Systems Department**
+- In charge of a multidisciplinary team of four members related to technology and programming.
+- Co-responsible to commission the digital platform for the *[Museo Nacional de la Energía][MNE]*. 1-million-euro project.
+- Develop, implement and commission different kinds of **technological systems** such as public Wi-Fi networks, ticket-selling systems, geolocation systems for people and objects, and cloud computing systems.
+- Responsible of the **[Geographic Information Systems (GIS)][GIS]**. Cartography elaboration (such as two tourism maps, web apps or in-house cartography), data analysis, geodatabase keeping and in-house GIS training.
+- Responsible of the office tasks of **“[Assessment of the current phytosanitary status of European chestnut in El Bierzo (León, Spain)][CastaneaProject]”** project; managing field work, inventory operations, and data processing and analysis.
+- Other projects:
+    - **Heritage Inventory of [El Bierzo][] and [Laciana][] Counties**. Helping to plan field works, develop the inventory and coordinate and create a database. Also, subsequent analysis of data using GIS methodologies.
+    - **[La Mirada Circular][]** (more than 300 km of hiking routes): Help to organize activities, signaling, mapping and managing.
+    - Lots of other activities about environment, alternative and clean energies, tourism and territory analysis.
 
 **2009:**{: style="color: grey"} **Freelance consultant for [TRAGSATEC][]; collaborate in the preliminary plan for the Pajariel Forestry Park.**
 
-  - Collecting data in the field, team organization, and cartography elaboration.
-  - GIS multi-criteria analysis of data, develop and analysis proposals of restoration and activities for the park.
-  - Analysis of potentialities and the development of citizen participation process.
+- Collecting data in the field, team organization, and cartography elaboration.
+- GIS multi-criteria analysis of data, develop and analysis proposals of restoration and activities for the park.
+- Analysis of potentialities and the development of citizen participation process.
 
 **2005-2011:**{: style="color: grey"} **Several projects as freelance such as:** 
 
-  - Development of Geographic Information Systems in **ArcGIS, ArcPAD & ArcView** and blueprints in **AutoCAD**.
-  - Experience as a judicial expert in court and writing a judicial report for one side.
+- Development of Geographic Information Systems in **ArcGIS, ArcPAD & ArcView** and blueprints in **AutoCAD**.
+- Experience as a judicial expert in court and writing a judicial report for one side.
 
 **2007-2008:**{: style="color: grey"} **[Ponferrada Municipality][Ponferrada] (9 months) at the project “[Integral Management of the Ponferrada’s Mountains][ForestPonfeProject]”. Forest and office technician and consultant:**
 
-  - Forest inventory of more than 12000 ha, in-filed decision making about forest management and GIS analysis of data.
-  - Co-writing of strategic management report for the forest for the following 10 years.
+- Forest inventory of more than 12000 ha, in-filed decision making about forest management and GIS analysis of data.
+- Co-writing of strategic management report for the forest for the following 10 years.
 
 **2006:**{: style="color: grey"} **[Tecnosylva][] SL. (6 months). Forest technician and consultant:**
 
-  - Inventory of forest roads, with GPS, ArcPAD, and off-road vehicle. Over 2000 km.
-  - Cartography generation and digitalization in ArcGIS software.
-  - Collecting data in field with professional GPS. Advanced knowledge of GPS methodology.
-  - Forest inventory with computing systems such PDA, Vertex, and electronic caliper.
+- Inventory of forest roads, with GPS, ArcPAD, and off-road vehicle. Over 2000 km.
+- Cartography generation and digitalization in ArcGIS software.
+- Collecting data in field with professional GPS. Advanced knowledge of GPS methodology.
+- Forest inventory with computing systems such PDA, Vertex, and electronic caliper.
 
 ### Additional Training
 
-  - 10 training courses on **ArcGIS 10 Desktop and Server** systems, including Oracle DDBB and programming in python and add-ins, by ESRI Spain (300 hours).
-  - Course **Sextante** (GIS toolbox) by Uni. of León (20 hours).
-  - Course **“Thematic Cartography”**, by the Spanish National Geographic Institute (40 hours).
-  - Course of “**Learn to Program: The Fundamentals**” in Python, by University of Toronto (50 hours).
-  - Course “**Certification and Audition Systems** in forest exploitations” by PROFOR (144 hours).
-  - Course of **Fire Management**, by Swedish University of Agricultural Sciences (SLU) (200 hours).
-  - Course **AutoCAD 2011** 2D & 3D, by IFESS (40 hours).
-  - Course “**Health and Safety** on forest exploitations” by PROFOR, (144 hours).
-  - Course **“Defending Forest Against Wildfires”**, by the Spanish Forest Engineers Official Association (30 hours).
-  - Course about **Biomass** by CARTIF Foundation (60 hours).
-  - Course **“Forest Planning”**, by Castile and León Government (50 hours).
-  - Course on **Project Management** by Adecco (15 hours)
-  - Course of **Wonderware** by Wonderware Spain (35 hours).
-  - I've assisted to many others talks, seminaries, conferences and congresses at local, national and international level.
+- 10 training courses on **ArcGIS 10 Desktop and Server** systems, including Oracle DDBB and programming in python and add-ins, by ESRI Spain (300 hours).
+- Course **Sextante** (GIS toolbox) by Uni. of León (20 hours).
+- Course **“Thematic Cartography”**, by the Spanish National Geographic Institute (40 hours).
+- Course of “**Learn to Program: The Fundamentals**” in Python, by University of Toronto (50 hours).
+- Course “**Certification and Audition Systems** in forest exploitations” by PROFOR (144 hours).
+- Course of **Fire Management**, by Swedish University of Agricultural Sciences (SLU) (200 hours).
+- Course **AutoCAD 2011** 2D & 3D, by IFESS (40 hours).
+- Course “**Health and Safety** on forest exploitations” by PROFOR, (144 hours).
+- Course **“Defending Forest Against Wildfires”**, by the Spanish Forest Engineers Official Association (30 hours).
+- Course about **Biomass** by CARTIF Foundation (60 hours).
+- Course **“Forest Planning”**, by Castile and León Government (50 hours).
+- Course on **Project Management** by Adecco (15 hours)
+- Course of **Wonderware** by Wonderware Spain (35 hours).
+- I've assisted to many others talks, seminaries, conferences and congresses at local, national and international level.
 
-### Languages
+### Skills
 
-  - :es: Spanish: Native Speaker
-  - :us: English: Advanced level. TOEFL iBT score 96
-  - :finland: Finnish: A2
-  - :sweden: Swedish: A1
+#### Computer 
 
-### Computer Skills
+- [ArcGIS][] Desktop & Server
+- QGIS & OSGeo
+- Oracle DB & SQL DDBB
+- macOS, Linux & Windows
+- [R stats][RStats] & [Python][] 
+- [Fusion][], [LAStools][] & [LidR][]
+- Parallel computing
+- Cloud computing
+- [Git][], [GitHub][] & [GitLab][] & CI
+- Shell scripting
+- Jekyll & Web developing
 
-  - [ArcGIS][] & AutoCAD
-  - Photoshop
-  - macOS, Windows & Linux		
-  - [R stats][RStats] & [Python][] 
-  - [Fusion][], [LAStools][] & [LidR][]
-  - [Git][], [GitHub][] & [GitLab][]
-  - Shell scripting, databases and web developing
+#### Languages
+
+- :es: Spanish: Native Speaker
+- :us: English: Bilingual
+- :finland: Finnish: A2
+- :sweden: Swedish: A1
+
+#### Professional
+
+- Cartography
+- Project management
+- Wildfires
+- Trade data
+- Certification & audit
+
+#### Personal
+
+- Self-learner
+- Analytical & meticulous
+- Open minded
+- Critical & system thinker
+- Productive & organized
+- International perspective
+- Global traveler
+- Social & independent
 
 ### Complementary Activities
 
 - **Volunteering**:
-  - **[Albany Historic Carrousel][Carrousel]**: Setting the animals, assembling the wooden structure and helping with the mechanical and electrical systems.
-  - **[The Hour of Code][]**: Teaching code to 4th grade school students. 
-  - Cultural volunteering: Immigration inclusion, developing leisure programs for children. 
-- Self-learner about Project Management and personal Productivity. “**[Fifth Discipline][]**”, “**[Systems Thinking][]**”, “[Learning Organizations][]” enthusiast and curious about new ways of learning and similar subjects. 
-- Very interested in social media and the new ways of communicating ideas. 
-- Science and technology lover. Rational thinker. Always trying to implement technology to be me more efficient. 
-- Photography enthusiasm and eager learner of almost everything. 
-- I like the **adventure**, hiking and camping in the wilderness. 
+    - **[The Hour of Code][]**: Teaching code to 4th grade school students. 
+    - Cultural volunteering: Immigration inclusion, developing leisure programs for children.
+    - **[Albany Historic Carrousel][Carrousel]** in Oregon, US: Setting the animals, assembling the wooden structure and helping with the mechanical and electrical systems.
+    - **[The Hour of Code][]** in Madrid, ES: Teaching code to 4th grade school students. 
+    - Cultural volunteering in Joensuu, FI: Immigration inclusion, developing leisure programs for children.
+    - **[OSGeo][] & [QGIS][] Homebrew [tap][]**: Producing documentation, maintaining the tap, updating formulae and organizing operation and planning with other volunteers remotely. 
+- I like adventure and challenges. I love hiking and camping in the wilderness. Travel enthusiast and explorer.
+- Always interested in trying new things and test new tools to improve, specially my productivity.  
+- Photography enthusiasm. I spend most of my free time reading and learning.  
 
 ## PDF Résumé
 
-Additionally you can see and download the most recent version of my résumé in pdf bellow or [here][pdf-resume]. 
-
+Additionally I prepare a concise version of this résumé in pdf _paper format_. You can see and download the most recent version bellow or [here][pdf-resume]. 
 
 <iframe width="100%" height="650em" 
 src="https://www.dropbox.com/s/tba5d4eeja4vt2i/Luis%20Puerto%20Resume.pdf?raw=1&autoplay=1" frameborder="0" allowfullscreen></iframe>
 
-[^1]: I converted my previous title to this new one when the Bolonia transition happened in Spain, so I ended up with two similar titles. 
-[^2]: This studies have disappeared after the Bolonia process happened circa 2011. 
+
+[^1]: Actually, this is when I converted my previous diploma to the new Bolonia framework. I've been a Forest Engineer, since 2008 when I graduated from my original studies. 
 
 [iGEON]: http://www.igeon.eu
 [LundU]: https://www.lu.se
@@ -212,9 +239,9 @@ src="https://www.dropbox.com/s/tba5d4eeja4vt2i/Luis%20Puerto%20Resume.pdf?raw=1&
 [Python]: https://www.esri.com/en-us/arcgis/about-arcgis/overview
 [GitHub]: https://github.com
 [GitLab]: https://gitlab.com
-[Carrousel]: http://albanycarousel.com/home/
 [The Hour Of Code]: https://code.org
-[Fifth Discipline]: https://en.wikipedia.org/wiki/The_Fifth_Discipline
-[Systems Thinking]: https://en.wikipedia.org/wiki/Systems_theory
-[Learning Organizations]: https://en.wikipedia.org/wiki/Learning_organization
+[Carrousel]: http://albanycarousel.com/home/
+[OSGeo]: https://www.osgeo.org
+[QGIS]: https://www.qgis.org
+[tap]: https://github.com/OSGeo/homebrew-osgeo4mac
 [pdf-resume]: http://pdf-resume.luispuerto.net
