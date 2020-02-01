@@ -172,8 +172,6 @@ Thesis / Senior project: ***"[El Pajariel][]"  Stand Management Plan.***
 ### Complementary Activities
 
 - **Volunteering**:
-    - **[The Hour of Code][]**: Teaching code to 4th grade school students. 
-    - Cultural volunteering: Immigration inclusion, developing leisure programs for children.
     - **[Albany Historic Carrousel][Carrousel]** in Oregon, US: Setting the animals, assembling the wooden structure and helping with the mechanical and electrical systems.
     - **[The Hour of Code][]** in Madrid, ES: Teaching code to 4th grade school students. 
     - Cultural volunteering in Joensuu, FI: Immigration inclusion, developing leisure programs for children.
