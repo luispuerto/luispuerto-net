@@ -89,7 +89,7 @@
     @import "_icons";
 
     ol, ul {
-      display: table; 
+      overflow: hidden;
       margin-bottom: 1em; 
     }
     
