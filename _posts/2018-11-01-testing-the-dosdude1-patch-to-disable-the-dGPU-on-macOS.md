@@ -91,7 +91,7 @@ $ sudo rm -r /Library/LaunchDaemons/com.dosdude1.GPUDisableHelper.plist
 Now, you can restore your `kext`
 
 ```shell
-$ sudo cp -p /.AMD_Backup/*.* /System/Library/Extensions/
+$ sudo cp -pr /.AMD_Backup/*.* /System/Library/Extensions/
 ```
 
 I would also check the ownership —just in case:  
