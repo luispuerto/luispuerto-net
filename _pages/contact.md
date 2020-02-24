@@ -28,4 +28,5 @@ header:
       {: style="list-style: none"}
   - <i class="fab fa-skype" style="color: #00AFF0"></i> skype: ***[luiss.puerto](skype:luiss.puerto?chat){: style="color: black"}***
   - <i class="fab fa-twitter"></i> twitter: ***[@lpuerto](https://twitter.com/lpuerto){: style="color: black"}***   
+  - <i class="fab fa-linkedin"></i> linkedin: ***[lpuerto](https://www.linkedin.com/in/lpuerto){: style="color: black"}***, _but please add a [note or a message](/blog/2019/02/21/no-message-no-connection-in-linkedin/) before you add me as your contact_{: .small}.
 {: style="list-style: none"}
