@@ -243,12 +243,18 @@ body:hover .visually-hidden button {
   }
 }
 
-/* file page content container */
+/* fill page content container */
 
 .full {
   @include breakpoint($large) {
     margin-right: -1 * span(2.5 of 12) !important;
   }
+}
+
+/* images that are emojies should be aligned vertically with the text*/
+
+.emoji-img {
+  vertical-align: text-bottom;
 }
 
 /*
