@@ -15,7 +15,7 @@ Sometimes you need to delete all the snapshots that the macOS time machine do lo
 So if you run
 
 ```shell 
-$ sudo tmutil listlocalsnapshots
+$ sudo tmutil listlocalsnapshots /
 com.apple.TimeMachine.2018-03-03-144538
 com.apple.TimeMachine.2018-03-03-154712
 com.apple.TimeMachine.2018-03-03-170903
