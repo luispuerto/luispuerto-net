@@ -44,7 +44,12 @@
     <ul class="author__urls social-icons">
       {% if author.location %}
         <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
-          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">{{ author.location }}</span>
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">{% if author.location_url %}<a href="{{ author.location_url }}">{% endif %}{{ author.location }}{% if author.location_url %}</a>{% endif %}</span>
+        </li>
+      {% endif %}
+      {% if author.other_locations %}
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-globe-europe"></i> <span itemprop="name">{{ author.other_locations }}</span>
         </li>
       {% endif %}
 

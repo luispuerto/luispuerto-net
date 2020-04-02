@@ -129,7 +129,9 @@ author:
   avatar           : "/assets/images/pages/20121231-035-ol.jpg"
   bio              : "Born in Ponferrada, Spain. A Forest Engineer interested
                       in Science and Technology. Fascinated about almost everything"
-  location         : ":eu::es::sweden::finland::us:" 
+  location         : "Joensuu, Finland :finland:"
+  location_url     : https://en.wikipedia.org/wiki/Joensuu
+  other_locations  : ":eu::es::sweden::switzerland::us:"
                       # to show flag properly you have to apply css in _sidebar.scss 
                       # in .author__urls class 
   home             : "/aboutme/"
