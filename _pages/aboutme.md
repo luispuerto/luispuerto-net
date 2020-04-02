@@ -2,7 +2,7 @@
 title: About Me
 permalink: /aboutme/
 date: 2017-04-20 03:21 +00:00
-last_modified_at: 2020-04-02 05:54:27 +00:00
+last_modified_at: 2020-04-02 12:33:04 +00:00
 layout: single
 classes: wide
 author_profile: true
@@ -20,7 +20,7 @@ In the last years of my studies, and after I got my degree, I worked in differen
 
 After that, I decided I wanted to have an international life and career and moved to Umeå, Sweden :sweden: where my then SO was living at the moment. I was living there for 6 months enjoying the Swedish life and people, being a little _Skogstokig_, learning a little bit of Swedish (_jaaahhaa!!_) and about fire management in the North or Europe. Finally, I enrolled in the [iGEON master][iGEON] about **GIS and remote sensing**, from Lund University. Then, my SO was offered a good opportunity to do her PhD in Joensuu, Finland :finland: and we decided to moved there, where we've been living since the beginning of 2014 (yes, it's cold!, but only with the wrong clothing). Here, I had the opportunity to learn Finnish (_minä puhun vähän suomea_), enjoy Finnish forest and sauna, learn a little bit of cross-country skiing and discover Finnish people and their silence. 
 
-In between, we also have been living and traveling here and there for business and pleasure. We were in USA :us: twice discovering [Oregon][] and the [Pacific Northwest][] :evergreen_tree:. First for 5 months and we were so in love with the area that we decide to return for an additional 3 months 2 years after the first time. There we discovering an amazing culture, people and landscapes that really left us awestruck and made us always want to return. We also lived for 2 months in Vienna, Austria :austria:, enjoying the traditional Austrian values, food and culture from central Europe and the Alps :mountain_snow:.
+In between, we also have been living and traveling here and there for business and pleasure. We were in USA :us: twice discovering [Oregon][] and the [Pacific Northwest][] :evergreen_tree:. First, for 5 months and we were so in love with the area that we decide to return for an additional 3 months 2 years after. There we discovering an amazing culture, people and landscapes that really left us awestruck and made us always want to return. We also lived for 2 months in Vienna, Austria :austria:, enjoying the traditional Austrian values, food and culture from central Europe and the Alps :mountain_snow:.
 
 My main areas of interest are, as you could guess due my background, **forestry** and **engineering** although I'm also interested in **science** and **technology** in general. I'm a really curious person and I'm usually interested in everything. While I've been in Finland, and while I'm finishing my master on my free time, I have the opportunity to learn and explore about **remote sensing, LiDAR, biomass, research and trade statistics**, and some of my current ongoing projects are related to those areas. Recently, I also discover my interest about **statistics** (I always hated them) and more specific about the **[RStats][]**, **[data science][DataScience]** :bar_chart: and **[data visualization][DataVisu]** fields (long life to [Tufte][]).  Perhaps, for the influence of the people I have around (thanks!) and my fairly good relation with computers which got me introduce in the world of coding. Also, maybe, because for me is a way to squeeze data and see the "hidden truth". Finally, I interested in **[big data analysis][bigdata]**, **[nanocomputing][]** and new ways to get data.
 
