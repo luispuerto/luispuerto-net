@@ -15,7 +15,7 @@ header:
 
 ## Profile
 
-Hi, my name is Luis Puerto and I’m a dynamic and versatile Forest Engineer from Spain with more than 10 years of diverse and wide experience in GIS, remote sensing and data analysis. I have been working lately on research projects involving LiDAR, biomass, R language and trade data. I have experience working internationally, with a wide range of technologies and in interdisciplinary teams. I have great ability to learn and an analytical mind. I am mainly looking for challenging projects related to GIS, remote sensing and data analysis where I can use my background and skills, learning new ones in the process.
+Hi, my name is Luis Puerto and I’m a dynamic and versatile Forest Engineer from Spain with more than 10 years of diverse and wide experience in GIS, remote sensing and data analysis. I have been working lately on projects involving LiDAR, biomass, coding —specially in R— and trade data. I have experience working internationally, with a wide range of technologies and in interdisciplinary teams. I have great ability to learn and an analytical mind. I am looking for challenging projects where I can use my background and skills while learning new ones in the process.
 
 ## Education
 
@@ -35,20 +35,21 @@ Thesis / Senior project: ***"[El Pajariel][]"  Stand Management Plan.***
 
 ## Experience
 
-**Currently:**{: style="color: grey"} **Tryout at European Forest Institute, Bioeconomy Programme, Smart Forestry Area**
+**Sep 2019 - Currently:**{: style="color: grey"} **Data Analyst at [European Forest Institute][EFI]**
 
+- Working on the Bioeconomy Programme at the Smart Forestry Area. 
 - Main project: [Forest Products Trade Flow database][TradeFlowsDB], related to the analysis of more than 100 GB of data from global trade flows, focusing in of forest product. 
 - R programing. Developing, maintaining, debugging and adding new functionality to a R package for data extraction, manipulation and analysis from different publicly available trade databases like UN Comtrade and EU Comext.
-- Working with APIs, databases like MySQL, and Linux on server and desktop, to gather and store the data and to implement and debug the final product.
+- Working with APIs, databases like MySQL, and Linux on server and desktop, to gather and store the data and to develop, debug and implement the final product
 
 
-**Ongoing from summer 2019:**{: style="color: grey"} **Volunteer at US Forest Service**
+**Ongoing since summer 2019:**{: style="color: grey"} **Volunteer at [US Forest Service][USFS]**
 
 - Creating a model on R for gap forest detection using LiDAR, the FIA and aerial photo. 
 - Handling and analysis of the full forest inventory of Oregon. 
 
 
-**2017-2018:**{: style="color: grey"} **Independent consultant and professional**
+**2017-2018:**{: style="color: grey"} **Independent consultant**
 
 - Develop web projects in [Jekyll][] platform. HTML, CSS, [Liquid templating][LiquidT], [Git][], [Continuous Integration][CI] and some [Ruby][] and [JavaScript][]. 
 - Manage a small network using [Raspberry Pis][RaspberryPis] as small home server for different applications such as [R Studio server][RStudioServer], [VPN server][VpnServer], [NAS][], [cloud storage][CloudStorage], [wireless audio streaming][WAudio], [ad blocker][AdBlocker], internet speed logger and many others. 
@@ -243,3 +244,5 @@ src="https://www.dropbox.com/s/tba5d4eeja4vt2i/Luis%20Puerto%20Resume.pdf?raw=1&
 [QGIS]: https://www.qgis.org
 [tap]: https://github.com/OSGeo/homebrew-osgeo4mac
 [pdf-resume]: http://pdf-resume.luispuerto.net
+[USFS]: https://www.fs.usda.gov/
+[EFI]: https://www.efi.int
