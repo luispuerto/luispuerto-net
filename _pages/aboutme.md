@@ -1,8 +1,8 @@
 ---
 title: About Me
 permalink: /aboutme/
-date: 2017-04-20 03:21 +00:00
-last_modified_at: 2020-04-02 12:33:04 +00:00
+date: 2017-04-20 03:21:45 +00:00
+last_modified_at: 2020-04-07 05:30:00 +00:00
 layout: single
 classes: wide
 author_profile: true
@@ -66,4 +66,4 @@ See you around (the World :earth_africa::earth_asia::earth_americas:).
 [post]: /blog/2019/12/20/parenthood/
 [Zürich]: https://en.wikipedia.org/wiki/Zürich
 [Switzerland]: https://en.wikipedia.org/wiki/Switzerland
-[removal]: /blog/2020/03/10/moving-to-zurich/
+[removal]: /blog/2020/04/07/moving-to-zurich/
