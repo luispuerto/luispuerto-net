@@ -32,6 +32,6 @@
     "build:js": "npm run uglify && npm run add-banner"
   },
   "dependencies": {
-    "netlify-cli": "^2.13.1"
+    "netlify-cli": "^2.40.0"
   }
 }
