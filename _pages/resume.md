@@ -35,7 +35,7 @@ Thesis / Senior project: ***"[El Pajariel][]"  Stand Management Plan.***
 
 ## Experience
 
-**Sep 2019 - Currently:**{: style="color: grey"} **Data Analyst at [European Forest Institute][EFI]**
+**Sep 2019 - Jun 2020:**{: style="color: grey"} **Data Analyst at [European Forest Institute][EFI]**
 
 - Working on the [Bioeconomy Programme][BioProg] at the Smart Forestry Area. 
 - Main project: [Forest Products Trade Flow database][TradeFlowsDB], related to the analysis of more than 100 GB of data from global trade flows, focusing in of forest product. 
