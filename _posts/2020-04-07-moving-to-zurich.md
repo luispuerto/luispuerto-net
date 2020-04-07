@@ -1,6 +1,6 @@
 ---
 title: We are moving to Zürich, Switzerland
-date: 2020-04-07 10:24:04
+date: 2020-04-07 05:30:00
 # last_modified_at: 2019-00-00 00:00:00
 header: 
  overlay_image: /assets/images/blog/2020/Matterhorn-sunset-2016-(Unsplash).jpg

@@ -1,8 +1,8 @@
 ---
 title: Résumé
 permalink: /resume/
-date: 2018-11-1 05:30 +00:00
-last_modified_at: 2019-10-08 21:50 +00:00
+date: 2018-11-1 05:30:30 +00:00
+last_modified_at: 2020-04-02 18:24:22 +00:00
 layout: single
 classes: wide
 author_profile: true
