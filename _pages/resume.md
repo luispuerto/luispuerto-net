@@ -37,7 +37,7 @@ Thesis / Senior project: ***"[El Pajariel][]"  Stand Management Plan.***
 
 **Sep 2019 - Currently:**{: style="color: grey"} **Data Analyst at [European Forest Institute][EFI]**
 
-- Working on the Bioeconomy Programme at the Smart Forestry Area. 
+- Working on the [Bioeconomy Programme][BioProg] at the Smart Forestry Area. 
 - Main project: [Forest Products Trade Flow database][TradeFlowsDB], related to the analysis of more than 100 GB of data from global trade flows, focusing in of forest product. 
 - R programing. Developing, maintaining, debugging and adding new functionality to a R package for data extraction, manipulation and analysis from different publicly available trade databases like UN Comtrade and EU Comext.
 - Working with APIs, databases like MySQL, and Linux on server and desktop, to gather and store the data and to develop, debug and implement the final product
@@ -199,7 +199,10 @@ src="https://www.dropbox.com/s/tba5d4eeja4vt2i/Luis%20Puerto%20Resume.pdf?raw=1&
 [El Pajariel]: https://es.wikipedia.org/wiki/Monte_Pajariel
 [iforest]: https://iforest.sisef.org
 [10.3832/ifor2735-012]: https://doi.org/10.3832/ifor2735-012
+[EFI]: https://www.efi.int
+[BioProg]: https://efi.int/bioeconomy
 [TradeFlowsDB]: https://www.efi.int/knowledge/databases/fptf
+[USFS]: https://www.fs.usda.gov/
 [Jekyll]: https://jekyllrb.com
 [LiquidT]: https://shopify.github.io/liquid/
 [Git]: https://git-scm.com
@@ -238,11 +241,9 @@ src="https://www.dropbox.com/s/tba5d4eeja4vt2i/Luis%20Puerto%20Resume.pdf?raw=1&
 [Python]: https://www.esri.com/en-us/arcgis/about-arcgis/overview
 [GitHub]: https://github.com
 [GitLab]: https://gitlab.com
-[The Hour Of Code]: https://code.org
 [Carrousel]: http://albanycarousel.com/home/
+[The Hour Of Code]: https://code.org
 [OSGeo]: https://www.osgeo.org
 [QGIS]: https://www.qgis.org
 [tap]: https://github.com/OSGeo/homebrew-osgeo4mac
 [pdf-resume]: http://pdf-resume.luispuerto.net
-[USFS]: https://www.fs.usda.gov/
-[EFI]: https://www.efi.int
