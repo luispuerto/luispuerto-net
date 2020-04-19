@@ -12,6 +12,10 @@ tags:
   - high sierra
   - macOS
 ---
+
+**Note:** Just you all to know, that I don't have this mac anymore and that this solution never really worked for long time. In the end I got really mixed results and the issue arise again sometimes. My best advice for you all is just replace the dGPU or even better buy a new mac. 
+{: .notice--warning}
+
 A couple of weeks ago I [wrote about the problem I have with my old MacBook Pro wakening from sleeping to a black screen](/blog/2018/04/13/mbp-wakes-up-from-sleep-to-back-screen/). I also pointed out that I was [testing a solution](/blog/2018/04/13/mbp-wakes-up-from-sleep-to-back-screen/#the-lidwake-on-test) related to the lid. I can tell that since I've testing this solution I haven't suffered any wake up to a black screen, so I guess that the problem is related to the lid, either to the hinge or to the magnet that trigger the wake up and the sleep processes.
 
 I'm doing two things to prevent the black screen behavior. First I'm sleeping the computer using the command line:
