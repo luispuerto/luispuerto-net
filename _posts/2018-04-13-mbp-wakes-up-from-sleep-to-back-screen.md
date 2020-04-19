@@ -12,6 +12,10 @@ tags:
   - high sierra
   - macOS
 ---
+
+**Note:** Just you all to know, that I don't have this mac anymore and that this solution never really worked for long time. In the end I got really mixed results and the issue arise again sometimes. My best advice for you all is just replace the dGPU or even better buy a new mac. 
+{: .notice--warning}
+
 As you know, I have had problems with my old MacBook Pro Late 2011 and its [dGPU](/archive/tags/dgpu) which I've been able to _patch_ to make the computer work again. In the beginning, the side effect of the fix was not to be able to wake up properly the Mac from sleep mode. The computer woke up to a black or grey screen and the fans started to work at full speed to finally turn off itself. This was cause because on the wake up process the computer decided to stuck to the faulty dGPU instead to the iGPU. Luckily, this problem was solve as you can see in the [final fix](/blog/2017/12/11/disconnecting-the-dgpu-in-a-late-2011-macbook-pro-third-way/).
 
 However, my Mac still wakes up to a black screen from time to time. This isn't a new behavior at all, just happen to come up more often. Perhaps, in the past, this problem happened once per month or two months or even once every six months.
