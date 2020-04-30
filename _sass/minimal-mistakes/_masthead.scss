@@ -12,7 +12,7 @@
   animation-delay: 0.15s;
   z-index: 20;
   width: 100%;
-  background: white;
+  background: rgba(255, 255, 255, .9);
   height: $masthead-height;
 
   &__inner-wrap {
