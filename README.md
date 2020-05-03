@@ -134,7 +134,7 @@ I would like to specially acknowledge Michael Rose work creating the template I'
 
 [Jekyll]: https://jekyllrb.com
 [LICENSE]: LICENSE
-[LICENSE4CONTENT]: LICENSE4CONTENT.txt
+[LICENSE4CONTENT]: LICENSE4CONTENT.md
 [feed]: https://luispuerto.net/feed.xml
 [twitter]: https://twitter.com/lpuerto
 [linkedin]: https://www.linkedin.com/in/lpuerto
