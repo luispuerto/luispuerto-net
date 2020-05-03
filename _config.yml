@@ -185,15 +185,15 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url:
-  licenses: 
+  license: 
+    url: "/license" # to your licenses page or any other you want. 
     code:
-      label: "MIT"
       icon: "fab fa-osi"
-      url: "https://opensource.org/licenses/MIT"
     content:
-      label: "BY-NC-SA"
-      icon: "fab fa-creative-commons"
-      url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      icon1: "fab fa-creative-commons"
+      icon2: "fab fa-creative-commons-by"
+      icon3: "fab fa-creative-commons-nc"
+      icon4: "fab fa-creative-commons-sa"
 
 
 # Reading Files

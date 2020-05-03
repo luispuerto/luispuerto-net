@@ -16,17 +16,30 @@
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }} |
-  {% if site.footer.licenses.code %}
-  {% assign lcode = site.footer.licenses.code %}
-    <a href="{{ lcode.url }}" rel="nofollow noopener noreferrer"><i class="{{ lcode.icon | default: 'fas fa-link' }}" aria-hidden="true"></i> {{ lcode.label }}</a>
+<div class="page__footer-copyright">
+  <a href="{{ site.footer.license.url }}" class="text-muted">
+  <i class="far fa-copyright"></i> {{ site.time | date: '%Y' }} {{ site.author.name | default: site.title }}
+  {% if site.footer.license.code %}
+  {% assign lcode = site.footer.license.code %}
+  <i class="{{ lcode.icon | default: 'fas fa-link' }} text-muted" aria-hidden="true"></i>
   {% endif %}
-  {% if site.footer.licenses.content %}
-  {% assign lcontent = site.footer.licenses.content %}
-    &amp; <a href="{{ lcontent.url }}" rel="nofollow noopener noreferrer"><i class="{{ lcontent.icon | default: 'fas fa-link' }}" aria-hidden="true"></i> {{ lcontent.label }}</a> | 
-  {% endif %}
+  {% if site.footer.license.content %}
+    {% assign lcontent = site.footer.license.content %}
+    {% if lcontent.icon1 %}
+    <i class="{{ lcontent.icon1 | default: 'fas fa-link' }} text-muted" aria-hidden="true"></i>
+    {% endif %} 
+    {% if lcontent.icon2 %}
+    <i class="{{ lcontent.icon2 | default: 'fas fa-link' }} text-muted" aria-hidden="true"></i>
+    {% endif %} 
+    {% if lcontent.icon3 %}
+    <i class="{{ lcontent.icon3 | default: 'fas fa-link' }} text-muted" aria-hidden="true"></i>
+    {% endif %} 
+    {% if lcontent.icon4 %}
+    <i class="{{ lcontent.icon4 | default: 'fas fa-link' }} text-muted" aria-hidden="true"></i>
+    {% endif %} 
+    {% if lcontent.label %} {{ lcontent.label }} {% endif %}</a> | 
+  {% endif %}</a>
   {% if site.repository %}
-  <a href="https://github.com/{{ site.repository }}"><i class="fas fa-code" aria-hidden="true"></i> Source Code</a> | 
-  {% endif %}
-{{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a>, <a href="https://www.netlify.com" rel="nofollow">Netlify</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.
+    <a class="text-muted" href="https://github.com/{{ site.repository }}"><i class="fas fa-code text-muted" aria-hidden="true"></i> Source Code</a> | 
+  {% endif %}{{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a>, <a href="https://www.netlify.com" rel="nofollow">Netlify</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.
 </div>
