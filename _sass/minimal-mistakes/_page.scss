@@ -710,6 +710,10 @@
     width: calc(100% - #{$right-sidebar-width-narrow});
   }
 
+  @include breakpoint($large-wide) {
+    width: calc(100% - #{$right-sidebar-width-narrow-wide});
+  }
+
   @include breakpoint($x-large) {
     width: calc(100% - #{$right-sidebar-width});
   }
