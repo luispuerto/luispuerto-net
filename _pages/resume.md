@@ -2,7 +2,7 @@
 title: Résumé
 permalink: /resume/
 date: 2018-11-1 05:30:30 +00:00
-last_modified_at: 2020-04-02 18:24:22 +00:00
+last_modified_at: 2020-09-27 21:53:52 +00:00
 layout: single
 classes: wide
 author_profile: true
@@ -11,7 +11,7 @@ header:
   caption: '*Rendering of LiDAR from Norway*'
 ---
 
-*You can download the most recent version of my résumé in pdf in <http://pdf-resume.luispuerto.net>{: style="color: steelblue"} or at the [bottom of this page](#pdf-résumé){: style="color: steelblue"}.*{: style="color: grey; font-size: 80%"}
+_You can download the most recent version of my résumé in pdf in <http://pdf-resume.luispuerto.net>{: style="color: steelblue"} or at the [bottom of this page](#pdf-résumé){: style="color: steelblue"}._{: style="color: grey; font-size: 80%"}
 
 ## Profile
 
@@ -22,32 +22,25 @@ Hi, my name is Luis Puerto and I’m a dynamic and versatile Forest Engineer fro
 **On going:**{: style="color: grey"} **MSc. [iGEON][]. Master of Science in Geographic Information Science (GIS) and Earth Observation for Environmental Modeling and Natural Resource Management.** (120 ETCS | Online)  
 [Lund University][LundU] (Sweden) and [University of Twente][TwenteU] (Netherland)
 
-**2012:**{: style="color: grey"} **[Degree in Forestry and Environmental Engineering][ForestryDegree]**[^1] (240 ETCS), [University of León][ULeon], Spain.  
-Thesis / Senior project: ***"[El Pajariel][]"  Stand Management Plan.*** 
+**2012:**{: style="color: grey"} **[Bachelor’s Degree in Forestry and Environmental Engineering ][ForestryDegree]**[^1] (240 ETCS), [University of León][ULeon], Spain.  
+Thesis / Senior project: **_"[El Pajariel][]"  Stand Management Plan._*_** 
 
 ## Publications
 
 **2019:**{: style="color: grey"} 
 
 - Hernando A., Puerto L., Mola-Yudego B., Manzanera J.A., Garcia-Abril A., Maltamo M., Valbuena R. 2019.
-    *Estimation of forest biomass components using airborne LiDAR and multispectral sensors*.  [iForest Journal][iforest].   
+    _Estimation of forest biomass components using airborne LiDAR and multispectral sensors_.  [iForest Journal][iforest].   
     doi: [10.3832/ifor2735-012][]
 
 ## Experience
 
-**Sep 2019 - Jun 2020:**{: style="color: grey"} **Data Analyst at [European Forest Institute][EFI]**
+**Sep 2019 - Jun 2020:**{: style="color: grey"} **[European Forest Institute][EFI]. Data Analyst**
 
 - Working on the [Bioeconomy Programme][BioProg] at the Smart Forestry Area. 
-- Main project: [Forest Products Trade Flow database][TradeFlowsDB], related to the analysis of more than 100 GB of data from global trade flows, focusing in of forest product. 
-- R programing. Developing, maintaining, debugging and adding new functionality to a R package for data extraction, manipulation and analysis from different publicly available trade databases like UN Comtrade and EU Comext.
+- Main project: [Forest Products Trade Flow database][TradeFlowsDB], related to the analysis of more than 100 GB of data from global trade flows, focusing on forest products. 
+- R coding, developing, maintaining and debugging a R package for data extraction, manipulation and analysis from different publicly available trade databases like UN Comtrade and EU Comext.
 - Working with APIs, databases like MySQL, and Linux on server and desktop, to gather and store the data and to develop, debug and implement the final product
-
-
-**Ongoing since summer 2019:**{: style="color: grey"} **Volunteer at [US Forest Service][USFS]**
-
-- Creating a model on R for gap forest detection using LiDAR, the FIA and aerial photo. 
-- Handling and analysis of the full forest inventory of Oregon. 
-
 
 **2017-2018:**{: style="color: grey"} **Independent consultant**
 
@@ -57,15 +50,17 @@ Thesis / Senior project: ***"[El Pajariel][]"  Stand Management Plan.***
 
 **Sep-Dec 2016:**{: style="color: grey"} **[Kansalaisopisto Joensuu][KansalaisopistoJoensuu]**. **Spanish teacher**. 
 
-- Teaching a course of Spanish language for adults.
+- Teaching a Spanish language course.
+- Preparing course materials and organizing classes. 
 
 **2015-2017:**{: style="color: grey"} **[University of Eastern of Finland][UEF]. Different LiDAR projects as intern. 9 months in total.** 
 
-- Download, processing and analyzing the whole LiDAR information of Finland using [Fusion][], [LAStools][]. [LidR][] and others.
-- Scripting in [R language][RLanguage] to process and analyze [LiDAR][] data. Statistical modeling to yield biomass estimations.
-- Reference research and scientific writing about LiDAR and biomass estimation.
+- Download, processing and analyzing Finland’s full LiDAR dataset. 
+- [Fusion][], [LAStools][], [R][RLanguage], [LidR][] and others, to process and analyze LiDAR data. 
+- Statistical modeling to yield biomass estimations.  
+- Scientific writing about forest biomass, LiDAR and multispectral sensors. 
 
-**Nov 2014:**{: style="color: grey"} **[Metsäkeskus][]. Finnish language course internship**
+**Nov 2014:**{: style="color: grey"} **[Metsäkeskus][], Intern.** 
 
 - Creation of digital cartography using Metsäkeskus’ inventory data in Finnish. 
 - Able to work in a full Finnish language environment and interact other staff. 
@@ -73,13 +68,13 @@ Thesis / Senior project: ***"[El Pajariel][]"  Stand Management Plan.***
 **2014-2016:**{: style="color: grey"} **Intensive Finnish Language Courses.** 
 
 - More than 1500 hours in total, about Finnish language and culture. 
-- Able to work with people in an environment where language could be a barrier. 
+- Working successfully with international diverse people on an environment where language could be a barrier. 
 
 **May 2009 – Dec 2012:**{: style="color: grey"} **[Fundación Ciudad de la Energía][CIUDEN] (City of Energy Foundation), Spanish Government**.
 
 - Last position: Coordinator **of Technology & Innovation Area at Technology & Systems Department**
 - In charge of a multidisciplinary team of four members related to technology and programming.
-- Co-responsible to commission the digital platform for the *[Museo Nacional de la Energía][MNE]*. 1-million-euro project.
+- Co-responsible to commission the digital platform for the _[Museo Nacional de la Energía][MNE]_. 1-million-euro project.
 - Develop, implement and commission different kinds of **technological systems** such as public Wi-Fi networks, ticket-selling systems, geolocation systems for people and objects, and cloud computing systems.
 - Responsible of the **[Geographic Information Systems (GIS)][GIS]**. Cartography elaboration (such as two tourism maps, web apps or in-house cartography), data analysis, geodatabase keeping and in-house GIS training.
 - Responsible of the office tasks of **“[Assessment of the current phytosanitary status of European chestnut in El Bierzo (León, Spain)][CastaneaProject]”** project; managing field work, inventory operations, and data processing and analysis.
@@ -173,6 +168,7 @@ Thesis / Senior project: ***"[El Pajariel][]"  Stand Management Plan.***
 ### Complementary Activities
 
 - **Volunteering**:
+    - **[US Forest Service][USFS]**: Creating a model on R for gap forest detection using LiDAR, FIA and aerial photos. 
     - **[Albany Historic Carrousel][Carrousel]** in Oregon, US: Setting the animals, assembling the wooden structure and helping with the mechanical and electrical systems.
     - **[The Hour of Code][]** in Madrid, ES: Teaching code to 4th grade school students. 
     - Cultural volunteering in Joensuu, FI: Immigration inclusion, developing leisure programs for children.
