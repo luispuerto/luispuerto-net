@@ -27,8 +27,8 @@ source "https://rubygems.org"
 # gem "github-pages"
 # The following plugins are automatically loaded by the github-pages gem.
 group :github_pages_plugins do
-  # gem "jekyll", "~> 4.0" # to use the last version of Jekyll
-  gem "jekyll", github: "jekyll/jekyll" # use the master of the jekyll repo
+  gem "jekyll"
+  # gem "jekyll", github: "jekyll/jekyll" # use the master of the jekyll repo
   gem "activesupport"
   # gem "github-pages-health-check" # Not longer using ghpages
   # gem "html-pipeline" # Not longer using ghpages
