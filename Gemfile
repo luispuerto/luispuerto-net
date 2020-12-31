@@ -83,3 +83,5 @@ group :jekyll_plugins do
   gem "rake" 
   gem "liquid-c" # allow to build Jekyll faster.
 end
+
+gem "webrick", "~> 1.7"
