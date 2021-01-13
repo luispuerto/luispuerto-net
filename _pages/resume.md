@@ -2,7 +2,7 @@
 title: Résumé
 permalink: /resume/
 date: 2018-11-1 05:30:30 +00:00
-last_modified_at: 2020-09-27 21:53:52 +00:00
+last_modified_at: 2021-01-19 10:06:24 +00:00
 layout: single
 classes: wide
 author_profile: true
@@ -15,7 +15,7 @@ _You can download the most recent version of my résumé in pdf in <http://pdf-r
 
 ## Profile
 
-Hi, my name is Luis Puerto and I’m a dynamic and versatile Forest Engineer from Spain with more than 10 years of diverse and wide experience in GIS, remote sensing and data analysis. I have been working lately on projects involving LiDAR, biomass, coding —specially in R— and trade data. I have experience working internationally, with a wide range of technologies and in interdisciplinary teams. I have great ability to learn and an analytical mind. I am looking for challenging projects where I can use my background and skills while learning new ones in the process.
+I’m a dynamic and versatile Forest Engineer from Spain with more than 10 years of experience in GIS, remote sensing and data analysis. Lately, I have been working on projects involving LiDAR, biomass, coding —specially in R— and trade data. I have experience working internationally, with a wide range of technologies and in interdisciplinary teams. I’m always interested in learning new skills and I am looking for challenging projects where I can put to use my background and skills.
 
 ## Education
 
@@ -35,7 +35,7 @@ Thesis / Senior project: **_"[El Pajariel][]"  Stand Management Plan._*_**
 
 ## Experience
 
-**Sep 2019 - Jun 2020:**{: style="color: grey"} **[European Forest Institute][EFI]. Data Analyst**
+**Sep 2019 - Jun 2020:**{: style="color: grey"}[^2] **[European Forest Institute][EFI]. Data Analyst**
 
 - Working on the [Bioeconomy Programme][BioProg] at the Smart Forestry Area. 
 - Main project: [Forest Products Trade Flow database][TradeFlowsDB], related to the analysis of more than 100 GB of data from global trade flows, focusing on forest products. 
@@ -135,7 +135,7 @@ Thesis / Senior project: **_"[El Pajariel][]"  Stand Management Plan._*_**
 - [Fusion][], [LAStools][] & [LidR][]
 - Parallel computing
 - Cloud computing
-- [Git][], [GitHub][] & [GitLab][] & CI
+- [Git][], [GitHub][] & [GitLab][] & [CI/CD][]
 - Shell scripting
 - Jekyll & Web developing
 
@@ -186,6 +186,7 @@ src="https://www.dropbox.com/s/tba5d4eeja4vt2i/Luis%20Puerto%20Resume.pdf?raw=1&
 
 
 [^1]: Actually, this is when I converted my previous diploma to the new Bolonia framework. I've been a Forest Engineer, since 2008 when I graduated from my original studies. 
+[^2]: From July to Dec 2020 I've been on paternity leave and carrying out the move of my family from Finland to Switzerland
 
 [iGEON]: http://www.igeon.eu
 [LundU]: https://www.lu.se
@@ -243,3 +244,4 @@ src="https://www.dropbox.com/s/tba5d4eeja4vt2i/Luis%20Puerto%20Resume.pdf?raw=1&
 [QGIS]: https://www.qgis.org
 [tap]: https://github.com/OSGeo/homebrew-osgeo4mac
 [pdf-resume]: http://pdf-resume.luispuerto.net
+[CI/CD]: https://en.wikipedia.org/wiki/CI/CD
