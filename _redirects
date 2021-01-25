@@ -1,0 +1,14 @@
+# Redirects for some subdomains
+
+# Related to my resume
+
+https://resume.luispuerto.net/* https://luispuerto.net/resume/:splat 301! 
+http://resume.luispuerto.net/* https://luispuerto.net/resume/:splat 301! 
+
+https://pdf-resume.luispuerto.net/* https://www.dropbox.com/s/tba5d4eeja4vt2i/Luis%20Puerto%20Resume.pdf?dl=0/:splat 301! 
+http://pdf-resume.luispuerto.net/* https://www.dropbox.com/s/tba5d4eeja4vt2i/Luis%20Puerto%20Resume.pdf?dl=0/:splat 301! 
+
+# Redirect for the mail
+
+https://webmail.luispuerto.net/* https://mail.zoho.eu/:splat 301!
+http://webmail.luispuerto.net/* https://mail.zoho.eu/:splat 301!
