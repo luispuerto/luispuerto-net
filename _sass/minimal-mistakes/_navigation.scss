@@ -571,3 +571,28 @@
     padding-left: 3.25rem
   }
 }
+
+// Adding 'Contents' headline to the TOC
+#markdown-toc::before {
+    content: "Table of Contents";
+    font-weight: bold;
+    font-size: $type-size-3;
+}
+
+// Using numbers instead of bullets for listing
+
+#markdown-toc {
+  ul li, li, li ul, ul {
+    margin-bottom: 0.01em !important;
+    margin-top: 0.01em !important;
+    list-style: none; 
+    }
+
+  a {
+    display: block;
+    color: $muted-text-color;
+    font-size: $type-size-6;
+    text-decoration: none;
+  }
+}
+
