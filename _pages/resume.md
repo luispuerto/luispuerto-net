@@ -38,7 +38,7 @@ Thesis / Senior project: **_"[El Pajariel][]"  Stand Management Plan._**
 
 ## Experience
 
-**Currently:**{: style="color: grey"} **Consultant** on data analysis, GIS, remote sensing, forestry and more.  
+**Currently:**{: style="color: grey"} **Freelance consultant** on data analysis, GIS, remote sensing, forestry and more.  
 
 **Jun - Dec 2020:**{: style="color: grey"} **Paternity leave.**
 
@@ -52,11 +52,12 @@ I worked at [Bioeconomy Programme][BioProg] on the [Forest Products Trade Flow d
 - Delivered a detailed report about problems, suggestions and needed improvements, on the R package code and on the near future of the project. 
 
 
-**2017 - 2018:**{: style="color: grey"} **Freelance consultant.**
+**2017 - 2019:**{: style="color: grey"} **Freelance consultant.**
 
 - Developed and design several web sites using [Jekyll][] as a platform where I used HTML, CSS, [Liquid][], [Git][], [Continuous Integration][CI], [Ruby][] and [JavaScript][]; learning part of the skills along the way. 
 - Setup [Raspberry Pis][RaspberryPis] as a [R Studio server][RStudioServer], [VPN server][VpnServer], [NAS][], [cloud storage][CloudStorage], [wireless audio streaming][WAudio], [ad blocker][AdBlocker], internet speed logger and more.  
-- Cut computing time using [R][] from days to hours using parallel computing on [AWS][]cloud. 
+- Cut computing time using [R][] from days to hours using parallel computing on [AWS][] cloud. 
+- Played a key role on several projects related to R coding and OSGeo tools. 
 
 **2015 - 2017:**{: style="color: grey"} **[University of Eastern of Finland][UEF]. University of Eastern of Finland. Various LiDAR projects. 9 months in total.** 
 
@@ -131,7 +132,7 @@ From 2013 to the end of 2019, I’ve been traveling and living on several Europe
 - Course **“Forest Planning”**, by Castile and León Government (50 hours).
 - Course on **Project Management** by Adecco (15 hours)
 - Course of **Wonderware** by Wonderware Spain (35 hours).
-- Course about International Merchandise Statistics Trade by United Nations. 
+- Course about **International Merchandise Statistics Trade** by United Nations. 
 - I've assisted to many others talks, seminaries, conferences and congresses at local, national and international level.
 
 ## Skills
