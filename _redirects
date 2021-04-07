@@ -10,5 +10,5 @@ http://pdf-resume.luispuerto.net/* https://www.dropbox.com/s/tba5d4eeja4vt2i/Lui
 
 # Redirect for the mail
 
-https://webmail.luispuerto.net/* https://mail.zoho.eu/:splat 301!
-http://webmail.luispuerto.net/* https://mail.zoho.eu/:splat 301!
+https://webmail.luispuerto.net/* https://mail.infomaniak.com/:splat 301!
+http://webmail.luispuerto.net/* https://mail.infomaniak.com/:splat 301!
