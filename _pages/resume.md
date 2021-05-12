@@ -2,7 +2,7 @@
 title: Résumé
 permalink: /resume/
 date: 2018-11-1 05:30:30 +00:00
-last_modified_at: 2021-02-26 19:55:06 +00:00
+last_modified_at: 2021-05-12 19:10:43 +00:00
 layout: single
 classes: wide
 author_profile: true
@@ -155,12 +155,14 @@ From 2013 to the end of 2019, I’ve been traveling and living on several Europe
 
 - :es: Spanish: Native Speaker
 - :us: English: Bilingual
+- :de: German: Beginner
 - :finland: Finnish: A2
 - :sweden: Swedish: A1
 
 ### Professional
 
-- [Data analysis][DataAnalysis]
+- [Data science & analysis][DataAnalysis]
+- Data visualization
 - [GIS][] & cartography
 - [Remote sensing][RemoteSensing] & [LiDAR][]
 - Project management
@@ -176,7 +178,7 @@ From 2013 to the end of 2019, I’ve been traveling and living on several Europe
 - Critical & system thinker
 - Productive & organized
 - International perspective
-- Global traveler
+- Willing to travel
 - Social & independent
 
 ## “Extracurricular activities”
