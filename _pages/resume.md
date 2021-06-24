@@ -18,7 +18,7 @@ _You can download the most recent version of my résumé in pdf in <http://pdf-r
 
 ## Profile
 
-I’m a dynamic and versatile Engineer from Spain with more than 10 years of experience in GIS, remote sensing and data analysis. Lately, I have been working on projects involving LiDAR, biomass, coding —specially in R— and trade data. I have experience working internationally, with a wide range of technologies and in interdisciplinary teams. I’m always interested in learning new skills and I am looking for challenging projects where I can put to use my background and skills.
+I’m a dynamic and versatile Engineer from Spain with more than 15 years of experience on data science and analysis, GIS, and remote sensing. Lately, I’ve been working on projects related to LiDAR, biomass, trade data and coding —specially in R. I have experience working internationally, with a wide range of technologies and in interdisciplinary teams. I’m always interested in learning new skills and I’m looking for challenging projects where I can put to use my background and skills.
 
 ## Educational Background
 
