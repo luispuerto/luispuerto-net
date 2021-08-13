@@ -2,7 +2,7 @@
 title: Résumé
 permalink: /resume/
 date: 2018-11-1 05:30:30 +00:00
-last_modified_at: 2021-05-12 19:10:43 +00:00
+last_modified_at: 2021-08-13 20:22:27 +00:00
 layout: single
 classes: wide
 author_profile: true
@@ -18,7 +18,7 @@ _You can download the most recent version of my résumé in pdf in <http://pdf-r
 
 ## Profile
 
-I’m a dynamic and versatile Engineer from Spain with more than 15 years of experience on data science and analysis, GIS, and remote sensing. Lately, I’ve been working on projects related to LiDAR, biomass, trade data and coding —specially in R. I have experience working internationally, with a wide range of technologies and in interdisciplinary teams. I’m always interested in learning new skills and I’m looking for challenging projects where I can put to use my background and skills.
+I’m a dynamic and versatile engineer from Spain with more than 15 years of experience on data science and analysis, GIS, and remote sensing. Lately, I’ve been working on projects related to LiDAR, biomass, and trade data with special emphasis on R coding. I have experience working internationally, with a wide range of technologies and in interdisciplinary teams. I’m always interested in learning new skills and I’m looking for challenging projects where I can put to good use my background and skills.
 
 ## Educational Background
 
@@ -38,9 +38,9 @@ Thesis / Senior project: **_"[El Pajariel][]"  Stand Management Plan._**
 
 ## Experience
 
-**Currently:**{: style="color: grey"} **Freelance consultant** on data analysis, GIS, remote sensing, forestry and more.  
+**Currently:**{: style="color: grey"} **Freelance Consultant** on data science, GIS, remote sensing, forestry and more.  
 
-**Jun - Dec 2020:**{: style="color: grey"} **Paternity leave.**
+**Jun - Dec 2020:**{: style="color: grey"} **Paternity leave and moved to Switzerland**
 
 **Sep 2019 - Jun 2020:**{: style="color: grey"} **[European Forest Institute][EFI]. Data Analyst**  
 I worked at [Bioeconomy Programme][BioProg] on the [Forest Products Trade Flow database][TradeFlowsDB] project to [analyze global trade flows][trade-flows] during the last 30 years with a focus of forest products. 
@@ -51,27 +51,21 @@ I worked at [Bioeconomy Programme][BioProg] on the [Forest Products Trade Flow d
 - Successfully debugged an R package for cleaning the data and fixed coding problems. 
 - Delivered a detailed report about problems, suggestions and needed improvements, on the R package code and on the near future of the project. 
 
+**2013 - 2019:**{: style="color: grey"} **International Freelance Consultant.**
 
-**2017 - 2019:**{: style="color: grey"} **Freelance consultant.**
+I developed my activity mainly in Finland, but also in Spain, Sweden, Austria, and USA, and worked with some institutions like the [University of Eastern of Finland][UEF], the [Finnish Forest Center][FFC], or the [US Forest Service][USFS]. Some of the projects I worked on were: 
 
-- Developed and design several web sites using [Jekyll][] as a platform where I used HTML, CSS, [Liquid][], [Git][], [Continuous Integration][CI], [Ruby][] and [JavaScript][]; learning part of the skills along the way. 
-- Setup [Raspberry Pis][RaspberryPis] as a [R Studio server][RStudioServer], [VPN server][VpnServer], [NAS][], [cloud storage][CloudStorage], [wireless audio streaming][WAudio], [ad blocker][AdBlocker], internet speed logger and more.  
-- Cut computing time using [R][] from days to hours using parallel computing on [AWS][] cloud. 
-- Played a key role on several projects related to R coding and OSGeo tools. 
-
-**2015 - 2017:**{: style="color: grey"} **[University of Eastern of Finland][UEF]. University of Eastern of Finland. Various LiDAR projects. 9 months in total.** 
-
-- Developed scripts to download Finland’s full [LiDAR][] dataset —~1TB at the moment— and to processed and analyze it using [Fusion][], [LAStools][], [R][], [LidR][] and other tools. 
+- Developed scripts to download Finland’s full [LiDAR][] dataset —more than 1TB— and to processed and analyze it using [Fusion][], [LAStools][], [R][], [LidR][] and other tools. 
 - Produced and developed statistical models to yield biomass estimations.  
 - Wrote and published a scientific paper on biomass, LiDAR and multispectral sensors. 
-
-**2013 - 2016:**{: style="color: grey"} **Diverse activities:**
-
-- Taught Spanish language at Joensuu’s municipal adults education center. 
+- Cut [R-analysis][R] computing-time from days to hours using parallel [computing on cloud][AWS]. 
+- Modeled the detection of forest gaps with R using LiDAR data, [FIA][] and aerial photos.
+- Played a key role on several projects related to R coding and OSGeo tools.
 - Helped to teach GIS using ArcGIS at university level. 
-- Created digital cartography using the forest inventory of the Finish Forest Center. 
-- Survived to a Finnish intensive course of more than 1500 hours.
-
+- Created online digital cartography using the Finnish forest inventory
+- Developed and design several web sites using [Jekyll][] as a platform where I used HTML, CSS, [Liquid][], [Git][], [Continuous Integration][CI], [Ruby][] and [JavaScript][]. 
+- Setup [Raspberry Pis][RaspberryPis] as a [R Studio server][RStudioServer], [VPN server][VpnServer], [NAS][], [cloud storage][CloudStorage], [wireless audio streaming][WAudio], [ad blocker][AdBlocker], internet speed logger and more.  
+- Produced educational materials and provided training. 
 
 **2009 – 2012:**{: style="color: grey"} **[Fundación Ciudad de la Energía][CIUDEN] (City of Energy Foundation), Spanish Government**.
 
@@ -82,40 +76,20 @@ I worked as coordinator of Technology & Innovation Area close to the General Dir
 - Delivered GIS training for inhouse staff and for the general public.  
 - Led [scientific study’s][CastaneaProject] fieldwork: inventory operations, data processing and analysis. 
 
-**2009:**{: style="color: grey"} **Freelance consultant for [TRAGSATEC][]; collaborate in the preliminary plan for the Pajariel Forestry Park.**
+## Additional Noteworthy Experience 
 
-- Successfully delivered a forestry report that was essential the final plan presented to the public on a town-hall. 
-- Led the team that collected data on the field, create the cartography and the report. 
-- Developed a GIS multi-criteria analysis that helped produce the proposal for leisure activities and restoration of the area. 
-- Delivered insights about how to develop and proceed to create a citizen participation process for the project.  
+On **2006** I started to work as a **freelance consultant** in Spain where I collaborated with companies like  [Tecnosylva][] or [TRAGSATEC][], for private individuals and for small and big municipalities, like Ponferrada Municipality. I participate in small and big projects like the “Preliminary plan for the Pajariel Forestry Park” in [Ponferrada][], “Integral Management of the Ponferrada’s Mountains,” or the “Inventory of Forest Roads in Laciana”. Some of my main activities and accomplishes were: 
 
-**2005-2011:**{: style="color: grey"} **Several projects as freelance such as:** 
-
-- Successfully create cartography, analysis and reports using ArcGIS, ArcPAD & ArcView and blueprints using AutoCAD. 
-- Delivered a judicial report and a testimony in court that was key for the side that hired me to win the case. 
-
-**2007-2008:**{: style="color: grey"} **[Ponferrada Municipality][Ponferrada] (9 months) at the project “[Integral Management of the Ponferrada’s Mountains][ForestPonfeProject]”. Forest and office technician and consultant:**
-
-- Successfully performed the inventory of 12000 ha of forest area while and took management sessions on the ground. 
-- Delivered a strategic management report for the area for the following 10 years. Data analyst and cartography was key. 
-
-**2006:**{: style="color: grey"} **[Tecnosylva][] SL. (6 months). Forest technician and consultant:**
-
-- Performed the inventory of over 2000 km of forest road with an off-road vehicle, a GPS and ArcPAD. 
+- Successfully delivered reports that were essential to defend an environmental project public town-hall meetings. 
+- Advised and produced insights about citizen participation on environmental projects. 
+- Lead teams to collect data on the field on thousands of hectares using PDA, Vertex, and electronic caliper. 
+- Successfully took hundreds of management decisions on ground and delivered a strategic 10-year management plan where data analyst and cartography were key. 
+- Accomplished the creation of cartography, analysis, reports, and blueprints using ArcGIS, ArcPAD, ArcView and AutoCAD. 
+- Developed a GIS multi-criteria analyses to zone a forest area for several purposes and adequate it for leisure activities. 
+- Performed the inventory of over 2000 km of forest roads with an off-road vehicle, a GPS and ArcPAD. 
 - Digitalized thousands of aerial photos on ArcGIS as cartography preparation for the field work.
 - Delimited hundreds of km of forest areas using a sub metric GPS and processed all the data. 
-- Successfully delivered forest inventory data of thousands of ha. of forest area using a PDA, Vertex, and electronic caliper.
-
-## International Traveling
-
-From 2013 to the end of 2019, I’ve been traveling and living on several European countries and in the US due to family circumstances. On this these trips developed several projects and participate on diverse activities like: 
-
-- Volunteer at [US Forest Service][USFS] to create a model on R for gap forest detection using LiDAR, FIA and aerial photos.
-- Volunteer at [Albany Historic Carousel][Carrousel] in Oregon (US) where I set the animals, assembled the wooden structure and helped with the mechanical and electrical systems.
-- I thought to code to 4th grade school kids during the [Hour of Code][HourOfCode] in Madrid. 
-- Cultural volunteering in Joensuu, FI. I helped on immigration inclusion, developing leisure programs for children and to create a photo expo on the streets of Joensuu with portraits of locals and immigrants. 
-- Attended several courses, seminars and workshops on statistics, environmental management and data management and science on several institutions like the Swedish [University of Agricultural Sciencese][SLU], [Oregon State University][OSU] or [University of Eastern of Finland ][UEF]
-
+- Delivered a judicial report and a testimony in court that was key to win the case. 
 
 ## Additional Training
 
@@ -181,11 +155,17 @@ From 2013 to the end of 2019, I’ve been traveling and living on several Europe
 - Willing to travel
 - Social & independent
 
-## “Extracurricular activities”
+## “Extracurricular activities”, Volunteering & More
 
+- I am always eager to expand my knowledge and learn from others and I have attended several courses, seminars and workshops on statistics, environmental management and data management and science on several institutions like the [University of Agricultural Sciencese][SLU], [Oregon State University][OSU] or [University of Eastern of Finland ][UEF].
+- Volunteer at [Albany Historic Carousel][Carrousel] in Oregon (US) where I set the animals, assembled the wooden structure and helped with the mechanical and electrical systems.
+- I thought to code to 4th grade school kids during the [Hour of Code][HourOfCode] in Madrid. 
+- Cultural volunteering in Joensuu, FI. I helped on immigration inclusion, developing leisure programs for children and to create a photo expo on the streets of Joensuu with portraits of locals and immigrants. 
+- Taught Spanish language and culture. 
 - I like adventure and challenges. I love hiking and camping in the wilderness. Travel enthusiast and explorer.
-- Always interested in trying new things and test new tools to improve, specially my productivity.  
-- Photography enthusiasm. I spend most of my free time reading and learning.  
+- I survived to a Finnish intensive course of more than 1500 hours.
+- Always interested in trying new things and test new tools to improve, especially my productivity.  
+- Photography and space enthusiasm. I spend most of my free time reading, learning, and experimenting.  
 
 ## PDF Résumé
 
@@ -208,7 +188,18 @@ src="https://www.dropbox.com/s/tba5d4eeja4vt2i/Luis%20Puerto%20Resume.pdf?raw=1&
 [EFI]: https://www.efi.int
 [BioProg]: https://efi.int/bioeconomy
 [TradeFlowsDB]: https://www.efi.int/knowledge/databases/fptf
+[trade-flows]: https://www.linkedin.com/in/lpuerto/detail/treasury/position:1522090786/?entityUrn=urn%3Ali%3Afsd_profileTreasuryMedia%3A(ACoAAAFN5OIBd1Qcymjmu4iRN7Ci6QvsTuOegLw%2C1569574162928)&parentEntityUrn=urn%3Ali%3Afsd_profilePosition%3A(ACoAAAFN5OIBd1Qcymjmu4iRN7Ci6QvsTuOegLw%2C1522090786)&section=position%3A1522090786&treasuryCount=1&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BAjv6rFlJQyO54X6Y2xnGSQ%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_profile_view_base-treasury_thumbnail_cell
 [UnComtrade]: https://duckduckgo.com/?q=comtrade&t=osx&ia=web
+[UEF]: https://www.uef.fi/
+[FFC]: https://www.metsakeskus.fi/en
+[USFS]: https://www.fs.usda.gov/
+[LiDAR]: https://en.wikipedia.org/wiki/Lidar
+[Fusion]: http://forsys.cfr.washington.edu/fusion/fusion_overview.html
+[LAStools]: https://rapidlasso.com/lastools/
+[R]: https://www.r-project.org/about.html
+[LidR]: https://github.com/Jean-Romain/lidR
+[AWS]: https://aws.amazon.com
+[FIA]: https://www.fia.fs.fed.us/
 [Jekyll]: https://jekyllrb.com
 [Liquid]: https://shopify.github.io/liquid/
 [Git]: https://git-scm.com
@@ -222,21 +213,11 @@ src="https://www.dropbox.com/s/tba5d4eeja4vt2i/Luis%20Puerto%20Resume.pdf?raw=1&
 [CloudStorage]: https://en.wikipedia.org/wiki/Nextcloud
 [WAudio]: http://luispuerto.net/blog/2018/01/18/convert-you-pi-in-an-airplay-receiver/
 [AdBlocker]: https://en.wikipedia.org/wiki/Pi-hole
-[R]: https://www.r-project.org/about.html
-[AWS]: https://aws.amazon.com
-[UEF]: https://www.uef.fi/
-[Fusion]: http://forsys.cfr.washington.edu/fusion/fusion_overview.html
-[LAStools]: https://rapidlasso.com/lastools/
-[LidR]: https://github.com/Jean-Romain/lidR
 [CIUDEN]: http://ciuden.es/
 [CastaneaProject]: http://www.castanea.es/noticia.php?id=28
+[Tecnosylva]: https://technosylva.com
 [TRAGSATEC]: http://www.tragsa.es/es/grupo-tragsa/empresas/Paginas/tragsatec.aspx
 [Ponferrada]: https://www.ponferrada.org/en
-[ForestPonfeProject]: http://www.amorteira.org/PDF/2007_Los%20bosques%20una%20prioridad%20para%20ponferrada.pdf
-[Tecnosylva]: https://technosylva.com
-[USFS]: https://www.fs.usda.gov/
-[Carrousel]: http://albanycarousel.com/home/
-[HourOfCode]: https://hourofcode.com
 [ArcGIS]: https://www.esri.com/en-us/arcgis/about-arcgis/overview
 [QGIS]: https://www.qgis.org
 [OSGeo]: https://www.osgeo.org/
@@ -245,14 +226,13 @@ src="https://www.dropbox.com/s/tba5d4eeja4vt2i/Luis%20Puerto%20Resume.pdf?raw=1&
 [GitHub]: https://github.com
 [GitLab]: https://gitlab.com
 [CI/CD]: https://en.wikipedia.org/wiki/CI/CD
-[GIS]: https://en.wikipedia.org/wiki/Geographic_information_system
-[pdf-resume]: http://pdf-resume.luispuerto.net
-[LiDAR]: https://en.wikipedia.org/wiki/Lidar
 [DataAnalysis]: https://en.wikipedia.org/wiki/Data_analysis
-[TradeData]: https://unstats.un.org/unsd/trade/default.asp
+[GIS]: https://en.wikipedia.org/wiki/Geographic_information_system
 [RemoteSensing]: https://en.wikipedia.org/wiki/Remote_sensing
+[TradeData]: https://unstats.un.org/unsd/trade/default.asp
 [biomass]: https://en.wikipedia.org/wiki/Biomass
 [SLU]: https://www.slu.se/
 [OSU]: https://oregonstate.edu/
-
-[trade-flows]: https://www.linkedin.com/in/lpuerto/detail/treasury/position:1522090786/?entityUrn=urn%3Ali%3Afsd_profileTreasuryMedia%3A(ACoAAAFN5OIBd1Qcymjmu4iRN7Ci6QvsTuOegLw%2C1569574162928)&parentEntityUrn=urn%3Ali%3Afsd_profilePosition%3A(ACoAAAFN5OIBd1Qcymjmu4iRN7Ci6QvsTuOegLw%2C1522090786)&section=position%3A1522090786&treasuryCount=1&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BAjv6rFlJQyO54X6Y2xnGSQ%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_profile_view_base-treasury_thumbnail_cell
+[Carrousel]: http://albanycarousel.com/home/
+[HourOfCode]: https://hourofcode.com
+[pdf-resume]: http://pdf-resume.luispuerto.net
