@@ -14,7 +14,7 @@ gemfile: Gemfile
 branches:
   only:
     # Change this to gh-pages if you're deploying using the gh-pages branch
-    - master
+    - main
     - /.*/
 env:
   global:
@@ -23,10 +23,10 @@ env:
 git:
   lfs_skip_smudge: true
 script:
-  - if [ "$TRAVIS_BRANCH" = "master" ]; then 
+  - if [ "$TRAVIS_BRANCH" = "main" ]; then 
       bundle exec rake algolia build test; 
     fi 
-  - if [ "$TRAVIS_BRANCH" != "master" ]; then
+  - if [ "$TRAVIS_BRANCH" != "main" ]; then
       bundle exec rake build test;
     fi
 
