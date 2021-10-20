@@ -2,7 +2,7 @@
 title: Résumé
 permalink: /resume/
 date: 2018-11-1 05:30:30 +00:00
-last_modified_at: 2021-08-13 20:22:27 +00:00
+last_modified_at: 2021-10-22 10:49:47 +00:00
 layout: single
 classes: wide
 author_profile: true
@@ -38,7 +38,8 @@ Thesis / Senior project: **_"[El Pajariel][]"  Stand Management Plan._**
 
 ## Experience
 
-**Currently:**{: style="color: grey"} **Freelance Consultant** on data science, GIS, remote sensing, forestry and more.  
+**Currently:**{: style="color: grey"} **Spatial and Data Scientist and Analyst Freelance Consultant**   
+Working on data science and analysis, GIS, remote sensing, forestry and more. 
 
 **Jun - Dec 2020:**{: style="color: grey"} **Paternity leave and moved to Switzerland**
 
@@ -76,7 +77,7 @@ I worked as coordinator of Technology & Innovation Area close to the General Dir
 - Delivered GIS training for inhouse staff and for the general public.  
 - Led [scientific study’s][CastaneaProject] fieldwork: inventory operations, data processing and analysis. 
 
-## Additional Noteworthy Experience 
+## Additional Noteworthy Experience
 
 On **2006** I started to work as a **freelance consultant** in Spain where I collaborated with companies like  [Tecnosylva][] or [TRAGSATEC][], for private individuals and for small and big municipalities, like Ponferrada Municipality. I participate in small and big projects like the “Preliminary plan for the Pajariel Forestry Park” in [Ponferrada][], “Integral Management of the Ponferrada’s Mountains,” or the “Inventory of Forest Roads in Laciana”. Some of my main activities and accomplishes were: 
 
@@ -111,7 +112,7 @@ On **2006** I started to work as a **freelance consultant** in Spain where I col
 
 ## Skills
 
-### Computer 
+### Computer
 
 - [ArcGIS][] Desktop & Server
 - [QGIS][] & [OSGeo][]
