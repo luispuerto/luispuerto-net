@@ -1,6 +1,6 @@
 ---
 title: Luis Puerto
-browser_title: Luis Puerto \| Forestry \| Research \| GIS \| Remote Sensing
+browser_title: Luis Puerto \| DataScience \| GIS \| RemoteSensing \| Coding \| Research \| EnvEngineering
 layout: splash
 classes:
   - landing
