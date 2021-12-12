@@ -2,7 +2,7 @@
 title: Résumé
 permalink: /resume/
 date: 2018-11-1 05:30:30 +00:00
-last_modified_at: 2021-10-22 10:49:47 +00:00
+last_modified_at: 2021-12-12 13:10:12 +00:00
 layout: single
 classes: wide
 author_profile: true
