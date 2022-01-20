@@ -117,9 +117,9 @@ twitter_max_length: 280
 
 # Analytics
 analytics:
-  provider               : "google" # false (default), "google", "google-universal", "custom"
+  provider               : "false" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : "UA-1931812-1"
+    tracking_id          : # "UA-1931812-1"
     anonymize_ip         : # true, false (default)
 
 
