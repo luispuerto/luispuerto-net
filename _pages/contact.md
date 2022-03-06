@@ -10,7 +10,7 @@ header:
   overlay_image: /assets/images/pages/header-contact.jpg
 ---
 
-### Right now I'm living in... 
+### Right now I'm living in...
 
 ...the beautiful and steep <a style="color: #000000;" href="https://en.wikipedia.org/wiki/Zürich">**Zürich**{: .x-large}</a> <img class="emoji-img" title=":mountain_railway:" alt=":mountain_railway:" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/mountain-railway_1f69e.png" height="30" width="30">, in the mountainous <img class="emoji-img" title=":mountain_snow:" alt=":mountain_snow:" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/snow-capped-mountain_1f3d4.png" height="30" width="30"><img class="emoji-img" title=":mountain_cableway:" alt=":mountain_cableway:" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/mountain-cableway_1f6a0.png" height="30" width="30"> <a style="color: #000000;" href="https://en.wikipedia.org/wiki/Switzerland">Switzerland</a><img class="emoji-img" title=":switzerland::" alt=":switzerland::" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/237/flag-for-switzerland_1f1e8-1f1ed.png" height="30" width="30">, [Europe](https://en.wikipedia.org/wiki/Europe){: style="color: #000000;"} <img class="emoji-img" title=":eu:" alt=":eu:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f1ea-1f1fa.png" height="30" width="30">[^1]  
 {: .large style="margin: 0 0 0.1em"}
@@ -23,7 +23,7 @@ header:
 ### You can contact me on my:
 
   - :mailbox: email: ***[luis@luispuerto.net](mailto:luis@luispuerto.net){: style="color: black"}***   
-      - <i class="fas fa-fingerprint"></i> **[GPG fingerprint](https://en.wikipedia.org/wiki/Public_key_fingerprint){: style="color: black"}:** *9C00 2FD1 29AA B3DA AF48  86C1 1BAC FFF4 421C 6F24*
+      - <i class="fas fa-fingerprint"></i> **[GPG fingerprint](https://en.wikipedia.org/wiki/Public_key_fingerprint){: style="color: black"}:** *3976 2A49 F4F9 2358 BA98  D089 7E4C D987 3EAD 04E5*
       {: style="list-style: none"}
   - <i class="fab fa-skype" style="color: #00AFF0"></i> skype: ***[luiss.puerto](skype:luiss.puerto?chat){: style="color: black"}***
   - <i class="fab fa-twitter"></i> twitter: ***[@lpuerto](https://twitter.com/lpuerto){: style="color: black"}***   
