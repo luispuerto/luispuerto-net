@@ -34,12 +34,15 @@ Thesis / Senior project: **_"[El Pajariel][]"  Stand Management Plan._**
 
 - Hernando A., Puerto L., Mola-Yudego B., Manzanera J.A., Garcia-Abril A., Maltamo M., Valbuena R. 2019.
     _Estimation of forest biomass components using airborne LiDAR and multispectral sensors_.  [iForest Journal][iforest].   
-    doi: [10.3832/ifor2735-012][]
+    doi: [10.3832/ifor2735-012][hernando2019]
 
 ## Experience
 
-**Currently:**{: style="color: grey"} **Spatial and Data Scientist and Analyst Freelance Consultant**   
-Working on data science and analysis, GIS, remote sensing, forestry and more. 
+**Mar 2022 - Currently:**{: style="color: grey"} **[Quantis][Qis]. Sustainability Consultant & AgroForestry, GIS and Remote Sensing Expert**
+Supporting organizations on transitioning from _business as usual_ to _business at its best_ within our planetary boundaries.
+
+**Jan 2021 - Feb 2022:**{: style="color: grey"} **Spatial and Data Scientist and Analyst Freelance Consultant**   
+I worked on some projects related to data science and analysis, GIS, remote sensing, forestry and more. 
 
 **Jun - Dec 2020:**{: style="color: grey"} **Paternity leave and moved to Switzerland**
 
@@ -178,62 +181,63 @@ src="https://www.dropbox.com/s/tba5d4eeja4vt2i/Luis%20Puerto%20Resume.pdf?raw=1&
 
 [^1]: Actually, this is when I converted my previous diploma to the new Bolonia framework. I've been a Forest Engineer, since 2008 when I graduated from my original studies. 
 
-[iGEON]: http://www.igeon.eu
-[LundU]: https://www.lu.se
-[TwenteU]: https://www.utwente.nl/en/
-[ForestryDegree]: https://www.unileon.es/estudiantes/estudiantes-grado/oferta-de-estudios/grado-en-ingenieria-forestal-y-del-medio-natural
-[ULeon]: https://www.unileon.es/
-[El Pajariel]: https://es.wikipedia.org/wiki/Monte_Pajariel
-[iforest]: https://iforest.sisef.org
-[10.3832/ifor2735-012]: https://doi.org/10.3832/ifor2735-012
-[EFI]: https://www.efi.int
-[BioProg]: https://efi.int/bioeconomy
-[TradeFlowsDB]: https://www.efi.int/knowledge/databases/fptf
-[trade-flows]: https://www.linkedin.com/in/lpuerto/detail/treasury/position:1522090786/?entityUrn=urn%3Ali%3Afsd_profileTreasuryMedia%3A(ACoAAAFN5OIBd1Qcymjmu4iRN7Ci6QvsTuOegLw%2C1569574162928)&parentEntityUrn=urn%3Ali%3Afsd_profilePosition%3A(ACoAAAFN5OIBd1Qcymjmu4iRN7Ci6QvsTuOegLw%2C1522090786)&section=position%3A1522090786&treasuryCount=1&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BAjv6rFlJQyO54X6Y2xnGSQ%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_profile_view_base-treasury_thumbnail_cell
-[UnComtrade]: https://duckduckgo.com/?q=comtrade&t=osx&ia=web
-[UEF]: https://www.uef.fi/
-[FFC]: https://www.metsakeskus.fi/en
-[USFS]: https://www.fs.usda.gov/
-[LiDAR]: https://en.wikipedia.org/wiki/Lidar
-[Fusion]: http://forsys.cfr.washington.edu/fusion/fusion_overview.html
-[LAStools]: https://rapidlasso.com/lastools/
-[R]: https://www.r-project.org/about.html
-[LidR]: https://github.com/Jean-Romain/lidR
-[AWS]: https://aws.amazon.com
-[FIA]: https://www.fia.fs.fed.us/
-[Jekyll]: https://jekyllrb.com
-[Liquid]: https://shopify.github.io/liquid/
-[Git]: https://git-scm.com
-[CI]: https://en.wikipedia.org/wiki/Continuous_integration
-[Ruby]: https://en.wikipedia.org/wiki/Ruby_(programming_language)
-[JavaScript]: https://en.wikipedia.org/wiki/JavaScript
-[RaspberryPis]: https://www.raspberrypi.org
-[RStudioServer]: https://www.rstudio.com/products/rstudio/download-server/
-[VpnServer]: https://www.openvpn.net
-[NAS]: https://en.wikipedia.org/wiki/Samba_(software)
-[CloudStorage]: https://en.wikipedia.org/wiki/Nextcloud
-[WAudio]: http://luispuerto.net/blog/2018/01/18/convert-you-pi-in-an-airplay-receiver/
 [AdBlocker]: https://en.wikipedia.org/wiki/Pi-hole
-[CIUDEN]: http://ciuden.es/
-[CastaneaProject]: http://www.castanea.es/noticia.php?id=28
-[Tecnosylva]: https://technosylva.com
-[TRAGSATEC]: http://www.tragsa.es/es/grupo-tragsa/empresas/Paginas/tragsatec.aspx
-[Ponferrada]: https://www.ponferrada.org/en
 [ArcGIS]: https://www.esri.com/en-us/arcgis/about-arcgis/overview
-[QGIS]: https://www.qgis.org
-[OSGeo]: https://www.osgeo.org/
-[RStats]: https://www.r-project.org/about.html
-[Python]: https://www.esri.com/en-us/arcgis/about-arcgis/overview
+[AWS]: https://aws.amazon.com
+[biomass]: https://en.wikipedia.org/wiki/Biomass
+[BioProg]: https://efi.int/bioeconomy
+[Carrousel]: http://albanycarousel.com/home/
+[CastaneaProject]: http://www.castanea.es/noticia.php?id=28
+[CI]: https://en.wikipedia.org/wiki/Continuous_integration
+[CI/CD]: https://en.wikipedia.org/wiki/CI/CD
+[CIUDEN]: http://ciuden.es/
+[CloudStorage]: https://en.wikipedia.org/wiki/Nextcloud
+[DataAnalysis]: https://en.wikipedia.org/wiki/Data_analysis
+[EFI]: https://www.efi.int
+[El Pajariel]: https://es.wikipedia.org/wiki/Monte_Pajariel
+[FFC]: https://www.metsakeskus.fi/en
+[FIA]: https://www.fia.fs.fed.us/
+[ForestryDegree]: https://www.unileon.es/estudiantes/estudiantes-grado/oferta-de-estudios/grado-en-ingenieria-forestal-y-del-medio-natural
+[Fusion]: http://forsys.cfr.washington.edu/fusion/fusion_overview.html
+[GIS]: https://en.wikipedia.org/wiki/Geographic_information_system
+[Git]: https://git-scm.com
 [GitHub]: https://github.com
 [GitLab]: https://gitlab.com
-[CI/CD]: https://en.wikipedia.org/wiki/CI/CD
-[DataAnalysis]: https://en.wikipedia.org/wiki/Data_analysis
-[GIS]: https://en.wikipedia.org/wiki/Geographic_information_system
-[RemoteSensing]: https://en.wikipedia.org/wiki/Remote_sensing
-[TradeData]: https://unstats.un.org/unsd/trade/default.asp
-[biomass]: https://en.wikipedia.org/wiki/Biomass
-[SLU]: https://www.slu.se/
-[OSU]: https://oregonstate.edu/
-[Carrousel]: http://albanycarousel.com/home/
+[hernando2019]: https://doi.org/10.3832/ifor2735-012
 [HourOfCode]: https://hourofcode.com
+[iforest]: https://iforest.sisef.org
+[iGEON]: http://www.igeon.eu
+[JavaScript]: https://en.wikipedia.org/wiki/JavaScript
+[Jekyll]: https://jekyllrb.com
+[LAStools]: https://rapidlasso.com/lastools/
+[LiDAR]: https://en.wikipedia.org/wiki/Lidar
+[LidR]: https://github.com/Jean-Romain/lidR
+[Liquid]: https://shopify.github.io/liquid/
+[LundU]: https://www.lu.se
+[NAS]: https://en.wikipedia.org/wiki/Samba_(software)
+[OSGeo]: https://www.osgeo.org/
+[OSU]: https://oregonstate.edu/
 [pdf-resume]: http://pdf-resume.luispuerto.net
+[Ponferrada]: https://www.ponferrada.org/en
+[Python]: https://www.esri.com/en-us/arcgis/about-arcgis/overview
+[QGIS]: https://www.qgis.org
+[Qis]: https://quantis-intl.com/
+[R]: https://www.r-project.org/about.html
+[RaspberryPis]: https://www.raspberrypi.org
+[RemoteSensing]: https://en.wikipedia.org/wiki/Remote_sensing
+[RStats]: https://www.r-project.org/about.html
+[RStudioServer]: https://www.rstudio.com/products/rstudio/download-server/
+[Ruby]: https://en.wikipedia.org/wiki/Ruby_(programming_language)
+[SLU]: https://www.slu.se/
+[Tecnosylva]: https://technosylva.com
+[trade-flows]: https://efi.int/knowledge/databases/fptf
+[TradeData]: https://unstats.un.org/unsd/trade/default.asp
+[TradeFlowsDB]: https://www.efi.int/knowledge/databases/fptf
+[TRAGSATEC]: http://www.tragsa.es/es/grupo-tragsa/empresas/Paginas/tragsatec.aspx
+[TwenteU]: https://www.utwente.nl/en/
+[UEF]: https://www.uef.fi/
+[ULeon]: https://www.unileon.es/
+[UnComtrade]: https://duckduckgo.com/?q=comtrade&t=osx&ia=web
+[USFS]: https://www.fs.usda.gov/
+[VpnServer]: https://www.openvpn.net
+[WAudio]: http://luispuerto.net/blog/2018/01/18/convert-you-pi-in-an-airplay-receiver/
