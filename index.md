@@ -10,9 +10,9 @@ header:
   overlay_filter2: "0.7"
   overlay_perc: "42" 
 excerpt: | 
+  #Sustainability :recycle: #Forestry :evergreen_tree: #Agroforestry :ear_of_rice: #EnvEngineering :seedling:           
   #DataScience :telescope: #DataAnalysis :bulb: #DataViz :bar_chart: [#GIS](/archive/categories/gis) :earth_africa: #Research :microscope:     
-  #Coding :robot: [#RStats](/archive/categories/rstats/) :chart_with_upwards_trend:​ #Python :snake: #RemoteSensing :artificial_satellite:​ #Maps :world_map:​        
-  #Forestry :evergreen_tree: #EnvEngineering :seedling:           
+  #Coding :robot: [#RStats](/archive/categories/rstats/) :chart_with_upwards_trend: #Python :snake: #RemoteSensing :artificial_satellite: #Maps :world_map:        
   #CH :switzerland: #EU :eu: #ES :es: #SE :sweden: [#FI](/archive/tags/finland) :finland: #OR [US](/archive/tags/usa) :us:
 
 intro:
