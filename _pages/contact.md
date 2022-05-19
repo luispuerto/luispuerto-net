@@ -23,8 +23,8 @@ header:
 ### You can contact me on my:
 
 - :mailbox: email: ***[luis@luispuerto.net](mailto:luis@luispuerto.net){: style="color: black"}***  
-    + <i class="fas fa-fingerprint"></i> **[GPG public key fingerprint](https://en.wikipedia.org/wiki/Public_key_fingerprint){: style="color: black"}:** *[6521 E2E5 A51B 8AEC 591A 271A 4DBB 47BD 9BCF 179C](https://keys.openpgp.org/search?q=6521E2E5A51B8AEC591A271A4DBB47BD9BCF179C)* 
-    {: style="list-style: none"}
+    + <i class="fas fa-fingerprint"></i> **[GPG public key fingerprint](https://en.wikipedia.org/wiki/Public_key_fingerprint){: style="color: black"}:** *[6521 E2E5 A51B 8AEC 591A 271A 4DBB 47BD 9BCF 179C](https://keys.openpgp.org/search?q=6521E2E5A51B8AEC591A271A4DBB47BD9BCF179C)*[^2] 
+    {: style="list-style: none; overflow: revert"}
 - <i class="fab fa-keybase" style="color: #3663ea"></i> keybase: **[_lpuerto_](https://keybase.io/lpuerto/chat){: style="color: black"}**
 - <i class="fab fa-skype" style="color: #00AFF0"></i> skype: ***[luiss.puerto](skype:luiss.puerto?chat){: style="color: black"}***
 - <i class="fab fa-twitter"></i> twitter: ***[@lpuerto](https://twitter.com/lpuerto){: style="color: black"}***   
@@ -33,9 +33,10 @@ header:
 {: style="list-style: none"}
 
 [^1]: If you are confused by this flag, you should know that the [European Union's][EU] flag and the [Council of Europe's][CouncilOfEurope] flag are the [same flag][EuropeFlag]. In other words, this flag is representing the whole Europe —[almost][]— whether or not a country is inside the European Union. 
+[^2]: You can know more about GPG and PGP reading the [Email Self-Defense Guide](https://emailselfdefense.fsf.org/en/index.html) from [Free Software Foundation](https://www.fsf.org).
 
 
 [EuropeFlag]: https://en.wikipedia.org/wiki/Flag_of_Europe
 [CouncilOfEurope]: https://en.wikipedia.org/wiki/Council_of_Europe
 [EU]: https://en.wikipedia.org/wiki/European_Union
-[almost]: https://en.wikipedia.org/wiki/Council_of_Europe#Member_states,_observers,_partners[here]: /blog/2020/03/10/moving-to-zurich//
+[almost]: https://en.wikipedia.org/wiki/Council_of_Europe#Member_states,_observers,_partners
