@@ -25,6 +25,7 @@ header:
 - :mailbox: email: ***[luis@luispuerto.net](mailto:luis@luispuerto.net){: style="color: black"}***  
     + <i class="fas fa-fingerprint"></i> **[GPG public key fingerprint](https://en.wikipedia.org/wiki/Public_key_fingerprint){: style="color: black"}:** *[6521 E2E5 A51B 8AEC 591A 271A 4DBB 47BD 9BCF 179C](https://keys.openpgp.org/search?q=6521E2E5A51B8AEC591A271A4DBB47BD9BCF179C)* 
     {: style="list-style: none"}
+- <i class="fab fa-keybase" style="color: #3663ea"></i> keybase: **[_lpuerto_](https://keybase.io/lpuerto/chat){: style="color: black"}**
 - <i class="fab fa-skype" style="color: #00AFF0"></i> skype: ***[luiss.puerto](skype:luiss.puerto?chat){: style="color: black"}***
 - <i class="fab fa-twitter"></i> twitter: ***[@lpuerto](https://twitter.com/lpuerto){: style="color: black"}***   
 - <i class="fab fa-linkedin"></i> linkedin: ***[lpuerto](https://www.linkedin.com/in/lpuerto){: style="color: black"}***, _but please add a [note or a message](/blog/2019/02/21/no-message-no-connection-in-linkedin/) before you add me as your contact_{: .small}.
