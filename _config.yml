@@ -175,6 +175,7 @@ footer:
       url: "https://www.linkedin.com/in/lpuerto"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
+      color: "white"
       url: "https://github.com/luispuerto"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
