@@ -97,26 +97,27 @@ require 'html-proofer'
 task :test do
   options = {
     disable_external: true,
-    url_ignore: [/feed/],
-    alt_ignore: [/.*/],
+    ignore_urls: [/feed/],
+    ignore_empty_alt: true,
+    enforce_https: false,
     allow_hash_href: true,
-    http_status_ignore: [999, 0],
-    assume_extension: true,
+    ignore_status_codes: [999, 0],
     internal_domains: ["localhost:4000", "luispuerto.net"]
 
   }
   HTMLProofer.check_directory("./_site", options).run
+
 end
 
 task :"test-external" do
   options = {
     disable_external: false,
     external_only: true, 
-    url_ignore: [/feed/],
-    alt_ignore: [/.*/],
+    ignore_urls: [/feed/],
+    ignore_empty_alt: true,
+    enforce_https: false,
     allow_hash_href: true,
-    http_status_ignore: [999, 0, 503, 302, 403],
-    assume_extension: true,
+    ignore_status_codes: [999, 0, 503, 302, 403],
     internal_domains: ["localhost:4000", "luispuerto.net"]
   }
   HTMLProofer.check_directory("./_site", options).run

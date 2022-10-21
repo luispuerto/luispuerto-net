@@ -17,10 +17,13 @@ Last Sunday we had the first heavy snowfall of this winter season in Joensuu. ~~
 
 Although we welcomed and enjoyed the snow on Sunday, the problem came on Monday.  Since the temperature is all the time around zero, snow is in quasi-liquid state, or in other words it's really humid since it's almost thawing and freezing all the time. This makes the floor really slippery and dangerous. It's really madness to drive, even with studded tires, since it makes the car behave more like a boat than really a car. The car is skidding almost all the time, and you have to be really carefully shifting lanes or turning on the streets. Even more keeping a safe distance from the car in front of you because the braking distance doubles or triples. The problem is that snow and ice doesn't stick to the tarmac until it's around -6 or -10 ºC. Then the ice stinks to the road and the sudden tires are able to get grip on the ice, not as good as in dry conditions, but I would say that surprisingly good. Anyhow, I'm not going to deny that sometimes I enjoy a little bit the skid the situation, but most of the times one have to be really careful.
 
-<figure class="half">
-  <a href="/assets/images/blog/2018/IMG_4408.jpg"><img src="/assets/images/blog/2018/IMG_4408.jpg"></a>
-    <a href="/assets/images/blog/2018/IMG_4409.jpg"><img src="/assets/images/blog/2018/IMG_4409.jpg"></a>
+<figure class="half"> 
+    <a href="/assets/images/blog/2018/IMG_4408.jpg">
+    <img src="/assets/images/blog/2018/IMG_4408.jpg" alt=""></a>
+    <a href="/assets/images/blog/2018/IMG_4409.jpg">
+    <img src="/assets/images/blog/2018/IMG_4409.jpg" alt=""></a>
 </figure>
+
 
 As you can see in the pictures above, the parking lot of the university wasn't that fancy on Monday as our Sunday photos.
 
