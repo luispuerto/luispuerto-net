@@ -38,19 +38,19 @@ You can check the knowledge base that GitHub has about the topic [here](https://
 First of all, you need to install `pinentry`   for mac. I've installed all of them using [homebrew](https://brew.sh).
 
 ```shell
-$ brew install gpg gpg-agent pinentry-mac 
+brew install gpg gpg-agent pinentry-mac 
 ```
 
 Now, you need to created a PGP key runnnig the command:
 
 ```shell
-$ gpg --full-generate-key
+gpg --full-generate-key
 ```
 
 You can do it also with:
 
 ```shell
-$ gpg --gen-key 
+gpg --gen-key 
 ```
 
 However, if you do like the latter command is not going to give you the option to change the key size, as suggested by [GitHub](https://help.github.com/articles/generating-a-new-gpg-key/).
@@ -60,7 +60,7 @@ Answer all the prompted questions and be specially careful with your email since
 Now, you can have to list all your keys with the command:
 
 ```shell
-$ gpg --list-secret-keys --keyid-format LONG
+gpg --list-secret-keys --keyid-format LONG
 
 /Users/lpuerto/.gnupg/pubring.kbx
 ---------------------------------
@@ -74,14 +74,14 @@ ssb   rsa4096/62E5B29EEA7145E 2017-11-04 [E]
 You have to copy to your clipboard `<YOUR_LONG_KEY_ID>` , with is your key id, and paste in the following commands to configure you Git with your key.
 
 ```shell
-$ git config --global user.signingKey <YOUR_LONG_KEY_ID>
-$ git config --global commit.gpgsign true
+git config --global user.signingKey <YOUR_LONG_KEY_ID>
+git config --global commit.gpgsign true
 ```
 
 You can certainly not pass the command
 
 ```shell
-$ git config --global commit.gpgsign true
+git config --global commit.gpgsign true
 ```
 
 that configures your Git to always sign your commits with your signature and sign just certain commits with adding the flag `pinentry`  .
@@ -89,7 +89,7 @@ that configures your Git to always sign your commits with your signature and sig
 You also need to copy your long key id again to get your PGP key with the following command.
 
 ```shell
-$ gpg --armor --export <YOUR_LONG_KEY>
+gpg --armor --export <YOUR_LONG_KEY>
 ```
 
 Which print you full GPG key, beginning with `——BEGIN PGP PUBLIC KEY BLOCK——`  and ending with `——END PGP PUBLIC KEY BLOCK——` . Copy it and now you can paste it on your GitHub following [this instructions](https://help.github.com/articles/adding-a-new-gpg-key-to-your-github-account/).
@@ -97,19 +97,19 @@ Which print you full GPG key, beginning with `——BEGIN PGP PUBLIC KEY BLOCK�
 Now, to make it work you need to config pinentry for mac as your dialog to enter your passphrase. To do that you have to use the following command to write `pinentry-program /usr/local/bin/pinentry-mac` in `gpg agent` config file.
 
 ```shell
-$ echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
+echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
 ```
 
 You can also do it manually.
 
 ```shell
-$ open ~/.gnupg/gpg-agent.conf
+open ~/.gnupg/gpg-agent.conf
 ```
 
 Finally, you need to restart the `gpg agent`  doing the following. This is really important and it's was one of the reason because I took me so long to finally configure Git with the PGP. Since I haven't restarted the gpg-agent it hasn't pick up the configuration.
 
 ```shell
-$ gpgconf --kill gpg-agent
+gpgconf --kill gpg-agent
 ```
 
 It's done!

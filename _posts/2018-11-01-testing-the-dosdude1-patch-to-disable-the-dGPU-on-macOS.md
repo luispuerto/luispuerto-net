@@ -19,7 +19,7 @@ As you [know](/blog/2017/12/05/my-macbook-pro-late-2011s-discrete-graphics-card-
 
 Yesterday, Apple released a [security update](https://support.apple.com/en-us/HT209193) that seems that in some parts is related to the graphic interface of the system, so I definitely was going to reapply the patch after the update —as after every update I usually do. However, recently I discovered [dosdude1](https://twitter.com/dosdude1?lang=en) and his [page](http://dosdude1.com) where I found out that he has a [patch to disable the dGPU on macs like mine](http://dosdude1.com/gpudisable/). I thought it was a great opportunity to test the patch, since it seems more convenient. 
 
-## What does the patch do? 
+## What does the patch do?
 
 I think the best thing is to copy verbatim from the patch itself: 
 
@@ -36,8 +36,8 @@ The fist thing I did was install the update. I didn't even follow any of the ste
 I encounter problems during the update installation. And at some point I have to force quit the computer —pressing the turn-on/off button till the computer shut off— and upon startup press `cmd+s` and enter the following in the prompt: 
 
 ```shell
-$ nvram fa4ce28d-b62f-4c99-9cc3-6815686e30f9:gpu-power-prefs=%01%00%00%00
-$ reboot
+nvram fa4ce28d-b62f-4c99-9cc3-6815686e30f9:gpu-power-prefs=%01%00%00%00
+reboot
 ```
 
 After that the update install continue and I was finally able to access to the desktop. 
@@ -81,7 +81,7 @@ If you want to roll back changes you have to
 If you don't delete this LaunchDaemon your `kext` are going to be delete after you restore them next time you re/boot. So to delete it you have to run the following command: 
 
 ```shell
-$ sudo rm -r /Library/LaunchDaemons/com.dosdude1.GPUDisableHelper.plist
+sudo rm -r /Library/LaunchDaemons/com.dosdude1.GPUDisableHelper.plist
 ```
 
 ### Restore the kext
@@ -91,13 +91,13 @@ $ sudo rm -r /Library/LaunchDaemons/com.dosdude1.GPUDisableHelper.plist
 Now, you can restore your `kext`
 
 ```shell
-$ sudo cp -pr /.AMD_Backup/*.* /System/Library/Extensions/
+sudo cp -pr /.AMD_Backup/*.* /System/Library/Extensions/
 ```
 
 I would also check the ownership —just in case:  
 
 ```shell
-$ sudo chown -R root:wheel /System/Library/Extensions/AMD*.*
+sudo chown -R root:wheel /System/Library/Extensions/AMD*.*
 ```
 
 ### Reapply the previous patch
@@ -113,7 +113,7 @@ I also think that the patch should be a little bit more documented. There isn't 
 Finally, I think that the reason the computer doesn't wake up is you can't delete all the kext. The purpose of the patch I've [shared](/blog/2017/12/11/disconnecting-the-dgpu-in-a-late-2011-macbook-pro-third-way/) —I didn't created it— if to disable just de dGPU, but still use some of the functions the  kext provide, and for that reason the problematic kext isn't deleted but moved to another folder, so it isn't loaded on boot, to later load it manually[^1]. The problem isn't just the `AMDRadeonX3000.kext`, but you need to have all the others to really make it work. 
 
 ```shell
-$ kextstat | grep AMD
+kextstat | grep AMD
   114    2 0xffffff7f82d1b000 0x122000   0x122000   com.apple.kext.AMDLegacySupport (1.6.8) 69C5152C-0305-3914-AD56-6601DD449AF4 <103 12 11 7 5 4 3 1>
   133    0 0xffffff7f835f0000 0x12e000   0x12e000   com.apple.kext.AMD6000Controller (1.6.8) F08FE763-26A1-312E-B690-CB8FDBF8EC31 <114 103 12 11 5 4 3 1>
   144    0 0xffffff7f830c3000 0x22000    0x22000    com.apple.kext.AMDLegacyFramebuffer (1.6.8) 13E3BF67-6700-37F0-82EE-E87F8B71A033 <114 103 12 11 7 5 4 3 1>

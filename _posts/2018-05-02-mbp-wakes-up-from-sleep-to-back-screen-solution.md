@@ -21,19 +21,19 @@ A couple of weeks ago I [wrote about the problem I have with my old MacBook Pro 
 I'm doing two things to prevent the black screen behavior. First I'm sleeping the computer using the command line:
 
 ```shell
-$ sudo shutdown -s now
+sudo shutdown -s now
 ```
 
 I've also change the hibernation mode of the machine to zero, in other words, it doesn't save the state in a file in the hard drive. I've also deleted that file from my hard drive.
 
 ```shell
-$ sudo rm -f /var/vm/sleepimage
+sudo rm -f /var/vm/sleepimage
 ```
 
 Finally I've disable the options to wake up the computer when you connect to power source and when you open the lid.
 
 ```shell
-$ sudo pmset -a lidwake 0
+sudo pmset -a lidwake 0
 ```
 
 So, now to wake up the computer I have to hit any key on the computer keyboard or the trackpad after I've open the lid.

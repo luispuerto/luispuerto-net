@@ -22,13 +22,13 @@ In other cases, you are a little bit clumsy or inexperience with Git —like me�
 I think the first thing before we start reducing the size of our repo is measuring the real size of it and try to find out where is the problem. For that we can use a tool called [`git-sizer`](https://github.com/github/git-sizer) and it's going to give us a report of why our repo is so big. To install it: 
 
 ```shell
-$ brew install git-sizer
+brew install git-sizer
 ```
 
 Then, you go got the root of your repo and you can type: 
 
 ```shell
-$ git-sizer --verbose
+git-sizer --verbose
 Processing blobs: 7865
 Processing trees: 7315
 Processing commits: 2974
@@ -89,7 +89,7 @@ Well, this is more or less easy to fix and you can use two tools to do so. One i
 You can find more detailed instruction in the [BFG Repo-Cleaner website](https://rtyley.github.io/bfg-repo-cleaner/#usage), but this is more or less what I've done. First, I installed the tool in my machine. 
 
 ```shell
-$ brew install bgf
+brew install bgf
 ```
 
 Then... I cloned my repo, so I have a backup copy in case something go South. 
@@ -100,7 +100,7 @@ Then... I cloned my repo, so I have a backup copy in case something go South.
 Now, I went to root of my repo — you can also perform the command form outside— and run the following command that deleted all the blobs from the commits of my repo bigger than 100 Megabytes. 
 
 ```shell
-$ bfg -b 100M [some-big-repo.git]
+bfg -b 100M [some-big-repo.git]
 ```
 
 \* You need to add the last part if you are outside the repo
@@ -109,7 +109,7 @@ $ bfg -b 100M [some-big-repo.git]
 BFG doens't really delete the blobs from the repo, just from the commits. So after I ran BFG I need to do *housekeeping* in the repo with the following commands. 
 
 ```shell
-$ git reflog expire --expire=now --all && git gc --prune=now --aggressive
+git reflog expire --expire=now --all && git gc --prune=now --aggressive
 ```
 
 [`reflog`](https://git-scm.com/docs/git-reflog) command manage the references log and [`gc`](https://git-scm.com/docs/git-gc) clean your repo of unnecessary stuff —garbage collector. 
@@ -142,9 +142,9 @@ This setup gives me total control about what is updated in the template and how,
 So, I run BFG in this repo in a aggressive way, looking to remove everything over 500K and even deleting all the image files in the folder `/assets`. 
 
 ```shell
-$ bfg -b 500K
-$ bfg -D "*.{jpg,jpeg,png}"
-$ bfg --delete-folders "assets"
+bfg -b 500K
+bfg -D "*.{jpg,jpeg,png}"
+bfg --delete-folders "assets"
 ```
 
 The result was gorgeous. I really trimmed the size to what I have to be —around ~140mb. 

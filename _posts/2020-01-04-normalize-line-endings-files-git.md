@@ -46,7 +46,7 @@ Nice... a lot of visual garbage around. And not even just visual garbage, but it
 
 I really don't know where the problem come front, exactly, but I can have a guess. Most probably the _version-control-less_ fork was developed under Windows :scream: were changes to the line endings probably happened. However, that shouldn't be a problem since it isn't the first time I'm working on a repo that is used, and edited, on Windows and Unix-like systems and I never ever I have an issue like this. I guess that Git, on its normal operation on Windows, it's configured to strip those extra characters from the files when they are added to Git database. So, I guess, the problem comes from the Subversion repo and its transformation to a Git repo with the [`git-svn`][git-svn] command. Probably Subversion doesn't strip those characters off and I didn't have the correct configuration on Git to deal with this case the line endings weren't normalized.
 
-## How to fix? 
+## How to fix?
 
 Just a simple tip, don't use Windows :grimacing:, and the life of everyone would be much easier. Ok, I just kidding —or not— but since this is not possible let's see if we can find a real solution. 
 
@@ -56,10 +56,10 @@ First of all, you have to [configure Git][3] accordingly, just in case.
 
 ```shell
 # for Windows
-$ git config --global core.autocrlf true
+git config --global core.autocrlf true
 
 # for Linux & macOS
-$ git config --global core.autocrlf input
+git config --global core.autocrlf input
 ```
 
 You can also establish configuration [at repo][4] level with the `.gitattributes` file with
@@ -75,23 +75,23 @@ However, the above configuration will only prevent new files from having those l
 1. You just first save your changes, in case you had any:                         
 
 ```shell
-$ git add . -u
-$ git commit -m "Saving files before refreshing line endings"
+git add . -u
+git commit -m "Saving files before refreshing line endings"
 ```
 
 2. Use Git to renormalize everything in your repo
 {: start="2"}
 
 ```shell
-$ git add --renormalize .
+git add --renormalize .
 ```
 
 3. Now you can see the renormailized files and commit them.  
 {: start="3"}
 
 ```shell
-$ git status
-$ git commit -m "Normalize all the line endings"
+git status
+git commit -m "Normalize all the line endings"
 ```
 
 Please be sure you are normalizing the correct branch. I had a lot of trouble because I thought I was normalizing the offending branch —I was not— and even after the normalization I was still seeing the line-endings garbage. 
@@ -103,7 +103,7 @@ You can also check this post on [stack over flow][6] if you want to know more.
 If you don't want to use Git for this task, you can always rely in [`dos2unix` and on `unix2dos`][9] commands on terminal. If you don't have them, you can easily install with [brew][]. 
 
 ```shell
-$ brew install dos2unix
+brew install dos2unix
 ```
 
 and if you are in Linux, use whatever method is used in your distro. 

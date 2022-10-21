@@ -170,25 +170,25 @@ Now I just going to copy paste from [MikeyN's post](https://forums.macrumors.com
 So, before you update the system, please remember to run:
 
 ```shell
-$ sudo cp -r /System/Library/Extensions-off/AMDRadeonX3000.kext /System/Library/Extensions/
+sudo cp -r /System/Library/Extensions-off/AMDRadeonX3000.kext /System/Library/Extensions/
 ```
 
 Then you update. If you can't normally load your computer, you can hold `cmd + S` and run:
 
 ```shell
-$ sh /force-iGPU-boot.sh
+sh /force-iGPU-boot.sh
 ```
 
 Then you can reboot again on single user mode holding `cmd + S` and then run
 
 ```shell
-$ sudo mv /System/Library/Extensions/AMDRadeonX3000.kext /System/Library/Extensions-off/
+sudo mv /System/Library/Extensions/AMDRadeonX3000.kext /System/Library/Extensions-off/
 ```
 
 To move again the kext. Keep in mid that the other one still there do you are going to probably rename it in this fashion:
 
 ```shell
-$ sudo mv /System/Library/Extensions/AMDRadeonX3000.kext /System/Library/Extensions-off/AMDRadeonX3000-1.kext
+sudo mv /System/Library/Extensions/AMDRadeonX3000.kext /System/Library/Extensions-off/AMDRadeonX3000-1.kext
 ```
 
 ## Checking that everything is OK
@@ -196,7 +196,7 @@ $ sudo mv /System/Library/Extensions/AMDRadeonX3000.kext /System/Library/Extensi
 If you run in terminal
 
 ```shell
-$ kextstat | grep AMD
+kextstat | grep AMD
 ```
 
 You have to get something similar to this:
@@ -211,8 +211,8 @@ You have to get something similar to this:
 In the beginning I wasn't getting any of these and the system just loaded AMDRadeonX3000. That resulting in a little bit of overheating in the dGPU and I wasn't able to sleep the computer. The reason for the system to not load the kext was I moved them that much that I changed the ownership of the files. If that is your case you can run in terminal:
 
 ```shell
-$ sudo chown -R root:wheel /System/Library/Extensions/AMD*.*
-$ sudo chown -R root:wheel /System/Library/Extensions-off/AMD*.*
+sudo chown -R root:wheel /System/Library/Extensions/AMD*.*
+sudo chown -R root:wheel /System/Library/Extensions-off/AMD*.*
 ```
 
 to return the ownership to the System / Root

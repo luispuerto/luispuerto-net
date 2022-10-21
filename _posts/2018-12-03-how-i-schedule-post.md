@@ -28,7 +28,7 @@ There are several solutions out there to schedule, like [this](https://serverles
 
 Since I have a [Raspberry pi](/archive/tags/raspberry-pi) at home, it's connected to internet all the time and all the time it's on, I can schedule [cron jobs](https://en.wikipedia.org/wiki/Cron) on it to run scripts. On the other side, you can trigger your site rebuild on Travis using [their API](https://docs.travis-ci.com/user/triggering-builds/). I'm already doing that with a cron job to rebuild my site everyday at 8 in the morning. Cron it's really handy and allow you a lot of different [setups](https://crontab.guru). For instance, you can run a script every minute, every six hours, once a week, once a month, a year... etc. 
 
-## What is cron? 
+## What is cron?
 
 Just in case you don't know or you are so lazy that you can't check the [Wikipedia](https://en.wikipedia.org/wiki/Cron), I'm going to sum up for you what is cron. 
 
@@ -57,7 +57,7 @@ curl -s -X POST \
 You can get your Travis token on your [preferences page](https://travis-ci.com/account/preferences) on Travis page. You also need to set `your-github-username` and `your-repo-name` in the url. Remember you also need to make your script executable. 
 
 ```shell
-$ chmod +x path/to/your/script.sh
+chmod +x path/to/your/script.sh
 ```
 
 ## Running jobs in cron
@@ -65,7 +65,7 @@ $ chmod +x path/to/your/script.sh
 If you want to add jobs to cron you just need run in the terminal
 
 ```shell
-$ crontab -e
+crontab -e
 ```
 
 and you default text editor will open. There you can add jobs taking into account the following [rules](https://en.wikipedia.org/wiki/Cron#Overview): 

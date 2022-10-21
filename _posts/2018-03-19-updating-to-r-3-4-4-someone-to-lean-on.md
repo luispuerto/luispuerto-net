@@ -42,7 +42,7 @@ tags:
 If you are on macOS and you want to enjoy the improvements and the bug fixings, you just can download the binary from [CRAN](https://cran.r-project.org/bin/macosx/) or if you are a Homebrew user you just can update with the following command
 
 ```shell
-$ brew update && brew upgrade
+brew update && brew upgrade
 ```
 
 This time the binaries for macOS came almost as the same time as the binaries for the rest of the platforms and I really welcome the change and the diligence. Sometimes I feel as a macOS user a second class user in some open source projects, since they release the new versions a little bit later on macOS than in the rest of the platforms. However, I really appreciate the work that all these people put in develop R and to bring to it to the macOS ecosystem. I acknowledge that they are doing a non-payed job and they are doing it for the community of users, which is incredible remarkable.

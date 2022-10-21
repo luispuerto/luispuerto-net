@@ -27,7 +27,7 @@ The first thing you need to do is download the OS image from the [Raspberry Pi s
 To flash the OS in the memory card you can just use [Etcher](https://etcher.io), what makes thinks a little bit easier. You just have drag and drop the unzipped image to the app window and then choose the flash card you want to put the OS in, after you've inserted it in the computer. Once you have flashed the card and to make it possible to log in after in the OS from the ssh console you have to create a file named "ssh" without extension in the root of the FAT partition of the card. The FAT partition is the one that you can access from your Mac after you flash OS in the card. You can do it in the terminal using this command:
 
 ```shell
-$ touch /Volumes/boot/ssh
+touch /Volumes/boot/ssh
 ```
 
 {% include figure image_path="https://i.imgur.com/t8tmcl4.png" alt="File named ssh with extension on the FAT partition." caption="File named ssh with extension on the FAT partition." %}{: .align-center}
@@ -39,7 +39,7 @@ From then on, you just have to put the SD card in the Pi and wait for the rest o
 Now you just have to open terminal and type
 
 ```shell
-$ ssh pi@192.168.1.X
+ssh pi@192.168.1.X
 ```
 
 Where ssh is the command in terminal to establish the ssh connection, pi is the default username in  on Raspbian, and 192.168.1.X is the usual IP the router is going to assign to the IP, being the X a number between 1 and 255 (well actually from 2 to 255, because the 1 usually is the router). Please, be aware that your IP could be totally different and depends on how your router is configure.
@@ -47,7 +47,7 @@ Where ssh is the command in terminal to establish the ssh connection, pi is the 
 To find out what are the IP of your Pi you just need to log into your router and check the device list or IP table. Other option is just download an IP scan software (like [Angry IP Scanner](http://angryip.org)) and run it on your computer to see the different IPs of the devices on your network. You can also try to establish contact using the hostname instead of the IP, which in this case is like this:
 
 ```shell
-$ ssh pi@raspberrypi.local
+ssh pi@raspberrypi.local
 ```
 
 Then you'll be faced with a screen similar to this one.
@@ -61,8 +61,8 @@ Where you are going to be asked about adding the key fingerprint of your Pi to y
 Now, you are logged on the terminal/shell of your Pi, and you can start configuring using shell commands. First of all is to login as root user to make things a little bit easier and then enter in the _configuration wizard_ (or software configuration tool) using the command `raspi-config`.
 
 ```shell
-$ sudo su # if you want to login as root and don't type sudo in every command
-$ sudo raspi-config
+sudo su # if you want to login as root and don't type sudo in every command
+sudo raspi-config
 ```
 
 {% include figure image_path="https://i.imgur.com/rx0pdss.png" alt="Raspberry config tool" caption="Raspberry config tool" %}{: .align-center}
@@ -72,13 +72,13 @@ Now, from here, you can change your password, the hostname, etc as you can see i
 If you want to connect your Pi to your network via wi-fi, you can also do it. You can find more info in this [tutorial](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md), but basically you first scan for wi-fi networks.
 
 ```shell
-$ sudo iwlist wlan0 scan
+sudo iwlist wlan0 scan
 ```
 
 And then you edit the `wpa_supplicant.conf` configuration file with the info of the network you want to connect.
 
 ```shell
-$ sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
 ```
 
 Using the previous command you open the config file on nano (a really simple editor) and you add at the end of the file.
@@ -97,14 +97,14 @@ Now you can disconnect the LAN cable from your Pi to the router if you wish and 
 You can see the wi-fi config with the following command.
 
 ```shell
-$ ifconfig wlan0
+ifconfig wlan0
 ```
 
 Perhaps, it's also a good idea [update and upgrade the system](https://www.raspberrypi.org/documentation/raspbian/updating.md) before you continue.
 
 ```shell
-$ sudo apt-get update
-$ sudo apt-get dist-upgrade
+sudo apt-get update
+sudo apt-get dist-upgrade
 ```
 
 ### Installing the VNC Server
@@ -112,7 +112,7 @@ $ sudo apt-get dist-upgrade
 When you are done, you can install the VNC server in the Pi. You can find a more detailed tutorial [here](https://www.raspberrypi.org/documentation/remote-access/vnc/), but basically you type in the SSH connection:
 
 ```shell
-$ sudo apt-get install realvnc-vnc-server realvnc-vnc-viewer
+sudo apt-get install realvnc-vnc-server realvnc-vnc-viewer
 ```
 
 You also have to install the [VNC client](https://www.realvnc.com/download/viewer/) in your Mac, set it up and then log into the Pi using as username _pi_ and as password _raspberry_ or the one you've set up.
@@ -136,8 +136,8 @@ Perhaps you are interested into mount NTFS, exFAT and samba volumes, i.e. hard d
 The first two things are pretty easy to make it to happen. You just have to type in the SSH console or in the shell on the desktop:
 
 ```shell
-$ sudo apt-get install ntfs-3g
-$ sudo apt-get install exfat-fuse
+sudo apt-get install ntfs-3g
+sudo apt-get install exfat-fuse
 ```
 
 {% include figure image_path="https://i.imgur.com/IijptYB.png" alt="Mounting a usb stick on the Pi" caption="Mounting a usb stick on the Pi" %}{: .align-center}
@@ -159,19 +159,19 @@ sudo umount /mnt/usb # to unmount the volume
 Now, if you want to mount some samba shares you have connected in your network, like in your router or in the Time Capsule, like it's my case you have to proceed as follows, being aware that you have to create the mounting (point) directory before.
 
 ```shell
-$ sudo mount -t cifs //192.168.1.X/share /mnt/box/
+sudo mount -t cifs //192.168.1.X/share /mnt/box/
 ```
 
 Change the IP for the one of your sharing device and "share" for the path to the volume / hard drive in that device. If the name of the volume you are sharing in that device has a space, you have to introduce `\040` in the spaces. For example is the name of your share is "_share with spaces_" and you want to mount in the route `/mnt/my share` you type.
 
 ```shell
-$ sudo mount -t cifs //192.168.1.2/share\040with\040spaces /mnt/my\040share/
+sudo mount -t cifs //192.168.1.2/share\040with\040spaces /mnt/my\040share/
 ```
 
 Now, if you want to mount any those shares on boot, to make it available all the time for other apps, you have to modify `fstab`  file. To do that you have to run this command on the shell.
 
 ```shell
-$ sudo nano /etc/fstab
+sudo nano /etc/fstab
 ```
 
 And now you add to the end of the file:
@@ -185,7 +185,7 @@ And as previously you did in nano, to save you press `crtl-o`  and to exit `crtl
 You have to also tell the pi to wait until the network it's up to boot. For that you have to run again raspi-config.
 
 ```shell
-$ sudo raspi-config
+sudo raspi-config
 ```
 
 And in boot options you select _Wait for Network at Boot_.

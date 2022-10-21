@@ -43,14 +43,14 @@ For all these reasons [OGC](http://www.opengeospatial.org) (Open Geospatial Cons
 
 You can read a little bit more about the formats and why you should use GeoPackages :package: [here](http://switchfromshapefile.org). 
 
-## How to merge? 
+## How to merge?
 
 Now the **big question**, how do you merge several GeoPackages in only one? The answer didn't seem easy, and after a lot of rummaging  here and there I came to the conclusion that with QGIS I couldn't perform the task, at least in the graphical interface, and GDAL and the terminal was the [answer](https://gis.stackexchange.com/questions/244263/how-to-merge-multiple-geopackage-files-into-one-file-with-a-single-layer-using-o). 
 
 However, merge one by one on the terminal was a *pain-in-the-tree* :deciduous_tree: so I decided to merge all of them using the a `for` loop. The command for one file is: 
 
 ```shell
-$ ogr2ogr -f "format" --append destination-file origin-file 
+ogr2ogr -f "format" --append destination-file origin-file 
 ```
 
 Where: 
@@ -61,13 +61,13 @@ Where:
 The syntax for `for` is: 
 
 ```shell
-$ for whatever-variable in somewhere; do whatever-command with whatever-variable; done
+for whatever-variable in somewhere; do whatever-command with whatever-variable; done
 ```
 
 So the final command should be: 
 
 ```shell
-$ for filename in your/folder/*.gpkg; do ogr2ogr -f "gpkg" -append your/other/folder/destination-file.gpkg "$filename"; done
+for filename in your/folder/*.gpkg; do ogr2ogr -f "gpkg" -append your/other/folder/destination-file.gpkg "$filename"; done
 ```
 
 Voila... you now should have a `destination-file.gpkg` on `your/other/folder/` containing all the info of of the GeoPackages in `your/folder/`. In my case ~250mb GeoPackage file. 

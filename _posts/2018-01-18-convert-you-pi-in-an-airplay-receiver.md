@@ -21,11 +21,11 @@ I recently needed to convert my Raspberry Pi 3 into a AirPlay receiver because I
 Let's download some packages we are going to need as dependencies.
 
 ```shell
-$ sudo apt-get update && upgrade
+sudo apt-get update && upgrade
 ```
 
 ```shell
-$ sudo apt-get install autoconf libtool libdaemon-dev libasound2-dev libpopt-dev libconfig-dev avahi-daemon libavahi-client-dev libssl-dev
+sudo apt-get install autoconf libtool libdaemon-dev libasound2-dev libpopt-dev libconfig-dev avahi-daemon libavahi-client-dev libssl-dev
 ```
 
 ## Shairport sync
@@ -33,11 +33,11 @@ $ sudo apt-get install autoconf libtool libdaemon-dev libasound2-dev libpopt-dev
 To convert our Pi in a AirPlay device we need a software that is call [Shairport Sync](https://github.com/mikebrady/shairport-sync). We are going to need to compile it for our system, so we need to download the source code and then compile. To download it just run on the Pi's terminal:
 
 ```shell
-$ cd ~/Downloads # I like to download my soft in Downloads folder.
+cd ~/Downloads # I like to download my soft in Downloads folder.
 ```
 
 ```shell
-$ git clone https://github.com/mikebrady/shairport-sync.git
+git clone https://github.com/mikebrady/shairport-sync.git
 ```
 
 ### Compile
@@ -45,25 +45,25 @@ $ git clone https://github.com/mikebrady/shairport-sync.git
 Now that we have download the shairport-sync repository to our Pi, we can proceeded to compile it. First or all we need to move to the Shairport Sync folder and then we can proceed to configure the compilation process.
 
 ```shell
-$ cd ~/Downloads/shairport-sync
+cd ~/Downloads/shairport-sync
 ```
 
 ```shell
-$ autoreconf -i -f
+autoreconf -i -f
 ```
 
 ```shell
-$ ./configure --with-alsa --with-avahi --with-ssl=openssl --with-systemd --with-metadata
+./configure --with-alsa --with-avahi --with-ssl=openssl --with-systemd --with-metadata
 ```
 
 Now that we have configured it, we can proceded to compile and install it.
 
 ```shell
-$ make
+make
 ```
 
 ```shell
-$ sudo make install
+sudo make install
 ```
 
 ### Final config
@@ -71,23 +71,23 @@ $ sudo make install
 When the config and installing process finish we can proceed to configure the software to use it. The main thing we need to do is create a group of users that can access to the hardware and then create a user on that group that will use the software.
 
 ```shell
-$ sudo groupadd -r shairport-sync >/dev/null
+sudo groupadd -r shairport-sync >/dev/null
 ```
 
 ```shell
-$ sudo useradd -r -M -g shairport-sync -s /usr/bin/nologin -G audio shairport-sync >/dev/null
+sudo useradd -r -M -g shairport-sync -s /usr/bin/nologin -G audio shairport-sync >/dev/null
 ```
 
 We also need to set up shairport sync to start on startup.
 
 ```shell
-$ sudo systemctl enable shairport-sync
+sudo systemctl enable shairport-sync
 ```
 
 If we want to start right away to using it we can manually start it with the following command.
 
 ```shell
-$ sudo service shairport-sync start
+sudo service shairport-sync start
 ```
 
 You are going to be able to find the Pi among the devices that offer AirPlay from your iOS device or your Mac. The name of the device is going to be the hostname you set up for your Pi using the [raspi-config interface](https://pimylifeup.com/raspi-config-tool/), if you haven't changed it, it's going to be `RaspberryPi`.
@@ -103,7 +103,7 @@ If you try to use your Pi as a AirPort Express right away you probably going fin
 One of the first things we can do to improve the quality of the sound is to update the sound driver of the Pi. To do it, you need to update the firmware of the Pi. You can read more about this in [this forum thread](https://www.raspberrypi.org/forums/viewtopic.php?t=136445). Please, keep in mind that while you are updating the firmware you must not lose power in the Pi. To update the firmware you run the following command:
 
 ```shell
-$ sudo rpi-update
+sudo rpi-update
 ```
 
 Once the update process finish you need to turn off the Raspberry and take the SD card out of it and insert the card in a computer card reader. We are going to modify the boot config file of the Pi and and to do it we are going to open with a text editor the config file that it's located on `/boot/config.txt`. Then you need to add the following variable to the end of the file:
@@ -119,7 +119,7 @@ Save the file, put the card back on the Pi and turn it on.
 Now, we also need to set up the audio jack as the main audio output. Just run the following command:
 
 ```shell
-$ amixer cset numid=3 1
+amixer cset numid=3 1
 ```
 
 ### Shairport Sync db range
@@ -127,7 +127,7 @@ $ amixer cset numid=3 1
 There is a final setting we need to configure and it's related to the audio range in which Shairport Sync operates. To do it we need to open the config file of Shariport Sync, therefore run the following command on the Pi's terminal to open it with [Nano](https://en.wikipedia.org/wiki/GNU_nano).
 
 ```shell
-$ sudo nano /usr/local/etc/shairport-sync.conf
+sudo nano /usr/local/etc/shairport-sync.conf
 ```
 
 Then we need to look for the following variable:
@@ -147,7 +147,7 @@ Save and close Nano, `Ctrl + X` then `Y` and finally press `return`.
 You need to reboot the Pi to make sure that new configuration is properly loaded.
 
 ```shell
-$ sudo reboot
+sudo reboot
 ```
 
 ## Bottom line

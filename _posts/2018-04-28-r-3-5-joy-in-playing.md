@@ -39,7 +39,7 @@ I would recommend to run it twice, since some packages have dependencies and the
 In some of my machines I hadn't configured the new Java 10 with the prerelease rJava so [Java 10 can be run properly in R](/blog/2018/03/28/r-and-java-10/). If this is your case remember to run:
 
 ```shell
-$ R CMD javareconf
+R CMD javareconf
 ```
 
 so you yield something similar to:

@@ -21,7 +21,7 @@ To make a back up of your SD card using macOS I've found two options.
 If want to try the dd utility you can download it from the site and normally installing it on macOS or you can install it using [Homebrew](https://brew.sh) [Cask](https://caskroom.github.io) and the following command.
 
 ```shell
-$ brew cask install dd-utility
+brew cask install dd-utility
 ```
 
 ## Backing up
@@ -39,7 +39,7 @@ The commands are the following ones:
 First we use `diskutil` [[ref.](https://ss64.com/osx/diskutil.html)] to see all the volumes connected.
 
 ```shell
-$ diskutil list
+diskutil list
 ```
 
 {% include figure image_path="https://i.imgur.com/D0D6bE6.png" alt="List of volumes" caption="List of volumes" %}{: .align-center} 
@@ -47,7 +47,7 @@ $ diskutil list
 Now you just need to choose what are you going to back up and where using the `dd` command.
 
 ```R
-$ sudo dd if=/dev/diskX of=users/YOURUSERNAME/Downloads/SDCardBackup.dmg
+sudo dd if=/dev/diskX of=users/YOURUSERNAME/Downloads/SDCardBackup.dmg
 ```
 
 You can see that I haven't used the same path that they use in the linked instructions because using the `diskX` that represent your SD card. In my case was the number 4, but in your case could be different.
@@ -57,7 +57,7 @@ You can see that I haven't used the same path that they use in the linked instru
 **EDIT**: I got bored of the slowness of the process and I cancel it after a while and try to implement [this suggestion](http://daoyuan.li/solution-dd-too-slow-on-mac-os-x/) about raw volumes. So the code would be like this now:
 
 ```shell
-$ sudo dd if=/dev/rdiskX of=users/YOURUSERNAME/Downloads/SDCardBackup.dmg
+sudo dd if=/dev/rdiskX of=users/YOURUSERNAME/Downloads/SDCardBackup.dmg
 ```
 
 ## Restoring
@@ -65,13 +65,13 @@ $ sudo dd if=/dev/rdiskX of=users/YOURUSERNAME/Downloads/SDCardBackup.dmg
 To restore you first have to unmount your SD card.
 
 ```shell
-$ diskutil unmountDisk /dev/diskX
+diskutil unmountDisk /dev/diskX
 ```
 
 To following write the image in the SD card with this command.
 
 ```shell
-$ sudo dd if=~/SDCardBackup.dmg of=/dev/diskX
+sudo dd if=~/SDCardBackup.dmg of=/dev/diskX
 ```
 
 And finally you eject the card with using this.
@@ -79,7 +79,7 @@ And finally you eject the card with using this.
 Once it has finished writing the image to the SD card, you can remove it from your Mac using:
 
 ```shell
-$ sudo diskutil eject /dev/rdisk3
+sudo diskutil eject /dev/rdisk3
 ```
 
 So… you are ready now to mess up with your Raspberry Pi without worrying.

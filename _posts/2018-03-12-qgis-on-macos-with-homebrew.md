@@ -32,11 +32,11 @@ Nevertheless, this weekend I was able to rebuild the last version of the LTR of 
 What I did was just reinstall `python`, `python2`, `gdal`, `gdal2`, and finally `qgis2`. More or less as follows:
 
 ```shell
-$ brew reinstall python2 python bison &&
+brew reinstall python2 python bison &&
 brew reinstall gdal2 \
     --with-armadillo --with-complete --with-libkml \
     --with-opencl --with-postgresql --with-unsupported
-$ brew reinstall qgis2 --with-grass --with-saga-gis-lts
+brew reinstall qgis2 --with-grass --with-saga-gis-lts
 ```
 
 After that and compiling here and there, I was able to open QGIS.app again.
@@ -44,14 +44,14 @@ After that and compiling here and there, I was able to open QGIS.app again.
 This left me with QGIS in `/usr/local/Cellar/qgis2/2.18.14`. But I want to have QGIS.app in `/Applications` folder so I have two options. First one is run in the following command in the terminal, as advised by Homebrew:
 
 ```shell
-$ brew linkapps [--local]
+brew linkapps [--local]
 ```
 
 However, I prefer to move the actual app to the `/Applications` folder and create a symbolic link on the `/Cellar` folder.
 
 ```shell
-$ mv -f /usr/local/Cellar/qgis2/2.18.14/QGIS.app /Applications
-$ ln -s /Applications/QGIS.app /usr/local/Cellar/qgis2/2.18.14/QGIS.app
+mv -f /usr/local/Cellar/qgis2/2.18.14/QGIS.app /Applications
+ln -s /Applications/QGIS.app /usr/local/Cellar/qgis2/2.18.14/QGIS.app
 ```
 
 Yet, weren't we going to install the last version of QGIS? This isn't the last version. OK…
@@ -63,9 +63,9 @@ To install the last version you need to change the the QGIS formulae to make it 
 First, I create a branch and checked out on it.
 
 ```shell
-$ cd /usr/local/Homebrew/Library/Taps/osgeo/homebrew-osgeo4mac
-$ git checkout -b QGIS2.18.17
-$ brew edit qgis2
+cd /usr/local/Homebrew/Library/Taps/osgeo/homebrew-osgeo4mac
+git checkout -b QGIS2.18.17
+brew edit qgis2
 ```
 
 Now you can edit the formula to be able to install QGIS 2.18.17. ~You can see how I modify mine~~[^1] below that has highlighted the lines I've changed.
@@ -77,16 +77,16 @@ Now you can edit the formula to be able to install QGIS 2.18.17. ~You can see ho
 Now you just commit.
 
 ```shell
-$ git stage Formula/qgis2.rb
-$ git commit -m "qgis update to 2.18.17"
+git stage Formula/qgis2.rb
+git commit -m "qgis update to 2.18.17"
 ```
 
 And now you just reinstall QGIS and move to `/Applications`:
 
 ```shell
-$ brew reinstall qgis2 --with-grass --with-saga-gis-lts
-$ mv -f /usr/local/Cellar/qgis2/2.18.17/QGIS.app /Applications
-$ ln -s /Applications/QGIS.app /usr/local/Cellar/qgis2/2.18.17/QGIS.app
+brew reinstall qgis2 --with-grass --with-saga-gis-lts
+mv -f /usr/local/Cellar/qgis2/2.18.17/QGIS.app /Applications
+ln -s /Applications/QGIS.app /usr/local/Cellar/qgis2/2.18.17/QGIS.app
 ```
 
 {% include figure image_path="assets/images/blog/2018/Screen-Shot-2018-03-12-at-10.27.28.png" alt="QGIS 2.18.17 splash screen" caption="QGIS 2.18.17 splash screen" %}{: .align-center}
@@ -149,13 +149,13 @@ IOError: [Errno 13] Permission denied: '/usr/local/lib/python2.7/site-packages/m
 Basically I had a ownership problem, that can be solve using `sudo`.
 
 ```shell
-$ sudo pip install matplotlib
+sudo pip install matplotlib
 ```
 
 Or fixing the [ownership](https://stackoverflow.com/questions/27870003/pip-install-please-check-the-permissions-and-owner-of-that-directory) like this:
 
 ```shell
-$ sudo chown -R $(echo $USER) ~/Library/Caches/pip
+sudo chown -R $(echo $USER) ~/Library/Caches/pip
 ```
 
 Now, I was able to install.
@@ -165,7 +165,7 @@ Now, I was able to install.
 Well, this is a little bit more challenging, but just a little bit. The only version of a Homebrew formula that is available to install QGIS 3 is the developer version one that is in this [qgis](https://github.com/qgis)/[homebrew-qgisdev](https://github.com/qgis/homebrew-qgisdev) repo-tap. So I just have to tap that repo:
 
 ```shell
-$ brew tap qgis/homebrew-qgisdev
+brew tap qgis/homebrew-qgisdev
 ```
 
 However, I needed to make changes in the formula to be able to install because it has a dependency on Matplotlib on [Homebrew](https://github.com/Homebrew)/[homebrew-science](https://github.com/Homebrew/homebrew-science) and as we learned before that formula doesn't exist anymore. In this case, it isn't like in the QGIS 2, that it builds anyway and then ask you to install Matplotlib. It just doesn't build and throws an [error](https://github.com/qgis/homebrew-qgisdev/issues/50).
@@ -175,22 +175,22 @@ I have two options here. I can just delete or comment the line where the depende
 First, I created a branch and edited the formulae.
 
 ```shell
-$ cd /usr/local/Homebrew/Library/Taps/qgis/homebrew-qgisdev
-$ git checkout -b matplotlib-fix
-$ brew edit qgis3-dev
+cd /usr/local/Homebrew/Library/Taps/qgis/homebrew-qgisdev
+git checkout -b matplotlib-fix
+brew edit qgis3-dev
 ```
 
 Then, I just committed my edits
 
 ```shell
-$ git add Formula/qgis3-dev.rb
-$ git commit -m "fix for matplotlib"
+git add Formula/qgis3-dev.rb
+git commit -m "fix for matplotlib"
 ```
 
 Before I tried to build I have to do two more tweaks to be able to compile without [errors](https://github.com/qgis/homebrew-qgisdev/issues/66#issuecomment-372069535). First I have to reinstall [Bison](https://www.gnu.org/software/bison/).
 
 ```shell
-$ brew reinstall bison
+brew reinstall bison
 ```
 
 And then I have to modify the file `/usr/local/bin/pyrcc5` and change `pythonw2.7` to `python3`.
@@ -203,7 +203,7 @@ exec python3 -m PyQt5.pyrcc_main ${1+"$@"}
 Now I could build QGIS 3 developer edition:
 
 ```shell
-$ brew install --no-sandbox qgis3-dev --with-grass --with-saga-gis-lts
+brew install --no-sandbox qgis3-dev --with-grass --with-saga-gis-lts
 ```
 
 {% include figure image_path="assets/images/blog/2018/Screen-Shot-2018-03-12-at-10.27.58.png" alt="QGIS 3 dev splash screen" caption="QGIS 3 dev splash screen" %}{: .align-center} 
@@ -213,8 +213,8 @@ $ brew install --no-sandbox qgis3-dev --with-grass --with-saga-gis-lts
 After I finished building the QGIS 3, I moved the app from the Homebrew Cellar to the `/Applications` folder in the same way I moved QGIS 2, but since I want to keep QGIS 2 and QGIS 3, in the process I renamed the app to `QGIS 3.app`.
 
 ```shell
-$ mv /usr/local/opt/qgis3-dev/QGIS.app /Applications/QGIS\ 3.app
-$ ln -s /Applications/QGIS\ 3.app /usr/local/opt/qgis3-dev/QGIS.app
+mv /usr/local/opt/qgis3-dev/QGIS.app /Applications/QGIS\ 3.app
+ln -s /Applications/QGIS\ 3.app /usr/local/opt/qgis3-dev/QGIS.app
 ```
 
 ## Final thoughts

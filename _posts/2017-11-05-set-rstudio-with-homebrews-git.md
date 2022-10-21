@@ -24,23 +24,23 @@ Apple ships with their systems a really to use version of Git, but it's usually 
 First of all, you need to install the last Git using Homebrew:
 
 ```shell
-$ brew install git
+brew install git
 ```
 
 You are probably going to need to relink by force `-f` your new Git to make the system to use it.
 
 ```shell
-$ brew link -f git
+brew link -f git
 ```
 
 Know if you ask the system, your version of Git have to be different —superior—  to the one Apple provides. In my case and under El Capitan is like this:
 
 ```shell
-$ usr/bin/git --version
+usr/bin/git --version
 git version 2.10.1 (Apple Git-78) # Apple's version
-$ /usr/local/Cellar/git/2.15.0/bin/git --version
+/usr/local/Cellar/git/2.15.0/bin/git --version
 git version 2.15.0 # Homebrew's version
-$ git --version
+git --version
 git version 2.15.0 # System's version, now linked to Homebrew's one.
 ```
 
@@ -69,7 +69,7 @@ So, you're probably thinking that you just have to set the path to Git executabl
 Then… What we should do? You need to open the user setting's file of rStudio located in a hidden directory in your user folder `~/.rstudio/monitored/user-settings/user-settings`  with the following command.
 
 ```shell
-$ open ~/.rstudio/monitored/user-settings/user-settings
+open ~/.rstudio/monitored/user-settings/user-settings
 ```
 
 {% include figure image_path="assets/images/blog/2018/Screen-Shot-2017-11-02-at-17.24.00.png" alt="rStudio user setting's file." caption="rStudio user setting's file." %}

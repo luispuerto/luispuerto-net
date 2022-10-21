@@ -58,7 +58,7 @@ Some people say that the correct way to do this just push the power button and c
 Other solution I've read about is just change the way your Mac sleeps. You Mac can be sent to sleep in two ways, simple sleep or Safe Sleep —the last one is/was called hibernation in windows— so macOS has three different setups for sleeping —only simple sleep, only safe sleep or both. You can see your config using the command:
 
 ```shell
-$ sudo pmset -g custom
+sudo pmset -g custom
   Battery Power:
    lidwake              0
    standbydelay         4200
@@ -108,11 +108,11 @@ To change the sleep behavior you can run the following commands
 
 ```shell
 # Just sleep mode
-$ sudo pmset -a hibernationmode 0
+sudo pmset -a hibernationmode 0
 # Sleep mode + safe sleep
-$ sudo pmset -a hibernationmode 3
+sudo pmset -a hibernationmode 3
 # Just safe sleep
-$ sudo pmset -a hibernationmode 25
+sudo pmset -a hibernationmode 25
 ```
 
 `-a` is for all —when you are on power ac and battery— but you can specify different settings. `-b` for battery and `-c` wall power.
@@ -120,7 +120,7 @@ $ sudo pmset -a hibernationmode 25
 If you decide to go for `hibernatemode 0` you can also delete de `sleepimage` and sabe some space in your hard drive.
 
 ```shell
-$ sudo rm -f /var/vm/sleepimage
+sudo rm -f /var/vm/sleepimage
 ```
 
 ## The lidwake (on test)
@@ -130,7 +130,7 @@ Since some people say that the problem is related to the lid I've decided to cha
 You can achieve this changing the `lidwake` parameter to `0`:
 
 ```shell
-$ sudo pmset -a lidwake 0
+sudo pmset -a lidwake 0
 ```
 
 The normal value is `1`.

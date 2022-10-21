@@ -23,11 +23,11 @@ For that reason you can install other commands like [trash-cli](https://github.c
 
 ```shell 
 # On Mac you can install with Brew
-$ brew install trash-cli
-$ brew install rmtrash
+brew install trash-cli
+brew install rmtrash
 
 # On linux you can install with apt-get
-$ sudo apt-get install trash-cli
+sudo apt-get install trash-cli
 ```
 
 On the previous links about the commands you have all the options you can implement in both commands.
