@@ -144,6 +144,9 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
       url: mailto:luis@luispuerto.net
+    - label: "Mastodon"
+      icon: "fab fa-fw fa-mastodon"
+      url: https://mastodon.social/@lpuerto
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/lpuerto"
@@ -167,6 +170,9 @@ author:
 # Site Footer
 footer:
   links:
+    - label: "Mastodon"
+      icon: "fab fa-fw fa-mastodon"
+      url: https://mastodon.social/@lpuerto
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/lpuerto"
