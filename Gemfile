@@ -46,7 +46,7 @@ group :github_pages_plugins do
   gem "jekyll-redirect-from"
   # gem "jekyll-relative-links" # Not working with Jekyll 4
   # gem "jekyll-remote-theme" # I don't use a remote theme
-  gem "jekyll-sass-converter"
+  gem "jekyll-sass-converter", "~> 2.0"
   gem "jekyll-seo-tag"
   gem "jekyll-sitemap"
   # gem "jekyll-swiss" # Jekyll Theme. I don't use 
