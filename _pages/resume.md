@@ -38,7 +38,7 @@ Thesis / Senior project: **_"[El Pajariel][]"  Stand Management Plan._**
 
 ## Experience
 
-**Mar 2022 - Now:**{: style="color: grey"} **[Quantis][Qis]. Sustainability consultant specialized on Forestry, Agroforestry, GIS, Remote Sensing, Climate Risk and Data Science**
+**Mar 2022 - Now:**{: style="color: grey"} **[Quantis][Qis]. Senior Sustainability Consultant** specialized on **Forestry, Agroforestry, GIS, Remote Sensing, Climate Risk and Data Science**.   
 Supporting organizations on transitioning from _business as usual_ to _business at its best_ within our planetary boundaries.
 
 -   Deliver more accurate emissions factors related to land use change using remote sensing and GIS data that reduced the land use change footprint up to 90%. 
@@ -227,7 +227,7 @@ src="https://www.dropbox.com/s/tba5d4eeja4vt2i/Luis%20Puerto%20Resume.pdf?raw=1&
 [Ponferrada]: https://www.ponferrada.org/en
 [Python]: https://www.esri.com/en-us/arcgis/about-arcgis/overview
 [QGIS]: https://www.qgis.org
-[Qis]: https://quantis-intl.com/
+[Qis]: https://quantis.com/
 [R]: https://www.r-project.org/about.html
 [RaspberryPis]: https://www.raspberrypi.org
 [RemoteSensing]: https://en.wikipedia.org/wiki/Remote_sensing
