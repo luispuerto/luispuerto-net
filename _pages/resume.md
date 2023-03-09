@@ -18,7 +18,7 @@ _You can download the most recent version of my résumé in pdf in <http://pdf-r
 
 ## Profile
 
-I’m a dynamic and versatile engineer from Spain with more than 15 years of experience on data science and analysis, GIS, and remote sensing. Lately, I’ve been working on projects related to LiDAR, biomass, and trade data with special emphasis on R coding. I have experience working internationally, with a wide range of technologies and in interdisciplinary teams. I’m always interested in learning new skills and I’m looking for challenging projects where I can put to good use my background and skills.
+I’m a dynamic and versatile engineer from Spain with more than 15 years of international experience on data science and analysis, GIS, and remote sensing. Lately, I deep dive on sustainability where I’ve helped companies to reduce their emissions and be aware of the threats of climate change. Also, I’ve worked on projects related to LiDAR, satellite data, biomass, carbon accounting, land use change, and trade, with special emphasis on R and python coding. I’m always interested in learning new skills and I’m looking for challenging projects where I can put my background and skills to good use.
 
 ## Educational Background
 
@@ -38,8 +38,14 @@ Thesis / Senior project: **_"[El Pajariel][]"  Stand Management Plan._**
 
 ## Experience
 
-**Mar 2022 - Currently:**{: style="color: grey"} **[Quantis][Qis]. Sustainability Consultant & AgroForestry, GIS and Remote Sensing Expert**
+**Mar 2022 - Now:**{: style="color: grey"} **[Quantis][Qis]. Sustainability consultant specialized on Forestry, Agroforestry, GIS, Remote Sensing, Climate Risk and Data Science**
 Supporting organizations on transitioning from _business as usual_ to _business at its best_ within our planetary boundaries.
+
+-   Deliver more accurate emissions factors related to land use change using remote sensing and GIS data that reduced the land use change footprint up to 90%. 
+-   Deliver climate risk insights to clients in relation of future climate scenarios using IPCC data and reports. Data extraction, analysis, and report creation using Python.  
+-   Deliver technical and quality control on projects related to forestry, agroforestry, GIS, remote sensing, cocoa, and coffee.
+-   Transform insights into maps and beautiful data visualizations. 
+-   Develop and deliver knowledge and insights on forestry, deforestation, agroforestry, satellite data, carbon accounting, land use change and data analysis.  
 
 **Jan 2021 - Feb 2022:**{: style="color: grey"} **Spatial and Data Scientist and Analyst Freelance Consultant**   
 I worked on some projects related to data science and analysis, GIS, remote sensing, forestry and more. 
