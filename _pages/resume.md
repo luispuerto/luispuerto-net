@@ -45,7 +45,7 @@ Supporting organizations on transitioning from _business as usual_ to _business 
 -   Deliver climate risk insights to clients in relation of future climate scenarios using IPCC data and reports. Data extraction, analysis, and report creation using Python.  
 -   Deliver technical and quality control on projects related to forestry, agroforestry, GIS, remote sensing, cocoa, and coffee.
 -   Transform insights into maps and beautiful data visualizations. 
--   Develop and deliver knowledge and insights on forestry, deforestation, agroforestry, satellite data, carbon accounting, land use change and data analysis.  
+-   Develop and deliver knowledge and insights on forestry, deforestation, agroforestry, satellite data, carbon and biomass accounting, land use change and data analysis.  
 
 **Jan 2021 - Feb 2022:**{: style="color: grey"} **Spatial and Data Scientist and Analyst Freelance Consultant**   
 I worked on some projects related to data science and analysis, GIS, remote sensing, forestry and more. 
@@ -125,6 +125,7 @@ On **2006** I started to work as a **freelance consultant** in Spain where I col
 
 - [ArcGIS][] Desktop & Server
 - [QGIS][] & [OSGeo][]
+- [Google Earth Engine][GEE]
 - Oracle DB & SQL DDBB
 - macOS, Linux & Windows
 - [R stats][RStats] & [Python][] 
@@ -143,18 +144,21 @@ On **2006** I started to work as a **freelance consultant** in Spain where I col
 - :finland: Finnish: A2
 - :sweden: Swedish: A1
 
-### Professional
+### Additional hard
 
+- Sustainability
+- GHGP, SBTi, AFI, etc
+- Carbon & [biomass][] accounting 
+- [Trade][TradeData] & supply chain
+- Agroforestry
 - [Data science & analysis][DataAnalysis]
 - Data visualization
 - [GIS][] & cartography
 - [Remote sensing][RemoteSensing] & [LiDAR][]
 - Project management
-- [Trade data][TradeData]
-- Wildfires & [biomass][]
 - Certification & audit
 
-### Personal
+### Soft
 
 - Self-learner
 - Analytical & meticulous
@@ -247,3 +251,4 @@ src="https://www.dropbox.com/s/tba5d4eeja4vt2i/Luis%20Puerto%20Resume.pdf?raw=1&
 [USFS]: https://www.fs.usda.gov/
 [VpnServer]: https://www.openvpn.net
 [WAudio]: http://luispuerto.net/blog/2018/01/18/convert-you-pi-in-an-airplay-receiver/
+[GEE]: https://earthengine.google.com/
