@@ -150,6 +150,8 @@ On **2006** I started to work as a **freelance consultant** in Spain where I col
 - GHGP, SBTi, AFI, etc
 - Carbon & [biomass][] accounting 
 - [Trade][TradeData] & supply chain
+- Climate & Env Risk
+- Deforestation
 - Agroforestry
 - [Data science & analysis][DataAnalysis]
 - Data visualization
