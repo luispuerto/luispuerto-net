@@ -10,10 +10,20 @@ header:
   overlay_filter2: "0.7"
   overlay_perc: "42" 
 excerpt: | 
-  #Sustainability :recycle: #Forestry :evergreen_tree: #Agroforestry :ear_of_rice: #EnvEngineering :seedling:           
-  #DataScience :telescope: #DataAnalysis :bulb: #DataViz :bar_chart: [#GIS](/archive/categories/gis) :earth_africa: #Research :microscope:     
-  #Coding :robot: [#RStats](/archive/categories/rstats/) :chart_with_upwards_trend: #Python :snake: #RemoteSensing :artificial_satellite: #Maps :world_map:        
-  #CH :switzerland: #EU :eu: #ES :es: #SE :sweden: [#FI](/archive/tags/finland) :finland: #OR [US](/archive/tags/usa) :us:
+    <span class="nowrap">#Sustainability :recycle:</span> 
+    <span class="nowrap">#Forestry :evergreen_tree:</span> 
+    <span class="nowrap">#Agroforestry :ear_of_rice:</span> 
+    <span class="nowrap">#EnvEngineering :seedling:</span> 
+    <span class="nowrap">#EnvRisk :rescue_worker_helmet:</span> 
+    <span class="nowrap">#DataScience :telescope:</span> 
+    <span class="nowrap">#DataAnalysis :bulb:</span> 
+    <span class="nowrap">#DataViz :bar_chart:</span>  
+    <span class="nowrap">#SpatialAnalysis :round_pushpin:</span> 
+    <span class="nowrap">#Maps :world_map:</span> 
+    <span class="nowrap">#Coding :robot: [#RStats](/archive/categories/rstats/) :chart_with_upwards_trend:</span> 
+    <span class="nowrap">#Python :snake: [#GIS](/archive/categories/gis) :earth_africa:</span> 
+    <span class="nowrap">#RemoteSensing :artificial_satellite:</span> 
+    <span class="nowrap">#Research :microscope:</span> 
 
 intro:
   - title: Welcomed to my place!
