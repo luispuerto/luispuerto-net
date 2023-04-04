@@ -88,7 +88,9 @@ I worked as Coordinator of the Technology & Innovation Area close to the General
 - Delivered GIS training for in-house staff and the general public.  
 - Led [scientific study’s][CastaneaProject] fieldwork: inventory operations, data processing, and analysis.
 
-In **2006** I started to work as a **freelance consultant** in Spain collaborating with companies like  [Tecnosylva][] or [TRAGSATEC][], with small and big municipalities, like **Ponferrada Municipality**, and private individuals. I participate in small and big projects like the “Preliminary Plan for the Pajariel Forestry Park” in [Ponferrada][], “Integral Management of the Ponferrada’s Mountains,” and the “Inventory of Forest Roads in Laciana”. Some of my main activities and accomplishes were: 
+**2009 – 2012:**{: style="color: grey"} **Freelance Consultant**
+
+Collaborating with companies like  [Tecnosylva][] or [TRAGSATEC][], with small and big municipalities, like **Ponferrada Municipality**, and private individuals. I participate in small and big projects like the “Preliminary Plan for the Pajariel Forestry Park” in [Ponferrada][], “Integral Management of the Ponferrada’s Mountains,” and the “Inventory of Forest Roads in Laciana”. Some of my main activities and accomplishes were: 
 
 - Successfully delivered a report essential to defend an environmental project at a public town-hall meeting. 
 - Advised and produced insights about citizen participation in environmental projects. 
@@ -101,7 +103,6 @@ In **2006** I started to work as a **freelance consultant** in Spain collaborati
 - Digitalized thousands of aerial photos on ArcGIS as cartography preparation for the fieldwork.
 - Delimited hundreds of km of forest areas using a sub-metric GPS and processed all the data.
 - Delivered a judicial report and a testimony in court that was key to winning the case.
-
 
 ## Additional Training
 
