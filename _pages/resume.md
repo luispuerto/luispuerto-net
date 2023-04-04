@@ -63,7 +63,7 @@ I worked at [Bioeconomy Program][BioProg] on the [Forest Products Trade Flow dat
 
 **2013 - 2019:**{: style="color: grey"} **International Freelance Consultant.**
 
-I developed my activity mainly in Finland, but also in Spain, Sweden, Austria, and the USA. I worked with institutions like the [University of Eastern of Finland][UEF], the [Finnish Forest Center][FFC], and the US Forest Service][USFS]. Some of the projects I worked on were: 
+I developed my activity mainly in Finland, but also in Spain, Sweden, Austria, and the USA. I worked with institutions like the [University of Eastern of Finland][UEF], the [Finnish Forest Center][FFC], and the [US Forest Service][USFS]. Some of the projects I worked on were: 
 
 - Developed scripts to download Finland’s full [LiDAR][] dataset —more than 1TB— and processed and analyze it using [Fusion][], [LAStools][], [R][], [LidR][] and other tools. 
 - Produced and developed statistical models to yield biomass estimations.  
