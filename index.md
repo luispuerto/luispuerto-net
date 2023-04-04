@@ -14,7 +14,7 @@ excerpt: |
     <span class="nowrap">#Forestry :evergreen_tree:</span> 
     <span class="nowrap">#Agroforestry :ear_of_rice:</span> 
     <span class="nowrap">#EnvEngineering :seedling:</span> 
-    <span class="nowrap">#EnvRisk :rescue_worker_helmet:</span> 
+    <span class="nowrap">#ClimateRisk :rescue_worker_helmet:</span> 
     <span class="nowrap">#DataScience :telescope:</span> 
     <span class="nowrap">#DataAnalysis :bulb:</span> 
     <span class="nowrap">#DataViz :bar_chart:</span>  
