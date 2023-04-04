@@ -77,6 +77,8 @@ I developed my activity mainly in Finland, but also in Spain, Sweden, Austria, a
 - Setup [Raspberry Pis][RaspberryPis] as an [R Studio server][RStudioServer], [VPN server][VpnServer], [NAS][], [cloud storage][CloudStorage], [wireless audio streaming][WAudio], [ad blocker][AdBlocker], internet speed logger and more.  
 - Produced educational materials and provided training. 
 
+## Additional Noteworthy Experience
+
 **2009 – 2012:**{: style="color: grey"} **[Fundación Ciudad de la Energía][CIUDEN] (City of Energy Foundation), Spanish Government**.
 
 I worked as Coordinator of the Technology & Innovation Area close to the General Director, that reported directly to the President of Spain. I led a multidisciplinary team related to technology, innovation, coding, and GIS, with a total budget of over 1 million euros.  
@@ -85,8 +87,6 @@ I worked as Coordinator of the Technology & Innovation Area close to the General
 - Developed regional tourist maps and successfully delivered cartographic and data analysis internally and externally. 
 - Delivered GIS training for in-house staff and the general public.  
 - Led [scientific study’s][CastaneaProject] fieldwork: inventory operations, data processing, and analysis.
-
-## Additional Noteworthy Experience
 
 In **2006** I started to work as a **freelance consultant** in Spain collaborating with companies like  [Tecnosylva][] or [TRAGSATEC][], with small and big municipalities, like **Ponferrada Municipality**, and private individuals. I participate in small and big projects like the “Preliminary Plan for the Pajariel Forestry Park” in [Ponferrada][], “Integral Management of the Ponferrada’s Mountains,” and the “Inventory of Forest Roads in Laciana”. Some of my main activities and accomplishes were: 
 
