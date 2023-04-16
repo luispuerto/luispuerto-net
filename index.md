@@ -13,7 +13,7 @@ excerpt: |
     <span class="nowrap">#Sustainability :recycle:</span> 
     <span class="nowrap">#Forestry :evergreen_tree:</span> 
     <span class="nowrap">#Deforestation :axe:</span> 
-    <span class="nowrap">#Agroforestry :ear_of_rice:</span> 
+    <span class="nowrap">#Agroforestry :maple_leaf:</span> 
     <span class="nowrap">#EnvEngineering :seedling:</span> 
     <span class="nowrap">#ClimateRisk :rescue_worker_helmet:</span> 
     <span class="nowrap">#DataScience :telescope:</span> 
