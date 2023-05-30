@@ -38,7 +38,7 @@ Thesis / Senior project: **_"[El Pajariel][]"  Stand Management Plan._**
 
 ## Experience
 
-**Mar 2022 - Now:**{: style="color: grey"} **[Quantis][Qis] Switzerland. Senior Sustainability Consultant** specialized on **Forestry, Agroforestry, GIS, Remote Sensing, Climate Risk and Data Science**.   
+**Mar 2022 - Mar 2023:**{: style="color: grey"} **[Quantis][Qis] Switzerland. Senior Sustainability Consultant** specialized on **Forestry, Agroforestry, GIS, Remote Sensing, Climate Risk and Data Science**.   
 Supporting organizations transitioning from _business as usual_ to _business at its best_ within our planetary boundaries.
 
 - Deliver more accurate emissions factors related to land use change using remote sensing and GIS data that reduced the land use change footprint by up to 90%. 
