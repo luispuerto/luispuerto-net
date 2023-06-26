@@ -8,8 +8,8 @@ categories:
   - Professional
   - Technology
 tags:
-  - high sierra
-  - how to
+  - high-sierra
+  - how-to
   - macOS
   - tweaks
 ---

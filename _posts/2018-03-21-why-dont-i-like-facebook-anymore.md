@@ -9,10 +9,10 @@ categories:
   - Technology
 tags:
   - blogs
-  - data science
+  - data-science
   - facebook
   - privacy
-  - social media
+  - social-media
 ---
 {% include figure image_path="assets/images/blog/2018/delete-facebook.png" alt="#deletefacebook from [TechCrunch post](https://techcrunch.com/2018/03/19/deletefacebook/)." caption="#deletefacebook from [TechCrunch post](https://techcrunch.com/2018/03/19/deletefacebook/)." %} 
 

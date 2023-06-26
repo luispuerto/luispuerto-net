@@ -9,9 +9,9 @@ categories:
   - Technology
 tags:
   - dGPU
-  - graphic card
-  - high sierra
-  - how to
+  - graphic-card
+  - high-sierra
+  - how-to
   - macOS
 ---
 As I've told in the [previous post](/blog/2017/12/05/my-macbook-pro-late-2011s-discrete-graphics-card-said-ciao-again/), the discrete graphic car of my MacBook Pro late 2011 is faulty and can be trusted any more. So I decided to disconnect it.

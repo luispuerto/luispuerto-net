@@ -10,8 +10,9 @@ categories:
   - Recipes
 tags:
   - bread
-  - how to
+  - how-to
 ---
+
 Ok… as I promised in my [previous post](/blog/2017/11/16/the-preliminaries-for-bread-and-pizza-making/), here it's my bread recipe for straight dough. I'm not going to fully explain the techniques, since they are already explained in the earlier post. There, you can also find what tools you need and, in case you want to change the ingredients quantities, the [tables for bread and pizza](/blog/2017/11/16/the-preliminaries-for-bread-and-pizza-making/#the-tables-of-bread--pizza).
 
 For this recipe, I'm going to make a **4 hours rise / fermentation** bread, but as you know, you can change the proportion of yeast in your dough to change the rise time. The proofing time is **around 40 minutes** and the total baking time is around **40 minutes**. This gives us around **6 hours** in total of preparation, if we take into account the mixing and handling of the dough. The temperature of baking is 250-270 ºC —depending on the oven and how brown you want to your bread.

@@ -8,7 +8,7 @@ header:
  caption: Jekyll and Travis logos
  overlay_filter: 0.3
 categories: [Technology, Personal]
-tags: [jekyll, blogging, CI, travis, raspberry pi]
+tags: [jekyll, blogging, CI-CD, travis, raspberry-pi]
 twitter: 
   image: /assets/images/blog/2018/jekyll+travis.png
 #  hashtags: [tag1, tag2]

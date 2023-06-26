@@ -7,7 +7,7 @@ header:
 categories:
   - Technology
 tags:
-  - how to
+  - how-to
   - macOS
 ---
 Sometimes you need to delete all the snapshots that the macOS time machine do locally just because you want to get rid of something of because you need to reclaim that space. Before one could use `sudo tmutil disablelocal` to delete everything and then `sudo tmutil enablelocal` to enable the local snapshots again —since they are useful. However, that option is no longer available.

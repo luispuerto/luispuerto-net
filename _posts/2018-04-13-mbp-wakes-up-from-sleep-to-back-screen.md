@@ -9,7 +9,7 @@ categories:
   - Technology
 tags:
   - dGPU
-  - high sierra
+  - high-sierra
   - macOS
 ---
 

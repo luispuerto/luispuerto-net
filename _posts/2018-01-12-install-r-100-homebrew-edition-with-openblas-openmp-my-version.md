@@ -12,7 +12,7 @@ categories:
   - Technology
 tags:
   - homebrew
-  - how to
+  - how-to
   - optimization
   - RSoft
   - RStats

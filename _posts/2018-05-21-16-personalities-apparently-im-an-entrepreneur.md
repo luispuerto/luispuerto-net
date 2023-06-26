@@ -10,7 +10,7 @@ categories:
   - Personal
   - Professional
 tags:
-  - my personality
+  - my-personality
   - science
   - work
 ---

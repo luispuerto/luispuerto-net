@@ -8,7 +8,7 @@ categories:
   - RStats
   - Technology
 tags:
-  - app store
+  - app-store
   - homebrew
   - packages
   - python

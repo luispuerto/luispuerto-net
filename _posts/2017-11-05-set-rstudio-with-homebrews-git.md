@@ -11,7 +11,7 @@ categories:
 tags:
   - git
   - homebrew
-  - how to
+  - how-to
   - RSoft
   - RStudio
 ---

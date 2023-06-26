@@ -8,7 +8,7 @@ header:
  caption: My multiple personalities and trails
 #  overlay_filter: 0.3
 categories: [Personal, Professional]
-tags: [my personality, science, work]
+tags: [my-personality, science, work]
 twitter: 
   image: /assets/images/blog/2018/personality.jpg
   hashtags: [16personalities] # Only for Twitter, they go before tags

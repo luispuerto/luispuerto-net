@@ -11,8 +11,9 @@ categories:
   - Recipes
 tags:
   - bread
-  - how to
+  - how-to
 ---
+
 Lately I've been extending my baking skills and I've been practicing the ciabatta recipe from Iban Yarza's book, [Pan Casero](https://www.amazon.com/Pan-casero-Larousse-Ilustrados-Gastronom%C3%ADa/dp/8416984123/ref=sr_1_1?s=books&ie=UTF8&qid=1524834446&sr=1-1), which I think is delicious. I say _extending my baking skills_ because it's the first time I've tried a preferment recipe and more specifically poolish. Poolish have zero complications in comparison with the straight doughs, but it's true that in general you need extra time and the final dough is more sticky since it's more moisturized. So you are going to need to have some experience working with dough if you don't want to end up full of dough and even, depending how brave you are, your kitchen.
 
 What you are going to need for this recipe is the same as with the previous ones, plus a tray or container to handle the dough after we finish the kneading. I recommend to review the [preliminaries for baking post](/blog/2017/11/16/the-preliminaries-for-bread-and-pizza-making/) for a full description of the methods. Take into account that the amount of yeast is specify for **12, 8 and 3 hours for the bulk fermentation** of the poolish. On top of that you are going to need around **2 hours of mixing — kneading — proofing ** after the polish is ready, plus the usually **40-50'** **of baking**.

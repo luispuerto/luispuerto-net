@@ -8,7 +8,7 @@ categories:
   - Professional
   - Technology
 tags:
-  - how to
+  - how-to
   - linux
   - macOS
   - shell

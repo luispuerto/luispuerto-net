@@ -11,7 +11,7 @@ categories:
 tags: 
   - facebook
   - blogs
-  - social media
+  - social-media
   - privacy
 ---
 
@@ -29,7 +29,7 @@ I guess they don't want to make things easy for users because our content is the
 
 The sort answer is, just [**because I can**](https://www.youtube.com/watch?v=NE0ne430gbA) I want to mess around with Facebook. The real and long one is, Facebook :toilet: still has some value for me —a residual one, but value. Through Facebook :toilet: I can still be in contact with *you*, or at least *you* can contact me, and I'm not talking about Facebook :toilet: Messenger only. There are still a lot of people that use Facebook :toilet: to be in contact with their love ones —family, friends and that weir guy they met somewhere else. That's —more or less— my case —specially the latter one :stuck_out_tongue_closed_eyes:. Most of my friends still use Facebook :toilet: in their daily lives, they share part of their lives there and know about others lives there. This is usually specially the case when you have more or less an international life and you travel and have been living in different places at different parts of your life. Facebook :toilet: make it easy to be in contact with people that is really far far away from you, even when you just log-ins once per week.  
 
-## How? 
+## How?
 
 If you want to know how I delete the content of my Facebook :toilet: account, it's really easy. I just installed on my Chrome browser the Delete All Facebook Post (no longer online) extension and then I begin to wipe posts and likes year by year. I have to use it more than a couple of times each year —sometimes when things were really stuck, i.e. I had too much activity during a period of time, I had to pass it like 5 times and sometimes I used it on specific months with a lot of content at lower speed. 
 

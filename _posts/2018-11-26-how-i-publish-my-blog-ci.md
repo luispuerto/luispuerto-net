@@ -9,7 +9,7 @@ header:
  overlay_filter: 0.3
 image: /assets/images/blog/2018/jekyll+travis.png
 categories: [Technology, Personal]
-tags: [jekyll, blogging, CI, travis]
+tags: [jekyll, blogging, CI-CD, travis]
 twitter: 
   image: /assets/images/blog/2018/jekyll+travis.png
 #   hashtags: [tag1, tag2] 
@@ -40,7 +40,7 @@ All of these steps have a lot of sense in GitHub, GitLab and other repo online s
 
 That's more of less the official function of the CI. However, it can do much more than that. For example, in the Homebrew repos/taps it builds the bottles and deploys them to a hosting so you can latter download them. It can build software and apps and deploy it to your website. Or like in our case can build your Jekyll site and deploy to GitHub Pages. 
 
-## How? 
+## How?
 
 There are several options out there as CI services, from [Travis](https://travis-ci.com) —with is one of the most common one— to [Jenkins](https://jenkins.io) or, if you use [GitLab, their own CI](https://about.gitlab.com/product/continuous-integration/). I'm going to talk about Travis, because it's the one I'm using myself and usually is the easier option. You can use Travis for free on the condition [your project is open source](https://travis-ci.com/plans). 
 

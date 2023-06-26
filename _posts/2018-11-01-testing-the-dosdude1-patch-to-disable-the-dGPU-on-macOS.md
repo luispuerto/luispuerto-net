@@ -9,7 +9,7 @@ image: /assets/images/blog/2018/grey_screen.jpg
 categories: 
   - Personal
   - Technology
-tags: [dGPU, graphic card, macOS, high sierra, how to]
+tags: [high-sierra, how-to]
 toc: true
 # toc_label: "Unique Title"
 toc_icon: "laptop-code"  # corresponding Font Awesome icon name (without fa prefix)

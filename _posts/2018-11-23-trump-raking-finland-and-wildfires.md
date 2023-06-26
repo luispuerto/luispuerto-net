@@ -12,7 +12,7 @@ categories:
  - Forestry
  - Opinion
  - Politics
-tags: [Finland, wildfires, forest management, USA]
+tags: [Finland, wildfires, forest-management, USA]
 toc: true
 toc_label: "On this fire"
 toc_icon: "fire"  # corresponding Font Awesome icon name (without fa prefix)

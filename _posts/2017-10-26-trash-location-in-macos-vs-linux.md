@@ -7,7 +7,7 @@ categories:
 tags:
   - linux
   - macOS
-  - raspberry pi
+  - raspberry-pi
   - raspbian
   - shell
 gallery:

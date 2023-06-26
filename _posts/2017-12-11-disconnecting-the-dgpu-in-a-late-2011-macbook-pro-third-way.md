@@ -10,9 +10,9 @@ categories:
   - Technology
 tags:
   - dGPU
-  - graphic card
-  - high sierra
-  - how to
+  - graphic-card
+  - high-sierra
+  - how-to
   - macOS
 ---
 **Update 2017.12.12-14.20 EET**: whether or not I use the [AMDGPUWakeHandler](https://github.com/blackgate/AMDGPUWakeHandler) and whether I sleep or hibernate I can't wake up of the hibernation/sleep. Depending on if I have [AMDGPUWakeHandler](https://github.com/blackgate/AMDGPUWakeHandler) on or off I get different outputs, but none of those end in a successful wakeup.

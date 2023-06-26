@@ -11,7 +11,7 @@ categories:
   - Technology
 tags:
   - macOS
-  - raspberry pi
+  - raspberry-pi
 ---
 
 I recently needed to convert my Raspberry Pi 3 into a AirPlay receiver because I didn't have any of my [AirPort Express](https://www.apple.com/lae/airport-express/) at hand and I wanted to play just music —not the entire collection of sounds my computer produce— on one of my old [Hi-Fi Self Stereo System](https://en.wikipedia.org/wiki/Shelf_stereo). So I searched on the internet and saw that it was totally possible to do it and I try it. I used as a source this [article](https://pimylifeup.com/raspberry-pi-airplay-receiver/) and I want share with you what steps I specifically followed.

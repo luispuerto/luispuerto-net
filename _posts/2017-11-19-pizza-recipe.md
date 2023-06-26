@@ -9,7 +9,7 @@ categories:
   - Recipes
 tags:
   - bread
-  - how to
+  - how-to
   - pizza
 ---
 Since it's Sunday let's have some pizza for dinner. Here is the pizza recipe I usually make at home, and what I would call our _standard pizza_. It's really rare that we don't bake one once per week or at least two weeks.

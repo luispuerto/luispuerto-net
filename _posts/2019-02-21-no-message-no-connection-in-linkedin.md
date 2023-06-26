@@ -8,7 +8,7 @@ header:
  caption: LinkedIn logo
  overlay_filter: 0.2
 categories: [Professional, Technology]
-tags: [LinkedIn, social media, networking]
+tags: [LinkedIn, social-media, networking]
 twitter: 
   image: /assets/images/blog/2019/linkedin-logo-header.png
   hashtags: [randominvitations, LIONs] # Only for Twitter, they go before tags

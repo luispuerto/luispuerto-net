@@ -8,7 +8,7 @@ categories:
 tags:
   - linux
   - macOS
-  - raspberry pi
+  - raspberry-pi
   - raspbian
 ---
 I've been trying make something work in my Pi, but so far I've just messing things up and I had to install Raspbian a couple of times from scratch. For that reason I've decided to make a copy of the SD card before I repeat the process and try to figure out what is going on.

@@ -9,7 +9,7 @@ categories:
   - RStats
   - Technology
 tags:
-  - data science
+  - data-science
   - homebrew
   - RStats
 ---

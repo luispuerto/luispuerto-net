@@ -10,7 +10,7 @@ categories:
   - Recipes
 tags:
   - bread
-  - how to
+  - how-to
 toc: true
 toc_sticky: true
 gallery:

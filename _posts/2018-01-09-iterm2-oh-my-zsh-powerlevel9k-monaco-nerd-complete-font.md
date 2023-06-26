@@ -9,7 +9,7 @@ categories:
   - Professional
   - Technology
 tags:
-  - how to
+  - how-to
   - macOS
   - shell
 ---

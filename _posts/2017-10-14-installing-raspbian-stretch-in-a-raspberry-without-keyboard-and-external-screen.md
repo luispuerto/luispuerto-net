@@ -9,9 +9,9 @@ categories:
   - Professional
   - Technology
 tags:
-  - how to
+  - how-to
   - linux
-  - raspberry pi
+  - raspberry-pi
   - raspbian
 ---
   A few months ago we acquired a [Raspberry Pi 3 Model 3](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/) in the hopes to play a little bit around with it to learn some Linux and perhaps to use it as a computer to host rStudio Server and run some scripts on it. But things have been little by little been delayed, mainly because we didn't have at hand a proper monitor nor USB keyboard.

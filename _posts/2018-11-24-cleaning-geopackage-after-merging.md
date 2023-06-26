@@ -8,7 +8,7 @@ header:
  caption: Some stands of Finnish forest
 image: /assets/images/blog/2018/finnish-forest-stands.png
 categories: [Forestry, GIS, Professional]
-tags: [Finland, forest inventory, data science, QGIS]
+tags: [Finland, forest-inventory, data-science, QGIS]
 toc: true
 # toc_label: "Unique Title"
 # toc_icon: "heart"  # corresponding Font Awesome icon name (without fa prefix)

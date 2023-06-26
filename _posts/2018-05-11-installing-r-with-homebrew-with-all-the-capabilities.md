@@ -11,7 +11,7 @@ categories:
   - Technology
 tags:
   - homebrew
-  - how to
+  - how-to
   - RSoft
   - RStats
 ---

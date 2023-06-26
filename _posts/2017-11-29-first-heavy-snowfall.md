@@ -9,7 +9,7 @@ categories:
   - Personal
 tags:
   - Finland
-  - Finnish life
+  - Finnish-life
   - Joensuu
   - snow
 ---

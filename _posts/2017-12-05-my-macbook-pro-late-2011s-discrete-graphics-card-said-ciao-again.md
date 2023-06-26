@@ -11,9 +11,9 @@ categories:
   - Technology
 tags:
   - dGPU
-  - graphic card
-  - high sierra
-  - how to
+  - graphic-card
+  - high-sierra
+  - how-to
   - macOS
 ---
 
