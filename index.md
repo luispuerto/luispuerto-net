@@ -24,6 +24,7 @@ excerpt: |
     <span class="nowrap">#Python :snake: [#GIS](/archive/categories/gis) :earth_africa:</span> 
     <span class="nowrap">#RemoteSensing :artificial_satellite:</span> 
     <span class="nowrap">#Research :microscope:</span> 
+    <span class="nowrap">#Cocoa :chocolate_bar:</span> 
 
 intro:
   - title: Welcomed to my place!
