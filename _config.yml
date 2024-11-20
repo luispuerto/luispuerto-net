@@ -144,12 +144,12 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
       url: mailto:luis@luispuerto.net
+    - label: "BlueSky"
+      icon: "fab fa-fw fa-bluesky"
+      url: "https://bsky.app/profile/luispuerto.net"
     - label: "Mastodon"
       icon: "fab fa-fw fa-mastodon"
       url: https://mastodon.social/@lpuerto
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/lpuerto"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/lpuerto"
@@ -170,12 +170,12 @@ author:
 # Site Footer
 footer:
   links:
+    - label: "BlueSky"
+      icon: "fab fa-fw fa-bluesky"
+      url: "https://bsky.app/profile/luispuerto.net"
     - label: "Mastodon"
       icon: "fab fa-fw fa-mastodon"
       url: https://mastodon.social/@lpuerto
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/lpuerto"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/lpuerto"
