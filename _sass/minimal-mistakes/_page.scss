@@ -1,3 +1,5 @@
+@use "sass:color";
+
 /* ==========================================================================
    SINGLE PAGE/POST
    ========================================================================== */
@@ -532,11 +534,11 @@
 
 .taxonomy__title {
   margin-bottom: 0.5em;
-  color: lighten($text-color, 60%);
+  color: color.adjust($text-color, $lightness: 60%, $space: hsl);
 }
 
 .taxonomy__count {
-  color: lighten($text-color, 50%);
+  color: color.adjust($text-color, $lightness: 50%, $space: hsl);
 }
 
 .taxonomy__index {
@@ -591,7 +593,7 @@
 .back-to-top {
   display: block;
   clear: both;
-  color: lighten($text-color, 50%);
+  color: color.adjust($text-color, $lightness: 50%, $space: hsl);
   font-size: 0.6em;
   text-transform: uppercase;
   text-align: right;

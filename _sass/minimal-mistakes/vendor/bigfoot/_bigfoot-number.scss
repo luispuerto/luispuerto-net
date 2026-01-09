@@ -24,7 +24,7 @@
   position: relative;
   height: $button-height;
   width: 1.5em;
-  border-radius: $button-height/2;
+  border-radius: $button-height*0.5;
 
   &:after {
     // CONTENT

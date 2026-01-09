@@ -1,3 +1,7 @@
+@use "sass:math";
+
+@use "sass:color";
+
 // bigfoot - v2.1.1 - 2015.04.04
 
 
@@ -33,7 +37,7 @@ $popover-bottom-position:               auto !default;                          
 $popover-left-position:                 auto !default;                           // Sets the left position of the popover. Use only when setting positionPopover to false in the script
 $popover-tooltip-size:                  1.3em !default;                          // Sets the side lengths of the tooltip
 $popover-scroll-indicator-width:        0.625em !default;                        // The width of the scroll indicator
-$popover-scroll-indicator-aspect-ratio: (15/12) !default;                        // The ratio of the height over the width of the scroll indicator
+$popover-scroll-indicator-aspect-ratio: math.div(15, 12) !default;                        // The ratio of the height over the width of the scroll indicator
 $popover-scroll-indicator-opacity:      0.1 !default;                            // The active opacity of scroll indicators
 $popover-initial-transform-state:       scale(0.1) translateZ(0) !default;       // The inital transform state for the popover
 $popover-active-transform-state:        scale(1) translateZ(0) !default;         // The transform state for the popover once it is fully activated
@@ -65,7 +69,7 @@ $popover-tooltip-background:                     $popover-color-background !defa
 $popover-tooltip-radius:                         0 !default;
 $popover-scroll-indicator-bottom-position:       0.45em !default;
 $popover-scrolly-fade-gradient-start-location:   50% !default;
-$popover-scroll-indicator-padding:               (($popover-padding-content-horizontal/2) - ($popover-scroll-indicator-width/2)) !default;
+$popover-scroll-indicator-padding:               (($popover-padding-content-horizontal*0.5) - ($popover-scroll-indicator-width*0.5)) !default;
 
 // TRANSITIONS
 $popover-transition-default-duration:            0.25s !default;
@@ -379,7 +383,7 @@ $button-transition-properties:      background-color !default;
   // Height is set in .footnote-content-wrapper
   max-width: $popover-max-width;
   // 1.414213... is to get the diagonal height of the tooltip using pythagorus, yo.
-  margin: ((1.4142135624 * $popover-tooltip-size / 2) + $button-height + $popover-margin-top) 0;
+  margin: ((1.4142135624 * $popover-tooltip-size * 0.5) + $button-height + $popover-margin-top) 0;
   // fits the popover to the contents
 
   // BACKDROP
@@ -491,14 +495,14 @@ $button-transition-properties:      background-color !default;
         top: -1px;
         height: $popover-padding-content-top;
         border-radius: $popover-border-radius $popover-border-radius 0 0;
-        background-image: linear-gradient(to bottom, $popover-color-background $popover-scrolly-fade-gradient-start-location, transparentize($popover-color-background, 1) 100%);
+        background-image: linear-gradient(to bottom, $popover-color-background $popover-scrolly-fade-gradient-start-location, color.adjust($popover-color-background, $alpha: -1) 100%);
       }
 
       &:after {
         bottom: -1px;
         height: $popover-padding-content-bottom;
         border-radius: 0 0 $popover-border-radius $popover-border-radius;
-        background-image: linear-gradient(to top, $popover-color-background $popover-scrolly-fade-gradient-start-location, transparentize($popover-color-background, 1) 100%);
+        background-image: linear-gradient(to top, $popover-color-background $popover-scrolly-fade-gradient-start-location, color.adjust($popover-color-background, $alpha: -1) 100%);
       }
     }
 
