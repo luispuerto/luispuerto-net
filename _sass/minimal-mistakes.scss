@@ -1,3 +1,49 @@
+@use "sass:map";
+
+$skin-variables: () !default;
+// Keep the legacy theme partials configurable through the selected skin.
+$background-color: map.get($skin-variables, "background-color") !default;
+$base00: map.get($skin-variables, "base00") !default;
+$base01: map.get($skin-variables, "base01") !default;
+$base02: map.get($skin-variables, "base02") !default;
+$base03: map.get($skin-variables, "base03") !default;
+$base04: map.get($skin-variables, "base04") !default;
+$base05: map.get($skin-variables, "base05") !default;
+$base06: map.get($skin-variables, "base06") !default;
+$base07: map.get($skin-variables, "base07") !default;
+$base08: map.get($skin-variables, "base08") !default;
+$base09: map.get($skin-variables, "base09") !default;
+$base0a: map.get($skin-variables, "base0a") !default;
+$base0b: map.get($skin-variables, "base0b") !default;
+$base0c: map.get($skin-variables, "base0c") !default;
+$base0d: map.get($skin-variables, "base0d") !default;
+$base0e: map.get($skin-variables, "base0e") !default;
+$base0f: map.get($skin-variables, "base0f") !default;
+$body-color: map.get($skin-variables, "body-color") !default;
+$border-color: map.get($skin-variables, "border-color") !default;
+$code-background-color: map.get($skin-variables, "code-background-color") !default;
+$code-background-color-dark: map.get($skin-variables, "code-background-color-dark") !default;
+$danger-color: map.get($skin-variables, "danger-color") !default;
+$dark-gray: map.get($skin-variables, "dark-gray") !default;
+$darker-gray: map.get($skin-variables, "darker-gray") !default;
+$footer-background-color: map.get($skin-variables, "footer-background-color") !default;
+$form-background-color: map.get($skin-variables, "form-background-color") !default;
+$gray: map.get($skin-variables, "gray") !default;
+$info-color: map.get($skin-variables, "info-color") !default;
+$light-gray: map.get($skin-variables, "light-gray") !default;
+$lighter-gray: map.get($skin-variables, "lighter-gray") !default;
+$link-color: map.get($skin-variables, "link-color") !default;
+$link-color-hover: map.get($skin-variables, "link-color-hover") !default;
+$link-color-visited: map.get($skin-variables, "link-color-visited") !default;
+$masthead-link-color: map.get($skin-variables, "masthead-link-color") !default;
+$masthead-link-color-hover: map.get($skin-variables, "masthead-link-color-hover") !default;
+$muted-text-color: map.get($skin-variables, "muted-text-color") !default;
+$navicon-link-color-hover: map.get($skin-variables, "navicon-link-color-hover") !default;
+$primary-color: map.get($skin-variables, "primary-color") !default;
+$success-color: map.get($skin-variables, "success-color") !default;
+$text-color: map.get($skin-variables, "text-color") !default;
+$warning-color: map.get($skin-variables, "warning-color") !default;
+
 /*!
  * Minimal Mistakes Jekyll Theme 4.17.0 by Michael Rose
  * Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes

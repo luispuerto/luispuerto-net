@@ -4,5 +4,8 @@
 
 @charset "utf-8";
 
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-@import "minimal-mistakes"; // main partials
+@use "sass:meta";
+@use "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}" as skin;
+@use "minimal-mistakes" as * with (
+  $skin-variables: meta.module-variables("skin")
+);
